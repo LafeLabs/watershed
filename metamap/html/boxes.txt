@@ -1,0 +1,15 @@
+<div class = "box" id = "box0600">
+    <a href = "routes/">routes/</a>
+</div>
+<div class = "box" id = "box0601">  
+    <a href = "coordinates/">coordinates/</a>
+</div>
+<div  class = "box" id = "box0602">
+    <a href = "waterland/">waterland/</a>
+</div>
+<div  class = "box" id = "box0603">
+    <a href = "places/">places/</a>
+</div>
+<div class = "box" id = "box0604">
+    <a href = "../">back up to watershed/</a>
+</div>
