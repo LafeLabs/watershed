@@ -1,0 +1,33 @@
+
+InA = 100;
+ImuA = InA/1000;
+IA = ImuA/1000;
+A = 1;
+Acm = A/1e8;
+JcA = IA/Acm;
+JcmuA = ImuA/A;
+
+data = {
+    "InA":1,
+    "ImuA":1,
+    "IA":1,
+    "A":1,
+    "Acm":1,
+    "JcA":1,
+    "JcmuA":1
+}
+
+inputs = document.getElementById("calcTable").getElementsByTagName("input");
+
+feeddata = JSON.parse("[" + document.getElementById("datadiv").innerHTML +"]")
+
+document.getElementById("scroll").innerHTML = "";
+for(var index = 0;index < feeddata.length;index++){
+    document.getElementById("scroll").innerHTML += "<p>";
+    document.getElementById("scroll").innerHTML += "$I_c$ = " + formatsci(feeddata[index].IA) + " A";
+    document.getElementById("scroll").innerHTML += " = " + formatsci(feeddata[index].ImuA) + " $\\mu$A";
+    document.getElementById("scroll").innerHTML += " = " + formatsci(feeddata[index].InA) + " nA<br/>";
+    document.getElementById("scroll").innerHTML += "A = " + feeddata[index].A.toString() + " $\\mu m^2$<br/>";
+    document.getElementById("scroll").innerHTML += "$J_C$ = " + formatsci(feeddata[index].JcA) + " $A/cm^2$";
+    document.getElementById("scroll").innerHTML += " = " + formatsci(feeddata[index].JcmuA) + "$\\mu A/\\mu m^2$<br/></p>";    
+}

@@ -1,0 +1,19 @@
+<a href = "editor.php">editor.php</a>
+<a href = "..">up to quantum noise</a>
+<a href = "svg/">svg files</a>
+<canvas id = "plotCanvas"></canvas>
+<table id = "mainControl">
+<tr class = "buttonrow"><td>JSON</td><td>IMPORT</td></tr>
+<tr class = "buttonrow"><td>SAVE</td><td>SVG</td></tr>
+</table>
+<div id = "equation">
+</div>
+<table id = "textTable">
+    <tr>
+        <td>JSON</td><td>SVG</td>
+    </tr>
+    <tr>
+        <td><textarea id = "JSONtext"></textarea></td>
+        <td><textarea id = "SVGtext"></textarea></td>
+    </tr>
+</table>

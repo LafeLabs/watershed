@@ -1,0 +1,20 @@
+
+
+
+inputs[0].value = IA.toExponential(2);
+inputs[1].value = ImuA.toExponential(2);
+inputs[2].value = InA.toExponential(2);
+inputs[3].value = A.toExponential(2);
+inputs[4].value = JcA.toExponential(2);
+inputs[5].value = JcmuA.toExponential(2);
+
+
+data.InA = parseFloat(inputs[2].value);
+data.ImuA = parseFloat(inputs[1].value);
+data.IA = parseFloat(inputs[0].value);
+data.A = parseFloat(inputs[3].value);
+data.JcA = parseFloat(inputs[4].value);
+data.JcmuA = parseFloat(inputs[5].value);
+
+
+document.getElementById("textIO").value = JSON.stringify(data,null,"    ");

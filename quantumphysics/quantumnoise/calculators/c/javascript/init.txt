@@ -1,0 +1,25 @@
+
+A = 1;
+
+t = 1;
+epsilonrel = 9.8;
+epsilon0 = 8.85e-12;
+C = 1e9*epsilonrel*epsilon0*A/t;
+
+data = {
+    "A":1,
+    "t":1,
+    "C":1
+}
+
+inputs = document.getElementById("calcTable").getElementsByTagName("input");
+
+feeddata = JSON.parse("[" + document.getElementById("datadiv").innerHTML +"]")
+
+document.getElementById("scroll").innerHTML = "";
+for(var index = 0;index < feeddata.length;index++){
+    document.getElementById("scroll").innerHTML += "<p>";
+    document.getElementById("scroll").innerHTML += "A = " + formatsci(feeddata[index].A) + "$\\mu m^2$<br/>";
+    document.getElementById("scroll").innerHTML += "t = " + formatsci(feeddata[index].t) + "nm<br/>";
+    document.getElementById("scroll").innerHTML += "C = " + formatsci(feeddata[index].C) + "pF<br/></p>";
+}

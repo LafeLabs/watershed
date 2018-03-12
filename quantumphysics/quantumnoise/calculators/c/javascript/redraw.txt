@@ -1,0 +1,11 @@
+
+
+inputs[0].value = A.toExponential(2);
+inputs[1].value = t.toExponential(2);
+inputs[2].value = C.toExponential(2);
+
+data.A = parseFloat(inputs[0].value);
+data.t = parseFloat(inputs[1].value);
+data.C = parseFloat(inputs[2].value);
+
+document.getElementById("textIO").value = JSON.stringify(data,null,"    ");

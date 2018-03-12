@@ -1,0 +1,11 @@
+function formatsci(inputFloat){
+    var instring = inputFloat.toExponential(2);
+    var outstring = "";
+    if(instring.split("e").length > 0){
+        outstring = "$" + instring.split("e")[0] + " \\times 10^{" + instring.split("e")[1] + "}$";
+    }
+    else{
+        outstring = instring;
+    }
+    return outstring;
+}

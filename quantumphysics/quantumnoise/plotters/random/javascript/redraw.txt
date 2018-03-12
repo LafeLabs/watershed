@@ -1,0 +1,38 @@
+currentStroke =feedData[feedIndex].color;
+
+    document.getElementById("JSONtext").value = JSON.stringify(feedData[feedIndex],null,"    ");
+    currentSVG = "<svg width=\"" + feedData[feedIndex].width.toString() + "\" height=\"" + feedData[feedIndex].height.toString() + "\" viewbox = \"0 0 " + feedData[feedIndex].width.toString() + " " + feedData[feedIndex].height.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
+    currentSVG += "\n<!--\n<json>\n" + JSON.stringify(feedData[feedIndex],null,"    ") + "\n</json>\n-->\n";
+
+    document.getElementById("plotCanvas").width = feedData[feedIndex].width;
+    document.getElementById("plotCanvas").height = feedData[feedIndex].height;
+    ctx = document.getElementById("plotCanvas").getContext("2d");
+    ctx.clearRect(0, 0, feedData[feedIndex].width, feedData[feedIndex].width);
+    ctx.lineWidth = feedData[feedIndex].lineWidth;
+    ctx.strokeStyle=feedData[feedIndex].color;
+    ctx.beginPath();	
+    deltax = feedData[feedIndex].width/(feedData[feedIndex].N - 1);
+    x0 = feedData[feedIndex].width/2;
+
+    x = 0;
+    randomcurve();
+    currentSVG += "	<path d = \"M";
+    currentSVG += Math.round(x).toString() + " ";
+    currentSVG += Math.round(y).toString() + " ";
+
+    for(x = 0;x <= feedData[feedIndex].width;x += deltax){
+        if(x>0){
+            currentSVG += "L" + x + " " + y + " ";
+        }
+        ctx.moveTo(x,y);
+        xup = x + deltax;		
+        randomcurve();
+        ctx.lineTo(xup,y);
+    }
+    currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \""+feedData[feedIndex].lineWidth+"\" fill = \"" + "none" + "\" "+"/>";
+
+    ctx.stroke();
+
+
+    currentSVG += "</svg>"; 
+    document.getElementById("SVGtext").value = currentSVG;

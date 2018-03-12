@@ -1,0 +1,23 @@
+<a href = "..">Up a Level</a>
+<a href = "editor.php">editor.php</a>
+
+<textarea id="textIO"></textarea> 
+<table id = "calcTable">
+    <tr>
+        <td>Ic[A]:</td><td><input/></td><td>Ic[$\mu$A]:</td><td><input/></td><td>Ic[nA]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>LJ[H]:</td><td><input/></td><td>LJ[nH]:</td><td><input/></td><td>LJ[pH]:</td><td><input/></td>
+    </tr>
+</table>
+<div id = "equation">
+$$L_J = \frac{\Phi_0}{2\pi I_C}$$
+$$I_C = \frac{\Phi_0}{2\pi L_J}$$
+$$\Phi_0 \equiv \frac{h}{2e} = 2.07\times10^{-15} \textrm{Wb}$$
+$$1 \textrm{Wb} = 1 \textrm{henry[H]}\times 1\textrm{ampere[A]}$$
+$$\frac{\Phi_0}{2\pi} = 1.7\times10^{-16} \textrm{Wb} = 170 \textrm{nH}\times\textrm{nA}$$
+</div>
+<div class = "button" id = "publish">PUBLISH</div>
+<div id = "scroll">
+    
+</div>

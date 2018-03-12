@@ -1,0 +1,23 @@
+<a href = "..">Up a Level</a>
+<a href = "editor.php">editor.php</a>
+
+<textarea id="textIO"></textarea> 
+<table id = "calcTable">
+    <tr>
+        <td>T[K]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>B[MHz]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>P[mW]:</td><td><input/></td><td>P[dBm]:</td><td><input/></td>
+    </tr>
+
+</table>
+<div id = "equation">
+$$P = 4k_BTB$$
+</div>
+<div class = "button" id = "publish">PUBLISH</div>
+<div id = "scroll">
+    
+</div>

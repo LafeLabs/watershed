@@ -1,0 +1,23 @@
+<a href = "..">Up a Level</a>
+<a href = "editor.php">editor.php</a>
+<textarea id="textIO"></textarea> 
+<table id = "calcTable">
+    <tr>
+        <td>Ic[A]:</td><td><input/></td><td>Ic[$\mu$A]:</td><td><input/></td><td>Ic[nA]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>Rn[$\Omega$]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>$\Delta/e$[$\mu$eV]:</td><td>180[Aluminum]</td>
+    </tr>
+</table>
+<div id = "equation">
+$$I_C = \frac{\pi\Delta}{2eR_n}$$
+$$R_n = \frac{\pi\Delta}{2eI_c}$$
+
+</div>
+<div class = "button" id = "publish">PUBLISH</div>
+<div id = "scroll">
+    
+</div>

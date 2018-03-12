@@ -1,0 +1,69 @@
+ 
+ 
+ inputs[0].onchange = function(){
+    IA = parseFloat(this.value);
+    ImuA = IA*1000;
+    InA = ImuA*1000;
+    LJnH = phi0norm/InA;
+    LJpH = LJnH*1000;
+    LJH = LJnH*1e-9;
+
+    redraw();
+ }
+ inputs[1].onchange = function(){
+    ImuA = parseFloat(this.value);
+    InA = ImuA*1000;
+    IA = ImuA/1000;
+    LJnH = phi0norm/InA;
+    LJpH = LJnH*1000;
+    LJH = LJnH*1e-9;
+
+    redraw();     
+ }
+ inputs[2].onchange = function(){
+    InA = parseFloat(this.value);
+    ImuA = InA/1000;
+    IA = ImuA/1000;
+    LJnH = phi0norm/InA;
+    LJpH = LJnH*1000;
+    LJH = LJnH*1e-9;
+    redraw();     
+ }
+ inputs[3].onchange = function(){
+    LJH = parseFloat(this.value);
+    LJnH = LJH/1e-9;
+    LJpH = LJH/1e-12;
+    InA = phi0norm/InA;
+    IA = InA*1e-9;
+    ImuA = InA/1000;
+    redraw();
+ }
+ inputs[4].onchange = function(){
+    LJnH = parseFloat(this.value);
+    LJH = LJnH*1e-9;
+    LJpH = LJH/1e-12;
+    InA = phi0norm/InA;
+    IA = InA*1e-9;
+    ImuA = InA/1000;
+    redraw();
+ }
+ inputs[5].onchange = function(){
+    LJpH = parseFloat(this.value);
+    LJH = LJpH*1e-12;
+    LJnH = LJH/1e-9;
+    InA = phi0norm/InA;
+    IA = InA*1e-9;
+    ImuA = InA/1000;
+    redraw();
+ }
+
+ 
+ document.getElementById("publish").onclick = function(){
+     
+    data = encodeURIComponent(document.getElementById("textIO").value);
+    var httpc = new XMLHttpRequest();
+    var url = "feedsaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data);//send text to feedsaver.php
+ }

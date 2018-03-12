@@ -1,0 +1,20 @@
+<ul id = "linklist">
+<li><a href = "..">Up a Level</a></li>
+<li><a href = "editor.php">editor.php</a></li>
+<li><a href = "junctionir/">$I_C = \frac{\pi\Delta}{2eR_n}$</a></li>
+<li><a href = "junctionli/">$L_J = \frac{\Phi_0}{2\pi I_C}$</a></li>
+<li><a href = "jcic/">$J_C = \frac{I_C}{A}$</a></li>
+<li><a href = "c/">$C = \epsilon_{rel}\epsilon_0\frac{A}{t}$</a></li>
+<li><a href = "fp/">$f_p = \frac{1}{2\pi}\sqrt{\frac{1}{L_JC}}$</a></li>
+<li><a href = "ktb/">$P = 4kTB$</a></li>
+</ul>
+
+<textarea id="textIO"></textarea> 
+<table id = "calcTable">
+</table>
+<div id = "equation">
+</div>
+<div class = "button" id = "publish">PUBLISH</div>
+<div id = "scroll">
+    
+</div>

@@ -1,0 +1,25 @@
+<a href = "..">Up a Level</a>
+<a href = "editor.php">editor.php</a>
+
+<textarea id="textIO"></textarea> 
+<table id = "calcTable">
+    <tr>
+        <td>Ic[A]:</td><td><input/></td><td>Ic[$\mu$A]:</td><td><input/></td><td>Ic[nA]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>A[$\mu m^2$]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>Jc[$A/cm^2$]:</td><td><input/></td><td>Jc[$\mu A/\mu m^2$]:</td><td><input/></td>
+    </tr>
+</table>
+<div id = "equation">
+$$J_C = \frac{I_C}{A}$$
+$$I_C = J_CA$$
+
+$$1 \textrm{A/cm}^2\left(\frac{1\times10^6 \mu A}{1 A}\right)\left(\frac{1 cm^2}{1\times10^8 \mu m^2}\right) = \frac{1}{100}\mu A/\mu m^2$$
+</div>
+<div class = "button" id = "publish">PUBLISH</div>
+<div id = "scroll">
+    
+</div>

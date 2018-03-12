@@ -1,0 +1,22 @@
+
+C = 1;
+L = 1;
+f = 1e-9*(1/(2*Math.PI))*Math.sqrt(1/(L*1e-9*C*1e-12));
+
+data = {
+    "C":1,
+    "L":1,
+    "f":1
+}
+
+inputs = document.getElementById("calcTable").getElementsByTagName("input");
+
+feeddata = JSON.parse("[" + document.getElementById("datadiv").innerHTML +"]")
+
+document.getElementById("scroll").innerHTML = "";
+for(var index = 0;index < feeddata.length;index++){
+    document.getElementById("scroll").innerHTML += "<p>";
+    document.getElementById("scroll").innerHTML += "L = " + formatsci(feeddata[index].L) + "nH<br/>";
+    document.getElementById("scroll").innerHTML += "C= " + formatsci(feeddata[index].C) + "pF<br/>";
+    document.getElementById("scroll").innerHTML += "f = " + formatsci(feeddata[index].f) + "GHz<br/></p>";
+}

@@ -1,0 +1,26 @@
+
+T = 1;
+B = 1;
+kb = 1.38e-23; 
+P = 4*kb*T*B*1e6*1000;
+Pdbm = 10*Math.log10(P);
+
+data = {
+    "T":1,
+    "B":1,
+    "P":1,
+    "Pdbm":1
+}
+
+inputs = document.getElementById("calcTable").getElementsByTagName("input");
+
+feeddata = JSON.parse("[" + document.getElementById("datadiv").innerHTML +"]")
+
+document.getElementById("scroll").innerHTML = "";
+for(var index = 0;index < feeddata.length;index++){
+    document.getElementById("scroll").innerHTML += "<p>";
+    document.getElementById("scroll").innerHTML += "T = " + formatsci(feeddata[index].T) + "K<br/>";
+    document.getElementById("scroll").innerHTML += "B = " + formatsci(feeddata[index].B) + "MHz<br/>";
+    document.getElementById("scroll").innerHTML += "P = " + formatsci(feeddata[index].P) + "mW";
+    document.getElementById("scroll").innerHTML += " = " + feeddata[index].Pdbm.toString() + " dBm<br/></p>";
+}

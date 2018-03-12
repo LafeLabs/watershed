@@ -1,0 +1,40 @@
+ 
+ 
+ inputs[0].onchange = function(){
+    IA = parseFloat(this.value);
+    ImuA = IA*1000;
+    InA = ImuA*1000;
+    Rn = Math.PI*Delta/(2*ImuA);
+    redraw();
+ }
+ inputs[1].onchange = function(){
+    ImuA = parseFloat(this.value);
+    InA = ImuA*1000;
+    IA = ImuA/1000;
+    Rn = Math.PI*Delta/(2*ImuA);
+    redraw();     
+ }
+ inputs[2].onchange = function(){
+    InA = parseFloat(this.value);
+    ImuA = InA/1000;
+    IA = ImuA/1000;
+    Rn = Math.PI*Delta/(2*ImuA);
+    redraw();     
+ }
+ inputs[3].onchange = function(){
+    Rn = parseFloat(this.value);
+    ImuA = Math.PI*Delta/(2*Rn);
+    IA = ImuA/1000;
+    InA = ImuA*1000;
+    redraw();
+ }
+ 
+ document.getElementById("publish").onclick = function(){
+     
+    data = encodeURIComponent(document.getElementById("textIO").value);
+    var httpc = new XMLHttpRequest();
+    var url = "feedsaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data);//send text to feedsaver.php
+ }

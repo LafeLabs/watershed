@@ -1,0 +1,29 @@
+ 
+ 
+ inputs[0].onchange = function(){
+    A = parseFloat(this.value);
+    t = parseFloat(inputs[1].value);
+    C = 1e9*epsilonrel*epsilon0*A/t;    redraw();
+ }
+ inputs[1].onchange = function(){
+    A = parseFloat(inputs[0].value);
+    t = parseFloat(this.value);
+    C = 1e9*epsilonrel*epsilon0*A/t;    redraw();     
+ }
+ inputs[2].onchange = function(){
+    C = parseFloat(this.value);
+    t = parseFloat(inputs[1].value);
+    A = 1e-9*t*C/(epsilonrel*epsilon0);
+    redraw();     
+ }
+
+ 
+ document.getElementById("publish").onclick = function(){
+     
+    data = encodeURIComponent(document.getElementById("textIO").value);
+    var httpc = new XMLHttpRequest();
+    var url = "feedsaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data);//send text to feedsaver.php
+ }

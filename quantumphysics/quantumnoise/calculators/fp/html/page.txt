@@ -1,0 +1,23 @@
+<a href = "..">Up a Level</a>
+<a href = "editor.php">editor.php</a>
+
+<textarea id="textIO"></textarea> 
+<table id = "calcTable">
+    <tr>
+        <td>L[nH]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>C[pF]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>f[GHz]:</td><td><input/></td>
+    </tr>
+</table>
+<div id = "equation">
+$$f = \frac{1}{2\pi}\sqrt{\frac{1}{LC}}$$
+$$C = \frac{1}{4\pi^2f^2 L}$$
+</div>
+<div class = "button" id = "publish">PUBLISH</div>
+<div id = "scroll">
+    
+</div>

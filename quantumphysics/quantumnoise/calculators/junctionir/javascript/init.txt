@@ -1,0 +1,28 @@
+
+InA = 100;
+ImuA = InA/1000;
+IA = ImuA/1000;
+Delta = 180;
+Rn = Math.PI*Delta/(2*ImuA);
+
+data = {
+    "InA":1,
+    "ImuA":1,
+    "IA":1,
+    "Delta":1,
+    "Rn":1
+}
+
+inputs = document.getElementById("calcTable").getElementsByTagName("input");
+
+feeddata = JSON.parse("[" + document.getElementById("datadiv").innerHTML +"]")
+
+document.getElementById("scroll").innerHTML = "";
+for(var index = 0;index < feeddata.length;index++){
+    document.getElementById("scroll").innerHTML += "<p>";
+    document.getElementById("scroll").innerHTML += "$I_c$ = " + formatsci(feeddata[index].IA) + " A";
+    document.getElementById("scroll").innerHTML += " = " + formatsci(feeddata[index].ImuA) + " $\\mu$A";
+    document.getElementById("scroll").innerHTML += " = " + formatsci(feeddata[index].InA) + " nA<br/>";
+    document.getElementById("scroll").innerHTML += "$\\Delta$ = " + feeddata[index].Delta.toString() + " $\\mu$eV<br/>";
+    document.getElementById("scroll").innerHTML += "$R_n$ = " + formatsci(feeddata[index].Rn) + " $\\Omega$<br/></p>";    
+}

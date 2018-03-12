@@ -1,0 +1,39 @@
+buttons[0].onclick = function(){
+    feedData[feedIndex]= JSON.parse(document.getElementById("JSONtext").value);
+    redraw();
+}
+
+
+buttons[1].onclick = function(){//save SVG
+    var httpc = new XMLHttpRequest();
+    var url = "feedsaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpc.send("data=" + document.getElementById("SVGtext").value);//send text to svgsaver.php
+}
+
+
+inputs[0].onchange = function(){
+    feedData[feedIndex].sigma = parseFloat(this.value);
+    redraw();
+}
+inputs[1].onchange = function(){
+    feedData[feedIndex].height = parseFloat(this.value);
+    redraw();
+}
+inputs[2].onchange = function(){
+    feedData[feedIndex].width = parseFloat(this.value);
+    redraw();
+}
+inputs[3].onchange = function(){
+    feedData[feedIndex].N = parseFloat(this.value);
+    redraw();
+}
+inputs[4].onchange = function(){
+    feedData[feedIndex].lineWidth = this.value;
+    redraw();
+}
+inputs[5].onchange = function(){
+    feedData[feedIndex].color = this.value;
+    redraw();
+}

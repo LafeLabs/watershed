@@ -1,0 +1,23 @@
+<a href = "editor.php">editor.php</a>
+<a href = "..">up to plotters</a>
+<canvas id="mainCanvas"></canvas>
+<textarea id="textIO"></textarea> 
+<table id = "calcTable">
+    <tr>
+        <td>T[pixels]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>G[pixels/pixels]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>range[pixels]:</td><td><input/></td>
+    </tr>
+</table>
+<div id = "equation">
+$$P = Gx\coth{\frac{x}{T}}$$
+
+</div>
+<div class = "button" id = "publish">PUBLISH</div>
+<div id = "scroll">
+    
+</div>

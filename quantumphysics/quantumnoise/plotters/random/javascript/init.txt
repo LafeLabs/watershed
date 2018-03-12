@@ -1,0 +1,18 @@
+
+feedData = JSON.parse("[" + document.getElementById("feedData").innerHTML + "]");
+feedIndex = 0;
+currentStroke = "black";
+inputs = document.getElementById("mainControl").getElementsByTagName("INPUT");
+buttons = document.getElementsByClassName("buttonrow");
+for(label in feedData[feedIndex]){
+    var newtr = document.createElement("TR");
+    var newtd = document.createElement("TD");
+    newtd.innerHTML = label;
+    newtr.appendChild(newtd);
+    var newtd = document.createElement("TD");
+    var newinput = document.createElement("INPUT");
+    newtd.appendChild(newinput);
+    newinput.value = feedData[feedIndex][label];
+    newtr.appendChild(newtd);
+    document.getElementById("mainControl").appendChild(newtr);
+}

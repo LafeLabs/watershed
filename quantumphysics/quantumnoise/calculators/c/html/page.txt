@@ -1,0 +1,24 @@
+<a href = "..">Up a Level</a>
+<a href = "editor.php">editor.php</a>
+
+
+<textarea id="textIO"></textarea> 
+<table id = "calcTable">
+    <tr>
+        <td>A[$\mu m^2$]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>t[nm]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>C[pF]:</td><td><input/></td>
+    </tr>
+</table>
+<div id = "equation">
+$$C = \epsilon_{rel}\epsilon_0\frac{A}{t}$$
+$$t = \epsilon_{rel}\epsilon_0\frac{A}{C}$$
+</div>
+<div class = "button" id = "publish">PUBLISH</div>
+<div id = "scroll">
+    
+</div>

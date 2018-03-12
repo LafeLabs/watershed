@@ -1,0 +1,76 @@
+ 
+ 
+ inputs[0].onchange = function(){
+    IA = parseFloat(this.value);
+    ImuA = IA*1000;
+    InA = ImuA*1000;
+    A = parseFloat(inputs[3].value);
+    Acm = A/1e8;
+    JcA = IA/Acm;
+    JcmuA = ImuA/A;
+
+    redraw();
+ }
+ inputs[1].onchange = function(){
+    ImuA = parseFloat(this.value);
+    InA = ImuA*1000;
+    IA = ImuA/1000;
+    A = parseFloat(inputs[3].value);
+    Acm = A/1e8;
+    JcA = IA/Acm;
+    JcmuA = ImuA/A;
+
+    redraw();     
+ }
+ inputs[2].onchange = function(){
+    InA = parseFloat(this.value);
+    ImuA = InA/1000;
+    IA = ImuA/1000;
+    A = parseFloat(inputs[3].value);
+    Acm = A/1e8;
+    JcA = IA/Acm;
+    JcmuA = ImuA/A;
+    redraw();     
+ }
+ inputs[3].onchange = function(){
+    A = parseFloat(this.value);
+    Acm = A/1e8;
+    JcA = parseFloat(inputs[4].value);
+    JcmuA = JcA/100;
+    ImuA = JcmuA*A;
+    IA = ImuA/1000;
+    InA = ImuA*1000;
+    console.log(ImuA);
+    redraw();
+ }
+ inputs[4].onchange = function(){
+    JcA = parseFloat(this.value);
+    A = parseFloat(inputs[3].value)
+    Acm = A/1e8;
+    JcmuA = JcA/100;
+    ImuA = JcmuA*A;
+    IA = ImuA/1000;
+    InA = ImuA*1000;
+    redraw();
+ }
+
+ inputs[5].onchange = function(){
+    JcmuA = parseFloat(this.value);
+    JcA = JcmuA*100;
+    A = parseFloat(inputs[3].value)
+    Acm = A/1e8;
+    IcmuA = JcmuA*A;
+    IA = ImuA/1000;
+    InA = ImuA*1000;
+    redraw();
+ }
+ 
+ document.getElementById("publish").onclick = function(){
+     
+    data = encodeURIComponent(document.getElementById("textIO").value);
+    var httpc = new XMLHttpRequest();
+    var url = "feedsaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data);//send text to feedsaver.php
+ }

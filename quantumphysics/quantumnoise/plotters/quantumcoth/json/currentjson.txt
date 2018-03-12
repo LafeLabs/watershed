@@ -1,0 +1,14 @@
+{
+    "glyph": "",
+    "table": [],
+    "currentAddress": "0250",
+    "unit": 100,
+    "x0": 683,
+    "y0": 400,
+    "x0rel": 0.09,
+    "y0rel": 0.665,
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1.5,
+    "imgtop": -1
+}

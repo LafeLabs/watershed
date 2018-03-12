@@ -1,0 +1,32 @@
+
+<ul id = "linklist">
+<li><a href = "editor.php">editor.php</a></li>
+<li><a href = "..">up to quantum noise</a></li>
+<li><a href = "classicalcoth/">classicalcoth/</a></li>
+<li><a href = "quantumcoth/">quantumcoth/</a></li>
+<li><a href = "fermi/">fermi/</a></li>
+<li><a href = "random/">random/</a></li>
+
+</ul>
+
+<canvas id="mainCanvas"></canvas>
+<textarea id="textIO"></textarea> 
+<table id = "calcTable">
+    <tr>
+        <td>T[pixels]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>G[pixels/pixels]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>range[pixels]:</td><td><input/></td>
+    </tr>
+</table>
+<div id = "equation">
+$$P = Gx\coth{\frac{x}{T}}$$
+
+</div>
+<div class = "button" id = "publish">PUBLISH</div>
+<div id = "scroll">
+    
+</div>

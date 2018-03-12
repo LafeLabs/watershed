@@ -10,3 +10,6 @@
 <div class = "box" id = "box0603">
 <a href = "trashrobot/">trashrobot/</a>
 </div>
+<div class = "box" id = "box0604">
+<a href = "philosophy/">philosophy/</a>
+</div>

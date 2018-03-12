@@ -1,0 +1,32 @@
+function formatsci(inputFloat){
+    var instring = inputFloat.toExponential(2);
+    var outstring = "";
+    if(instring.split("e").length > 0){
+        outstring = "$" + instring.split("e")[0] + " \\times 10^{" + instring.split("e")[1] + "}$";
+    }
+    else{
+        outstring = instring;
+    }
+    return outstring;
+}
+
+function xcothx(inputFloat){
+    if(inputFloat != 0){
+        return inputFloat/Math.tanh(inputFloat);
+    }
+    else{
+        return 1;
+    }
+}
+
+function randomcurve(){
+    y = 0.5*feedData[feedIndex].height - feedData[feedIndex].sigma*gauss();  
+}
+
+function gauss(){
+	var u1 = Math.random();
+	var u2 = Math.random();
+	var z1 = Math.sqrt(-2*Math.log(u1))*Math.cos(2*Math.PI*u2);
+	var z2 = Math.sqrt(-2*Math.log(u1))*Math.sin(2*Math.PI*u2);
+	return z1;
+}

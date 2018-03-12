@@ -1,0 +1,47 @@
+doTheThing(06);//import embedded hypercube in this .html doc
+doTheThing(07);//initialize Geometron global variables
+    document.getElementById("mainCanvas").width = innerWidth;
+    document.getElementById("mainCanvas").height = innerHeight;
+
+    x0 = innerWidth/2;
+    y0 = innerHeight/2;    
+
+controls = document.getElementById("controlTable").getElementsByTagName("input");   
+imagedata = document.getElementById("imageTable").getElementsByTagName("input");
+
+boxes = document.getElementsByClassName("box");
+
+currentAddress = 0250;
+currentGlyph = currentTable[currentAddress] + ",0207,";
+
+
+unit = 100;
+
+currentJSON = JSON.parse(document.getElementById("jsondata").innerHTML);
+data05xx = JSON.parse(document.getElementById("imagedata").innerHTML);
+for(var index = 0;index < data05xx.length;index++){
+    var newimg = document.createElement("IMG");    
+    newimg.src = data05xx[index].url;    
+    newimg.id = "img" + data05xx[index].address;    
+    newimg.style.display = "none";
+    document.getElementById("page").appendChild(newimg);
+}
+
+currentAddress = parseInt(currentJSON.currentAddress,8);
+currentTable[currentAddress] = currentJSON.glyph;
+currentGlyph = currentTable[currentAddress] + ",0207,";
+
+unit = currentJSON.unit;
+x0 = currentJSON.x0;
+y0 = currentJSON.y0;
+imagedata[0].value = currentJSON.imgurl;
+imagedata[1].value = currentJSON.imgw.toString();
+imagedata[2].value = currentJSON.imgleft.toString();
+imagedata[3].value = currentJSON.imgtop.toString();
+
+for(var index = 0;index < currentJSON.table.length;index++){
+    var localAddress = parseInt(currentJSON.table[index].split(":")[0],8);
+    var localGlyph = currentJSON.table[index].split(":")[1];
+    currentTable[localAddress] = localGlyph;
+}
+

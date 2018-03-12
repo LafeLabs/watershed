@@ -1,0 +1,27 @@
+ 
+ 
+ inputs[0].onchange = function(){
+    T = parseFloat(this.value);
+    B = parseFloat(inputs[1].value);
+    P = 4*kb*T*B*1e6*1000;
+    Pdbm = 10*Math.log10(P);
+    redraw();
+ }
+ inputs[1].onchange = function(){
+    T = parseFloat(inputs[0].value);
+    B = parseFloat(this.value);
+    P = 4*kb*T*B*1e6*1000;
+    Pdbm = 10*Math.log10(P);
+    redraw();
+ }
+
+ 
+ document.getElementById("publish").onclick = function(){
+     
+    data = encodeURIComponent(document.getElementById("textIO").value);
+    var httpc = new XMLHttpRequest();
+    var url = "feedsaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data);//send text to feedsaver.php
+ }

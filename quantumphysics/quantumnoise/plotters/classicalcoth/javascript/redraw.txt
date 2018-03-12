@@ -1,0 +1,34 @@
+
+plotWidth = 2*range;
+plotHeight = range*G;
+ 
+currentSVG = "<svg width=\"" + plotWidth.toString() + "\" height=\"" + plotHeight.toString() + "\" viewbox = \"0 0 " + plotWidth.toString() + " " + plotHeight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
+document.getElementById("mainCanvas").width = plotWidth;
+    document.getElementById("mainCanvas").height = plotHeight;
+    ctx = document.getElementById("mainCanvas").getContext("2d");
+    ctx.clearRect(0, 0, plotWidth,plotHeight);
+    ctx.lineWidth = 2;
+    ctx.strokeStyle="black";
+    ctx.beginPath();	
+ 
+x0 = range;
+y0 = range*G;
+x = 0;
+    y = plotHeight - G*T*xcothx((x - x0)/T);
+currentSVG += "	<path d = \"M";
+currentSVG += Math.round(x).toString() + " ";
+currentSVG += Math.round(y).toString() + " ";
+
+
+for(x = 1;x < plotWidth;x++){
+
+    ctx.moveTo(x-1,y);
+    y = plotHeight - G*T*xcothx((x - x0)/T);
+    ctx.lineTo(x,y);
+    currentSVG += "L" + x + " " + y + " ";
+}
+currentStroke = "black";
+currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"2\" fill = \"" + "none" + "\" "+"/>";
+currentSVG += "</svg>";
+ctx.stroke();
+document.getElementById("textIO").value = currentSVG;

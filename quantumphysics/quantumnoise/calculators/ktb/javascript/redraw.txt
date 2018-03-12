@@ -1,0 +1,13 @@
+
+
+inputs[0].value = T.toExponential(2);
+inputs[1].value = B.toExponential(2);
+inputs[2].value = P.toExponential(2);
+inputs[3].value = Pdbm.toFixed(2);
+
+data.T = parseFloat(inputs[0].value);
+data.B = parseFloat(inputs[1].value);
+data.P = parseFloat(inputs[2].value);
+data.Pdbm = parseFloat(inputs[3].value);
+
+document.getElementById("textIO").value = JSON.stringify(data,null,"    ");
