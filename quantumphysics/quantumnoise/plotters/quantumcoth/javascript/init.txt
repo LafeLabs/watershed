@@ -1,12 +1,14 @@
 
 G = 1;
 T = 20;
-range = 200;
+f = 100;
+range = 400;
 
 inputs = document.getElementById("calcTable").getElementsByTagName("input");
 inputs[0].value = T.toString();
 inputs[1].value = G.toString();
 inputs[2].value = range.toString();
+inputs[3].value = f.toString();
 
 feedplots = document.getElementById("datadiv").getElementsByTagName("img");
 for(var index = 0;index < feedplots.length;index++){

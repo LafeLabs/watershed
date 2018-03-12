@@ -12,6 +12,10 @@
     range = parseFloat(this.value);
     redraw();     
  }
+ inputs[3].onchange = function(){
+    f = parseFloat(this.value);
+    redraw();     
+ }
 
  
  document.getElementById("publish").onclick = function(){

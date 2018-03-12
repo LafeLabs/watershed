@@ -1,0 +1,39 @@
+<canvas id="invisibleCanvas" style="display:none"></canvas>
+<canvas id="mainCanvas"></canvas>
+<textarea id="textIO"></textarea>
+<table id = "controlTable">
+    <tr>
+        <td>ADDRESS:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>ACTION:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>PRINT:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>STACK:</td><td><input/></td>
+    </tr>
+</table>
+<table id = "imageTable">
+    <tr>
+        <td>IMAGE URL:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE WIDTH:</td><td><input value = "2"/></td>
+    </tr>
+    <tr>
+        <td>IMAGE TOP:</td><td><input value  = "-1"/></td>
+    </tr>
+    <tr>
+        <td>IMAGE LEFT:</td><td><input value = "-1"/></td>
+    </tr>
+
+</table>
+<table id = "buttonTable">
+<tr><td class = "button" id = "savesvg">SAVE SVG</td></tr>
+<tr><td class = "button" id = "loadbytecode">LOAD BYTECODE</td></tr>
+<tr><td class = "button" id = "exportbytecode">EXPORT TABLE</td></tr>
+</table>
+<input id = "glyphspellinput"/>
+<img id = "mainImage"/>

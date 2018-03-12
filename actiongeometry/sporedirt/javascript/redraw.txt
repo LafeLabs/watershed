@@ -1,0 +1,27 @@
+        var glyphArray = currentGlyph.split(",");
+        currentTable[currentAddress] = "";
+        for(var index = 0;index < glyphArray.length;index++){
+            if(glyphArray[index] != "0207" && glyphArray[index].length > 0){
+                currentTable[currentAddress] += glyphArray[index] + ",";
+            }
+        }
+
+    ctx = document.getElementById("mainCanvas").getContext("2d");
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    doTheThing(0300);
+
+doTheThing(0300);
+drawGlyph(currentGlyph);
+controls[0].value = "0" + currentAddress.toString(8);
+
+x = 150;
+y = innerHeight-100;
+side = 25;
+spellGlyph(currentGlyph);
+document.getElementById("glyphspellinput").value = currentTable[currentAddress];
+
+document.getElementById("mainImage").style.width = (parseFloat(imagedata[1].value)*unit).toString()  + "px";
+document.getElementById("mainImage").style.left = (x0 + parseFloat(imagedata[3].value)*unit).toString()  + "px";
+document.getElementById("mainImage").style.top = (y0 + parseFloat(imagedata[2].value)*unit).toString()  + "px";
+
+

@@ -1,0 +1,24 @@
+<svg width="600" height="400" viewbox = "0 0 600 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<glyph>
+0336,0336,0336,0336,0331,0331,0331,0331,0331,0331,0331,0330,0330,0330,0331,0331,0337,0337,0337,0337,0210,0210,0331,0332,0337,0201,0350,0310,0335,0335,0335,0337,0201,0335,0335,0335,0336,0201,0335,0335,0335,0336,0201,0335,0335,0335,0336,0201,0334,0334,0334,0336,0201,0335,0335,0335,0336,0201,0334,0334,0334,0336,0201,0335,0335,0335,0336,0201,0334,0334,0334,0336,0201,0335,0335,0335,0336,0201,0334,0334,0334,0336,0201,0335,0335,0335,0336,0201,0334,0334,0334,0336,0201,0335,0335,0335,0336,0201,0334,0334,0334,0336,0201,
+</glyph>
+-->
+    <line x1="102" y1="395" x2="102" y2="-1" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="102" y1="-1" x2="498" y2="395" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="498" y1="395" x2="102" y2="395" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="102" y1="395" x2="300" y2="197" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="300" y1="197" x2="300" y2="395" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="300" y1="395" x2="399" y2="296" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="399" y1="296" x2="399" y2="395" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="399" y1="395" x2="449" y2="346" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="449" y1="346" x2="449" y2="395" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="449" y1="395" x2="473" y2="371" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="473" y1="371" x2="473" y2="395" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="473" y1="395" x2="486" y2="383" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="486" y1="383" x2="486" y2="395" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="486" y1="395" x2="492" y2="389" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="492" y1="389" x2="492" y2="395" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="492" y1="395" x2="495" y2="392" style="stroke:#00ff00;stroke-width:2" />
+</svg>

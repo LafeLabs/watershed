@@ -1,0 +1,17 @@
+doTheThing(06);//import embedded hypercube in this .html doc
+doTheThing(07);//initialize Geometron global variables
+    document.getElementById("mainCanvas").width = innerWidth;
+    document.getElementById("mainCanvas").height = innerHeight;
+
+    x0 = innerWidth/2;
+    y0 = innerHeight/2;    
+
+controls = document.getElementById("controlTable").getElementsByTagName("input");   
+
+
+currentAddress = 0220;
+currentGlyph = currentTable[currentAddress] + ",0207,";
+
+
+
+

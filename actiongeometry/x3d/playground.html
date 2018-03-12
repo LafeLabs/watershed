@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://www.x3dom.org/release/x3dom.js"></script>
+<link rel="stylesheet" href="https://www.x3dom.org/release/x3dom.css">
+</head>
+<body>
+<x3d id="mainx3d">
+<scene id="canvas3d">
+    <transform id = "cursortransform">
+    <shape> 
+        <appearance>
+            <material transparency="0.2" diffusecolor="0 0 0" emissivecolor="0 1 0"></material> 
+            <lineproperties linewidthscalefactor="3"></lineproperties>
+        </appearance> 
+        <indexedlineset coordindex="0 1 2 3 0 -1 4 5 6 7 4 -1 0 4 -1 1 5 -1 2 6 -1 3 7 -1">
+            <coordinate point="
+            1 1 1 
+            1 -1 1 
+            1 -1 -1 
+            1 1 -1 
+            -1 1 1 
+            -1 -1 1 
+            -1 -1 -1 
+            -1 1 -1">
+            </coordinate>
+        </indexedlineset> 
+    </shape>
+    </transform>    
+    </scene>    
+</x3d> 
+<x3d id="littlebox">
+    <scene id="boxscene">
+        <transform translation = "0 1 0">
+        <shape> 
+            <appearance>
+                <material transparency="0" diffusecolor="1 0 0" ></material> 
+            </appearance> 
+            <cone height="1" bottomradius="0.25"/>
+        </shape>    
+        </transform>
+        <transform rotation = "1 0 0 3.14159" translation = "0 -1 0">
+        <shape> 
+            <appearance>
+                <material transparency="0" diffusecolor="1 0 0" ></material> 
+            </appearance> 
+            <cone height="1" bottomradius="0.25"/>
+        </shape>    
+        </transform>
+
+    <transform rotation = "1 0 0 1.571">
+        <transform translation = "0 1 0">
+                <shape> 
+                    <appearance>
+                        <material transparency="0" diffusecolor="0 1 0" ></material> 
+                    </appearance> 
+                    <cone height="1" bottomradius="0.25"/>
+                </shape>    
+        </transform>
+        <transform rotation = "1 0 0 3.14159" translation = "0 -1 0">
+                <shape> 
+                    <appearance>
+                        <material transparency="0" diffusecolor="0 1 0" ></material> 
+                    </appearance> 
+                    <cone height="1" bottomradius="0.25"/>
+                </shape>    
+        </transform>
+    </transform>        
+    <transform rotation = "0 0 1 1.571">
+            <transform translation = "0 1 0">
+                    <shape> 
+                        <appearance>
+                            <material transparency="0" diffusecolor="0 0 1" ></material> 
+                        </appearance> 
+                        <cone height="1" bottomradius="0.25"/>
+                    </shape>    
+            </transform>
+            <transform rotation = "1 0 0 3.14159" translation = "0 -1 0">
+                    <shape> 
+                        <appearance>
+                            <material transparency="0" diffusecolor="0 0 1" ></material> 
+                        </appearance> 
+                        <cone height="1" bottomradius="0.25"/>
+                    </shape>    
+            </transform>
+        </transform>        
+        <transform translation = "0 2 0" rotation = "0 0 1 1.571">
+            <transform translation = "0 0.5 0">
+                    <shape> 
+                        <appearance>
+                            <material transparency="0" diffusecolor="1 0 1" ></material> 
+                        </appearance> 
+                        <cone height="1" bottomradius="0.5"/>
+                    </shape>    
+            </transform>
+            <transform rotation = "1 0 0 3.14159" translation = "0 -0.5 0">
+                    <shape> 
+                        <appearance>
+                            <material transparency="0" diffusecolor="1 0 1" ></material> 
+                        </appearance> 
+                        <cone height="1" bottomradius="0.5"/>
+                    </shape>    
+            </transform>
+        </transform>        
+        <transform translation = "0 -2 0" rotation = "0 0 1 1.571">
+                <transform translation = "0 -0.5 0">
+                        <shape> 
+                            <appearance>
+                                <material transparency="0" diffusecolor="0 1 1" ></material> 
+                            </appearance> 
+                            <cone height="1" bottomradius="0.5"/>
+                        </shape>    
+                </transform>
+                <transform rotation = "1 0 0 3.14159" translation = "0 0.5 0">
+                        <shape> 
+                            <appearance>
+                                <material transparency="0" diffusecolor="0 1 1" ></material> 
+                            </appearance> 
+                            <cone height="1" bottomradius="0.5"/>
+                        </shape>    
+                </transform>
+            </transform>        
+            
+        <transform translation = "-2 0 0" rotation = "0 0 1 1.571">
+            <shape>
+                <appearance>
+                    <material transparency="0" diffusecolor="1 0 0" ></material> 
+                </appearance>
+                <box size = "1 1 1"/>
+            </shape>
+        </transform>
+        <transform translation = "3 0 0" rotation = "0 0 1 1.571">
+                <shape>
+                    <appearance>
+                        <material transparency="0" diffusecolor="1 0 0" ></material> 
+                    </appearance>
+                    <box size = "0.5 0.5 0.5"/>
+                </shape>
+                <transform translation = "0.5 0 0">
+                    <shape>
+                        <appearance>
+                            <material transparency="0" diffusecolor="1 0.5 0" ></material> 
+                        </appearance>
+                        <box size = "0.5 0.5 0.5"/>
+                    </shape>            
+                </transform>
+                <transform translation = "1 0 0">
+                        <shape>
+                            <appearance>
+                                <material transparency="0" diffusecolor="1 1 0" ></material> 
+                            </appearance>
+                            <box size = "0.5 0.5 0.5"/>
+                        </shape>            
+                    </transform>
+                    <transform translation = "1.5 0 0">
+                            <shape>
+                                <appearance>
+                                    <material transparency="0" diffusecolor="0 1 0" ></material> 
+                                </appearance>
+                                <box size = "0.5 0.5 0.5"/>
+                            </shape>            
+                        </transform>
+                        <transform translation = "2 0 0">
+                                <shape>
+                                    <appearance>
+                                        <material transparency="0" diffusecolor="0 0 1" ></material> 
+                                    </appearance>
+                                    <box size = "0.5 0.5 0.5"/>
+                                </shape>            
+                            </transform>                
+                            <transform translation = "2.5 0 0">
+                                    <shape>
+                                        <appearance>
+                                            <material transparency="0" diffusecolor="1 0 1" ></material> 
+                                        </appearance>
+                                        <box size = "0.5 0.5 0.5"/>
+                                    </shape>            
+                                </transform>
+
+                                
+        
+            </transform>
+    </scene>    
+</x3d>  
+<script>
+    x = 3;
+    y = 2;
+    z = 5;
+    side = 1;
+
+    document.getElementById("boxcontrol").onclick = function(){
+        var newshape = document.createElement("shape");
+        var newap = document.createElement("appearance");
+        var newmat = document.createElement("material");
+        newap.appendChild(newmat);
+        newmat.setAttribute('diffuseColor', '1 0 0');
+        newshape.appendChild(newap);
+        var newbox = document.createElement("box");
+        newbox.setAttribute('size', '1 1 1');;
+        newshape.appendChild(newbox);
+        var newtran= document.createElement("transform");
+        newtran.setAttribute("translation","3 0 0");
+        newtran.setAttribute("scale","1 1 1.78");
+        newtran.appendChild(newshape);
+        document.getElementById("canvas3d").appendChild(newtran);
+    }
+
+</script>
+
+<style>
+    #littlebox{
+        width:400px;
+        height:400px;
+        position:absolute;
+        left:10px;
+        top:100px;
+        border:solid;
+        border-color:#00ff00;
+    }
+    #mainx3d{
+        width:100%;
+    }
+    body{
+        background-color:black;
+    }
+</style>
+</body>
+</html>

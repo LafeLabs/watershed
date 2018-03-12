@@ -1,0 +1,64 @@
+unit = 40;
+    ctx = document.getElementById("mainCanvas").getContext("2d");
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    doTheThing(0300);
+
+x = 1.5*side;
+y = x;
+ drawKey("`~");
+ drawKey("1!");
+ drawKey("2@");
+ drawKey("3#");
+ drawKey("4$");
+ drawKey("5%");
+ drawKey("6^");
+ drawKey("7&");
+ drawKey("8*");
+ drawKey("9(");
+ drawKey("0)");
+ drawKey("-_");
+ drawKey("=+");
+
+x = 4.5*side;
+y = 3.5*side;
+ drawKey("qQ");
+ drawKey("wW");
+ drawKey("eE");
+ drawKey("rR");
+ drawKey("tT");
+ drawKey("yY");
+ drawKey("uU");
+ drawKey("iI");
+ drawKey("oO");
+ drawKey("pP");
+ drawKey("[{");
+ drawKey("]}");
+ drawKey("\\|");
+x = 5.5*side;
+y = 5.5*side;
+ drawKey("aA");
+ drawKey("sS");
+ drawKey("dD");
+ drawKey("fF");
+ drawKey("gG");
+ drawKey("hH");
+ drawKey("jJ");
+ drawKey("kK");
+ drawKey("lL");
+ drawKey(";:");
+ drawKey("\'\"");
+
+
+x = 6.5*side;
+y = 7.5*side;
+ drawKey("zZ");
+ drawKey("xX");
+ drawKey("cC");
+ drawKey("vV");
+ drawKey("bB");
+ drawKey("nN");
+ drawKey("mM");
+ drawKey(",<");
+ drawKey(".>");
+ drawKey("/?");
+

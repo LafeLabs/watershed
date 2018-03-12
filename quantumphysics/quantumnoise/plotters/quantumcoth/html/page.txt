@@ -12,10 +12,12 @@
     <tr>
         <td>range[pixels]:</td><td><input/></td>
     </tr>
+    <tr>
+        <td>f[pixels]:</td><td><input/></td>
+    </tr>
 </table>
 <div id = "equation">
-$$P = Gx\coth{\frac{x}{T}}$$
-
+$$P = G\left[\frac{1}{2}(x - f)\coth{\frac{x - f}{T}} + \frac{1}{2}(x + f)\coth{\frac{x + f}{T}} \right]$$
 </div>
 <div class = "button" id = "publish">PUBLISH</div>
 <div id = "scroll">

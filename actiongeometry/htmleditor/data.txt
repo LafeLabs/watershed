@@ -1,0 +1,5 @@
+    <p>paragraph1</p>
+    <img src = "https://i.imgur.com/8aswOX5.jpg"/>
+    <p>paragraph2</p>
+    <img src = "https://i.imgur.com/4h0JdwW.jpg"/>
+    <p>paragraph3</p>

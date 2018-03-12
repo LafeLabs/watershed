@@ -1,0 +1,63 @@
+ #textIO{
+    position:absolute;
+    width:100px;
+    height:100px;
+    left:0px;
+    bottom:0px;
+    border:solid;
+}
+#mainCanvas{
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+#controlTable{
+    font-family:courier;
+    font-size:18;
+    position:absolute;
+    right:15px;
+    top:15px;
+}
+#controlTable input{
+    width:3em;
+    font-family:courier;
+}
+.button{
+    position:absolute;
+    left:25%;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    font-family:courier;
+    cursor:pointer;
+    border:solid;
+    border-radius:0.5em;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+#savesvg{
+    bottom:1%;
+}
+#loadbytecode{
+    bottom:10%;
+}
+#exportbytecode{
+    bottom:10%;
+    left:10%;
+}
+#keyboardlink{
+    position:absolute;
+    right:5%;
+    bottom:5%;
+}
+#glyphspellinput{
+    position:absolute;
+    top:20px;
+    left:50px;
+    right:150px;
+    font-family:courier;
+    font-size:16px;
+    
+}

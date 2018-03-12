@@ -14,7 +14,9 @@ document.getElementById("mainCanvas").width = plotWidth;
 x0 = range;
 y0 = range*G;
 x = 0;
-    y = plotHeight - G*T*xcothx((x - x0)/T);
+
+y = plotHeight - G*( 0.5*T*xcothx((x - x0 - f)/T) + 0.5*T*xcothx((x - x0 + f)/T));
+    
 currentSVG += "	<path d = \"M";
 currentSVG += Math.round(x).toString() + " ";
 currentSVG += Math.round(y).toString() + " ";
@@ -23,7 +25,9 @@ currentSVG += Math.round(y).toString() + " ";
 for(x = 1;x < plotWidth;x++){
 
     ctx.moveTo(x-1,y);
-    y = plotHeight - G*T*xcothx((x - x0)/T);
+//    y = plotHeight - G*T*xcothx((x - x0)/T);
+y = plotHeight - G*( 0.5*T*xcothx((x - x0 - f)/T) + 0.5*T*xcothx((x - x0 + f)/T));
+
     ctx.lineTo(x,y);
     currentSVG += "L" + x + " " + y + " ";
 }

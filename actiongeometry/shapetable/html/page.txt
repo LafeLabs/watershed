@@ -1,0 +1,22 @@
+<canvas id="invisibleCanvas" style="display:none"></canvas>
+<canvas id="mainCanvas"></canvas>
+<textarea id="textIO"></textarea>
+<table id = "controlTable">
+    <tr>
+        <td>ADDRESS:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>ACTION:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>PRINT:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>STACK:</td><td><input/></td>
+    </tr>
+</table>
+<div class = "button" id = "savesvg">SAVE SVG</div>
+<div class = "button" id = "loadbytecode">LOAD BYTECODE</div>
+<div class = "button" id = "exportbytecode">EXPORT TABLE</div>
+<a id  = "keyboardlink" href = "shapetable.svg">shapetable.svg</a>
+<input id = "glyphspellinput"/>

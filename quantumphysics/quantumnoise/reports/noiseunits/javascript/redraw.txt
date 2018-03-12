@@ -1,0 +1,72 @@
+for(var index = 0;index < data05xx.length;index++){
+    document.getElementById("img" + data05xx[index].address).style.display = "none";
+}
+
+
+
+for(var index = 0;index < boxes.length;index++){
+    boxes[index].style.display = "none";
+}
+
+        var glyphArray = currentGlyph.split(",");
+        currentTable[currentAddress] = "";
+        for(var index = 0;index < glyphArray.length;index++){
+            if(glyphArray[index] != "0207" && glyphArray[index].length > 0){
+                currentTable[currentAddress] += glyphArray[index] + ",";
+            }
+        }
+
+    ctx = document.getElementById("mainCanvas").getContext("2d");
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    doTheThing(0300);
+
+doTheThing(0300);
+drawGlyph(currentGlyph);
+controls[0].value = "0" + currentAddress.toString(8);
+doTheThing(0300);
+
+x = 150;
+y = innerHeight-100;
+side = 25;
+spellGlyph(currentGlyph);
+document.getElementById("glyphspellinput").value = currentTable[currentAddress];
+
+document.getElementById("mainImage").style.width = (parseFloat(imagedata[1].value)*unit).toString()  + "px";
+document.getElementById("mainImage").style.left = (x0 + parseFloat(imagedata[3].value)*unit).toString()  + "px";
+document.getElementById("mainImage").style.top = (y0 + parseFloat(imagedata[2].value)*unit).toString()  + "px";
+
+        currentJSON.glyph = currentTable[currentAddress];
+        currentJSON.unit = unit;
+        currentJSON.x0 = x0;
+        currentJSON.y0 = y0;
+        currentJSON.x0rel = (x0 - 0.5*innerWidth)/unit;
+        currentJSON.y0rel = (y0 - 0.5*innerHeight)/unit;
+        currentJSON.imgurl = imagedata[0].value;
+        currentJSON.imgw = parseFloat(imagedata[1].value);
+        currentJSON.imgleft = parseFloat(imagedata[2].value);
+        currentJSON.imgtop = parseFloat(imagedata[3].value);
+
+currentJSON.currentAddress = "0" + currentAddress.toString(8);
+
+currentJSON.table = [];
+        for(var index = 0;index < currentTable.length;index++){
+            if(currentTableStart[index] != currentTable[index] || fullCube){
+                currentJSON.table.push("0" + index.toString(8) + ":" + currentTable[index]);
+            }
+        }
+
+
+    jsondata = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+jsondata+"&filename="+"json/currentjson.txt");//send text to filesaver.php
+
+if(currentJSON.imgurl.length > 5){
+    document.getElementById("mainImage").style.display = "block";
+    document.getElementById("mainImage").src = currentJSON.imgurl;
+}
+else{
+    document.getElementById("mainImage").style.display = "none";
+}

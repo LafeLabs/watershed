@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>X3D</title>
+</head>
+<body>
+        <a href = "http://www.actiongeometry.org">www.actiongeometry.org</a>
+
+<H2>X3D</H2>
+<h4>FOAMCORE MODELS WITH NUMBERED VERTICES:</h4>
+<P><IMG SRC = "https://i.imgur.com/pcjMcio.jpg"/></P>
+<P><IMG SRC = "https://i.imgur.com/9hFEm18.jpg"/></P>
+<h4>X3D DOCUMENTATION LINKS:</h4>
+<p>
+<ul>
+    <li><a href = "https://www.x3dom.org">https://www.x3dom.org</a></li>
+    <li><a href = "https://www.x3dom.org/examples/">https://www.x3dom.org/examples/</a></li>
+    <li><a href = "http://edutechwiki.unige.ch/en/X3D_grouping_and_transforms">http://edutechwiki.unige.ch/en/X3D_grouping_and_transforms</a></li>    
+    <li><a href = "http://www2.it.nuigalway.ie/~sredfern/CT404/03.pdf">http://www2.it.nuigalway.ie/~sredfern/CT404/03.pdf</a></li>
+</ul>
+</p>
+<div id = "datadiv"style = "display:none"><script src="https://www.x3dom.org/release/x3dom.js"></script>
+<link rel="stylesheet" href="https://www.x3dom.org/release/x3dom.css">
+
+<x3d id = "mainx3d" >
+        <scene id = "canvas3d">
+
+            <transform rotation = "1 0 0 1.571">
+                <shape> 
+                    <appearance>
+                        <material  transparency='0.5' /> 
+                    </appearance>         
+                    <Cylinder height="0.02" radius="1"/>                              
+            </shape>              
+        </transform>        
+
+        <transform id = "base" translation = "0 -0.5 0">
+                <shape> 
+                    <appearance>
+                        <material  /> 
+                    </appearance>         
+                    <Cylinder height="1" radius="1"/>                              
+            </shape>              
+        </transform>        
+
+        <transform translation = "0 0.125 0">
+                <shape> 
+                    <appearance>
+                        <material  transparency='0.5' diffusecolor="1 0 0" emissivecolor="1 0 0"/> 
+                    </appearance>         
+                    <Cylinder height="0.02" radius="0.217"/>                              
+                </shape>          
+            </transform>        
+            <transform translation = "0 0.192 0">
+                <shape> 
+                    <appearance>
+                        <material  transparency='0.5' diffusecolor="0 1 0" emissivecolor="0 1 0"/> 
+                    </appearance>         
+                    <Cylinder height="0.02" radius="0.272"/>                              
+                </shape>          
+            </transform>        
+            <transform translation = "0 0.354 0">
+                <shape> 
+                    <appearance>
+                        <material  transparency='0.5' diffusecolor="0 0 1" emissivecolor="0 0 1"/> 
+                    </appearance>         
+                    <Cylinder height="0.02" radius="0.354"/>                              
+                </shape>          
+            </transform>        
+
+
+    <transform id = "phi0" rotation = "0 1 0 0"> 
+        <transform id = "theta0" rotation = "0 0 1 -.4"> 
+            <transform translation = "0 0.5 0">
+                <shape> 
+                    <appearance>
+                        <material diffusecolor="1 0 0" emissivecolor="1 0 0"/> 
+                    </appearance>         
+                    <cone height="1" bottomRadius="0.05"/>                              
+                </shape>          
+            </transform>
+        </transform>         
+    </transform>         
+    <transform id = "phi1" rotation = "0 1 0 1"> 
+        <transform id = "theta1" scale = "0.5 0.5 0.5" rotation = "0 0 1 -.9"> 
+            <transform translation = "0 0.5 0">
+                <shape> 
+                    <appearance>
+                        <material diffusecolor="0 1 0" emissivecolor="0 1 0"/> 
+                    </appearance>         
+                    <cone height="1" bottomRadius="0.05"/>                              
+                </shape>          
+            </transform>
+        </transform>         
+    </transform>         
+    <transform id = "phi2" rotation = "0 1 0 0"> 
+            <transform id = "theta2" scale = "0.5 0.5 0.5" rotation = "0 0 1 -.9"> 
+                <transform translation = "0 0.5 0">
+                    <shape> 
+                        <appearance>
+                            <material diffusecolor="0 0 1" emissivecolor="0 0 1"/> 
+                        </appearance>         
+                        <cone height="1" bottomRadius="0.05"/>                              
+                    </shape>          
+                </transform>
+            </transform>         
+        </transform>         
+                    
+
+        <transform  id = "zerophase" scale = "0.25 0.25 0.25"> 
+            <transform translation = "0 0.5 0">
+                <shape> 
+                    <appearance>
+                        <material diffusecolor="1 0 1" emissivecolor="1 0 1"/> 
+                    </appearance>         
+                    <cone height="1" bottomRadius="0.05"/>                              
+                </shape>          
+            </transform>
+        </transform>         
+    
+        </scene>    
+    </x3d>
+    <x3d id = "mainx3d" >
+            <scene id = "canvas3d">
+                    <shape> 
+                            <appearance>
+     
+                            <material transparency='0.2' diffuseColor='0 0 0'emissiveColor='0 1 0' ></material> 
+                            <LineProperties  linewidthScaleFactor='3' ></LineProperties>
+                              </appearance> 
+    
+                              <IndexedLineSet coordIndex='0 1 -1 0 8 1 10 0 -1 2 3 -1 2 11 3 9 2 -1 8 9 -1 7 9 5 8 7 -1 10 11 -1 10 6 11 4 10 -1 7 6 -1 6 0 7 2 6 -1 4 5 -1 4 1 5 3 4 -1'>
+                                    <Coordinate point='
+                                    -1 0 1.61803 
+                                    1 0 1.61803 
+                                    -1 0 -1.61803 
+                                    1 0 -1.61803 
+                                    1.61803 -1 0
+                                    1.61803 1 0
+                                    -1.61803 -1 0
+                                    -1.61803 1 0
+                                    0 1.61803 1 
+                                    0 1.61803 -1 
+                                    0 -1.61803 1 
+                                    0 -1.61803 -1'/>
+                            
+                            </IndexedLineSet> 
+                    </shape>    
+            </scene>    
+        </x3d>
+</div>
+<h4>SAMPLE X3D CODE:</h4>
+
+<p><textarea id = "text1"></textarea></p>
+
+<script>
+document.getElementById("text1").value = document.getElementById("datadiv").innerHTML;
+</script>
+<style>
+
+body{
+    background-color:black;
+    color:#00ff00;
+    font-family:courier;
+    margin:1em 1em 1em 1em;
+    font-size:1.2em;
+}
+textarea{
+    background-color:black;
+    color:#00ff00;
+    font-family:courier;
+    margin:1em 1em 1em 1em;
+    font-size:16px;    
+    border:solid;
+    border-color:#00ff00;
+    width:80%;
+    height:80em;
+}
+a{
+    color:#00ff00;
+}
+img{
+    width:50%;
+    margin:auto;
+    display:block;
+}
+p,h2,H4{
+    text-align:center;
+}
+
+</style>
+</body>
+</html>
+

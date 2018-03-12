@@ -1,0 +1,27 @@
+<svg width="600" height="400" viewbox = "0 0 600 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<glyph>
+0331,0335,0337,0337,0342,0335,0335,0342,0335,0336,0336,0332,0337,0341,0333,0341,0340,0332,0340,0333,0336,0332,0337,0337,0342,0336,0336,0341,0333,0341,0332,0340,0330,0340,0341,0335,0201,0335,0201,0331,0340,0335,0335,0331,0326,0200,0330,
+</glyph>
+-->
+    <line x1="300" y1="233" x2="631" y2="233" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="300" y1="233" x2="-31" y2="233" style="stroke:#00ff00;stroke-width:2" />
+    <circle cx="217" cy = "233" r = "165.2892561983471" stroke = "#00ff00" stroke-width = "2" fill = "none" />
+    <circle cx="383" cy = "233" r = "165.2892561983471" stroke = "#00ff00" stroke-width = "2" fill = "none" />
+<circle cx="383" cy = "233" r = "3" stroke = "#00ff00" stroke-width = "2" fill = "#00ff00" />
+<circle cx="217" cy = "233" r = "3" stroke = "#00ff00" stroke-width = "2" fill = "#00ff00" />
+    <line x1="300" y1="233" x2="300" y2="-98" style="stroke:#00ff00;stroke-width:2" />
+    <circle cx="300" cy = "233" r = "82.64462809917354" stroke = "#00ff00" stroke-width = "2" fill = "none" />
+    <circle cx="383" cy = "233" r = "82.64462809917354" stroke = "#00ff00" stroke-width = "2" fill = "none" />
+<circle cx="300" cy = "233" r = "3" stroke = "#00ff00" stroke-width = "2" fill = "#00ff00" />
+<circle cx="300" cy = "150" r = "3" stroke = "#00ff00" stroke-width = "2" fill = "#00ff00" />
+    <circle cx="300" cy = "150" r = "82.64462809917354" stroke = "#00ff00" stroke-width = "2" fill = "none" />
+    <line x1="300" y1="150" x2="383" y2="150" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="383" y1="150" x2="383" y2="233" style="stroke:#00ff00;stroke-width:2" />
+<circle cx="383" cy = "150" r = "3" stroke = "#00ff00" stroke-width = "2" fill = "#00ff00" />
+    <line x1="383" y1="233" x2="383" y2="150" style="stroke:blue;stroke-width:2" />
+    <line x1="383" y1="150" x2="300" y2="150" style="stroke:blue;stroke-width:2" />
+    <line x1="300" y1="150" x2="300" y2="233" style="stroke:blue;stroke-width:2" />
+    <line x1="300" y1="233" x2="383" y2="233" style="stroke:blue;stroke-width:2" />
+</svg>

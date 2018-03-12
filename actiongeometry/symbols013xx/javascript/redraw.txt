@@ -1,0 +1,25 @@
+unit = 60;
+    ctx = document.getElementById("mainCanvas").getContext("2d");
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    doTheThing(0300);
+
+for(var yindex = 0;yindex < 8;yindex++){
+    x = 1.5*side;
+    y = x + yindex*side;
+    for(var xindex = 0;xindex < 8;xindex++){
+        derp = "03" + yindex.toString() + xindex.toString() + ","; 
+        spellGlyph(derp);
+    }
+}
+
+ x = 1.5*side;
+ y = x;
+ spellGlyph("0300,0177,0177,0177,0304,0305,0306,0177,");
+ x = 1.5*side;
+ y = x + side;
+ spellGlyph("0310,0311,0312,0313,0314,0315,0316,0317,");
+ x = 1.5*side;
+ y = x + 2*side;
+ spellGlyph("0320,0321,0322,0323,0324,0325,0326,0327,");
+ 
+

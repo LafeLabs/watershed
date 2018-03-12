@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>6 ANTIPRISM</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    processEscapes: true
+  }
+});//			MathJax.Hub.Typeset();//tell Mathjax to update the math
+</script>
+
+<script src="https://www.x3dom.org/release/x3dom.js">
+     //https://www.x3dom.org/examples/
+    //http://edutechwiki.unige.ch/en/X3D_grouping_and_transforms
+    //http://www2.it.nuigalway.ie/~sredfern/CT404/03.pdf
+</script>
+ <link rel="stylesheet" href="https://www.x3dom.org/release/x3dom.css">
+</head>
+<body>
+        <a href = "http://www.actiongeometry.org">www.actiongeometry.org</a>
+
+<H2>6-ANTIPRISM</H2>
+<h4>NET</h4>
+<P>
+    <IMG SRC = "antiprism6net.svg"/>
+</P>
+
+<h4>X3D:</h4>
+<div id = "x3dbox">
+    <x3d id = "mainx3d" >
+        <scene id = "canvas3d">
+                <shape> 
+                        <appearance>
+                        <material transparency='0.2' diffuseColor='0 0 0'emissiveColor='0 1 0' ></material> 
+                        <LineProperties  linewidthScaleFactor='3' ></LineProperties>
+                          </appearance> 
+                          <IndexedLineSet coordIndex='
+                          0 1 2 3 4 5 0 -1
+                          6 7 8 9 10 11 6 -1 
+                          0 6 1 7 2 8 3 9 4 10 5 11 0 -1
+                          '>
+                                <Coordinate point='
+                                0 2 -1
+                                1.7321 1 -1
+                                1.7321 -1 -1
+                                0 -2 -1
+                                -1.7321 -1 -1
+                                -1.7321 1 -1
+                                1 1.7321 1
+                                2 0 1
+                                1 -1.7321 1
+                                -1 -1.7321 1
+                                -2 0 1
+                                -1 1.7321 1
+                                '/>
+                        </IndexedLineSet> 
+                        
+                </shape>    
+        </scene>    
+    </x3d>
+</div>
+<h4>X3D code:</h4>
+<p>
+<textarea id = "codeIO"></textarea>
+</p>
+<p>
+    $$(0, \pm 2,-1)$$
+    $$(\pm \sqrt{3}, \pm 1,-1)$$
+    $$(\pm 2,0,1)$$
+    $$(\pm 1,\pm \sqrt{3},1)$$
+
+</p>
+<script>
+document.getElementById("codeIO").value = document.getElementById("x3dbox").innerHTML;
+</script>
+<style>
+body{
+    background-color:black;
+    color:#00ff00;
+    font-family:courier;
+    margin:1em 1em 1em 1em;
+    font-size:1.2em;
+}
+textarea{
+    background-color:black;
+    color:#00ff00;
+    font-family:courier;
+    font-size:16px;
+    border:solid;    
+    border-color:#00ff00;
+    width:50%;
+    height:100px;
+}
+#mainx3d{
+    float:right;
+    width:50%;
+    height:500px;
+    border:solid;
+    border-color:#00ff00;
+    border-radius:50px;
+    margin-left:25%;
+    margin-right:25%;
+}
+a{
+    color:#00ff00;
+}
+img{
+    width:50%;
+    margin:auto;
+    display:block;
+}
+p,h2,H4{
+    text-align:center;
+}
+
+
+</style>
+</body>
+</html>

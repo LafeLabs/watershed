@@ -1,0 +1,46 @@
+<svg width="600" height="400" viewbox = "0 0 600 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<glyph>
+0331,0333,0333,0337,0200,0332,0311,0334,0336,0201,0335,0337,0201,0335,0336,0201,0335,0333,0200,0335,0335,0331,0333,0311,0336,0331,0332,0336,0332,0337,0335,0335,0331,0200,0335,0335,0333,0336,0331,0336,0331,0337,0333,0200,0330,0336,0200,0330,0334,0330,0336,0200,0337,0331,0335,0337,0337,0331,0337,0350,0335,0337,0343,0334,0336,0336,0330,0334,0337,0343,0334,0336,0336,0330,0334,0337,0343,0334,0336,0336,0330,0334,0337,0343,0334,0336,0336,0330,0334,0337,0343,0334,0336,0336,0330,0334,0337,0343,0334,0334,0335,0336,0336,0330,0334,0337,0343,0335,0304,0200,0335,0333,0333,0333,0333,
+</glyph>
+-->
+    <line x1="543" y1="346" x2="543" y2="54" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="543" y1="54" x2="250" y2="54" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="250" y1="54" x2="250" y2="346" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="250" y1="346" x2="543" y2="346" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="250" y1="346" x2="69" y2="346" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="69" y1="346" x2="69" y2="54" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="69" y1="54" x2="250" y2="54" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="69" y1="54" x2="69" y2="235" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="69" y1="235" x2="250" y2="235" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="250" y1="235" x2="250" y2="54" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="250" y1="54" x2="69" y2="54" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="69" y1="235" x2="69" y2="346" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="69" y1="346" x2="181" y2="346" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="181" y1="346" x2="181" y2="235" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="181" y1="235" x2="69" y2="235" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="250" y1="346" x2="250" y2="277" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="250" y1="277" x2="181" y2="277" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="181" y1="277" x2="181" y2="346" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="181" y1="346" x2="250" y2="346" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="250" y1="277" x2="250" y2="235" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="250" y1="235" x2="207" y2="235" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="207" y1="235" x2="207" y2="277" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="207" y1="277" x2="250" y2="277" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="207" y1="235" x2="181" y2="235" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="181" y1="235" x2="181" y2="261" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="181" y1="261" x2="207" y2="261" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="207" y1="261" x2="207" y2="235" style="stroke:#00ff00;stroke-width:2" />
+  <path d="M249.9999999999984 53.58999999999946           A292.82000000000016 292.82000000000016 0 0 1 542.8200000000008 346.4099999999978" fill = "none" stroke = "#00ff00" stroke-width = "2" />
+  <path d="M69.02728741425551 234.56271258574552           A180.97271258574432 180.97271258574432 0 0 1 249.9999999999984 53.58999999999946" fill = "none" stroke = "#00ff00" stroke-width = "2" />
+  <path d="M180.8745748285126 346.4100000000003           A111.84728741425586 111.84728741425586 0 0 1 69.0272874142555 234.56271258574552" fill = "none" stroke = "#00ff00" stroke-width = "2" />
+  <path d="M250.00000000000028 277.2845748285109           A69.12542517148846 69.12542517148846 0 0 1 180.8745748285126 346.4100000000003" fill = "none" stroke = "#00ff00" stroke-width = "2" />
+  <path d="M207.2781377572326 234.5627125857441           A42.72186224276739 42.72186224276739 0 0 1 250.0000000000003 277.2845748285111" fill = "none" stroke = "#00ff00" stroke-width = "2" />
+  <path d="M180.87457482851175 260.9662755144652           A26.40356292872106 26.40356292872106 0 0 1 207.2781377572326 234.56271258574412" fill = "none" stroke = "#00ff00" stroke-width = "2" />
+  <path d="M197.19287414255803 277.2845748285115           A16.31829931404633 16.31829931404633 0 0 1 180.87457482851175 260.9662755144652" fill = "none" stroke = "#00ff00" stroke-width = "2" />
+    <line x1="197" y1="261" x2="181" y2="261" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="181" y1="261" x2="181" y2="277" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="181" y1="277" x2="197" y2="277" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="197" y1="277" x2="197" y2="261" style="stroke:#00ff00;stroke-width:2" />
+</svg>

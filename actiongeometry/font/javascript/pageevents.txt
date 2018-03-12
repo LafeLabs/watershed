@@ -1,0 +1,25 @@
+ document.getElementById("loadbytecode").onclick = function(){
+  
+    var inputbytecode = document.getElementById("textIO").value;
+    var bytecodearray = inputbytecode.split("\n");
+    for(var index = 0;index < bytecodearray.length;index++){
+        if(bytecodearray[index].includes(":")){
+            var localBytecode = bytecodearray[index].split(":");
+            var localAddress = parseInt(localBytecode[0],8);
+            currentTable[localAddress] = localBytecode[1];
+        }
+    }
+    redraw();
+ }
+ 
+ document.getElementById("savesvg").onclick = function(){
+        currentSVG = "<svg width=\"" + innerWidth.toString() + "\" height=\"" + innerHeight.toString() + "\" viewbox = \"0 0 " + innerWidth.toString() + " " + innerHeight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
+        redraw();
+        currentSVG += "</svg>";
+        document.getElementById("textIO").value = currentSVG;
+        var httpc = new XMLHttpRequest();
+        var url = "svgsaver.php";        
+        httpc.open("POST", url, true);
+        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        httpc.send("data=" + encodeURIComponent(document.getElementById("textIO").value));//send text to saver.php
+ }

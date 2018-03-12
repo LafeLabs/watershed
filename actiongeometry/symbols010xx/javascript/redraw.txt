@@ -1,0 +1,15 @@
+unit = 60;
+    ctx = document.getElementById("mainCanvas").getContext("2d");
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    doTheThing(0300);
+
+for(var yindex = 1;yindex < 4;yindex++){
+    x = 1.5*side;
+    y = x + yindex*side;
+    for(var xindex = 0;xindex < 8;xindex++){
+        derp = "0" + yindex.toString() + xindex.toString() + ","; 
+        spellGlyph(derp);
+    }
+}
+
+

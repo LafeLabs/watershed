@@ -1,0 +1,14 @@
+<svg width="600" height="400" viewbox = "0 0 600 400"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<glyph>
+0335,0331,0333,0305,0334,0337,0311,0342,0335,0342,0334,0330,0335,0350,0335,0336,0201,0335,0201,0334,0334,0334,0334,0337,0201,0334,0334,0334,0201,
+</glyph>
+-->
+    <line x1="200" y1="300" x2="262" y2="110" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="200" y1="300" x2="400" y2="300" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="262" y1="110" x2="362" y2="182" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="362" y1="182" x2="400" y2="300" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="400" y1="300" x2="462" y2="110" style="stroke:#00ff00;stroke-width:2" />
+    <line x1="462" y1="110" x2="262" y2="110" style="stroke:#00ff00;stroke-width:2" />
+</svg>

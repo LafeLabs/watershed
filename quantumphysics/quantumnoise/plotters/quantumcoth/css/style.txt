@@ -21,9 +21,11 @@
 }
 #equation{
     position:absolute;
-    left:10%;
-    top:20%;
     font-size:24px;
+    z-index:-2;
+    bottom:10px;
+    width:100%;
+    text-align:center;
 }
 #publish{
     position:absolute;

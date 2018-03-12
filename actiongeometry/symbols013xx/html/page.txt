@@ -1,0 +1,6 @@
+<canvas id="invisibleCanvas" style="display:none"></canvas>
+<canvas id="mainCanvas"></canvas>
+<textarea id="textIO"></textarea>
+<div class = "button" id = "savesvg">SAVE SVG</div>
+<div class = "button" id = "loadbytecode">LOAD BYTECODE</div>
+<a id  = "keyboardlink" href = "symbols013xx.svg">symbols013xx.svg</a>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ICOSAHEDRON</title>
+<script src="https://www.x3dom.org/release/x3dom.js">
+     //https://www.x3dom.org/examples/
+    //http://edutechwiki.unige.ch/en/X3D_grouping_and_transforms
+    //http://www2.it.nuigalway.ie/~sredfern/CT404/03.pdf
+</script>
+ <link rel="stylesheet" href="https://www.x3dom.org/release/x3dom.css">
+</head>
+<body>
+        <a href = "http://www.actiongeometry.org">www.actiongeometry.org</a>
+
+<H2>ICOSAHEDRON</H2>
+<h4>NET</h4>
+<P>
+    <IMG SRC = "icosahedronnet.svg"/>
+</P>
+<p>
+    <a href = "icosahedron.stl">icosahedron.stl</a>
+</p>
+
+<h4>X3D:</h4>
+<div id = "x3dbox">
+    <x3d id = "mainx3d" >
+        <scene id = "canvas3d">
+                <shape> 
+                        <appearance>
+ 
+                        <material transparency='0.2' diffuseColor='0 0 0'emissiveColor='0 1 0' ></material> 
+                        <LineProperties  linewidthScaleFactor='3' ></LineProperties>
+                          </appearance> 
+
+                          <IndexedLineSet coordIndex='0 1 -1 0 8 1 10 0 -1 2 3 -1 2 11 3 9 2 -1 8 9 -1 7 9 5 8 7 -1 10 11 -1 10 6 11 4 10 -1 7 6 -1 6 0 7 2 6 -1 4 5 -1 4 1 5 3 4 -1'>
+                                <Coordinate point='
+                                -1 0 1.61803 
+                                1 0 1.61803 
+                                -1 0 -1.61803 
+                                1 0 -1.61803 
+                                1.61803 -1 0
+                                1.61803 1 0
+                                -1.61803 -1 0
+                                -1.61803 1 0
+                                0 1.61803 1 
+                                0 1.61803 -1 
+                                0 -1.61803 1 
+                                0 -1.61803 -1'/>
+                        
+                        </IndexedLineSet> 
+                </shape>    
+        </scene>    
+    </x3d>
+</div>
+<p>
+<img src = "https://upload.wikimedia.org/wikipedia/commons/9/9c/Icosahedron-golden-rectangles.svg"/>
+</p>
+
+<style>
+body{
+    background-color:black;
+    color:#00ff00;
+    font-family:courier;
+    margin:1em 1em 1em 1em;
+    font-size:1.2em;
+}
+textarea{
+    background-color:black;
+    color:#00ff00;
+    font-family:courier;
+    font-size:16px;
+    border:solid;    
+    border-color:#00ff00;
+}
+#mainx3d{
+    float:right;
+    width:50%;
+    height:500px;
+    border:solid;
+    border-color:#00ff00;
+    border-radius:50px;
+    margin-left:25%;
+    margin-right:25%;
+}
+a{
+    color:#00ff00;
+}
+img{
+    width:50%;
+    margin:auto;
+    display:block;
+}
+p,h2,H4{
+    text-align:center;
+}
+
+
+</style>
+</body>
+</html>
+
+
+
+<Appearance>
+<Material diffuseColor='0.2 0.5 0.8'/>
+</Appearance>

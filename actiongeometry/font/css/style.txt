@@ -1,0 +1,39 @@
+ #textIO{
+    position:absolute;
+    width:100px;
+    height:100px;
+    left:0px;
+    bottom:0px;
+    border:solid;
+}
+#mainCanvas{
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+.button{
+    position:absolute;
+    left:15%;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    font-family:courier;
+    cursor:pointer;
+    border:solid;
+    border-radius:0.5em;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+#savesvg{
+    bottom:1%;
+}
+#loadbytecode{
+    bottom:10%;
+}
+#keyboardlink{
+    position:absolute;
+    right:5%;
+    bottom:5%;
+}

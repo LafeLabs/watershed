@@ -1,0 +1,56 @@
+unit = 40;
+ctx = document.getElementById("mainCanvas").getContext("2d");
+ctx.clearRect(0,0,innerWidth,innerHeight);
+doTheThing(0300);
+
+y = 2*side;
+
+    for(var xindex = 0;xindex < 8;xindex++){
+        x = 13.5*side + xindex*side;
+        doTheThing(060 + parseInt(xindex,8));
+        drawGlyph("0336,0336,0330,0365,0331,0337,0337,");
+    }
+
+
+y = 2*side;
+for(var yindex = 4;yindex < 8;yindex++){
+    y += side;
+
+    x = 12*side;
+    drawGlyph("060,");
+    doTheThing(060 + parseInt(yindex,8));
+    drawGlyph(string2byteCode("x"));
+    drawGlyph("0336,0336,0330,0365,0331,0337,0337,");
+    x = 13*side;
+    for(var xindex = 0;xindex < 8;xindex++){
+        x = 13*side + xindex*side;
+        derp = "0" + yindex.toString() + xindex.toString() + ","; 
+        drawGlyph("0333,0200,0332,0336,0336,0336,0330,0333,0330,0337,0365,");
+        doTheThing(parseInt(derp,8));
+        drawGlyph("0365,0333,0337,");
+        spellGlyph(derp);
+        drawGlyph("0336,0336,0331,0331,0333,0337,0337,0337,");
+    }
+}
+
+for(var yindex = 0;yindex < 8;yindex++){
+    y += side;
+
+    x = 12*side;
+    drawGlyph("060,061,");
+    doTheThing(060 + parseInt(yindex,8));
+    drawGlyph(string2byteCode("x"));
+    drawGlyph("0336,0336,0330,0365,0331,0337,0337,");
+    x = 13*side;
+
+    for(var xindex = 0;xindex < 8;xindex++){
+        x = 13*side + xindex*side;
+        derp = "01" + yindex.toString() + xindex.toString() + ","; 
+        drawGlyph("0333,0200,0332,0336,0336,0336,0330,0333,0330,0337,0365,");
+        doTheThing(parseInt(derp,8));
+        drawGlyph("0365,0333,0337,");
+        spellGlyph(derp);
+        drawGlyph("0336,0336,0331,0331,0333,0337,0337,0337,");
+    }
+}
+
