@@ -45,3 +45,13 @@ for(var index = 0;index < currentJSON.table.length;index++){
     currentTable[localAddress] = localGlyph;
 }
 
+calcinputs = document.getElementById("calcTable").getElementsByTagName("input");
+latlon0  = "38.8895, -77.0352";
+latlon1 = "38.8941, -77.0229";
+unitfeet = 555;
+name0 = "washingtonmonument";
+name1 = "navymemorial";
+nameunit = "wm";//washington monument unit, 555 feet
+
+
+

@@ -39,4 +39,41 @@
 <input id = "glyphspellinput"/>
 <img id = "mainImage"/>
 
+<table id = "calcTable">
+    <tr>
+        <td>latlon0:</td><td><input value = "38.8895, -77.0352"/></td>
+    </tr>
+    <tr>
+        <td>latlon1:</td><td><input value = "38.8941, -77.0229"/></td>
+    </tr>
+    <tr>
+        <td>distance[feet]</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>unit[feet]</td><td><input value = "555"/></td>
+    </tr>
+    <tr>
+        <td>distance[units]</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>(x,y)[feet]</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>(x,y)[units]</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>name0</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>name1</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>nameunit</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>glyph</td><td><input/></td>
+    </tr>
+</table>
+
+
 

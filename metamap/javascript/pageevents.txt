@@ -198,6 +198,7 @@ document.getElementById("glyphspellinput").onchange = function(){
     
 imagedata[0].onchange = function(){
     document.getElementById("mainImage").src = this.value;
+    redraw();
 }
     
 imagedata[1].onchange = function(){
@@ -207,5 +208,14 @@ imagedata[2].onchange = function(){
     redraw();
 }
 imagedata[3].onchange = function(){
+    redraw();
+}
+calcinputs[0].onchange = function(){
+    redraw();
+}
+calcinputs[1].onchange = function(){
+    redraw();
+}
+calcinputs[3].onchange = function(){
     redraw();
 }

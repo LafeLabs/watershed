@@ -26,21 +26,28 @@
     top:0px;
 }
 #controlTable{
-    right:15px;
+    left:15px;
     top:15px;
 }
 #imageTable{
     left:15px;
-    top:15px;
+    top:8em;
 }
 #imageTable input{
     width:5em;
+    font-family:courier;
+}
+#calcTable input{
     font-family:courier;
 }
 table{
     font-family:courier;
     font-size:18;
     position:absolute;
+}
+#calcTable{
+    right:1em;
+    top:1em;
 }
 #controlTable input{
     width:3em;

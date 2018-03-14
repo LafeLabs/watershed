@@ -6,11 +6,11 @@
     "currentAddress": "0250",
     "unit": 100,
     "x0": 683,
-    "y0": 400,
+    "y0": 450,
     "x0rel": 0,
-    "y0rel": 0.64,
+    "y0rel": 1.14,
     "imgurl": "",
-    "imgw": 2,
-    "imgleft": -1.5,
-    "imgtop": -1
+    "imgw": 5,
+    "imgleft": -3.75,
+    "imgtop": -1.5
 }
