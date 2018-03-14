@@ -1,7 +1,7 @@
 <div class = "box" id = "box0600">
-<a href = "circuits/">circuits/</a>
+
 </div>
 <div class = "box" id = "box0604">
-    <a href = "../">back up to watershed/</a>
+    <a href = "../">back up to circuits/</a>
 </div>
 
