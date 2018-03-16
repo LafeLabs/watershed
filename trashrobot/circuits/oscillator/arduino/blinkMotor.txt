@@ -1,0 +1,24 @@
+/*
+blinkMotor
+public domain
+blink the motor pin, pin 6 on the oscillator shield board
+
+glyph:0335,0336,0201,0334,0201,0335,0201,0335,0201,0334,0201,0334,0201,0335,0201,0335,0201,0334,0201,0335,0334,0334,0201,0335,0201,0335,0201,0334,0201,0334,0201,0335,0201,0335,0201,0334,0334,0332,0332,0332,0332,0332,0332,0332,0332,0337,
+
+
+*/
+
+int motorPin = 6;
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin 6 as an output.
+  pinMode(motorPin, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(motorPin, HIGH);   // turn the motor on (HIGH is the voltage level)
+  delay(1000);              // wait for a second
+  digitalWrite(motorPin, LOW);    // turn the motor off by making the voltage LOW
+  delay(1000);              // wait for a second
+}

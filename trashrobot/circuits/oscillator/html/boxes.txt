@@ -1,5 +1,5 @@
 <div class = "box" id = "box0600">
-
+    <a href = "svg/">SVG feed/</a>
 </div>
 <div class = "box" id = "box0604">
     <a href = "../">back up to circuits/</a>

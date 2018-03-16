@@ -1,0 +1,29 @@
+<svg width="1363" height="671" viewbox = "0 0 1363 671"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "glyph": "0336,0341,0352,0245,0245,0245,0245,0245,0335,0335,0335,0245,0245,0245,0245,0335,0335,0330,0336,0336,0336,0304,0334,0336,0306,0330,0335,0335,0337,0362,0203,0335,0335,0203,0335,0335,0203,0363,0336,0331,0304,0335,0337,0337,0337,0337,0331,0352,0334,0334,0304,0337,",
+    "unit": 214.3588810000002,
+    "x0": 683,
+    "y0": 300,
+    "x0rel": 0.006997610703145995,
+    "y0rel": -0.1656101199744552,
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1.5,
+    "imgtop": -1
+}
+</json>
+-->
+    <circle cx="683" cy = "300" r = "107.1794405000001" stroke = "#000000" stroke-width = "2" fill = "none" />
+    <line x1="683" y1="166" x2="683" y2="139" style="stroke:#000000;stroke-width:2" />
+    <line x1="750" y1="184" x2="763" y2="161" style="stroke:#000000;stroke-width:2" />
+    <line x1="799" y1="233" x2="822" y2="220" style="stroke:#000000;stroke-width:2" />
+    <line x1="817" y1="300" x2="844" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="799" y1="367" x2="822" y2="380" style="stroke:#000000;stroke-width:2" />
+    <line x1="567" y1="367" x2="544" y2="380" style="stroke:#000000;stroke-width:2" />
+    <line x1="549" y1="300" x2="522" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="567" y1="233" x2="544" y2="220" style="stroke:#000000;stroke-width:2" />
+    <line x1="616" y1="184" x2="603" y2="161" style="stroke:#000000;stroke-width:2" />
+	<path d = "M772 241 L786 241 L779 252 L772 241 Z" stroke = "#000000" stroke-width = "2" fill = "#000000" /></svg>

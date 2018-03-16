@@ -1,0 +1,18 @@
+/*
+Get analog value, compare to start value, send down serial
+*/
+  int sensorPin = A0; //define input pin as analog input A0
+  int x = 0;
+  int x0=0;
+
+ void setup() {
+  Serial.begin(9600);
+  x0 = analogRead(sensorPin);
+ }
+
+void loop() {
+  x = analogRead(sensorPin) - x0;//get current analog value, compare to start value
+  Serial.println(x);
+  delay(10);//delay by 10 ms to keep sample rate at 0.1 kHz
+  
+}

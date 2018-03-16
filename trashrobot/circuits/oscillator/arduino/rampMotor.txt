@@ -1,0 +1,26 @@
+/*
+rampMotor
+
+public domain
+ramp up from zero to max, drop back to zero, repeat
+*/
+
+int motorPin = 6; // motor pin
+int motorSpeed = 0;
+int deltat = 10;//delay time in ms between steps
+
+// the setup routine runs once when you press reset:
+void setup() {
+  // declare pin 6 to be an output:
+  pinMode(motorPin, OUTPUT);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  analogWrite(motorPin, motorSpeed);
+  motorSpeed++;
+  if (motorSpeed == 255) {
+    motorSpeed = 0;
+  }
+  delay(deltat);
+}

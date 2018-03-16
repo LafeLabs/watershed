@@ -1,0 +1,127 @@
+<svg width="1363" height="671" viewbox = "0 0 1363 671"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "glyph": "0241,0337,0331,0331,0336,0330,0337,0333,0242,",
+    "unit": 133.10000000000005,
+    "x0": 483,
+    "y0": 450,
+    "x0rel": -1.4913598797896312,
+    "y0rel": 0.8602554470323062,
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1.5,
+    "imgtop": -1
+}
+</json>
+-->
+    <line x1="350" y1="450" x2="350" y2="417" style="stroke:blue;stroke-width:2" />
+    <circle cx="350" cy = "408" r = "8.318750000000003" stroke = "blue" stroke-width = "2" fill = "none" />
+    <circle cx="350" cy = "358" r = "8.318750000000003" stroke = "blue" stroke-width = "2" fill = "none" />
+    <line x1="350" y1="350" x2="350" y2="317" style="stroke:blue;stroke-width:2" />
+    <line x1="350" y1="400" x2="326" y2="377" style="stroke:blue;stroke-width:2" />
+    <line x1="350" y1="317" x2="350" y2="284" style="stroke:green;stroke-width:2" />
+    <circle cx="350" cy = "275" r = "8.318750000000003" stroke = "green" stroke-width = "2" fill = "none" />
+    <circle cx="350" cy = "225" r = "8.318750000000003" stroke = "green" stroke-width = "2" fill = "none" />
+    <line x1="350" y1="217" x2="350" y2="184" style="stroke:green;stroke-width:2" />
+    <line x1="350" y1="267" x2="350" y2="234" style="stroke:green;stroke-width:2" />
+    <line x1="350" y1="184" x2="483" y2="184" style="stroke:black;stroke-width:2" />
+    <line x1="483" y1="184" x2="616" y2="184" style="stroke:black;stroke-width:2" />
+    <line x1="616" y1="184" x2="616" y2="217" style="stroke:blue;stroke-width:2" />
+    <circle cx="616" cy = "225" r = "8.318750000000003" stroke = "blue" stroke-width = "2" fill = "none" />
+    <circle cx="616" cy = "275" r = "8.318750000000003" stroke = "blue" stroke-width = "2" fill = "none" />
+    <line x1="616" y1="284" x2="616" y2="317" style="stroke:blue;stroke-width:2" />
+    <line x1="616" y1="234" x2="640" y2="257" style="stroke:blue;stroke-width:2" />
+    <line x1="616" y1="317" x2="616" y2="350" style="stroke:green;stroke-width:2" />
+    <circle cx="616" cy = "358" r = "8.318750000000003" stroke = "green" stroke-width = "2" fill = "none" />
+    <circle cx="616" cy = "408" r = "8.318750000000003" stroke = "green" stroke-width = "2" fill = "none" />
+    <line x1="616" y1="417" x2="616" y2="450" style="stroke:green;stroke-width:2" />
+    <line x1="616" y1="367" x2="616" y2="400" style="stroke:green;stroke-width:2" />
+    <line x1="616" y1="450" x2="483" y2="450" style="stroke:black;stroke-width:2" />
+    <line x1="483" y1="450" x2="350" y2="450" style="stroke:black;stroke-width:2" />
+<circle cx="483" cy = "450" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="483" y1="450" x2="483" y2="517" style="stroke:black;stroke-width:2" />
+    <line x1="483" y1="517" x2="500" y2="517" style="stroke:black;stroke-width:2" />
+    <line x1="500" y1="517" x2="483" y2="533" style="stroke:black;stroke-width:2" />
+    <line x1="483" y1="533" x2="466" y2="517" style="stroke:black;stroke-width:2" />
+    <line x1="466" y1="517" x2="483" y2="517" style="stroke:black;stroke-width:2" />
+    <line x1="483" y1="184" x2="483" y2="117" style="stroke:black;stroke-width:2" />
+    <circle cx="483" cy = "84" r = "33.27500000000001" stroke = "black" stroke-width = "2" fill = "none" />
+    <text x="466" y = "101" fill = "black" font-size = "33.27500000000001px" font-family = "futura">V</text>
+<circle cx="350" cy = "317" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="350" y1="317" x2="416" y2="317" style="stroke:black;stroke-width:2" />
+    <line x1="416" y1="317" x2="450" y2="317" style="stroke:black;stroke-width:2" />
+    <circle cx="483" cy = "317" r = "33.27500000000001" stroke = "black" stroke-width = "2" fill = "none" />
+    <line x1="516" y1="317" x2="550" y2="317" style="stroke:black;stroke-width:2" />
+    <line x1="550" y1="317" x2="616" y2="317" style="stroke:black;stroke-width:2" />
+<circle cx="616" cy = "317" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <text x="466" y = "334" fill = "black" font-size = "33.27500000000001px" font-family = "futura">M</text>
+    <line x1="466" y1="167" x2="400" y2="167" style="stroke:green;stroke-width:2" />
+	<path d = "M400 167 L408 175 L408 167 L408 159 L400 167 Z" stroke = "green" stroke-width = "2" fill = "green" />    <line x1="400" y1="167" x2="333" y2="167" style="stroke:green;stroke-width:2" />
+	<path d = "M333 167 L342 175 L342 167 L342 159 L333 167 Z" stroke = "green" stroke-width = "2" fill = "green" />    <line x1="333" y1="167" x2="333" y2="234" style="stroke:green;stroke-width:2" />
+	<path d = "M333 234 L342 225 L333 225 L325 225 L333 234 Z" stroke = "green" stroke-width = "2" fill = "green" />    <line x1="333" y1="234" x2="333" y2="300" style="stroke:green;stroke-width:2" />
+	<path d = "M333 300 L342 292 L333 292 L325 292 L333 300 Z" stroke = "green" stroke-width = "2" fill = "green" />    <line x1="333" y1="300" x2="400" y2="300" style="stroke:green;stroke-width:2" />
+	<path d = "M400 300 L391 292 L391 300 L391 309 L400 300 Z" stroke = "green" stroke-width = "2" fill = "green" />    <line x1="400" y1="300" x2="466" y2="300" style="stroke:green;stroke-width:2" />
+	<path d = "M466 300 L458 292 L458 300 L458 309 L466 300 Z" stroke = "green" stroke-width = "2" fill = "green" />    <line x1="466" y1="300" x2="533" y2="300" style="stroke:green;stroke-width:2" />
+	<path d = "M533 300 L525 292 L525 300 L525 309 L533 300 Z" stroke = "green" stroke-width = "2" fill = "green" />    <line x1="533" y1="300" x2="599" y2="300" style="stroke:green;stroke-width:2" />
+	<path d = "M599 300 L591 292 L591 300 L591 309 L599 300 Z" stroke = "green" stroke-width = "2" fill = "green" />    <line x1="599" y1="300" x2="599" y2="367" style="stroke:green;stroke-width:2" />
+	<path d = "M599 367 L608 358 L599 358 L591 358 L599 367 Z" stroke = "green" stroke-width = "2" fill = "green" />    <line x1="599" y1="367" x2="599" y2="433" style="stroke:green;stroke-width:2" />
+	<path d = "M599 433 L608 425 L599 425 L591 425 L599 433 Z" stroke = "green" stroke-width = "2" fill = "green" />    <line x1="599" y1="433" x2="533" y2="433" style="stroke:green;stroke-width:2" />
+	<path d = "M533 433 L541 442 L541 433 L541 425 L533 433 Z" stroke = "green" stroke-width = "2" fill = "green" />    <line x1="533" y1="433" x2="466" y2="433" style="stroke:green;stroke-width:2" />
+	<path d = "M466 433 L475 442 L475 433 L475 425 L466 433 Z" stroke = "green" stroke-width = "2" fill = "green" />    <line x1="466" y1="433" x2="466" y2="500" style="stroke:green;stroke-width:2" />
+	<path d = "M466 500 L475 492 L466 492 L458 492 L466 500 Z" stroke = "green" stroke-width = "2" fill = "green" />    <line x1="799" y1="433" x2="799" y2="400" style="stroke:blue;stroke-width:2" />
+    <circle cx="799" cy = "392" r = "8.318750000000003" stroke = "blue" stroke-width = "2" fill = "none" />
+    <circle cx="799" cy = "342" r = "8.318750000000003" stroke = "blue" stroke-width = "2" fill = "none" />
+    <line x1="799" y1="334" x2="799" y2="300" style="stroke:blue;stroke-width:2" />
+    <line x1="799" y1="383" x2="799" y2="350" style="stroke:blue;stroke-width:2" />
+    <line x1="799" y1="300" x2="799" y2="267" style="stroke:green;stroke-width:2" />
+    <circle cx="799" cy = "259" r = "8.318750000000003" stroke = "green" stroke-width = "2" fill = "none" />
+    <circle cx="799" cy = "209" r = "8.318750000000003" stroke = "green" stroke-width = "2" fill = "none" />
+    <line x1="799" y1="200" x2="799" y2="167" style="stroke:green;stroke-width:2" />
+    <line x1="799" y1="250" x2="776" y2="227" style="stroke:green;stroke-width:2" />
+    <line x1="799" y1="167" x2="932" y2="167" style="stroke:black;stroke-width:2" />
+    <line x1="932" y1="167" x2="1065" y2="167" style="stroke:black;stroke-width:2" />
+    <line x1="1065" y1="167" x2="1065" y2="200" style="stroke:blue;stroke-width:2" />
+    <circle cx="1065" cy = "209" r = "8.318750000000003" stroke = "blue" stroke-width = "2" fill = "none" />
+    <circle cx="1065" cy = "259" r = "8.318750000000003" stroke = "blue" stroke-width = "2" fill = "none" />
+    <line x1="1065" y1="267" x2="1065" y2="300" style="stroke:blue;stroke-width:2" />
+    <line x1="1065" y1="217" x2="1065" y2="250" style="stroke:blue;stroke-width:2" />
+    <line x1="1065" y1="300" x2="1065" y2="334" style="stroke:green;stroke-width:2" />
+    <circle cx="1065" cy = "342" r = "8.318750000000003" stroke = "green" stroke-width = "2" fill = "none" />
+    <circle cx="1065" cy = "392" r = "8.318750000000003" stroke = "green" stroke-width = "2" fill = "none" />
+    <line x1="1065" y1="400" x2="1065" y2="433" style="stroke:green;stroke-width:2" />
+    <line x1="1065" y1="350" x2="1089" y2="374" style="stroke:green;stroke-width:2" />
+    <line x1="1065" y1="433" x2="932" y2="433" style="stroke:black;stroke-width:2" />
+    <line x1="932" y1="433" x2="799" y2="433" style="stroke:black;stroke-width:2" />
+<circle cx="932" cy = "433" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="932" y1="433" x2="932" y2="500" style="stroke:black;stroke-width:2" />
+    <line x1="932" y1="500" x2="949" y2="500" style="stroke:black;stroke-width:2" />
+    <line x1="949" y1="500" x2="932" y2="517" style="stroke:black;stroke-width:2" />
+    <line x1="932" y1="517" x2="916" y2="500" style="stroke:black;stroke-width:2" />
+    <line x1="916" y1="500" x2="932" y2="500" style="stroke:black;stroke-width:2" />
+    <line x1="932" y1="167" x2="932" y2="101" style="stroke:black;stroke-width:2" />
+    <circle cx="932" cy = "67" r = "33.27500000000001" stroke = "black" stroke-width = "2" fill = "none" />
+    <text x="916" y = "84" fill = "black" font-size = "33.27500000000001px" font-family = "futura">V</text>
+<circle cx="799" cy = "300" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <line x1="799" y1="300" x2="866" y2="300" style="stroke:black;stroke-width:2" />
+    <line x1="866" y1="300" x2="899" y2="300" style="stroke:black;stroke-width:2" />
+    <circle cx="932" cy = "300" r = "33.27500000000001" stroke = "black" stroke-width = "2" fill = "none" />
+    <line x1="965" y1="300" x2="999" y2="300" style="stroke:black;stroke-width:2" />
+    <line x1="999" y1="300" x2="1065" y2="300" style="stroke:black;stroke-width:2" />
+<circle cx="1065" cy = "300" r = "3" stroke = "black" stroke-width = "2" fill = "black" />
+    <text x="916" y = "317" fill = "black" font-size = "33.27500000000001px" font-family = "futura">M</text>
+    <line x1="949" y1="151" x2="1015" y2="151" style="stroke:blue;stroke-width:2" />
+	<path d = "M1015 151 L1007 142 L1007 151 L1007 159 L1015 151 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <line x1="1015" y1="151" x2="1082" y2="151" style="stroke:blue;stroke-width:2" />
+	<path d = "M1082 151 L1074 142 L1074 151 L1074 159 L1082 151 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <line x1="1082" y1="151" x2="1082" y2="217" style="stroke:blue;stroke-width:2" />
+	<path d = "M1082 217 L1090 209 L1082 209 L1074 209 L1082 217 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <line x1="1082" y1="217" x2="1082" y2="284" style="stroke:blue;stroke-width:2" />
+	<path d = "M1082 284 L1090 275 L1082 275 L1074 275 L1082 284 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <line x1="1082" y1="284" x2="1015" y2="284" style="stroke:blue;stroke-width:2" />
+	<path d = "M1015 284 L1024 292 L1024 284 L1024 275 L1015 284 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <line x1="1015" y1="284" x2="949" y2="284" style="stroke:blue;stroke-width:2" />
+	<path d = "M949 284 L957 292 L957 284 L957 275 L949 284 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <line x1="949" y1="284" x2="882" y2="284" style="stroke:blue;stroke-width:2" />
+	<path d = "M882 284 L891 292 L891 284 L891 275 L882 284 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <line x1="882" y1="284" x2="816" y2="284" style="stroke:blue;stroke-width:2" />
+	<path d = "M816 284 L824 292 L824 284 L824 275 L816 284 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <line x1="816" y1="284" x2="816" y2="350" style="stroke:blue;stroke-width:2" />
+	<path d = "M816 350 L824 342 L816 342 L807 342 L816 350 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <line x1="816" y1="350" x2="816" y2="417" style="stroke:blue;stroke-width:2" />
+	<path d = "M816 417 L824 408 L816 408 L807 408 L816 417 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <line x1="816" y1="417" x2="882" y2="417" style="stroke:blue;stroke-width:2" />
+	<path d = "M882 417 L874 408 L874 417 L874 425 L882 417 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <line x1="882" y1="417" x2="949" y2="417" style="stroke:blue;stroke-width:2" />
+	<path d = "M949 417 L941 408 L941 417 L941 425 L949 417 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <line x1="949" y1="417" x2="949" y2="483" style="stroke:blue;stroke-width:2" />
+	<path d = "M949 483 L957 475 L949 475 L941 475 L949 483 Z" stroke = "blue" stroke-width = "2" fill = "blue" /></svg>

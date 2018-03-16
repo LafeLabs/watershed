@@ -1,0 +1,39 @@
+/*
+Get analog value, compare to start value, send down serial
+
+also check for zero crossing with positive sign, test knob, wait that long before sendng light pulse(40ms)
+
+*/
+  int sensorPin = A0; //define input pin as analog input A0
+  int x = 0;
+  int x0 = 0;
+  int xold = 0;
+  int pulseTime = 40;
+  int delayTime = 0;
+  int knobPin = A2;
+  int strobePin = 6;  //define motor pin to be PWM output pin 6
+  int knobPosition = 0;//knobPosition is the position scaled to 1023
+
+
+
+ void setup() {
+  Serial.begin(9600);
+  x0 = analogRead(sensorPin);
+  pinMode(strobePin, OUTPUT);
+
+ }
+
+void loop() {
+  knobPosition = analogRead(knobPin); //read in the position of the knob
+  x = analogRead(sensorPin) - x0;//get current analog value, compare to start value
+  Serial.println(x);
+  if(x  > 0 && xold <= 0){
+      delay(knobPosition/4);
+      digitalWrite(strobePin,HIGH);
+      delay(pulseTime);
+      digitalWrite(strobePin,LOW);
+  }
+  xold = x;
+  delay(10);
+   
+}
