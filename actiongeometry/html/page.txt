@@ -1,4 +1,6 @@
 <a  id = "svglink" href = "editor.php">Editor</a>
+<a  id = "svglink2" href = "svg/">svg feed</a>
+
 <canvas id="invisibleCanvas" style="display:none"></canvas>
 <canvas id="mainCanvas"></canvas>
 <textarea id="textIO"></textarea>
@@ -33,11 +35,17 @@
 </table>
 <table id = "buttonTable">
     <tr><td class = "button" id = "savesvg">SAVE SVG</td></tr>
-    <tr><td class = "button" id = "loadbytecode">LOAD BYTECODE</td></tr>
-    <tr><td class = "button" id = "exportbytecode">EXPORT TABLE</td></tr>
+    <tr><td class = "button" id = "spell">SPELL</td></tr>
+    <tr><td class = "button" id = "loadbytecode">IMPORT BYTECODE</td></tr>
+    <tr><td class = "button" id = "exportbytecode">EXPORT BYTECODE</td></tr>
 </table>
 <input id = "glyphspellinput"/>
 <img id = "mainImage"/>
-
-
-
+<div id = "scroll"></div>
+<table id = "calcTable">
+</table>
+<div id = "equation">
+</div>
+<button id = "backbutton" class = "navbutton">&#x25C5</button>
+<button id = "fwdbutton" class = "navbutton">&#x25BB</button> 
+<div id = "title">title</div>

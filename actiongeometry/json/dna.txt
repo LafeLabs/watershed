@@ -30,14 +30,19 @@
         "url":"bytecode/symbols013xx.txt"
     },
     {
-        "name":"symbols015xx",
+        "name":"bytecode0x4xx",
         "type":"bytecode",
-        "url":"bytecode/symbols015xx.txt"
+        "url":"bytecode/bytecode0x4xx.txt"
     },
     {
-        "name":"images05xx",
+        "name":"bytecode0x5xx",
         "type":"bytecode",
-        "url":"bytecode/images05xx.txt"
+        "url":"bytecode/bytecode0x5xx.txt"
+    },
+    {
+        "name":"bytecode0x6xx",
+        "type":"bytecode",
+        "url":"bytecode/bytecode0x6xx.txt"
     },
     {
         "name":"style",

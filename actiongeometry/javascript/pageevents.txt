@@ -49,6 +49,16 @@
 
  }
  
+ document.getElementById("spell").onclick = function(){
+     var actionarray  = currentTable[currentAddress].split(",");
+     currentTable[currentAddress] = "";
+     for(var index = 0;index < actionarray.length;index++){
+        currentTable[currentAddress] += "0" + (01000 + parseInt(actionarray[index],8)).toString(8) + ",";    
+     }
+     currentGlyph = currentTable[currentAddress] + ",0207,";
+     redraw();
+ }
+ 
     controls[0].onchange = function(){
         currentAddress = parseInt(this.value,8);
         currentGlyph = currentTable[currentAddress] + ",0207,";

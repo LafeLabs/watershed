@@ -55,6 +55,8 @@
     <div class = "arduino file">arduino/analogRead.txt</div>
     <div class = "arduino file">arduino/strobe.txt</div>
 
+    <div class = "arduino file">arduino/chaos1.txt</div>
+
 </div>
 
 <script>

@@ -25,6 +25,8 @@
     worldLine = [];
     addressStack = [];
     worldIndex = 0;
+    boxMode = false;
+    scrollMode = true;
     myFont = "Futura";
     boxFontSize = 0.2;
     viewStep = 50;

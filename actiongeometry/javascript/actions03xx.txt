@@ -185,7 +185,7 @@
     currentSVG += Math.round(x).toString();
     currentSVG += "\" cy = \"";
     currentSVG += Math.round(y).toString();
-    currentSVG += "\" r = \"" + side.toString() + "\" stroke = \"" + currentStroke + "\" stroke-width = \"2\" ";
+    currentSVG += "\" r = \"" + side.toString() + "\" stroke = \"" + currentStroke + "\" stroke-width = \"" + ctx.lineWidth.toString() + "\" ";
     currentSVG += "fill = \"none\" />\n";		
     //</page0341>
     }
@@ -199,7 +199,7 @@
 
     var x2 = Math.round(x + side*Math.cos(theta));
     var y2 = Math.round(y + side*Math.sin(theta));
-    currentSVG += "    <line x1=\""+Math.round(x).toString()+"\" y1=\""+Math.round(y).toString()+"\" x2=\""+x2.toString()+"\" y2=\""+y2.toString()+"\" style=\"stroke:" + currentStroke + ";stroke-width:2\" />\n"
+    currentSVG += "    <line x1=\""+Math.round(x).toString()+"\" y1=\""+Math.round(y).toString()+"\" x2=\""+x2.toString()+"\" y2=\""+y2.toString()+"\" style=\"stroke:" + currentStroke + ";stroke-width:" + ctx.lineWidth.toString() +  "\" />\n"
 
     //</page0342>
     }
@@ -221,7 +221,7 @@
     localInt = x + side*Math.cos(theta + thetaStep);
     localString += localInt.toString() + " ";
     localInt = y + side*Math.sin(theta + thetaStep);
-    localString += localInt.toString() + "\" fill = \"none\" stroke = \"" + currentStroke + "\" stroke-width = \"2\" />\n";
+    localString += localInt.toString() + "\" fill = \"none\" stroke = \"" + currentStroke + "\" stroke-width = \"" + ctx.lineWidth.toString() + "\" />\n";
     currentSVG += localString;
     //</page0343>    
     }

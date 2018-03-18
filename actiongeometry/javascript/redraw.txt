@@ -1,3 +1,24 @@
+if(currentAddress >= 0600 && currentAddress < 0700){
+    document.getElementById("controlTable").style.display = "none";
+    document.getElementById("imageTable").style.display = "none";
+    document.getElementById("mainCanvas").style.display = "none";
+    document.getElementById("buttonTable").style.display = "none";
+    document.getElementById("glyphspellinput").style.display = "none";
+    document.getElementById("textIO").style.display = "none";
+    document.getElementById("scroll").style.display = "block";
+    
+    doTheThing(currentAddress);
+}
+else{
+    document.getElementById("controlTable").style.display = "block";
+    document.getElementById("imageTable").style.display = "block";
+    document.getElementById("mainCanvas").style.display = "block";
+    document.getElementById("buttonTable").style.display = "block";
+    document.getElementById("glyphspellinput").style.display = "block";
+    document.getElementById("textIO").style.display = "block";
+    document.getElementById("scroll").style.display = "none";
+}
+
 for(var index = 0;index < imgs.length;index++){
     imgs[index].style.display = "none";
 }

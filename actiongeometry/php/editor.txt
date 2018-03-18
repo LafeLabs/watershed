@@ -14,6 +14,8 @@
     <div class = "html file">html/page.txt</div>
     <div class = "html file">html/boxes.txt</div>
     <div class = "html file">html/imageurls.txt</div>
+    <div class = "html file">html/shapes2d/equilateral.txt</div>
+    <div class = "html file">html/shapes2d/square.txt</div>
 
     <div class = "css file">css/style.txt</div>
 
@@ -23,8 +25,9 @@
     <div class = "bytecode file">bytecode/keyboard.txt</div>
     <div class = "bytecode file">bytecode/symbols013xx.txt</div>
     <div class = "bytecode file">bytecode/symbols010xx.txt</div>
-    <div class = "bytecode file">bytecode/symbols015xx.txt</div>
-    <div class = "bytecode file">bytecode/images05xx.txt</div>
+    <div class = "bytecode file">bytecode/bytecode0x4xx.txt</div>
+    <div class = "bytecode file">bytecode/bytecode0x5xx.txt</div>
+    <div class = "bytecode file">bytecode/bytecode0x6xx.txt</div>
 
     <div class = "javascript file">javascript/topfunctions.txt</div>
     <div class = "javascript file">javascript/actions0xx.txt</div>

@@ -1,0 +1,61 @@
+<svg width="1363" height="671" viewbox = "0 0 1363 671"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "glyph": "0230,0336,0230,0336,0230,0336,0230,0336,0230,0336,0230,",
+    "unit": 417.7248169415656,
+    "x0": 900,
+    "y0": 500,
+    "x0rel": 0.5230716278716219,
+    "y0rel": 0.3937999212122737,
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1.5,
+    "imgtop": -1
+}
+</json>
+-->
+	<path d = "M691 291 L691 82 L482 82 L482 291 L691 291 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M900 500 L900 291 L691 291 L691 500 L900 500 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M900 291 L900 82 L691 82 L691 291 L900 291 Z" stroke = "purple" stroke-width = "2" fill = "purple" />	<path d = "M691 500 L691 291 L482 291 L482 500 L691 500 Z" stroke = "purple" stroke-width = "2" fill = "purple" />    <line x1="691" y1="500" x2="691" y2="82" style="stroke:black;stroke-width:2" />
+    <line x1="691" y1="291" x2="900" y2="291" style="stroke:black;stroke-width:2" />
+    <line x1="691" y1="291" x2="482" y2="291" style="stroke:black;stroke-width:2" />
+    <line x1="900" y1="500" x2="900" y2="82" style="stroke:black;stroke-width:2" />
+    <line x1="900" y1="82" x2="482" y2="82" style="stroke:black;stroke-width:2" />
+    <line x1="482" y1="82" x2="482" y2="500" style="stroke:black;stroke-width:2" />
+    <line x1="482" y1="500" x2="900" y2="500" style="stroke:black;stroke-width:2" />
+	<path d = "M796 396 L796 291 L691 291 L691 396 L796 396 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M900 500 L900 396 L796 396 L796 500 L900 500 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M900 396 L900 291 L796 291 L796 396 L900 396 Z" stroke = "purple" stroke-width = "2" fill = "purple" />	<path d = "M796 500 L796 396 L691 396 L691 500 L796 500 Z" stroke = "purple" stroke-width = "2" fill = "purple" />    <line x1="796" y1="500" x2="796" y2="291" style="stroke:black;stroke-width:2" />
+    <line x1="796" y1="396" x2="900" y2="396" style="stroke:black;stroke-width:2" />
+    <line x1="796" y1="396" x2="691" y2="396" style="stroke:black;stroke-width:2" />
+    <line x1="900" y1="500" x2="900" y2="291" style="stroke:black;stroke-width:2" />
+    <line x1="900" y1="291" x2="691" y2="291" style="stroke:black;stroke-width:2" />
+    <line x1="691" y1="291" x2="691" y2="500" style="stroke:black;stroke-width:2" />
+    <line x1="691" y1="500" x2="900" y2="500" style="stroke:black;stroke-width:2" />
+	<path d = "M848 448 L848 396 L796 396 L796 448 L848 448 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M900 500 L900 448 L848 448 L848 500 L900 500 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M900 448 L900 396 L848 396 L848 448 L900 448 Z" stroke = "purple" stroke-width = "2" fill = "purple" />	<path d = "M848 500 L848 448 L796 448 L796 500 L848 500 Z" stroke = "purple" stroke-width = "2" fill = "purple" />    <line x1="848" y1="500" x2="848" y2="396" style="stroke:black;stroke-width:2" />
+    <line x1="848" y1="448" x2="900" y2="448" style="stroke:black;stroke-width:2" />
+    <line x1="848" y1="448" x2="796" y2="448" style="stroke:black;stroke-width:2" />
+    <line x1="900" y1="500" x2="900" y2="396" style="stroke:black;stroke-width:2" />
+    <line x1="900" y1="396" x2="796" y2="396" style="stroke:black;stroke-width:2" />
+    <line x1="796" y1="396" x2="796" y2="500" style="stroke:black;stroke-width:2" />
+    <line x1="796" y1="500" x2="900" y2="500" style="stroke:black;stroke-width:2" />
+	<path d = "M874 474 L874 448 L848 448 L848 474 L874 474 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M900 500 L900 474 L874 474 L874 500 L900 500 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M900 474 L900 448 L874 448 L874 474 L900 474 Z" stroke = "purple" stroke-width = "2" fill = "purple" />	<path d = "M874 500 L874 474 L848 474 L848 500 L874 500 Z" stroke = "purple" stroke-width = "2" fill = "purple" />    <line x1="874" y1="500" x2="874" y2="448" style="stroke:black;stroke-width:2" />
+    <line x1="874" y1="474" x2="900" y2="474" style="stroke:black;stroke-width:2" />
+    <line x1="874" y1="474" x2="848" y2="474" style="stroke:black;stroke-width:2" />
+    <line x1="900" y1="500" x2="900" y2="448" style="stroke:black;stroke-width:2" />
+    <line x1="900" y1="448" x2="848" y2="448" style="stroke:black;stroke-width:2" />
+    <line x1="848" y1="448" x2="848" y2="500" style="stroke:black;stroke-width:2" />
+    <line x1="848" y1="500" x2="900" y2="500" style="stroke:black;stroke-width:2" />
+	<path d = "M887 487 L887 474 L874 474 L874 487 L887 487 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M900 500 L900 487 L887 487 L887 500 L900 500 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M900 487 L900 474 L887 474 L887 487 L900 487 Z" stroke = "purple" stroke-width = "2" fill = "purple" />	<path d = "M887 500 L887 487 L874 487 L874 500 L887 500 Z" stroke = "purple" stroke-width = "2" fill = "purple" />    <line x1="887" y1="500" x2="887" y2="474" style="stroke:black;stroke-width:2" />
+    <line x1="887" y1="487" x2="900" y2="487" style="stroke:black;stroke-width:2" />
+    <line x1="887" y1="487" x2="874" y2="487" style="stroke:black;stroke-width:2" />
+    <line x1="900" y1="500" x2="900" y2="474" style="stroke:black;stroke-width:2" />
+    <line x1="900" y1="474" x2="874" y2="474" style="stroke:black;stroke-width:2" />
+    <line x1="874" y1="474" x2="874" y2="500" style="stroke:black;stroke-width:2" />
+    <line x1="874" y1="500" x2="900" y2="500" style="stroke:black;stroke-width:2" />
+	<path d = "M893 493 L893 487 L887 487 L887 493 L893 493 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M900 500 L900 493 L893 493 L893 500 L900 500 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M900 493 L900 487 L893 487 L893 493 L900 493 Z" stroke = "purple" stroke-width = "2" fill = "purple" />	<path d = "M893 500 L893 493 L887 493 L887 500 L893 500 Z" stroke = "purple" stroke-width = "2" fill = "purple" />    <line x1="893" y1="500" x2="893" y2="487" style="stroke:black;stroke-width:2" />
+    <line x1="893" y1="493" x2="900" y2="493" style="stroke:black;stroke-width:2" />
+    <line x1="893" y1="493" x2="887" y2="493" style="stroke:black;stroke-width:2" />
+    <line x1="900" y1="500" x2="900" y2="487" style="stroke:black;stroke-width:2" />
+    <line x1="900" y1="487" x2="887" y2="487" style="stroke:black;stroke-width:2" />
+    <line x1="887" y1="487" x2="887" y2="500" style="stroke:black;stroke-width:2" />
+    <line x1="887" y1="500" x2="900" y2="500" style="stroke:black;stroke-width:2" />
+</svg>

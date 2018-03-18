@@ -1,0 +1,10 @@
+
+        <H2>Equilateral Triangle</H2>
+        <h4>Construction with circles:</h4>
+        <img src = "svg/svg1521234099.svg"/>
+        <h4>Fractal triangle:</h4>
+        <img src = "svg/svg1521234047.svg"/>
+        <h4>Geometron Glyph Spelling:</h4>
+        <img src = "svg/svg1521233997.svg"/>
+        <button onclick  = "doTheThing(0602)">go to square</button>
+        

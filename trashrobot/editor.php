@@ -12,6 +12,7 @@
 <div id = "filescroll">
     <div class = "html file">html/page.txt</div>
     <div class = "html file">html/boxes.txt</div>
+    <div class = "html file">html/pendulumscroll.txt</div>
 
     <div class = "css file">css/style.txt</div>
 
