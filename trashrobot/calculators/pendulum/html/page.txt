@@ -1,0 +1,53 @@
+<a href = "editor.php">editor.php</a>
+<a href = "..">up to plotters</a>
+<div class = "button" id = "pbutton">Poincare</div>
+<canvas id="mainCanvas"></canvas>
+<textarea id="textIO"></textarea> 
+<table id = "calcTable">
+    <tr>
+        <td>period[ms]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>Q:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>a:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>b:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>$\delta$:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>points per period[n]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>number of periods[N]:</td><td><input/></td>
+    </tr>
+
+    <tr>
+        <td>initial theta:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>initial theta dot:</td><td><input/></td>
+    </tr>
+
+    <tr>
+        <td>pump amplitude($\Delta$):</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>pump frequency over $\omega_0$:</td><td><input/></td>
+    </tr>
+
+
+</table>
+<div id = "equation">
+$$
+\ddot{\theta} = -\omega_0^2(1 + d(t) + \Delta\cos{\omega_pt})\sin{\theta} - \frac{\omega_0}{Q}\dot{\theta} + \omega_0^2a\cos{[(1 + \delta)\omega_0t]} + \omega_0^2b + c(t)
+$$
+</div>
+<div class = "button" id = "publish">PUBLISH</div>
+<div id = "scroll">
+    
+</div>

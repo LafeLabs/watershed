@@ -219,3 +219,24 @@ calcinputs[1].onchange = function(){
 calcinputs[3].onchange = function(){
     redraw();
 }
+calcinputs[10].onchange = function(){
+    coordinateJSON.glyph = this.value;
+    x=0;
+    y=0;
+    side = unit;
+    drawGlyph(coordinateJSON.glyph);
+    coordinateJSON.xyunits = (0.01*Math.round(100*x/unit)).toString() + "," + (0.01*Math.round(-100*y/unit)).toString();
+    calcinputs[6].value = coordinateJSON.xyunits;
+    calcinputs[5].value = (0.01*Math.round(coordinateJSON.unitfeet*100*x/unit)).toString() + "," + (coordinateJSON.unitfeet*0.01*Math.round(-100*y/unit)).toString();
+    deltaxfeet = 0.01*Math.round(coordinateJSON.unitfeet*100*x/unit);
+    deltayfeet = -0.01*Math.round(coordinateJSON.unitfeet*100*y/unit);
+    lon1 = lon0 + (deltaxfeet/283699);
+    lat1 = lat0 + (deltayfeet/364538);
+//1 degree lattitude = 32808399/90 = 364538 feet
+//1 degree longitude = 1 degre lattitude X cos(lattitude) = 283699 feet.
+
+    coordinateJSON.latlon1 = (0.0001*Math.round(10000*lat1)).toString().substring(0,7) + "," + (0.0001*Math.round(10000*lon1)).toString().substring(0,8);
+    calcinputs[1].value = coordinateJSON.latlon1;
+//    redraw();    
+}
+

@@ -51,11 +51,11 @@
     <div class = "arduino file">arduino/buttonMotor.txt</div>
     <div class = "arduino file">arduino/knobMotor.txt</div>
     <div class = "arduino file">arduino/knobRampMotor.txt</div>
-
     <div class = "arduino file">arduino/analogRead.txt</div>
     <div class = "arduino file">arduino/strobe.txt</div>
-
     <div class = "arduino file">arduino/chaos1.txt</div>
+    <div class = "arduino file">arduino/pressureread.txt</div>
+    <div class = "arduino file">arduino/ambrosia.txt</div>
 
 </div>
 

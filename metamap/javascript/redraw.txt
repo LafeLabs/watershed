@@ -71,14 +71,14 @@ else{
     document.getElementById("mainImage").style.display = "none";
 }
 
-latlon0  = calcinputs[0].value;
-latlon1 = calcinputs[1].value;
-unitfeet = calcinputs[3].value;
+coordinateJSON.latlon0  = calcinputs[0].value;
+coordinateJSON.latlon1 = calcinputs[1].value;
+coordinateJSON.unitfeet = calcinputs[3].value;
 
-lat0 = parseFloat(latlon0.split(",")[0]);
-lon0 = parseFloat(latlon0.split(",")[1]);
-lat1 = parseFloat(latlon1.split(",")[0]);
-lon1 = parseFloat(latlon1.split(",")[1]);
+lat0 = parseFloat(coordinateJSON.latlon0.split(",")[0]);
+lon0 = parseFloat(coordinateJSON.latlon0.split(",")[1]);
+lat1 = parseFloat(coordinateJSON.latlon1.split(",")[0]);
+lon1 = parseFloat(coordinateJSON.latlon1.split(",")[1]);
 //90 degrees lattitude = 10,000,000 meters = 32808399 feet
 //1 degree lattitude = 32808399/90 = 364538 feet
 //1 degree longitude = 1 degre lattitude X cos(lattitude) = 283699 feet.
@@ -87,13 +87,16 @@ deltayfeet = Math.round((lat1 - lat0)*364538);
 xyfeet = deltaxfeet.toString() + "," + deltayfeet.toString();
 dfeet = Math.round(Math.sqrt(deltaxfeet*deltaxfeet + deltayfeet*deltayfeet));
 calcinputs[2].value = dfeet.toString();
-dunits = 0.01*Math.round(100*dfeet/unitfeet);
+dunits = 0.01*Math.round(100*dfeet/coordinateJSON.unitfeet);
 calcinputs[4].value = dunits.toString();
 calcinputs[5].value = xyfeet;
-xyunits = (0.01*Math.round(100*deltaxfeet/unitfeet)).toString() + "," + (0.01*Math.round(100*deltayfeet/unitfeet)).toString();
-calcinputs[6].value = xyunits;
-calcinputs[7].value = name0;
-calcinputs[8].value = name1;
-calcinputs[9].value = nameunit;
+coordinateJSON.xyunits = (0.01*Math.round(100*deltaxfeet/coordinateJSON.unitfeet)).toString() + "," + (0.01*Math.round(100*deltayfeet/coordinateJSON.unitfeet)).toString();
+calcinputs[6].value = coordinateJSON.xyunits;
+calcinputs[7].value = coordinateJSON.name0;
+calcinputs[8].value = coordinateJSON.name1;
+calcinputs[9].value = coordinateJSON.nameunit;
 
-calcinputs[10].value = xy2glyph(xyunits);
+calcinputs[10].value = xy2glyph(coordinateJSON.xyunits);
+coordinateJSON.glyph = xy2glyph(coordinateJSON.xyunits);
+
+document.getElementById("textIO").value = JSON.stringify(coordinateJSON,null,"    ");

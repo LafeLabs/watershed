@@ -35,6 +35,7 @@
     <tr><td class = "button" id = "savesvg">SAVE SVG</td></tr>
     <tr><td class = "button" id = "loadbytecode">LOAD BYTECODE</td></tr>
     <tr><td class = "button" id = "exportbytecode">EXPORT TABLE</td></tr>
+    <tr><td class = "button" id = "exportbytecode">IMPORT COORD</td></tr>
 </table>
 <input id = "glyphspellinput"/>
 <img id = "mainImage"/>

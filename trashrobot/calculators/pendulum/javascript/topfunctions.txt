@@ -1,0 +1,19 @@
+function formatsci(inputFloat){
+    var instring = inputFloat.toExponential(2);
+    var outstring = "";
+    if(instring.split("e").length > 0){
+        outstring = "$" + instring.split("e")[0] + " \\times 10^{" + instring.split("e")[1] + "}$";
+    }
+    else{
+        outstring = instring;
+    }
+    return outstring;
+}
+
+
+function getf0(t,yvector,omega0,Q,a,b,delta){
+    return yvector[1];
+}
+function getf1(t,yvector,omega0,Q,a,b,delta){
+    return -omega0*omega0*Math.sin(yvector[0]) - (omega0/Q)*yvector[1]  + omega0*omega0*a*Math.cos((delta + 1)*omega0*t) + omega0*omega0*b;  
+}

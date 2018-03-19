@@ -1,5 +1,6 @@
 <div class = "box" id = "box0600">
 <a href = "circuits/">circuits/</a>
+<a href = "calculators/pendulum/">pendulum/</a>
 </div>
 <div class = "box" id = "box0604">
     <a href = "../">back up to watershed/</a>

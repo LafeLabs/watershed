@@ -1,0 +1,61 @@
+poincare = false;
+
+T = 200;//period in ms
+Q = 10;
+a = 2.2;
+b = 0;
+delta = 0.2;
+npoints = 30;//points per period
+Npoints = 30;//number of periods
+theta0 = 0.0;
+thetadot0 = 0;
+
+t = 0.0;
+yvector = [theta0,thetadot0];
+ynextvector = [0,0];
+  
+f0 = 0.0;  //velocity
+f1 = 0.0;  //accelleration
+f = [0.0,0.0];
+k1 = [0.0,0.0];
+k2 = [0.0,0.0];
+k3 = [0.0,0.0];
+k4 = [0.0,0.0];
+theta = 0;
+thetadot = 0;
+force = 0 ;
+omega0 = 2*Math.PI/T;
+omegap = 2;
+Delta = 0;
+gamma = omega0*Q; 
+h = T/npoints;
+currentStroke = "black";
+totalpoints = npoints*Npoints;
+svgexport = false;
+
+inputs = document.getElementById("calcTable").getElementsByTagName("input");
+inputs[0].value = T.toString();
+inputs[1].value = Q.toString();
+inputs[2].value = a.toString();
+inputs[3].value = b.toString();
+inputs[4].value = delta.toString();
+inputs[5].value = npoints.toString();
+inputs[6].value = Npoints.toString();
+
+inputs[7].value = theta0.toString();
+inputs[8].value = thetadot0.toString();
+
+
+inputs[9].value = Delta.toString();
+inputs[10].value = omegap.toString();
+
+/*
+feedplots = document.getElementById("datadiv").getElementsByTagName("img");
+for(var index = 0;index < feedplots.length;index++){
+    var oldsrcarray = feedplots[index].src.split("/");
+    var oldsrc = oldsrcarray[oldsrcarray.length - 1];
+    var newsrc = "svg/" + oldsrc;
+    feedplots[index].src = newsrc;
+}
+document.getElementById("scroll").innerHTML = document.getElementById("datadiv").innerHTML;
+*/

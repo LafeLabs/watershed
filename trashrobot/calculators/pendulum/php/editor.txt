@@ -11,20 +11,10 @@
 <div id="maineditor"></div>
 <div id = "filescroll">
     <div class = "html file">html/page.txt</div>
-    <div class = "html file">html/boxes.txt</div>
 
     <div class = "css file">css/style.txt</div>
 
-    <div class = "bytecode file">bytecode/baseshapes.txt</div>
-    <div class = "bytecode file">bytecode/shapetable.txt</div>
-    <div class = "bytecode file">bytecode/font.txt</div>
-    <div class = "bytecode file">bytecode/keyboard.txt</div>
-    <div class = "bytecode file">bytecode/symbols013xx.txt</div>
-    <div class = "bytecode file">bytecode/symbols010xx.txt</div>
-
     <div class = "javascript file">javascript/topfunctions.txt</div>
-    <div class = "javascript file">javascript/actions0xx.txt</div>
-    <div class = "javascript file">javascript/actions03xx.txt</div>
     <div class = "javascript file">javascript/jslibrary.txt</div>
     <div class = "javascript file">javascript/init.txt</div>
     <div class = "javascript file">javascript/redraw.txt</div>
@@ -43,19 +33,7 @@
     <div class = "php file">php/scandir.php</div>
 
     <div class = "json file">json/dna.txt</div>
-    <div class = "json file">json/currentjson.txt</div>
-    <div class = "json file">json/imagedata.txt</div>
-
-    <div class = "arduino file">arduino/blinkMotor.txt</div>
-    <div class = "arduino file">arduino/rampMotor.txt</div>
-    <div class = "arduino file">arduino/buttonMotor.txt</div>
-    <div class = "arduino file">arduino/knobMotor.txt</div>
-    <div class = "arduino file">arduino/knobRampMotor.txt</div>
-    <div class = "arduino file">arduino/analogRead.txt</div>
-    <div class = "arduino file">arduino/strobe.txt</div>
-    <div class = "arduino file">arduino/chaos1.txt</div>
-    <div class = "arduino file">arduino/pressureread.txt</div>
-    <div class = "arduino file">arduino/ambrosia.txt</div>
+    <div class = "json file">json/feed.txt</div>
 
 </div>
 
@@ -114,11 +92,6 @@ for(var index = 0;index < files.length;index++){
             document.getElementById("namediv").style.color = "orange";
             document.getElementById("namediv").style.borderColor = "orange";
         }
-        if(this.classList[0] == "arduino"){
-            editor.getSession().setMode("ace/mode/java");
-            document.getElementById("namediv").style.color = "aqua";
-            document.getElementById("namediv").style.borderColor = "aqua";
-        }
 
         document.getElementById("namediv").innerHTML = currentFile;
     }
@@ -173,9 +146,7 @@ body{
 .json{
     color:orange;
 }
-.arduino{
-    color:aqua;
-}
+
 .file{
     cursor:pointer;
     border-radius:0.25em;
