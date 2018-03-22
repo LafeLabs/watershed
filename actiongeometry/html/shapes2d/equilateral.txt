@@ -8,3 +8,4 @@
         <img src = "svg/svg1521233997.svg"/>
         <button onclick  = "doTheThing(0602)">go to square</button>
         
+        <div class = "button" onclick  = "doTheThing(0605)">go to octagon</div>

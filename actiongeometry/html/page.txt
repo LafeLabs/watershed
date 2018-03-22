@@ -1,6 +1,6 @@
+<div class = "button" id  ="modebutton">SCROLL/GEOMETRON</div>
 <a  id = "svglink" href = "editor.php">Editor</a>
 <a  id = "svglink2" href = "svg/">svg feed</a>
-
 <canvas id="invisibleCanvas" style="display:none"></canvas>
 <canvas id="mainCanvas"></canvas>
 <textarea id="textIO"></textarea>

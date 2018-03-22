@@ -1,0 +1,10 @@
+<div class = "pagelink" onclick = "doTheThing(0600)">Back up to TOC</div>
+
+<h2>Card Deck</h2>
+
+Each packet of information has a physical card which summarizes it.  Cards are made of cardstock, drawn with a pen then colored in with crayons, colored pencils, or paints.  Cards should be the same size so they stack, and a good size is 3.5 by 5.5 inches, with radii cut from traced arcs from dimes.  
+
+<img src = "images/cardscissors.png"/>
+<img src = "images/cardsbox.png"/>
+<img src = "images/cardscutout.png"/>
+<img src = "images/cardshbridge.png"/>

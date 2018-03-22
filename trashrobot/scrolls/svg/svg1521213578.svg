@@ -1,0 +1,81 @@
+<svg width="1363" height="671" viewbox = "0 0 1363 671"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "glyph": "0337,0200,0336,0200,0336,0200,0336,0200,0336,0200,0337,0337,0337,0337,0333,0335,0220,0336,0220,0336,0220,0336,0220,0336,0220,0337,0337,0337,0337,0334,0331,0332,0336,0332,0332,0335,0337,0221,0336,0337,0330,0334,0334,0336,0201,0334,0334,0336,0201,0335,0335,0201,0334,0334,0336,0201,0335,0335,0201,0334,0334,0336,0201,0335,0335,0201,0334,0334,0336,0201,0334,0330,0330,0330,0337,0330,0337,0330,0337,0330,0330,0330,0337,0304,0313,0220,0306,0334,0336,0330,0335,0201,0335,0335,0201,0335,0335,0201,0336,0331,0335,0201,0335,0335,0201,0335,0335,0201,0335,0335,0336,0333,0334,0201,0335,0335,0201,0335,0335,0201,0335,0335,0336,0201,0335,0201,0335,0335,0201,0335,0335,0201,0337,0337,0337,0330,0335,0330,0337,0304,0304,0304,",
+    "unit": 100,
+    "x0": 600,
+    "y0": 300,
+    "x0rel": -0.815,
+    "y0rel": -0.355,
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1.5,
+    "imgtop": -1
+}
+</json>
+-->
+    <line x1="600" y1="300" x2="600" y2="100" style="stroke:#000000;stroke-width:2" />
+    <line x1="600" y1="100" x2="400" y2="100" style="stroke:#000000;stroke-width:2" />
+    <line x1="400" y1="100" x2="400" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="400" y1="300" x2="600" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="600" y1="300" x2="600" y2="200" style="stroke:#000000;stroke-width:2" />
+    <line x1="600" y1="200" x2="500" y2="200" style="stroke:#000000;stroke-width:2" />
+    <line x1="500" y1="200" x2="500" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="500" y1="300" x2="600" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="600" y1="300" x2="600" y2="250" style="stroke:#000000;stroke-width:2" />
+    <line x1="600" y1="250" x2="550" y2="250" style="stroke:#000000;stroke-width:2" />
+    <line x1="550" y1="250" x2="550" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="550" y1="300" x2="600" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="600" y1="300" x2="600" y2="275" style="stroke:#000000;stroke-width:2" />
+    <line x1="600" y1="275" x2="575" y2="275" style="stroke:#000000;stroke-width:2" />
+    <line x1="575" y1="275" x2="575" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="575" y1="300" x2="600" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="600" y1="300" x2="600" y2="287" style="stroke:#000000;stroke-width:2" />
+    <line x1="600" y1="287" x2="587" y2="288" style="stroke:#000000;stroke-width:2" />
+    <line x1="587" y1="288" x2="588" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="588" y1="300" x2="600" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="800" y1="300" x2="1000" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="1000" y1="300" x2="900" y2="127" style="stroke:#000000;stroke-width:2" />
+    <line x1="900" y1="127" x2="800" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="800" y1="300" x2="900" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="900" y1="300" x2="850" y2="213" style="stroke:#000000;stroke-width:2" />
+    <line x1="850" y1="213" x2="800" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="800" y1="300" x2="850" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="850" y1="300" x2="825" y2="257" style="stroke:#000000;stroke-width:2" />
+    <line x1="825" y1="257" x2="800" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="800" y1="300" x2="825" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="825" y1="300" x2="812" y2="278" style="stroke:#000000;stroke-width:2" />
+    <line x1="812" y1="278" x2="800" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="800" y1="300" x2="812" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="812" y1="300" x2="806" y2="289" style="stroke:#000000;stroke-width:2" />
+    <line x1="806" y1="289" x2="800" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="400" y1="500" x2="600" y2="500" style="stroke:#000000;stroke-width:2" />
+    <line x1="600" y1="500" x2="662" y2="310" style="stroke:#000000;stroke-width:2" />
+    <line x1="662" y1="310" x2="400" y2="500" style="stroke:#000000;stroke-width:2" />
+    <line x1="600" y1="500" x2="500" y2="427" style="stroke:#000000;stroke-width:2" />
+    <line x1="500" y1="427" x2="524" y2="500" style="stroke:#000000;stroke-width:2" />
+    <line x1="524" y1="500" x2="462" y2="455" style="stroke:#000000;stroke-width:2" />
+    <line x1="462" y1="455" x2="476" y2="500" style="stroke:#000000;stroke-width:2" />
+    <line x1="476" y1="500" x2="438" y2="472" style="stroke:#000000;stroke-width:2" />
+    <line x1="438" y1="472" x2="447" y2="500" style="stroke:#000000;stroke-width:2" />
+    <line x1="447" y1="500" x2="424" y2="483" style="stroke:#000000;stroke-width:2" />
+    <line x1="424" y1="483" x2="429" y2="500" style="stroke:#000000;stroke-width:2" />
+    <line x1="789" y1="500" x2="912" y2="500" style="stroke:#000000;stroke-width:2" />
+    <line x1="912" y1="500" x2="851" y2="393" style="stroke:#000000;stroke-width:2" />
+    <line x1="851" y1="393" x2="789" y2="500" style="stroke:#000000;stroke-width:2" />
+    <line x1="820" y1="446" x2="882" y2="446" style="stroke:#000000;stroke-width:2" />
+    <line x1="882" y1="446" x2="851" y2="500" style="stroke:#000000;stroke-width:2" />
+    <line x1="851" y1="500" x2="820" y2="446" style="stroke:#000000;stroke-width:2" />
+    <line x1="835" y1="473" x2="851" y2="446" style="stroke:#000000;stroke-width:2" />
+    <line x1="851" y1="446" x2="866" y2="473" style="stroke:#000000;stroke-width:2" />
+    <line x1="866" y1="473" x2="835" y2="473" style="stroke:#000000;stroke-width:2" />
+    <line x1="851" y1="473" x2="843" y2="460" style="stroke:#000000;stroke-width:2" />
+    <line x1="843" y1="460" x2="858" y2="460" style="stroke:#000000;stroke-width:2" />
+    <line x1="858" y1="460" x2="851" y2="473" style="stroke:#000000;stroke-width:2" />
+    <line x1="851" y1="473" x2="847" y2="467" style="stroke:#000000;stroke-width:2" />
+    <line x1="847" y1="467" x2="851" y2="460" style="stroke:#000000;stroke-width:2" />
+    <line x1="851" y1="460" x2="855" y2="467" style="stroke:#000000;stroke-width:2" />
+    <line x1="855" y1="467" x2="847" y2="467" style="stroke:#000000;stroke-width:2" />
+</svg>

@@ -1,0 +1,28 @@
+<svg width="1363" height="671" viewbox = "0 0 1363 671"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "glyph": "0341,0335,0201,0334,0340,0341,0334,0306,0335,0201,0340,0341,0334,0334,0201,0340,",
+    "unit": 194.87171000000015,
+    "x0": 550,
+    "y0": 400,
+    "x0rel": -0.6748029254733788,
+    "y0rel": 0.3309869862588056,
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1.5,
+    "imgtop": -1
+}
+</json>
+-->
+    <circle cx="550" cy = "400" r = "194.87171000000015" stroke = "#000000" stroke-width = "2" fill = "none" />
+    <line x1="550" y1="400" x2="745" y2="400" style="stroke:#000000;stroke-width:2" />
+<circle cx="745" cy = "400" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+    <circle cx="745" cy = "400" r = "194.87171000000015" stroke = "#000000" stroke-width = "2" fill = "none" />
+    <line x1="745" y1="400" x2="647" y2="231" style="stroke:#000000;stroke-width:2" />
+<circle cx="647" cy = "231" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+    <circle cx="647" cy = "231" r = "194.87171000000015" stroke = "#000000" stroke-width = "2" fill = "none" />
+    <line x1="647" y1="231" x2="550" y2="400" style="stroke:#000000;stroke-width:2" />
+<circle cx="550" cy = "400" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+</svg>

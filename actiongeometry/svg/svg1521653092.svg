@@ -1,0 +1,27 @@
+<svg width="1366" height="672" viewbox = "0 0 1366 672"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "glyph": "0334,0337,0305,0350,0335,0231,0335,0335,0335,0335,0335,0335,0335,0335,0335,0334,0334,0334,0331,0331,0336,0332,0337,0336,0333,0331,0337,0230,",
+    "unit": 161.0510000000001,
+    "x0": 650,
+    "y0": 650,
+    "x0rel": -0.20490403660952108,
+    "y0rel": 1.949692954405746,
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1
+}
+</json>
+-->
+	<path d = "M650 650 L228 344 L650 37 L750 344 L650 650 Z" stroke = "red" stroke-width = "2" fill = "red" />    <line x1="650" y1="650" x2="228" y2="344" style="stroke:black;stroke-width:2" />
+    <line x1="228" y1="344" x2="650" y2="37" style="stroke:black;stroke-width:2" />
+    <line x1="650" y1="37" x2="750" y2="344" style="stroke:black;stroke-width:2" />
+    <line x1="750" y1="344" x2="650" y2="650" style="stroke:black;stroke-width:2" />
+	<path d = "M1072 344 L650 650 L750 344 L650 37 L1072 344 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <line x1="1072" y1="344" x2="650" y2="650" style="stroke:black;stroke-width:2" />
+    <line x1="650" y1="650" x2="750" y2="344" style="stroke:black;stroke-width:2" />
+    <line x1="750" y1="344" x2="650" y2="37" style="stroke:black;stroke-width:2" />
+    <line x1="650" y1="37" x2="1072" y2="344" style="stroke:black;stroke-width:2" />
+</svg>

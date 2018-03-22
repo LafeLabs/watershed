@@ -1,0 +1,15 @@
+<h2>Trash Robot Scrolls</h2>
+<ul>
+    <li onclick = "doTheThing(0601)" class = "pagelink">carddeck.txt</li>
+    <li onclick = "doTheThing(0602)" class = "pagelink">opticalpickup.txt</li>
+    <li onclick = "doTheThing(0603)" class = "pagelink">samtec.txt</li>
+    <li onclick = "doTheThing(0604)" class = "pagelink">dualhbridge.txt</li>
+    <li onclick = "doTheThing(0605)" class = "pagelink">arduino.txt</li>
+    <li onclick = "doTheThing(0606)" class = "pagelink">usb.txt</li>
+    <li onclick = "doTheThing(0607)" class = "pagelink">pennyconnector.txt</li>
+    <li onclick = "doTheThing(0610)" class = "pagelink">stepper.txt</li>
+    <li onclick = "doTheThing(0611)" class = "pagelink">hbridge.txt</li>
+    <li onclick = "doTheThing(0612)" class = "pagelink">xystage.txt</li>
+    <li onclick = "doTheThing(0613)" class = "pagelink">xycables.txt</li>
+    <li onclick = "doTheThing(0614)" class = "pagelink">turtle.txt</li>
+</ul>

@@ -1,0 +1,189 @@
+<svg width="1366" height="672" viewbox = "0 0 1366 672"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "glyph": "0210,01313,01304,01336,01201,01335,01306,01350,01335,01337,01201,01335,01335,01335,01335,01335,01336,01312,01337,01201,0337,0330,0332,0332,0332,0332,0332,0332,0332,0337,0336,0336,0336,0331,0333,0211,0211,0333,0337,0337,0337,0211,0201,0335,0306,0350,0335,0337,0201,0335,0335,0335,0335,0335,0336,0312,0337,0201,",
+    "unit": 75.13148009015778,
+    "x0": 50,
+    "y0": 500,
+    "x0rel": -8.425229999999999,
+    "y0rel": 2.18284,
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1
+}
+</json>
+-->
+    <line x1="116" y1="500" x2="116" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="116" y1="434" x2="50" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="50" y1="434" x2="50" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="50" y1="500" x2="116" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="83" y1="484" x2="83" y2="467" style="stroke:#000000;stroke-width:4" />
+    <line x1="83" y1="484" x2="66" y2="484" style="stroke:#000000;stroke-width:4" />
+    <line x1="66" y1="484" x2="66" y2="467" style="stroke:#000000;stroke-width:4" />
+    <line x1="66" y1="467" x2="83" y2="467" style="stroke:#000000;stroke-width:4" />
+    <line x1="83" y1="467" x2="99" y2="467" style="stroke:#000000;stroke-width:4" />
+    <line x1="99" y1="467" x2="99" y2="484" style="stroke:#000000;stroke-width:4" />
+    <line x1="99" y1="484" x2="83" y2="484" style="stroke:#000000;stroke-width:4" />
+    <line x1="181" y1="500" x2="181" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="181" y1="434" x2="116" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="116" y1="434" x2="116" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="116" y1="500" x2="181" y2="500" style="stroke:#000000;stroke-width:4" />
+    <circle cx="149" cy = "467" r = "32.83366073995651" stroke = "#000000" stroke-width = "4" fill = "none" />
+    <line x1="149" y1="467" x2="149" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="149" y1="467" x2="181" y2="467" style="stroke:#000000;stroke-width:4" />
+    <line x1="149" y1="467" x2="149" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="149" y1="467" x2="116" y2="467" style="stroke:#000000;stroke-width:4" />
+    <circle cx="137" cy = "456" r = "8.208415184989127" stroke = "#000000" stroke-width = "4" fill = "none" />
+    <circle cx="160" cy = "456" r = "8.208415184989127" stroke = "#000000" stroke-width = "4" fill = "none" />
+    <circle cx="160" cy = "479" r = "8.208415184989127" stroke = "#000000" stroke-width = "4" fill = "none" />
+    <circle cx="137" cy = "479" r = "8.208415184989127" stroke = "#000000" stroke-width = "4" fill = "none" />
+    <line x1="247" y1="500" x2="247" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="247" y1="434" x2="181" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="181" y1="434" x2="181" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="181" y1="500" x2="247" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="231" y1="467" x2="198" y2="467" style="stroke:#000000;stroke-width:4" />
+    <line x1="313" y1="500" x2="313" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="313" y1="434" x2="247" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="247" y1="434" x2="247" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="247" y1="500" x2="313" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="263" y1="467" x2="296" y2="467" style="stroke:#000000;stroke-width:4" />
+    <line x1="296" y1="467" x2="290" y2="473" style="stroke:#000000;stroke-width:4" />
+    <line x1="296" y1="467" x2="290" y2="461" style="stroke:#000000;stroke-width:4" />
+    <line x1="378" y1="500" x2="378" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="378" y1="434" x2="313" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="313" y1="434" x2="313" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="313" y1="500" x2="378" y2="500" style="stroke:#000000;stroke-width:4" />
+  <path d="M333.8944945794077 455.5578871798426           A16.416830369978253 16.416830369978253 0 0 1 357.1113987398095 455.5578871798426" fill = "none" stroke = "#000000" stroke-width = "4" />
+  <path d="M333.8944945794077 478.7747913402444           A16.416830369978253 16.416830369978253 0 0 1 333.8944945794077 455.5578871798426" fill = "none" stroke = "#000000" stroke-width = "4" />
+  <path d="M357.1113987398095 478.77479134024435           A16.416830369978253 16.416830369978253 0 0 1 333.8944945794077 478.7747913402444" fill = "none" stroke = "#000000" stroke-width = "4" />
+    <line x1="346" y1="467" x2="357" y2="456" style="stroke:#000000;stroke-width:4" />
+    <line x1="346" y1="443" x2="357" y2="454" style="stroke:#000000;stroke-width:4" />
+    <line x1="444" y1="500" x2="444" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="444" y1="434" x2="378" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="378" y1="434" x2="378" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="378" y1="500" x2="444" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="411" y1="467" x2="411" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="411" y1="467" x2="440" y2="451" style="stroke:#000000;stroke-width:4" />
+    <line x1="411" y1="467" x2="440" y2="484" style="stroke:#000000;stroke-width:4" />
+    <line x1="411" y1="467" x2="411" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="411" y1="467" x2="383" y2="484" style="stroke:#000000;stroke-width:4" />
+    <circle cx="411" cy = "467" r = "32.83366073995651" stroke = "#000000" stroke-width = "4" fill = "none" />
+    <circle cx="403" cy = "453" r = "4.104207592494563" stroke = "#000000" stroke-width = "4" fill = "none" />
+    <circle cx="419" cy = "453" r = "4.104207592494563" stroke = "#000000" stroke-width = "4" fill = "none" />
+    <circle cx="428" cy = "467" r = "4.104207592494563" stroke = "#000000" stroke-width = "4" fill = "none" />
+    <circle cx="419" cy = "481" r = "4.104207592494563" stroke = "#000000" stroke-width = "4" fill = "none" />
+    <circle cx="403" cy = "481" r = "4.104207592494563" stroke = "#000000" stroke-width = "4" fill = "none" />
+    <line x1="411" y1="467" x2="383" y2="451" style="stroke:#000000;stroke-width:4" />
+    <circle cx="395" cy = "467" r = "4.104207592494563" stroke = "#000000" stroke-width = "4" fill = "none" />
+    <line x1="510" y1="500" x2="510" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="510" y1="434" x2="444" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="444" y1="434" x2="444" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="444" y1="500" x2="510" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="477" y1="467" x2="500" y2="444" style="stroke:#000000;stroke-width:4" />
+    <line x1="477" y1="467" x2="500" y2="490" style="stroke:#000000;stroke-width:4" />
+    <line x1="477" y1="467" x2="485" y2="467" style="stroke:#000000;stroke-width:4" />
+    <line x1="493" y1="467" x2="501" y2="467" style="stroke:#000000;stroke-width:4" />
+    <line x1="575" y1="500" x2="575" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="575" y1="434" x2="510" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="510" y1="434" x2="510" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="510" y1="500" x2="575" y2="500" style="stroke:#000000;stroke-width:4" />
+  <path d="M530.8964590191467 455.5578871798425           A16.416830369978253 16.416830369978253 0 0 1 554.1133631795485 455.5578871798425" fill = "none" stroke = "#000000" stroke-width = "4" />
+  <path d="M530.8964590191467 478.7747913402443           A16.416830369978253 16.416830369978253 0 0 1 530.8964590191467 455.5578871798425" fill = "none" stroke = "#000000" stroke-width = "4" />
+  <path d="M554.1133631795485 478.77479134024424           A16.416830369978253 16.416830369978253 0 0 1 530.8964590191467 478.7747913402443" fill = "none" stroke = "#000000" stroke-width = "4" />
+    <line x1="543" y1="467" x2="554" y2="456" style="stroke:#000000;stroke-width:4" />
+    <line x1="543" y1="443" x2="554" y2="454" style="stroke:#000000;stroke-width:4" />
+    <line x1="641" y1="500" x2="641" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="641" y1="434" x2="575" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="575" y1="434" x2="575" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="575" y1="500" x2="641" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="608" y1="467" x2="608" y2="451" style="stroke:#000000;stroke-width:4" />
+    <line x1="608" y1="467" x2="592" y2="467" style="stroke:#000000;stroke-width:4" />
+    <line x1="608" y1="467" x2="608" y2="484" style="stroke:#000000;stroke-width:4" />
+    <line x1="608" y1="467" x2="625" y2="467" style="stroke:#000000;stroke-width:4" />
+    <line x1="707" y1="500" x2="707" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="707" y1="434" x2="641" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="641" y1="434" x2="641" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="641" y1="500" x2="707" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="657" y1="467" x2="690" y2="467" style="stroke:#000000;stroke-width:4" />
+    <line x1="690" y1="467" x2="684" y2="473" style="stroke:#000000;stroke-width:4" />
+    <line x1="690" y1="467" x2="684" y2="461" style="stroke:#000000;stroke-width:4" />
+    <line x1="772" y1="500" x2="772" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="772" y1="434" x2="707" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="707" y1="434" x2="707" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="707" y1="500" x2="772" y2="500" style="stroke:#000000;stroke-width:4" />
+  <path d="M727.8984234588855 455.5578871798422           A16.416830369978253 16.416830369978253 0 0 1 751.1153276192872 455.5578871798419" fill = "none" stroke = "#000000" stroke-width = "4" />
+  <path d="M727.8984234588858 478.7747913402439           A16.416830369978253 16.416830369978253 0 0 1 727.8984234588855 455.5578871798422" fill = "none" stroke = "#000000" stroke-width = "4" />
+  <path d="M751.1153276192874 478.77479134024384           A16.416830369978253 16.416830369978253 0 0 1 727.8984234588858 478.7747913402439" fill = "none" stroke = "#000000" stroke-width = "4" />
+    <line x1="740" y1="467" x2="751" y2="456" style="stroke:#000000;stroke-width:4" />
+    <line x1="740" y1="443" x2="751" y2="454" style="stroke:#000000;stroke-width:4" />
+    <line x1="838" y1="500" x2="838" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="838" y1="434" x2="772" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="772" y1="434" x2="772" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="772" y1="500" x2="838" y2="500" style="stroke:#000000;stroke-width:4" />
+  <path d="M793.5657449387987 455.5578871798421           A16.416830369978253 16.416830369978253 0 0 1 816.7826490992004 455.55788717984194" fill = "none" stroke = "#000000" stroke-width = "4" />
+  <path d="M793.5657449387987 478.77479134024384           A16.416830369978253 16.416830369978253 0 0 1 793.5657449387987 455.5578871798421" fill = "none" stroke = "#000000" stroke-width = "4" />
+  <path d="M816.7826490992004 478.7747913402439           A16.416830369978253 16.416830369978253 0 0 1 793.5657449387987 478.77479134024384" fill = "none" stroke = "#000000" stroke-width = "4" />
+    <line x1="805" y1="467" x2="817" y2="456" style="stroke:#000000;stroke-width:4" />
+    <line x1="805" y1="443" x2="817" y2="454" style="stroke:#000000;stroke-width:4" />
+    <line x1="904" y1="500" x2="904" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="904" y1="434" x2="838" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="838" y1="434" x2="838" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="838" y1="500" x2="904" y2="500" style="stroke:#000000;stroke-width:4" />
+  <path d="M859.2330664187118 455.55788717984257           A16.416830369978253 16.416830369978253 0 0 1 882.4499705791136 455.55788717984257" fill = "none" stroke = "#000000" stroke-width = "4" />
+  <path d="M859.2330664187117 478.77479134024424           A16.416830369978253 16.416830369978253 0 0 1 859.2330664187118 455.55788717984257" fill = "none" stroke = "#000000" stroke-width = "4" />
+  <path d="M882.4499705791135 478.7747913402445           A16.416830369978253 16.416830369978253 0 0 1 859.2330664187117 478.77479134024424" fill = "none" stroke = "#000000" stroke-width = "4" />
+    <line x1="871" y1="467" x2="882" y2="456" style="stroke:#000000;stroke-width:4" />
+    <line x1="871" y1="443" x2="882" y2="454" style="stroke:#000000;stroke-width:4" />
+    <line x1="969" y1="500" x2="969" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="969" y1="434" x2="904" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="904" y1="434" x2="904" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="904" y1="500" x2="969" y2="500" style="stroke:#000000;stroke-width:4" />
+  <path d="M924.9003878986251 455.5578871798434           A16.416830369978253 16.416830369978253 0 0 1 948.1172920590268 455.5578871798436" fill = "none" stroke = "#000000" stroke-width = "4" />
+  <path d="M924.9003878986249 478.77479134024514           A16.416830369978253 16.416830369978253 0 0 1 924.9003878986251 455.5578871798434" fill = "none" stroke = "#000000" stroke-width = "4" />
+  <path d="M948.1172920590266 478.77479134024554           A16.416830369978253 16.416830369978253 0 0 1 924.9003878986249 478.77479134024514" fill = "none" stroke = "#000000" stroke-width = "4" />
+    <line x1="937" y1="467" x2="948" y2="456" style="stroke:#000000;stroke-width:4" />
+    <line x1="937" y1="443" x2="948" y2="454" style="stroke:#000000;stroke-width:4" />
+    <line x1="1035" y1="500" x2="1035" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="1035" y1="434" x2="969" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="969" y1="434" x2="969" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="969" y1="500" x2="1035" y2="500" style="stroke:#000000;stroke-width:4" />
+  <path d="M990.5677093785383 455.5578871798448           A16.416830369978253 16.416830369978253 0 0 1 1013.78461353894 455.5578871798451" fill = "none" stroke = "#000000" stroke-width = "4" />
+  <path d="M990.5677093785379 478.77479134024645           A16.416830369978253 16.416830369978253 0 0 1 990.5677093785383 455.5578871798448" fill = "none" stroke = "#000000" stroke-width = "4" />
+  <path d="M1013.7846135389395 478.7747913402471           A16.416830369978253 16.416830369978253 0 0 1 990.5677093785379 478.77479134024645" fill = "none" stroke = "#000000" stroke-width = "4" />
+    <line x1="1002" y1="467" x2="1014" y2="456" style="stroke:#000000;stroke-width:4" />
+    <line x1="1002" y1="443" x2="1014" y2="454" style="stroke:#000000;stroke-width:4" />
+    <line x1="1101" y1="500" x2="1101" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="1101" y1="434" x2="1035" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="1035" y1="434" x2="1035" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="1035" y1="500" x2="1101" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="1084" y1="467" x2="1051" y2="467" style="stroke:#000000;stroke-width:4" />
+    <line x1="1166" y1="500" x2="1166" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="1166" y1="434" x2="1101" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="1101" y1="434" x2="1101" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="1101" y1="500" x2="1166" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="1166" y1="500" x2="1134" y2="443" style="stroke:#000000;stroke-width:4" />
+    <line x1="1134" y1="443" x2="1101" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="1134" y1="443" x2="1134" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="1134" y1="500" x2="1158" y2="486" style="stroke:#000000;stroke-width:4" />
+    <line x1="1232" y1="500" x2="1232" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="1232" y1="434" x2="1166" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="1166" y1="434" x2="1166" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="1166" y1="500" x2="1232" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="1199" y1="467" x2="1199" y2="451" style="stroke:#000000;stroke-width:4" />
+    <line x1="1199" y1="467" x2="1183" y2="467" style="stroke:#000000;stroke-width:4" />
+    <line x1="1199" y1="467" x2="1199" y2="484" style="stroke:#000000;stroke-width:4" />
+    <line x1="1199" y1="467" x2="1216" y2="467" style="stroke:#000000;stroke-width:4" />
+    <line x1="1298" y1="500" x2="1298" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="1298" y1="434" x2="1232" y2="434" style="stroke:#000000;stroke-width:4" />
+    <line x1="1232" y1="434" x2="1232" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="1232" y1="500" x2="1298" y2="500" style="stroke:#000000;stroke-width:4" />
+    <line x1="1248" y1="467" x2="1281" y2="467" style="stroke:#000000;stroke-width:4" />
+    <line x1="1281" y1="467" x2="1275" y2="473" style="stroke:#000000;stroke-width:4" />
+    <line x1="1281" y1="467" x2="1275" y2="461" style="stroke:#000000;stroke-width:4" />
+    <line x1="454" y1="401" x2="454" y2="8" style="stroke:#000000;stroke-width:4" />
+    <line x1="454" y1="8" x2="1136" y2="401" style="stroke:#000000;stroke-width:4" />
+    <line x1="1136" y1="401" x2="454" y2="401" style="stroke:#000000;stroke-width:4" />
+</svg>

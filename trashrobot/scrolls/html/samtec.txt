@@ -1,0 +1,5 @@
+<div class = "pagelink" onclick = "doTheThing(0600)">Back up to TOC</div>
+
+<h2>Samtec Connectors</h2>
+
+<a href = "https://www.samtec.com">Samtec</a> is a company that makes connectors and cables of all kinds.  It's a very useful resource, in part because of their incredibly generous free sample policy.  

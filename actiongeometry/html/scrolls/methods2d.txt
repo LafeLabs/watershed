@@ -1,0 +1,26 @@
+<h2>Tape Shapes</h2>
+<figure>
+    <img src = "https://i.imgur.com/TZxTdsK.jpg"/><figcaption>Tools are crayons, packing tape, paper, pens or printer, scissors</figcaption>
+</figure>
+<figure>
+    <img src = "https://i.imgur.com/1zE2gLw.jpg"/><figcaption>Color to enhance clarity of scales</figcaption>
+</figure>
+
+<img src = "https://i.imgur.com/CkRHQ8F.jpg"/>
+<img src = "https://i.imgur.com/RK49hLJ.jpg"/>
+<img src = "https://i.imgur.com/cBhGwen.jpg"/>
+<img src = "https://i.imgur.com/mzFfYeu.jpg"/>
+<img src = "https://i.imgur.com/vCVazhE.jpg"/>
+
+
+<h2>Compass and Straightedge</h2>
+<img src = "https://i.imgur.com/q4tDwRj.jpg"/>
+<img src = "https://i.imgur.com/aKGpwjJ.jpg"/>
+<img src = "https://i.imgur.com/Y9OEZPP.jpg"/>
+<img src = "https://i.imgur.com/WabkKfM.jpg"/>
+<img src = "https://i.imgur.com/wbtXx5Q.jpg"/>
+<img src = "https://i.imgur.com/VsfqyLo.jpg"/>
+<img src = "https://i.imgur.com/pEtDILF.jpg"/>
+<img src = "https://i.imgur.com/jiaPnu7.jpg"/>
+<img src = "https://i.imgur.com/QLFlgUe.jpg"/>
+

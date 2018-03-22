@@ -1,0 +1,8 @@
+        <button onclick  = "doTheThing(0601)">back to triangle</button>
+        <H2>SQUARE</H2>
+        <h4>GEOMETRON GLYPH SPELLING</h4>
+        <IMG src = "svg/svg1521254313.svg"/>
+        <H4>CONSTRUCTION</H4>
+        <IMG src = "svg/svg1521255255.svg"/>
+        <H4>FRACTAL SCALING</H4>
+        <IMG src = "svg/svg1521254615.svg"/>

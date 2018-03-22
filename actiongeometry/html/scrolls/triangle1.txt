@@ -1,0 +1,70 @@
+<h2>Equilateral Triangle</h2>
+<figure>
+    
+<img src = "svg/svg1521233997.svg"/>
+<figcaption>Geometron glyph spelling of equilateral triangle</figcaption>
+</figure>
+<figure>
+    <img src = "svg/svg1521234047.svg"/><figcaption>Equilateral triangle fractal scaling</figcaption>
+</figure>
+<figure>
+    <img src = "svg/svg1521234099.svg"/><figcaption>Classical construction of equilateral triangle</figcaption>
+</figure>
+
+<h2>square</h2>
+<figure>
+    <img src = "svg/svg1521254313.svg"/>
+    <figcaption>Geometron glyph spelling of square</figcaption>
+</figure>
+
+<figure>
+    <img src = "svg/svg1521254615.svg"/>
+    <figcaption>Square fractal</figcaption>
+</figure>
+<figure>
+    <img src = "svg/svg1521255255.svg"/><figcaption>Classical construction of square</figcaption>
+</figure>
+<h2>Isosceles Right Triangle</h2>
+<figure>
+    <img src = "svg/svg1521255398.svg"/><figcaption>Glyph spelling</figcaption>
+</figure>
+<figure>
+    <img src = "svg/svg1521647107.svg"/><figcaption>Fractal</figcaption>
+</figure>
+
+<h2>30-60-90 Right Triangle</h2>
+
+</figure><img  src = "http://localhost:8000/actiongeometry/svg/svg1521647480.svg"/><figcaption>Glyph Spelling</figcaption>
+</figure>
+
+<h2>Golden Triangle</h2>
+<figure>
+    <img src = "svg/svg1521256306.svg"/>
+    <figcaption>Geometron glyph spelling of Golden Triangle</figcaption>
+</figure>
+<figure>
+<img src = "svg/svg1521644421.svg"/>
+<figcaption>Fractal Golden Triangle</figcaption>
+</figure>
+<h2>Golden Gnomon</h2>
+<p> 
+The Golden Gnomon is an isosceles triangle where the base is the Golden ratio times the leg length.
+</p>
+<img src = "svg/svg1521257851.svg" />
+
+<h2>Pentagon</h2>
+<figure>
+    <img src = "svg/svg1521256073.svg"/><figcaption>Glyph spelling</figcaption>
+</figure>
+
+<figure>
+    <img src = "svg/svg1521648580.svg"/><figcaption>Fractal pentagram</figcaption>
+</figure>
+<h2>Hexagon</h2>
+<figure>
+    <img src = "svg/svg1521254385.svg"/><figcaption>Hexagon glyph spelling</figcaption>
+</figure>
+<h2>Octagon</h2>
+<figure>
+    <img src = "svg/svg1521256195.svg"/><figcaption>Octagon glyph spelling</figcaption>
+</figure>

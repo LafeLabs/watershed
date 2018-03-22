@@ -1,0 +1,38 @@
+<svg width="1366" height="672" viewbox = "0 0 1366 672"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "glyph": "0335,0336,0335,0305,0311,0337,0201,0334,0350,0334,0337,0305,0201,0334,0334,0201,0334,0334,0336,0201,0334,0334,0336,0201,0335,0335,0201,0334,0334,0336,0201,0335,0335,0201,0334,0334,0336,0201,0335,0335,0201,0334,0334,0336,0201,0335,0335,0201,0334,0334,0336,0201,0335,0335,0201,0334,0334,0336,0201,0335,0335,0201,0334,0334,0336,0201,0335,0335,0201,0334,0334,0336,0201,",
+    "unit": 672.7499949325611,
+    "x0": 350,
+    "y0": 50,
+    "x0rel": -0.49498328132039765,
+    "y0rel": -0.42512077614905025,
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1
+}
+</json>
+-->
+    <line x1="350" y1="50" x2="350" y2="594" style="stroke:#000000;stroke-width:4" />
+    <line x1="350" y1="594" x2="1188" y2="322" style="stroke:#000000;stroke-width:4" />
+    <line x1="1188" y1="322" x2="350" y2="50" style="stroke:#000000;stroke-width:4" />
+    <line x1="350" y1="50" x2="670" y2="490" style="stroke:#000000;stroke-width:4" />
+    <line x1="670" y1="490" x2="670" y2="154" style="stroke:#000000;stroke-width:4" />
+    <line x1="670" y1="154" x2="868" y2="426" style="stroke:#000000;stroke-width:4" />
+    <line x1="868" y1="426" x2="868" y2="218" style="stroke:#000000;stroke-width:4" />
+    <line x1="868" y1="218" x2="990" y2="386" style="stroke:#000000;stroke-width:4" />
+    <line x1="990" y1="386" x2="990" y2="258" style="stroke:#000000;stroke-width:4" />
+    <line x1="990" y1="258" x2="1065" y2="362" style="stroke:#000000;stroke-width:4" />
+    <line x1="1065" y1="362" x2="1065" y2="282" style="stroke:#000000;stroke-width:4" />
+    <line x1="1065" y1="282" x2="1112" y2="347" style="stroke:#000000;stroke-width:4" />
+    <line x1="1112" y1="347" x2="1112" y2="298" style="stroke:#000000;stroke-width:4" />
+    <line x1="1112" y1="298" x2="1141" y2="337" style="stroke:#000000;stroke-width:4" />
+    <line x1="1141" y1="337" x2="1141" y2="307" style="stroke:#000000;stroke-width:4" />
+    <line x1="1141" y1="307" x2="1159" y2="332" style="stroke:#000000;stroke-width:4" />
+    <line x1="1159" y1="332" x2="1159" y2="313" style="stroke:#000000;stroke-width:4" />
+    <line x1="1159" y1="313" x2="1170" y2="328" style="stroke:#000000;stroke-width:4" />
+    <line x1="1170" y1="328" x2="1170" y2="316" style="stroke:#000000;stroke-width:4" />
+</svg>

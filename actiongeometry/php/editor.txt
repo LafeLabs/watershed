@@ -7,6 +7,8 @@
         <a href = "text2php.php" id = "text2phplink">text2php.php</a>
     <a href = "index.php" id = "indexlink">index.php</a>
     <a href = "imageeditor.php" id = "imagelink">imageeditor.php</a>
+    <a href = "linkeditor.php" id = "linklink">linkeditor.php</a>
+    <a href = "scrolleditor.php" id = "scrollink">scrolleditor.php</a>
 
 <div id = "namediv"></div>
 <div id="maineditor"></div>
@@ -16,6 +18,13 @@
     <div class = "html file">html/imageurls.txt</div>
     <div class = "html file">html/shapes2d/equilateral.txt</div>
     <div class = "html file">html/shapes2d/square.txt</div>
+    <div class = "html file">html/shapes2d/isoscelesright.txt</div>
+    <div class = "html file">html/shapes2d/right60triangle.txt</div>
+    <div class = "html file">html/shapes2d/octagon.txt</div>
+    <div class = "html file">html/shapes2d/hexagon.txt</div>
+    <div class = "html file">html/shapes2d/pentagon.txt</div>
+
+
 
     <div class = "css file">css/style.txt</div>
 
@@ -49,7 +58,8 @@
     <div class = "php file">php/branch.txt</div>
     <div class = "php file">php/scandir.php</div>
     <div class = "php file">php/imageeditor.php</div>
-
+    <div class = "php file">php/linkeditor.php</div>
+    <div class = "php file">php/scrolleditor.php</div>
 
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/currentjson.txt</div>
@@ -219,7 +229,18 @@ body{
     color:white;
     
 }
-
+#linklink{
+    top:3em;
+    left:0px;
+    position:absolute;
+    color:white;
+}
+#scrollink{
+    position:absolute;
+    color:white;
+    left:10em;
+    top:2em;
+}
 </style>
 </body>
 </html>

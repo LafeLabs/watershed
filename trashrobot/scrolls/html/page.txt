@@ -1,0 +1,2 @@
+<a  id = "svglink" href = "editor.php">Editor</a>
+<div id = "scroll"></div>

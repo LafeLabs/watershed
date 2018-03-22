@@ -1,0 +1,34 @@
+<div class = "button" onclick = "doTheThing(0611)">back to shapes2d</div>
+<h2>Tetrahedron</h2>
+
+<figure>
+    <img src = "svg/svg1521649738.svg"/><figcaption>Net for tetrahedron</figcaption>
+</figure>
+<h2>Cube</h2>
+<figure>
+    <img src = "svg/svg1521649663.svg"/><figcaption>Net for cube</figcaption>
+</figure>
+<h2>Octahedron</h2>
+<figure>
+    <img src = "svg/svg1521649676.svg"/><figcaption>Net for octahedron</figcaption>
+</figure>
+
+<h2>Icosahedron</h2>
+<figure>
+    <img src = "svg/svg1521649704.svg"/><figcaption>Net for icosahedron</figcaption>
+</figure>
+
+<h2>Dodecahedron</h2>
+<figure>
+    <img src = "svg/svg1521649647.svg"/><figcaption>Net for dodecahedron</figcaption>
+</figure>
+
+<h2>5-Pyramid</h2>
+<figure>
+    <img src = "svg/svg1521649918.svg"/><figcaption>Net for 5-pyramid</figcaption>
+</figure>
+<h2>6 Antiprism</h2>
+<figure>
+    <img src = "svg/svg1521650358.svg"/><figcaption>Net for 6-antiprism</figcaption>
+</figure>
+<div class = "button" onclick = "doTheThing(0612)">Jump to methods2d</div>

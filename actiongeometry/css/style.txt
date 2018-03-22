@@ -1,3 +1,6 @@
+body{
+    overflow:hidden;
+}
  #page{
      position:absolute;
      left:0px;
@@ -37,7 +40,7 @@
 }
 #imageTable{
     left:15px;
-    top:15px;
+    top:6em;
 }
 #imageTable input{
     width:5em;
@@ -157,4 +160,11 @@ img{
     font-family:Futura;
     font-size:2.5em;   
     display:none;
+}
+#modebutton{
+    position:absolute;
+    left:1em;
+    top:1em;
+    width:10em;
+    z-index:2;
 }

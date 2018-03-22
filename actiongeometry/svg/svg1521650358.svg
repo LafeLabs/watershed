@@ -1,0 +1,57 @@
+<svg width="1363" height="671" viewbox = "0 0 1363 671"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "glyph": "0335,0306,0201,0335,0201,0335,0201,0335,0201,0335,0201,0335,0201,0335,0335,0335,0220,0330,0334,0220,0330,0334,0220,0330,0334,0220,0330,0334,0220,0330,0334,0220,0335,0220,0335,0335,0330,0335,0201,0335,0335,0201,0334,0334,0330,0335,0201,0335,0335,0201,0334,0334,0330,0335,0201,0335,0335,0201,0334,0334,0201,0335,0201,0335,0335,0201,0334,0334,0330,0335,0201,0335,0335,0201,",
+    "unit": 161.0510000000001,
+    "x0": 600,
+    "y0": 200,
+    "x0rel": -0.5060508782932112,
+    "y0rel": -0.8413483927451547,
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1
+}
+</json>
+-->
+    <line x1="600" y1="200" x2="761" y2="200" style="stroke:#000000;stroke-width:4" />
+    <line x1="761" y1="200" x2="842" y2="339" style="stroke:#000000;stroke-width:4" />
+    <line x1="842" y1="339" x2="761" y2="479" style="stroke:#000000;stroke-width:4" />
+    <line x1="761" y1="479" x2="600" y2="479" style="stroke:#000000;stroke-width:4" />
+    <line x1="600" y1="479" x2="519" y2="339" style="stroke:#000000;stroke-width:4" />
+    <line x1="519" y1="339" x2="600" y2="200" style="stroke:#000000;stroke-width:4" />
+    <line x1="600" y1="200" x2="519" y2="339" style="stroke:#000000;stroke-width:4" />
+    <line x1="519" y1="339" x2="439" y2="200" style="stroke:#000000;stroke-width:4" />
+    <line x1="439" y1="200" x2="600" y2="200" style="stroke:#000000;stroke-width:4" />
+    <line x1="519" y1="339" x2="600" y2="479" style="stroke:#000000;stroke-width:4" />
+    <line x1="600" y1="479" x2="439" y2="479" style="stroke:#000000;stroke-width:4" />
+    <line x1="439" y1="479" x2="519" y2="339" style="stroke:#000000;stroke-width:4" />
+    <line x1="600" y1="479" x2="761" y2="479" style="stroke:#000000;stroke-width:4" />
+    <line x1="761" y1="479" x2="681" y2="618" style="stroke:#000000;stroke-width:4" />
+    <line x1="681" y1="618" x2="600" y2="479" style="stroke:#000000;stroke-width:4" />
+    <line x1="761" y1="479" x2="842" y2="339" style="stroke:#000000;stroke-width:4" />
+    <line x1="842" y1="339" x2="922" y2="479" style="stroke:#000000;stroke-width:4" />
+    <line x1="922" y1="479" x2="761" y2="479" style="stroke:#000000;stroke-width:4" />
+    <line x1="842" y1="339" x2="761" y2="200" style="stroke:#000000;stroke-width:4" />
+    <line x1="761" y1="200" x2="922" y2="200" style="stroke:#000000;stroke-width:4" />
+    <line x1="922" y1="200" x2="842" y2="339" style="stroke:#000000;stroke-width:4" />
+    <line x1="761" y1="200" x2="600" y2="200" style="stroke:#000000;stroke-width:4" />
+    <line x1="600" y1="200" x2="681" y2="61" style="stroke:#000000;stroke-width:4" />
+    <line x1="681" y1="61" x2="761" y2="200" style="stroke:#000000;stroke-width:4" />
+    <line x1="761" y1="200" x2="681" y2="61" style="stroke:#000000;stroke-width:4" />
+    <line x1="681" y1="61" x2="842" y2="61" style="stroke:#000000;stroke-width:4" />
+    <line x1="842" y1="61" x2="761" y2="200" style="stroke:#000000;stroke-width:4" />
+    <line x1="922" y1="200" x2="1003" y2="339" style="stroke:#000000;stroke-width:4" />
+    <line x1="1003" y1="339" x2="842" y2="339" style="stroke:#000000;stroke-width:4" />
+    <line x1="922" y1="479" x2="842" y2="618" style="stroke:#000000;stroke-width:4" />
+    <line x1="842" y1="618" x2="761" y2="479" style="stroke:#000000;stroke-width:4" />
+    <line x1="681" y1="618" x2="519" y2="618" style="stroke:#000000;stroke-width:4" />
+    <line x1="519" y1="618" x2="600" y2="479" style="stroke:#000000;stroke-width:4" />
+    <line x1="600" y1="479" x2="439" y2="479" style="stroke:#000000;stroke-width:4" />
+    <line x1="439" y1="479" x2="358" y2="339" style="stroke:#000000;stroke-width:4" />
+    <line x1="358" y1="339" x2="519" y2="339" style="stroke:#000000;stroke-width:4" />
+    <line x1="439" y1="200" x2="519" y2="61" style="stroke:#000000;stroke-width:4" />
+    <line x1="519" y1="61" x2="600" y2="200" style="stroke:#000000;stroke-width:4" />
+</svg>

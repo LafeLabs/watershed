@@ -5,7 +5,7 @@
         side = unit;
         thetaStep = Math.PI/2;
         scaleFactor = 2;
-        ctx.lineWidth = 2;
+        ctx.lineWidth = 4;
         ctx.strokeStyle= resetColor;//"#00ff00";
         ctx.fillStyle=resetColor;
         currentStroke = resetColor;
