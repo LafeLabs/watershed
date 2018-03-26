@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.lafelabs.metamap.wmcalc" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>wmcalc_phonegap</name>
+    <description>
+        This app translates between lattitude/longitude coordinates in decimal degrees and Washington Monument units(1 unit = 555 feet), where the (0,0) point is the location of the Washington Monument.
+    </description>
+    <author email="lafelabs@gmail.com" href="http://www.actiongeometry.org">
+    Lafe
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
