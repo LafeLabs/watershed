@@ -4,34 +4,27 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-        <a href = "text2php.php" id = "text2phplink">text2php.php</a>
-    <a href = "index.php" id = "indexlink">index.php</a>
+    <a href = "text2php.php" id = "text2phplink">text2php.php</a>
+    <a href = "text2html.php" id = "text2htmllink">text2html.php</a>
+    <a href = "index.html" id = "indexlink">index.html</a>
 
 <div id = "namediv"></div>
 <div id="maineditor"></div>
 <div id = "filescroll">
-    <div class = "html file">html/page.txt</div>
-
-    <div class = "css file">css/style.txt</div>
-
-    <div class = "javascript file">javascript/topfunctions.txt</div>
-    <div class = "javascript file">javascript/init.txt</div>
-    <div class = "javascript file">javascript/redraw.txt</div>
-    <div class = "javascript file">javascript/pageevents.txt</div>
+    <div class = "html file">html/index.txt</div>
 
     <div class = "php file">php/editor.txt</div>
-    <div class = "php file">php/index.txt</div>
     <div class = "php file">php/replicator.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/text2php.txt</div>
+    <div class = "php file">php/text2html.txt</div>
 
     <div class = "json file">json/dna.txt</div>
-
 </div>
 
 <script>
-currentFile = "html/page.txt";
+currentFile = "html/index.txt";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -104,7 +97,6 @@ document.getElementById("maineditor").onkeyup = function(){
     httpc.open("POST", url, true);
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
     httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
-    console.log(data);//for debugging, always potentially useful
 }
 </script>
 <style>
@@ -185,7 +177,12 @@ body{
     top:1em;
     color:white;
 }
-
+#text2htmllink{
+    position:absolute;
+    left:10em;
+    top:0px;
+    color:white;
+}
 </style>
 </body>
 </html>

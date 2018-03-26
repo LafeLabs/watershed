@@ -1,3 +1,11 @@
+<!doctype html>
+<html>
+<head>
+<title>Metamap Coordinate Calculator</title>
+<!-- 
+PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
+-->
+<script id = "topfunctions">
 
 function latlon2wm(latlonin){
 //Washington Monument is at 38.8895,-77.0352 and is 555 feet high
@@ -40,3 +48,60 @@ function wm2latlon(wmin){
     return lat1.toString() + "," + lon1.toString();
     
 }
+   
+</script>
+
+</head>
+<body>
+<div id = "page">
+<a  id = "editlink" href = "editor.php">Editor</a>
+
+<div class = "bigbox">
+    Lattitude,Longitude:
+    <input id = "latloninput" value = "38.8895,-77.0352"/>
+</div>
+<div class = "bigbox">
+    x,y[Washington Monuments]:
+    <input id = "wminput" value = "0,0"/>
+</div>
+
+<img width = "30%" src = "fig1.png"/>
+<img width = "65%" src = "fig2.png"/></div>
+
+<script id = "pageevents">
+
+document.getElementById("latloninput").onchange = function(){
+    document.getElementById("wminput").value = latlon2wm(this.value);
+}
+
+document.getElementById("wminput").onchange = function(){
+    document.getElementById("latloninput").value = wm2latlon(this.value);
+}
+</script>
+<style>
+#editlink{
+     position:absolute;
+     left:50%;
+     top:10px;
+     z-index:2;
+}
+
+.bigbox{
+    border:solid;
+    border-radius:1em;
+    font-size:16px;
+    font-family:courier;
+    text-align:center;
+    margin:0.5em 0.5em 0.5em 0.5em;
+    padding:1em 1em 1em 1em;
+}
+.bigbox input{
+    font-size:16px;
+    font-family:courier;
+    display:block;
+    margin:auto;
+    width:80%;
+    margin-top:0.2em;
+}</style>
+</body>
+</html>

@@ -18,6 +18,13 @@
      top:10px;
      z-index:2;
 }
+#wmcalc{
+    position:absolute;
+     left:30%;
+     top:2em;
+          z-index:2;
+
+}
 
  #textIO{
     position:absolute;

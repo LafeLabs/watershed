@@ -1,43 +1,13 @@
 [
     {
-        "name":"style",
-        "type":"css",
-        "url":"css/style.txt"
-    },
-    {
-        "name":"page",
+        "name":"index",
         "type":"html",
-        "url":"html/page.txt"
-    },
-    {
-        "name":"topfunctions",
-        "type":"javascript",
-        "url":"javascript/topfunctions.txt"
-    },
-    {
-        "name":"init",
-        "type":"javascript",
-        "url":"javascript/init.txt"
-    },
-    {
-        "name":"redraw",
-        "type":"javascript",
-        "url":"javascript/redraw.txt"
-    },
-    {
-        "name":"pageevents",
-        "type":"javascript",
-        "url":"javascript/pageevents.txt"
+        "url":"html/index.txt"
     },
     {
         "name":"editor",
         "type":"php",
         "url":"php/editor.txt"
-    },
-    {
-        "name":"index",
-        "type":"php",
-        "url":"php/index.txt"
     },
     {
         "name":"fileloader",
@@ -55,18 +25,28 @@
         "url":"php/replicator.txt"
     },
     {
-        "name":"currentjson",
-        "type":"json",
-        "url":"json/currentjson.txt"
+        "name":"text2php",
+        "type":"php",
+        "url":"php/text2php.txt"
     },
     {
-        "name":"imagedata",
-        "type":"json",
-        "url":"json/imagedata.txt"
+        "name":"text2html",
+        "type":"php",
+        "url":"php/text2html.txt"
     },
     {
         "name":"dna",
         "type":"json",
         "url":"json/dna.txt"
+    },
+    {
+        "name":"fig1",
+        "type":"image",
+        "url":"images/fig1.png"
+    },
+    {
+        "name":"fig2",
+        "type":"image",
+        "url":"images/fig2.png"
     }
 ]
