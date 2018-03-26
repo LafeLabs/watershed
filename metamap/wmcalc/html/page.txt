@@ -1,0 +1,13 @@
+<a  id = "editlink" href = "editor.php">Editor</a>
+
+<div class = "bigbox">
+    Lattitude,Longitude:
+    <input id = "latloninput" value = "38.8895,-77.0352"/>
+</div>
+<div class = "bigbox">
+    x,y[Washington Monuments]:
+    <input id = "wminput" value = "0,0"/>
+</div>
+
+<img width = "30%" src = "images/fig1.png"/>
+<img width = "65%" src = "images/fig2.png"/>

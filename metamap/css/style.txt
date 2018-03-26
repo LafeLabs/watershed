@@ -12,6 +12,13 @@
      top:10px;
      z-index:2;
  }
+  #rootlink{
+    position:absolute;
+     left:30%;
+     top:10px;
+     z-index:2;
+}
+
  #textIO{
     position:absolute;
     width:100px;

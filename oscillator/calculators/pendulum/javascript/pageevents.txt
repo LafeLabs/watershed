@@ -1,0 +1,58 @@
+document.getElementById("pbutton").onclick = function(){
+    poincare = !poincare;
+    if(poincare){
+        this.style.backgroundColor = "#00ff00";
+    }
+    else{
+        this.style.backgroundColor = "#ff0000";
+    }
+    redraw();
+}
+ 
+  inputs[0].onchange = function(){
+    T = parseFloat(this.value);
+    redraw();
+ }
+ inputs[1].onchange = function(){
+    Q = parseFloat(this.value);
+    redraw();     
+ }
+ inputs[2].onchange = function(){
+    a = parseFloat(this.value);
+    redraw();     
+ }
+ inputs[3].onchange = function(){
+    b = parseFloat(this.value);
+    redraw();     
+ }
+ inputs[4].onchange = function(){
+    delta = parseFloat(this.value);
+    redraw();     
+ }
+ inputs[5].onchange = function(){
+    npoints = parseInt(this.value);
+    redraw();     
+ }
+ inputs[6].onchange = function(){
+    Npoints = parseInt(this.value);
+    redraw();     
+ }
+
+ inputs[7].onchange = function(){
+    theta0 = parseFloat(this.value);
+    redraw();     
+ }
+inputs[8].onchange = function(){
+    thetadot0 = parseFloat(this.value);
+    redraw();     
+ }
+
+ document.getElementById("publish").onclick = function(){
+     
+    data = encodeURIComponent(currentSVG);
+    var httpc = new XMLHttpRequest();
+    var url = "feedsaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data);//send text to feedsaver.php
+ }

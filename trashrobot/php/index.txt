@@ -48,6 +48,21 @@ function doTheThing(localCommand){
     if(localCommand >= 01000 && localCommand <= 01777){//symbol glyphs
             drawGlyph(currentTable[localCommand]);    	    
     } 
+    if(localCommand >= 0400 && localCommand <= 0477 && scrollMode){
+        var httpc = new XMLHttpRequest();
+        httpc.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                filedata = this.responseText;
+                document.getElementById("jsondata").innerHTML = filedata;
+                init();
+                redraw();
+                
+            }
+        };
+        httpc.open("GET", "fileloader.php?filename=" + byteCode2string(currentTable[localCommand]), true);
+        httpc.send();
+    }
+
     if(localCommand >= 0500 && localCommand <= 0577){//draw bitmaps
         //these are json, with position information
         var imgid = "img0" + localCommand.toString(8);
@@ -61,7 +76,7 @@ function doTheThing(localCommand){
         }
         
     }
-    if(localCommand >= 0600 && localCommand <= 0677){//draw boxes
+    if(localCommand >= 0600 && localCommand <= 0677 && boxMode){//draw boxes
         //see if the div exists, and if it does, set size, position, and rotation based on global geometry 
         //variables
         var boxid = "box0" + localCommand.toString(8); 
@@ -74,6 +89,22 @@ function doTheThing(localCommand){
             document.getElementById(boxid).style.fontSize = (side/scaleFactor).toString() + "px";
             document.getElementById(boxid).style.transform = "rotate(" + (theta - theta0).toString() + "rad)";
         }
+    }
+    if(localCommand >= 0600 && localCommand <= 0677 && scrollMode){
+        currentAddress = localCommand;
+        currentJSON.currentAddress = "0" + currentAddress.toString(8);
+
+        var httpc = new XMLHttpRequest();
+        httpc.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                filedata = this.responseText;
+                document.getElementById("scroll").innerHTML = filedata;
+                            MathJax.Hub.Typeset();//tell Mathjax to update the math
+
+            }
+        };
+        httpc.open("GET", "fileloader.php?filename=" + byteCode2string(currentTable[localCommand]), true);
+        httpc.send();
     }
     <?php
 
@@ -90,6 +121,12 @@ function doTheThing(localCommand){
             }
             echo "\n";
 
+            for($x = 0; $x < count($dna); $x++) {
+                if($dna[$x] -> name == "actions07xx"){
+                    echo file_get_contents($dna[$x] -> url);
+                }    
+            }
+            echo "\n";
         
     ?>    
 }
@@ -105,19 +142,9 @@ function doTheThing(localCommand){
 
 </head>
 <body>
-<div id = "imagedata" style = "display:none">
-<?php
-    echo file_get_contents("json/imagedata.txt");
-?>
-</div>
 <div id = "jsondata" style = "display:none">
 <?php
     echo file_get_contents("json/currentjson.txt");
-?>
-</div>
-<div id = "boxes">
-<?php
-    echo file_get_contents("html/boxes.txt");
 ?>
 </div>
 <div id = "page">

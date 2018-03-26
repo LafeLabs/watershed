@@ -6,13 +6,13 @@
 <body>
         <a href = "text2php.php" id = "text2phplink">text2php.php</a>
     <a href = "index.php" id = "indexlink">index.php</a>
+    <a href = "scrolleditor.php" id = "scrollink">scrolleditor.php</a>
+    <a href = "linkeditor.php" id = "linklink">linkeditor.php</a>
 
 <div id = "namediv"></div>
 <div id="maineditor"></div>
 <div id = "filescroll">
     <div class = "html file">html/page.txt</div>
-    <div class = "html file">html/boxes.txt</div>
-    <div class = "html file">html/pendulumscroll.txt</div>
 
     <div class = "css file">css/style.txt</div>
 
@@ -22,10 +22,12 @@
     <div class = "bytecode file">bytecode/keyboard.txt</div>
     <div class = "bytecode file">bytecode/symbols013xx.txt</div>
     <div class = "bytecode file">bytecode/symbols010xx.txt</div>
-
+    <div class = "bytecode file">bytecode/symbols017xx.txt</div>
+    <div class = "bytecode file">bytecode/bytecode0x6xx.txt</div>
     <div class = "javascript file">javascript/topfunctions.txt</div>
     <div class = "javascript file">javascript/actions0xx.txt</div>
     <div class = "javascript file">javascript/actions03xx.txt</div>
+    <div class = "javascript file">javascript/actions07xx.txt</div>
     <div class = "javascript file">javascript/jslibrary.txt</div>
     <div class = "javascript file">javascript/init.txt</div>
     <div class = "javascript file">javascript/redraw.txt</div>
@@ -42,6 +44,8 @@
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/branch.txt</div>
     <div class = "php file">php/scandir.php</div>
+    <div class = "php file">php/linkeditor.php</div>
+    <div class = "php file">php/scrolleditor.php</div>
 
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/currentjson.txt</div>
@@ -203,6 +207,19 @@ body{
     left:0px;
     top:1em;
     color:white;
+}
+#linklink{
+    top:3em;
+    left:0px;
+    position:absolute;
+    color:white;
+}
+
+#scrollink{
+    position:absolute;
+    color:white;
+    left:10em;
+    top:2em;
 }
 
 </style>

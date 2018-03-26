@@ -1,0 +1,40 @@
+
+function latlon2wm(latlonin){
+//Washington Monument is at 38.8895,-77.0352 and is 555 feet high
+    var lat0 = 38.8895;
+    var lon0 = -77.0352;
+    var unitfeet = 555;
+    
+    var lat1 = parseFloat(latlonin.split(",")[0]);
+    var lon1 = parseFloat(latlonin.split(",")[1]);
+    //from the original definition of the meter:
+    //90 degrees lattitude = 10,000,000 meters = 32808399 feet
+    //1 degree lattitude = 32808399/90 = 364538 feet
+    //1 degree longitude = 1 degre lattitude X cos(lattitude) = 283699 feet.
+    deltaxfeet = Math.round((lon1 - lon0)*283699);
+    deltayfeet = Math.round((lat1 - lat0)*364538);
+    return (Math.round(10*deltaxfeet/unitfeet)/10).toString() + "," + (Math.round(10*deltayfeet/unitfeet)/10).toString();
+}
+
+function wm2latlon(wmin){
+//Washington Monument is at 38.8895,-77.0352 and is 555 feet high
+    var lat0 = 38.8895;
+    var lon0 = -77.0352;
+    var unitfeet = 555;
+    
+    var x = parseFloat(wmin.split(",")[0]);
+    var y = parseFloat(wmin.split(",")[1]);
+
+    deltaxfeet = x*unitfeet;
+    deltayfeet = y*unitfeet;
+
+    //from the original definition of the meter:
+    //90 degrees lattitude = 10,000,000 meters = 32808399 feet
+    //1 degree lattitude = 32808399/90 = 364538 feet
+    //1 degree longitude = 1 degre lattitude X cos(lattitude) = 283699 feet.
+
+    lat1 = Math.round(10000*(lat0 + deltayfeet/364538))/10000;
+    lon1 = Math.round(10000*(lon0 + deltaxfeet/283699))/10000;
+    return lat1.toString() + "," + lon1.toString();
+    
+}

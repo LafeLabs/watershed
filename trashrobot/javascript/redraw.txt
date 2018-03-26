@@ -1,12 +1,22 @@
-for(var index = 0;index < data05xx.length;index++){
-    document.getElementById("img" + data05xx[index].address).style.display = "none";
+
+if(currentAddress >= 0600 && currentAddress < 0700){
+    document.getElementById("controlTable").style.display = "none";
+    document.getElementById("mainCanvas").style.display = "none";
+    document.getElementById("buttonTable").style.display = "none";
+    document.getElementById("glyphspellinput").style.display = "none";
+    document.getElementById("textIO").style.display = "none";
+    document.getElementById("scroll").style.display = "block";
+    doTheThing(currentAddress);
+}
+else{
+    document.getElementById("controlTable").style.display = "block";
+    document.getElementById("mainCanvas").style.display = "block";
+    document.getElementById("buttonTable").style.display = "block";
+    document.getElementById("glyphspellinput").style.display = "block";
+    document.getElementById("textIO").style.display = "block";
+    document.getElementById("scroll").style.display = "none";
 }
 
-
-
-for(var index = 0;index < boxes.length;index++){
-    boxes[index].style.display = "none";
-}
 
         var glyphArray = currentGlyph.split(",");
         currentTable[currentAddress] = "";
@@ -27,13 +37,10 @@ doTheThing(0300);
 
 x = 150;
 y = innerHeight-100;
-side = 25;
+side = 50;
 spellGlyph(currentGlyph);
 document.getElementById("glyphspellinput").value = currentTable[currentAddress];
 
-document.getElementById("mainImage").style.width = (parseFloat(imagedata[1].value)*unit).toString()  + "px";
-document.getElementById("mainImage").style.left = (x0 + parseFloat(imagedata[3].value)*unit).toString()  + "px";
-document.getElementById("mainImage").style.top = (y0 + parseFloat(imagedata[2].value)*unit).toString()  + "px";
 
         currentJSON.glyph = currentTable[currentAddress];
         currentJSON.unit = unit;
@@ -41,10 +48,7 @@ document.getElementById("mainImage").style.top = (y0 + parseFloat(imagedata[2].v
         currentJSON.y0 = y0;
         currentJSON.x0rel = (x0 - 0.5*innerWidth)/unit;
         currentJSON.y0rel = (y0 - 0.5*innerHeight)/unit;
-        currentJSON.imgurl = imagedata[0].value;
-        currentJSON.imgw = parseFloat(imagedata[1].value);
-        currentJSON.imgleft = parseFloat(imagedata[2].value);
-        currentJSON.imgtop = parseFloat(imagedata[3].value);
+
 
 currentJSON.currentAddress = "0" + currentAddress.toString(8);
 
@@ -63,10 +67,3 @@ currentJSON.table = [];
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
     httpc.send("data="+jsondata+"&filename="+"json/currentjson.txt");//send text to filesaver.php
 
-if(currentJSON.imgurl.length > 5){
-    document.getElementById("mainImage").style.display = "block";
-    document.getElementById("mainImage").src = currentJSON.imgurl;
-}
-else{
-    document.getElementById("mainImage").style.display = "none";
-}

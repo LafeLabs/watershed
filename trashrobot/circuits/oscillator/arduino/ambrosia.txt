@@ -48,13 +48,12 @@ int tau = 300;
 void setup()
 {
   pinMode(6, OUTPUT);  //vibrator control pin, to HackOff
-  pinMode(5, OUTPUT);
-  pinMode(10, OUTPUT);
+  //pinMode(5, OUTPUT);
+//  pinMode(10, OUTPUT);
   Serial.begin(9600);
   Wire.begin();
   raw0 = bmp085ReadUP();
   
-   pinMode(A0, INPUT);//suctus sensor in
    k = 0.9;//.3
    tau = 500;
    n = tau/deltat;
@@ -97,8 +96,8 @@ F = k*sqrt(p*p + q*q)/16;
  
   vold = vnew;
   analogWrite(6,vnew); 
-  analogWrite(5,vnew); 
-  analogWrite(10,vnew); 
+//  analogWrite(5,vnew); 
+  //analogWrite(10,vnew); 
 
 //  analogWrite(6,255); 
   delay(deltat);

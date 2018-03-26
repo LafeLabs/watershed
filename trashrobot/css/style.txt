@@ -12,6 +12,13 @@
      top:10px;
      z-index:2;
  }
+ #rootlink{
+    position:absolute;
+     left:30%;
+     top:10px;
+     z-index:2;
+}
+
  #textIO{
     position:absolute;
     width:100px;
@@ -86,5 +93,54 @@ img{
     z-index:2;
 }
 #scroll{
+    position:absolute;
+    left:5%;
+    right:5%;
+    top:5%;
+    bottom:5%;
+    z-index:1;
+    border-radius:1em;
+    padding:1em 1em 1em 1em;
+    overflow:scroll;
     display:none;
+    text-align:justify;
+}
+#scroll h2,h1,h3,h4{
+    width:100%;
+    text-align:center;
+}
+#scroll img{
+    position:static;
+    width:85%;
+    display:block;
+    margin:auto;
+}
+#modebutton{
+    position:absolute;
+    left:1em;
+    top:1em;
+    width:10em;
+    z-index:2;
+}
+.optic{
+    position:absolute;
+    width:25%;
+    z-index:3;
+    top:25%;
+    bottom:0%;
+    display:none;
+    overflow:hidden;
+    background-color:black;
+}
+#optic1{
+    left:0%;
+}
+#optic2{
+    left:25%;
+}
+#optic3{
+    left:50%;
+}
+#optic4{
+    left:75%;
 }

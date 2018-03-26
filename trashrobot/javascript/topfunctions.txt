@@ -65,6 +65,10 @@ function spellGlyph(localString){
     }
 }
 
+function runGlyph(localString){
+    
+}
+
 
 
 

@@ -12,10 +12,11 @@
     $dnaraw = file_get_contents($url);
     $dna =json_decode($dnaraw);
 
+    $baseurl = explode("json",$url);
 
     foreach ($dna as $value) {
         $data = file_get_contents($value->url);
-        $filename = $value->type."/".$value->name.".txt";
+        $filename = $baseurl.$value->type."/".$value->name.".txt";
         $file = fopen($filename,"w");// create new file with this name
         fwrite($file,$data); //write data to file
         fclose($file);  //close file

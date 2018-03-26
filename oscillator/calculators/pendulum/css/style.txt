@@ -1,0 +1,82 @@
+#linklist{
+    position:absolute;
+    left:25%;
+    top:5%;
+    font-size:2em;
+}
+#linklist li{
+    padding-top:0.5em;
+}
+ #textIO{
+    position:absolute;
+    width:100px;
+    height:100px;
+    left:0px;
+    bottom:0px;
+    border:solid;
+}
+#calcTable{
+    left:5%;
+    top:5%;
+}
+#equation{
+    position:absolute;
+    left:10%;
+    bottom:10%;
+    font-size:20px;
+    z-index:-2;
+}
+#publish{
+    position:absolute;
+    right:1em;
+    top:1em;
+}
+input{
+    font-family:courier;
+    font-size:16px;
+    width:5em;
+}
+table{
+    font-family:courier;
+    font-size:18;
+    position:absolute;
+}
+.button{
+    padding:0.5em 0.5em 0.5em 0.5em;
+    font-family:courier;
+    cursor:pointer;
+    border:solid;
+    border-radius:0.5em;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+#pbutton{
+    position:absolute;
+    top:1em;
+    right:10%;
+    background-color:#ff0000;
+}
+#scroll{
+    position:absolute;
+    right:1%;
+    left:80%;
+    top:10%;
+    bottom:2%;
+    padding:1em 1em 1em 1em;
+    border:solid;
+    border-radius:0.5em;
+    border-width:4px;
+    overflow:scroll;
+}
+#scroll img{
+    width:100%;
+}
+#mainCanvas{
+    margin:auto;
+    display:block;
+    border:solid;
+}

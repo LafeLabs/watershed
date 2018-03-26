@@ -1,3 +1,4 @@
+<a  id = "rootlink" href = "..">Back up to root</a>
 <a  id = "svglink" href = "editor.php">Editor</a>
 <canvas id="invisibleCanvas" style="display:none"></canvas>
 <canvas id="mainCanvas"></canvas>

@@ -1,0 +1,8 @@
+
+document.getElementById("latloninput").onchange = function(){
+    document.getElementById("wminput").value = latlon2wm(this.value);
+}
+
+document.getElementById("wminput").onchange = function(){
+    document.getElementById("latloninput").value = wm2latlon(this.value);
+}

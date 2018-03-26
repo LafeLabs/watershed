@@ -1,0 +1,140 @@
+//yvector = [2,0];
+yvector = [theta0,thetadot0];
+
+totalpoints = npoints*Npoints;
+omega0 = 2*Math.PI/T;
+gamma = omega0*Q; 
+h = T/npoints;
+
+plotWidth = 400;
+plotHeight = 400;
+if(svgexport){
+    currentSVG = "<svg width=\"" + plotWidth.toString() + "\" height=\"" + plotHeight.toString() + "\" viewbox = \"0 0 " + plotWidth.toString() + " " + plotHeight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
+}
+
+
+document.getElementById("mainCanvas").width = plotWidth;
+document.getElementById("mainCanvas").height = plotHeight;
+ctx = document.getElementById("mainCanvas").getContext("2d");
+ctx.clearRect(0, 0, plotWidth,plotHeight);
+ctx.lineWidth = 1;
+if(poincare){
+    ctx.strokeStyle="blue";
+}
+else{
+    ctx.strokeStyle="black";
+}
+
+
+
+ctx.beginPath();	
+ 
+x0 = plotWidth/2;
+y0 = plotHeight/2;
+    x = x0 + x0*yvector[0]/Math.PI;
+    y = y0 - 0.5*(1/omega0)*y0*yvector[1]/Math.PI;
+
+if(svgexport){
+
+    currentSVG += "	<path d = \"M";
+    currentSVG += Math.round(x).toString() + " ";
+    currentSVG += Math.round(y).toString() + " ";
+}
+
+rawpoints = "";
+
+for(var index = 0;index < totalpoints;index++){
+  
+  if(index%npoints == 0 && poincare){
+      //poincare map here
+    ctx.beginPath();
+    ctx.arc(x, y, 1, 0, 2 * Math.PI);
+    ctx.fill();	
+    ctx.closePath();
+
+  }
+
+    if(!poincare){
+        ctx.moveTo(x,y);
+    }  
+
+  k1[0] = getf0(t,yvector,omega0,Q,a,b,delta);
+  k1[1] = getf1(t,yvector,omega0,Q,a,b,delta);
+
+  ynextvector[0] = yvector[0] + 0.5*h*k1[0];
+  ynextvector[1] = yvector[1] + 0.5*h*k1[1];
+  
+  
+  k2[0] = getf0(t + 0.5*h,ynextvector,omega0,Q,a,b,delta);
+  k2[1] = getf1(t + 0.5*h,ynextvector,omega0,Q,a,b,delta);
+
+  ynextvector[0] = yvector[0] + 0.5*h*k2[0];
+  ynextvector[1] = yvector[1] + 0.5*h*k2[1];
+  
+  k3[0] = getf0(t + 0.5*h,ynextvector,omega0,Q,a,b,delta);
+  k3[1] = getf1(t + 0.5*h,ynextvector,omega0,Q,a,b,delta);
+
+  ynextvector[0] = yvector[0] + h*k3[0];
+  ynextvector[1] = yvector[1] + h*k3[1];
+
+  k4[0] = getf0(t + h,ynextvector,omega0,Q,a,b,delta);
+  k4[1] = getf1(t + h,ynextvector,omega0,Q,a,b,delta);
+  
+  
+  ynextvector[0] = yvector[0] + 0.1667*h*(k1[0] + 2*k2[0] + 2*k3[0] + k4[0]);
+  ynextvector[1] = yvector[1] + 0.1667*h*(k1[1] + 2*k2[1] + 2*k3[1] + k4[1]);  
+  
+ if(ynextvector[0] >= Math.PI){
+     ynextvector[0] = ynextvector[0] - 2*Math.PI;
+    if(!poincare){
+         ctx.stroke();
+         ctx.beginPath();
+         if(svgexport){
+            currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"2\" fill = \"" + "none" + "\" "+"/>";
+            currentSVG += "	<path d = \"M";
+            currentSVG += Math.round(0).toString() + " ";
+            currentSVG += Math.round(y).toString() + " ";
+         }
+    }
+  }
+  if(ynextvector[0] <= -Math.PI){
+     ynextvector[0] = ynextvector[0] + 2*Math.PI;
+    if(!poincare){
+         ctx.stroke();
+         ctx.beginPath();
+         if(svgexport){
+             currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"2\" fill = \"" + "none" + "\" "+"/>";
+             currentSVG += "	<path d = \"M";
+            currentSVG += Math.round(plotWidth).toString() + " ";
+            currentSVG += Math.round(y).toString() + " ";
+         }
+    }
+  }
+
+ 
+  yvector[0] = ynextvector[0];
+  yvector[1] = ynextvector[1];
+
+  t = t + h;
+
+    x = x0 + x0*yvector[0]/Math.PI;
+    y = y0 - 0.5*(1/omega0)*y0*yvector[1]/Math.PI;
+
+    if(!poincare){
+        ctx.lineTo(x,y);
+        ctx.stroke();
+    }
+    if(svgexport){
+
+        currentSVG += "L" + x + " " + y + " ";
+    }
+    
+}
+
+
+if(svgexport){
+    currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"2\" fill = \"" + "none" + "\" "+"/>";
+    currentSVG += "</svg>";
+    document.getElementById("textIO").value = currentSVG;
+}
+

@@ -30,6 +30,16 @@
         "url":"bytecode/symbols013xx.txt"
     },
     {
+        "name":"symbols017xx",
+        "type":"bytecode",
+        "url":"bytecode/symbols017xx.txt"
+    },
+    {
+        "name":"bytecode0x6xx",
+        "type":"bytecode",
+        "url":"bytecode/bytecode0x6xx.txt"
+    },
+    {
         "name":"style",
         "type":"css",
         "url":"css/style.txt"
@@ -43,6 +53,11 @@
         "name":"actions03xx",
         "type":"javascript",
         "url":"javascript/actions03xx.txt"
+    },
+    {
+        "name":"actions07xx",
+        "type":"javascript",
+        "url":"javascript/actions07xx.txt"
     },
     {
         "name":"actions0xx",

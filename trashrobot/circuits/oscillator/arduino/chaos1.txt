@@ -70,7 +70,7 @@ void loop(){
 theta = 255.0*abs(y[0])/pi;
 thetadot = 255.0*abs(y[1])/pi;
 //analogWrite(3,theta);
-analogWrite(5,theta);
+analogWrite(6,theta);
 
 
 //wrap the angle around if it goes above or below pi
