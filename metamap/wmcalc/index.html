@@ -4,15 +4,29 @@
 <title>Metamap Coordinate Calculator</title>
 <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
+
+NO MONEY
+NO MINING
+NO PROPERTY
+EVERYTHING IS RECURSIVE
+EVERYTHING IS FRACTAL
+EVERYTHING IS PHYSICAL
+[EGO DEATH]:
+    LOOK TO THE FUNGI
+    LOOK TO THE INSECTS
+    LANGUAGE IS HOW THE MIND PARSES REALITY
 -->
 <script id = "topfunctions">
 
-function latlon2wm(latlonin){
+function latlon2xy(latlonin){
 //Washington Monument is at 38.8895,-77.0352 and is 555 feet high
     var lat0 = 38.8895;
     var coslat = Math.cos(lat0*Math.PI/180);//convert to radians, take cos of lattitude
     var lon0 = -77.0352;
     var unitfeet = 555;
+    
+    var digits = 1;
+    var precision = Math.pow(10,digits);
     
     var lat1 = parseFloat(latlonin.split(",")[0]);
     var lon1 = parseFloat(latlonin.split(",")[1]);
@@ -22,16 +36,19 @@ function latlon2wm(latlonin){
     //1 degree longitude = 1 degre lattitude X cos(lattitude) = 283699 feet.
     deltaxfeet = Math.round((lon1 - lon0)*364538*coslat);
     deltayfeet = Math.round((lat1 - lat0)*364538);
-    return (Math.round(10*deltaxfeet/unitfeet)/10).toString() + "," + (Math.round(10*deltayfeet/unitfeet)/10).toString();
+    return (Math.round(precision*deltaxfeet/unitfeet)/precision).toString() + "," + (Math.round(precision*deltayfeet/unitfeet)/precision).toString();
 }
 
-function wm2latlon(wmin){
+function xy2latlon(wmin){
 //Washington Monument is at 38.8895,-77.0352 and is 555 feet high
     var lat0 = 38.8895;
     var coslat = Math.cos(lat0*Math.PI/180);//convert to radians, take cos of lattitude
     var lon0 = -77.0352;
     var unitfeet = 555;
     
+    var digits = 4;
+    var precision = Math.pow(10,digits);
+
     var x = parseFloat(wmin.split(",")[0]);
     var y = parseFloat(wmin.split(",")[1]);
 
@@ -43,8 +60,8 @@ function wm2latlon(wmin){
     //1 degree lattitude = 32808399/90 = 364538 feet
     //1 degree longitude = 1 degre lattitude X cos(lattitude) = 283699 feet.
 
-    lat1 = Math.round(10000*(lat0 + deltayfeet/364538))/10000;
-    lon1 = Math.round(10000*(lon0 + deltaxfeet/(364538*coslat)))/10000;
+    lat1 = Math.round(precision*(lat0 + deltayfeet/364538))/precision;
+    lon1 = Math.round(precision*(lon0 + deltaxfeet/(364538*coslat)))/precision;
     return lat1.toString() + "," + lon1.toString();
     
 }
@@ -69,11 +86,11 @@ function wm2latlon(wmin){
 </div>
 <script id = "pageevents">
 document.getElementById("latloninput").onchange = function(){
-    document.getElementById("wminput").value = latlon2wm(this.value);
+    document.getElementById("wminput").value = latlon2xy(this.value);
 }
 
 document.getElementById("wminput").onchange = function(){
-    document.getElementById("latloninput").value = wm2latlon(this.value);
+    document.getElementById("latloninput").value = xy2latlon(this.value);
 }
 </script>
 <style>

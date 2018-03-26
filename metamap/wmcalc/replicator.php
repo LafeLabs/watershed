@@ -1,20 +1,19 @@
 <?php
 
-    mkdir("bytecode");
     mkdir("html");
-    mkdir("css");
-    mkdir("javascript");
     mkdir("php");
     mkdir("json");
-    mkdir("svg");
+    mkdir("images");
 
-    $url = $_REQUEST["url"];
+//    $url = $_REQUEST["url"];// http://w[baseurl/json/dna.txt
+    $url = "https://raw.githubusercontent.com/LafeLabs/watershed/master/metamap/wmcalc/json/dna.txt";
     $dnaraw = file_get_contents($url);
     $dna =json_decode($dnaraw);
 
+    $baseurl = explode("json",$url)[0];
 
     foreach ($dna as $value) {
-        $data = file_get_contents($value->url);
+        $data = file_get_contents($baseurl.$value->url);
         $filename = $value->type."/".$value->name.".txt";
         $file = fopen($filename,"w");// create new file with this name
         fwrite($file,$data); //write data to file
@@ -26,7 +25,6 @@
             fclose($file);  //close file                
         }
     }
-    
-
 ?>
+<a href = "editor.php">editor.php</a>
 

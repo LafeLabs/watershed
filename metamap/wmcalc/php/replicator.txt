@@ -5,7 +5,8 @@
     mkdir("json");
     mkdir("images");
 
-    $url = $_REQUEST["url"];// http://w[baseurl/json/dna.txt
+//    $url = $_REQUEST["url"];// http://w[baseurl/json/dna.txt
+    $url = "https://raw.githubusercontent.com/LafeLabs/watershed/master/metamap/wmcalc/json/dna.txt";
     $dnaraw = file_get_contents($url);
     $dna =json_decode($dnaraw);
 
@@ -24,7 +25,6 @@
             fclose($file);  //close file                
         }
     }
-    
-
 ?>
+<a href = "editor.php">editor.php</a>
 
