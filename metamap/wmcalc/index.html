@@ -16,52 +16,68 @@ EVERYTHING IS PHYSICAL
     LOOK TO THE INSECTS
     LANGUAGE IS HOW THE MIND PARSES REALITY
 -->
+
 <script id = "topfunctions">
 
 function latlon2xy(latlonin){
 //Washington Monument is at 38.8895,-77.0352 and is 555 feet high
     var lat0 = 38.8895;
-    var coslat = Math.cos(lat0*Math.PI/180);//convert to radians, take cos of lattitude
+    var coslat = Math.cos(lat0*Math.PI/180);//convert to radians, take cosine of lattitude
     var lon0 = -77.0352;
     var unitfeet = 555;
     
-    var digits = 1;
+    var digits = 1;//0 digits = 555 feet, 1 is 55 feet, 2 is 5.5  feet
     var precision = Math.pow(10,digits);
     
     var lat1 = parseFloat(latlonin.split(",")[0]);
     var lon1 = parseFloat(latlonin.split(",")[1]);
     //from the original definition of the meter:
     //90 degrees lattitude = 10,000,000 meters = 32808399 feet
-    //1 degree lattitude = 32808399/90 = 364538 feet
-    //1 degree longitude = 1 degre lattitude X cos(lattitude) = 283699 feet.
-    deltaxfeet = Math.round((lon1 - lon0)*364538*coslat);
-    deltayfeet = Math.round((lat1 - lat0)*364538);
-    return (Math.round(precision*deltaxfeet/unitfeet)/precision).toString() + "," + (Math.round(precision*deltayfeet/unitfeet)/precision).toString();
+    //1 degree lattitude = 10,000,000 meters/90 = 111111.1 meters = 111 km
+    //0.1 degree = 11 km
+    //0.01 degree = 1.1 km
+    //0.001 degree = 110 m
+    //0.0001 degree = 11 m
+    //1 meter = 3.28084 feet
+    //1 degree lattitude = 111111.1(meters)*3.28084(feet/meter) = 364538 feet
+    //1 degree longitude = 1 degre lattitude X cos(lattitude) = 283699 feet at 38.8895 N
+    var deltaxfeet = Math.round((lon1 - lon0)*364538*coslat);
+    var deltayfeet = Math.round((lat1 - lat0)*364538);
+    var deltax = Math.round(precision*deltaxfeet/unitfeet)/precision;
+    var deltay = Math.round(precision*deltayfeet/unitfeet)/precision;
+    
+    return deltax.toString() + "," + deltay.toString();
 }
 
-function xy2latlon(wmin){
+function xy2latlon(xyin){
 //Washington Monument is at 38.8895,-77.0352 and is 555 feet high
     var lat0 = 38.8895;
     var coslat = Math.cos(lat0*Math.PI/180);//convert to radians, take cos of lattitude
     var lon0 = -77.0352;
     var unitfeet = 555;
     
-    var digits = 4;
+    var digits = 4;//3 digits = 100 meters, 4 digits = 10 meters, 5 digits is 1 meter, 6 digits is 0.1 meter
     var precision = Math.pow(10,digits);
 
-    var x = parseFloat(wmin.split(",")[0]);
-    var y = parseFloat(wmin.split(",")[1]);
+    var deltax = parseFloat(xyin.split(",")[0]);
+    var deltay = parseFloat(xyin.split(",")[1]);
 
-    deltaxfeet = x*unitfeet;
-    deltayfeet = y*unitfeet;
+    var deltaxfeet = deltax*unitfeet;
+    var deltayfeet = deltay*unitfeet;
 
     //from the original definition of the meter:
     //90 degrees lattitude = 10,000,000 meters = 32808399 feet
-    //1 degree lattitude = 32808399/90 = 364538 feet
-    //1 degree longitude = 1 degre lattitude X cos(lattitude) = 283699 feet.
+    //1 degree lattitude = 10,000,000 meters/90 = 111111.1 meters = 111 km
+    //0.1 degree = 11 km
+    //0.01 degree = 1.1 km
+    //0.001 degree = 110 m
+    //0.0001 degree = 11 m
+    //1 meter = 3.28084 feet
+    //1 degree lattitude = 111111.1(meters)*3.28084(feet/meter) = 364538 feet
+    //1 degree longitude = 1 degre lattitude X cos(lattitude) = 283699 feet at 38.8895 N
 
-    lat1 = Math.round(precision*(lat0 + deltayfeet/364538))/precision;
-    lon1 = Math.round(precision*(lon0 + deltaxfeet/(364538*coslat)))/precision;
+    var lat1 = Math.round(precision*(lat0 + deltayfeet/364538))/precision;
+    var lon1 = Math.round(precision*(lon0 + deltaxfeet/(364538*coslat)))/precision;
     return lat1.toString() + "," + lon1.toString();
     
 }
