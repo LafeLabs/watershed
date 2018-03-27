@@ -88,6 +88,8 @@ function xy2latlon(xyin){
 <body>
 <div id = "page">
     <a  id = "editlink" href = "editor.php">Editor</a>
+    <a  id = "helplink" href = "help.html">Help</a>
+
     <div class = "bigbox">
         Lattitude,Longitude:
         <input id = "latloninput" value = "38.8895,-77.0352"/>
@@ -117,7 +119,12 @@ document.getElementById("wminput").onchange = function(){
      top:10px;
      z-index:2;
 }
-
+#helplink{
+     position:absolute;
+     left:10%;
+     top:0.5em;
+     z-index:2;
+}
 .bigbox{
     border:solid;
     border-radius:1em;

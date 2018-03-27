@@ -21,16 +21,16 @@ EVERYTHING IS PHYSICAL
 
 function latlon2xy(latlonin){
 //Washington Monument is at 38.8895,-77.0352 and is 555 feet high
-    var lat0 = 38.8895;
+    var lat0 = 38.8895;//lattitude to 10 meter precision
     var coslat = Math.cos(lat0*Math.PI/180);//convert to radians, take cosine of lattitude
-    var lon0 = -77.0352;
-    var unitfeet = 555;
+    var lon0 = -77.0352;//longitude to 10 meter precision
+    var unitfeet = 555;//height of monument
     
     var digits = 1;//0 digits = 555 feet, 1 is 55 feet, 2 is 5.5  feet
     var precision = Math.pow(10,digits);
     
-    var lat1 = parseFloat(latlonin.split(",")[0]);
-    var lon1 = parseFloat(latlonin.split(",")[1]);
+    var lat1 = parseFloat(latlonin.split(",")[0]);//get lattitude in degrees from input string
+    var lon1 = parseFloat(latlonin.split(",")[1]);//get longitude in degrees from input string
     //from the original definition of the meter:
     //90 degrees lattitude = 10,000,000 meters = 32808399 feet
     //1 degree lattitude = 10,000,000 meters/90 = 111111.1 meters = 111 km
@@ -41,10 +41,10 @@ function latlon2xy(latlonin){
     //1 meter = 3.28084 feet
     //1 degree lattitude = 111111.1(meters)*3.28084(feet/meter) = 364538 feet
     //1 degree longitude = 1 degre lattitude X cos(lattitude) = 283699 feet at 38.8895 N
-    var deltaxfeet = Math.round((lon1 - lon0)*364538*coslat);
-    var deltayfeet = Math.round((lat1 - lat0)*364538);
-    var deltax = Math.round(precision*deltaxfeet/unitfeet)/precision;
-    var deltay = Math.round(precision*deltayfeet/unitfeet)/precision;
+    var deltaxfeet = Math.round((lon1 - lon0)*364538*coslat);//convert longitude difference to feet
+    var deltayfeet = Math.round((lat1 - lat0)*364538);//convert lattitude difference to feet
+    var deltax = Math.round(precision*deltaxfeet/unitfeet)/precision;//convert from feet to "units" based on monument height
+    var deltay = Math.round(precision*deltayfeet/unitfeet)/precision;//convert from feet to "units" based on monument height
     
     return deltax.toString() + "," + deltay.toString();
 }
@@ -88,6 +88,8 @@ function xy2latlon(xyin){
 <body>
 <div id = "page">
     <a  id = "editlink" href = "editor.php">Editor</a>
+    <a  id = "helplink" href = "help.html">Help</a>
+
     <div class = "bigbox">
         Lattitude,Longitude:
         <input id = "latloninput" value = "38.8895,-77.0352"/>
@@ -117,7 +119,12 @@ document.getElementById("wminput").onchange = function(){
      top:10px;
      z-index:2;
 }
-
+#helplink{
+     position:absolute;
+     left:10%;
+     top:0.5em;
+     z-index:2;
+}
 .bigbox{
     border:solid;
     border-radius:1em;
