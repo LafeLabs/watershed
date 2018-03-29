@@ -19,14 +19,36 @@ EVERYTHING IS PHYSICAL
 
 <script id = "topfunctions">
 
+currentFile = "json/currentjson.txt";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        filedata = this.responseText;
+        coord = JSON.parse(filedata);
+    }
+};
+httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
+httpc.send();
+
+    coord = {};
+    coord.lat0 = 38.8895;//lattitude to 10 meter precision
+    coord.lon0 = -77.0352;//longitude to 10 meter precision
+    coord.zeroname = 'Washington Monument';//name/description of zero location
+    coord.unit = 555;//unit in feet or meters
+    coord.unitname = 'Washington Monument';
+    coord.feetorm = 'ft';//feet or meters?
+    coord.unitdigits = 1;//digits after decimal place in units
+    coord.latlondigits = 4;//digits after decimal place in latlons
+    
+
 function latlon2xy(latlonin){
 //Washington Monument is at 38.8895,-77.0352 and is 555 feet high
-    var lat0 = 38.8895;//lattitude to 10 meter precision
+    var lat0 = coord.lat0;//38.8895;//lattitude to 10 meter precision
     var coslat = Math.cos(lat0*Math.PI/180);//convert to radians, take cosine of lattitude
-    var lon0 = -77.0352;//longitude to 10 meter precision
-    var unitfeet = 555;//height of monument
+    var lon0 = coord.lon0;//-77.0352;//longitude to 10 meter precision
+    var unitfeet = coord.unit;//555;//height of monument
     
-    var digits = 1;//0 digits = 555 feet, 1 is 55 feet, 2 is 5.5  feet
+    var digits = coord.unitdigits;//1;//0 digits = 555 feet, 1 is 55 feet, 2 is 5.5  feet
     var precision = Math.pow(10,digits);
     
     var lat1 = parseFloat(latlonin.split(",")[0]);//get lattitude in degrees from input string
@@ -51,12 +73,12 @@ function latlon2xy(latlonin){
 
 function xy2latlon(xyin){
 //Washington Monument is at 38.8895,-77.0352 and is 555 feet high
-    var lat0 = 38.8895;
+    var lat0 = coord.lat0;//38.8895;
     var coslat = Math.cos(lat0*Math.PI/180);//convert to radians, take cos of lattitude
-    var lon0 = -77.0352;
-    var unitfeet = 555;
+    var lon0 = coord.lon0;//-77.0352;
+    var unitfeet = coord.unit;//555;
     
-    var digits = 4;//3 digits = 100 meters, 4 digits = 10 meters, 5 digits is 1 meter, 6 digits is 0.1 meter
+    var digits = coord.latlondigits;//4;//3 digits = 100 meters, 4 digits = 10 meters, 5 digits is 1 meter, 6 digits is 0.1 meter
     var precision = Math.pow(10,digits);
 
     var deltax = parseFloat(xyin.split(",")[0]);
@@ -68,10 +90,10 @@ function xy2latlon(xyin){
     //from the original definition of the meter:
     //90 degrees lattitude = 10,000,000 meters = 32808399 feet
     //1 degree lattitude = 10,000,000 meters/90 = 111111.1 meters = 111 km
-    //0.1 degree = 11 km
-    //0.01 degree = 1.1 km
-    //0.001 degree = 110 m
-    //0.0001 degree = 11 m
+    //0.1 degree = 11 km 
+    //0.01 degree = 1.1 km [digits = 2]
+    //0.001 degree = 110 m [digits = 3]
+    //0.0001 degree = 11 m [digits = 4]
     //1 meter = 3.28084 feet
     //1 degree lattitude = 111111.1(meters)*3.28084(feet/meter) = 364538 feet
     //1 degree longitude = 1 degre lattitude X cos(lattitude) = 283699 feet at 38.8895 N
@@ -79,8 +101,81 @@ function xy2latlon(xyin){
     var lat1 = Math.round(precision*(lat0 + deltayfeet/364538))/precision;
     var lon1 = Math.round(precision*(lon0 + deltaxfeet/(364538*coslat)))/precision;
     return lat1.toString() + "," + lon1.toString();
-    
+
 }
+
+
+function xy2glyph(xyinput){
+    var bitdepth = 4;
+    var xinput = parseFloat(xyinput.split(",")[0]);
+    var yinput = parseFloat(xyinput.split(",")[1]);
+    var xsign = xinput/Math.abs(xinput);
+    var xaction = "0333,";
+    if(xsign > 0){
+        xaction = "0333,"
+    }
+    else{
+        xaction = "0332,"
+    }
+    var ysign = yinput/Math.abs(yinput);
+    if(ysign > 0){
+        yaction = "0330,"
+    }
+    else{
+        yaction = "0331,"
+    }
+    var xabs = Math.abs(xinput);
+    var yabs = Math.abs(yinput);
+    var xbinarywhole = xabs.toString(2).split(".")[0];
+    var ybinarywhole = yabs.toString(2).split(".")[0];
+    var xbinarydec = xabs.toString(2).split(".")[1];
+    var ybinarydec = yabs.toString(2).split(".")[1];
+
+    var maxlength = 0;
+    
+    if(xbinarywhole.length > ybinarywhole.length){
+        maxlength = xbinarywhole.length;
+        for(var index = 0;index < maxlength - ybinarywhole.length;index++){
+            ybinarywhole = "0" + ybinarywhole;
+        }
+    }
+    else{
+        maxlength = ybinarywhole.length;
+        for(var index = 0;index <= maxlength - xbinarywhole.length;index++){
+            xbinarywhole = "0" + xbinarywhole;
+        }
+    }
+    var outputglyph = "";
+    for(var index = 0;index < maxlength - 1;index++){
+        outputglyph += "0337,";
+    }
+    for(var index = 0;index < maxlength;index++){
+        if(xbinarywhole.charAt(index) == "1"){
+            outputglyph += xaction;
+        }
+        if(ybinarywhole.charAt(index) == "1"){
+            outputglyph += yaction;
+        }
+        if(index != maxlength - 1){
+            outputglyph += "0336,";
+        }
+    }    
+//    outputglyph += "0341,";
+    xbinarydec += "0000";
+    ybinarydec += "0000";
+    for(var index = 0;index < bitdepth;index++){
+        outputglyph += "0336,";
+        if(xbinarydec.charAt(index) == "1"){
+            outputglyph += xaction;
+        }
+        if(ybinarydec.charAt(index) == "1"){
+            outputglyph += yaction;
+        }
+    }
+    
+    return outputglyph;
+}
+
 
 </script>
 
@@ -95,12 +190,9 @@ function xy2latlon(xyin){
         <input id = "latloninput" value = "38.8895,-77.0352"/>
     </div>
     <div class = "bigbox">
-        x,y[Washington Monuments]:
+        x,y:
         <input id = "wminput" value = "0,0"/>
     </div>
-
-    <img width = "30%" src = "images/fig1.png"/>
-    <img width = "65%" src = "images/fig2.png"/>
 </div>
 <script id = "pageevents">
 document.getElementById("latloninput").onchange = function(){

@@ -1,0 +1,16 @@
+[
+    {
+        "type":"html",
+        "filename":"index.txt",
+        "localpath":"metamap/wmcalc/",
+        "url":"",
+        "description":""
+    },
+    {
+        "type":"php",
+        "filename":"editor.txt",
+        "localpath":"metamap/wmcalc/",
+        "url":"",
+        "description":""
+    }
+]

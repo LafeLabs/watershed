@@ -22,6 +22,9 @@
     <div class = "php file">php/text2html.txt</div>
 
     <div class = "json file">json/dna.txt</div>
+    <div class = "json file">json/currentjson.txt</div>
+    <div class = "json file">json/files.txt</div>
+    
 </div>
 
 <script>
