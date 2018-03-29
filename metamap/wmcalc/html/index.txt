@@ -68,10 +68,10 @@ function xy2latlon(xyin){
     //from the original definition of the meter:
     //90 degrees lattitude = 10,000,000 meters = 32808399 feet
     //1 degree lattitude = 10,000,000 meters/90 = 111111.1 meters = 111 km
-    //0.1 degree = 11 km
-    //0.01 degree = 1.1 km
-    //0.001 degree = 110 m
-    //0.0001 degree = 11 m
+    //0.1 degree = 11 km 
+    //0.01 degree = 1.1 km [digits = 2]
+    //0.001 degree = 110 m [digits = 3]
+    //0.0001 degree = 11 m [digits = 4]
     //1 meter = 3.28084 feet
     //1 degree lattitude = 111111.1(meters)*3.28084(feet/meter) = 364538 feet
     //1 degree longitude = 1 degre lattitude X cos(lattitude) = 283699 feet at 38.8895 N
