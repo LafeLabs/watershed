@@ -2,15 +2,41 @@
     {
         "type":"html",
         "filename":"index.txt",
-        "localpath":"metamap/wmcalc/",
-        "url":"",
-        "description":""
+        "url":"https://raw.githubusercontent.com/LafeLabs/watershed/master/metamap/wmcalc/html/index.txt"
     },
     {
         "type":"php",
         "filename":"editor.txt",
-        "localpath":"metamap/wmcalc/",
-        "url":"",
-        "description":""
+        "url":"https://raw.githubusercontent.com/LafeLabs/watershed/master/metamap/wmcalc/php/editor.txt"
+    },
+    {
+        "type":"php",
+        "filename":"filesaver.txt",
+        "url":"https://raw.githubusercontent.com/LafeLabs/watershed/master/metamap/wmcalc/php/filesaver.txt"
+    },
+    {
+        "type":"php",
+        "filename":"fileloader.txt",
+        "url":"https://raw.githubusercontent.com/LafeLabs/watershed/master/metamap/wmcalc/php/fileloader.txt"
+    },
+    {
+        "type":"php",
+        "filename":"text2php.txt",
+        "url":"https://raw.githubusercontent.com/LafeLabs/watershed/master/metamap/wmcalc/php/text2php.txt"
+    },
+    {
+        "type":"php",
+        "filename":"text2html.txt",
+        "url":"https://raw.githubusercontent.com/LafeLabs/watershed/master/metamap/wmcalc/php/text2html.txt"
+    },
+    {
+        "type":"json",
+        "filename":"currentjson.txt",
+        "url":"https://raw.githubusercontent.com/LafeLabs/watershed/master/metamap/wmcalc/json/currentjson.txt"
+    },
+    {
+        "type":"json",
+        "filename":"spaceneedle.txt",
+        "url":"https://pastebin.com/raw/R1qjbSP4"
     }
 ]

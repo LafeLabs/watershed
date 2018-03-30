@@ -8,23 +8,32 @@
     <a href = "text2html.php" id = "text2htmllink">text2html.php</a>
     <a href = "index.html" id = "indexlink">index.html</a>
 
+    <a href = "jsonimport.php" id = "importlink">jsonimport.php</a>
+    <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
+
 <div id = "namediv"></div>
 <div id="maineditor"></div>
 <div id = "filescroll">
     <div class = "html file">html/index.txt</div>
-    <div class = "html file">html/help.txt</div>
 
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/replicator.txt</div>
+    <div class = "php file">php/jsonimport.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/text2html.txt</div>
+    <div class = "php file">php/dnagenerator.txt</div>
 
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/currentjson.txt</div>
     <div class = "json file">json/files.txt</div>
-    
+
+    <div class = "json file">json/wm.txt</div>
+    <div class = "json file">json/crystalcity.txt</div>
+    <div class = "json file">json/spaceneedle.txt</div>
+    <div class = "json file">json/cashregister.txt</div>
+
 </div>
 
 <script>
@@ -185,6 +194,18 @@ body{
     position:absolute;
     left:10em;
     top:0px;
+    color:white;
+}
+#importlink{
+    position:absolute;
+    left:60%;
+    top:0px;
+    color:white;
+}
+#dnalink{
+    position:absolute;
+    left:60%;
+    top:1em;
     color:white;
 }
 </style>

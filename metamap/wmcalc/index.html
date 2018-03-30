@@ -25,6 +25,7 @@ httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         filedata = this.responseText;
         coord = JSON.parse(filedata);
+        document.getElementById("latloninput").value = xy2latlon("0,0");
     }
 };
 httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
@@ -105,85 +106,13 @@ function xy2latlon(xyin){
 }
 
 
-function xy2glyph(xyinput){
-    var bitdepth = 4;
-    var xinput = parseFloat(xyinput.split(",")[0]);
-    var yinput = parseFloat(xyinput.split(",")[1]);
-    var xsign = xinput/Math.abs(xinput);
-    var xaction = "0333,";
-    if(xsign > 0){
-        xaction = "0333,"
-    }
-    else{
-        xaction = "0332,"
-    }
-    var ysign = yinput/Math.abs(yinput);
-    if(ysign > 0){
-        yaction = "0330,"
-    }
-    else{
-        yaction = "0331,"
-    }
-    var xabs = Math.abs(xinput);
-    var yabs = Math.abs(yinput);
-    var xbinarywhole = xabs.toString(2).split(".")[0];
-    var ybinarywhole = yabs.toString(2).split(".")[0];
-    var xbinarydec = xabs.toString(2).split(".")[1];
-    var ybinarydec = yabs.toString(2).split(".")[1];
-
-    var maxlength = 0;
-    
-    if(xbinarywhole.length > ybinarywhole.length){
-        maxlength = xbinarywhole.length;
-        for(var index = 0;index < maxlength - ybinarywhole.length;index++){
-            ybinarywhole = "0" + ybinarywhole;
-        }
-    }
-    else{
-        maxlength = ybinarywhole.length;
-        for(var index = 0;index <= maxlength - xbinarywhole.length;index++){
-            xbinarywhole = "0" + xbinarywhole;
-        }
-    }
-    var outputglyph = "";
-    for(var index = 0;index < maxlength - 1;index++){
-        outputglyph += "0337,";
-    }
-    for(var index = 0;index < maxlength;index++){
-        if(xbinarywhole.charAt(index) == "1"){
-            outputglyph += xaction;
-        }
-        if(ybinarywhole.charAt(index) == "1"){
-            outputglyph += yaction;
-        }
-        if(index != maxlength - 1){
-            outputglyph += "0336,";
-        }
-    }    
-//    outputglyph += "0341,";
-    xbinarydec += "0000";
-    ybinarydec += "0000";
-    for(var index = 0;index < bitdepth;index++){
-        outputglyph += "0336,";
-        if(xbinarydec.charAt(index) == "1"){
-            outputglyph += xaction;
-        }
-        if(ybinarydec.charAt(index) == "1"){
-            outputglyph += yaction;
-        }
-    }
-    
-    return outputglyph;
-}
-
-
 </script>
 
 
 <body>
 <div id = "page">
     <a  id = "editlink" href = "editor.php">Editor</a>
-    <a  id = "helplink" href = "help.html">Help</a>
+    <a  id = "helplink" href = "../">Up one level</a>
 
     <div class = "bigbox">
         Lattitude,Longitude:
@@ -220,14 +149,14 @@ document.getElementById("wminput").onchange = function(){
 .bigbox{
     border:solid;
     border-radius:1em;
-    font-size:16px;
+    font-size:36px;
     font-family:courier;
     text-align:center;
     margin:0.5em 0.5em 0.5em 0.5em;
     padding:1em 1em 1em 1em;
 }
 .bigbox input{
-    font-size:16px;
+    font-size:36px;
     font-family:courier;
     display:block;
     margin:auto;

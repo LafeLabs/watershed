@@ -1,0 +1,10 @@
+{
+    "lat0":47.6204,
+    "lon0":-122.3491,
+    "zeroname":"Space Needle",
+    "unit":605,
+    "unitname":"Space Needle",
+    "feetorm":"ft",
+    "unitdigits":1,
+    "latlondigits":4
+}
