@@ -16,7 +16,14 @@
         fwrite($file,$data); //write data to file
         fclose($file);  //close file
 
+        if($filetype == "php" && $filename != "php/replicator.txt"){
+            $phpfilename = explode(".",$filename)[0].".php";
+            $file = fopen($phpfilename,"w");// create new file with this name
+            fwrite($file,$data); //write data to file
+            fclose($file);  //close file                
+        }
     }
 ?>
+
 <a href = "editor.php">editor.php</a>
 
