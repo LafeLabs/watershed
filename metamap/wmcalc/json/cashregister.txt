@@ -1,0 +1,10 @@
+{
+    "lat0":39.7435,
+    "lon0":-104.9852,
+    "zeroname":"Cash Register",
+    "unit":698,
+    "unitname":"Cash Register",
+    "feetorm":"ft",
+    "unitdigits":1,
+    "latlondigits":4
+}

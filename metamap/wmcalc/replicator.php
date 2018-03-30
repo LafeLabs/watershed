@@ -1,14 +1,17 @@
 <div style = "display:none" id = "datadiv">
 <?php
 
-//    $url = "https://raw.githubusercontent.com/LafeLabs/watershed/master/metamap/wmcalc/json/dna.txt";
-    $url = "json/dna.txt";
+    $url = "https://raw.githubusercontent.com/LafeLabs/watershed/master/metamap/wmcalc/json/dna.txt";
     $dnaraw = file_get_contents($url);
     $dna =json_decode($dnaraw);
     $baseurl = explode("json",$url)[0];
 
     foreach ($dna as $value) {
-        echo $value;
+        $filetype = explode("/",$value)[0];
+        if($filetype == "json"){
+            echo file_get_contents($baseurl.$value);
+            echo "\n";
+        }
     }
 ?>
 </div>
