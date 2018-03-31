@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head><title>index</title></head>
+<body>
+<a href  ="index.html">index.html</a>
+<a href  ="editor.php">editor.php</a>
+<h2>Tale.html</h2>
+<p>
+    The "tale" is a document specific to a thing.  It is the story of the thing, that which motivates users and gives reason and meaning to the thing. 
+</p>
+
+</body>
+</html>

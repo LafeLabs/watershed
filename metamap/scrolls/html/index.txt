@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head><title>index</title></head>
+<body>
+<h2>Index.html</h2>
+<ul>
+    <li>
+        <a href = "editor.php">editor.php</a>        
+    </li>
+    <li>
+        <a href = "tale.html">tale.html</a>
+    </li>
+    <li>
+        <a href = "tale.html">lore.html</a>
+    </li>
+</ul>
+</body>
+</html>
