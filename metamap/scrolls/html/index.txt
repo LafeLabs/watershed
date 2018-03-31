@@ -11,7 +11,7 @@
         <a href = "tale.html">tale.html</a>
     </li>
     <li>
-        <a href = "tale.html">lore.html</a>
+        <a href = "lore.html">lore.html</a>
     </li>
 </ul>
 </body>

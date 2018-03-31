@@ -95,6 +95,10 @@ document.getElementById("namediv").style.borderColor = "#0000ff";
 editor = ace.edit("maineditor");
 editor.setTheme("ace/theme/cobalt");
 editor.getSession().setMode("ace/mode/html");
+editor.getSession().setUseWrapMode(true);
+
+editor.$blockScrolling = Infinity;
+
 //editor.setValue(document.getElementById("datadiv").innerText);
 document.getElementById("maineditor").onkeyup = function(){
     data = encodeURIComponent(editor.getSession().getValue());

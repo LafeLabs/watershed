@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head><title>index</title></head>
+<body>
+<a href  ="index.html">index.html</a>
+<a href  ="editor.php">editor.php</a>
+<h1>Lore.html</h1>
+<p>
+    The "lore" is the standardized documentation for a class of things.  It is what would normally be the "manual" for a commercial product, but with more emphasis on <em>replication</em>.  
+</p>
+<p>
+Normally you buy a thing and the manual guides you through using it.  A very well designed thing will need minimal documentation, as it should guide you via design through its normal use, and also if you recieved it from a user who knows how to use it they can easily show you its use.  The lore should enable anyone to totally replicate the thing as well as its replication method. 
+</p>
+<p>
+    In order to get you competent in using a thing the lore will often be focused on teaching you to understand a set of ideas and skills on which a technology is based, and so may be somewhat abstract.  In the case of maps, Lore will need to teach you basics of how coordinates work in maps in general, then narrow in on specifics of the Metamap and specifically how to replicate a Metamap. 
+</p>
+<h2>What is the Metamap?</h2>
+<p>
+    The Metamap in a layer of map information which exists one level of abstraction up from both digital maps and physical maps.  It is a set of information <em>about</em> a map.  
+</p>
+
+
+<style>
+h1,h2,h3,h4{
+    text-align:center;
+    width:100%;
+}
+body{
+    text-align:justify;
+    padding:1em 1em 1em 1em;
+}
+</style>
+</body>
+</html>
