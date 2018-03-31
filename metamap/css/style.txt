@@ -11,8 +11,14 @@
      left:50%;
      top:10px;
      z-index:2;
- }
-  #rootlink{
+}
+#svgfeedlink{
+     position:absolute;
+     left:60%;
+     top:10px;
+     z-index:2;
+}
+#rootlink{
     position:absolute;
      left:30%;
      top:10px;
@@ -20,10 +26,9 @@
 }
 #wmcalc{
     position:absolute;
-     left:30%;
-     top:2em;
-          z-index:2;
-
+    left:30%;
+    top:2em;
+    z-index:2;
 }
 
  #textIO{
