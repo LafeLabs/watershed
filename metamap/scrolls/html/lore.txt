@@ -27,6 +27,15 @@ Normally you buy a thing and the manual guides you through using it.  A very wel
         A unit, generally in feet in the U.S.(convert to meters for non-US locations!), which coordinates are measured in.  
     </li>
     <li>
+        A hashtag, i.e. a sequence of words and characters led by a "#", which generally starts with the word "metamap", in all lowercase, followed by a logical name for the map, e.g. #metamapcrystalcity or #metamapcentraldc. The combination of hashtags and the @(x,y) notation should make information tied to a given Metamap instace easy to search for and parse off of numerous free open Web resources such as Twitter and Instagram. Use of hashtags on social media makes location based marketing available to any small busines with a twitter account for no money, no web page, and and almost no skills.
+    </li>
+    <li>
+        A pair of precision numbers which specify the number of digits after the decimal place for both the lattitude and longitude coordinates in decimal degrees and the unit numbers. In most cases these numbers are chosen to align with the precision of typical GPS which is about 10 meters(or yards or 30 feet).  This corresponds to 4 digits after the decimal place for latlon coordinates.
+    </li>
+    <li>
+        A scope, being roughly the maximum number of units that make sense to use this map instance for.  In general, we will try to keep the ratio of scope to minimum distace scale less than 100, often closer to 16 so it is easy to manage drawing locations by hand accurately.  Note the contrast to existing map software which by default usually covers the whole globe and goes down to meter precision, a ratio of 40,000,000:1(or even more given the ludicrous practice of specifying latlon coordinates to 8 or 9 digits). 
+    </li>
+    <li>
         Locations, which are symbolzed as @(x,y), where x is East-West direction, with East being in the plus direction and y being north-south direction with North as plus.  Thus for a unit value of 100 yards, @(5,1) is 
     </li>
     <li>
@@ -59,14 +68,118 @@ Normally you buy a thing and the manual guides you through using it.  A very wel
 </ul>
 
 <h2>How to use the Metamap</h2>
-
 Use cases for metamap:
 <ul>
     <li>
-        
+        Street artists.  Work has already been done with online catalogging of street art, the Metamap tool just makes this simpler, easier and more universal. 
     </li>
+    <li>
+        Small brick and mortar businesses doing location based marketing and mutual aid marketing--creating chains of value where discounts are applied only after going to multiple local businesses.
+    </li>
+    <li>
+        Art Galleries.  While galleries are small businesses, they deserver a special place on this list since the Metamap allows artists to individually add location based data on the location of their art, and if a number of artists do this, it can create a virtual world where people interested in art can easily track it from gallery to gallery in physical space without resorting to brute force wandering into every physical gallery or use of google to find gallery home pages and navigate down to find the works of art.  This system also integrates street art and guerrilla art with gallery art as one unified system.
+     </li>
+    <li>
+        People in need living on the Streets, travelers, hobos, etc.  The Metamap can be used to create value chains where those with no money or othr resources can get integrated into local supply chains, creating and maintaining value based on physical information layers on the Street which strengthen the local economy, creating incentives for local businsses to give back and help out both through money and through direct compensation in the form of food, coffee, places to stay etc.  
+    </li>
+    <li>
+        A rough "scratch pad" format usable by surveyors.  Ultimately what we are replicating with Metamap is some of the same ideas used by profssional surveyors.  By having an informal tool used by ordinary people available, it may be that even professional surveyors can benefit from this resource in some cases.
+    </li>
+    <li>
+        Intelligence tradecraft.  Metmap can be used for intelligence gathering without access to gps to create maps in a very compact and easily encrypted(small) way.  This can be done in a way that also does not rely on languages like English and so can avoid both language and technology barriers when creating maps.
+    </li>
+    <li>
+        Physical art installations.  The map <em>IS</em> the art!  With the creating of maps being trivially easy and readable by billions of Web users, it will create a art form of mixed media where the geography the map is built on is integrated into the art.
+    </li>
+    <li>
+        Immersive game designers.  If you are building a game that is played in a certain area, do you really care how many degrees from Greenwitch, England or the Equator you are?  Do you care to 8 significant digits? No.  You care how many paces from the start of the game you are, and you might want that coordinate system to be rotated relative to true North to match the street grid of your city.  Build your own coordinate system!
+    </li>
+    <li>
+        Web developers.  This is more than half a web based system, so it can be useful to web developers who want to add location specific content with minimal work and no money.  At the minimum, you can use the hashtag of a local map and post the coordinates of the client, but you can also build complex linked pages for multiple businesses or other entities which are linked in such a way that position in CSS screen coordinates are related to coordinates in the Metamap.  Contact me for details.
+    </li>
+    <li>
+        Supply chain management.  You can create maps for a global supply chain where you have one scale that lumps everything in "Shenzhen" or "Shanghai" together, with no further resolution on one map, then on another you just map connected rail lines in your home country for freight traffic, delivery routes on another in a local city, then another which maps your warehouse floor, and finally Metamap structures which track how your forklift drivers put each individual pallet on shelves, or even each product arrayed in the pallets.  Freedom to control the format of geographic information is a very very powerful tool.
+    </li>
+    <li>
+        Mapping routes to make cities easier to navigate.  Metamap creates a middle ground between the precise mapping of GPS based navigation and the usual verbal directions of (go down "there" three blocks, then head north a few blocks "you can't miss it).  Instead you can get coordinates of your location and destination and track both on your phone and also in physical markers with printed coordinates as local businesses adopt the system and start posting @(x,y) signs on their storefronts. 
+    </li>
+    <li>
+        Custom maps as service/art artifact for sale.  Maps are great art!  And gifts!  A new map format creats an opportunity for artists and artisans to create works of hand crafted art which can be gifted to people who then have something much more powerful than just a passive physical map, but a almost living system which can replicate and evolve into new things.  
+    </li>
+    <li>
+        City governments.  
+    </li>
+    <li>
+        Corporate property managers
+    </li>
+    <li>
+        Architects
+    </li>
+    <li>
+        Ecologists
+    </li>
+    
 </ul>
 
+<h2>Notes on Lattitude and Longitude Calculations</h2>
+
+<p>
+Lattitude and logitude are angular units which describe position on the surface of the Earth.  Lattitude is the angular distance from the equator, and is specified as either N for North or S for South.  In either case, the number ranges from 0 to 90 degrees.  90 degrees N is the North Pole, 90 degrees S is the South Pole, and 0 degrees is the equator.  Longitude is the angular distance from the "Prime Meridian", which is a circle that goes through Greenwich, England. 
+</p>
+<p>
+    To convert between degrees and actual distance, we can use the original definition of the meter from shortly after the French revolution when it was defined as 1 ten millionth of the distance from the equator to either of the poles.  Thus while "determining the meter" now involves a bunch of lasers and atomic clocks on an optical table, in the early 19th century it meant using triangulation to get distance from one tall tower or hill to another, for thousands of miles over large numbers of lattitude distance!  Metrology of distance has always been a task of high adventure.    
+</p>
+<p>
+    If we know that 90 degrees lattitude is 10,000,000 meters (or 10,000 km) we can convert to feet for use of casual everyday units in the United States using the conversion of 3.28084 feet = 1 meter.  Thus one degree lattitude is (10,000,000/90) = 111,111.111... meters, or about 111 km. Also note that the nautical mile is defined to be one arc minute of lattitude, or 1/60th of a degree, and it's also about 1.15 statuory miles(1 statutory mile is 5280 feet), so one degree is also 60 nautical mils or about 69 statutory miles(60X1.15).    
+</p>
+<p>
+    For longitude, we are dealing with circles which change in radius as you go farter from the equator, so you need a little extra computation.  At exactly the euqator, one degree longitude is 111 km just like lattitude, but as you go either North or South, you must multiply by a factor less than one to get the correct number.  That factor is the cosine of the lattitude.  Fortunately, the modern web browser knows all about cosines and this can be in the code so you never really have to think about it if you don't want to but it's good to at least have in mind so you don't think somehting is wrong when you have different numbers of degree differences for the same number of miles North or West.   
+</p>
+
+<h2>Replication and Evolution: Instancing the Metamap</h2>
+<p>
+Replication of the Metamap is primarily a physical oral tradition: you pick up a physical map, talk to someone who made it, and they show you how to make more.  If you found the thing without a person standing there, email the contact info in this document or in the Tale to find somone who can help.  As you pass the map along, add your contact info and help grow the network by offering to help others to learn.  
+</p>
+
+<h2>Intellectual Property</h2>
+<p>
+As the sole author of the Metamap system I(Lafe Spietz) am releasing this into the Public Domain.  This is not a license.  It is a statement.  And it makes no restrictions on what you can do with this system whatsoever other than you can't claim that it is yours to patent in the future.   As with the open web, this will only work if software patents are avoided so that we can make this truly distributed.  Metamap is not a company, and you won't get a cease and dessist letter if you try to patent it. But it is public domain, and patentng a thing released into the public domain is criminal fraud and will be reported as such if you attempt to patent any part of this.  All code here is mirrored on multiple online locations including multiple Github repositories where it is clearly stated that this is public domain. DO NOT ATTEMPT TO PATENT. EVER.  
+</p>
+<p>
+Just think of this as something like the ASCII code: you can make secret, copyrighted or patented things in ASCII, but no matter how much you do that you'll never own ASCII, it's just a map beetween numbers and characters that anyone can use. If you want to make money on this, great, do it! Just don't do it as a gatekeeper.  Use it to do something real, like sell coffee or grow soybeans.  
+</p>
+
+<h2>JSON Format</h2>
+
+<pre>
+    {
+    
+    
+    "glyph": "0336,0336,0331,0336,0331,0332,0337,0337,0336,0330,0337,0201,0350,0335,0201,0201,0334,0334,0335,0304,0331,",
+    "table": [
+        "0220:0336,0336,0336,0335,0342,0335,0335,0342,0335,0337,0337,0337,0201,",
+        "0221:0336,0336,0336,0336,0347,0337,0337,0350,0335,0342,0335,0335,0342,0335,0335,0342,0335,0335,0342,0335,0304,0337,0337,",
+        "0222:0336,0336,0333,0331,0337,0204,0321,0336,0336,0330,0332,0332,0332,0337,0115,0365,0320,0336,0330,0333,0337,0337,0337,",
+        "0223:0336,0336,0336,0336,0334,0362,0203,0335,0337,0337,0337,0337,0203,0335,0336,0336,0336,0203,0335,0337,0337,0337,0203,0335,0336,0336,0336,0336,0203,0363,0335,0337,0337,0337,0337,0330,",
+        "0224:0336,0336,0336,0332,0337,0337,0337,0362,0203,0336,0334,0336,0336,0336,0203,0334,0337,0337,0337,0337,0203,0334,0336,0336,0336,0336,0203,0363,0337,0330,0330,0334,0337,0337,0337,0362,0203,0335,0336,0336,0336,0336,0203,0335,0337,0337,0337,0337,0203,0335,0336,0336,0336,0336,0336,0203,0363,0335,0332,0332,0332,0332,0332,0337,0337,0337,0337,0337,0330,",
+        "0225:0336,0333,0331,0337,0200,0336,0330,0336,0331,0332,0332,0332,0336,0332,0337,0337,0125,0123,061,0210,0210,0210,0365,0211,0211,0211,0336,0333,0330,0336,0333,0337,0337,0337,",
+        "0226:0221,0333,0333,0220,0220,0220,0220,0220,0220,0334,0220,0220,0220,0220,0220,0220,0334,0220,0220,0220,0220,0220,0220,0220,0220,0220,0220,0220,0220,0220,0220,0220,0220,0334,0220,0220,0220,0220,0220,0220,0334,0220,0220,0220,0220,0220,0220,0220,0220,0220,0220,0332,0332,0331,0332,0332,0324,0223,0223,0223,0223,0223,0223,0223,0335,0335,0336,0336,0332,0337,0337,0337,0336,0326,0223,0223,0223,0223,0223,0223,0223,0223,0223,0223,0223,0223,0223,0223,0223,0223,0335,0335,0336,0336,0332,0337,0337,0324,0223,0223,0223,0223,0223,0223,0223,0223,0223,0320,0337,0222,0331,0331,0331,0331,0331,0336,0330,0332,0336,0333,0332,0337,0337,0224,0224,0224,0224,0224,0224,0224,0224,0331,0331,0332,0331,0331,0336,0333,0225,0337,0333,0331,0331,0331,0331,0331,0330,0336,0333,0333,0332,0337,0337,0350,0350,0350,0335,0366,0334,0304,0330,0330,0330,0336,0331,0336,0333,0335,0335,0337,0337,0367,0335,0335,0336,0366,0330,0330,0335,0367,0334,0334,0201,0201,0335,0333,0333,0331,0331,0336,0331,0331,0336,0333,0330,0325,0204,0330,0204,0330,0204,",
+        "0227:0221,0333,0333,0220,0220,0220,0220,0220,0220,0334,0220,0220,0220,0220,0220,0220,0334,0220,0220,0220,0220,0220,0220,0220,0220,0220,0220,0220,0220,0220,0220,0220,0220,0334,0220,0220,0220,0220,0220,0220,0334,0220,0220,0220,0220,0220,0220,0220,0220,0220,0220,0332,0332,",
+        "0230:0335,0333,0333,0333,0330,0330,0330,0330,0211,0211,0211,0211,0211,0227,",
+        "0231:0336,0336,0331,0336,0331,0332,0337,0337,0336,0330,0337,0201,0350,0335,0201,0201,0334,0334,0335,0304,0331,"
+    ],
+    "currentAddress": "0231",
+    "unit": 285.3116706110003,
+    "x0": 683,
+    "y0": 500,
+    "x0rel": 0.017524694974069607,
+    "y0rel": 0.574809995149483,
+    "imgurl": "https://i.imgur.com/X3Mfcfg.png",
+    "imgw": 2,
+    "imgleft": -1.5,
+    "imgtop": -1
+}
+</pre>
 <style>
 h1,h2,h3,h4{
     text-align:center;
@@ -76,6 +189,12 @@ body{
     text-align:justify;
     padding:1em 1em 1em 1em;
     font-size:18px;
+}
+pre{
+    width:90%;
+    display:block;
+    margin:auto;
+    overflow:scroll;
 }
 </style>
 </body>

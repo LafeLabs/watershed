@@ -8,6 +8,61 @@
 <p>
     The "tale" is a document specific to a thing.  It is the story of the thing, that which motivates users and gives reason and meaning to the thing. 
 </p>
+<h2>Metamap Crystal City</h2>
+<p>
+I live in Crystal city. I moved here around the beginning of 2017 and I think it's fantastic!  Walking distance from everything, peaceful, lots of parks, easy to walk around, lots of conveniences, easy Metro access, and the closest airport of anywhere in the country.  Neat!      
+</p>
+<p>
+    One thing I noticed as soon as I got here was how hard it is to navigate, though due to both its unfamilar layout and to the very high density of busineses which are not well served by the Google maps system.  I noticed that people are constantly lost both in the underground shops of Crystal City and in the various streets where people often wander around, confused, unsure of whether they should be in the mall or not. While no map I'm making solves these problems, what I do hope is to create a <em>system</em> which large numbers of participants can use to solve it.
+</p>
+<p>
+    The bedrock of the Crystal City metamap is likely to be the businesses which call it home. The daytime weekday population is vastly larger than the resident population here, and this map can be a huge asset for all the numerous businesses which benefit from the Cyrystal City address and its convinience relative to DC but hopefully not be hurt by the confusion of the physical layout anymore.  You should not have to lose customers because you happen to be around a twisty passage corner from some major intersection!  Join this free map and let's make getting around in Crystal City not just easy but fun, empowering and prifitable for local businesess.  
+</p>
+<p>
+    If you want a FREE lesson in use of this system email me at lafelabs@gmail.com and I can meet you at one of Crystal City's many fine parks or coffee shops to teach you the whole thing and help you figure out how it can help YOU.  You can also TEXT(but don't call!) (303)817-8283.  I'm around, there is no catch, I'm just trying to make more free things in the public domain to give more of the power of the Web to ordinary people rather than a few Tech giants from the Bay Area.
+</p>
+<p>
+    Who am I? I'm Lafe Spietz, an applied physicist. I work as a consultant in the quantum information field, but have recently started building various information systems which are not totally digital and not totally analog, and Metamap is one of them.  You've probably seen me hunched over a laptop around Crystal city at some point.  
+</p>
+
+<h2>Specifics of the Metamap Crystal City Instance</h2>
+
+<ul>
+    <li>
+        Zero point @(0,0):VRE Sign at the North end of Water Park. This is at lattitude 38.8591 N and 77.049 W longitude, also known as (38.8591,-77.049).
+    </li>
+    <li>
+Unit: 100 yards = 300 feet  
+    </li>
+    <li>
+    Hashtag:#metamapcrystalcity
+    </li>
+    <li>
+    latlon precision: 4, xy precision: 1
+</li>
+    <li>
+scope:x from -4 to +1, y from -10 to +4 to 10 
+    </li>
+    <li>
+<a href = "https://www.instagram.com/p/BhAZ_JWFuRQ/?taken-by=lafelabs">Physical Map image link</a>
+    </li>
+    <li>
+<a href = "http://www.lafelabs.org/cccalc/">Caclulator Link</a> 
+    </li>
+    <li>
+    <a href = "http://www.lafelabs.org/ccmetamap/scrolls/">Scrolls</a>  
+    </li>
+    <li>
+    <a href = "http://www.lafelabs.org/ccmetamap/geometron/svg/">Graphics feed</a>
+    </li>
+    <li>
+    <a href = "http://www.lafelabs.org/ccmetamap/geometron/">Graphics Factory(Geomtron terminal)</a>
+    </li>
+    <li>
+        <a href = "http://www.lafelabs.org/ccmetamap/json/metamapcrystalcity.txt">JSON file</a>
+    </li>
+</ul>
+
 <style>
 h1,h2,h3,h4{
     text-align:center;
