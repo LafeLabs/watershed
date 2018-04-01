@@ -5,6 +5,7 @@
 <a href  ="index.html">index.html</a>
 <a href  ="editor.php">editor.php</a>
 <h1>Lore.html</h1>
+<h2>What is Lore?</h2>
 <p>
     The "lore" is the standardized documentation for a class of things.  It is what would normally be the "manual" for a commercial product, but with more emphasis on <em>replication</em>.  
 </p>
@@ -16,9 +17,55 @@ Normally you buy a thing and the manual guides you through using it.  A very wel
 </p>
 <h2>What is the Metamap?</h2>
 <p>
-    The Metamap in a layer of map information which exists one level of abstraction up from both digital maps and physical maps.  It is a set of information <em>about</em> a map.  
+    The Metamap in a layer of map information which exists one level of abstraction up from both digital maps and physical maps.  It is a set of information <em>about</em> a map.  In specific terms a metamap instance is consists of: 
 </p>
+<ul>
+    <li>
+        A zero point, from which all other points on the map are determined.  This is symbolized as @(0,0).  The zero point is specifid as a pair of numbers, lat0 and lon0 which are the lattitude and longitude in decimal degrees to the appropriate precision.
+    </li>
+    <li>
+        A unit, generally in feet in the U.S.(convert to meters for non-US locations!), which coordinates are measured in.  
+    </li>
+    <li>
+        Locations, which are symbolzed as @(x,y), where x is East-West direction, with East being in the plus direction and y being north-south direction with North as plus.  Thus for a unit value of 100 yards, @(5,1) is 
+    </li>
+    <li>
+        A physical map which can be easily replicated by hand. The physical form is, for now, a piece of cardstock cut out to about 5.5 by 3.5 inches.  One side is the map itself in its most simplified form, with tic marks at each unit along top, bottom, left and right sides.   
+    </li>
+    <li>
+        A calculator, which is a self-contained html file which converts between the latttude and longitude coordinates that smart phone GPS measure into the local units of the map.  Other bits of Metamap data point to a web address which has a copy of this calculator as well as a location with the code available to copy. 
+    </li>
+    <li>
+        Scrolls: the Tale and Lore, i.e. this document.  This document should be copied far and wide, mirrored on as many pages or more on the Web as there are users. We are approaching a time when the number of web servers vastly exceeds the number of humans, and therefore the number of instances of a file people care about should be greater than that number of people.  
+    </li>
+    <li>
+        A domain-specific symbolic language for that map, which may or may not overlap other maps up or down in the size scale heierarchy.  These symbols are drawn by hand on the physical map, and are used in the generator of graphics, which is based on the Geometron geometric metalanguage which is beyond the scope of this document.  This language is communicated electronically using the octal Geometron bytecode representation.   
+    </li>
+    <li>
+        A "graphics factory", or Gemetron Terminal, which is a system to generate vector graphics in SVG format in the Metamap language.  Again, the Geometron Metalanguage will be documented elsewhere but for the sake of this document will be treated as an oral tradition--email lafelabs@gmail.com for lessons on how to use it. As with other digital components, this should be copied numerous times on the Web both globally and on local hosted servers like phones.  In general the physical terminals used by Artists on the Street include the physical art supplies required for all the other art aspects of Metamap.  As with Geometron, the details of the art kit are beyond the scope of this document and are described in the <a href = "http://www.actiongeometry.org">Action Geometry</a> documentation. 
+    </li>
+    <li>
+        A text file(file extension .txt) with JSON(JavaScript Object Notation) format data, available numerous times on the Web, which encapsulates all the information on this list(more on this later). 
+    </li>
+    <li>
+        Code editors which allow for on-the-fly editing of ALL components of code: JSON, html, php, and any other code added later.  Code editors use the ACE JavaScript library, documented <a href = "https://ace.c9.io">here</a>, and are always in a local file called editor.php, which has a set of associated php files which allow for real time editing of files on a local host.  Care must be taken with these files, as any server you put them on can be messed with by bad actors if they have access.  Thus this is generally on some type of localhost, although, again, we are assuming a world where web servers out number humans and in this world "hacking" in the modern sense is largely an anachronism.  Given that there are an effectively infinite number of backups of each file, the "security" concerns that someone will go wipe out your calculator or change the units will likely be minimal in this new world. 
+    </li>
+    <li>
+        Replication code consisting of a file called replicator.php and another called dna.txt, which together can clone the whole metamap software structure on a local directory with php installed. This is not specific to PHP and can and should be duplicated in other common server langauges like Python, node.js, Ruby, or whatever.  They're just a few lines of code and should be trivial to convert to other languages.  I lead with PHP becuase that is so ubiquitously installed on existing web servers today(2018).         
+    </li>
+    <li>
+        Markers are physical artifacts in the world which have markings on them with information which might include coordinates of that marker, coordinates to other places you wish to link to that marker, messages for other people, links to web resources, etc. Markers can also be drop boxes for physical artifacts which are exchanged directly or indirectly.
+    </li>
+</ul>
 
+<h2>How to use the Metamap</h2>
+
+Use cases for metamap:
+<ul>
+    <li>
+        
+    </li>
+</ul>
 
 <style>
 h1,h2,h3,h4{
@@ -28,6 +75,7 @@ h1,h2,h3,h4{
 body{
     text-align:justify;
     padding:1em 1em 1em 1em;
+    font-size:18px;
 }
 </style>
 </body>

@@ -166,7 +166,7 @@ body{
     border-width:3px;
     background-color:#101010;
     font-family:courier;
-    font-size:18px;
+    font-size:22px;
 }
 #maineditor{
     position:absolute;
@@ -174,6 +174,7 @@ body{
     top:10%;
     bottom:1%;
     right:30%;
+    font-size:18px;
 }
 #text2phplink{
     position:absolute;
