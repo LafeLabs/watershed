@@ -89,6 +89,7 @@
             <li>smartphones, with or without data plans, using wifi</li>
             <li>Raspbrerry Pi</li>
             <li>Arduino UNO</li>
+            <li>Optical data pickup panel for UNO</li>
             <li>Oscillator shield</li>
             <li>Dual H Bridge Trash Robot Boards</li>
             <li>ArtBox 6 inch edge cardboard and tape octohedron</li>
@@ -108,6 +109,8 @@
             <li>trash pod living spaces with infrastructure for networking, HVAC, composting toilets, electricity</li>
             <li>High voltage generators</li>
             <li>Vacuum pumps built from trash</li>
+            <li>Power supplies: wall wort, LiPo Batteries, solar panels, generators, rechargeable AA's</li>
+            
         </ul>
         
         
