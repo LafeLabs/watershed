@@ -4,47 +4,50 @@
         <title>Scroll Reader</title>
     </head>
     <body>
-        <div class = "button" id = "talebutton">TALE</div>
-        <div class = "button" id = "lorebutton">LORE</div>
-        <div class = "button" id = "jsonbutton">JSON</div>
+        <div class = "button" id = "storybutton">STORY</div>
+        <div class = "button" id = "replicatorbutton">REPLICATOR</div>
+        <div class = "button" id = "jsonbutton">OBJECT</div>
 
         <div id = "readerscroll" class = "scroll">
         </div>
         <script>
-        currentFile = "html/lore.txt";
+        currentFile = "html/replicator.txt";
         //use php script to load current file;
         var httpc = new XMLHttpRequest();
         httpc.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 filedata = this.responseText;
                 document.getElementById("readerscroll").innerHTML = filedata;
+                document.getElementById("readerscroll").style.borderColor = "purple";
             }
         };
         httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
         httpc.send();
         
-        document.getElementById("talebutton").onclick = function(){
-            currentFile = "html/tale.txt";
+        document.getElementById("storybutton").onclick = function(){
+            currentFile = "html/story.txt";
             //use php script to load current file;
             var httpc = new XMLHttpRequest();
             httpc.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     filedata = this.responseText;
                     document.getElementById("readerscroll").innerHTML = filedata;
+                    document.getElementById("readerscroll").style.borderColor = "blue";
                 }
             };
             httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
             httpc.send();
         }
         
-        document.getElementById("lorebutton").onclick = function(){
-            currentFile = "html/lore.txt";
+        document.getElementById("replicatorbutton").onclick = function(){
+            currentFile = "html/replicator.txt";
             //use php script to load current file;
             var httpc = new XMLHttpRequest();
             httpc.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     filedata = this.responseText;
                     document.getElementById("readerscroll").innerHTML = filedata;
+                    document.getElementById("readerscroll").style.borderColor = "purple";
                 }
             };
             httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
@@ -59,6 +62,7 @@
                 if (this.readyState == 4 && this.status == 200) {
                     filedata = this.responseText;
                     document.getElementById("readerscroll").innerHTML = "<pre>" + filedata + "</pre>";
+                    document.getElementById("readerscroll").style.borderColor = "#654321";
                 }
             };
             httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
@@ -71,11 +75,14 @@
             box-sizing: border-box;
             }
             body{
-                
+             overflow:hidden;   
             }
             .scroll{
-                width:100%;
+                width:99%;
                 padding:1.5em 1.5em 1.5em 1.5em;
+                border-radius:0.5em;
+                border:solid;
+                border-width:10px;
                 font-size:2em;
                 text-align:justify;
                 overflow:scroll;
@@ -99,18 +106,34 @@
 	            line-height: 32px;
 	            width:100%;
 	            text-align:justify;
+	                margin-bottom:1em;
+
             }
-            #talebutton{
+            .scroll h1,h2,h3,h4{
+                text-align:center;
+            }
+            a{
+                	            font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
+	            font-size: 24px;
+            	font-style: normal;
+	            font-variant: normal;
+	            font-weight: 400;
+
+            }
+            #storybutton{
                 left:5px;
                 width:20%;
+                border-color:blue;
             }
-            #lorebutton{
+            #replicatorbutton{
                 left:40%;
                 width:20%;
+                border-color:purple;
             }
             #jsonbutton{
                 right:5px;
                 width:20%;
+                border-color:#654321;
             }
             .button{
                 position:absolute;
@@ -119,8 +142,10 @@
                 border:solid;
                 padding:0.5em 0.5em 0.5em 0.5em;
                 border-radius:0.5em;
+                border-width:10px;
                 text-align:center;
                 z-index:1;
+                font-family:arial;
             }
             .button:hover{
                 background-color:green;

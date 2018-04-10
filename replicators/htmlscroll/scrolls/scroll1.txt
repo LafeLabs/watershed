@@ -1,0 +1,13 @@
+
+<p>
+Paragraph 1.  Some text here.
+</p>
+
+<p>
+More text here.
+</p>
+
+<p>
+Here is a a log with some paint on it:</p>
+
+<img src = "https://i.imgur.com/2B655Ne.jpg"/>

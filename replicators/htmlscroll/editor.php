@@ -11,31 +11,22 @@
     <a href = "text2php.php" id = "text2phplink">text2php.php</a>
     <a href = "text2html.php" id = "text2htmllink">text2html.php</a>
     <a href = "index.html" id = "indexlink">index.html</a>
-    <a href = "jsonimport.php" id = "importlink">jsonimport.php</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
 
-    <a href = "reader.html">reader.html</a>
-
     <div class = "button" id = "imgbutton">&ltIMG src = " "/&gt</div>
-
     <div class = "button" id = "pbutton">&ltP&gt  &lt/P&gt</div>
 
 </div>
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="true"></div>
 <div id = "filescroll">
-    <div class = "html file">html/tale.txt</div>
-    <div class = "html file">html/lore.txt</div>
-
-    <div class = "html file">html/replicator.txt</div>
-    <div class = "html file">html/story.txt</div>
 
     <div class = "html file">html/index.txt</div>
 
-    <div class = "php file">php/scrolleditor.txt</div>
+    <div class = "scrolls file">scrolls/scroll1.txt</div>
+
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/replicator.txt</div>
-    <div class = "php file">php/jsonimport.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/text2php.txt</div>
@@ -43,10 +34,6 @@
     <div class = "php file">php/dnagenerator.txt</div>
 
     <div class = "json file">json/dna.txt</div>
-    <div class = "json file">json/currentjson.txt</div>
-    <div class = "json file">json/files.txt</div>
-
-    <div class = "json file">json/object.txt</div>
 
 </div>
 
@@ -73,7 +60,7 @@ for(var index = 0;index < files.length;index++){
                 editor.setValue(filedata);
                 var fileType = currentFile.split("/")[0]; 
                 var fileName = currentFile.split("/")[1];
-                if(fileType == "html" && fileName != "index.txt"){
+                if(fileType == "scrolls"){
                     document.getElementById("scrolldisplay").innerHTML = editor.getSession().getValue();
                 }
             }
@@ -89,6 +76,11 @@ for(var index = 0;index < files.length;index++){
             editor.getSession().setMode("ace/mode/html");
             document.getElementById("namediv").style.color = "#0000ff";
             document.getElementById("namediv").style.borderColor = "#0000ff";
+        }
+        if(this.classList[0] == "scrolls"){
+            editor.getSession().setMode("ace/mode/html");
+            document.getElementById("namediv").style.color = "#87CEEB";
+            document.getElementById("namediv").style.borderColor = "#87CEEB";
         }
         if(this.classList[0] == "javascript"){
             editor.getSession().setMode("ace/mode/javascript");
@@ -132,7 +124,7 @@ document.getElementById("maineditor").onkeyup = function(){
     httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
     var fileType = currentFile.split("/")[0]; 
     var fileName = currentFile.split("/")[1];
-    if(fileType == "html" && fileName != "index.txt"){
+    if(fileType == "scrolls"){
         document.getElementById("scrolldisplay").innerHTML = editor.getSession().getValue();
     }
     
@@ -185,6 +177,9 @@ body{
 }
 .json{
     color:orange;
+}
+.scrolls{
+    color:#87ceeb;
 }
 
 .file{
