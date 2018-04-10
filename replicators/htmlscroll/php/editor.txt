@@ -23,7 +23,9 @@
 
     <div class = "html file">html/index.txt</div>
 
-    <div class = "scrolls file">scrolls/scroll1.txt</div>
+    <div class = "scrolls file">scrolls/replicator.txt</div>
+    <div class = "scrolls file">scrolls/generator.txt</div>
+    <div class = "scrolls file">scrolls/wall.txt</div>
 
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/replicator.txt</div>
