@@ -1,0 +1,92 @@
+[
+    {
+        "lat0": 38.8591,
+        "lon0": -77.049,
+        "name0": "VRE Sign",
+        "lat1": 38.8591,
+        "lon1": -77.049,
+        "name1": "VRE Sign",
+        "hashtag": "#metamapcrystalcity",
+        "unitfeet": 300,
+        "unitname": "100 yards",
+        "xydigits": 1,
+        "latlondigits": 4,
+        "url": {
+            "this": "",
+            "code": "https://pastebin.com/raw/yAKUG0Q5",
+            "json": "https://pastebin.com/raw/7f0SjzP2",
+            "image": "https://i.imgur.com/Q8BOefb.jpg",
+            "tale": "",
+            "lore": ""
+        }
+    },
+    {
+        "lat0": 38.8895,
+        "lon0": -77.0352,
+        "name0": "Washington Monument",
+        "lat1": 38.8591,
+        "lon1": -77.049,
+        "name1": "VRE Sign",
+        "hashtag": "#metamapdcwm",
+        "unitfeet": 555,
+        "unitname": "Washington Monument height",
+        "xydigits": 0,
+        "latlondigits": 3,
+        "url": {
+            "this": "",
+            "code": "https://pastebin.com/raw/yAKUG0Q5",
+            "json": "https://pastebin.com/raw/7f0SjzP2",
+            "image": "https://i.imgur.com/Q8BOefb.jpg",
+            "tale": "",
+            "lore": ""
+        }
+    },
+    {
+        "lat0": 38.8895,
+        "lon0": -77.0352,
+        "name0": "Washington Monument",
+        "lat1": 38.8591,
+        "lon1": -77.049,
+        "name1": "VRE Sign",
+        "hashtag": "#metamapdcmiles",
+        "unitfeet": 5280,
+        "unitname": "Mile",
+        "xydigits": 1,
+        "latlondigits": 3,
+        "url": {
+            "this": "",
+            "code": "",
+            "json": "",
+            "image": "",
+            "androidapp": "",
+            "iosapp": "",
+            "windowsapp": "",
+            "tale": "",
+            "lore": ""
+        }
+    },
+    {
+        "lat0": 0,
+        "lon0": 0,
+        "name0": "equator/prime meridian",
+        "lat1": 39,
+        "lon1": -77,
+        "name1": "Washington DC",
+        "hashtag": "#metamapglobe",
+        "unitfeet": 3000000,
+        "unitname": "about 1000 km",
+        "xydigits": 1,
+        "latlondigits": 0,
+        "url": {
+            "this": "",
+            "code": "",
+            "json": "",
+            "image": "",
+            "androidapp": "",
+            "iosapp": "",
+            "windowsapp": "",
+            "tale": "",
+            "lore": ""
+        }
+    }
+]

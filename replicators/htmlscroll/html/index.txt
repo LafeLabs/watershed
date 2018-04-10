@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Scroll Reader</title>
+    </head>
+    <body>
+        <div class = "button" id = "storybutton">STORY</div>
+        <div class = "button" id = "replicatorbutton">REPLICATOR</div>
+        <div class = "button" id = "jsonbutton">OBJECT</div>
+
+        <div id = "readerscroll" class = "scroll">
+        </div>
+        <script>
+        currentFile = "html/replicator.txt";
+        //use php script to load current file;
+        var httpc = new XMLHttpRequest();
+        httpc.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                filedata = this.responseText;
+                document.getElementById("readerscroll").innerHTML = filedata;
+                document.getElementById("readerscroll").style.borderColor = "purple";
+            }
+        };
+        httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
+        httpc.send();
+        
+        document.getElementById("storybutton").onclick = function(){
+            currentFile = "html/story.txt";
+            //use php script to load current file;
+            var httpc = new XMLHttpRequest();
+            httpc.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    filedata = this.responseText;
+                    document.getElementById("readerscroll").innerHTML = filedata;
+                    document.getElementById("readerscroll").style.borderColor = "blue";
+                }
+            };
+            httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
+            httpc.send();
+        }
+        
+        document.getElementById("replicatorbutton").onclick = function(){
+            currentFile = "html/replicator.txt";
+            //use php script to load current file;
+            var httpc = new XMLHttpRequest();
+            httpc.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    filedata = this.responseText;
+                    document.getElementById("readerscroll").innerHTML = filedata;
+                    document.getElementById("readerscroll").style.borderColor = "purple";
+                }
+            };
+            httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
+            httpc.send();
+        }
+        
+        document.getElementById("jsonbutton").onclick = function(){
+            currentFile = "json/currentjson.txt";
+            //use php script to load current file;
+            var httpc = new XMLHttpRequest();
+            httpc.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    filedata = this.responseText;
+                    document.getElementById("readerscroll").innerHTML = "<pre>" + filedata + "</pre>";
+                    document.getElementById("readerscroll").style.borderColor = "#654321";
+                }
+            };
+            httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
+            httpc.send();
+        }
+        
+        </script>
+        <style>
+            * {
+            box-sizing: border-box;
+            }
+            body{
+             overflow:hidden;   
+            }
+            .scroll{
+                width:99%;
+                padding:1.5em 1.5em 1.5em 1.5em;
+                border-radius:0.5em;
+                border:solid;
+                border-width:10px;
+                font-size:2em;
+                text-align:justify;
+                overflow:scroll;
+                position:absolute;
+                top:10%;
+                left:5px;
+                right:5px;
+                bottom:5px;
+            }
+            .scroll img{
+                width:80%;
+                display:block;
+                margin:auto;
+            }
+            .scroll p,pre,li {
+	            font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
+	            font-size: 24px;
+            	font-style: normal;
+	            font-variant: normal;
+	            font-weight: 400;
+	            line-height: 32px;
+	            width:100%;
+	            text-align:justify;
+	                margin-bottom:1em;
+
+            }
+            .scroll h1,h2,h3,h4{
+                text-align:center;
+            }
+            a{
+                	            font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
+	            font-size: 24px;
+            	font-style: normal;
+	            font-variant: normal;
+	            font-weight: 400;
+
+            }
+            #storybutton{
+                left:5px;
+                width:20%;
+                border-color:blue;
+            }
+            #replicatorbutton{
+                left:40%;
+                width:20%;
+                border-color:purple;
+            }
+            #jsonbutton{
+                right:5px;
+                width:20%;
+                border-color:#654321;
+            }
+            .button{
+                position:absolute;
+                top:5px;
+                cursor:pointer;
+                border:solid;
+                padding:0.5em 0.5em 0.5em 0.5em;
+                border-radius:0.5em;
+                border-width:10px;
+                text-align:center;
+                z-index:1;
+                font-family:arial;
+            }
+            .button:hover{
+                background-color:green;
+            }
+            .button:active{
+                background-color:yellow;
+            }
+        </style>
+    </body>
+</html>
