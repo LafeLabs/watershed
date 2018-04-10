@@ -7,8 +7,7 @@
         <div id = "readerscroll" class = "scroll"></div>
         <script>
         
-        
-        currentFile = "html/replicator.txt";
+        currentFile = "scrolls/scroll1.txt";
         //use php script to load current file;
         var httpc = new XMLHttpRequest();
         httpc.onreadystatechange = function() {

@@ -4,14 +4,10 @@
         <title>Scroll Reader</title>
     </head>
     <body>
-        <div class = "button" id = "storybutton">STORY</div>
-        <div class = "button" id = "replicatorbutton">REPLICATOR</div>
-        <div class = "button" id = "jsonbutton">OBJECT</div>
-
-        <div id = "readerscroll" class = "scroll">
-        </div>
+        <div id = "readerscroll" class = "scroll"></div>
         <script>
-        currentFile = "html/replicator.txt";
+        
+        currentFile = "scrolls/scroll1.txt";
         //use php script to load current file;
         var httpc = new XMLHttpRequest();
         httpc.onreadystatechange = function() {
@@ -24,51 +20,7 @@
         httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
         httpc.send();
         
-        document.getElementById("storybutton").onclick = function(){
-            currentFile = "html/story.txt";
-            //use php script to load current file;
-            var httpc = new XMLHttpRequest();
-            httpc.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    filedata = this.responseText;
-                    document.getElementById("readerscroll").innerHTML = filedata;
-                    document.getElementById("readerscroll").style.borderColor = "blue";
-                }
-            };
-            httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
-            httpc.send();
-        }
-        
-        document.getElementById("replicatorbutton").onclick = function(){
-            currentFile = "html/replicator.txt";
-            //use php script to load current file;
-            var httpc = new XMLHttpRequest();
-            httpc.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    filedata = this.responseText;
-                    document.getElementById("readerscroll").innerHTML = filedata;
-                    document.getElementById("readerscroll").style.borderColor = "purple";
-                }
-            };
-            httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
-            httpc.send();
-        }
-        
-        document.getElementById("jsonbutton").onclick = function(){
-            currentFile = "json/currentjson.txt";
-            //use php script to load current file;
-            var httpc = new XMLHttpRequest();
-            httpc.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    filedata = this.responseText;
-                    document.getElementById("readerscroll").innerHTML = "<pre>" + filedata + "</pre>";
-                    document.getElementById("readerscroll").style.borderColor = "#654321";
-                }
-            };
-            httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
-            httpc.send();
-        }
-        
+    
         </script>
         <style>
             * {
@@ -120,21 +72,7 @@
 	            font-weight: 400;
 
             }
-            #storybutton{
-                left:5px;
-                width:20%;
-                border-color:blue;
-            }
-            #replicatorbutton{
-                left:40%;
-                width:20%;
-                border-color:purple;
-            }
-            #jsonbutton{
-                right:5px;
-                width:20%;
-                border-color:#654321;
-            }
+           
             .button{
                 position:absolute;
                 top:5px;
