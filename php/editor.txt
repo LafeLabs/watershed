@@ -4,52 +4,24 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
-        <a href = "text2php.php" id = "text2phplink">text2php.php</a>
+    <a href = "text2php.php" id = "text2phplink">text2php.php</a>
     <a href = "index.php" id = "indexlink">index.php</a>
+    <a href = "text2html.php" id = "htmllink">text2html.php</a>
 
 <div id = "namediv"></div>
-<div id="maineditor"></div>
+<div id="maineditor" contenteditable="true" spellcheck="true"></div>
 <div id = "filescroll">
-    <div class = "html file">html/page.txt</div>
-    <div class = "html file">html/boxes.txt</div>
-
-    <div class = "css file">css/style.txt</div>
-
-    <div class = "bytecode file">bytecode/baseshapes.txt</div>
-    <div class = "bytecode file">bytecode/shapetable.txt</div>
-    <div class = "bytecode file">bytecode/font.txt</div>
-    <div class = "bytecode file">bytecode/keyboard.txt</div>
-    <div class = "bytecode file">bytecode/symbols013xx.txt</div>
-    <div class = "bytecode file">bytecode/symbols010xx.txt</div>
-
-    <div class = "javascript file">javascript/topfunctions.txt</div>
-    <div class = "javascript file">javascript/actions0xx.txt</div>
-    <div class = "javascript file">javascript/actions03xx.txt</div>
-    <div class = "javascript file">javascript/jslibrary.txt</div>
-    <div class = "javascript file">javascript/init.txt</div>
-    <div class = "javascript file">javascript/redraw.txt</div>
-    <div class = "javascript file">javascript/pageevents.txt</div>
-
+    <div class = "html file">html/index.txt</div>
+    
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/index.txt</div>
     <div class = "php file">php/replicator.txt</div>
-    <div class = "php file">php/filesaver.txt</div>
-    <div class = "php file">php/fileloader.txt</div>
-    <div class = "php file">php/feedsaver.txt</div>
-    <div class = "php file">php/localbackup.txt</div>
-    <div class = "php file">php/svgloader.txt</div>
-    <div class = "php file">php/text2php.txt</div>
-    <div class = "php file">php/branch.txt</div>
-    <div class = "php file">php/scandir.php</div>
-
-    <div class = "json file">json/dna.txt</div>
-    <div class = "json file">json/currentjson.txt</div>
-    <div class = "json file">json/imagedata.txt</div>
+    <div class = "php file">php/text2html.txt</div>
 
 </div>
 
 <script>
-currentFile = "html/page.txt";
+currentFile = "html/index.txt";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -114,6 +86,8 @@ document.getElementById("namediv").style.borderColor = "#0000ff";
 editor = ace.edit("maineditor");
 editor.setTheme("ace/theme/cobalt");
 editor.getSession().setMode("ace/mode/html");
+editor.getSession().setUseWrapMode(true);
+
 //editor.setValue(document.getElementById("datadiv").innerText);
 document.getElementById("maineditor").onkeyup = function(){
     data = encodeURIComponent(editor.getSession().getValue());
@@ -190,12 +164,20 @@ body{
     top:10%;
     bottom:1%;
     right:30%;
+    font-size:20px;
 }
 #text2phplink{
     position:absolute;
     left:0px;
     top:0px;
     color:white;
+}
+#htmllink{
+    position:absolute;
+    left:15em;
+    top:0px;
+    color:white;
+    
 }
 #indexlink{
     position:absolute;

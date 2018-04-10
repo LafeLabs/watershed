@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Watershed Tree</title>
+    </head>
+    <body>
+        <h1>Watershed Tree</h1>
+        <p>
+Watershed is our word for a certain way of life and world view.  In the Watershed world view, the primary place we find ourselves in is literally a watershed: the area defined by how water flows from the sky to the sea.  In addition to our place in a world of flowing water, our cosmology is defined by a "trash feed", the ongoing flow of materials that exists in the present consumer society consisting of digging things up, setting them on fire, and burying them.  In the methodology of the Watershed, we use our information systems to reshape the flow of the water and trash into new value structures which enable us to parse Things in a post scarcity environment, where one thing is never just one thing.  
+        </p>
+        <p>
+This page is not for you. It is for me.  You will make your own page, just ask me how and I'll show you how to make your own version of all this which applies specifically to the universe your mind inhabits: your watershed, your ideology, way of life, work, art, friends, method of communication, symbols, beliefs, etc.  I can be reached at lafelabs[at]gmail.com or text(don't ever call) three zero three eight one seven eight two eight three.</p>
+        <p>
+    Much of what we build here is in the form of Things, Links, and Generators.  A Generator is a entity which can generate Things or other Generators.  All Things have generators, which allows them to replicate(hence generators are also called replicators, depending on context).  Generators can be a piece of software on a website, a local piece of software on a computer, a set of oral instructions shared by an existing user, written instructions, machinery for automated industrial production, or any number of other machines or information structures.  Links are elements which simply point to another Thing, Generator, or Document.  Links can be a hyperlink to a thing or page or generator, a QR code, a written URL on a  physical object, an email or direct message, a map showing the location of a thing(treasure map!), a sign hoping to catch the attention of a passerby etc.  All Generators are also things, and thus have a generator which creates them.  All things are also made up of many things, each of which has generators, etc.
+    </p>
+    <p>
+    Laws which we use to understand the Universe we define around our minds in the Watershed are all based on the following nine basic Laws:
+    </p>
+    <ul>
+        <li>EVERYTHING IS RECURSIVE</li>
+        <LI>EVERYTHING IS FRACTAL</LI>
+        <LI>EVERYTHING IS PHYSICAL</LI>
+        <LI>NO MONEY</LI>
+        <LI>NO MINING</LI>
+        <LI>NO PROPERTY</LI>
+        <LI>LOOK TO THE FUNGI</LI>
+        <LI>LOOK TO THE INSECTS</LI>
+        <LI>LANGUAGE IS HOW THE MIND PARSES REALITY</LI>
+    </ul>
+    <p>
+    Documents are things.  Documents which are of a form where a bunch of raw HTML with minimal style information and no page layout information is intended to be inside a DIV element which scrolls are called scrolls.  This is the basic structure which allows us to replicate the functionality of popular social media, such as Facebook, Twitter, Instagram, Wordpress etc. Scrolls are divided into two types of thing: tales and lore. Generators are a form of lore, because they are information about the action of using a thing, which includes creating the thing.  Tales encompass social media of the normal kind, a recording in time of events with personal meaning.
+    </p>
+    <p>
+        It is important to note that things
+    </p>
+    
+        <h2>Watershed Tree Branches:</h2>
+        <ul>
+            <li>
+                Metamap: a metalanguage for constructing maps.
+            </li>
+            <li>Action geometry: an alternate approach to geometric constructions which emphasizes action over concept, form or formalism. Action Geometry consists of a set of shapes, actions, and objects, and is physically transmitted via a set of cards drawn and colored on cardstock cut to about 3.5 by 5.5 inches, like a Tarot deck.</li>
+            <li>
+                Quantum Noise.  This is what I have done for my day job for most of my physics career, and is concerned with precision measurement of temperature and amplifier noise using the noise from a quantum tunnel junction.
+            </li>
+            <li>
+                Quantum art: This consists of art useful for quantum information science, namely Geometron software to create relevant vector graphics for quantum computation graphical communication, CSS/HTML/JavaScript for making representations of quantum states using superposition of bitmap images using CSS transparency properties, and x3d(formerly known as VRML) code for making 3d representations of various Hilbert spaces mapped into generalized spheres.
+            </li>
+            <li>
+                Geometron: a geometric metalanguage, which overlaps with but is neither a subset nor superset of Action Geometry, and which enables platform independent creation of vector graphics in a web browser.     
+            </li>
+            <li>
+                Trash Magic philosophy: the Manifesto
+            </li>
+            <li>
+                Trash Robot: a method of creating modular robots from upcycled materials, along with a generic controller for both stepper motors and DC brushed motors and a system for connecting the Arduino to the screen of a web-enabled computer.   
+            </li>
+            <li>Oscillator: A generalized method of creating electro-mechanical oscillators for all purposes, consisting of a special Arduino shield and a system of designs for various drive and sense coils made from upcycled materials, as well as mass-on-spring oscillators and various tools they can apply periodic force to.</li>
+            <li>Haptics: A system for converting force on a pressure sensor into a natural feeling response using some simple math.</li>
+            <li>Slimezistor, a system for video rate ion transport measurement and electrochemistry, including a simple circuit for using the Arduino for measuring ion flow in a fluid and a system of fluidic circuit fabrication using HDPE plastic, heat welded as needed.</li>
+        </ul>
+        <h2>Types of Software Generator(software to <em>generate</em> things)</h2>
+        <ul>
+            <li>Geometron shape table and font editor</li>
+            <li>Geometron, producing vector graphics</li>
+            <li>Geometron, producing memes in JSON format</li>
+            <li>editor.php, producing all kinds of documents, including itself in the 5 elements of php, html, js, css, and geometron. Each other Generator on this list is created by editor.php.  A fresh instance of editor.php can be made on a given location with php enabled using replicator.php which replicates the needed file structure to have editor.php work.</li>
+            <li>Plotters, producing svg files of plots from parameters fed into some function in javascript</li>
+            <li>Calculators, producing JSON data with output of calculations</li>
+            <li>Scroll editors, producing clean and simple html, with no real structure beyond &ltp&gt, &ltimg&gt and &lth&gt</li>
+            <li>Technical paper editor, which is connected to a LaTeX compiler that converts to pdf, but also can be shared directly on the Web using MathJAX</li>
+            <li>
+                Generator/replicator scroll, which contains detailed instructions on how to replicate a thing. Passive html.
+            </li>
+            <li>
+                File repository for a physical Thing with files such as circuit board layout files, source code for Arduino parts, circuit schematics for hand assembled trash circuits, etc.
+            </li>
+        </ul>
+        <h2>Physical Elements of the System</h2>
+        <ul>
+            <li>Laptops</li>
+            <li>public terminals at the Library</li>
+            <li>smartphones, with or without data plans, using wifi</li>
+            <li>Raspbrerry Pi</li>
+            <li>Arduino UNO</li>
+            <li>Oscillator shield</li>
+            <li>Dual H Bridge Trash Robot Boards</li>
+            <li>ArtBox 6 inch edge cardboard and tape octohedron</li>
+            <li>Skeletron sticks and cord tensegrity structures, namely the 1 cubit octahedron and the 5 foot icosahdedron trash pod</li>
+            <li>Laminated paper maps</li>
+            <li>tapeShapes, laminated paper with key action geometry shapes</li>
+            <li>Plastic shape panels in same AG shapes but cut from plastic panels from old trashed electronics using a razor blade</li>
+            <li>CD/DVD drawers with wires soldered to the DC motor, connected to SAMTEC connectors which  connect to Dual H Bridge board</li>
+            <li>Big DC motors from printers</li>
+            <li>stepper motor linear motion stage from DVD drive</li>
+            <li>big stepper motors from printers</li>
+            <li>FIRE elemental from 3 inch triangles of HDPE and cutout aluminum from beer cans, in tetrahedron with bright white LEDs for illumination </li>
+            <li>WATER elemental made from hubcaps, rope, stick and styrofoam, in icosahedron structure for buoy</li>
+            <li>Toots for art, electronics, wood work, trash destruction, ropework</li>
+            <li>bricks with carved and painted markers</li>
+            <li>sticks with carved and painted markers</li>
+            <li>trash pod living spaces with infrastructure for networking, HVAC, composting toilets, electricity</li>
+            <li>High voltage generators</li>
+            <li>Vacuum pumps built from trash</li>
+        </ul>
+        
+        <style>
+        body{
+            padding:2em 2em 2em 2em;
+        }
+            p,pre,li {
+	            font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
+	            font-size: 24px;
+            	font-style: normal;
+	            font-variant: normal;
+	            font-weight: 400;
+	            line-height: 32px;
+	            width:100%;
+	            text-align:justify;
+	                margin-bottom:1em;
+
+            }
+            h1,h2,h3,h4{
+                text-align:center;
+            }
+        </style>
+    </body>
+</html>
