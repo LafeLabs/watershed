@@ -8,8 +8,5 @@
 "php/replicator.txt",
 "php/text2html.txt",
 "php/text2php.txt",
-"scrolls/generator.txt",
-"scrolls/replicator.txt",
-"scrolls/scroll1.txt",
-"scrolls/wall.txt"
+"scrolls/scroll1.txt"
 ]
