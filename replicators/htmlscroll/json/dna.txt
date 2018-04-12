@@ -5,11 +5,11 @@
 "php/editor.txt",
 "php/fileloader.txt",
 "php/filesaver.txt",
+"php/main2index.txt",
 "php/replicator.txt",
-"php/text2html.txt",
+"php/scrolleditor.txt",
 "php/text2php.txt",
-"scrolls/generator.txt",
-"scrolls/replicator.txt",
-"scrolls/scroll1.txt",
-"scrolls/wall.txt"
+"scrolls/main.txt",
+"scrolls/notes.txt",
+"scrolls/replicator.txt"
 ]

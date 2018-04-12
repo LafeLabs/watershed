@@ -5,13 +5,12 @@
 </head>
 <body>
     
-<div id = "scrolldisplay"></div>    
-    
 <div id = "linkscroll">
-    <a href = "text2php.php" id = "text2phplink">text2php.php</a>
-    <a href = "text2html.php" id = "text2htmllink">text2html.php</a>
-    <a href = "index.html" id = "indexlink">index.html</a>
+    <a href = "text2php.php">text2php.php</a>
+    <a href = "main2index.php">main2index.php</a>
+    <a href = "index.html">index.html</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
+    <a href = "scrolleditor.php">scrolleditor.php</a>
 
     <div class = "button" id = "imgbutton">&ltIMG src = " "/&gt</div>
     <div class = "button" id = "pbutton">&ltP&gt  &lt/P&gt</div>
@@ -23,16 +22,17 @@
 
     <div class = "html file">html/index.txt</div>
 
+    <div class = "scrolls file">scrolls/main.txt</div>
     <div class = "scrolls file">scrolls/replicator.txt</div>
-    <div class = "scrolls file">scrolls/generator.txt</div>
-    <div class = "scrolls file">scrolls/wall.txt</div>
+    <div class = "scrolls file">scrolls/notes.txt</div>
 
     <div class = "php file">php/editor.txt</div>
+    <div class = "php file">php/scrolleditor.txt</div>
     <div class = "php file">php/replicator.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/text2php.txt</div>
-    <div class = "php file">php/text2html.txt</div>
+    <div class = "php file">php/main2index.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
 
     <div class = "json file">json/dna.txt</div>
@@ -40,7 +40,7 @@
 </div>
 
 <script>
-currentFile = "php/editor.txt";
+currentFile = "php/scrolleditor.txt";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -62,9 +62,7 @@ for(var index = 0;index < files.length;index++){
                 editor.setValue(filedata);
                 var fileType = currentFile.split("/")[0]; 
                 var fileName = currentFile.split("/")[1];
-                if(fileType == "scrolls"){
-                    document.getElementById("scrolldisplay").innerHTML = editor.getSession().getValue();
-                }
+              
             }
         };
         httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
@@ -116,6 +114,7 @@ editor = ace.edit("maineditor");
 editor.setTheme("ace/theme/cobalt");
 editor.getSession().setMode("ace/mode/html");
 editor.getSession().setUseWrapMode(true);
+editor.$blockScrolling = Infinity;
 
 document.getElementById("maineditor").onkeyup = function(){
     data = encodeURIComponent(editor.getSession().getValue());
@@ -126,19 +125,6 @@ document.getElementById("maineditor").onkeyup = function(){
     httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
     var fileType = currentFile.split("/")[0]; 
     var fileName = currentFile.split("/")[1];
-    if(fileType == "scrolls"){
-        document.getElementById("scrolldisplay").innerHTML = editor.getSession().getValue();
-    }
-    
-}
-
-document.getElementById("imgbutton").onclick = function(){
-    var cursorPosition = editor.getCursorPosition();
-    editor.getSession().insert(cursorPosition,"<img src = \"\"/>");
-}
-document.getElementById("pbutton").onclick = function(){
-    var cursorPosition = editor.getCursorPosition();
-    editor.getSession().insert(cursorPosition,"\n<p>\n\n</p>\n");
 }
 
 </script>
@@ -213,10 +199,10 @@ body{
 #linkscroll{
     position:absolute;
     overflow:scroll;
-    top:60%;
-    bottom:0%;
-    right:26%;
-    left:51%;
+    top:5em;
+    bottom:50%;
+    right:0px;
+    left:75%;
     border:solid;
     border-radius:5px;
     border-width:3px;
@@ -227,63 +213,12 @@ body{
 }
 #maineditor{
     position:absolute;
-    left:50%;
-    top:1%;
-    bottom:42%;
-    right:0%;
-}
-#scrolldisplay{
-    position:absolute;
-    background-color:white;
-    overflow:scroll;
-    color:black;
-    left:10px;
-    bottom:10px;
-    right:53%;
+    left:0%;
     top:5em;
-    border:solid;
-    border-width:3px;
-    border-radius:0.5em;
-    padding:1.5em 1.5em 1.5em 1.5em;
-}
-#scrolldisplay img{
-    width:80%;
-    display:block;
-    margin:auto;
-}
-#scrolldisplay p,li,pre{
-    width:80%;
-    display:block;
-    margin:auto;
-    text-align:justify;    
-    margin-bottom:1em;
-}
-#scrolldisplay h1,h2,h3{
-    text-align:center;
-}
-#scrolldisplay a{
-    color:blue;
-    display:inline;
-
+    bottom:1em;
+    right:30%;
 }
 
-.button{
-    color:yellow;
-    cursor:pointer;
-    padding:0.5em 0.5em 0.5em 0.5em;
-    border:solid;
-    border-color:yellow;
-    border-radius:0.5em;
-    margin-bottom:0.5em;
-    margin-left:0.5em;
-    float:left;
-}
-.button:hover{
-    background-color:#003000;
-}   
-.button:active{
-    background-color:#304000;
-}
 
 
 </style>
