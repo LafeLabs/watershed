@@ -1,0 +1,5 @@
+<h2>Heading</h2>
+<p id = "mainp">
+    Paragraph. Click to change color.
+<a href = "editor.php">editor.php</a>
+</p>
