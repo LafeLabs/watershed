@@ -1,0 +1,414 @@
+<!doctype html>
+<html>
+<head>
+    <title>Metamap currentMapinate Calculator</title>
+    <!--
+    PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
+
+    NO MONEY
+    NO MINING
+    NO PROPERTY
+    EVERYTHING IS RECURSIVE
+    EVERYTHING IS FRACTAL
+    EVERYTHING IS PHYSICAL
+    [EGO DEATH]:
+        LOOK TO THE FUNGI
+        LOOK TO THE INSECTS
+        LANGUAGE IS HOW THE MIND PARSES REALITY
+    -->
+
+<script id="topfunctions">
+
+function latlon2xy() {
+    //input to this function is a string of the form "lattitude,longitude", where lat and lon are in decimal degrees
+    var lat0 = currentMap.lat0;//lattitude to 10 meter precision
+    var coslat = Math.cos(lat0*Math.PI/180);//convert to radians, take cosine of lattitude
+    var lon0 = currentMap.lon0;//longitude to 10 meter precision
+    var unitfeet = currentMap.unitfeet;//unit length in feet
+
+    var digits = currentMap.xydigits;//1;//0 digits = 555 feet, 1 is 55 feet, 2 is 5.5  feet
+    var precision = Math.pow(10,digits);
+
+    var lat1 = currentMap.lat1;
+    var lon1 = currentMap.lon1;
+    //from the original definition of the meter:
+    //90 degrees lattitude = 10,000,000 meters = 32808399 feet
+    //1 degree lattitude = 10,000,000 meters/90 = 111111.1 meters = 111 km
+    //0.1 degree = 11 km
+    //0.01 degree = 1.1 km
+    //0.001 degree = 110 m
+    //0.0001 degree = 11 m
+    //1 meter = 3.28084 feet
+    //1 degree lattitude = 111111.1(meters)*3.28084(feet/meter) = 364538 feet
+    //1 degree longitude = 1 degre lattitude X cos(lattitude) = 283699 feet at 38.8895 N
+    var deltaxfeet = Math.round((lon1 - lon0)*364538*coslat);//convert longitude difference to feet
+    var deltayfeet = Math.round((lat1 - lat0)*364538);//convert lattitude difference to feet
+    var deltax = Math.round(precision*deltaxfeet/unitfeet)/precision;//convert from feet to "units" based on unitfeet
+    var deltay = Math.round(precision*deltayfeet/unitfeet)/precision;//convert from feet to "units" based on unitfeet
+    return deltax.toString() + "," + deltay.toString();
+}
+
+function xy2latlon(xyin){
+    var lat0 = currentMap.lat0;//get lattitude of currentMap zero point in decimal degrees
+    var coslat = Math.cos(lat0*Math.PI/180);//convert to radians, take cos of lattitude
+    var lon0 = currentMap.lon0;//get longitude of currentMap zero point in decimal degrees
+    var unitfeet = currentMap.unitfeet;//currentMap unit in feet
+
+    var digits = currentMap.latlondigits;//4;//3 digits = 100 meters, 4 digits = 10 meters, 5 digits is 1 meter, 6 digits is 0.1 meter
+    var precision = Math.pow(10,digits);
+
+    var deltax = parseFloat(xyin.split(",")[0]);//first number is "x", the east-west direction, with east as positive
+    var deltay = parseFloat(xyin.split(",")[1]);//second number is "y", north-south with north=positive
+
+    var deltaxfeet = deltax*unitfeet;//convert x from unitfeet to actual feet
+    var deltayfeet = deltay*unitfeet;//convert y from unitfeet to actual feet
+
+    //from the original definition of the meter:
+    //90 degrees lattitude = 10,000,000 meters = 32808399 feet
+    //1 degree lattitude = 10,000,000 meters/90 = 111111.1 meters = 111 km
+    //0.1 degree = 11 km
+    //0.01 degree = 1.1 km [digits = 2]
+    //0.001 degree = 110 m [digits = 3]
+    //0.0001 degree = 11 m [digits = 4]
+    //1 meter = 3.28084 feet
+    //1 degree lattitude = 111111.1(meters)*3.28084(feet/meter) = 364538 feet
+    //1 degree longitude = 1 degre lattitude X cos(lattitude) = 283699 feet at 38.8895 N
+
+    var lat1 = Math.round(precision*(lat0 + deltayfeet/364538))/precision;
+    var lon1 = Math.round(precision*(lon0 + deltaxfeet/(364538*coslat)))/precision;
+    currentMap.lat1 = lat1;
+    currentMap.lon1 = lon1;
+
+    return lat1.toString() + "," + lon1.toString();
+
+}
+
+
+    </script>
+    </head>
+
+    <body>
+        <div class="databox">
+            [
+            {
+            "lat0":38.8591,
+            "lon0":-77.0490,
+            "name0":"VRE Sign",
+            "lat1":38.8591,
+            "lon1":-77.0490,
+            "name1":"VRE Sign",
+            "hashtag":"#metamapcrystalcity",
+            "unitfeet":300,
+            "unitname":"100 yards",
+            "xydigits":1,
+            "latlondigits":4,
+            "url":{
+            "this":"",
+            "code":"https://pastebin.com/raw/yAKUG0Q5",
+            "json":"https://pastebin.com/raw/7f0SjzP2",
+            "image":"https://i.imgur.com/Q8BOefb.jpg",
+            "tale":"",
+            "lore":""
+            }
+            },
+            {
+            "lat0":38.8895,
+            "lon0":-77.0352,
+            "name0":"Washington Monument",
+            "lat1":38.8591,
+            "lon1":-77.0490,
+            "name1":"VRE Sign",
+            "hashtag":"#metamapdcwm",
+            "unitfeet":555,
+            "unitname":"Washington Monument height",
+            "xydigits":0,
+            "latlondigits":3,
+            "url":{
+            "this":"",
+            "code":"",
+            "json":"",
+            "image":"",
+            "androidapp":"",
+            "iosapp":"",
+            "windowsapp":"",
+            "tale":"",
+            "lore":""
+            }
+            }
+            ]
+        </div>
+
+
+    <table>
+    <tr>
+        <td>name0:</td><td><input id="name0Input" /></td>
+    </tr>
+    <tr>
+        <td>latlon0:</td><td><input id="latlon0Input" /></td>
+    </tr>
+    <tr>
+        <td>name1:</td><td><input id="name1Input" /></td>
+    </tr>
+    <tr>
+        <td>latlon1:</td><td><input id="latlon1Input" /></td>
+    </tr>
+    <tr>
+        <td>unitfeet:</td><td><input id="unitfeetInput" /></td>
+    </tr>
+    <tr>
+        <td>unitname:</td><td><input id="unitnameInput" /></td>
+    </tr>
+    <tr>
+        <td>xy:</td><td><input id="xyInput" /></td>
+    </tr>
+    <tr>
+        <td>hashtag:</td><td><input id="hashtagInput" /></td>
+    </tr>
+    <tr>
+        <td>#hashtag @(x,y):</td><td colspan="3"><input style ="width:90%;"id="hashatInput" /></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td class="button" id="gpsButton">Get position</td>
+        <td class="button" id="copyButton">Copy #@()</td>
+        <td class="button" id="copy0Button">Copy latlon0</td>
+    </tr>
+    <tr>
+        <td class="button" id="prevButton">Prev</td>
+        <td class="button" id="nextButton">Next</td>
+        <td class="button" id="newButton">New</td>
+    </tr>
+</table>
+            <textarea id="textIO"></textarea>
+     <script>
+
+
+            function redraw() {
+                document.getElementById("latlon0Input").value = currentMap.lat0.toString() + "," + currentMap.lon0.toString();
+                document.getElementById("latlon1Input").value = currentMap.lat1.toString() + "," + currentMap.lon1.toString();
+                document.getElementById("name0Input").value = currentMap.name0;
+                document.getElementById("name1Input").value = currentMap.name1;
+                document.getElementById("unitfeetInput").value = currentMap.unitfeet;
+                document.getElementById("unitnameInput").value = currentMap.unitname;
+                document.getElementById("xyInput").value = latlon2xy();
+                document.getElementById("hashtagInput").value = currentMap.hashtag;
+                document.getElementById("hashatInput").value = currentMap.hashtag + " @(" + latlon2xy() + ")";
+                document.getElementById("textIO").value = JSON.stringify(currentMap, null, "    ");
+                mapArray[mapIndex] = currentMap;
+                currentFile = "json/mainmapstack.txt";
+                data = encodeURIComponent(JSON.stringify(mapArray, null, "    "));
+                var httpc = new XMLHttpRequest();
+                var url = "filesaver.php";        
+                httpc.open("POST", url, true);
+                httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+                httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+
+            }
+            
+            
+            
+currentFile = "json/mainmapstack.txt";
+var httpc = new XMLHttpRequest();
+httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        filedata = this.responseText;
+        mapIndex = 0;
+        mapArray = JSON.parse(filedata);
+        currentMap = mapArray[mapIndex];                
+        redraw();
+    }
+};
+httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
+httpc.send();
+
+            
+
+/*
+elements which require events, top to bottom:
+onchange:
+    latlon0Input
+    latlon1Input
+    name0Input
+    name1Input
+    xyInput
+    //not this one:hashtagInput
+    unitfeetInput
+    unitnameInput
+    hashatInput
+onclick:
+    gpsButton
+    copyButton
+    copy0Button
+    prevButton
+    nextButton
+    newButton
+onkeyup:
+    textIO
+*/
+
+            document.getElementById("latlon0Input").onchange = function () {
+                var latlon0 = this.value;
+                currentMap.lat0 = parseFloat(latlon0.split(",")[0]);
+                currentMap.lon0 = parseFloat(latlon0.split(",")[1]);
+                redraw();
+            }
+            document.getElementById("latlon1Input").onchange = function () {
+                var latlon1 = this.value;
+                currentMap.lat1 = parseFloat(latlon1.split(",")[0]);
+                currentMap.lon1 = parseFloat(latlon1.split(",")[1]);
+                redraw();
+            }
+            document.getElementById("name0Input").onchange = function () {
+                currentMap.name0 = this.value;
+                document.getElementById("textIO").value = JSON.stringify(currentMap, null, "    ");
+                redraw();
+            }
+            document.getElementById("name1Input").onchange = function () {
+                currentMap.name1 = this.value;
+                document.getElementById("textIO").value = JSON.stringify(currentMap, null, "    ");
+                redraw();
+            }
+
+            document.getElementById("xyInput").onchange = function () {
+                var locallatlon = xy2latlon(this.value);
+                redraw();
+            }
+            document.getElementById("hashtagInput").onchange = function () {
+                currentMap.hashtag = this.value;
+                redraw();
+            }
+            document.getElementById("unitfeetInput").onchange = function () {
+                currentMap.unitfeet = parseFloat(this.value);
+                redraw();
+            }
+            document.getElementById("unitnameInput").onchange = function () {
+                currentMap.unitname = this.value;
+                document.getElementById("textIO").value = JSON.stringify(currentMap, null, "    ");
+                redraw();
+            }
+            document.getElementById("gpsButton").onclick = function () {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                } else {
+                    alert("Geolocation is not supported by this browser.");
+                }
+                function showPosition(position) {
+                    currentMap.lat1 = position.coords.latitude;
+                    currentMap.lon1 = position.coords.longitude;
+                    redraw();
+                }
+
+            }
+
+            document.getElementById("copyButton").onclick = function () {
+                var copyText = document.getElementById("hashatInput");
+                /* Select the text field */
+                copyText.select();
+                /* Copy the text inside the text field */
+                document.execCommand("Copy");
+                alert("Copied the text: " + copyText.value);
+            }
+            document.getElementById("copy0Button").onclick = function () {
+                var copyText = document.getElementById("latlon0Input");
+                /* Select the text field */
+                copyText.select();
+                /* Copy the text inside the text field */
+                document.execCommand("Copy");
+                alert("Copied the text: " + copyText.value);
+            }
+            document.getElementById("prevButton").onclick = function () {
+                mapArray[mapIndex] = currentMap;
+                mapIndex--;
+                if (mapIndex < 0) {
+                    mapIndex = mapArray.length - 1;
+                }
+                currentMap = mapArray[mapIndex];
+                redraw();   
+            }
+            document.getElementById("nextButton").onclick = function () {
+                mapArray[mapIndex] = currentMap;
+
+                mapIndex++;
+                if (mapIndex >= mapArray.length) {
+                    mapIndex = 0;
+                }
+                currentMap = mapArray[mapIndex];
+                redraw();
+            }
+            document.getElementById("newButton").onclick = function () {
+                var newString = JSON.stringify(currentMap,null,"    ");
+                var newMap = JSON.parse(newString);
+                mapArray.push(newMap);
+                mapIndex = mapArray.length - 1;
+                currentMap = mapArray[mapIndex];
+                redraw();
+            }
+
+            document.getElementById("textIO").onkeyup= function () {
+                currentMap = JSON.parse(this.value);
+                redraw();
+            }
+
+        </script>
+        <style>
+        * {
+            box-sizing: border-box;
+            }
+            body{
+                font-size:40px;
+                font-family:courier;
+                color:#00ff00;
+                background-color:black;
+            }
+            input{
+                width:90%;
+                font-size:40px;
+                color:#00ff00;
+                background-color:black;
+                border:solid;
+                border-color:#00ff00;
+                font-family:courier;
+            }
+            .databox{
+                display:none;
+            }
+            .button {
+                cursor: pointer;
+                border: solid;
+                width:30%;
+                font-size:36px;
+            }
+            .button:hover{
+                background-color:green;
+            }
+            .button:active{
+                background-color:yellow;
+            }
+            table{
+                width:99%;
+            }
+            tr{
+                width:100%;
+            }
+            td{
+                width:24%;
+                text-align:right;
+            }
+            textarea{
+                width:100%;
+                height:15%;
+                border:solid;
+                font-family:courier;
+                color:#00ff00;
+                background-color:black;
+                border-color:#00ff00;
+                border:solid;
+            }
+            input{
+                right:0px;
+            }
+        </style>
+    </body>
+</html>

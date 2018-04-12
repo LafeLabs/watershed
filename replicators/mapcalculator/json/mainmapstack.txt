@@ -1,0 +1,149 @@
+[
+    {
+        "lat0": 38.8591,
+        "lon0": -77.049,
+        "name0": "VRE Sign",
+        "lat1": 38.865021,
+        "lon1": -77.047203,
+        "name1": "VRE Sign",
+        "hashtag": "#metamapcrystalcity",
+        "unitfeet": 300,
+        "unitname": "100 yards",
+        "xydigits": 1,
+        "latlondigits": 4,
+        "url": {
+            "this": "http://lafelabs.org/metamap/",
+            "code": "http://lafelabs.org/metamap/html/index.txt",
+            "json": "http://lafelabs.org/metamap/json/mainmapstack.txt",
+            "image": "https://i.imgur.com/Q8BOefb.jpg",
+            "tale": "",
+            "lore": ""
+        }
+    },
+    {
+        "lat0": 38.8895,
+        "lon0": -77.0352,
+        "name0": "Washington Monument",
+        "lat1": 38.8591,
+        "lon1": -77.049,
+        "name1": "VRE Sign",
+        "hashtag": "#metamapdcwm",
+        "unitfeet": 555,
+        "unitname": "Washington Monument height",
+        "xydigits": 0,
+        "latlondigits": 3,
+        "url": {
+            "this": "http://lafelabs.org/metamap/",
+            "code": "http://lafelabs.org/metamap/html/index.txt",
+            "json": "http://lafelabs.org/metamap/json/mainmapstack.txt",
+            "image": "https://i.imgur.com/Q8BOefb.jpg",
+            "tale": "",
+            "lore": ""
+        }
+    },
+    {
+        "lat0": 38.8591,
+        "lon0": -77.049,
+        "name0": "VRE Sign",
+        "lat1": 38.853747,
+        "lon1": -77.049296,
+        "name1": "Starbucks by Chipotle/Lockheed",
+        "hashtag": "#metamapcrystalcity",
+        "unitfeet": 300,
+        "unitname": "100 yards",
+        "xydigits": 1,
+        "latlondigits": 4,
+        "url": {
+            "this": "http://lafelabs.org/metamap/",
+            "code": "http://lafelabs.org/metamap/html/index.txt",
+            "json": "http://lafelabs.org/metamap/json/mainmapstack.txt",
+            "image": "https://i.imgur.com/Q8BOefb.jpg",
+            "tale": "",
+            "lore": ""
+        }
+    },
+    {
+        "lat0": 38.8591,
+        "lon0": -77.049,
+        "name0": "VRE Sign",
+        "lat1": 38.8581,
+        "lon1": -77.0515,
+        "name1": "Top of Metro Escalator",
+        "hashtag": "#metamapcrystalcity",
+        "unitfeet": 300,
+        "unitname": "100 yards",
+        "xydigits": 1,
+        "latlondigits": 4,
+        "url": {
+            "this": "http://lafelabs.org/metamap/",
+            "code": "http://lafelabs.org/metamap/html/index.txt",
+            "json": "http://lafelabs.org/metamap/json/mainmapstack.txt",
+            "image": "https://i.imgur.com/Q8BOefb.jpg",
+            "tale": "",
+            "lore": ""
+        }
+    },
+    {
+        "lat0": 38.8591,
+        "lon0": -77.049,
+        "name0": "VRE Sign",
+        "lat1": 38.862446,
+        "lon1": -77.048487,
+        "name1": "Pedestrian Entrance to Long Bridge Park",
+        "hashtag": "#metamapcrystalcity",
+        "unitfeet": 300,
+        "unitname": "100 yards",
+        "xydigits": 1,
+        "latlondigits": 4,
+        "url": {
+            "this": "http://lafelabs.org/metamap/",
+            "code": "http://lafelabs.org/metamap/html/index.txt",
+            "json": "http://lafelabs.org/metamap/json/mainmapstack.txt",
+            "image": "https://i.imgur.com/Q8BOefb.jpg",
+            "tale": "",
+            "lore": ""
+        }
+    },
+    {
+        "lat0": 38.8591,
+        "lon0": -77.049,
+        "name0": "VRE Sign",
+        "lat1": 38.806671,
+        "lon1": -77.060582,
+        "name1": "King st metro line underpass by bike racks",
+        "hashtag": "#metamapcrystalcity",
+        "unitfeet": 300,
+        "unitname": "100 yards",
+        "xydigits": 1,
+        "latlondigits": 4,
+        "url": {
+            "this": "http://lafelabs.org/metamap/",
+            "code": "http://lafelabs.org/metamap/html/index.txt",
+            "json": "http://lafelabs.org/metamap/json/mainmapstack.txt",
+            "image": "https://i.imgur.com/Q8BOefb.jpg",
+            "tale": "",
+            "lore": ""
+        }
+    },
+    {
+        "lat0": 38.8591,
+        "lon0": -77.049,
+        "name0": "VRE Sign",
+        "lat1": 38.865021,
+        "lon1": -77.047203,
+        "name1": "VRE Sign",
+        "hashtag": "#metamapcrystalcity",
+        "unitfeet": 300,
+        "unitname": "100 yards",
+        "xydigits": 1,
+        "latlondigits": 4,
+        "url": {
+            "this": "http://lafelabs.org/metamap/",
+            "code": "http://lafelabs.org/metamap/html/index.txt",
+            "json": "http://lafelabs.org/metamap/json/mainmapstack.txt",
+            "image": "https://i.imgur.com/Q8BOefb.jpg",
+            "tale": "",
+            "lore": ""
+        }
+    }
+]
