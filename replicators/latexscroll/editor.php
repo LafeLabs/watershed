@@ -37,6 +37,7 @@
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/text2html.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
+    <div class = "php file">php/tex2pdf.txt</div>
 
     <div class = "json file">json/dna.txt</div>
 
@@ -119,6 +120,7 @@ editor = ace.edit("maineditor");
 editor.setTheme("ace/theme/cobalt");
 editor.getSession().setMode("ace/mode/html");
 editor.getSession().setUseWrapMode(true);
+editor.$blockScrolling = Infinity;
 
 document.getElementById("maineditor").onkeyup = function(){
     data = encodeURIComponent(editor.getSession().getValue());

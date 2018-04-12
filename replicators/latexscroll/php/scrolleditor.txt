@@ -23,35 +23,31 @@
 <div id = "linkscroll">
     <a href = "index.html" id = "indexlink">index.html</a>
     <a href = "editor.php">editor.php</a>
-    <div class = "button">UPDATE</div>
-    <div class = "button">PREV P</div>
-    <div class = "button">NEXT P</div>
-    <div class = "button">NEW P</div>
-    <div class = "button">DEL P</div>
-    <div class = "button">FWD P</div>
-    <div class = "button">BACK P</div>
     <div class = "button">FIGURE</div>
+    <div class = "button">HTML2TEX</div>
     <div class = "button">TEX2PDF</div>
-    <div class = "button">SAVETEX</div>
 </div>
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="true"></div>
 <div id = "filescroll">
-    
     <div class = "scrolls file">scrolls/replicator.txt</div>
     <div class = "scrolls file">scrolls/main.txt</div>
     <div class = "scrolls file">scrolls/wall.txt</div>
 </div>
-
+<textarea id = "texbox"></textarea>
 <script>
 currentFile = "scrolls/main.txt";
+fileBase = currentFile.split("/")[1].split(".")[0];
+
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         filedata = this.responseText;
         editor.setValue(filedata);
+        html2tex();
         document.getElementById("scrolldisplay").innerHTML = filedata;
         MathJax.Hub.Typeset();//tell Mathjax to update the math
+        
         
     }
 };
@@ -61,6 +57,8 @@ files = document.getElementById("filescroll").getElementsByClassName("file");
 for(var index = 0;index < files.length;index++){
     files[index].onclick = function(){
         currentFile = this.innerHTML;
+        fileBase = currentFile.split("/")[1].split(".")[0];
+
         //use php script to load current file;
         var httpc = new XMLHttpRequest();
         httpc.onreadystatechange = function() {
@@ -123,6 +121,7 @@ editor = ace.edit("maineditor");
 editor.setTheme("ace/theme/cobalt");
 editor.getSession().setMode("ace/mode/html");
 editor.getSession().setUseWrapMode(true);
+editor.$blockScrolling = Infinity;
 
 document.getElementById("maineditor").onkeyup = function(){
     data = encodeURIComponent(editor.getSession().getValue());
@@ -141,6 +140,43 @@ document.getElementById("maineditor").onkeyup = function(){
 
 
 buttons = document.getElementsByClassName("button");
+
+buttons[0].onclick = function(){
+    var figtext = "<figure>\n<img src = \"\"/><!--img-->\n<figcaption>Figure x. </figcaption>\n</figure>\n";
+        var cursorPosition = editor.getCursorPosition();
+        editor.getSession().insert(cursorPosition,figtext);
+}
+buttons[1].onclick = function(){
+    html2tex();    
+    //save this file to latex subdirectory
+    
+    data = encodeURIComponent(document.getElementById("texbox").value);
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data+"&filename="+"latex/" + fileBase + ".tex");//send text to filesaver.php
+    
+}
+
+function html2tex(){
+        var textin = editor.getSession().getValue();
+    textout = "\n\\documentclass[11pt]{article}\n\\usepackage{graphicx}\n\\begin{document}\n";
+    textout += textin;
+    textout = textout.replace(/<p>/g,"\n\n");
+    textout = textout.replace(/<\/p>/g,"");
+    textout = textout.replace(/<h2>/g,"\n\\section{\n");
+    textout = textout.replace(/<\/h2>/g,"}");
+    textout = textout.replace(/<figure>/g,"\n\\begin{figure}");
+    textout = textout.replace(/<\/figure>/g,"\\end{figure}\n");
+    textout = textout.replace(/<figcaption>/g,"\\caption{");
+    textout = textout.replace(/<\/figcaption>/g,"\}");
+    textout = textout.replace(/<img src = "/g,"\n\\includegraphics[width=\\linewidth]{../");
+    textout = textout.replace(/"\/><!--img-->/g,"\}\n");
+    
+    textout+= "\n\\end{document}\n";
+    document.getElementById("texbox").value = textout;
+}
 </script>
 <style>
 #namediv{
@@ -199,10 +235,10 @@ body{
 #filescroll{
     position:absolute;
     overflow:scroll;
-    top:60%;
+    top:67%;
     bottom:0%;
     right:0%;
-    left:75%;
+    left:77%;
     border:solid;
     border-radius:5px;
     border-width:3px;
@@ -213,10 +249,10 @@ body{
 #linkscroll{
     position:absolute;
     overflow:scroll;
-    top:4%;
-    bottom:4%;
-    right:50%;
-    left:37%;
+    top:0%;
+    bottom:67%;
+    right:0%;
+    left:77%;
     border:solid;
     border-radius:5px;
     border-width:3px;
@@ -225,12 +261,21 @@ body{
     font-size:18px;
     
 }
+#texbox{
+    position:absolute;
+    top:35%;
+    bottom:35%;
+    right:0%;
+    left:77%;
+    font-family:courier;
+    font-size:18px;
+}
 #maineditor{
     position:absolute;
-    left:70%;
-    top:1%;
-    bottom:70%;
-    right:0%;
+    left:41%;
+    top:5em;
+    bottom:10px;
+    right:25%;
 }
 #scrolldisplay{
     position:absolute;
@@ -239,17 +284,12 @@ body{
     color:black;
     left:10px;
     bottom:10px;
-    right:65%;
+    right:60%;
     top:5em;
     border:solid;
     border-width:3px;
     border-radius:0.5em;
     padding:1.5em 1.5em 1.5em 1.5em;
-}
-#scrolldisplay img{
-    width:80%;
-    display:block;
-    margin:auto;
 }
 #scrolldisplay p,li,pre{
     width:80%;
@@ -267,6 +307,15 @@ body{
 
 }
 
+figure img{
+    width:100%;
+}
+figure{
+    width:80%;
+}
+figure figcaption{
+    width:100%;
+}
 .button{
     color:yellow;
     cursor:pointer;

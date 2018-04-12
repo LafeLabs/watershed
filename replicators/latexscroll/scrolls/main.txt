@@ -8,3 +8,17 @@
     $$E=mc^2$$
 </p>
 
+<figure>
+    <img src = "figures/x7uOC3w.jpg"/><!--img-->
+    <figcaption>Figure 1. derpderp</figcaption>
+</figure>
+
+<figure>
+    <img src = "figures/UKPyX8c.jpg"/><!--img-->
+    <figcaption>Figure 2. Action Geometry shapes</figcaption>
+</figure>
+
+
+<p>some more text here</p>
+
+
