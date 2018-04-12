@@ -2,26 +2,29 @@
 <html>
     <head>
         <title>Scroll Reader</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+   <script>
+	MathJax.Hub.Config({
+		tex2jax: {
+		inlineMath: [['$','$'], ['\\(','\\)']],
+		processEscapes: true,
+		processClass: "mathjax",
+        ignoreClass: "no-mathjax"
+		}
+	});//			MathJax.Hub.Typeset();//tell Mathjax to update the math
+</script>
     </head>
     <body>
-        <div id = "readerscroll" class = "scroll"></div>
-        <script>
-        
-        currentFile = "scrolls/scroll1.txt";
-        //use php script to load current file;
-        var httpc = new XMLHttpRequest();
-        httpc.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                filedata = this.responseText;
-                document.getElementById("readerscroll").innerHTML = filedata;
-                document.getElementById("readerscroll").style.borderColor = "purple";
-            }
-        };
-        httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
-        httpc.send();
-        
-    
-        </script>
+        <a id = "editorlink" href = "editor.php">editor.php</a>
+        <a id = "scrolleditorlink" href = "scrolleditor.php">scrolleditor.php</a>
+        <div id = "readerscroll" class = "scroll">
+
+
+<!--main.txt-->
+ 
+ 
+        </div>
+
         <style>
             * {
             box-sizing: border-box;
@@ -30,19 +33,16 @@
              overflow:hidden;   
             }
             .scroll{
-                width:99%;
-                padding:1.5em 1.5em 1.5em 1.5em;
-                border-radius:0.5em;
-                border:solid;
-                border-width:10px;
+                width:100%;
+                padding:2em 2em 2em 2em;
                 font-size:2em;
                 text-align:justify;
                 overflow:scroll;
                 position:absolute;
-                top:10%;
-                left:5px;
-                right:5px;
-                bottom:5px;
+                top:3em;
+                left:0px;
+                right:0px;
+                bottom:0px;
             }
             .scroll img{
                 width:80%;
@@ -72,25 +72,16 @@
 	            font-weight: 400;
 
             }
-           
-            .button{
-                position:absolute;
-                top:5px;
-                cursor:pointer;
-                border:solid;
-                padding:0.5em 0.5em 0.5em 0.5em;
-                border-radius:0.5em;
-                border-width:10px;
-                text-align:center;
-                z-index:1;
-                font-family:arial;
-            }
-            .button:hover{
-                background-color:green;
-            }
-            .button:active{
-                background-color:yellow;
-            }
+           #editorlink{
+               position:absolute;
+               right:10%;
+               top:0.5em;
+           }
+           #scrolleditorlink{
+               position:absolute;
+               left:10%;
+               top:0.5em;
+           }
         </style>
     </body>
 </html>

@@ -23,16 +23,16 @@
 <div id = "linkscroll">
     <a href = "index.html" id = "indexlink">index.html</a>
     <a href = "editor.php">editor.php</a>
+    <a href = "main2index.php">main2index.php</a>    
     <div class = "button">FIGURE</div>
     <div class = "button">HTML2TEX</div>
-    <div class = "button">TEX2PDF</div>
 </div>
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="true"></div>
 <div id = "filescroll">
     <div class = "scrolls file">scrolls/replicator.txt</div>
     <div class = "scrolls file">scrolls/main.txt</div>
-    <div class = "scrolls file">scrolls/wall.txt</div>
+    <div class = "scrolls file">scrolls/notes.txt</div>
 </div>
 <textarea id = "texbox"></textarea>
 <script>
@@ -250,7 +250,7 @@ body{
     position:absolute;
     overflow:scroll;
     top:0%;
-    bottom:67%;
+    bottom:70%;
     right:0%;
     left:77%;
     border:solid;
@@ -263,12 +263,13 @@ body{
 }
 #texbox{
     position:absolute;
-    top:35%;
-    bottom:35%;
+    top:32%;
     right:0%;
-    left:77%;
+    height:30%;
+    width:23%;
     font-family:courier;
     font-size:18px;
+    display:block;
 }
 #maineditor{
     position:absolute;
@@ -325,6 +326,7 @@ figure figcaption{
     border-radius:0.5em;
     margin-bottom:1em;
     margin-left:0.5em;
+    margin-top:1em;
     display:block;
     margin:auto;
     text-align:center;

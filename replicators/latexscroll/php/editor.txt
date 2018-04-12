@@ -5,12 +5,10 @@
 </head>
 <body>
     
-<div id = "scrolldisplay"></div>    
-    
 <div id = "linkscroll">
-    <a href = "text2php.php" id = "text2phplink">text2php.php</a>
-    <a href = "text2html.php" id = "text2htmllink">text2html.php</a>
-    <a href = "index.html" id = "indexlink">index.html</a>
+    <a href = "text2php.php">text2php.php</a>
+    <a href = "main2index.php">main2index.php</a>
+    <a href = "index.html">index.html</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
     <a href = "scrolleditor.php">scrolleditor.php</a>
 
@@ -24,10 +22,9 @@
 
     <div class = "html file">html/index.txt</div>
 
-    <div class = "scrolls file">scrolls/replicator.txt</div>
-    <div class = "scrolls file">scrolls/generator.txt</div>
-    <div class = "scrolls file">scrolls/wall.txt</div>
     <div class = "scrolls file">scrolls/main.txt</div>
+    <div class = "scrolls file">scrolls/replicator.txt</div>
+    <div class = "scrolls file">scrolls/notes.txt</div>
 
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/scrolleditor.txt</div>
@@ -35,9 +32,8 @@
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/text2php.txt</div>
-    <div class = "php file">php/text2html.txt</div>
+    <div class = "php file">php/main2index.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
-    <div class = "php file">php/tex2pdf.txt</div>
 
     <div class = "json file">json/dna.txt</div>
 
@@ -66,9 +62,7 @@ for(var index = 0;index < files.length;index++){
                 editor.setValue(filedata);
                 var fileType = currentFile.split("/")[0]; 
                 var fileName = currentFile.split("/")[1];
-                if(fileType == "scrolls"){
-                    document.getElementById("scrolldisplay").innerHTML = editor.getSession().getValue();
-                }
+              
             }
         };
         httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
@@ -131,19 +125,6 @@ document.getElementById("maineditor").onkeyup = function(){
     httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
     var fileType = currentFile.split("/")[0]; 
     var fileName = currentFile.split("/")[1];
-    if(fileType == "scrolls"){
-        document.getElementById("scrolldisplay").innerHTML = editor.getSession().getValue();
-    }
-    
-}
-
-document.getElementById("imgbutton").onclick = function(){
-    var cursorPosition = editor.getCursorPosition();
-    editor.getSession().insert(cursorPosition,"<img src = \"\"/>");
-}
-document.getElementById("pbutton").onclick = function(){
-    var cursorPosition = editor.getCursorPosition();
-    editor.getSession().insert(cursorPosition,"\n<p>\n\n</p>\n");
 }
 
 </script>
@@ -237,58 +218,7 @@ body{
     bottom:42%;
     right:0%;
 }
-#scrolldisplay{
-    position:absolute;
-    background-color:white;
-    overflow:scroll;
-    color:black;
-    left:10px;
-    bottom:10px;
-    right:53%;
-    top:5em;
-    border:solid;
-    border-width:3px;
-    border-radius:0.5em;
-    padding:1.5em 1.5em 1.5em 1.5em;
-}
-#scrolldisplay img{
-    width:80%;
-    display:block;
-    margin:auto;
-}
-#scrolldisplay p,li,pre{
-    width:80%;
-    display:block;
-    margin:auto;
-    text-align:justify;    
-    margin-bottom:1em;
-}
-#scrolldisplay h1,h2,h3{
-    text-align:center;
-}
-#scrolldisplay a{
-    color:blue;
-    display:inline;
 
-}
-
-.button{
-    color:yellow;
-    cursor:pointer;
-    padding:0.5em 0.5em 0.5em 0.5em;
-    border:solid;
-    border-color:yellow;
-    border-radius:0.5em;
-    margin-bottom:0.5em;
-    margin-left:0.5em;
-    float:left;
-}
-.button:hover{
-    background-color:#003000;
-}   
-.button:active{
-    background-color:#304000;
-}
 
 
 </style>
