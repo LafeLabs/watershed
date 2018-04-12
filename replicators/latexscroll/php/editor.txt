@@ -199,10 +199,10 @@ body{
 #linkscroll{
     position:absolute;
     overflow:scroll;
-    top:60%;
-    bottom:0%;
-    right:26%;
-    left:51%;
+    top:5em;
+    bottom:50%;
+    right:0px;
+    left:75%;
     border:solid;
     border-radius:5px;
     border-width:3px;
@@ -213,10 +213,10 @@ body{
 }
 #maineditor{
     position:absolute;
-    left:50%;
-    top:1%;
-    bottom:42%;
-    right:0%;
+    left:0%;
+    top:5em;
+    bottom:1em;
+    right:30%;
 }
 
 

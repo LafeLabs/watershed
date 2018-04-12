@@ -1,6 +1,5 @@
 [
 "html/index.txt",
-"html/main.txt",
 "json/dna.txt",
 "php/dnagenerator.txt",
 "php/editor.txt",
