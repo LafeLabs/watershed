@@ -1,0 +1,10 @@
+<h2>Replicators, links to editors thereof:</h2>
+<p>
+<ul>
+    <li><a href = "htmlscroll/editor.php">htmlscroll/editor.php</a></li>
+    <li><a href = "latexscroll/editor.php">latexscroll/editor.php</a></li>
+    <li><a href = "mapcalculator/editor.php">mapcalculator/editor.php</a></li>
+    <li><a href = "phpeditor/editor.php">phpeditor/editor.php</a></li>
+
+</ul>
+</p>
