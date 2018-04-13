@@ -5,23 +5,51 @@
     </head>
     <body>
         <a id = "editorlink" href = "editor.php">editor.php</a>
+        <input id = "urlinput"/>
         <a id = "scrolleditorlink" href = "scrolleditor.php">scrolleditor.php</a>
         <div id = "readerscroll" class = "scroll">
 
-<h2>Replicators, links to editors thereof:</h2>
-<p>
-<ul>
-    <li><a href = "htmlscroll/editor.php">htmlscroll/editor.php</a></li>
-    <li><a href = "latexscroll/editor.php">latexscroll/editor.php</a></li>
-    <li><a href = "mapcalculator/editor.php">mapcalculator/editor.php</a></li>
-    <li><a href = "phpeditor/editor.php">phpeditor/editor.php</a></li>
-    <li><a href = "calculator/editor.php">calculator/editor.php</a></li>
-    <li><a href = "plotter/editor.php">plotter/editor.php</a></li>
-    <li><a href = "remotescrollreader/editor.php">remotescrollreader/editor.php</a></li>
-</ul>
-</p>
+<!--main.txt-->
 
         </div>
+<script>
+
+        currentFile = "scrolls/main.txt";
+        
+        var httpc = new XMLHttpRequest();
+        httpc.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                filedata = this.responseText;
+                document.getElementById("readerscroll").innerHTML = filedata;
+            }
+        };
+        httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
+        httpc.send();
+        
+    document.getElementById("urlinput").onchange = function(){
+
+
+        
+        currentFile = this.value;
+        var httpc = new XMLHttpRequest();
+        httpc.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                filedata = this.responseText;
+                document.getElementById("readerscroll").innerHTML = filedata;
+                var httpc2 = new XMLHttpRequest();
+                var url2 = "filesaver.php";        
+                httpc2.open("POST", url2, true);
+                httpc2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+                httpc2.send("data="+encodeURIComponent(filedata)+"&filename="+"scrolls/main.txt");//send text to filesaver.ph
+                
+            }
+        };
+        httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
+        httpc.send();
+    }
+    
+    
+</script>
 
         <style>
             * {
@@ -79,6 +107,14 @@
                position:absolute;
                left:10%;
                top:0.5em;
+           }
+           #urlinput{
+               position:absolute;
+               top:0.5em;
+               left:40%;
+               right:40%;
+               font-family:courier;
+               font-size:22px;
            }
         </style>
     </body>

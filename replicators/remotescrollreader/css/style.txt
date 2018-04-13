@@ -1,0 +1,11 @@
+#mainp{
+    position:absolute;
+    left:10%;
+    top:10%;
+    right:10%;
+    bottom:10%;
+    background-color:red;
+    cursor:pointer;
+    font-family:Courier;
+    font-size:3em;
+}
