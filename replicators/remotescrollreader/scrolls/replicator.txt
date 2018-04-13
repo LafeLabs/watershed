@@ -1,11 +1,27 @@
-<h2>Generator for Scroll Editor</h2>
+<h2>Remote Scroll Reader</h2>
 
 <p>
-The scroll editor requires that you have access to a web server with php running.  Since you can run a local web server <em>using</em> php you really need either a computer with php installed locally(and possibly no web server) or a remote server with php installed, as most servers do by default.    
+Put a URL in the input at the top of the screen and hit enter and this document is replaced by the scroll at that url.  If that has some kind of weird non scroll like html code, it will have unexpected results. 
 </p>
 <p>
-    The most basic replication method which anyone can use, including on a public terminal, with no money and no resources and no special code skills is the one we start with here, which involves replicating the editor on 000webhost, a free web hosting site.  
+    This, alone, is possibly functioning social media.  It has a scroll editor, editor editor, scroll reader, and if it's on a server live on the web, it can share scrolls with others. 
 </p>
 <p>
-    First get yourself an account, the free one, at <a href = "https://www.000webhost.com/free-website-sign-up">https://www.000webhost.com/free-website-sign-up</a>.  
+    If used with one-user-one-server this is not that powerful.  The power comes from aligning scroll nodes with <em>things</em> in the world.  Things made of things, where each thing has a scroll.  When the system is fully deployed there will be several hundred to even tens of thousands of things for each person in the system. Each thing will have many component things, all linked to other thigns that they're part of.  
+</p>
+<p>
+    Images are posed on remote servers, and linked to via img elements.  The editor relies on the ACE editor JavaScript library.  SVG's are treated as just another image.  
+</p>
+<p>
+
+<figure>
+<img src = "http://quantumnoise.org/plotters/classicalcoth/svg/svg1519651770.svg"/><!--img-->
+<figcaption>Figure 1. Example of embedded SVG from a plotter SVG factory.</figcaption>
+</figure>
+
+<figure>
+<img src = "https://i.imgur.com/2B655Ne.jpg"/><!--img-->
+<figcaption>Figure 2. Example of embedded bitmap image.</figcaption>
+</figure>
+
 </p>

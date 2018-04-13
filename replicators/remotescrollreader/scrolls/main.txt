@@ -1,11 +1,16 @@
-<h2>Generator for Scroll Editor</h2>
 
+<h2>What is "capitalist math"?</h2>
 <p>
-The scroll editor requires that you have access to a web server with php running.  Since you can run a local web server <em>using</em> php you really need either a computer with php installed locally(and possibly no web server) or a remote server with php installed, as most servers do by default.    
+    <figure>
+<img src = "https://i.imgur.com/byrLyE9.png"/><!--img-->
+<figcaption>Figure 0. Death to capitalist math.</figcaption>
+</figure>
 </p>
 <p>
-    The most basic replication method which anyone can use, including on a public terminal, with no money and no resources and no special code skills is the one we start with here, which involves replicating the editor on 000webhost, a free web hosting site.  
-</p>
-<p>
-    First get yourself an account, the free one, at <a href = "https://www.000webhost.com/free-website-sign-up">https://www.000webhost.com/free-website-sign-up</a>.  
+    Capitalist math is a set of <em>beliefs</em>, with no empirical basis, which constitute the dominant world view in technocratic society.  Those beliefs include:
+<ul>
+    <li>Integer numbers are "real"</li>
+    <li>Infinity is real in certain situations(the "real" numbers) and not in others(geometry of infinitesimal without numbers)</li>
+    <li>Human value can be connected to number always.</li>
+</ul>
 </p>

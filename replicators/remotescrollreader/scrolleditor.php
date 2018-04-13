@@ -260,7 +260,11 @@ body{
     display:inline;
 
 }
-
+#scrolldisplay img{
+    width:80%;
+    display:block;
+    margin:auto;
+}
 figure img{
     width:100%;
 }
