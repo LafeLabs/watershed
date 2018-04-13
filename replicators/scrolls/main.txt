@@ -6,6 +6,6 @@
     <li><a href = "mapcalculator/editor.php">mapcalculator/editor.php</a></li>
     <li><a href = "phpeditor/editor.php">phpeditor/editor.php</a></li>
     <li><a href = "calculator/editor.php">calculator/editor.php</a></li>
-
+    <li><a href = "plotter/editor.php">plotter/editor.php</a></li>
 </ul>
 </p>

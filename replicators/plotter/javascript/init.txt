@@ -1,0 +1,19 @@
+
+G = 1;
+T = 20;
+range = 200;
+
+inputs = document.getElementById("calcTable").getElementsByTagName("input");
+inputs[0].value = T.toString();
+inputs[1].value = G.toString();
+inputs[2].value = range.toString();
+
+feedplots = document.getElementById("datadiv").getElementsByTagName("img");
+for(var index = 0;index < feedplots.length;index++){
+    var oldsrcarray = feedplots[index].src.split("/");
+    var oldsrc = oldsrcarray[oldsrcarray.length - 1];
+    var newsrc = "svg/" + oldsrc;
+    feedplots[index].src = newsrc;
+}
+document.getElementById("scroll").innerHTML = document.getElementById("datadiv").innerHTML;
+

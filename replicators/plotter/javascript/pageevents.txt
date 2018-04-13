@@ -1,0 +1,25 @@
+ 
+ 
+ inputs[0].onchange = function(){
+    T = parseFloat(this.value);
+    redraw();
+ }
+ inputs[1].onchange = function(){
+    G = parseFloat(this.value);
+    redraw();     
+ }
+ inputs[2].onchange = function(){
+    range = parseFloat(this.value);
+    redraw();     
+ }
+
+ 
+ document.getElementById("publish").onclick = function(){
+     
+    data = encodeURIComponent(currentSVG);
+    var httpc = new XMLHttpRequest();
+    var url = "feedsaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data);//send text to feedsaver.php
+ }
