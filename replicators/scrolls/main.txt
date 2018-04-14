@@ -9,5 +9,6 @@
     <li><a href = "plotter/editor.php">plotter/editor.php</a></li>
     <li><a href = "remotescrollreader/editor.php">remotescrollreader/editor.php</a></li>
     <li><a href = "geometron/editor.php">geometron/editor.php</a></li>
+    <li><a href = "dirtree/editor.php">dirtree/editor.php</a></li>
 </ul>
 </p>
