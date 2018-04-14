@@ -1,0 +1,19 @@
+<a href = "../">Back up one level</a>
+<h2>What is Action Geometry?</h2>
+<p>
+    In order to say what "Action Geometry" is we must first say what it is to describe "a geometry".  What is the geometry of Euclid?  Of Gauss? Of Mandelbrot?  Of Einstein and Minkowski?  Or Hilbert?  Or Buckminster Fuller?  In all cases a geometry is a complex informational structure which consists of some combination of the following:
+    <ul>
+        <li>Beliefs, encoded both in axioms and in unstated assumptions held by the creator of each geometry</li>
+        <li>Theorems, which claim to be the meat of the Geometry, but which I will claim are the least important on this list</li>
+        <li>Actions, taken by the users of a given geometry, including cultural norms for how they behave both in doing mathematics and in applying it and in living their lives as practicing mathematicians or other professionals</li>
+        <li>Notation, symbols, and language which shape how the mind approaches them.</li>
+        <li>Physical tools and constructions</li>
+        <li>Mythology of creation, including various beliefs held by the users of the geometry about the individuals who first created them.</li>
+    </ul>
+</p>
+<p>
+    With this framework in mind, it's worth saying why we are using a new geometry.  The reason is that we believe that geometric language is fundamental to building all new technologies and that the existing beliefs of the above listed geometries(listed by authors) are all not sufficient for the practical technological task at hand in building a technological complete set out of the Trash Feed and watershed.  In order to build up the assumptions that are homologs to the above list, we first state some assumptions from the level of how we will live our lives, then use that to deduce a new geometry practice, methodology and tool set.  We leave it to future workers in the field to establish the mythology.
+</p>
+<p>
+    As always in the Watershed Path we begin with intent and belief.  We believe that language is how the mind parses reality.  Therefore, to accomplish any intent in regards to the experience of mind()
+</p>

@@ -29,7 +29,7 @@
 <h2>Replicator Tree</h2>
 
 <ul>
-    <li><h4>actiongeometry</h4>
+    <li><h4><a href = "actiongeometry/">actiongeometry</a></h4>
         <ul>
             <li>about[htmlscroll]</li>
             <li>tapeshapes[htmlscroll]</li>

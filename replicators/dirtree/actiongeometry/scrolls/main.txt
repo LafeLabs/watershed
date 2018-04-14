@@ -1,0 +1,14 @@
+<a href = "../">up one level</a>
+<h2>Action Geometry</h2>
+<ul>
+    <li><a href = "about/">about</a></li>
+    <li>tapeshapes[htmlscroll]</li>
+    <li>hardplasticshapes[htmlscroll]</li>
+    <li>tarotcards[htmlscroll]</li>
+    <li>polyhedra[htmlscroll]</li>
+    <li>skeletron[htmlscroll]</li>
+    <li>hdpe[htmlscroll]</li>
+    <li>artbox[htmlscroll]</li>
+    <li>other[htmlscroll]</li>
+    <li>vrml[vrml]</li>
+</ul>
