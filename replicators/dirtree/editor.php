@@ -35,6 +35,11 @@
     <div class = "php file">php/main2index.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
 
+    <div class = "php file">php/treedna.txt</div>
+    <div class = "php file">php/growtree.txt</div>
+    <div class = "php file">php/replicatetree.txt</div>
+    <div class = "php file">php/treedna.txt</div>
+
     <div class = "json file">json/dna.txt</div>
 
 </div>
