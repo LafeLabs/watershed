@@ -15,5 +15,37 @@
     With this framework in mind, it's worth saying why we are using a new geometry.  The reason is that we believe that geometric language is fundamental to building all new technologies and that the existing beliefs of the above listed geometries(listed by authors) are all not sufficient for the practical technological task at hand in building a technological complete set out of the Trash Feed and watershed.  In order to build up the assumptions that are homologs to the above list, we first state some assumptions from the level of how we will live our lives, then use that to deduce a new geometry practice, methodology and tool set.  We leave it to future workers in the field to establish the mythology.
 </p>
 <p>
-    As always in the Watershed Path we begin with intent and belief.  We believe that language is how the mind parses reality.  Therefore, to accomplish any intent in regards to the experience of mind()
+    As always in the Watershed Path we begin with intent and belief.  We believe that language is how the mind parses reality.  Our intent is to have our experience of existence be one based on two goals: to care for others and to have adventures.  These are poorly defined, but that is as it must be--they will be very different based on context, place, personal position in the world, etc.  But it is still worth stating these intentions in a broad sense.  "Adventure" can simply mean a fulfilling experience which expands the universe the mind lives in and can mean many things in different contexts.  Caring can mean for those close to you, for other living things outside of humanity, for your own well being, and for those you will never meet by doing good works for all of Humanity or the world.  Furthermore we focus all this attention of both adventure and caring in a universe defined by a Watershed: a space in the world defined by a body of water flowing from sky(or springs in the ground) to sea.  In addition to the Watershed, we have a Trash Feed, which is the flow of goods in the existing global industrial order of today.  This order largely consists of digging things out of the ground, doing tedious things with them, setting them on fire and burying them.  Our goals in life are to metabolize this trash feed in the Watershed we find ourselves in in such a way that we can live well indefinitely.  
+</p>
+<p>
+    We now take a digression to examine the Geometry of Euclid, on which the other existing geometries are all based.  In Euclid's Elements, words are used to describe things that exist in a mental space decoupled from our physical experience almost by definition.  Points, lines, planes, etc. are all defined by having no size whatsoever.  Based on this set of preposterous axioms and definitions, a set of proofs of various theorems are provided, along with constructions using the "classical tools of geometry", the compass and straightedge(not to be mistaken for a ruler, which for some reason we are denied access to).  Why?  Why would anyone do this?  In modern society the answer is clear: to pass exams which allow one further rank and access in the current power structure.  That is all! How can a arbitrary system used only to give more rights to some humans than others possibly be seen as fundamental or even useful?  Even in the ancient world, we must look more closely at these Greek "philosophers" and "mathematicians".  As in today's world, they were able to do their mental work only because of their relations with those in power.  And just like today, that world was based entirely on raw brute force, violence, and threats of violence.  Slavery was the universal norm, as were despotic absolute rulers who claimed a mandate from various Gods.  The practical goal of any philosopher was therefore to create a safe haven in that power structure where they could do their work under the protection of these chief gangsters of the Government(just as today).   
+</p>
+<p>
+    Moving on from Euclid we find others who are all tools of the Military Industrial Complex of their eras, who are also allowed to exist in a brutal and violent world by those in power both for their role in building up a pyramid of mathematical power but by how that power is used to deploy war machines. Again, we do not want to delve too deeply into this, just to point at it and move on to what we want to replace it with.  
+</p>
+<p>
+    Jumping right to the main goal of all this we now list the main points of Action Geometry:
+<ul>
+    <li>Language is how the mind parses reality</li>
+    <li>Geometry is a Universal Language, used by all cultures and all peoples, and also understandable by various non human minds.  Its logic applies to machines, natural phenomena, all human languages, and the fabric of the Universe in every we we have found to relate to it in our minds.</li>
+    <li>Given some underlying Universal traits, however, we can make choices about how to talk about geometry(building a language). Our choices reflect our way of life as people who live in a Watershed, seeking to build Replicator Trees from the Trash Feed to care for our fellow living things and also to have adventures.</li>
+    <li>Our tools are that which we can get from our environment as easily as possible, with that as the only major restriction.  We construct language which uses as little existing human language as possible in order to best serve people across many languages, cultures, and Watersheds.</li>
+    <li>We follow the Laws of Geometron, which are not quite laws like those from nations or from scriptures but not quite like those from Newton either.  Rather they are a hybrid of these ideas, a set of phrases we repeat in our minds to generate images which yeild certain results. These laws are as follows:
+    <ul>
+        <li>EVERYTHING IS PHYSICAL</li>
+        <LI>EVERYTHING IS FRACTAL</LI>
+        <LI>EVERYTHING IS RECURSIVE</LI>
+        <LI>NO MONEY</LI>
+        <LI>NO MINING</LI>
+        <LI>NO PROPERTY</LI>
+        <LI>LOOK TO THE INSECTS</LI>
+        <LI>LOOK TO THE FUNGI</LI>
+        <LI>LANGUAGE IS HOW THE MIND PARSES REALITY</LI>
+    </ul>
+    </li>
+    <li>Roughly speaking we divide Action Geometry into symbols and actions.  Symbols are generally depicted using the Geometron symbol glyph system described elsewhere in this Watershed Replicator Tree.  Actions are the equivalent of constructions in the Euclidean Universe, and they are quite literally actions we do to create things.  This is physical, as is everything!  Everything has a size, a shape, a material, a history, a purpose in our personal space, and a destiny in our ecosystem.</li>
+</ul>
+</p>
+<p>
+    With these basic principles and characteristics sketched out, the actual substance of Action Geometry(shortened to "AG" in some cases) is best communicated by going through each action and building up the artifacts of the System.  All that is documented in the following sections of this hyperscroll.  <a href = "../">Go up one level</a> to see those other scrolls.
 </p>
