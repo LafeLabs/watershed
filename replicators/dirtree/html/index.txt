@@ -69,6 +69,18 @@
                left:10%;
                top:0.5em;
            }
+           li{
+    border-left:solid;
+    border-bottom:solid;
+    border-color:black;
+}
+li li{
+    border-color:red;
+}
+li li li{
+    border-color:green;
+}
+
         </style>
     </body>
 </html>

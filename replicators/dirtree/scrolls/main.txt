@@ -18,21 +18,118 @@
 <p>
     All of this structure, the Laws, the Path, the Trees, and the various languages are built to create what we call "best in life", that is to care for one another and have adventures.  These are part of a transformation of mind stranded in body and in battle against other minds and bodies to a post ego mind structure that is more distributed in space and time.  We also recognize that in this cosmology nothing is meant to be taken literally(or perhaps everything is, we destroy this artificial dichotomy along with most other dichotomies).  This allows us to go back and fill in blanks in religions that currently appear to be in contradiction to the dominant ideology of today's technocrats.  QSJ. More on that later.
 </p>
+<p>IMPORTANT NOTE: Leibniz tried and failed to build a "Characteristica Universalis" because he was targeting universality in a abstract sense outside of the mind-language-based universe.  If we narrow language to that which acts as a life support system for a mind, we can build it or not based on how many people we want it to work for in a technological complete set.
+</p>
+<p>
+    To make this more specific we aim to support 100 people in a complete set.  This means that the information in the collective minds of those 100 people is sufficient to fully support their survival with a fulfilling life.  
+
+</p>
+
+
+<h2>Replicator Tree</h2>
+
 <ul>
     <li><h4>Action Geometry</h4>
         <ul>
-            <li>
-                tape shapes
-            </li>
-            <li>
-                hard plastic shapes
-            </li>
-            <li>
-                tarot cards
-            </li>
-            <li>
-                
-            </li>
+            <li>On the nature of Action Geometry[htmlscroll]</li>
+            <li>tape shapes[htmlscroll]</li>
+            <li>hard plastic shapes[htmlscroll]</li>
+            <li>tarot cards[htmlscroll]</li>
+            <li>polyhedra and other 3d shapes[htmlscroll]</li>
+            <li>skeletron[htmlscroll]</li>
+            <li>hdpe and aluminum light tetrahedron[htmlscroll]</li>
+            <li>Artbox and tool kit[htmlscroll]</li>
+            <li>Other construction methods[htmlscroll]</li>
+            <li>vrml[vrml]</li>
+        </ul>
+    </li>
+    <li><h4>Trash Robot</h4>
+        <ul>
+            <li>Dual H Bridge[htmlscroll]</li>
+            <li>Cardboard Stack Structures[htmlscroll]</li>
+            <li>Power connector[htmlscroll]</li>
+            <li>DVD Drawer XY plotter[htmlscroll]</li>
+            <li>linear stepper motor stage with DVD read head[htmlscroll]</li>
+            <li>optical pickup unit[htmlscroll]</li>
+            <li>Arduino Code[codelibrary]</li>
+            <li>Vibrating tool[htmlscroll]</li>
+            <li>reducing motion with levers to micro scale[htmlscroll]</li>
+            <li>Skeletron and large scale motion with large DC motors[htmlscroll]</li>
+            <li>Skeletron[htmlscroll]</li>
+        </ul>
+    </li>
+    <li><h4>Quantum Noise</h4>
+        <ul>
+            <li>Calculators[calculator]</li>    
+            <li>Papers and Scrolls[latexscroll]</li>
+            <li>Fermi plots[plotter]</li>
+            <li>classical coth plots[plotter]</li>
+            <li>quantum coth plots[plotter]</li>
+            <li>Random noise plots[plotter]</li>
+            <li>quantum curve fit[datafeed]</li>
+            <li>Experiment layout Geometron[geometron]</li>
+            <li>Chip layout geometron[geometron]</li>
+        </ul>
+    </li>
+    <li><h4>Quantum Art</h4>
+        <ul>
+            <li>fading and rotating images not overlapped[quantumcss1]</li>
+            <li>overlapping and rotating images[quantumcss2]</li>
+            <li>VRML 2 qubit spaces[quantumvrml]</li>
+            <li>Quantum logic gate language Geometron[geometron]</li>
+            <li>Quantum Circuit geometron[geometron]</li>
+            <li>chip layout geometron[geometron]</li>
+            <li>Pulse sequence SVG factory[plotter]</li>
+        </ul>
+    </li>
+    <li><h4>Geometron</h4>
+        <ul>
+            <li>Hypercube Structure[htmlscroll]</li>
+            <li>Laws of Geometron[htmlscroll]</li>
+            <li>Structure of Editors[htmlscroll]</li>
+            <li>Roctal physical encoding[htmlscroll]</li>
+            <li>Exchange software(email, pastebin, text message, twitter, encrypted, VRML, drag and drop 2d)[htmlscroll]</li>
+            <li>physical card exchange system[htmlscroll]</li>
+            <li>Font library[codelibrary]</li>
+            <li>Shape library</li>
+        </ul>
+    </li>
+    <li><h4>Metamap</h4>
+        <ul>
+            <li>Laminated Maps[htmlscroll]</li>
+            <li>Drop boxes[htmlscroll]</li>
+            <li>Markers[htmlscroll]</li>
+            <li>Scrolls[htmlscroll]</li>
+            <li>Sticks</li>
+            <li>Calculators[calculator]</li>
+            <li>Social Geometron Canvas[socialgeometron]</li>
+        </ul>
+    </li>
+    <li><h4>Path of Watershed/Trash Magic</h4>
+        <ul>
+            <li>Trash Magic Manifesto and Action Coloring Book[link]</li>
+            <li>Symbology Geometron hypercubes[geometron]</li>
+            <li>Gathering places, drops, caches, pods[htmlscroll]</li>
+            <li>Trash pod assembly and maintenance[htmlscroll]</li>
+        </ul>
+    </li>
+    <li><h4>Oscillator</h4>
+        <ul>
+            <li>Vibrotron</li>
+            <li>wire coil</li>
+            <li>Arduino Code</li>
+            <li>Board design, fab, sourcing</li>
+            <li>Blinking lights</li>
+            <li>ArtBox fabrication</li>
+            <li>mechanical oscillators</li>
+            <li>Ambrosia code and theory</li>
+            <li>Ambrosia sense hardware</li>
+        </ul>
+    </li>
+    <li><h4>SlimeZistor</h4>
+        <ul>
+            <li>Basic operation, code, setup[htmlscroll]</li>
+            <li>Data feed[datafeed]</li>
         </ul>
     </li>
 </ul>

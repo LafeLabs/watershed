@@ -291,7 +291,17 @@ figure figcaption{
 .button:active{
     background-color:#304000;
 }
-
+li{
+    border-left:solid;
+    border-bottom:solid;
+    border-color:black;
+}
+li li{
+    border-color:red;
+}
+li li li{
+    border-color:green;
+}
 
 </style>
 
