@@ -50,6 +50,8 @@
 
 
     <div class = "json file">json/dna.txt</div>
+    <div class = "json file">json/currentjson.txt</div>
+    
 
 </div>
 

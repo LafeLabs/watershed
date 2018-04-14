@@ -1,0 +1,27 @@
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "glyph": "0333,0333,0337,0334,0306,0335,0201,0334,0201,0334,0201,0334,0201,0334,0201,0334,0201,0334,0332,0341,0350,0335,0336,0312,0337,0341,0336,0330,0304,0334,0350,0322,0362,0203,0334,0203,0334,0203,0334,0203,0334,0203,0363,",
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "x0rel": 0,
+    "y0rel": 0,
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1
+}
+</json>
+-->
+    <line x1="450" y1="250" x2="350" y2="77" style="stroke:#000000;stroke-width:2" />
+    <line x1="350" y1="77" x2="150" y2="77" style="stroke:#000000;stroke-width:2" />
+    <line x1="150" y1="77" x2="50" y2="250" style="stroke:#000000;stroke-width:2" />
+    <line x1="50" y1="250" x2="150" y2="423" style="stroke:#000000;stroke-width:2" />
+    <line x1="150" y1="423" x2="350" y2="423" style="stroke:#000000;stroke-width:2" />
+    <line x1="350" y1="423" x2="450" y2="250" style="stroke:#000000;stroke-width:2" />
+    <circle cx="250" cy = "250" r = "200" stroke = "#000000" stroke-width = "2" fill = "none" />
+    <circle cx="250" cy = "250" r = "173.20508075688772" stroke = "#000000" stroke-width = "2" fill = "none" />
+	<path d = "M250 150 L150 150 L79 221 L79 321 L150 391 L250 391 Z" stroke = "red" stroke-width = "2" fill = "red" /></svg>

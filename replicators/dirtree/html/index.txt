@@ -8,19 +8,7 @@
         <a id = "scrolleditorlink" href = "scrolleditor.php">scrolleditor.php</a>
         <div id = "readerscroll" class = "scroll">
 
-<h2>Replicators, links to editors thereof:</h2>
-<p>
-<ul>
-    <li><a href = "htmlscroll/editor.php">htmlscroll/editor.php</a></li>
-    <li><a href = "latexscroll/editor.php">latexscroll/editor.php</a></li>
-    <li><a href = "mapcalculator/editor.php">mapcalculator/editor.php</a></li>
-    <li><a href = "phpeditor/editor.php">phpeditor/editor.php</a></li>
-    <li><a href = "calculator/editor.php">calculator/editor.php</a></li>
-    <li><a href = "plotter/editor.php">plotter/editor.php</a></li>
-    <li><a href = "remotescrollreader/editor.php">remotescrollreader/editor.php</a></li>
-    <li><a href = "geometron/editor.php">geometron/editor.php</a></li>
-</ul>
-</p>
+<!--main.txt-->
 
         </div>
 

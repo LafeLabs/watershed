@@ -1,0 +1,39 @@
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "glyph": "0331,0332,0334,0201,0335,0201,0201,0201,0335,0201,0201,0335,0201,0201,0201,0335,0342,0335,0336,0336,0333,0337,0337,0201,0201,0201,0335,0201,0201,0335,0201,0201,0201,0335,0201,0201,0335,0330,0336,0336,0334,0322,0362,0203,0335,0203,0203,0203,0203,0335,0203,0335,0203,0203,0203,0203,0363,0335,0335,",
+    "unit": 100,
+    "x0": 684,
+    "y0": 449,
+    "x0rel": 0,
+    "y0rel": 0.5,
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1
+}
+</json>
+-->
+    <line x1="150" y1="400" x2="50" y2="400" style="stroke:#000000;stroke-width:2" />
+    <line x1="50" y1="400" x2="50" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="50" y1="300" x2="50" y2="200" style="stroke:#000000;stroke-width:2" />
+    <line x1="50" y1="200" x2="50" y2="100" style="stroke:#000000;stroke-width:2" />
+    <line x1="50" y1="100" x2="150" y2="100" style="stroke:#000000;stroke-width:2" />
+    <line x1="150" y1="100" x2="250" y2="100" style="stroke:#000000;stroke-width:2" />
+    <line x1="250" y1="100" x2="250" y2="200" style="stroke:#000000;stroke-width:2" />
+    <line x1="250" y1="200" x2="250" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="250" y1="300" x2="250" y2="400" style="stroke:#000000;stroke-width:2" />
+    <line x1="250" y1="400" x2="150" y2="400" style="stroke:#000000;stroke-width:2" />
+    <line x1="275" y1="400" x2="275" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="275" y1="300" x2="275" y2="200" style="stroke:#000000;stroke-width:2" />
+    <line x1="275" y1="200" x2="275" y2="100" style="stroke:#000000;stroke-width:2" />
+    <line x1="275" y1="100" x2="375" y2="100" style="stroke:#000000;stroke-width:2" />
+    <line x1="375" y1="100" x2="475" y2="100" style="stroke:#000000;stroke-width:2" />
+    <line x1="475" y1="100" x2="475" y2="200" style="stroke:#000000;stroke-width:2" />
+    <line x1="475" y1="200" x2="475" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="475" y1="300" x2="475" y2="400" style="stroke:#000000;stroke-width:2" />
+    <line x1="475" y1="400" x2="375" y2="400" style="stroke:#000000;stroke-width:2" />
+    <line x1="375" y1="400" x2="275" y2="400" style="stroke:#000000;stroke-width:2" />
+	<path d = "M275 300 L250 300 L250 275 L250 250 L250 225 L250 200 L275 200 L275 225 L275 250 L275 275 L275 300 Z" stroke = "red" stroke-width = "2" fill = "red" /></svg>

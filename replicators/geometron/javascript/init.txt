@@ -3,8 +3,8 @@ doTheThing(07);//initialize Geometron global variables
     document.getElementById("mainCanvas").width = innerWidth;
     document.getElementById("mainCanvas").height = innerHeight;
 
-    x0 = innerWidth/2;
-    y0 = innerHeight/2;    
+x0 = innerWidth/2;
+y0 = innerHeight/2;    
 
 controls = document.getElementById("controlTable").getElementsByTagName("input");   
 imagedata = document.getElementById("imageTable").getElementsByTagName("input");
@@ -14,4 +14,7 @@ currentGlyph = currentTable[currentAddress] + ",0207,";
  
 
 unit = 100;
+svgwidth = 500;
+svgheight = 500;
+
 

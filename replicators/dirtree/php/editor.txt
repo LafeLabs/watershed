@@ -7,7 +7,8 @@
     
 <div id = "linkscroll">
     <a href = "text2php.php">text2php.php</a>
-    <a href = "index.php">index.php</a>
+    <a href = "main2index.php">main2index.php</a>
+    <a href = "index.html">index.html</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
     <a href = "scrolleditor.php">scrolleditor.php</a>
 
@@ -17,46 +18,29 @@
 </div>
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="true"></div>
-
 <div id = "filescroll">
-    <div class = "html file">html/page.txt</div>
 
-    <div class = "css file">css/style.txt</div>
+    <div class = "html file">html/index.txt</div>
 
-    <div class = "bytecode file">bytecode/baseshapes.txt</div>
-    <div class = "bytecode file">bytecode/shapetable.txt</div>
-    <div class = "bytecode file">bytecode/font.txt</div>
-    <div class = "bytecode file">bytecode/keyboard.txt</div>
-    <div class = "bytecode file">bytecode/symbols013xx.txt</div>
-    <div class = "bytecode file">bytecode/symbols010xx.txt</div>
-
-    <div class = "javascript file">javascript/topfunctions.txt</div>
-    <div class = "javascript file">javascript/actions0xx.txt</div>
-    <div class = "javascript file">javascript/actions03xx.txt</div>
-    <div class = "javascript file">javascript/jslibrary.txt</div>
-    <div class = "javascript file">javascript/init.txt</div>
-    <div class = "javascript file">javascript/redraw.txt</div>
-    <div class = "javascript file">javascript/pageevents.txt</div>
+    <div class = "scrolls file">scrolls/main.txt</div>
+    <div class = "scrolls file">scrolls/replicator.txt</div>
+    <div class = "scrolls file">scrolls/notes.txt</div>
 
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/scrolleditor.txt</div>
-    <div class = "php file">php/index.txt</div>
     <div class = "php file">php/replicator.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
-    <div class = "php file">php/feedsaver.txt</div>
     <div class = "php file">php/text2php.txt</div>
+    <div class = "php file">php/main2index.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
 
-
     <div class = "json file">json/dna.txt</div>
-    <div class = "json file">json/currentjson.txt</div>
-    
 
 </div>
 
 <script>
-currentFile = "html/page.txt";
+currentFile = "php/scrolleditor.txt";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
