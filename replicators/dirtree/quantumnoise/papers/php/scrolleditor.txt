@@ -36,6 +36,7 @@
     <div class = "scrolls file">scrolls/quantumunits.txt</div>
     <div class = "scrolls file">scrolls/metrologyguide.txt</div>
     <div class = "scrolls file">scrolls/roadmap.txt</div>
+    <div class = "scrolls file">scrolls/calculatorassocialmedia.txt</div>
 
 </div>
 <textarea id = "texbox"></textarea>

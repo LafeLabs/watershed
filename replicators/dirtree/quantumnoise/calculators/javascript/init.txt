@@ -1,0 +1,34 @@
+
+InA = 100;
+ImuA = InA/1000;
+IA = ImuA/1000;
+phi0norm = 170;//nanohenry X nanoamp, or 170e-18 or 0.17e-15 or 1.7e-16
+LJnH = phi0norm/InA;
+LJpH = LJnH*1000;
+LJH = LJnH*1e-9;
+
+data = {
+    "InA":1,
+    "ImuA":1,
+    "IA":1,
+    "LJnH":1,
+    "LJH":1,
+    "LJpH":1
+}
+
+inputs = document.getElementById("calcTable").getElementsByTagName("input");
+
+feeddata = JSON.parse("[" + document.getElementById("datadiv").innerHTML +"]")
+
+document.getElementById("scroll").innerHTML = "";
+for(var index = 0;index < feeddata.length;index++){
+    document.getElementById("scroll").innerHTML += "<p>";
+    document.getElementById("scroll").innerHTML += "$I_c$ = " + formatsci(feeddata[index].IA) + " A";
+    document.getElementById("scroll").innerHTML += " = " + formatsci(feeddata[index].ImuA) + " $\\mu$A";
+    document.getElementById("scroll").innerHTML += " = " + formatsci(feeddata[index].InA) + " nA<br/>";
+    document.getElementById("scroll").innerHTML += "$L_J$ = " + formatsci(feeddata[index].LJH) + " H";
+    document.getElementById("scroll").innerHTML += " = " + formatsci(feeddata[index].LJnH) + " nH";    
+    document.getElementById("scroll").innerHTML += " = " + formatsci(feeddata[index].LJpH) + " pH<br/></p>";    
+
+    
+}

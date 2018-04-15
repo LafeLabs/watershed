@@ -153,8 +153,3 @@ $$
 	With a shot noise source in hand, writing data acquisition code to get these numbers quickly is relatively straigthforward.  Note that in the quantum regime it is important to use the frequency-appropriate formula for each frequency.  
 	</p>
 
-	<p>
-	Detailed instructions for constructing junctions of this kind are published elsewhere, but for the purpose of this application note the reader may assume that the devices are provided fully functional over the desired range of measurement.  The shot noise junctions and capsules designed and fabricated by the author have minimal loss and excellent coupling to over 12 GHz and are easy to heat sink to cold plates with arbitrary hole patterns.
-	
-</p>
-
