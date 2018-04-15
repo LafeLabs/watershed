@@ -1,6 +1,6 @@
 <h2>Tree</h2>
 <p>
-    The tree is perhaps the heart of the whole system, and perhaps the Replicator is fundamental to that.  Perhaps it is in fact the "Replicator Tree".  A Replicator Tree has no home, just a structure.  It is a tree-structured collection of replicators, which are both physical and electronic.
+    The <a href = "#tree">tree</a> is perhaps the heart of the whole system, and perhaps the Replicator is fundamental to that.  Perhaps it is in fact the "Replicator Tree".  A Replicator Tree has no home, just a structure.  It is a tree-structured collection of replicators, which are both physical and electronic.
 </p>
 
 <p>
@@ -26,7 +26,7 @@
 </p>
 
 
-<h2>Replicator Tree</h2>
+<h2 id = "tree">Replicator Tree</h2>
 
 <ul>
     <li><h4><a href = "actiongeometry/">actiongeometry</a></h4>
@@ -58,7 +58,7 @@
             <li>skeletronrobot[htmlscroll]</li>
         </ul>
     </li>
-    <li><h4>quantumnoise</h4>
+    <li><h4><a href ="quantumnoise/">quantumnoise</a></h4>
         <ul>
             <li>calculators[calculator]</li>    
             <li>papers[latexscroll]</li>
