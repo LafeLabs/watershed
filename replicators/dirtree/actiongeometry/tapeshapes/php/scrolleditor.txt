@@ -264,6 +264,9 @@ body{
 figure{
     width:80%;
 }
+figure img{
+    width:100%;
+}
 figure figcaption{
     width:100%;
 }

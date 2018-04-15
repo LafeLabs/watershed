@@ -18,3 +18,31 @@
 <img src = "svg/isocright.svg"/>
 <h3>30-69-90 Right Triangle:</h3>
 <img src = "svg/thirty6090.svg"/> 
+<p>The tools needed for this construction are clear packing tape, printed sheets of paper, crayons, a pen, and scissors, as shown here:</p>
+<img style = "width:80%;display:block;margin:auto;"src = "https://i.imgur.com/UZSMA7H.jpg"/>
+
+<figure>
+<img src = "https://i.imgur.com/jkOdWYl.jpg"/><!--img-->
+<figcaption>Color in the shapes with the crayons, on both sides, tracing the lines on the back side for just the major triangles.  Equilateral triangle gets basic colors of green, red, yellow and blue.</figcaption>
+</figure>
+<figure>
+<img src = "https://i.imgur.com/B06XdZg.jpg"/><!--img-->
+<figcaption>Cut and laminate with tape.</figcaption>
+</figure>
+
+<figure>
+<img src = "https://i.imgur.com/E0lrmNU.jpg"/><!--img-->
+<figcaption>This shows all the shapes and the standard colors for them.</figcaption>
+</figure>
+    <figure>
+<img src = "https://i.imgur.com/BHlKVXL.jpg"/><!--img-->
+<figcaption>Notes can be written on the back of the shapes about the details of the geometry as well as how to find the replicator using a <em>relative</em> path.  Leaving the global url out is part of how this all replicates: the tree structure is independent of where it is planted, and there will be infinite copies, all with small mutations. </figcaption>
+</figure>
+<figure>
+<img style = "transform:rotate(180deg)" src = "https://i.imgur.com/V3dIbzX.jpg"/><!--img-->
+<figcaption>Detail of back of 30-60-90 right triangle showing the proportions of the sides.  This is part of the small subset of trigonometry the AG practitioner cares about, along with the square root of two, the golden ratio and the magic angle(for 3d and higher dimensions).</figcaption>
+</figure>
+<p>Once you have these shapes printed, colored, laminated, and cut out, they are self-replicating.  In order to make another set you no longer need a printer, just a pen and the other non electronic art supplies mentioned here.  Also these shapes are all the basis for replications into other media, such as wood, brick, stone, pavement, aluminum and plastic, all of which <a href = "../">will be discussed elsewhere in other AG scrolls.</a></p>
+
+
+

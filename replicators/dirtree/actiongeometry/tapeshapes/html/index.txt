@@ -64,6 +64,17 @@
                left:10%;
                top:0.5em;
            }
+
+figure{
+    width:80%;
+}
+figure img{
+    width:100%;
+}
+figure figcaption{
+    width:100%;
+}
+
         </style>
     </body>
 </html>
