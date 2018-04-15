@@ -33,6 +33,10 @@
     <div class = "scrolls file">scrolls/replicator.txt</div>
     <div class = "scrolls file">scrolls/main.txt</div>
     <div class = "scrolls file">scrolls/notes.txt</div>
+    <div class = "scrolls file">scrolls/quantumunits.txt</div>
+    <div class = "scrolls file">scrolls/metrologyguide.txt</div>
+    <div class = "scrolls file">scrolls/roadmap.txt</div>
+
 </div>
 <textarea id = "texbox"></textarea>
 <script>
