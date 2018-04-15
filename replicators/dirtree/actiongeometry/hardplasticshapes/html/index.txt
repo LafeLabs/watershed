@@ -8,20 +8,7 @@
         <a id = "scrolleditorlink" href = "scrolleditor.php">scrolleditor.php</a>
         <div id = "readerscroll" class = "scroll">
 
-<a href = "../">up one level</a>
-<h2>Action Geometry</h2>
-<ul>
-    <li><a href = "about/">about/</a></li>
-    <li><a href = "tapeshapes/">tapeshapes/</a></li>
-    <li><a href = "hardplasticshapes/">hardplasticshapes/</a></li>
-    <li>tarotcards[htmlscroll]</li>
-    <li>polyhedra[htmlscroll]</li>
-    <li>skeletron[htmlscroll]</li>
-    <li>hdpe[htmlscroll]</li>
-    <li>artbox[htmlscroll]</li>
-    <li>other[htmlscroll]</li>
-    <li>vrml[vrml]</li>
-</ul>
+<!--main.txt-->
 
         </div>
 

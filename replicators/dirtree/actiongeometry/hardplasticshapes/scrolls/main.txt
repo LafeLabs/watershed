@@ -1,0 +1,37 @@
+<a href = "../">Up to Action Geometry</a>
+
+<h2>Hard Plastic Shapes</h2>
+
+<figure>
+<img src = "https://i.imgur.com/yqWljbs.jpg"/><!--img-->
+<figcaption>Tools to replicate a hard plastic shape: existing shape to copy from, paint pens, razor blade, box cutter, pen, and plastic panel from old broken electronics out of the trash.</figcaption>
+</figure>
+
+<figure>
+<img src = "https://i.imgur.com/vN9CZl7.jpg"/><!--img-->
+<figcaption>Cut lines, starting with shape then using ruler to slide razor blade back and forth to get a channel then box cutter to get all the way through.</figcaption>
+</figure>
+
+<figure>
+<img src = "https://i.imgur.com/Gup1Ugl.jpg"/><!--img-->
+<figcaption>Cut out shape, clean up with a razor blade. </figcaption>
+</figure>
+
+<figure>
+<img src = "https://i.imgur.com/rGtft7k.jpg"/><!--img-->
+<figcaption>Mark lines on edges with razor blade, connect them with razor blade and ruler based lines to create the outlines that will be colored in with paint pens.</figcaption>
+</figure>
+<figure>
+<img src = "https://i.imgur.com/zx9hiXV.jpg"/><!--img-->
+<figcaption>Paint.  Replication complete.</figcaption>
+</figure>
+
+
+<figure>
+<img src = "https://i.imgur.com/jZGnwH7.jpg"/><!--img-->
+<figcaption>This shows the full set of shapes.</figcaption>
+</figure>
+<p>
+    Taken together, these are an upgrade from tape shapes, just a nicer, more durable version of them.  
+</p>
+
