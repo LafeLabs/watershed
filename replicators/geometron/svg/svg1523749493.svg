@@ -1,0 +1,34 @@
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "glyph": "0331,0332,0314,0337,0313,0335,0305,0311,0201,0334,0201,0334,0334,0337,0201,0335,0335,0335,0336,0330,0334,0334,0336,0201,0334,0334,0336,0201,0335,0335,0201,0334,0334,0336,0201,0335,0335,0201,0334,0334,0336,0201,0335,0335,0201,0334,0334,0336,0201,0335,0335,0201,0334,0334,0336,0201,0335,0335,0201,0334,0334,0336,0201,",
+    "unit": 90.9090909090909,
+    "x0": 584,
+    "y0": 399,
+    "x0rel": -1.1,
+    "y0rel": 0,
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1
+}
+</json>
+-->
+    <line x1="59" y1="341" x2="332" y2="341" style="stroke:#000000;stroke-width:2" />
+    <line x1="332" y1="341" x2="416" y2="82" style="stroke:#000000;stroke-width:2" />
+    <line x1="416" y1="82" x2="59" y2="341" style="stroke:#000000;stroke-width:2" />
+    <line x1="332" y1="341" x2="195" y2="242" style="stroke:#000000;stroke-width:2" />
+    <line x1="195" y1="242" x2="228" y2="341" style="stroke:#000000;stroke-width:2" />
+    <line x1="228" y1="341" x2="143" y2="280" style="stroke:#000000;stroke-width:2" />
+    <line x1="143" y1="280" x2="163" y2="341" style="stroke:#000000;stroke-width:2" />
+    <line x1="163" y1="341" x2="111" y2="303" style="stroke:#000000;stroke-width:2" />
+    <line x1="111" y1="303" x2="123" y2="341" style="stroke:#000000;stroke-width:2" />
+    <line x1="123" y1="341" x2="91" y2="318" style="stroke:#000000;stroke-width:2" />
+    <line x1="91" y1="318" x2="99" y2="341" style="stroke:#000000;stroke-width:2" />
+    <line x1="99" y1="341" x2="79" y2="326" style="stroke:#000000;stroke-width:2" />
+    <line x1="79" y1="326" x2="84" y2="341" style="stroke:#000000;stroke-width:2" />
+    <line x1="84" y1="341" x2="71" y2="332" style="stroke:#000000;stroke-width:2" />
+    <line x1="71" y1="332" x2="74" y2="341" style="stroke:#000000;stroke-width:2" />
+</svg>

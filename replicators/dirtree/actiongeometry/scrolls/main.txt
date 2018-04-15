@@ -2,7 +2,7 @@
 <h2>Action Geometry</h2>
 <ul>
     <li><a href = "about/">about</a></li>
-    <li>tapeshapes[htmlscroll]</li>
+    <li><a href = "tapeshapes/">tapeshapes</a></li>
     <li>hardplasticshapes[htmlscroll]</li>
     <li>tarotcards[htmlscroll]</li>
     <li>polyhedra[htmlscroll]</li>

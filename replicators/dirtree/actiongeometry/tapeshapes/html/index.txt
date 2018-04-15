@@ -31,11 +31,6 @@
                 right:0px;
                 bottom:0px;
             }
-            .scroll img{
-                width:80%;
-                display:block;
-                margin:auto;
-            }
             .scroll p,pre,li {
 	            font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
 	            font-size: 24px;

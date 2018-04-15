@@ -261,9 +261,6 @@ body{
 
 }
 
-figure img{
-    width:100%;
-}
 figure{
     width:80%;
 }
