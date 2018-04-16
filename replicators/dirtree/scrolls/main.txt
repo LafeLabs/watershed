@@ -71,8 +71,9 @@
             <li>chiplayout[geometron]</li>
         </ul>
     </li>
-    <li><h4>quantumart</h4>
+    <li><h4><a href = "quantumart/">quantumart</a></h4>
         <ul>
+            <li>papers[latexscroll]</li>
             <li>quantumfade1[quantumcss1]</li>
             <li>quantumface2[quantumcss2]</li>
             <li>quantumvrml[quantumvrml]</li>
