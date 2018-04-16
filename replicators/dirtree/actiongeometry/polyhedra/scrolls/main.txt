@@ -1,0 +1,25 @@
+<a href = "../">Back up to AG</a>
+
+<h2>Polyhedra</h2>
+
+<figure>
+<img src = "https://i.imgur.com/IAHrfgp.jpg"/><!--img-->
+<figcaption>Figure x. </figcaption>
+</figure>
+<figure>
+<img src = "https://i.imgur.com/K2Z45dH.jpg"/><!--img-->
+<figcaption>Figure x. </figcaption>
+</figure>
+<figure>
+<img src = "https://i.imgur.com/B1qGP5K.jpg"/><!--img-->
+<figcaption>Figure x. </figcaption>
+</figure>
+
+<figure>
+<img src = "https://i.imgur.com/SgQ0fxZ.jpg"/><!--img-->
+<figcaption>Figure x. </figcaption>
+</figure>
+<figure>
+<img src = "https://i.imgur.com/1xvgWlg.jpg"/><!--img-->
+<figcaption>Figure x. </figcaption>
+</figure>
