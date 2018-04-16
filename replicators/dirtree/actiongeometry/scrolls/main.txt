@@ -4,7 +4,7 @@
     <li><a href = "about/">about/</a></li>
     <li><a href = "tapeshapes/">tapeshapes/</a></li>
     <li><a href = "hardplasticshapes/">hardplasticshapes/</a></li>
-    <li>tarotcards[htmlscroll]</li>
+    <li><a href = "tarotcards/">tarotcards/</a></li>
     <li>polyhedra[htmlscroll]</li>
     <li>skeletron[htmlscroll]</li>
     <li>hdpe[htmlscroll]</li>
