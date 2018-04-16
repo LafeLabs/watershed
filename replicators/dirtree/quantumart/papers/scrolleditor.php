@@ -175,7 +175,15 @@ function html2tex(){
     textout = textout.replace(/<\/figcaption>/g,"\}");
     textout = textout.replace(/<img src = "/g,"\n\\includegraphics[width=\\linewidth]{../");
     textout = textout.replace(/"\/><!--img-->/g,"\}\n");
-    
+
+    textout = textout.replace(/<li>/g,"\\item\n");
+    textout = textout.replace(/<\/li>/g,"");
+    textout = textout.replace(/<ul>/g,"\\begin{itemize}\n");
+    textout = textout.replace(/<\/ul>/g,"\\end{itemize}");
+
+    textout = textout.replace(/<ol>/g,"\\begin{enumerate}\n");
+    textout = textout.replace(/<\/ol>/g,"\\end{enumerate}");
+
     textout+= "\n\\end{document}\n";
     document.getElementById("texbox").value = textout;
 }

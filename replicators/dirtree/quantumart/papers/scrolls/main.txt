@@ -1,4 +1,8 @@
+<a href = "../">Back up to Quantum Art</a>
+<br/>
+<a href = "scrolleditor.php">scrolleditor.php</a>
 <h2>Quantum Art Papers</h2>
+
 <p>
 
 </p>
