@@ -16,6 +16,7 @@
 <div id = "filescroll">
 
     <div class = "html file">html/page.txt</div>
+    <div class = "scrolls file">scrolls/lc.txt</div>
     <div class = "css file">css/style.txt</div>
 
     <div class = "javascript file">javascript/topfunctions.txt</div>

@@ -22,7 +22,13 @@
     <a href = "editor.php">editor.php</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
 </div>
-<div id = "calcscroll" class = "mathjax">$$A = \pi r^2$$</div>
+<div id = "calcscroll" class = "mathjax">
+<div id = "calcequation"></div>
+<table id = "calctable"></table>
+<div style = "display:none" id = "calcdata"></div>
+<div id = "calcfeed"></div>
+
+</div>
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
 
@@ -30,6 +36,7 @@
 
     <div class = "html file">html/page.txt</div>
     <div class = "css file">css/style.txt</div>
+    <div class = "scrolls file">scrolls/lc.txt</div>
 
     <div class = "javascript file">javascript/topfunctions.txt</div>
     <div class = "javascript file">javascript/jslibrary.txt</div>
@@ -52,7 +59,7 @@
 </div>
 
 <script>
-currentFile = "php/editor.txt";
+currentFile = "php/calceditor.txt";
 
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
@@ -138,6 +145,16 @@ document.getElementById("maineditor").onkeyup = function(){
     httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
     var fileType = currentFile.split("/")[0]; 
     var fileName = currentFile.split("/")[1];
+    
+    if(currentFile.split("/")[0] == "scrolls"){
+        rawdata = editor.getSession().getValue();
+        equationdata = rawdata.split("<equation>")[1].split("</equation>")[0];
+        document.getElementById("calcequation").innerHTML = equationdata;
+        
+        tabledata = rawdata.split("<calctable>")[1].split("</calctable>")[0];
+        document.getElementById("calctable").innerHTML = tabledata;
+        MathJax.Hub.Typeset();//tell Mathjax to update the math
+    }
 }
 
 </script>
@@ -241,6 +258,9 @@ body{
     padding:0.5em;
     background-color:white;
     
+}
+table{
+    width:100%;
 }
 </style>
 
