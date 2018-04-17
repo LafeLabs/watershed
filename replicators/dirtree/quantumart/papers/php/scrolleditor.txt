@@ -166,7 +166,7 @@ buttons[1].onclick = function(){
 
 function html2tex(){
         var textin = editor.getSession().getValue();
-    textout = "\n\\documentclass[11pt]{article}\n\\usepackage{graphicx}\n\\begin{document}\n";
+    textout = "\n\\documentclass[11pt]{article}\n\\usepackage{graphicx}\n\\usepackage{amsfonts}\n\\usepackage{amsmath}\n\\begin{document}\n";
     textout += textin;
     textout = textout.replace(/<p>/g,"\n\n");
     textout = textout.replace(/<\/p>/g,"");
@@ -186,6 +186,9 @@ function html2tex(){
 
     textout = textout.replace(/<ol>/g,"\\begin{enumerate}\n");
     textout = textout.replace(/<\/ol>/g,"\\end{enumerate}");
+
+    textout = textout.replace(/<em>/g,"\\textit{\n");
+    textout = textout.replace(/<\/em>/g,"}");
 
     textout+= "\n\\end{document}\n";
     document.getElementById("texbox").value = textout;
