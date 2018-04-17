@@ -99,7 +99,6 @@ document.getElementById("textIO").value = JSON.stringify(data,null,"    ");
     LJnH = phi0norm/InA;
     LJpH = LJnH*1000;
     LJH = LJnH*1e-9;
-
     redraw();     
  }
  inputs[2].onchange = function(){

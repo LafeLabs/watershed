@@ -83,7 +83,7 @@
             <li>pulsesequence[plotter]</li>
         </ul>
     </li>
-    <li><h4>geometron</h4>
+    <li><h4><a href = "geometron/">geometron</a></h4>
         <ul>
             <li>hypercube[htmlscroll]</li>
             <li>laws[htmlscroll]</li>

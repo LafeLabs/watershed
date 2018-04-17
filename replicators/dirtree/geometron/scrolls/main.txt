@@ -1,0 +1,22 @@
+<a href = "../">Up to main Tree</a>
+<h2>Geometron Meta Language Replicator</h2>
+<p>
+This document is not to replicate the Geometron software, that is done elsewhere in the Replicator structure.  This set of scrolls is designed not to replicate the Geometron language on a computer but to replicate it in the human mind--that is, to replicate the <em>user</em> of Geometron.  This set of scrolls is, essentially, what might be called the "Book of Geometron", which guides the would be user of the metalanguage through the learning process.  With that understanding, actual replication of software can be done with other, more compact replicator programs, all of which will be of the form replicator.php.
+</p>
+
+<ul>
+    <li><a href = "hypercube/">hypercube</a></li>
+    <li><a href = "laws/">laws</a></li>
+    <li>actions[htmlscroll]</li>
+    <li>symbols[htmlscroll]</li>
+    <li>editors[htmlscroll]</li>
+    <li>roctal[htmlscroll]</li>
+    <li>exchange[htmlscroll]</li>
+    <li>keyboard[keyboard,scroll]</li>
+    <li>geometronplain[geometron]</li>
+    <li>geometronjson[geometron]</li>
+    <li>geometronjsonarray[geometron]</li>
+    <li>memegenerator[geometron]</li>
+    <li>fontlibrary[codelibrary]</li>
+    <li>shapelibrary[codelibrary]</li>
+</ul>

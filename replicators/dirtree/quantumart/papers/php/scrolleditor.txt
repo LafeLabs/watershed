@@ -34,6 +34,9 @@
     <div class = "scrolls file">scrolls/main.txt</div>
     <div class = "scrolls file">scrolls/notes.txt</div>
     <div class = "scrolls file">scrolls/quantumartmanifesto.txt</div>
+    <div class = "scrolls file">scrolls/hilbertspaceart.txt</div>
+    <div class = "scrolls file">scrolls/quantumillustration.txt</div>
+    <div class = "scrolls file">scrolls/quantummicroblogging.txt</div>
 
 </div>
 <textarea id = "texbox"></textarea>
@@ -302,7 +305,7 @@ body{
     border-radius:0.5em;
     padding:1.5em 1.5em 1.5em 1.5em;
 }
-#scrolldisplay p,li,pre{
+#scrolldisplay p,pre{
     width:80%;
     display:block;
     margin:auto;

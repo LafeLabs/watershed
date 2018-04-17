@@ -33,11 +33,6 @@
     <div class = "scrolls file">scrolls/replicator.txt</div>
     <div class = "scrolls file">scrolls/main.txt</div>
     <div class = "scrolls file">scrolls/notes.txt</div>
-    <div class = "scrolls file">scrolls/quantumartmanifesto.txt</div>
-    <div class = "scrolls file">scrolls/hilbertspaceart.txt</div>
-    <div class = "scrolls file">scrolls/quantumillustration.txt</div>
-    <div class = "scrolls file">scrolls/quantummicroblogging.txt</div>
-
 </div>
 <textarea id = "texbox"></textarea>
 <script>
@@ -178,15 +173,7 @@ function html2tex(){
     textout = textout.replace(/<\/figcaption>/g,"\}");
     textout = textout.replace(/<img src = "/g,"\n\\includegraphics[width=\\linewidth]{../");
     textout = textout.replace(/"\/><!--img-->/g,"\}\n");
-
-    textout = textout.replace(/<li>/g,"\\item\n");
-    textout = textout.replace(/<\/li>/g,"");
-    textout = textout.replace(/<ul>/g,"\\begin{itemize}\n");
-    textout = textout.replace(/<\/ul>/g,"\\end{itemize}");
-
-    textout = textout.replace(/<ol>/g,"\\begin{enumerate}\n");
-    textout = textout.replace(/<\/ol>/g,"\\end{enumerate}");
-
+    
     textout+= "\n\\end{document}\n";
     document.getElementById("texbox").value = textout;
 }
@@ -305,7 +292,7 @@ body{
     border-radius:0.5em;
     padding:1.5em 1.5em 1.5em 1.5em;
 }
-#scrolldisplay p,pre{
+#scrolldisplay p,li,pre{
     width:80%;
     display:block;
     margin:auto;
