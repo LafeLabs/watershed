@@ -1,0 +1,24 @@
+<a href = "../">Up to AG</a>
+
+<h2>Skeletron</h2>
+
+<figure>
+<img src = "https://i.imgur.com/99meymh.jpg"/><!--img-->
+<figcaption>Drill with quarter inch bit</figcaption>
+</figure>
+<figure>
+<img src = "https://i.imgur.com/HJKihTK.jpg"/><!--img-->
+<figcaption>Nylon parachute cord</figcaption>
+</figure>
+<figure>
+<img src = "https://i.imgur.com/XdIvG0X.jpg"/><!--img-->
+<figcaption>Joints are tied with a square knot, most common structure is the octahedron made to be either 18 inches long or 3 feet(very approximate!)</figcaption>
+</figure>
+<figure>
+<img src = "https://i.imgur.com/etuTPF6.jpg"/><!--img-->
+<figcaption>Stacked  units, mostly octahedra with a tetrahedron cap for the bottom left one.</figcaption>
+</figure>
+<figure>
+<img src = "https://i.imgur.com/yKM2n6j.jpg"/><!--img-->
+<figcaption>Closeup of tensegrity joint</figcaption>
+</figure>

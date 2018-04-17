@@ -6,7 +6,7 @@
     <li><a href = "hardplasticshapes/">hardplasticshapes/</a></li>
     <li><a href = "tarotcards/">tarotcards/</a></li>
     <li><a href = "polyhedra/">polyhedra/</a></li>
-    <li>skeletron[htmlscroll]</li>
+    <li><a href = "skeletron/">skeletron/</a></li>
     <li>hdpe[htmlscroll]</li>
     <li>artbox[htmlscroll]</li>
     <li>other[htmlscroll]</li>
