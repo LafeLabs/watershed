@@ -20,9 +20,9 @@ $$\Phi_0 \equiv \frac{h}{2e} = 2.07\times10^{-15} \textrm{Wb}$$
 $$1 \textrm{Wb} = 1 \textrm{henry[H]}\times 1\textrm{ampere[A]}$$
 $$\frac{\Phi_0}{2\pi} = 1.7\times10^{-16} \textrm{Wb} = 170 \textrm{nH}\times\textrm{nA}$$
 </equation>
-<calctable> 
+<calctable>
     <tr>
-        <td>Ic[A]:</td><td><input/></td>
+        <td>Ic[A]:</td><td><input/></td> 
     </tr>    
     </tr>
         <td>Ic[$\mu$A]:</td><td><input/></td>
@@ -31,7 +31,7 @@ $$\frac{\Phi_0}{2\pi} = 1.7\times10^{-16} \textrm{Wb} = 170 \textrm{nH}\times\te
         <td>Ic[nA]:</td><td><input/></td>
     </tr>
     <tr>
-        <td>LJ[H]:</td><td><input/></td>
+        <td>LJ[H]:</td><td><input/></td> 
     </tr>    
     </tr>
         <td>LJ[nH]:</td><td><input/></td>
@@ -65,7 +65,7 @@ inputs = document.getElementById("calcTable").getElementsByTagName("input");
 
 function redraw(){
     inputs[0].value = IA.toExponential(2);
-inputs[1].value = ImuA.toExponential(2);
+inputs[1].value = ImuA.toExponential(2); 
 inputs[2].value = InA.toExponential(2);
 inputs[3].value = LJH.toExponential(2);
 inputs[4].value = LJnH.toExponential(2);

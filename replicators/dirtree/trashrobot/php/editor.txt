@@ -2,65 +2,47 @@
 <html>
 <head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-   <script>
-	MathJax.Hub.Config({
-		tex2jax: {
-		inlineMath: [['$','$'], ['\\(','\\)']],
-		processEscapes: true,
-		processClass: "mathjax",
-        ignoreClass: "no-mathjax"
-		}
-	});//			MathJax.Hub.Typeset();//tell Mathjax to update the math
-</script>
-<title>PHP Editor replicator</title>
 </head>
-<body class = "no-mathjax">
+<body>
+    
 <div id = "linkscroll">
     <a href = "text2php.php">text2php.php</a>
-    <a href = "index.php">index.php</a>
-    <a href = "editor.php">editor.php</a>
+    <a href = "scrolls2index.php">scrolls2index.php</a>
+    <a href = "main2index.php">main2index.php</a>
+    <a href = "index.html">index.html</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
-</div>
-<div id = "calcscroll" class = "mathjax">
-<div id = "calcequation"></div>
-<table id = "calctable"></table>
-<div style = "display:none" id = "calcdata"></div>
-<div id = "calcfeed"></div>
+    <a href = "scrolleditor.php">scrolleditor.php</a>
+
+    <div class = "button" id = "imgbutton">&ltIMG src = " "/&gt</div>
+    <div class = "button" id = "pbutton">&ltP&gt  &lt/P&gt</div>
 
 </div>
 <div id = "namediv"></div>
-<div id="maineditor" contenteditable="true" spellcheck="false"></div>
-
+<div id="maineditor" contenteditable="true" spellcheck="true"></div>
 <div id = "filescroll">
 
-    <div class = "html file">html/page.txt</div>
-    <div class = "css file">css/style.txt</div>
-    <div class = "scrolls file">scrolls/lc.txt</div>
+    <div class = "html file">html/index.txt</div>
 
-    <div class = "javascript file">javascript/topfunctions.txt</div>
-    <div class = "javascript file">javascript/jslibrary.txt</div>
-    <div class = "javascript file">javascript/init.txt</div>
-    <div class = "javascript file">javascript/redraw.txt</div>
-    <div class = "javascript file">javascript/pageevents.txt</div>
+    <div class = "scrolls file">scrolls/main.txt</div>
+    <div class = "scrolls file">scrolls/replicator.txt</div>
+    <div class = "scrolls file">scrolls/notes.txt</div>
 
-    <div class = "php file">php/index.txt</div>
     <div class = "php file">php/editor.txt</div>
-    <div class = "php file">php/calceditor.txt</div>
+    <div class = "php file">php/scrolleditor.txt</div>
     <div class = "php file">php/replicator.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/text2php.txt</div>
+    <div class = "php file">php/scrolls2index.txt</div>
+    <div class = "php file">php/main2index.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
 
     <div class = "json file">json/dna.txt</div>
-    <div class = "json file">json/feed.txt</div>
 
 </div>
 
 <script>
-currentFile = "php/calceditor.txt";
-
+currentFile = "php/scrolleditor.txt";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -138,7 +120,6 @@ editor.$blockScrolling = Infinity;
 
 document.getElementById("maineditor").onkeyup = function(){
     data = encodeURIComponent(editor.getSession().getValue());
-
     var httpc = new XMLHttpRequest();
     var url = "filesaver.php";        
     httpc.open("POST", url, true);
@@ -146,35 +127,6 @@ document.getElementById("maineditor").onkeyup = function(){
     httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
     var fileType = currentFile.split("/")[0]; 
     var fileName = currentFile.split("/")[1];
-    
-    if(currentFile.split("/")[0] == "scrolls"){
-        rawdata = editor.getSession().getValue();
-        equationdata = rawdata.split("<equation>")[1].split("</equation>")[0];
-        document.getElementById("calcequation").innerHTML = equationdata;
-        
-        tabledata = rawdata.split("<calctable>")[1].split("</calctable>")[0];
-        document.getElementById("calctable").innerHTML = tabledata;
-        MathJax.Hub.Typeset();//tell Mathjax to update the math
-    
-                
-        var httpc = new XMLHttpRequest();
-        httpc.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                filedata = this.responseText;
-                filedata = filedata.replace("</div>", "</div><!--foo-->"); 
-
-                filedata = encodeURIComponent(filedata);
-
-                var httpc = new XMLHttpRequest();
-                var url = "filesaver.php";        
-                httpc.open("POST", url, true);
-                httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-                httpc.send("data="+filedata+"&filename=calceditor2.php");//send text to filesaver.php
-            }
-        };
-        httpc.open("GET", "fileloader.php?filename=calceditor.php", true);
-        httpc.send();
-    }
 }
 
 </script>
@@ -263,25 +215,14 @@ body{
 }
 #maineditor{
     position:absolute;
-    left:34%;
+    left:0%;
     top:5em;
     bottom:1em;
-    right:26%;
+    right:30%;
 }
-#calcscroll{
-    position:absolute;
-    left:1em;
-    right:68%;
-    top:5em;
-    bottom:1em;
-    border-radius:0.5em;
-    padding:0.5em;
-    background-color:white;
-    
-}
-table{
-    width:100%;
-}
+
+
+
 </style>
 
 </body>

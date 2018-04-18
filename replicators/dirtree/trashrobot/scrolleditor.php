@@ -1,71 +1,46 @@
  <!doctype html>
 <html>
 <head>
+    <title>Watershed Latex Editor</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-   <script>
-	MathJax.Hub.Config({
-		tex2jax: {
-		inlineMath: [['$','$'], ['\\(','\\)']],
-		processEscapes: true,
-		processClass: "mathjax",
-        ignoreClass: "no-mathjax"
-		}
-	});//			MathJax.Hub.Typeset();//tell Mathjax to update the math
-</script>
-<title>PHP Editor replicator</title>
 </head>
-<body class = "no-mathjax">
+<body>
+    
+<div id = "scrolldisplay"></div>    
+    
 <div id = "linkscroll">
-    <a href = "text2php.php">text2php.php</a>
-    <a href = "index.php">index.php</a>
+    <a href = "index.html" id = "indexlink">index.html</a>
     <a href = "editor.php">editor.php</a>
-    <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
-</div>
-<div id = "calcscroll" class = "mathjax">
-<div id = "calcequation"></div>
-<table id = "calctable"></table>
-<div style = "display:none" id = "calcdata"></div>
-<div id = "calcfeed"></div>
-
+    <a href = "main2index.php">main2index.php</a>    
+    <div class = "button">FIGURE</div>
 </div>
 <div id = "namediv"></div>
-<div id="maineditor" contenteditable="true" spellcheck="false"></div>
-
+<div id="maineditor" contenteditable="true" spellcheck="true"></div>
 <div id = "filescroll">
-
-    <div class = "html file">html/page.txt</div>
-    <div class = "css file">css/style.txt</div>
-    <div class = "scrolls file">scrolls/lc.txt</div>
-
-    <div class = "javascript file">javascript/topfunctions.txt</div>
-    <div class = "javascript file">javascript/jslibrary.txt</div>
-    <div class = "javascript file">javascript/init.txt</div>
-    <div class = "javascript file">javascript/redraw.txt</div>
-    <div class = "javascript file">javascript/pageevents.txt</div>
-
-    <div class = "php file">php/index.txt</div>
-    <div class = "php file">php/editor.txt</div>
-    <div class = "php file">php/calceditor.txt</div>
-    <div class = "php file">php/replicator.txt</div>
-    <div class = "php file">php/filesaver.txt</div>
-    <div class = "php file">php/fileloader.txt</div>
-    <div class = "php file">php/text2php.txt</div>
-    <div class = "php file">php/dnagenerator.txt</div>
-
-    <div class = "json file">json/dna.txt</div>
-    <div class = "json file">json/feed.txt</div>
-
+    <div class = "scrolls file">scrolls/replicator.txt</div>
+    <div class = "scrolls file">scrolls/main.txt</div>
+    <div class = "scrolls file">scrolls/notes.txt</div>
+    
+    <div class = "scrolls file">scrolls/power.txt</div>
+    <div class = "scrolls file">scrolls/boards.txt</div>
+    <div class = "scrolls file">scrolls/opticalpickup.txt</div>
+    <div class = "scrolls file">scrolls/steppers.txt</div>
+    <div class = "scrolls file">scrolls/dcmotors.txt</div>
+    <div class = "scrolls file">scrolls/cardboard.txt</div>
+    <div class = "scrolls file">scrolls/xyplotter.txt</div>
+    
 </div>
-
 <script>
-currentFile = "php/calceditor.txt";
+currentFile = "scrolls/main.txt";
+fileBase = currentFile.split("/")[1].split(".")[0];
 
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         filedata = this.responseText;
         editor.setValue(filedata);
+        document.getElementById("scrolldisplay").innerHTML = filedata;
+
     }
 };
 httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
@@ -74,6 +49,8 @@ files = document.getElementById("filescroll").getElementsByClassName("file");
 for(var index = 0;index < files.length;index++){
     files[index].onclick = function(){
         currentFile = this.innerHTML;
+        fileBase = currentFile.split("/")[1].split(".")[0];
+
         //use php script to load current file;
         var httpc = new XMLHttpRequest();
         httpc.onreadystatechange = function() {
@@ -82,7 +59,9 @@ for(var index = 0;index < files.length;index++){
                 editor.setValue(filedata);
                 var fileType = currentFile.split("/")[0]; 
                 var fileName = currentFile.split("/")[1];
-              
+                if(fileType == "scrolls"){
+                    document.getElementById("scrolldisplay").innerHTML = editor.getSession().getValue();
+                }
             }
         };
         httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
@@ -138,7 +117,6 @@ editor.$blockScrolling = Infinity;
 
 document.getElementById("maineditor").onkeyup = function(){
     data = encodeURIComponent(editor.getSession().getValue());
-
     var httpc = new XMLHttpRequest();
     var url = "filesaver.php";        
     httpc.open("POST", url, true);
@@ -146,35 +124,18 @@ document.getElementById("maineditor").onkeyup = function(){
     httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
     var fileType = currentFile.split("/")[0]; 
     var fileName = currentFile.split("/")[1];
-    
-    if(currentFile.split("/")[0] == "scrolls"){
-        rawdata = editor.getSession().getValue();
-        equationdata = rawdata.split("<equation>")[1].split("</equation>")[0];
-        document.getElementById("calcequation").innerHTML = equationdata;
-        
-        tabledata = rawdata.split("<calctable>")[1].split("</calctable>")[0];
-        document.getElementById("calctable").innerHTML = tabledata;
-        MathJax.Hub.Typeset();//tell Mathjax to update the math
-    
-                
-        var httpc = new XMLHttpRequest();
-        httpc.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                filedata = this.responseText;
-                filedata = filedata.replace("</div>", "</div><!--foo-->"); 
-
-                filedata = encodeURIComponent(filedata);
-
-                var httpc = new XMLHttpRequest();
-                var url = "filesaver.php";        
-                httpc.open("POST", url, true);
-                httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-                httpc.send("data="+filedata+"&filename=calceditor2.php");//send text to filesaver.php
-            }
-        };
-        httpc.open("GET", "fileloader.php?filename=calceditor.php", true);
-        httpc.send();
+    if(fileType == "scrolls"){
+        document.getElementById("scrolldisplay").innerHTML = editor.getSession().getValue();
     }
+}
+
+
+buttons = document.getElementsByClassName("button");
+
+buttons[0].onclick = function(){
+    var figtext = "<figure>\n<img src = \"\"/><!--img-->\n<figcaption>Figure x. </figcaption>\n</figure>\n";
+        var cursorPosition = editor.getCursorPosition();
+        editor.getSession().insert(cursorPosition,figtext);
 }
 
 </script>
@@ -235,10 +196,10 @@ body{
 #filescroll{
     position:absolute;
     overflow:scroll;
-    top:60%;
+    top:67%;
     bottom:0%;
     right:0%;
-    left:75%;
+    left:77%;
     border:solid;
     border-radius:5px;
     border-width:3px;
@@ -249,39 +210,86 @@ body{
 #linkscroll{
     position:absolute;
     overflow:scroll;
-    top:5em;
-    bottom:50%;
-    right:0px;
-    left:75%;
+    top:0%;
+    bottom:70%;
+    right:0%;
+    left:77%;
     border:solid;
     border-radius:5px;
     border-width:3px;
     background-color:#101010;
     font-family:courier;
     font-size:18px;
-    
 }
 #maineditor{
     position:absolute;
-    left:34%;
+    left:41%;
     top:5em;
-    bottom:1em;
-    right:26%;
+    bottom:10px;
+    right:25%;
 }
-#calcscroll{
+#scrolldisplay{
     position:absolute;
-    left:1em;
-    right:68%;
-    top:5em;
-    bottom:1em;
-    border-radius:0.5em;
-    padding:0.5em;
     background-color:white;
-    
+    overflow:scroll;
+    color:black;
+    left:10px;
+    bottom:10px;
+    right:60%;
+    top:5em;
+    border:solid;
+    border-width:3px;
+    border-radius:0.5em;
+    padding:1.5em 1.5em 1.5em 1.5em;
 }
-table{
+#scrolldisplay p,li,pre{
+    width:80%;
+    display:block;
+    margin:auto;
+    text-align:justify;    
+    margin-bottom:1em;
+}
+#scrolldisplay h1,h2,h3{
+    text-align:center;
+}
+#scrolldisplay a{
+    color:blue;
+    display:inline;
+
+}
+
+figure img{
     width:100%;
 }
+figure{
+    width:80%;
+}
+figure figcaption{
+    width:100%;
+}
+.button{
+    color:yellow;
+    cursor:pointer;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    border:solid;
+    border-color:yellow;
+    border-radius:0.5em;
+    margin-bottom:1em;
+    margin-left:0.5em;
+    margin-top:1em;
+    display:block;
+    margin:auto;
+    text-align:center;
+    width:80%;
+}
+.button:hover{
+    background-color:#003000;
+}   
+.button:active{
+    background-color:#304000;
+}
+
+
 </style>
 
 </body>

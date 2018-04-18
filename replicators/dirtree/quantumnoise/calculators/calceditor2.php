@@ -21,7 +21,7 @@
     <a href = "index.php">index.php</a>
     <a href = "editor.php">editor.php</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
-</div>
+</div><!--foo-->
 <div id = "calcscroll" class = "mathjax">
 <div id = "calcequation"></div>
 <table id = "calctable"></table>

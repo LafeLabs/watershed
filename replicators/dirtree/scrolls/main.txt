@@ -43,7 +43,7 @@
             <li>vrml[vrml]</li>
         </ul>
     </li>
-    <li><h4>trashrobot</h4>
+    <li><h4><a href = "trashrobot/">trashrobot/</a></h4>
         <ul>
             <li>dualhbridge[htmlscroll]</li>
             <li>cardboardstack[htmlscroll]</li>
