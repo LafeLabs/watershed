@@ -1,0 +1,6 @@
+<p><a href = "../../">Up to Trash Robot</a></p>
+<h2>Trash Robot Power</h2>
+<p>
+    Power for trash robot comes from either upcycled AC/DC wall wort power supplies or from USB LiPo rechargeable batteries.  In between the driver boards and whatever the power source happens to be is the generic Trash Robot power connector, a polarized connector built from corrugated cardboard, Elmer's glue, scrap wires, and pennies.  Generally, power is 5 VDC, 12 VDC, or 24 VDC, with 5 VDC for most standard beginning applications, both because this is so universally useful and because it means the system can be portable with small LiPo battery packs.
+    
+</p>

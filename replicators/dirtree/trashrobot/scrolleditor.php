@@ -12,6 +12,7 @@
     <a href = "index.html" id = "indexlink">index.html</a>
     <a href = "editor.php">editor.php</a>
     <a href = "main2index.php">main2index.php</a>    
+    <a href = "scrolls2index.php">scrolls2index.php</a>
     <div class = "button">FIGURE</div>
 </div>
 <div id = "namediv"></div>
@@ -196,7 +197,7 @@ body{
 #filescroll{
     position:absolute;
     overflow:scroll;
-    top:67%;
+    top:50%;
     bottom:0%;
     right:0%;
     left:77%;

@@ -1,0 +1,6 @@
+<p><a href = "../../">Up to Trash Robot</a></p>
+<h2>Trash Robot: Optical Pickup</h2>
+<p>
+Optical pickup: CSS to motors.
+
+</p>

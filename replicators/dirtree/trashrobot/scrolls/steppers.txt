@@ -1,0 +1,6 @@
+<p><a href = "../../">Up to Trash Robot</a></p>
+<h2>Trash Robot: Stepper Motors</h2>
+<p>
+Stepper motors!
+
+</p>
