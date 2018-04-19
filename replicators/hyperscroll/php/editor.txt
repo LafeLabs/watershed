@@ -26,6 +26,7 @@
     <div class = "scrolls file">scrolls/main.txt</div>
     <div class = "scrolls file">scrolls/replicator.txt</div>
     <div class = "scrolls file">scrolls/notes.txt</div>
+    <div class = "scrolls file">scrolls/scroll1.txt</div>
 
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/scrolleditor.txt</div>

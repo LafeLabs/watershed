@@ -1,19 +1,30 @@
  <!doctype html>
 <html>
 <head>
-    <title>Watershed Latex Editor</title>
+    <title>Watershed Latex Hyperscroll Editor</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
+   <script>
+	MathJax.Hub.Config({
+		tex2jax: {
+		inlineMath: [['$','$'], ['\\(','\\)']],
+		processEscapes: true,
+		processClass: "mathjax",
+        ignoreClass: "no-mathjax"
+		}
+	});//			MathJax.Hub.Typeset();//tell Mathjax to update the math
+</script>
 </head>
-<body>
+<body class = "no-mathjax">
     
-<div id = "scrolldisplay"></div>    
-    
+<div id = "scrolldisplay" class = "mathjax"></div>    
 <div id = "linkscroll">
     <a href = "index.html" id = "indexlink">index.html</a>
     <a href = "editor.php">editor.php</a>
     <a href = "main2index.php">main2index.php</a>    
     <a href = "scrolls2index.php">scrolls2index.php</a>
     <div class = "button">FIGURE</div>
+    <div class = "button">HTML2TEX</div>
+
 </div>
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="true"></div>
@@ -21,10 +32,12 @@
     <div class = "scrolls file">scrolls/replicator.txt</div>
     <div class = "scrolls file">scrolls/main.txt</div>
     <div class = "scrolls file">scrolls/notes.txt</div>
-    
+    <div class = "scrolls file">scrolls/scroll1.txt</div>
+    </div>
+<textarea id = "texbox"></textarea>
 
-</div>
 <script>
+texmode = true;
 currentFile = "scrolls/main.txt";
 fileBase = currentFile.split("/")[1].split(".")[0];
 
@@ -34,7 +47,9 @@ httpc.onreadystatechange = function() {
         filedata = this.responseText;
         editor.setValue(filedata);
         document.getElementById("scrolldisplay").innerHTML = filedata;
-
+                if(texmode){
+                    MathJax.Hub.Typeset();//tell Mathjax to update the math                    
+                }
     }
 };
 httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
@@ -120,6 +135,9 @@ document.getElementById("maineditor").onkeyup = function(){
     var fileName = currentFile.split("/")[1];
     if(fileType == "scrolls"){
         document.getElementById("scrolldisplay").innerHTML = editor.getSession().getValue();
+        if(texmode){
+            MathJax.Hub.Typeset();//tell Mathjax to update the math   
+        }
     }
 }
 
@@ -132,8 +150,48 @@ buttons[0].onclick = function(){
         editor.getSession().insert(cursorPosition,figtext);
 }
 
+buttons[1].onclick = function(){
+    html2tex();    
+    //save this file to latex subdirectory
+    
+    data = encodeURIComponent(document.getElementById("texbox").value);
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data+"&filename="+"latex/" + fileBase + ".tex");//send text to filesaver.php
+    
+}
+function html2tex(){
+        var textin = editor.getSession().getValue();
+    textout = "\n\\documentclass[11pt]{article}\n\\usepackage{graphicx}\n\\begin{document}\n";
+    textout += textin;
+    textout = textout.replace(/<p>/g,"\n\n");
+    textout = textout.replace(/<\/p>/g,"");
+    textout = textout.replace(/<h2>/g,"\n\\section{\n");
+    textout = textout.replace(/<\/h2>/g,"}");
+    textout = textout.replace(/<figure>/g,"\n\\begin{figure}");
+    textout = textout.replace(/<\/figure>/g,"\\end{figure}\n");
+    textout = textout.replace(/<figcaption>/g,"\\caption{");
+    textout = textout.replace(/<\/figcaption>/g,"\}");
+    textout = textout.replace(/<img src = "/g,"\n\\includegraphics[width=\\linewidth]{../");
+    textout = textout.replace(/"\/><!--img-->/g,"\}\n");
+    
+    textout+= "\n\\end{document}\n";
+    document.getElementById("texbox").value = textout;
+}
 </script>
 <style>
+#texbox{
+    position:absolute;
+    top:32%;
+    right:0%;
+    height:5%;
+    width:23%;
+    font-family:courier;
+    font-size:18px;
+    display:block;
+}
 #namediv{
     position:absolute;
     top:5px;
