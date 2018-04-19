@@ -9,7 +9,24 @@
 <h2>Trash Robot Power</h2>
 <p>
     Power for trash robot comes from either upcycled AC/DC wall wort power supplies or from USB LiPo rechargeable batteries.  In between the driver boards and whatever the power source happens to be is the generic Trash Robot power connector, a polarized connector built from corrugated cardboard, Elmer's glue, scrap wires, and pennies.  Generally, power is 5 VDC, 12 VDC, or 24 VDC, with 5 VDC for most standard beginning applications, both because this is so universally useful and because it means the system can be portable with small LiPo battery packs.
-    
+</p>
+<h3>Wall Worts</h3>
+<p>
+   "Wall wort" is a slang term for the power supplies which you plug into the wall, which convert the AC(alternating current) electricity which comes out of normal household outlets and transforms it to DC(direct current) which we need for all Trash Robot work.  Depending on what country you live in the metal prongs that go into the wall might look different and the <em>input</em> from the wall might be different in various ways.  Fortunately we don't have to care about that at all. we'll be salvaging power supplies from the trash in whatever location we happen to be in, and those will pretty much always have the right plug on the input side.  
+</p>
+<p>
+    To determine the output voltage and current we examine the writing on the big usually black thing that sticks into the wall.  This will typically have an output in some number of "VDC" for volts DC, along with a current in either A for amps or mA for milliamps.  The trickiest part of upcycling these power supplies is figuring out which side is plus and which is minus in the DC out.  Confusingly, the positive side often has what looks like a minus sign on it, in the form of a series of dotted lines(with an inch or two long dots).  Sometimes the positive side will have a single long white line on the black wires.  Or grey markings on white wires.  Or no markings at all.  In all cases, the best thing to do is to measure which is plus with a volt meter.  Barring that, you can test with a LED if you know which is positive on that particular LED. You can verify which side of the LED is positive using a battery which is labelled, then comparing.  As soon as you know which side is plus, mark them!  Our markings always have red as plus and black as minus, and this can be done with paint pen, colored tape, or paint and brush, nail polish, or anything else that will hold a color.
+</p>
+<h3>USB Batteries</h3>
+<p>
+These <a href = "https://www.amazon.com/gp/product/B01CU1EC6Y">Amazon USB Batteries</a> are 16 dollars and 5 amp hours, meaning that they will last 5 hours at one amp of current, or 2 and a half hours at 2 amps. As with all USB they are 5 volts.  For many Trash Robot applications we'll break out a cut and stripped USB cable to connect these to a Trash Power Connector, or it can be used with a USB A to B cable to drive an Arduino board, can charge a Android phone, or drive a Raspberry Pi acting as a local web server. 
+</p>
+<p>
+    At some later time in the future, Trash Robot will involve other battery technology built up from scratch.  Also for bigger, higher power projects, other off the shelf technologies make more sense like lead acid, but at this stage, we'll be using off the shelf USB batteries like this because they are so easy to buy and find lying around in modern society.
+</p>
+<h3>Trash Power Connector</h3>
+<p>
+    The Trash Power Connector is a polarized connector designed to be easy to make from trash, easy to connect, easy to fix, and impossible to plug in backwards. It is also close to universal, used for various voltages in our system.  This means that while we can't plug it in backwards, we <em>can</em> plug a 24 volt power supply into a 5 volt circuit causing damage.  If you want more specificity they are designed to be large enough to easily label to make them specific to one voltage.  More labels are always good, and larger, and more colorful and more clear. 
 </p>
 
         </div>

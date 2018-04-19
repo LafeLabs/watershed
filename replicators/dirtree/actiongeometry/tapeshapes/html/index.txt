@@ -67,6 +67,8 @@
 
 figure{
     width:80%;
+    display:block;
+    margin:auto;
 }
 figure img{
     width:100%;
@@ -74,7 +76,10 @@ figure img{
 figure figcaption{
     width:100%;
 }
-
+img{
+    display:block;
+    margin:auto;
+}
         </style>
     </body>
 </html>
