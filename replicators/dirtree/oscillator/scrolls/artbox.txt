@@ -1,0 +1,12 @@
+<h2>ArtBox</h2>
+<p>Tools</p>
+<p>feedstock</p>
+<p>How to build, step by step instructions with pictures</p>
+<p>How to document the thing to link to all the other information</p>
+<p>How to strap it to body</p>
+
+<p>Sense Panel</p>
+
+<p>vibrator panel</p>
+<p>oscillator drive panel</p>
+<p>lever head stimulator panel</p>

@@ -1,0 +1,13 @@
+<h2>Arduino Shield Board</h2>
+
+<ol>
+    <li>What the board is for, why it's useful, intro to Arduino, how to buy that.</li>
+    <li>How to get a board from someone, contact info.</li>
+    <li>How to plug the board in and get it going, link to learn-to-code scroll</li>
+    <li>How to buy and stuff boards, links to files, links to BOM, buy location, detailed images and instructions, tools.</li>
+    <li>Logistics of collaborating on fabrication of boards with several people(patrons/donors, solder techs, testers, keepers of parts, distributors of finished boards, teachers of how to use)</li>
+    <li>How to scale up(how to make 100, 1000, 10,0000 units etc.</li>
+    <li>How to convert to full post capitalist industry with 100% upcycle.</li>
+    <li>Future Work, improvements etc.</li>
+</ol>
+

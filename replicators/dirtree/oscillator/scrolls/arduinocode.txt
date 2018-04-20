@@ -1,0 +1,9 @@
+<h2>Arduino Code Reference</h2>
+
+<ul>
+    <li>pressure read</li>
+    <li>Full ambrosia with vibrator</li>
+    <li>oscillator basic switch on pos/neg EMF</li>
+    <li>sequence of learning codes</li>
+    <li>Chaos-o-tron</li>
+</ul>
