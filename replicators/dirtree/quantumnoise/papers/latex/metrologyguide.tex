@@ -1,26 +1,44 @@
-<h2>Howto Guide to Tunnel Junction Noise Metrology</h2>
+
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\begin{document}
+
+\section{
+Howto Guide to Tunnel Junction Noise Metrology}
 
 <h4> I. Fabrication </h4>
 
-<p>
+
+
+
 This guide mostly assumes you already have a good tunnel junction, since it is a somewhat involved process to get good fab working from scratch. By far the easiest and most reliable way to get a good device is to have Joe Aumentado at NIST send you one.  Given the resources for fab available at NIST, Joe's experience with the fab, and the small number of people who will ever want or need these devices, this is a good system for supply for the time being.  Should Joe ever retire from NIST this capability will hopefully be passed on to future NIST staff, or if not to other national metrology lab staff in another country, since it is effectively a reference material even if it's not yet classified as such.    
-</p>
-<p>
+
+
+
+
     Future generations of this document will eventually have full fabrication details and get merged with internal NIST documentation to make a coherent information structure but for now, a pointer to Joe's lab at NIST is the best option.
-</p>
+
 
 <h4>II. Installation in Fridge</h4>
-<p>
+
+
+
 In order to get this device in the fridge you first need to put the chip in an appropriate sample box.  Again the most reliable way to get this right the first time is to get a device directly from Joe Aumentado at NIST and use his design of sample box and board.  Typically what is used is an OFHC machined copper box with one SMA port which launches to a circuit board designed to match silicon wafers in both thickness and dielectric constant(about 300 microns and 10-11, raspectively).  This box has a cavity machined in it with the size for a rare earth magnet to sit which will keep the aluminum normal.  If you're using this in a experiment with qubits this can be problematic since you don't want stray fields to affect your other experiments.  There is no well established way to solve this problem at this time.  Junctions can be fabricated with manganese doped aluminum which don't require a magnetic field to remain normal at all temperatures, and if this were ever scaled up that is the correct solution.  In the mean time if you have a large magnet on your fridge you can ramp that up for this experiment then ramp it back down for your qubit experiments, or put the tunnel junction as far as you can from the qubits, and add mu metal shielding as needed.
-</p>
-<p>
+
+
+
+
     The next stage after the sample holder is the bias tee.  The bias tees which are widely trusted cold over large frequency range are the Anritsu bias tees, which go up to almost 20 GHz.
-</p>
+
 <h4>III. Pre-Cooldown and Cooldown Checklist</h4>
-<figure>
-<img src = "svg/svg1519861628.svg"/><!--img-->
-<figcaption>Figure x. </figcaption>
-</figure>
+
+\begin{figure}
+
+\includegraphics[width=\linewidth]{../svg/svg1519861628.svg}
+
+\caption{Figure x. }
+\end{figure}
+
 
 <ol>
     <li>
@@ -64,3 +82,4 @@ In order to get this device in the fridge you first need to put the chip in an a
 <h4>VI. Amplifier Metrology</h4>
 
 <h4>VII. Future Work</h4>
+\end{document}
