@@ -11,5 +11,6 @@
 "php/text2php.txt",
 "scrolls/main.txt",
 "scrolls/notes.txt",
+"scrolls/quantumartmanifesto.txt",
 "scrolls/replicator.txt"
 ]
