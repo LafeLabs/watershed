@@ -1,9 +1,13 @@
 <?php
 
-    $url = "https://raw.githubusercontent.com/LafeLabs/watershed/master/replicators/latexscroll/json/dna.txt";
+    $url = "https://raw.githubusercontent.com/LafeLabs/watershed/master/replicators/dirtree/quantumart/papers/json/dna.txt";
     $dnaraw = file_get_contents($url);
     $dna =json_decode($dnaraw);
     $baseurl = explode("json",$url)[0];
+
+    if(!file_exists("latex")){
+            mkdir("latex");
+    }
 
     foreach ($dna as $value) {
         $filetype =  explode('/',$value)[0];
