@@ -7,5 +7,22 @@ The scroll editor requires that you have access to a web server with php running
     The most basic replication method which anyone can use, including on a public terminal, with no money and no resources and no special code skills is the one we start with here, which involves replicating the editor on 000webhost, a free web hosting site.  
 </p>
 <p>
-    First get yourself an account, the free one, at <a href = "https://www.000webhost.com/free-website-sign-up">https://www.000webhost.com/free-website-sign-up</a>.  
+    First get yourself an account, the free one, at <a href = "https://www.000webhost.com/free-website-sign-up">https://www.000webhost.com/free-website-sign-up</a>.  Php is a programming language which pretty universally runs on web servers, and 000webhost is no exception.  So we can immediately use our php scripts to replicate on this server. 
+</p>
+
+
+<p>
+First, make a empty new directory on your web server that has php installed.  In that empty directory make a file called replicator.php and copy the code into it from this link:
+</p>
+<p>
+<a href = "https://raw.githubusercontent.com/LafeLabs/watershed/master/replicators/htmlscroll/php/replicator.txt">https://raw.githubusercontent.com/LafeLabs/watershed/master/replicators/htmlscroll/php/replicator.txt</a>
+</p>
+<p>
+Save it.  Then either navigate your browser to [your domain]/[new directory you just made]/replicator.php or go to the command line, go into the new directory and type php replicator.php.  This will create several new directories and files automatically as it fetches the raw code from github.  
+</p>
+<p>Keeping this page open in one browser, open a second browser or tab and load [your domain]/[your new directory]/scrolleditor.php.
+Scrolleditor.php is the program used to create this document you are reading now, which is in a file called scrolls/main.txt.  This is a fragment of html which we call a "scroll" because it is intended to be viewed in a scrolling configuration in a website, the parameters of which are determined elsewhere in the code.  Try changing the code in the middle panel.  You should see the html rendering change in the left panel instantly.  After doing your change, hit the white link in the upper right panel marked "main2index.php".  This will run a php script that converts this scroll along with some other html and css code into a file called index.html, meaning that if someone random on the Web points a browser to [your domain]/[your new directory] with no further characters in the browser url field they will see this page! 
+</p>
+<p>
+This is world writeable.  So if this random Web user clicks on the scrolleditor.php link they'll be editing this as well! No passwords! No accounts!  Free form!  
 </p>

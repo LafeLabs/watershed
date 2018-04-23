@@ -8,11 +8,27 @@
         <a id = "scrolleditorlink" href = "scrolleditor.php">scrolleditor.php</a>
         <div id = "readerscroll" class = "scroll">
 
-
-<h2>main.txt</h2>
 <p>
-    Here is a document.  Yes. Here it is.
+<a href = "editor.php">editor.php</a>
 </p>
+<p>
+<a href = "scrolleditor.php">scrolleditor.php</a>
+</p>
+
+<h2>Self Replicating Web Page</h2>
+<p>
+First, make a empty new directory on your web server that has php installed.  In that empty directory make a file called replicator.php and copy the code into it from this link:
+</p>
+<p>
+<a href = "https://raw.githubusercontent.com/LafeLabs/watershed/master/replicators/htmlscroll/php/replicator.txt">https://raw.githubusercontent.com/LafeLabs/watershed/master/replicators/htmlscroll/php/replicator.txt</a>
+</p>
+<p>
+Save it.  Then either navigate your browser to [your domain]/[new directory you just made]/replicator.php or go to the command line, go into the new directory and type php replicator.php.  This will create several new directories and files automatically as it fetches the raw code from github.  
+</p>
+<p>Keeping this page open in one browser, open a second browser or tab and load [your domain]/[your new directory]/scrolleditor.php.
+Scrolleditor.php is the program used to create this document you are reading now, which is in a file called scrolls/main.txt.  This is a fragment of html which we call a "scroll" because it is intended to be viewed in a scrolling configuration in a website, the parameters of which are determined elsewhere in the code.  
+</p>
+
 
         </div>
 
