@@ -21,6 +21,15 @@ for(var index = 0;index < links.length;index++){
     links[index].style.left = (x0 + unit*xvar).toString() + "px";
     var yvar = parseFloat(xy.split(",")[1]);
     links[index].style.top = (y0 - unit*yvar).toString() + "px";
+}
+
+for(var index = 0;index < imgs.length;index++){
+    var xy = latlon2xy(currentJSON.images[index].latlon);
+    var xvar = parseFloat(xy.split(",")[0]);
+    imgs[index].style.left = (x0 + unit*xvar).toString() + "px";
+    var yvar = parseFloat(xy.split(",")[1]);
+    imgs[index].style.top = (y0 - unit*yvar).toString() + "px";
+    imgs[index].style.width = (unit*currentJSON.images[index].unitfeet/currentJSON.unitfeet).toString() + "px";
 
 }
 

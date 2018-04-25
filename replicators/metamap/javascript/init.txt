@@ -35,3 +35,11 @@ for(var index = 0;index < currentJSON.links.length;index++){
     document.getElementById("page").appendChild(newa);
 }
 links = document.getElementsByClassName("links");
+
+for(var index = 0;index < currentJSON.images.length;index++){
+    var newimg = document.createElement("img");
+    newimg.className = "imgs";
+    newimg.src = currentJSON.images[index].url;
+    document.getElementById("page").appendChild(newimg);
+}
+imgs = document.getElementsByClassName("imgs");

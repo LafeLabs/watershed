@@ -4,6 +4,10 @@
     background-color:white;
     z-index:1;
 }
+.imgs{
+    position:absolute;
+    z-index:-1;
+}
  #svglink{
      position:absolute;
      left:50%;
