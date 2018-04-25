@@ -1,31 +1,6 @@
- document.getElementById("loadbytecode").onclick = function(){
-  
-    var inputbytecode = document.getElementById("textIO").value;
-    var bytecodearray = inputbytecode.split("\n");
-    for(var index = 0;index < bytecodearray.length;index++){
-        if(bytecodearray[index].includes(":")){
-            var localBytecode = bytecodearray[index].split(":");
-            var localAddress = parseInt(localBytecode[0],8);
-            currentTable[localAddress] = localBytecode[1];
-        }
-    }
-    currentGlyph = currentTable[currentAddress] + ",0207,";
-    redraw();
- }
- 
- document.getElementById("savesvg").onclick = function(){
-        currentJSON = {};
-        currentJSON.glyph = currentTable[currentAddress];
-        currentJSON.unit = unit;
-        currentJSON.x0 = x0;
-        currentJSON.y0 = y0;
-        currentJSON.x0rel = (x0 - 0.5*innerWidth)/unit;
-        currentJSON.y0rel = (y0 - 0.5*innerHeight)/unit;
-        currentJSON.imgurl = imagedata[0].value;
-        currentJSON.imgw = parseFloat(imagedata[1].value);
-        currentJSON.imgleft = parseFloat(imagedata[2].value);
-        currentJSON.imgtop = parseFloat(imagedata[3].value);
-
+document.getElementById("savesvg").onclick = function(){
+        svgwidth = 800;
+        svgheight = 800;
         tempx0 = x0;
         tempy0 = y0;
         x0 -= 0.5*(innerWidth - svgwidth);
@@ -34,37 +9,37 @@
         currentSVG = "<svg width=\"" + svgwidth.toString() + "\" height=\"" + svgheight.toString() + "\" viewbox = \"0 0 " + svgwidth.toString() + " " + svgheight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
         currentSVG += "\n<!--\n<json>\n" + JSON.stringify(currentJSON,null,"    ") + "\n</json>\n-->\n";
         doTheThing(0300);
-        drawGlyph(currentTable[currentAddress]);
+        drawGlyph(currentJSON.currentGlyph);
         currentSVG += "</svg>";
         document.getElementById("textIO").value = currentSVG;
         var httpc = new XMLHttpRequest();
         var url = "feedsaver.php";        
         httpc.open("POST", url, true);
         httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        httpc.send("data=" + encodeURIComponent(document.getElementById("textIO").value));//send text to saver.php
         x0 = tempx0;
         y0 = tempy0;
         redraw();
  }
  
- document.getElementById("exportbytecode").onclick = function(){
-        var localString = "";
-        for(var index = 0220;index < 0247;index++){
-            localString += "0" + index.toString(8) + ":" + currentTable[index] + "\n"; 
-        }
-        for(var index = 01220;index < 01247;index++){
-            localString += "0" + index.toString(8) + ":" + currentTable[index] + "\n"; 
-        }
-        document.getElementById("textIO").value = localString;
-
+ document.getElementById("findme").onclick = function(){
+     
  }
- 
-    controls[0].onchange = function(){
-        currentAddress = parseInt(this.value,8);
-        currentGlyph = currentTable[currentAddress] + ",0207,";
-        redraw();
-    }
- controls[1].onkeydown = function(e) {
+
+document.getElementById("importmap").onclick = function(){
+    
+}
+
+document.getElementById("exportmap").onclick = function(){
+    
+}
+
+controls[0].onchange = function(){
+    currentAddress = parseInt(this.value,8);
+    currentGlyph = currentTable[currentAddress] + ",0207,";
+    redraw();
+}
+
+controls[1].onkeydown = function(e) {
         charCode = e.keyCode || e.which;
         if(charCode == 010){
             doTheThing(010);

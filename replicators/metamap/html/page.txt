@@ -34,8 +34,9 @@
 </table>
 <table id = "buttonTable">
 <tr><td class = "button" id = "savesvg">SAVE SVG</td></tr>
-<tr><td class = "button" id = "loadbytecode">LOAD BYTECODE</td></tr>
-<tr><td class = "button" id = "exportbytecode">EXPORT TABLE</td></tr>
+<tr><td class = "button" id = "importmap">IMPORT MAP</td></tr>
+<tr><td class = "button" id = "exportmap">EXPORT MAP</td></tr>
+<tr><td class = "button" id = "findme">FIND ME</td></tr>
 </table>
 
 <img id = "mainImage"/>

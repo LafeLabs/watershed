@@ -2,7 +2,9 @@
 ctx = document.getElementById("mainCanvas").getContext("2d");
 ctx.clearRect(0,0,innerWidth,innerHeight);
 doTheThing(0300);
-drawGlyph(currentJSON.glyph0)
+drawGlyph(currentJSON.glyph0);
+doTheThing(0300);
+drawGlyph(currentJSON.currentGlyph);
 doTheThing(0300);
 var xy = latlon2xy(currentJSON.latlon1);
 var xvar = parseFloat(xy.split(",")[0]);
