@@ -1,0 +1,34 @@
+       
+ctx = document.getElementById("mainCanvas").getContext("2d");
+ctx.clearRect(0,0,innerWidth,innerHeight);
+doTheThing(0300);
+drawGlyph(currentJSON.glyph0)
+doTheThing(0300);
+var xy = latlon2xy(currentJSON.latlon1);
+var xvar = parseFloat(xy.split(",")[0]);
+x = x0 + unit*xvar;
+var yvar = parseFloat(xy.split(",")[1]);
+y = y0 - unit*yvar;
+drawGlyph(currentJSON.glyph1);
+document.getElementById("mainImage").style.width = (currentJSON.imgw*unit).toString()  + "px";
+document.getElementById("mainImage").style.left = (x0 + currentJSON.imgleft*unit).toString()  + "px";
+document.getElementById("mainImage").style.top = (y0 + currentJSON.imgtop*unit).toString()  + "px";
+
+
+for(var index = 0;index < links.length;index++){
+    var xy = latlon2xy(currentJSON.links[index].latlon);
+    var xvar = parseFloat(xy.split(",")[0]);
+    links[index].style.left = (x0 + unit*xvar).toString() + "px";
+    var yvar = parseFloat(xy.split(",")[1]);
+    links[index].style.top = (y0 - unit*yvar).toString() + "px";
+
+}
+
+
+currentFile = "json/currentjson.txt";
+data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
+var httpc = new XMLHttpRequest();
+var url = "filesaver.php";        
+httpc.open("POST", url, true);
+httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php

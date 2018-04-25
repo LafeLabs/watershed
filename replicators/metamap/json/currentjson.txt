@@ -1,0 +1,40 @@
+{
+    "imgurl": "https://i.imgur.com/t8GMiKT.jpg",
+    "imgw": "21",
+    "imgleft": "-8.5",
+    "imgtop": "-10.7",
+    "unitpixels": 100,
+    "unitfeet": 400,
+    "latlon0": "28.6024,-81.2002",
+    "marker0": "center",
+    "glyph0": "0341,0340,",
+    "latlon1": "28.6056,-81.2002",
+    "marker1": "apollo noon",
+    "glyph1": "0341,0340,",
+    "glyphs": [
+        {
+            "glyph": "0341,0337,0341,0337,0341,0336,0336,0314,0337,0341,",
+            "latlon": "28.6024,-81.2002",
+            "sidefeet": 400
+        }
+    ],
+    "links": [
+        {
+            "url": "https://sciences.ucf.edu/physics/",
+            "text": "physics department",
+            "latlon": "28.599889, -81.198053",
+            "unitfeet": 100
+        }
+    ],
+    "images": [
+        {
+            "url": "https://i.imgur.com/rV9CWwx.jpg",
+            "latlon": "28.599889, -81.198053",
+            "unitfeet": 10
+        }
+    ],
+    "avatar": {
+        "glyph": "0200,",
+        "sidefeet": 10
+    }
+}

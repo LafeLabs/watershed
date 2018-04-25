@@ -1,0 +1,37 @@
+doTheThing(06);//import embedded hypercube in this .html doc
+doTheThing(07);//initialize Geometron global variables
+
+document.getElementById("mainCanvas").width = innerWidth;
+document.getElementById("mainCanvas").height = innerHeight;
+
+x0 = innerWidth/2;
+y0 = innerHeight/2;    
+
+controls = document.getElementById("controlTable").getElementsByTagName("input");   
+imagedata = document.getElementById("imageTable").getElementsByTagName("input");
+
+currentAddress = 0250;
+currentGlyph = currentTable[currentAddress] + ",0207,";
+ 
+unit = 100;
+svgwidth = 500;
+svgheight = 500;
+
+currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
+unit = currentJSON.unitpixels;
+
+document.getElementById("mainImage").src = currentJSON.imgurl;
+
+imagedata[0].value = currentJSON.imgurl;
+imagedata[1].value = currentJSON.imgw;
+imagedata[2].value = currentJSON.imgtop;
+imagedata[3].value = currentJSON.imgleft;
+
+for(var index = 0;index < currentJSON.links.length;index++){
+    var newa = document.createElement("a");
+    newa.className = "links";
+    newa.innerHTML = currentJSON.links[index].text;
+    newa.href = currentJSON.links[index].url;
+    document.getElementById("page").appendChild(newa);
+}
+links = document.getElementsByClassName("links");
