@@ -33,6 +33,11 @@ document.getElementById("exportmap").onclick = function(){
     
 }
 
+document.getElementById("editmode").onclick = function(){
+    glyphEditMode = !glyphEditMode;
+    redraw();
+}
+
 controls[0].onchange = function(){
     currentAddress = parseInt(this.value,8);
     currentGlyph = currentTable[currentAddress] + ",0207,";

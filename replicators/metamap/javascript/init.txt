@@ -11,11 +11,8 @@ controls = document.getElementById("controlTable").getElementsByTagName("input")
 imagedata = document.getElementById("imageTable").getElementsByTagName("input");
 
 currentAddress = 0250;
-currentGlyph = currentTable[currentAddress] + ",0207,";
  
 unit = 100;
-svgwidth = 500;
-svgheight = 500;
 
 currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
 unit = currentJSON.unitpixels;
@@ -43,3 +40,6 @@ for(var index = 0;index < currentJSON.images.length;index++){
     document.getElementById("page").appendChild(newimg);
 }
 imgs = document.getElementsByClassName("imgs");
+currentGlyph = currentJSON.currentGlyph + ",0207,";
+
+glyphEditMode = false;
