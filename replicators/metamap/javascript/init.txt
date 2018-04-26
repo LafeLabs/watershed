@@ -41,6 +41,7 @@ for(var index = 0;index < currentJSON.images.length;index++){
 }
 imgs = document.getElementsByClassName("imgs");
 currentGlyph = currentJSON.currentGlyph + ",0207,";
-
+herelatlon = currentJSON.latlon0;
 glyphEditMode = false;
 mainImageOn = true;
+avatarBool = false;

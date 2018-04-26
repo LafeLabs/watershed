@@ -23,15 +23,30 @@ document.getElementById("savesvg").onclick = function(){
  }
  
  document.getElementById("findme").onclick = function(){
-     
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+            alert("Geolocation is not supported by this browser.");
+    }
+    function showPosition(position) {
+        mylat = position.coords.latitude;
+        mylon = position.coords.longitude;
+        herelatlon = mylat.toString() + "," + mylon.toString();
+        avatarBool = true;
+        redraw();
+    }
+
  }
 
 document.getElementById("importmap").onclick = function(){
-    
+    if(document.getElementById("textIO").value.length > 1){
+        currentJSON = JSON.parse(document.getElementById("textIO").value);
+        redraw();
+    }
 }
 
 document.getElementById("exportmap").onclick = function(){
-    
+    document.getElementById("textIO").value = JSON.stringify(currentJSON,null,"    ");
 }
 
 document.getElementById("editmode").onclick = function(){

@@ -48,6 +48,8 @@
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
 
+    <div class = "php file">php/linkeditor.txt</div>
+    <div class = "php file">php/imageeditor.txt</div>
 
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/currentjson.txt</div>

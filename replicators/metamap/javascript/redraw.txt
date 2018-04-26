@@ -25,6 +25,25 @@ y = y0 - unit*yvar;
 
 drawGlyph(currentJSON.glyph1);
 
+
+if(avatarBool){
+        doTheThing(0300);
+        var xy = latlon2xy(herelatlon);
+        var xvar = parseFloat(xy.split(",")[0]);
+        x = x0 + unit*xvar;
+        var yvar = parseFloat(xy.split(",")[1]);
+        y = y0 - unit*yvar;
+        side = unit*currentJSON.avatar.unitfeet/currentJSON.unitfeet;
+        console.log(side);
+        console.log(",");
+        console.log(x);
+        console.log(y);
+        drawGlyph(currentJSON.avatar.glyph);
+
+}
+
+
+
 document.getElementById("mainImage").style.width = (currentJSON.imgw*unit).toString()  + "px";
 document.getElementById("mainImage").style.left = (x0 + currentJSON.imgleft*unit).toString()  + "px";
 document.getElementById("mainImage").style.top = (y0 + currentJSON.imgtop*unit).toString()  + "px";
