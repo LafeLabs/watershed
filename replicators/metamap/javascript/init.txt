@@ -43,3 +43,4 @@ imgs = document.getElementsByClassName("imgs");
 currentGlyph = currentJSON.currentGlyph + ",0207,";
 
 glyphEditMode = false;
+mainImageOn = true;

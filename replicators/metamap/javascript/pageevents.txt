@@ -16,6 +16,7 @@ document.getElementById("savesvg").onclick = function(){
         var url = "feedsaver.php";        
         httpc.open("POST", url, true);
         httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        httpc.send("data=" + encodeURIComponent(document.getElementById("textIO").value));//send text to saver.php
         x0 = tempx0;
         y0 = tempy0;
         redraw();
@@ -36,6 +37,16 @@ document.getElementById("exportmap").onclick = function(){
 document.getElementById("editmode").onclick = function(){
     glyphEditMode = !glyphEditMode;
     redraw();
+}
+
+document.getElementById("imageon").onclick = function(){
+    if(!mainImageOn){
+        document.getElementById("mainImage").style.display = "block";
+    }
+    else{
+        document.getElementById("mainImage").style.display = "none";
+    }
+    mainImageOn = !mainImageOn;
 }
 
 controls[0].onchange = function(){

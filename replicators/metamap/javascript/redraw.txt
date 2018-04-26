@@ -3,7 +3,6 @@ ctx = document.getElementById("mainCanvas").getContext("2d");
 ctx.clearRect(0,0,innerWidth,innerHeight);
 doTheThing(0300);
 drawGlyph(currentJSON.glyph0);
-
 doTheThing(0300);
 if(glyphEditMode){
     drawGlyph(currentGlyph);
@@ -25,6 +24,7 @@ var yvar = parseFloat(xy.split(",")[1]);
 y = y0 - unit*yvar;
 
 drawGlyph(currentJSON.glyph1);
+
 document.getElementById("mainImage").style.width = (currentJSON.imgw*unit).toString()  + "px";
 document.getElementById("mainImage").style.left = (x0 + currentJSON.imgleft*unit).toString()  + "px";
 document.getElementById("mainImage").style.top = (y0 + currentJSON.imgtop*unit).toString()  + "px";

@@ -35,6 +35,7 @@
 <table id = "buttonTable">
 <tr><td class = "button" id = "savesvg">SAVE SVG</td></tr>
 <tr><td class = "button" id = "editmode">EDIT MODE</td></tr>
+<tr><td class = "button" id = "imageon">IMAGE MODE</td></tr>
 <tr><td class = "button" id = "importmap">IMPORT MAP</td></tr>
 <tr><td class = "button" id = "exportmap">EXPORT MAP</td></tr>
 <tr><td class = "button" id = "findme">FIND ME</td></tr>
