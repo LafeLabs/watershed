@@ -16,11 +16,20 @@ document.getElementById("savesvg").onclick = function(){
         var url = "feedsaver.php";        
         httpc.open("POST", url, true);
         httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        httpc.send("data=" + encodeURIComponent(document.getElementById("textIO").value));//send text to saver.php
+        httpc.send("data=" + encodeURIComponent(document.getElementById("textIO").value));//send text to feedsaver.php
         x0 = tempx0;
         y0 = tempy0;
         redraw();
  }
+ 
+ 
+ document.getElementById("savemap").onclick = function(){
+        var httpc = new XMLHttpRequest();
+        var url = "mapsaver.php";        
+        httpc.open("POST", url, true);
+        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        httpc.send("data=" + encodeURIComponent(JSON.stringify(currentJSON,null,"    ")));//send text to mapsaver.php
+}
  
  document.getElementById("findme").onclick = function(){
     if (navigator.geolocation) {

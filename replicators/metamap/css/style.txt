@@ -20,6 +20,12 @@
      top:10px;
      z-index:2;
  }
+ #maplink{
+     position:absolute;
+     left:50%;
+     top:30px;
+     z-index:2;
+ }
  #editorlink{
      position:absolute;
      left:70%;
@@ -90,7 +96,7 @@ table{
 #buttonTable{
     position:absolute;
     left:15px;
-    top:50%;
+    top:40%;
 }
 img{
     position:absolute;

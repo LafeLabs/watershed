@@ -1,4 +1,6 @@
 <a  id = "svglink" href = "svg/">SVG Feed</a>
+<a  id = "maplink" href = "maps/">map Feed</a>
+
 <a  id = "editorlink" href = "editor.php">editor.php</a>
 <canvas id="invisibleCanvas" style="display:none"></canvas>
 <canvas id="mainCanvas"></canvas>
