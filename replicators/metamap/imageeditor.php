@@ -18,7 +18,7 @@
                 <td>url:</td><td><input/></td>
             </tr>
             <tr>
-                <td>text:</td><td><input/></td>
+                <td>unitfeet:</td><td><input/></td>
             </tr>
             <tr>
                 <td>latlon:</td><td><input/></td>
@@ -28,10 +28,80 @@
         <script>
             currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
             document.getElementById("textIO").value = JSON.stringify(currentJSON.images,null,"    ");
-        
+            imageIndex = 0;
+            inputs = document.getElementsByTagName("input");
+            buttons = document.getElementsByClassName("button");
+            redraw();
+            
+            function redraw(){
+                inputs[0].value = currentJSON.images[imageIndex].url;
+                inputs[1].value = currentJSON.images[imageIndex].unitfeet;
+                inputs[2].value = currentJSON.images[imageIndex].latlon;
+            }
+            function redraw2(){
+                    document.getElementById("textIO").value = JSON.stringify(currentJSON.images,null,"    ");
+                    data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
+                    var httpc = new XMLHttpRequest();
+                    var url = "filesaver.php";        
+                    httpc.open("POST", url, true);
+                    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+                    httpc.send("data="+data+"&filename=json/currentjson.txt");//send text to filesaver.php
+            }
+            
+            inputs[0].onchange = function(){
+                    currentJSON.images[imageIndex].url = this.value;
+                    redraw2();
+            }
+            inputs[1].onchange = function(){
+                    currentJSON.images[imageIndex].unitfeet = parseInt(this.value);
+                    redraw2();
+            }
+            inputs[2].onchange = function(){
+                    currentJSON.images[imageIndex].latlon = this.value;
+                    redraw2();
+            }
+            
+            buttons[0].onclick  = function(){
+                imageIndex--;
+                if(imageIndex < 0){
+                    imageIndex = currentJSON.images.length - 1;
+                }                
+                redraw();
+                console.log(imageIndex);
+            }
+            buttons[1].onclick  = function(){
+                imageIndex++;
+                if(imageIndex >= currentJSON.images.length){
+                    imageIndex = 0;
+                }               
+                redraw();
+            }
+    
+
+document.getElementById("textIO").onkeyup = function(){
+    currentJSON.images = JSON.parse(document.getElementById("textIO").value);
+    data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data+"&filename=json/currentjson.txt");//send text to filesaver.php
+    redraw();
+}
+
+
+
         </script>
         <style>
+            body{
+                font-family:courier;
+                font-size:18px;
+            }
             #textIO{
+                font-family:courier;
+                font-size:18px;
+                color:#00ff00;
+                background-color:black;
                 position:absolute;
                 left:50%;
                 right:0px;
@@ -40,6 +110,13 @@
             }
             .button{
                 cursor:pointer;
+            }
+            .button:hover{
+                background-color:green;
+                
+            }
+            .button:active{
+                background-color:yellow;
             }
         </style>
     </body>

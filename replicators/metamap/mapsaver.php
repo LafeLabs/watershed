@@ -18,7 +18,7 @@ document.getElementById("savemap").onclick = function(){
 
     $oldfeed = file_get_contents("maps/index.html"); 
     $file = fopen("maps/index.html","w");// create new file with this name
-    fwrite($file,"<p><a href = \"maps/".$filename."\">maps/".$filename."</a></p>\n".$oldfeed); //write data to file
+    fwrite($file,"<p><a href = \"".$filename."\">".$filename."</a></p>\n".$oldfeed); //write data to file
     fclose($file);  //close file
 
 ?>

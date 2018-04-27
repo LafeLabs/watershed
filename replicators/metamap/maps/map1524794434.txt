@@ -27,8 +27,8 @@
     "images": [
         {
             "url": "https://i.imgur.com/rV9CWwx.jpg",
-            "latlon": "28.599889, -81.1981",
-            "unitfeet": 503
+            "latlon": "28.599889, -81.1980",
+            "unitfeet": 501
         },
         {
             "url": "https://i.imgur.com/8nGddQU.jpg",
