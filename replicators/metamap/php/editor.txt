@@ -13,6 +13,11 @@
     <a href = "linkeditor.php">linkeditor.php</a>
     <a href = "imageeditor.php">imageeditor.php</a>
 
+    <a href = "imageeditor.php">backgroundimageeditor.php</a>
+    <a href = "imageeditor.php">glypheditor.php</a>
+    <a href = "imageeditor.php">shapetableeditor.php</a>
+    <a href = "imageeditor.php">latlon.php</a>
+
 
     <div class = "button" id = "imgbutton">&ltIMG src = " "/&gt</div>
     <div class = "button" id = "pbutton">&ltP&gt  &lt/P&gt</div>
@@ -23,6 +28,13 @@
 
 <div id = "filescroll">
     <div class = "html file">html/page.txt</div>
+
+    <div class = "scrolls file">scrolls/sticks.txt</div>
+    <div class = "scrolls file">scrolls/rocks.txt</div>
+    <div class = "scrolls file">scrolls/images.txt</div>
+    <div class = "scrolls file">scrolls/links.txt</div>
+    <div class = "scrolls file">scrolls/glyphs.txt</div>
+
 
     <div class = "css file">css/style.txt</div>
 
@@ -54,6 +66,10 @@
 
     <div class = "php file">php/linkeditor.txt</div>
     <div class = "php file">php/imageeditor.txt</div>
+    <div class = "php file">php/backgroundimageeditor.txt</div>
+    <div class = "php file">php/glypheditor.txt</div>
+    <div class = "php file">php/shapetableeditor.txt</div>
+    <div class = "php file">php/latlon.txt</div>
 
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/currentjson.txt</div>
