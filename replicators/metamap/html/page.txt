@@ -3,6 +3,16 @@
 <canvas id="invisibleCanvas" style="display:none"></canvas>
 <canvas id="mainCanvas"></canvas>
 <textarea id="textIO"></textarea>
+<table id = "zoompan">
+    <tr>
+        <td class = "button">up</td>
+        <td class = "button">down</td>
+        <td class = "button">left</td>
+        <td class = "button">right</td>
+        <td class = "button">out</td>
+        <td class = "button">in</td>
+    </tr>
+</table>
 <table id = "controlTable">
     <tr>
         <td>ADDRESS:</td><td><input/></td>
@@ -34,6 +44,7 @@
 </table>
 <table id = "buttonTable">
 <tr><td class = "button" id = "savesvg">SAVE SVG</td></tr>
+<tr><td class = "button" id = "savemap">SAVE MAP</td></tr>
 <tr><td class = "button" id = "editmode">EDIT MODE</td></tr>
 <tr><td class = "button" id = "imageon">IMAGE MODE</td></tr>
 <tr><td class = "button" id = "importmap">IMPORT MAP</td></tr>

@@ -223,3 +223,22 @@ imagedata[3].onchange = function(){
     currentJSON.imgleft = this.value;
     redraw();
 }
+
+zoompanbuttons[0].onclick = function(){
+    doTheThing(030);
+}
+zoompanbuttons[1].onclick = function(){
+    doTheThing(031);
+}
+zoompanbuttons[2].onclick = function(){
+    doTheThing(032);
+}
+zoompanbuttons[3].onclick = function(){
+    doTheThing(033);
+}
+zoompanbuttons[4].onclick = function(){
+    doTheThing(036);
+}
+zoompanbuttons[5].onclick = function(){
+    doTheThing(037);
+}

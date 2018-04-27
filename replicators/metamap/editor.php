@@ -10,6 +10,8 @@
     <a href = "index.php">index.php</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
     <a href = "scrolleditor.php">scrolleditor.php</a>
+    <a href = "imageeditor.php">imageeditor.php</a>
+
 
     <div class = "button" id = "imgbutton">&ltIMG src = " "/&gt</div>
     <div class = "button" id = "pbutton">&ltP&gt  &lt/P&gt</div>

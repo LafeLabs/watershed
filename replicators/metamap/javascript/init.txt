@@ -43,5 +43,9 @@ imgs = document.getElementsByClassName("imgs");
 currentGlyph = currentJSON.currentGlyph + ",0207,";
 herelatlon = currentJSON.latlon0;
 glyphEditMode = false;
-mainImageOn = true;
+mainImageOn = false;
+document.getElementById("mainImage").style.display = "none";
 avatarBool = false;
+
+zoompanbuttons = document.getElementById("zoompan").getElementsByClassName("button");
+
