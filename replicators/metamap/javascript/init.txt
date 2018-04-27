@@ -15,6 +15,11 @@ currentAddress = 0250;
 unit = 100;
 
 currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
+
+if(document.getElementById("extdatadiv").innerHTML.length > 10){
+    currentJSON = JSON.parse(document.getElementById("extdatadiv").innerHTML);
+}
+
 unit = currentJSON.unitpixels;
 
 document.getElementById("mainImage").src = currentJSON.imgurl;

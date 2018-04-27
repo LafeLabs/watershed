@@ -20,7 +20,7 @@
         },
         {
             "url": "http://locations.einsteinbros.com",
-            "text": "Einstein Bagel",
+            "text": "Einstein Bagelzzzzzzz",
             "latlon": "28.601115, -81.199387"
         }
     ],
