@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>Basic GEometron Replicator</title>
+<title>Metamap</title>
 <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 -->

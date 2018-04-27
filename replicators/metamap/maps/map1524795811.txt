@@ -15,8 +15,8 @@
     "links": [
         {
             "url": "https://sciences.ucf.edu/physics/",
-            "text": "Physics Department",
-            "latlon": "28.5999, -81.198053"
+            "text": "physics department",
+            "latlon": "28.599889, -81.198053"
         },
         {
             "url": "http://locations.einsteinbros.com",

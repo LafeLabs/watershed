@@ -10,6 +10,7 @@
     <a href = "index.php">index.php</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
     <a href = "scrolleditor.php">scrolleditor.php</a>
+    <a href = "linkeditor.php">linkeditor.php</a>
     <a href = "imageeditor.php">imageeditor.php</a>
 
 
