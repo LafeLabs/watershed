@@ -29,6 +29,7 @@
 "php/filesaver.txt",
 "php/imageeditor.txt",
 "php/index.txt",
+"php/latlon.txt",
 "php/linkeditor.txt",
 "php/mapsaver.txt",
 "php/replicator.txt",
