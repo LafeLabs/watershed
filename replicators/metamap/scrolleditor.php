@@ -20,6 +20,14 @@
     <div class = "scrolls file">scrolls/replicator.txt</div>
     <div class = "scrolls file">scrolls/main.txt</div>
     <div class = "scrolls file">scrolls/notes.txt</div>
+    
+    <div class = "scrolls file">scrolls/sticks.txt</div>
+    <div class = "scrolls file">scrolls/rocks.txt</div>
+    <div class = "scrolls file">scrolls/images.txt</div>
+    <div class = "scrolls file">scrolls/links.txt</div>
+    <div class = "scrolls file">scrolls/glyphs.txt</div>
+    <div class = "scrolls file">scrolls/workflows.txt</div>
+
 </div>
 <textarea id = "texbox"></textarea>
 <script>

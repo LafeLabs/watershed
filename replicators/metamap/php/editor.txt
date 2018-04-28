@@ -13,10 +13,10 @@
     <a href = "linkeditor.php">linkeditor.php</a>
     <a href = "imageeditor.php">imageeditor.php</a>
 
-    <a href = "imageeditor.php">backgroundimageeditor.php</a>
-    <a href = "imageeditor.php">glypheditor.php</a>
-    <a href = "imageeditor.php">shapetableeditor.php</a>
-    <a href = "imageeditor.php">latlon.php</a>
+    <a href = "backgroundimageeditor.php">backgroundimageeditor.php</a>
+    <a href = "glypheditor.php">glypheditor.php</a>
+    <a href = "shapetableeditor.php">shapetableeditor.php</a>
+    <a href = "latlon.php">latlon.php</a>
 
 
     <div class = "button" id = "imgbutton">&ltIMG src = " "/&gt</div>
@@ -34,6 +34,7 @@
     <div class = "scrolls file">scrolls/images.txt</div>
     <div class = "scrolls file">scrolls/links.txt</div>
     <div class = "scrolls file">scrolls/glyphs.txt</div>
+    <div class = "scrolls file">scrolls/workflows.txt</div>
 
 
     <div class = "css file">css/style.txt</div>

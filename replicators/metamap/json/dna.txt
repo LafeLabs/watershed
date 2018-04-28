@@ -33,5 +33,6 @@
 "php/mapsaver.txt",
 "php/replicator.txt",
 "php/scrolleditor.txt",
-"php/text2php.txt"
+"php/text2php.txt",
+"scrolls/workflows.txt"
 ]
