@@ -15,6 +15,10 @@
         LOOK TO THE FUNGI
         LOOK TO THE INSECTS
         LANGUAGE IS HOW THE MIND PARSES REALITY
+
+    Please note that this code is all client-side and does not connect to any database.  The information here is
+    not connected in any way to anything, not your local filesystem on your machine nor any remote server or cloud or other Evil entity.   Please keep it that way in future itterations of this code!  
+
     -->
 </head>
 <body>

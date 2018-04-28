@@ -12,6 +12,7 @@
     <a href = "scrolleditor.php">scrolleditor.php</a>
     <a href = "linkeditor.php">linkeditor.php</a>
     <a href = "imageeditor.php">imageeditor.php</a>
+    <a href = "scrolls2index.php">scrolls2index.php</a>
 
     <a href = "backgroundimageeditor.php">backgroundimageeditor.php</a>
     <a href = "glypheditor.php">glypheditor.php</a>
@@ -63,7 +64,9 @@
     <div class = "php file">php/feedsaver.txt</div>
     <div class = "php file">php/mapsaver.txt</div>
     <div class = "php file">php/text2php.txt</div>
+    <div class = "php file">php/scrolls2index.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
+    
 
     <div class = "php file">php/linkeditor.txt</div>
     <div class = "php file">php/imageeditor.txt</div>
