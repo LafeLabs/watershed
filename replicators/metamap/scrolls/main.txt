@@ -35,6 +35,8 @@
     <li>processed upcycled plastics: bottle caps melted and pressed into usable parts, bottles cut into strips and or loops, cleaned, prepared for manufacturing, aluminum cans cut and processed into solar collectors etc.</li>
     <li>fully functioning robots built in robot factory nodes, upcycled using parts donated by passerby, sold to other passerby</li>
     <li>battery charging as service with bikes</li>
+    <li>sacred geometry artifacts of a magical nature</li>
+    <li>Free Oscillators</li>
 </ul>
 
 

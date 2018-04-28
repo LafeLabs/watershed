@@ -1,9 +1,9 @@
 {
     "imgurl": "https://i.imgur.com/t8GMiKT.jpg",
-    "imgw": "21",
-    "imgleft": "-8.5",
-    "imgtop": "-10.7",
-    "unitpixels": 100,
+    "imgw": 20.1,
+    "imgleft": -8.244242978219498,
+    "imgtop": -10.4849726908707,
+    "unitpixels": 50,
     "unitfeet": 400,
     "latlon0": "28.6024,-81.2002",
     "marker0": "center",
