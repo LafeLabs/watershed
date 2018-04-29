@@ -243,13 +243,16 @@ if(localCommand == 034){//previous page in worldLine
     if(localCommand == 036){
 //<page036>
         unit /= 1.1; 
+        x0 = 0.5*innerWidth + (x0 - 0.5*innerWidth)/1.1;
+        y0 = 0.5*innerHeight + (y0 - 0.5*innerHeight)/1.1;
         redraw();
-
 //</page036>
     }
     if(localCommand == 037){
 //<page037>
         unit *= 1.1; 
+        x0 = 0.5*innerWidth + 1.1*(x0 - 0.5*innerWidth);
+        y0 = 0.5*innerHeight + 1.1*(y0 - 0.5*innerHeight);
         redraw();
 //</page037>
     }
