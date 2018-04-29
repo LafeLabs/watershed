@@ -13,7 +13,8 @@
     <a href = "linkeditor.php">linkeditor.php</a>
     <a href = "imageeditor.php">imageeditor.php</a>
     <a href = "scrolls2index.php">scrolls2index.php</a>
-
+    <a href = "main2html.php">main2html.php</a>
+    <a href = "viewer.php">viewer.php</a>
     <a href = "backgroundimageeditor.php">backgroundimageeditor.php</a>
     <a href = "glypheditor.php">glypheditor.php</a>
     <a href = "shapetableeditor.php">shapetableeditor.php</a>
@@ -67,6 +68,9 @@
     <div class = "php file">php/scrolls2index.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
     
+
+    <div class = "php file">php/viewer.txt</div>
+    <div class = "php file">php/main2html.txt</div>
 
     <div class = "php file">php/linkeditor.txt</div>
     <div class = "php file">php/imageeditor.txt</div>
