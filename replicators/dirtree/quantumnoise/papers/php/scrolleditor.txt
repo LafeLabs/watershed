@@ -35,6 +35,7 @@
     <div class = "scrolls file">scrolls/notes.txt</div>
     <div class = "scrolls file">scrolls/quantumunits.txt</div>
     <div class = "scrolls file">scrolls/metrologyguide.txt</div>
+    <div class = "scrolls file">scrolls/joeversion.txt</div>
     <div class = "scrolls file">scrolls/roadmap.txt</div>
     <div class = "scrolls file">scrolls/calculatorassocialmedia.txt</div>
 

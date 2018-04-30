@@ -123,34 +123,99 @@ function redraw(){
     y = innerHeight - 100;
     spellGlyph(currentGlyph);
     controls[0].value = "0" + currentAddress.toString(8);
-   // currentFile = "json/currentjson.txt";
-
-//    data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
-  //  var httpc = new XMLHttpRequest();
-//    var url = "filesaver.php";        
- ///   httpc.open("POST", url, true);
-//    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
- //   httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+    var glyphArray = currentGlyph.split(",");
+    currentTable[currentAddress] = "";
+    for(var index = 0;index < glyphArray.length;index++){
+        if(glyphArray[index] != "0207" && glyphArray[index].length > 0){
+            currentTable[currentAddress] += glyphArray[index] + ",";
+        }
+    }
 }
 </script>
 <script id = "pageevents">
 
 document.getElementById("actionsymbol").onclick = function(){
-    
+    if(currentAddress < 01000){
+        currentAddress += 01000;
+        currentGlyph = currentTable[currentAddress] + ",0207,";
+        redraw();
+    }
+    else{
+        currentAddress -= 01000;
+        currentGlyph = currentTable[currentAddress] + ",0207,";
+        redraw();
+    }
 }
 document.getElementById("savetable").onclick = function(){
-    
+    currentFile = "bytecode/shapetable.txt";
+    bytecodedata = "";
+    for(var index = 0220;index < 0250;index++){
+        if(currentTable[index].length > 1){
+            bytecodedata += "0" + index.toString(8) + ":" + currentTable[index] + "\n";   
+        }
+    }
+    for(var index = 01220;index < 01250;index++){
+        if(currentTable[index].length > 1){
+            bytecodedata +=  "0" + index.toString(8) + ":" + currentTable[index] + "\n";   
+        }
+    }
+
+    data = encodeURIComponent(bytecodedata);
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
 }
 document.getElementById("savefont").onclick = function(){
+    currentFile = "bytecode/font.txt";
+    bytecodedata = "";
+    for(var index = 01040;index < 01177;index++){
+        if(currentTable[index].length > 1){
+            bytecodedata += "0" + index.toString(8) + ":" + currentTable[index] + "\n";   
+        }
+    }
+    data = encodeURIComponent(bytecodedata);
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
     
 }
 document.getElementById("importbytecode").onclick = function(){
-    
+    var inputbytecode = document.getElementById("textIO").value;
+    var bytecodearray = inputbytecode.split("\n");
+    for(var index = 0;index < bytecodearray.length;index++){
+        if(bytecodearray[index].includes(":")){
+            var localBytecode = bytecodearray[index].split(":");
+            var localAddress = parseInt(localBytecode[0],8);
+            currentTable[localAddress] = localBytecode[1];
+        }
+    }
 }
 document.getElementById("exportshapes").onclick = function(){
-    
+    bytecodedata = "";
+    for(var index = 0220;index < 0250;index++){
+        if(currentTable[index].length > 1){
+            bytecodedata +=  "0" + index.toString(8) + ":" +  currentTable[index] + "\n";   
+        }
+    }
+    for(var index = 01220;index < 01250;index++){
+        if(currentTable[index].length > 1){
+            bytecodedata +=  "0" + index.toString(8) + ":" + currentTable[index] + "\n";   
+        }
+    }
+    document.getElementById("textIO").value = bytecodedata;    
 }
 document.getElementById("exportfont").onclick = function(){
+    bytecodedata = "";
+    for(var index = 01040;index < 01177;index++){
+        if(currentTable[index].length > 1){
+            bytecodedata +=  "0" + index.toString(8) + ":" + currentTable[index] + "\n";   
+        }
+    }
+    document.getElementById("textIO").value = bytecodedata;    
     
 }
 
