@@ -25,6 +25,7 @@
             </tr>
         </table>
         <textarea id = "textIO"></textarea>        
+        <img id = "derp"/>
         <script>
             currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
             document.getElementById("textIO").value = JSON.stringify(currentJSON.images,null,"    ");
@@ -37,6 +38,7 @@
                 inputs[0].value = currentJSON.images[imageIndex].url;
                 inputs[1].value = currentJSON.images[imageIndex].unitfeet;
                 inputs[2].value = currentJSON.images[imageIndex].latlon;
+                document.getElementById("derp").src = currentJSON.images[imageIndex].url;
             }
             function redraw2(){
                     document.getElementById("textIO").value = JSON.stringify(currentJSON.images,null,"    ");
@@ -96,6 +98,12 @@ document.getElementById("textIO").onkeyup = function(){
             body{
                 font-family:courier;
                 font-size:18px;
+            }
+            #derp{
+                position:absolute;
+                left:10px;
+                bottom:10px;
+                width:30%;
             }
             #textIO{
                 font-family:courier;

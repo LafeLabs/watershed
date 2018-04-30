@@ -16,7 +16,7 @@
     </tr>
 </table>
 <table id = "controlTable">
-    <tr>
+    <tr id = "addressline">
         <td>ADDRESS:</td><td><input/></td>
     </tr>
     <tr>
@@ -42,7 +42,6 @@
     <tr>
         <td>IMAGE LEFT:</td><td><input value = "-1"/></td>
     </tr>
-
 </table>
 <table id = "buttonTable">
 <tr><td class = "button" id = "savesvg">SAVE SVG</td></tr>

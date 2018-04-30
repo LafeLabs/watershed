@@ -34,12 +34,7 @@ if(avatarBool){
         var yvar = parseFloat(xy.split(",")[1]);
         y = y0 - unit*yvar;
         side = unit*currentJSON.avatar.unitfeet/currentJSON.unitfeet;
-        console.log(side);
-        console.log(",");
-        console.log(x);
-        console.log(y);
         drawGlyph(currentJSON.avatar.glyph);
-
 }
 
 

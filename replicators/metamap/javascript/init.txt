@@ -10,7 +10,6 @@ y0 = innerHeight/2;
 controls = document.getElementById("controlTable").getElementsByTagName("input");   
 imagedata = document.getElementById("imageTable").getElementsByTagName("input");
 
-currentAddress = 0250;
  
 unit = 100;
 
@@ -47,10 +46,23 @@ for(var index = 0;index < currentJSON.images.length;index++){
 imgs = document.getElementsByClassName("imgs");
 currentGlyph = currentJSON.currentGlyph + ",0207,";
 herelatlon = currentJSON.latlon0;
-glyphEditMode = false;
+glyphEditMode = true;
+shapeTableEditMode = false;
 mainImageOn = false;
 document.getElementById("mainImage").style.display = "none";
 avatarBool = false;
 
 zoompanbuttons = document.getElementById("zoompan").getElementsByClassName("button");
+
+if(!shapeTableEditMode){
+    document.getElementById("addressline").style.display = "none";
+}
+else{
+    currentAddress = 0220;
+    document.getElementById("addressline").style.display = "block";
+    
+}
+
+
+controls[1].select();
 

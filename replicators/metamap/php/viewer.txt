@@ -60,6 +60,7 @@ if(isset($_GET['url'])){
 
 <a  id = "editorlink" href = "editor.php">editor.php</a>
 <canvas id="invisibleCanvas" style="display:none"></canvas>
+<input id  = "invisibleInput"/>
 <canvas id="mainCanvas"></canvas>
 <textarea id="textIO"></textarea>
 <table id = "zoompan">
@@ -184,6 +185,14 @@ function redraw(){
  document.getElementById("findme").onclick = function(){
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
+        var xy = latlon2xy(herelatlon);
+        document.getElementById("invisibleInput").value = "#" + currentJSON.hashtag +" @(" + xy + ")";
+        var copyText = document.getElementById("invisibleInput");
+        /* Select the text field */
+        copyText.select();
+        /* Copy the text inside the text field */
+        document.execCommand("Copy");
+
     } else {
             alert("Geolocation is not supported by this browser.");
     }
@@ -241,6 +250,14 @@ zoompanbuttons[5].onclick = function(){
 
 </script>
 <style>
+#invisibleInput{
+    position:absolute;
+    left:5px;
+    top:5px;
+    font-family:courier;
+    width:14em;
+    z-index:2;
+}
 #zoompan{
     position:absolute;
     left:20%;

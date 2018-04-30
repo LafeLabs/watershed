@@ -46,43 +46,276 @@ function doTheThing(localCommand){
 </script>
 </head>
 <body>
-<div id = "datadiv" style = "display:none">
-<?php
-    echo file_get_contents("json/currentjson.txt");
-?>
-</div>    
-<div id = "extdatadiv" style = "display:none"><?php
-if(isset($_GET['url'])){
-    echo file_get_contents($_GET['url']);
-}?>
-</div>
 <div id = "page">
-<?php
-    echo file_get_contents("html/page.txt");
-?>
+    <a  id = "editorlink" href = "editor.php">editor.php</a>
+    <canvas id="invisibleCanvas" style="display:none"></canvas>
+    <canvas id="mainCanvas"></canvas>
+    <textarea id="textIO"></textarea>
+    <table id = "zoompan">
+        <tr>
+            <td class = "button">up</td>
+            <td class = "button">down</td>
+            <td class = "button">left</td>
+            <td class = "button">right</td>
+            <td class = "button">out</td>
+            <td class = "button">in</td>
+        </tr>
+    </table>
+    <table id = "controlTable">
+        <tr id = "addressline">
+            <td>ADDRESS:</td><td><input/></td>
+        </tr>
+        <tr>
+            <td>ACTION:</td><td><input/></td>
+        </tr>
+        <tr>
+            <td>PRINT:</td><td><input/></td>
+        </tr>
+        <tr>
+            <td>STACK:</td><td><input/></td>
+        </tr>
+    </table>
+    <table id = "buttonTable">
+        <tr><td class = "button" id = "actionsymbol">ACTION/SYMBOL</td></tr>
+        <tr><td class = "button" id = "savetable">SAVE TABLE</td></tr>
+        <tr><td class = "button" id = "savefont">SAVE FONT</td></tr>
+        <tr><td class = "button" id = "importbytecode">IMPORT BYTECODE</td></tr>
+        <tr><td class = "button" id = "exportshapes">EXPORT SHAPES</td></tr>
+        <tr><td class = "button" id = "exportfont">EXPORT FONT</td></tr>
+    </table>
 </div>
 <script>
 </script>
 <script id = "init">
 init();
 function init(){
-<?php
-    echo file_get_contents("javascript/init.txt");
-?>
+    doTheThing(06);//import embedded hypercube in this .html doc
+    doTheThing(07);//initialize Geometron global variables
+
+    document.getElementById("mainCanvas").width = innerWidth;
+    document.getElementById("mainCanvas").height = innerHeight;
+
+    x0 = innerWidth/2;
+    y0 = innerHeight/2;    
+
+    controls = document.getElementById("controlTable").getElementsByTagName("input");   
+    unit = 100;
+    currentAddress = 0220;
+
+    currentGlyph = currentTable[currentAddress] + ",0207,";
+    glyphEditMode = true;
+    shapeTableEditMode = true;
+    zoompanbuttons = document.getElementById("zoompan").getElementsByClassName("button");
+    controls[1].select();
 }
+
 </script>
 <script id = "redraw">
 redraw();
 function redraw(){
-<?php
-    echo file_get_contents("javascript/redraw.txt");
-?>
+    ctx = document.getElementById("mainCanvas").getContext("2d");
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    doTheThing(0300);
+    drawGlyph(currentGlyph);
+    doTheThing(0300);
+    side = 25;
+    x = 150;
+    y = innerHeight - 100;
+    spellGlyph(currentGlyph);
+    controls[0].value = "0" + currentAddress.toString(8);
+   // currentFile = "json/currentjson.txt";
+
+//    data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
+  //  var httpc = new XMLHttpRequest();
+//    var url = "filesaver.php";        
+ ///   httpc.open("POST", url, true);
+//    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+ //   httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
 }
 </script>
 <script id = "pageevents">
-<?php
-    echo file_get_contents("javascript/pageevents.txt");
-?>
+
+document.getElementById("actionsymbol").onclick = function(){
+    
+}
+document.getElementById("savetable").onclick = function(){
+    
+}
+document.getElementById("savefont").onclick = function(){
+    
+}
+document.getElementById("importbytecode").onclick = function(){
+    
+}
+document.getElementById("exportshapes").onclick = function(){
+    
+}
+document.getElementById("exportfont").onclick = function(){
+    
+}
+
+
+controls[0].onchange = function(){
+    currentAddress = parseInt(this.value,8);
+    currentGlyph = currentTable[currentAddress] + ",0207,";
+    redraw();
+}
+
+controls[1].onkeydown = function(e) {
+        charCode = e.keyCode || e.which;
+        if(charCode == 010){
+            doTheThing(010);
+            redraw();
+        }
+        if(charCode == 045){
+            doTheThing(020);
+            redraw();
+        }
+        if(charCode == 047){
+            doTheThing(021);
+            redraw();
+        }
+        if(charCode == 046){
+//        doTheThing(023);
+            currentAddress++;
+            currentGlyph = currentTable[currentAddress] + ",0207,";
+            redraw();
+        }
+        if(charCode == 050){
+//        doTheThing(022);
+            currentAddress--;
+            currentGlyph = currentTable[currentAddress] + ",0207,";
+            redraw();
+        }    
+    }
+    
+    controls[2].onkeydown = function(e) {
+        charCode = e.keyCode || e.which;
+        if(charCode == 010){
+            doTheThing(010);
+            redraw();
+        }
+        if(charCode == 045){
+            doTheThing(020);
+            redraw();
+        }
+        if(charCode == 047){
+            doTheThing(021);
+            redraw();
+        }
+    }
+    
+    controls[3].onkeydown = function(e) {
+        charCode = e.keyCode || e.which;
+        if(charCode == 010){
+            doTheThing(010);
+            redraw();
+        }
+        if(charCode == 045){
+            doTheThing(020);
+            redraw();
+        }
+        if(charCode == 047){
+            doTheThing(021);
+            redraw();
+        }
+    }
+controls[1].onkeypress = function(a){//action
+        charCode = a.keyCode || a.which;
+        console.log(a.which);
+        if(parseInt(currentTable[charCode],8) >= 0200){
+            var glyphSplit = currentGlyph.split(",");
+            currentGlyph = "";
+            for(var index = 0;index < glyphSplit.length;index++){
+                if(glyphSplit[index].length > 0 && glyphSplit[index] != "0207"){
+                    currentGlyph += glyphSplit[index] + ",";
+                }
+                if(glyphSplit[index] == "0207"){
+                    currentGlyph += currentTable[charCode] + ",0207,";
+                }
+            }
+            var glyphSplit = currentGlyph.split(",");
+            currentGlyph = "";
+            for(var index = 0;index < glyphSplit.length;index++){
+                if(glyphSplit[index].length > 0  && parseInt(glyphSplit[index]) >= 040){
+                    currentGlyph += glyphSplit[index] + ",";
+                }
+            }
+            redraw();
+        } 
+        if(parseInt(currentTable[charCode],8) < 040){
+            doTheThing(parseInt(currentTable[charCode],8));
+            redraw();
+        }
+        this.value = "";
+    }
+    
+    controls[2].onkeypress = function(a){//print
+        charCode = a.keyCode || a.which;
+        var glyphSplit = currentGlyph.split(",");
+        currentGlyph = "";
+        for(var index = 0;index < glyphSplit.length;index++){
+            if(glyphSplit[index].length > 0 && glyphSplit[index] != "0207"){
+                currentGlyph += glyphSplit[index] + ",";
+            }
+            if(glyphSplit[index] == "0207"){
+                currentGlyph += "0" + (charCode + 01000).toString(8) + ",0207,";
+            }
+        }
+        var glyphSplit = currentGlyph.split(",");
+        currentGlyph = "";
+        for(var index = 0;index < glyphSplit.length;index++){
+            if(glyphSplit[index].length > 0  && parseInt(glyphSplit[index]) >= 040){
+                currentGlyph += glyphSplit[index] + ",";
+            }
+        }
+        redraw();
+        
+        this.value = "";
+    }
+    
+     controls[3].onkeypress = function(a){//stack
+        charCode = a.keyCode || a.which;    
+        var glyphSplit = currentGlyph.split(",");
+        currentGlyph = "";
+        for(var index = 0;index < glyphSplit.length;index++){
+            if(glyphSplit[index].length > 0 && glyphSplit[index] != "0207"){
+                currentGlyph += glyphSplit[index] + ",";
+            }
+            if(glyphSplit[index] == "0207"){
+                currentGlyph += "0" + (charCode).toString(8) + ",0207,";
+            }
+        }
+        var glyphSplit = currentGlyph.split(",");
+        currentGlyph = "";
+        for(var index = 0;index < glyphSplit.length;index++){
+            if(glyphSplit[index].length > 0  && parseInt(glyphSplit[index]) >= 040){
+                currentGlyph += glyphSplit[index] + ",";
+            }
+        }
+        redraw();
+        this.value = "";
+    }
+
+zoompanbuttons[0].onclick = function(){
+    doTheThing(030);
+}
+zoompanbuttons[1].onclick = function(){
+    doTheThing(031);
+}
+zoompanbuttons[2].onclick = function(){
+    doTheThing(032);
+}
+zoompanbuttons[3].onclick = function(){
+    doTheThing(033);
+}
+zoompanbuttons[4].onclick = function(){
+    doTheThing(036);
+}
+zoompanbuttons[5].onclick = function(){
+    doTheThing(037);
+}
+
 </script>
 <?php
     echo "<style>\n";
