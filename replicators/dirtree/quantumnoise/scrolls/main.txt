@@ -3,6 +3,7 @@
 <ul>
   <li><a href = "papers/">papers/</a></li>
   <li><a href = "calculators/">calculators/</a></li>    
+  <li><a href = "datablog/">datablog/</a></li>
   <li>fermiplots[plotter]</li>
   <li>classicalcothplots[plotter]</li>
   <li>quantumcothplots[plotter]</li>

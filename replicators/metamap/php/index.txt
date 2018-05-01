@@ -5,6 +5,8 @@
 <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 -->
+<!--Stop Google:-->
+<META NAME="robots" CONTENT="noindex,nofollow">
 <script id = "bytecodeScript">
 /*
 <?php

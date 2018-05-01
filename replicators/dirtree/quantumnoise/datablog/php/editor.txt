@@ -1,91 +1,51 @@
  <!doctype html>
 <html>
 <head>
-    <!--Stop Google:-->
-<META NAME="robots" CONTENT="noindex,nofollow">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
+<title>PHP Editor replicator</title>
 </head>
 <body>
-    
 <div id = "linkscroll">
     <a href = "text2php.php">text2php.php</a>
+    <a href = "text2python.php">text2python.php</a>
+    <a href = "runpython.php">runpython.php</a>
     <a href = "index.php">index.php</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
-    <a href = "scrolleditor.php">scrolleditor.php</a>
-    <a href = "linkeditor.php">linkeditor.php</a>
-    <a href = "imageeditor.php">imageeditor.php</a>
-    <a href = "scrolls2index.php">scrolls2index.php</a>
-    <a href = "backgroundimageeditor.php">backgroundimageeditor.php</a>
-    <a href = "glypheditor.php">glypheditor.php</a>
-    <a href = "shapetableeditor.php">shapetableeditor.php</a>
-    <a href = "latlon.php">latlon.php</a>
-
-    <div class = "button" id = "imgbutton">&ltIMG src = " "/&gt</div>
-    <div class = "button" id = "pbutton">&ltP&gt  &lt/P&gt</div>
 
 </div>
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
-
 <div id = "filescroll">
+
     <div class = "html file">html/page.txt</div>
-
-    <div class = "scrolls file">scrolls/sticks.txt</div>
-    <div class = "scrolls file">scrolls/rocks.txt</div>
-    <div class = "scrolls file">scrolls/images.txt</div>
-    <div class = "scrolls file">scrolls/links.txt</div>
-    <div class = "scrolls file">scrolls/glyphs.txt</div>
-    <div class = "scrolls file">scrolls/workflows.txt</div>
-
-
     <div class = "css file">css/style.txt</div>
 
-    <div class = "bytecode file">bytecode/baseshapes.txt</div>
-    <div class = "bytecode file">bytecode/shapetable.txt</div>
-    <div class = "bytecode file">bytecode/font.txt</div>
-    <div class = "bytecode file">bytecode/keyboard.txt</div>
-    <div class = "bytecode file">bytecode/symbols013xx.txt</div>
-    <div class = "bytecode file">bytecode/symbols010xx.txt</div>
-
     <div class = "javascript file">javascript/topfunctions.txt</div>
-    <div class = "javascript file">javascript/actions0xx.txt</div>
-    <div class = "javascript file">javascript/actions03xx.txt</div>
     <div class = "javascript file">javascript/jslibrary.txt</div>
     <div class = "javascript file">javascript/init.txt</div>
     <div class = "javascript file">javascript/redraw.txt</div>
     <div class = "javascript file">javascript/pageevents.txt</div>
 
-    <div class = "php file">php/editor.txt</div>
-    <div class = "php file">php/scrolleditor.txt</div>
     <div class = "php file">php/index.txt</div>
+    <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/replicator.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/feedsaver.txt</div>
-    <div class = "php file">php/mapsaver.txt</div>
     <div class = "php file">php/text2php.txt</div>
-    <div class = "php file">php/scrolls2index.txt</div>
+    <div class = "php file">php/text2python.txt</div>
+    <div class = "php file">php/runpython.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
-    
 
-    <div class = "php file">php/viewer.txt</div>
-    <div class = "php file">php/main2html.txt</div>
-
-    <div class = "php file">php/linkeditor.txt</div>
-    <div class = "php file">php/imageeditor.txt</div>
-    <div class = "php file">php/backgroundimageeditor.txt</div>
-    <div class = "php file">php/glypheditor.txt</div>
-    <div class = "php file">php/shapetableeditor.txt</div>
-    <div class = "php file">php/latlon.txt</div>
+    <div class = "python file">python/fitcurve.txt</div>
 
     <div class = "json file">json/dna.txt</div>
-    <div class = "json file">json/currentjson.txt</div>
-    
+    <div class = "json file">json/feed.txt</div>
 
 </div>
 
 <script>
-currentFile = "html/page.txt";
+currentFile = "php/editor.txt";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -146,6 +106,11 @@ for(var index = 0;index < files.length;index++){
             editor.getSession().setMode("ace/mode/json");
             document.getElementById("namediv").style.color = "orange";
             document.getElementById("namediv").style.borderColor = "orange";
+        }
+        if(this.classList[0] == "python"){
+            editor.getSession().setMode("ace/mode/python");
+            document.getElementById("namediv").style.color = "green";
+            document.getElementById("namediv").style.borderColor = "green";
         }
 
         document.getElementById("namediv").innerHTML = currentFile;
@@ -213,6 +178,9 @@ body{
 }
 .scrolls{
     color:#87ceeb;
+}
+.python{
+    color:green;
 }
 
 .file{

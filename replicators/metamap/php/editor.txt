@@ -1,6 +1,8 @@
  <!doctype html>
 <html>
 <head>
+    <!--Stop Google:-->
+<META NAME="robots" CONTENT="noindex,nofollow">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
@@ -13,13 +15,10 @@
     <a href = "linkeditor.php">linkeditor.php</a>
     <a href = "imageeditor.php">imageeditor.php</a>
     <a href = "scrolls2index.php">scrolls2index.php</a>
-    <a href = "main2html.php">main2html.php</a>
-    <a href = "viewer.php">viewer.php</a>
     <a href = "backgroundimageeditor.php">backgroundimageeditor.php</a>
     <a href = "glypheditor.php">glypheditor.php</a>
     <a href = "shapetableeditor.php">shapetableeditor.php</a>
     <a href = "latlon.php">latlon.php</a>
-
 
     <div class = "button" id = "imgbutton">&ltIMG src = " "/&gt</div>
     <div class = "button" id = "pbutton">&ltP&gt  &lt/P&gt</div>

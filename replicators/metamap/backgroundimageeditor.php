@@ -1,7 +1,9 @@
 <!doctype html>
 <html>
 <head>
-<title>Metamap</title>
+<!--Stop Google:-->
+<META NAME="robots" CONTENT="noindex,nofollow">
+<title>Metamap Background Image Editor</title>
 <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 -->
@@ -408,6 +410,7 @@ imagebuttons[17].onclick = function(){
 
 imagedata[0].onchange = function(){
     document.getElementById("mainImage").src = this.value;
+    currentJSON.imgurl = this.value;
 }
 imagedata[1].onchange = function(){
     currentJSON.imgw = parseFloat(this.value);

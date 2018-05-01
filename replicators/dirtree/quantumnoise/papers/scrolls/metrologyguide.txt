@@ -46,6 +46,17 @@ In order to get this device in the fridge you first need to put the chip in an a
     </li>
 </ol>
 
+<h4>Numerical Details of Measurement</h4>
+
+$$
+P = T_N \ + \frac{1}{2}T\left[\frac{V+F}{2T}\coth{\frac{V+F}{2T}}
++ \frac{V-F}{2T}\coth{\frac{V-F}{2T}}\right]
+$$
+<p>
+    In this formula everything is in units of pixels on the screen in the plot on the computer.  Gains specific to the experiment are all hidden by the conversion to pixels.  This is carried out by defining the  slope of the linear region to be 1 pixel on the y per pixel on the x.  By knowing the maximum and minimum voltage in real units, this converts pixels on the x axis to volts, since the width of the canvas or SVG is equal by definition to $V_{max} - V_{min}$.
+</p>
+
+
 <h4>IV. What went wrong?</h4>
 
 <ul>
