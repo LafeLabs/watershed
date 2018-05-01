@@ -1,9 +1,7 @@
  <!doctype html>
 <html>
 <head>
-    <title>Watershed Latex Editor</title>
-    
-    <!-- 
+ <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 
 EVERYTHING IS PHYSICAL
@@ -19,38 +17,42 @@ EGO DEATH:
 -->
 <!--Stop Google:-->
 <META NAME="robots" CONTENT="noindex,nofollow">
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
+<title>PHP Editor replicator</title>
 </head>
 <body>
-
-<div id = "scrolldisplay"></div>    
-    
 <div id = "linkscroll">
-    <a href = "index.html" id = "indexlink">index.html</a>
-    <a href = "editor.php">editor.php</a>
-    <a href = "main2index.php">main2index.php</a>    
-    <div class = "button">FIGURE</div>
+    <a href = "text2php.php">text2php.php</a>
+    <a href = "pageeditor.php">pageeditor.php</a>
+    <a href = "index.php">index.php</a>
+    <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
+
 </div>
 <div id = "namediv"></div>
-<div id="maineditor" contenteditable="true" spellcheck="true"></div>
+<div id="maineditor" contenteditable="true" spellcheck="false"></div>
 <div id = "filescroll">
-    <div class = "scrolls file">scrolls/replicator.txt</div>
-    <div class = "scrolls file">scrolls/main.txt</div>
-    <div class = "scrolls file">scrolls/notes.txt</div>
-</div>
-<textarea id = "texbox"></textarea>
-<script>
-currentFile = "scrolls/main.txt";
-fileBase = currentFile.split("/")[1].split(".")[0];
 
+    <div class = "html file">html/page.txt</div>
+    
+    <div class = "php file">php/index.txt</div>
+    <div class = "php file">php/pageeditor.txt</div>
+    <div class = "php file">php/editor.txt</div>
+    <div class = "php file">php/replicator.txt</div>
+    <div class = "php file">php/filesaver.txt</div>
+    <div class = "php file">php/fileloader.txt</div>
+    <div class = "php file">php/text2php.txt</div>
+    <div class = "php file">php/dnagenerator.txt</div>
+
+    <div class = "json file">json/dna.txt</div>
+</div>
+
+<script>
+currentFile = "php/editor.txt";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         filedata = this.responseText;
         editor.setValue(filedata);
-        document.getElementById("scrolldisplay").innerHTML = filedata;
-
     }
 };
 httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
@@ -59,8 +61,6 @@ files = document.getElementById("filescroll").getElementsByClassName("file");
 for(var index = 0;index < files.length;index++){
     files[index].onclick = function(){
         currentFile = this.innerHTML;
-        fileBase = currentFile.split("/")[1].split(".")[0];
-
         //use php script to load current file;
         var httpc = new XMLHttpRequest();
         httpc.onreadystatechange = function() {
@@ -69,9 +69,7 @@ for(var index = 0;index < files.length;index++){
                 editor.setValue(filedata);
                 var fileType = currentFile.split("/")[0]; 
                 var fileName = currentFile.split("/")[1];
-                if(fileType == "scrolls"){
-                    document.getElementById("scrolldisplay").innerHTML = editor.getSession().getValue();
-                }
+              
             }
         };
         httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
@@ -134,18 +132,6 @@ document.getElementById("maineditor").onkeyup = function(){
     httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
     var fileType = currentFile.split("/")[0]; 
     var fileName = currentFile.split("/")[1];
-    if(fileType == "scrolls"){
-        document.getElementById("scrolldisplay").innerHTML = editor.getSession().getValue();
-    }
-}
-
-
-buttons = document.getElementsByClassName("button");
-
-buttons[0].onclick = function(){
-    var figtext = "<figure>\n<img src = \"\"/><!--img-->\n<figcaption>Figure x. </figcaption>\n</figure>\n";
-        var cursorPosition = editor.getCursorPosition();
-        editor.getSession().insert(cursorPosition,figtext);
 }
 
 </script>
@@ -206,10 +192,10 @@ body{
 #filescroll{
     position:absolute;
     overflow:scroll;
-    top:67%;
+    top:60%;
     bottom:0%;
     right:0%;
-    left:77%;
+    left:75%;
     border:solid;
     border-radius:5px;
     border-width:3px;
@@ -220,10 +206,10 @@ body{
 #linkscroll{
     position:absolute;
     overflow:scroll;
-    top:0%;
-    bottom:70%;
-    right:0%;
-    left:77%;
+    top:5em;
+    bottom:50%;
+    right:0px;
+    left:75%;
     border:solid;
     border-radius:5px;
     border-width:3px;
@@ -232,83 +218,14 @@ body{
     font-size:18px;
     
 }
-#texbox{
-    position:absolute;
-    top:32%;
-    right:0%;
-    height:30%;
-    width:23%;
-    font-family:courier;
-    font-size:18px;
-    display:block;
-}
 #maineditor{
     position:absolute;
-    left:41%;
+    left:0%;
     top:5em;
-    bottom:10px;
-    right:25%;
-}
-#scrolldisplay{
-    position:absolute;
-    background-color:white;
-    overflow:scroll;
-    color:black;
-    left:10px;
-    bottom:10px;
-    right:60%;
-    top:5em;
-    border:solid;
-    border-width:3px;
-    border-radius:0.5em;
-    padding:1.5em 1.5em 1.5em 1.5em;
-}
-#scrolldisplay p,li,pre{
-    width:80%;
-    display:block;
-    margin:auto;
-    text-align:justify;    
-    margin-bottom:1em;
-}
-#scrolldisplay h1,h2,h3{
-    text-align:center;
-}
-#scrolldisplay a{
-    color:blue;
-    display:inline;
-
+    bottom:1em;
+    right:30%;
 }
 
-figure img{
-    width:100%;
-}
-figure{
-    width:80%;
-}
-figure figcaption{
-    width:100%;
-}
-.button{
-    color:yellow;
-    cursor:pointer;
-    padding:0.5em 0.5em 0.5em 0.5em;
-    border:solid;
-    border-color:yellow;
-    border-radius:0.5em;
-    margin-bottom:1em;
-    margin-left:0.5em;
-    margin-top:1em;
-    display:block;
-    margin:auto;
-    text-align:center;
-    width:80%;
-}
-.button:hover{
-    background-color:#003000;
-}   
-.button:active{
-    background-color:#304000;
-}
 
 
 </style>

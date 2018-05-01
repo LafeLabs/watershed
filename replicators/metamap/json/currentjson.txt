@@ -1,9 +1,9 @@
 {
     "imgurl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Location_map_Washington%2C_D.C._central.png",
-    "imgw": 28.100910522251755,
-    "imgleft": -11.75405099044508,
-    "imgtop": -15.80039155256331,
-    "unitpixels": 50,
+    "imgw": 28.665738823749013,
+    "imgleft": -11.990307415353026,
+    "imgtop": -16.11797942276983,
+    "unitpixels": 100,
     "unitfeet": 555,
     "latlon0": "38.889464, -77.035246",
     "marker0": "Washington Monument",
