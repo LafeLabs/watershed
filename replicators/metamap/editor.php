@@ -1,6 +1,21 @@
  <!doctype html>
 <html>
 <head>
+    <!--
+EVERYTHING IS PHYSICAL
+EVERYTHING IS FRACTAL
+EVERYTHING IS RECURSIVE
+NO MONEY
+NO PROPERTY
+NO MINING
+EGO DEATH:
+    LOOK TO THE INSECTS
+    LOOK TO THE FUNGI
+    LANGUAGE IS HOW THE MIND PARSES REALITY
+
+ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
+-->
+    
     <!--Stop Google:-->
 <META NAME="robots" CONTENT="noindex,nofollow">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
@@ -11,17 +26,12 @@
     <a href = "text2php.php">text2php.php</a>
     <a href = "index.php">index.php</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
-    <a href = "scrolleditor.php">scrolleditor.php</a>
     <a href = "linkeditor.php">linkeditor.php</a>
     <a href = "imageeditor.php">imageeditor.php</a>
-    <a href = "scrolls2index.php">scrolls2index.php</a>
     <a href = "backgroundimageeditor.php">backgroundimageeditor.php</a>
     <a href = "glypheditor.php">glypheditor.php</a>
     <a href = "shapetableeditor.php">shapetableeditor.php</a>
     <a href = "latlon.php">latlon.php</a>
-
-    <div class = "button" id = "imgbutton">&ltIMG src = " "/&gt</div>
-    <div class = "button" id = "pbutton">&ltP&gt  &lt/P&gt</div>
 
 </div>
 <div id = "namediv"></div>
@@ -29,14 +39,6 @@
 
 <div id = "filescroll">
     <div class = "html file">html/page.txt</div>
-
-    <div class = "scrolls file">scrolls/sticks.txt</div>
-    <div class = "scrolls file">scrolls/rocks.txt</div>
-    <div class = "scrolls file">scrolls/images.txt</div>
-    <div class = "scrolls file">scrolls/links.txt</div>
-    <div class = "scrolls file">scrolls/glyphs.txt</div>
-    <div class = "scrolls file">scrolls/workflows.txt</div>
-
 
     <div class = "css file">css/style.txt</div>
 
@@ -56,7 +58,6 @@
     <div class = "javascript file">javascript/pageevents.txt</div>
 
     <div class = "php file">php/editor.txt</div>
-    <div class = "php file">php/scrolleditor.txt</div>
     <div class = "php file">php/index.txt</div>
     <div class = "php file">php/replicator.txt</div>
     <div class = "php file">php/filesaver.txt</div>
@@ -64,13 +65,7 @@
     <div class = "php file">php/feedsaver.txt</div>
     <div class = "php file">php/mapsaver.txt</div>
     <div class = "php file">php/text2php.txt</div>
-    <div class = "php file">php/scrolls2index.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
-    
-
-    <div class = "php file">php/viewer.txt</div>
-    <div class = "php file">php/main2html.txt</div>
-
     <div class = "php file">php/linkeditor.txt</div>
     <div class = "php file">php/imageeditor.txt</div>
     <div class = "php file">php/backgroundimageeditor.txt</div>
@@ -81,7 +76,6 @@
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/currentjson.txt</div>
     
-
 </div>
 
 <script>

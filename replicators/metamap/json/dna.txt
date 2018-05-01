@@ -37,11 +37,6 @@
 "php/linkeditor.txt",
 "php/mapsaver.txt",
 "php/replicator.txt",
-"php/scrolleditor.txt",
-"php/scrolls2index.txt",
 "php/shapetableeditor.txt",
-"php/text2php.txt",
-"php/viewer.txt",
-"scrolls/main.txt",
-"scrolls/workflows.txt"
+"php/text2php.txt"
 ]
