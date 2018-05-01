@@ -60,12 +60,6 @@ document.getElementById("maineditor").onkeyup = function(){
 
 </script>
 <style>
-a{
-    color:white;
-    display:block;
-    margin-bottom:0.5em;
-    margin-left:0.5em;
-}
 body{
     background-color:#404040;
 }
@@ -101,11 +95,17 @@ body{
     position:absolute;
     right:1em;
     top:1em;
+        color:white;
+    display:block;
+
 }
 #pagelink{
     position:absolute;
     left:1em;
     top:1em;
+        color:white;
+    display:block;
+
 }
 
 </style>

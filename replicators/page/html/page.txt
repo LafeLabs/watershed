@@ -1,6 +1,6 @@
 <h2>Heading</h2>
 <p>
     Paragraph. derp. herpy derp derp derplalalalla
-    
+<a href = "http://localhost:8000/?url=https://pastebin.com/raw/wdvBkbEa">link to another scroll</a>    <a href = "https://pastebin.com/raw/wdvBkbEa">Link to the raw code for that scroll</a>
 </p>
 <img src = "https://i.imgur.com/8nGddQU.jpg"/>

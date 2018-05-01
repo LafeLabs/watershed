@@ -22,6 +22,12 @@ EGO DEATH:
 <META NAME="robots" CONTENT="noindex,nofollow">
 </head>
 <body>
+    <div id = "extdatadiv" style = "display:none"><?php
+if(isset($_GET['url'])){
+    echo file_get_contents($_GET['url']);
+}?>
+</div>
+
     <a id = "editorlink" href = "editor.php">Code Editor</a>
     <a id = "pageeditorlink" href = "pageeditor.php">Page Editor</a>
 <div id = "page">
@@ -29,6 +35,12 @@ EGO DEATH:
 echo file_get_contents("html/page.txt");
 ?>
 </div>
+<script>
+    if(document.getElementById("extdatadiv").innerHTML.length > 10){
+        document.getElementById("page").innerHTML = document.getElementById("extdatadiv").innerHTML;
+    }
+    
+</script>
 <style>
 h1,h2,h3,h4,h5{
     width:100%;
@@ -38,7 +50,7 @@ h1,h2,h3,h4,h5{
     position:absolute;
     overflow:scroll;
     text-align:justify;
-    width:100%;
+    width:90%;
     top:5em;
     bottom:0px;
     padding:1em 1em 1em 1em;
