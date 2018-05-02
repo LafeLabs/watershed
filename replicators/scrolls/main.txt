@@ -2,6 +2,7 @@
 <p>
 <ul>
     <li><a href = "htmlscroll/editor.php">htmlscroll/editor.php</a></li>
+    <li><a href = "metamap/">metamap/</a></li>
     <li><a href = "latexscroll/editor.php">latexscroll/editor.php</a></li>
     <li><a href = "hyperscroll/editor.php">hyperscroll/editor.php</a></li>
     <li><a href = "mapcalculator/editor.php">mapcalculator/editor.php</a></li>

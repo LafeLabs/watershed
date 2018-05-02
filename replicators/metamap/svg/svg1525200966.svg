@@ -1,0 +1,64 @@
+<svg width="800" height="800" viewbox = "0 0 800 800"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Location_map_Washington%2C_D.C._central.png",
+    "imgw": 28.665738823749013,
+    "imgleft": -11.990307415353026,
+    "imgtop": -16.11797942276983,
+    "unitpixels": 100,
+    "unitfeet": 555,
+    "latlon0": "38.889464, -77.035246",
+    "marker0": "Washington Monument",
+    "glyph0": "0341,0340,",
+    "latlon1": " 38.8893, -77.0499",
+    "marker1": "Lincoln Memorial Steps",
+    "glyph1": "0341,0340,",
+    "hashtag": "metamapdc",
+    "currentGlyph": "0332,0332,0332,0336,0336,0326,0362,0203,0334,0337,0337,0203,0203,0203,0336,0203,0334,0203,0334,0203,0203,0203,0203,0203,0203,0203,0334,0336,0203,0363,0337,0337,0333,0333,0333,0320,0336,0336,0333,0331,0337,0200,0350,0334,0310,0337,0342,0336,0332,0335,0335,0337,0342,0336,0336,0330,0334,0304,0336,0313,0337,0337,0300,0330,0330,0330,0330,0330,0336,0332,0337,0341,0340,0300,0332,0332,0332,0332,0332,0332,0332,0332,0300,0330,0333,0333,0333,0337,0333,0333,0330,0330,0336,0247,0300,0337,0337,0333,0333,0336,0333,0333,0330,0336,0331,0334,0337,0337,0306,0352,0335,0304,0201,0201,0336,0201,0300,0330,0330,0330,0330,0330,0336,0332,0337,0333,0331,0335,0201,0201,0336,0201,0337,0337,0337,0337,0306,0352,0335,0304,0201,0336,0336,0336,0201,0336,0201,0337,0337,",
+    "links": [
+        {
+            "url": "https://www.nps.gov/thje/index.htm",
+            "text": "Jefferson Memorial NPS site",
+            "latlon": "38.881389, -77.036944"
+        }
+    ],
+    "images": [
+        {
+            "url": "https://i.imgur.com/8nGddQU.jpg",
+            "latlon": "28.609503, -81.197801",
+            "unitfeet": 500
+        }
+    ],
+    "avatar": {
+        "glyph": "0322,0340,0341,0342,",
+        "unitfeet": 100
+    }
+}
+</json>
+-->
+	<path d = "M-40 400 L-40 388 L-87 388 L-133 388 L-180 388 L-203 388 L-203 412 L-180 412 L-157 412 L-133 412 L-110 412 L-87 412 L-63 412 L-40 412 L-40 400 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <line x1="112" y1="412" x2="112" y2="388" style="stroke:black;stroke-width:2" />
+    <line x1="112" y1="388" x2="88" y2="388" style="stroke:black;stroke-width:2" />
+    <line x1="88" y1="388" x2="88" y2="412" style="stroke:black;stroke-width:2" />
+    <line x1="88" y1="412" x2="112" y2="412" style="stroke:black;stroke-width:2" />
+    <line x1="112" y1="412" x2="88" y2="388" style="stroke:black;stroke-width:2" />
+    <line x1="88" y1="412" x2="112" y2="388" style="stroke:black;stroke-width:2" />
+    <circle cx="77" cy = "167" r = "46.650738020973314" stroke = "#000000" stroke-width = "2" fill = "none" />
+<circle cx="77" cy = "167" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+	<path d = "M427 167 L427 170 L380 170 L380 164 L427 164 L427 167 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M380 167 L377 165 L401 125 L406 128 L382 168 L380 167 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M403 126 L406 125 L429 165 L424 168 L401 128 L403 126 Z" stroke = "blue" stroke-width = "2" fill = "blue" />    <circle cx="427" cy = "167" r = "2.915671126310832" stroke = "blue" stroke-width = "2" fill = "blue" />
+    <circle cx="403" cy = "126" r = "2.915671126310832" stroke = "blue" stroke-width = "2" fill = "blue" />
+    <circle cx="380" cy = "167" r = "2.915671126310832" stroke = "blue" stroke-width = "2" fill = "blue" />
+    <line x1="397" y1="161" x2="397" y2="149" style="stroke:blue;stroke-width:2" />
+    <line x1="403" y1="161" x2="403" y2="149" style="stroke:blue;stroke-width:2" />
+    <line x1="409" y1="161" x2="409" y2="149" style="stroke:blue;stroke-width:2" />
+	<path d = "M362 178 L371 170 L382 170 L374 178 L362 178 Z" stroke = "black" stroke-width = "2" fill = "black" />	<path d = "M374 178 L382 170 L394 170 L386 178 L374 178 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />	<path d = "M386 178 L394 170 L406 170 L397 178 L386 178 Z" stroke = "black" stroke-width = "2" fill = "black" />	<path d = "M397 178 L406 170 L417 170 L409 178 L397 178 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />	<path d = "M409 178 L417 170 L429 170 L421 178 L409 178 Z" stroke = "black" stroke-width = "2" fill = "black" />	<path d = "M421 178 L429 170 L441 170 L432 178 L421 178 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />    <line x1="660" y1="353" x2="484" y2="290" style="stroke:#000000;stroke-width:2" />
+    <line x1="484" y1="290" x2="309" y2="226" style="stroke:#000000;stroke-width:2" />
+    <line x1="309" y1="226" x2="221" y2="194" style="stroke:#000000;stroke-width:2" />
+    <line x1="123" y1="213" x2="170" y2="213" style="stroke:#000000;stroke-width:2" />
+    <line x1="170" y1="213" x2="217" y2="213" style="stroke:#000000;stroke-width:2" />
+    <line x1="217" y1="213" x2="240" y2="213" style="stroke:#000000;stroke-width:2" />
+    <line x1="240" y1="213" x2="591" y2="341" style="stroke:#000000;stroke-width:2" />
+    <line x1="591" y1="341" x2="634" y2="357" style="stroke:#000000;stroke-width:2" />
+    <line x1="634" y1="357" x2="656" y2="365" style="stroke:#000000;stroke-width:2" />
+</svg>

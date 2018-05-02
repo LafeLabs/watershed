@@ -4,3 +4,19 @@
 This section is the main reference for existing papers on using quantum noise for metrology(shortened to "quantum noise" for convenience in this context), as well as a system for generating new papers in real time on the subject.  It is intended to be a totally decentralized technical microblogging system.    
 </p>
 
+<h2>Paper Outline based on Workflow</h2>
+
+<ol>
+    <li>Background and goals</li>
+   <li>Fabrication</li> 
+    <li>Mounting in sample holder, board, launch etc.</li>
+    <li>Installation in fridge</li>
+    <li>set up and test RF chain, DC measurement, test at room temperature</li>
+    <li>Test repeatedly during cool down</li>
+    <li>Cold measurement of quantum noise</li>
+    <li>Plotting and understanding data rapidly by eye</li>
+    <li>Data fit and analysis</li>
+    <li>Use results to improve your measurement</li>
+    <li>publish data to quantumnoise.org feed, use in other measurements</li>
+    <li>appendix on units</li>
+</ol>
