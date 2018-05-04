@@ -1,0 +1,20 @@
+
+
+stationjson2 = [];
+for(var index = 0;index < stationjson.Stations.length;index++){
+    var thisstation = {};
+    thisstation.latlon = stationjson.Stations[index].Lat.toString() + "," + stationjson.Stations[index].Lon.toString();
+    thisstation.name = stationjson.Stations[index].Name;
+    stationjson2.push(thisstation);
+}
+
+
+
+
+    currentFile = "json/stationjson2.txt";
+    data = encodeURIComponent(JSON.stringify(stationjson2,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php

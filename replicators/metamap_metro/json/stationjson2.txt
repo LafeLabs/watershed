@@ -1,0 +1,382 @@
+[
+    {
+        "latlon": "38.898303,-77.028099",
+        "name": "Metro Center"
+    },
+    {
+        "latlon": "38.903192,-77.039766",
+        "name": "Farragut North"
+    },
+    {
+        "latlon": "38.909499,-77.04362",
+        "name": "Dupont Circle"
+    },
+    {
+        "latlon": "38.924999,-77.052648",
+        "name": "Woodley Park-Zoo/Adams Morgan"
+    },
+    {
+        "latlon": "38.934703,-77.058226",
+        "name": "Cleveland Park"
+    },
+    {
+        "latlon": "38.94362,-77.063511",
+        "name": "Van Ness-UDC"
+    },
+    {
+        "latlon": "38.947808,-77.079615",
+        "name": "Tenleytown-AU"
+    },
+    {
+        "latlon": "38.960744,-77.085969",
+        "name": "Friendship Heights"
+    },
+    {
+        "latlon": "38.984282,-77.094431",
+        "name": "Bethesda"
+    },
+    {
+        "latlon": "38.999947,-77.097253",
+        "name": "Medical Center"
+    },
+    {
+        "latlon": "39.029158,-77.10415",
+        "name": "Grosvenor-Strathmore"
+    },
+    {
+        "latlon": "39.048043,-77.113131",
+        "name": "White Flint"
+    },
+    {
+        "latlon": "39.062359,-77.121113",
+        "name": "Twinbrook"
+    },
+    {
+        "latlon": "39.084215,-77.146424",
+        "name": "Rockville"
+    },
+    {
+        "latlon": "39.119819,-77.164921",
+        "name": "Shady Grove"
+    },
+    {
+        "latlon": "38.89834,-77.021851",
+        "name": "Gallery Pl-Chinatown"
+    },
+    {
+        "latlon": "38.896084,-77.016643",
+        "name": "Judiciary Square"
+    },
+    {
+        "latlon": "38.897723,-77.006745",
+        "name": "Union Station"
+    },
+    {
+        "latlon": "38.920741,-76.995984",
+        "name": "Rhode Island Ave-Brentwood"
+    },
+    {
+        "latlon": "38.933234,-76.994544",
+        "name": "Brookland-CUA"
+    },
+    {
+        "latlon": "38.951777,-77.002174",
+        "name": "Fort Totten"
+    },
+    {
+        "latlon": "38.975532,-77.017834",
+        "name": "Takoma"
+    },
+    {
+        "latlon": "38.993841,-77.031321",
+        "name": "Silver Spring"
+    },
+    {
+        "latlon": "39.015413,-77.042953",
+        "name": "Forest Glen"
+    },
+    {
+        "latlon": "39.038558,-77.051098",
+        "name": "Wheaton"
+    },
+    {
+        "latlon": "39.061713,-77.05341",
+        "name": "Glenmont"
+    },
+    {
+        "latlon": "38.907407,-77.002961",
+        "name": "NoMa-Gallaudet U"
+    },
+    {
+        "latlon": "38.898303,-77.028099",
+        "name": "Metro Center"
+    },
+    {
+        "latlon": "38.901316,-77.033652",
+        "name": "McPherson Square"
+    },
+    {
+        "latlon": "38.901311,-77.03981",
+        "name": "Farragut West"
+    },
+    {
+        "latlon": "38.900599,-77.050273",
+        "name": "Foggy Bottom-GWU"
+    },
+    {
+        "latlon": "38.896595,-77.07146",
+        "name": "Rosslyn"
+    },
+    {
+        "latlon": "38.884574,-77.063108",
+        "name": "Arlington Cemetery"
+    },
+    {
+        "latlon": "38.869349,-77.054013",
+        "name": "Pentagon"
+    },
+    {
+        "latlon": "38.863045,-77.059507",
+        "name": "Pentagon City"
+    },
+    {
+        "latlon": "38.85779,-77.050589",
+        "name": "Crystal City"
+    },
+    {
+        "latlon": "38.852985,-77.043805",
+        "name": "Ronald Reagan Washington National Airport"
+    },
+    {
+        "latlon": "38.814009,-77.053763",
+        "name": "Braddock Road"
+    },
+    {
+        "latlon": "38.806474,-77.061115",
+        "name": "King St-Old Town"
+    },
+    {
+        "latlon": "38.800313,-77.071173",
+        "name": "Eisenhower Avenue"
+    },
+    {
+        "latlon": "38.793841,-77.075301",
+        "name": "Huntington"
+    },
+    {
+        "latlon": "38.893757,-77.028218",
+        "name": "Federal Triangle"
+    },
+    {
+        "latlon": "38.888022,-77.028232",
+        "name": "Smithsonian"
+    },
+    {
+        "latlon": "38.884775,-77.021964",
+        "name": "L'Enfant Plaza"
+    },
+    {
+        "latlon": "38.884958,-77.01586",
+        "name": "Federal Center SW"
+    },
+    {
+        "latlon": "38.884968,-77.005137",
+        "name": "Capitol South"
+    },
+    {
+        "latlon": "38.884124,-76.995334",
+        "name": "Eastern Market"
+    },
+    {
+        "latlon": "38.880841,-76.985721",
+        "name": "Potomac Ave"
+    },
+    {
+        "latlon": "38.88594,-76.977485",
+        "name": "Stadium-Armory"
+    },
+    {
+        "latlon": "38.898284,-76.948042",
+        "name": "Minnesota Ave"
+    },
+    {
+        "latlon": "38.907734,-76.936177",
+        "name": "Deanwood"
+    },
+    {
+        "latlon": "38.91652,-76.915427",
+        "name": "Cheverly"
+    },
+    {
+        "latlon": "38.934411,-76.890988",
+        "name": "Landover"
+    },
+    {
+        "latlon": "38.947674,-76.872144",
+        "name": "New Carrollton"
+    },
+    {
+        "latlon": "38.905604,-77.022256",
+        "name": "Mt Vernon Sq 7th St-Convention Center"
+    },
+    {
+        "latlon": "38.912919,-77.022194",
+        "name": "Shaw-Howard U"
+    },
+    {
+        "latlon": "38.916489,-77.028938",
+        "name": "U Street/African-Amer Civil War Memorial/Cardozo"
+    },
+    {
+        "latlon": "38.928672,-77.032775",
+        "name": "Columbia Heights"
+    },
+    {
+        "latlon": "38.936077,-77.024728",
+        "name": "Georgia Ave-Petworth"
+    },
+    {
+        "latlon": "38.951777,-77.002174",
+        "name": "Fort Totten"
+    },
+    {
+        "latlon": "38.954931,-76.969881",
+        "name": "West Hyattsville"
+    },
+    {
+        "latlon": "38.965276,-76.956182",
+        "name": "Prince George's Plaza"
+    },
+    {
+        "latlon": "38.978523,-76.928432",
+        "name": "College Park-U of Md"
+    },
+    {
+        "latlon": "39.011036,-76.911362",
+        "name": "Greenbelt"
+    },
+    {
+        "latlon": "38.89834,-77.021851",
+        "name": "Gallery Pl-Chinatown"
+    },
+    {
+        "latlon": "38.893893,-77.021902",
+        "name": "Archives-Navy Memorial-Penn Quarter"
+    },
+    {
+        "latlon": "38.884775,-77.021964",
+        "name": "L'Enfant Plaza"
+    },
+    {
+        "latlon": "38.876221,-77.017491",
+        "name": "Waterfront"
+    },
+    {
+        "latlon": "38.876588,-77.005086",
+        "name": "Navy Yard-Ballpark"
+    },
+    {
+        "latlon": "38.862072,-76.995648",
+        "name": "Anacostia"
+    },
+    {
+        "latlon": "38.845334,-76.98817",
+        "name": "Congress Heights"
+    },
+    {
+        "latlon": "38.840974,-76.97536",
+        "name": "Southern Avenue"
+    },
+    {
+        "latlon": "38.851187,-76.956565",
+        "name": "Naylor Road"
+    },
+    {
+        "latlon": "38.843891,-76.932022",
+        "name": "Suitland"
+    },
+    {
+        "latlon": "38.826995,-76.912134",
+        "name": "Branch Ave"
+    },
+    {
+        "latlon": "38.890488,-76.938291",
+        "name": "Benning Road"
+    },
+    {
+        "latlon": "38.889757,-76.913382",
+        "name": "Capitol Heights"
+    },
+    {
+        "latlon": "38.886713,-76.893592",
+        "name": "Addison Road-Seat Pleasant"
+    },
+    {
+        "latlon": "38.8913,-76.8682",
+        "name": "Morgan Boulevard"
+    },
+    {
+        "latlon": "38.9008,-76.8449",
+        "name": "Largo Town Center"
+    },
+    {
+        "latlon": "38.799193,-77.129407",
+        "name": "Van Dorn Street"
+    },
+    {
+        "latlon": "38.766129,-77.168797",
+        "name": "Franconia-Springfield"
+    },
+    {
+        "latlon": "38.891499,-77.08391",
+        "name": "Court House"
+    },
+    {
+        "latlon": "38.886373,-77.096963",
+        "name": "Clarendon"
+    },
+    {
+        "latlon": "38.88331,-77.104267",
+        "name": "Virginia Square-GMU"
+    },
+    {
+        "latlon": "38.882071,-77.111845",
+        "name": "Ballston-MU"
+    },
+    {
+        "latlon": "38.885841,-77.157177",
+        "name": "East Falls Church"
+    },
+    {
+        "latlon": "38.90067,-77.189394",
+        "name": "West Falls Church-VT/UVA"
+    },
+    {
+        "latlon": "38.883015,-77.228939",
+        "name": "Dunn Loring-Merrifield"
+    },
+    {
+        "latlon": "38.877693,-77.271562",
+        "name": "Vienna/Fairfax-GMU"
+    },
+    {
+        "latlon": "38.924478,-77.210167",
+        "name": "McLean"
+    },
+    {
+        "latlon": "38.920056,-77.223314",
+        "name": "Tysons Corner"
+    },
+    {
+        "latlon": "38.919749,-77.235192",
+        "name": "Greensboro"
+    },
+    {
+        "latlon": "38.929273,-77.241988",
+        "name": "Spring Hill"
+    },
+    {
+        "latlon": "38.947753,-77.340179",
+        "name": "Wiehle-Reston East"
+    }
+]
