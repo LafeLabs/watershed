@@ -56,7 +56,6 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "javascript file">javascript/init.txt</div>
     <div class = "javascript file">javascript/redraw.txt</div>
     <div class = "javascript file">javascript/pageevents.txt</div>
-    <div class = "javascript file">javascript/jsonconvert.txt</div>
 
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/index.txt</div>
@@ -77,8 +76,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/currentjson.txt</div>
     <div class = "json file">json/stationjson.txt</div>
-    <div class = "json file">json/stationjson2.txt</div>
-    
+
 </div>
 
 <script>

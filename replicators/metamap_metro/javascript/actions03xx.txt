@@ -117,11 +117,11 @@
     //</page0326>
     }
     if(localCommand == 0327){//<page0327>
-    ctx.strokeStyle="purple";
+    ctx.strokeStyle="silver";
     ctx.lineWidth = 2;
-    ctx.fillStyle = "purple";    
-    currentStroke = "purple";
-    currentFill = "purple";
+    ctx.fillStyle = "silver";    
+    currentStroke = "silver";
+    currentFill = "silver";
     //</page0327>
     }
     if(localCommand == 0330){//<page0330>

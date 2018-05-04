@@ -51,6 +51,11 @@ function doTheThing(localCommand){
     echo file_get_contents("json/currentjson.txt");
 ?>
 </div>    
+<div id = "stationjson" style = "display:none">
+<?php
+    echo file_get_contents("json/stationjson.txt");
+?>
+</div>
 <div id = "extdatadiv" style = "display:none"><?php
 if(isset($_GET['url'])){
     echo file_get_contents($_GET['url']);

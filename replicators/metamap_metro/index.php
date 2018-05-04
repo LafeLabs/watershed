@@ -151,16 +151,18 @@ function init(){
 
 }
 </script>
-<script>
-<?php
-    echo file_get_contents("javascript/jsonconvert.txt");
-?>
-</script>
 <script id = "redraw">
 redraw();
 function redraw(){
     ctx = document.getElementById("mainCanvas").getContext("2d");
     ctx.clearRect(0,0,innerWidth,innerHeight);
+    drawGlyph(currentJSON.greenline);
+drawGlyph(currentJSON.blueline);
+drawGlyph(currentJSON.redline);
+drawGlyph(currentJSON.yellowline);
+drawGlyph(currentJSON.orangeline);
+drawGlyph(currentJSON.silverline);
+
     doTheThing(0300);
     drawGlyph(currentJSON.glyph0);
     doTheThing(0300);
@@ -206,6 +208,19 @@ function redraw(){
         imgs[index].style.top = (y0 - unit*yvar).toString() + "px";
         imgs[index].style.width = (unit*currentJSON.images[index].unitfeet/currentJSON.unitfeet).toString() + "px";
     }
+    
+    
+    for(var index = 0;index < stationjson.length;index++){
+    doTheThing(0300);
+    var xy = latlon2xy(stationjson[index].latlon);
+    var xvar = parseFloat(xy.split(",")[0]);
+    var yvar = parseFloat(xy.split(",")[1]);
+    x = x0 + unit*xvar;
+    y = y0 - unit*yvar;
+    side = unit;
+    drawGlyph("0341,0340," + string2glyph(stationjson[index].name) + "0365,");
+}
+
 }
 
 </script>

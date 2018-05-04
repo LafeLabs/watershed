@@ -66,3 +66,5 @@ else{
 
 controls[1].select();
 
+stationjson = JSON.parse(document.getElementById("stationjson").innerHTML);
+
