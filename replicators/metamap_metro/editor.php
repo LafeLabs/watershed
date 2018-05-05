@@ -25,6 +25,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
 <div id = "linkscroll">
     <a href = "text2php.php">text2php.php</a>
     <a href = "index.php">index.php</a>
+    <a href = "jsonprocessor.php">jsonprocessor.php</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
     <a href = "linkeditor.php">linkeditor.php</a>
     <a href = "imageeditor.php">imageeditor.php</a>
@@ -72,6 +73,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/glypheditor.txt</div>
     <div class = "php file">php/shapetableeditor.txt</div>
     <div class = "php file">php/latlon.txt</div>
+    <div class = "php file">php/jsonprocessor.txt</div>
 
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/currentjson.txt</div>

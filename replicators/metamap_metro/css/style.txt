@@ -16,14 +16,14 @@
 }
  #svglink{
      position:absolute;
-     left:50%;
-     top:10px;
+     left:10%;
+     top:14%;
      z-index:2;
  }
  #maplink{
      position:absolute;
-     left:50%;
-     top:30px;
+     left:10%;
+     top:18%;
      z-index:2;
  }
  #editorlink{

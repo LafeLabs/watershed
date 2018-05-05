@@ -1,368 +1,452 @@
 [
     {
         "name": "Metro Center",
-        "latlon": "38.898303,-77.028099",
+        "latlon": "38.8983,-77.0281",
         "xy": "3.7,5.8",
         "linecodes": [
             "BL",
             "OR",
             "SV",
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": true
     },
     {
         "name": "Farragut North",
-        "latlon": "38.903192,-77.039766",
+        "latlon": "38.9032,-77.0398",
         "xy": "-2.3,9",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Dupont Circle",
-        "latlon": "38.909499,-77.04362",
+        "latlon": "38.9095,-77.0436",
         "xy": "-4.3,13.2",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Woodley Park-Zoo/Adams Morgan",
-        "latlon": "38.924999,-77.052648",
+        "latlon": "38.925,-77.0526",
         "xy": "-8.9,23.3",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Cleveland Park",
-        "latlon": "38.934703,-77.058226",
+        "latlon": "38.9347,-77.0582",
         "xy": "-11.7,29.7",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Van Ness-UDC",
-        "latlon": "38.94362,-77.063511",
+        "latlon": "38.9436,-77.0635",
         "xy": "-14.5,35.6",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Tenleytown-AU",
-        "latlon": "38.947808,-77.079615",
+        "latlon": "38.9478,-77.0796",
         "xy": "-22.7,38.3",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Friendship Heights",
-        "latlon": "38.960744,-77.085969",
+        "latlon": "38.9607,-77.086",
         "xy": "-25.9,46.8",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Bethesda",
-        "latlon": "38.984282,-77.094431",
+        "latlon": "38.9843,-77.0944",
         "xy": "-30.3,62.3",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Medical Center",
-        "latlon": "38.999947,-77.097253",
+        "latlon": "38.9999,-77.0973",
         "xy": "-31.7,72.6",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Grosvenor-Strathmore",
-        "latlon": "39.029158,-77.10415",
+        "latlon": "39.0292,-77.1041",
         "xy": "-35.2,91.8",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "White Flint",
-        "latlon": "39.048043,-77.113131",
+        "latlon": "39.048,-77.1131",
         "xy": "-39.8,104.2",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Twinbrook",
-        "latlon": "39.062359,-77.121113",
+        "latlon": "39.0624,-77.1211",
         "xy": "-43.9,113.6",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Rockville",
-        "latlon": "39.084215,-77.146424",
+        "latlon": "39.0842,-77.1464",
         "xy": "-56.8,127.9",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Shady Grove",
-        "latlon": "39.119819,-77.164921",
+        "latlon": "39.1198,-77.1649",
         "xy": "-66.3,151.3",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": true,
+        "transfer": false
     },
     {
         "name": "Gallery Pl-Chinatown",
-        "latlon": "38.89834,-77.021851",
+        "latlon": "38.8983,-77.0219",
         "xy": "6.8,5.8",
         "linecodes": [
             "GR",
             "YL",
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": true
     },
     {
         "name": "Judiciary Square",
-        "latlon": "38.896084,-77.016643",
+        "latlon": "38.8961,-77.0166",
         "xy": "9.5,4.3",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Union Station",
-        "latlon": "38.897723,-77.006745",
+        "latlon": "38.8977,-77.0067",
         "xy": "14.6,5.4",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Rhode Island Ave-Brentwood",
-        "latlon": "38.920741,-76.995984",
+        "latlon": "38.9207,-76.996",
         "xy": "20.1,20.5",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Brookland-CUA",
-        "latlon": "38.933234,-76.994544",
+        "latlon": "38.9332,-76.9945",
         "xy": "20.8,28.7",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Fort Totten",
-        "latlon": "38.951777,-77.002174",
+        "latlon": "38.9518,-77.0022",
         "xy": "16.9,40.9",
         "linecodes": [
             "GR",
             "YL",
             "RD"
-        ]
+        ],
+        "endofline": true,
+        "transfer": true
     },
     {
         "name": "Takoma",
-        "latlon": "38.975532,-77.017834",
+        "latlon": "38.9755,-77.0178",
         "xy": "8.9,56.5",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Silver Spring",
-        "latlon": "38.993841,-77.031321",
+        "latlon": "38.9938,-77.0313",
         "xy": "2,68.6",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Forest Glen",
-        "latlon": "39.015413,-77.042953",
+        "latlon": "39.0154,-77.043",
         "xy": "-3.9,82.7",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Wheaton",
-        "latlon": "39.038558,-77.051098",
+        "latlon": "39.0386,-77.0511",
         "xy": "-8.1,97.9",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Glenmont",
-        "latlon": "39.061713,-77.05341",
+        "latlon": "39.0617,-77.0534",
         "xy": "-9.3,113.1",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": true,
+        "transfer": false
     },
     {
         "name": "NoMa-Gallaudet U",
-        "latlon": "38.907407,-77.002961",
+        "latlon": "38.9074,-77.003",
         "xy": "16.5,11.8",
         "linecodes": [
             "RD"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "McPherson Square",
-        "latlon": "38.901316,-77.033652",
+        "latlon": "38.9013,-77.0337",
         "xy": "0.8,7.8",
         "linecodes": [
             "BL",
             "OR",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Farragut West",
-        "latlon": "38.901311,-77.03981",
+        "latlon": "38.9013,-77.0398",
         "xy": "-2.3,7.8",
         "linecodes": [
             "BL",
             "OR",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Foggy Bottom-GWU",
-        "latlon": "38.900599,-77.050273",
+        "latlon": "38.9006,-77.0503",
         "xy": "-7.7,7.3",
         "linecodes": [
             "BL",
             "OR",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Rosslyn",
-        "latlon": "38.896595,-77.07146",
+        "latlon": "38.8966,-77.0715",
         "xy": "-18.5,4.7",
         "linecodes": [
             "BL",
             "OR",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": true
     },
     {
         "name": "Arlington Cemetery",
-        "latlon": "38.884574,-77.063108",
+        "latlon": "38.8846,-77.0631",
         "xy": "-14.2,-3.2",
         "linecodes": [
             "BL"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Pentagon",
-        "latlon": "38.869349,-77.054013",
+        "latlon": "38.8693,-77.054",
         "xy": "-9.6,-13.2",
         "linecodes": [
             "BL",
             "YL"
-        ]
+        ],
+        "endofline": false,
+        "transfer": true
     },
     {
         "name": "Pentagon City",
-        "latlon": "38.863045,-77.059507",
+        "latlon": "38.863,-77.0595",
         "xy": "-12.4,-17.4",
         "linecodes": [
             "BL",
             "YL"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Crystal City",
-        "latlon": "38.85779,-77.050589",
+        "latlon": "38.8578,-77.0506",
         "xy": "-7.8,-20.8",
         "linecodes": [
             "BL",
             "YL"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Ronald Reagan Washington National Airport",
-        "latlon": "38.852985,-77.043805",
+        "latlon": "38.853,-77.0438",
         "xy": "-4.4,-24",
         "linecodes": [
             "BL",
             "YL"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Braddock Road",
-        "latlon": "38.814009,-77.053763",
+        "latlon": "38.814,-77.0538",
         "xy": "-9.5,-49.6",
         "linecodes": [
             "BL",
             "YL"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "King St-Old Town",
-        "latlon": "38.806474,-77.061115",
+        "latlon": "38.8065,-77.0611",
         "xy": "-13.2,-54.5",
         "linecodes": [
             "BL",
             "YL"
-        ]
+        ],
+        "endofline": false,
+        "transfer": true
     },
     {
         "name": "Eisenhower Avenue",
-        "latlon": "38.800313,-77.071173",
+        "latlon": "38.8003,-77.0712",
         "xy": "-18.4,-58.6",
         "linecodes": [
             "YL"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Huntington",
-        "latlon": "38.793841,-77.075301",
+        "latlon": "38.7938,-77.0753",
         "xy": "-20.5,-62.8",
         "linecodes": [
             "YL"
-        ]
+        ],
+        "endofline": true,
+        "transfer": false
     },
     {
         "name": "Federal Triangle",
-        "latlon": "38.893757,-77.028218",
+        "latlon": "38.8938,-77.0282",
         "xy": "3.6,2.8",
         "linecodes": [
             "BL",
             "OR",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Smithsonian",
-        "latlon": "38.888022,-77.028232",
+        "latlon": "38.888,-77.0282",
         "xy": "3.6,-0.9",
         "linecodes": [
             "BL",
             "OR",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "L'Enfant Plaza",
-        "latlon": "38.884775,-77.021964",
+        "latlon": "38.8848,-77.022",
         "xy": "6.8,-3.1",
         "linecodes": [
             "GR",
@@ -370,274 +454,338 @@
             "BL",
             "OR",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": true
     },
     {
         "name": "Federal Center SW",
-        "latlon": "38.884958,-77.01586",
+        "latlon": "38.885,-77.0159",
         "xy": "9.9,-3",
         "linecodes": [
             "BL",
             "OR",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Capitol South",
-        "latlon": "38.884968,-77.005137",
+        "latlon": "38.885,-77.0051",
         "xy": "15.4,-3",
         "linecodes": [
             "BL",
             "OR",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Eastern Market",
-        "latlon": "38.884124,-76.995334",
+        "latlon": "38.8841,-76.9953",
         "xy": "20.4,-3.5",
         "linecodes": [
             "BL",
             "OR",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Potomac Ave",
-        "latlon": "38.880841,-76.985721",
+        "latlon": "38.8808,-76.9857",
         "xy": "25.3,-5.7",
         "linecodes": [
             "BL",
             "OR",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Stadium-Armory",
-        "latlon": "38.88594,-76.977485",
+        "latlon": "38.8859,-76.9775",
         "xy": "29.5,-2.3",
         "linecodes": [
             "BL",
             "OR",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": true
     },
     {
         "name": "Minnesota Ave",
-        "latlon": "38.898284,-76.948042",
+        "latlon": "38.8983,-76.948",
         "xy": "44.6,5.8",
         "linecodes": [
             "OR"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Deanwood",
-        "latlon": "38.907734,-76.936177",
+        "latlon": "38.9077,-76.9362",
         "xy": "50.6,12",
         "linecodes": [
             "OR"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Cheverly",
-        "latlon": "38.91652,-76.915427",
+        "latlon": "38.9165,-76.9154",
         "xy": "61.3,17.8",
         "linecodes": [
             "OR"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Landover",
-        "latlon": "38.934411,-76.890988",
+        "latlon": "38.9344,-76.891",
         "xy": "73.8,29.5",
         "linecodes": [
             "OR"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "New Carrollton",
-        "latlon": "38.947674,-76.872144",
+        "latlon": "38.9477,-76.8721",
         "xy": "83.4,38.2",
         "linecodes": [
             "OR"
-        ]
+        ],
+        "endofline": true,
+        "transfer": false
     },
     {
         "name": "Mt Vernon Sq 7th St-Convention Center",
-        "latlon": "38.905604,-77.022256",
+        "latlon": "38.9056,-77.0223",
         "xy": "6.6,10.6",
         "linecodes": [
             "GR",
             "YL"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Shaw-Howard U",
-        "latlon": "38.912919,-77.022194",
+        "latlon": "38.9129,-77.0222",
         "xy": "6.7,15.4",
         "linecodes": [
             "GR",
             "YL"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "U Street/African-Amer Civil War Memorial/Cardozo",
-        "latlon": "38.916489,-77.028938",
+        "latlon": "38.9165,-77.0289",
         "xy": "3.2,17.8",
         "linecodes": [
             "GR",
             "YL"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Columbia Heights",
-        "latlon": "38.928672,-77.032775",
+        "latlon": "38.9287,-77.0328",
         "xy": "1.3,25.8",
         "linecodes": [
             "GR",
             "YL"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Georgia Ave-Petworth",
-        "latlon": "38.936077,-77.024728",
+        "latlon": "38.9361,-77.0247",
         "xy": "5.4,30.6",
         "linecodes": [
             "GR",
             "YL"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "West Hyattsville",
-        "latlon": "38.954931,-76.969881",
+        "latlon": "38.9549,-76.9699",
         "xy": "33.4,43",
         "linecodes": [
             "GR"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Prince George's Plaza",
-        "latlon": "38.965276,-76.956182",
+        "latlon": "38.9653,-76.9562",
         "xy": "40.4,49.8",
         "linecodes": [
             "GR"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "College Park-U of Md",
-        "latlon": "38.978523,-76.928432",
+        "latlon": "38.9785,-76.9284",
         "xy": "54.6,58.5",
         "linecodes": [
             "GR"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Greenbelt",
-        "latlon": "39.011036,-76.911362",
+        "latlon": "39.011,-76.9114",
         "xy": "63.3,79.9",
         "linecodes": [
             "GR"
-        ]
+        ],
+        "endofline": true,
+        "transfer": false
     },
     {
         "name": "Archives-Navy Memorial-Penn Quarter",
-        "latlon": "38.893893,-77.021902",
+        "latlon": "38.8939,-77.0219",
         "xy": "6.8,2.9",
         "linecodes": [
             "GR",
             "YL"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Waterfront",
-        "latlon": "38.876221,-77.017491",
+        "latlon": "38.8762,-77.0175",
         "xy": "9.1,-8.7",
         "linecodes": [
             "GR"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Navy Yard-Ballpark",
-        "latlon": "38.876588,-77.005086",
+        "latlon": "38.8766,-77.0051",
         "xy": "15.4,-8.5",
         "linecodes": [
             "GR"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Anacostia",
-        "latlon": "38.862072,-76.995648",
+        "latlon": "38.8621,-76.9956",
         "xy": "20.2,-18",
         "linecodes": [
             "GR"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Congress Heights",
-        "latlon": "38.845334,-76.98817",
+        "latlon": "38.8453,-76.9882",
         "xy": "24.1,-29",
         "linecodes": [
             "GR"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Southern Avenue",
-        "latlon": "38.840974,-76.97536",
+        "latlon": "38.841,-76.9754",
         "xy": "30.6,-31.8",
         "linecodes": [
             "GR"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Naylor Road",
-        "latlon": "38.851187,-76.956565",
+        "latlon": "38.8512,-76.9566",
         "xy": "40.2,-25.1",
         "linecodes": [
             "GR"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Suitland",
-        "latlon": "38.843891,-76.932022",
+        "latlon": "38.8439,-76.932",
         "xy": "52.8,-29.9",
         "linecodes": [
             "GR"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Branch Ave",
-        "latlon": "38.826995,-76.912134",
+        "latlon": "38.827,-76.9121",
         "xy": "62.9,-41",
         "linecodes": [
             "GR"
-        ]
+        ],
+        "endofline": true,
+        "transfer": false
     },
     {
         "name": "Benning Road",
-        "latlon": "38.890488,-76.938291",
+        "latlon": "38.8905,-76.9383",
         "xy": "49.6,0.7",
         "linecodes": [
             "BL",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Capitol Heights",
-        "latlon": "38.889757,-76.913382",
+        "latlon": "38.8898,-76.9134",
         "xy": "62.3,0.2",
         "linecodes": [
             "BL",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Addison Road-Seat Pleasant",
-        "latlon": "38.886713,-76.893592",
+        "latlon": "38.8867,-76.8936",
         "xy": "72.4,-1.8",
         "linecodes": [
             "BL",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Morgan Boulevard",
@@ -646,7 +794,9 @@
         "linecodes": [
             "BL",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Largo Town Center",
@@ -655,131 +805,163 @@
         "linecodes": [
             "BL",
             "SV"
-        ]
+        ],
+        "endofline": true,
+        "transfer": false
     },
     {
         "name": "Van Dorn Street",
-        "latlon": "38.799193,-77.129407",
+        "latlon": "38.7992,-77.1294",
         "xy": "-48.1,-59.3",
         "linecodes": [
             "BL"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Franconia-Springfield",
-        "latlon": "38.766129,-77.168797",
+        "latlon": "38.7661,-77.1688",
         "xy": "-68.3,-81",
         "linecodes": [
             "BL"
-        ]
+        ],
+        "endofline": true,
+        "transfer": false
     },
     {
         "name": "Court House",
-        "latlon": "38.891499,-77.08391",
+        "latlon": "38.8915,-77.0839",
         "xy": "-24.9,1.3",
         "linecodes": [
             "OR",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Clarendon",
-        "latlon": "38.886373,-77.096963",
+        "latlon": "38.8864,-77.097",
         "xy": "-31.6,-2",
         "linecodes": [
             "OR",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Virginia Square-GMU",
-        "latlon": "38.88331,-77.104267",
+        "latlon": "38.8833,-77.1043",
         "xy": "-35.3,-4",
         "linecodes": [
             "OR",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Ballston-MU",
-        "latlon": "38.882071,-77.111845",
+        "latlon": "38.8821,-77.1118",
         "xy": "-39.2,-4.9",
         "linecodes": [
             "OR",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "East Falls Church",
-        "latlon": "38.885841,-77.157177",
+        "latlon": "38.8858,-77.1572",
         "xy": "-62.3,-2.4",
         "linecodes": [
             "OR",
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": true
     },
     {
         "name": "West Falls Church-VT/UVA",
-        "latlon": "38.90067,-77.189394",
+        "latlon": "38.9007,-77.1894",
         "xy": "-78.8,7.4",
         "linecodes": [
             "OR"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Dunn Loring-Merrifield",
-        "latlon": "38.883015,-77.228939",
+        "latlon": "38.883,-77.2289",
         "xy": "-99,-4.2",
         "linecodes": [
             "OR"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Vienna/Fairfax-GMU",
-        "latlon": "38.877693,-77.271562",
+        "latlon": "38.8777,-77.2716",
         "xy": "-120.8,-7.7",
         "linecodes": [
             "OR"
-        ]
+        ],
+        "endofline": true,
+        "transfer": false
     },
     {
         "name": "McLean",
-        "latlon": "38.924478,-77.210167",
+        "latlon": "38.9245,-77.2102",
         "xy": "-89.4,23",
         "linecodes": [
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Tysons Corner",
-        "latlon": "38.920056,-77.223314",
+        "latlon": "38.9201,-77.2233",
         "xy": "-96.1,20.1",
         "linecodes": [
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Greensboro",
-        "latlon": "38.919749,-77.235192",
+        "latlon": "38.9197,-77.2352",
         "xy": "-102.2,19.9",
         "linecodes": [
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Spring Hill",
-        "latlon": "38.929273,-77.241988",
+        "latlon": "38.9293,-77.242",
         "xy": "-105.7,26.1",
         "linecodes": [
             "SV"
-        ]
+        ],
+        "endofline": false,
+        "transfer": false
     },
     {
         "name": "Wiehle-Reston East",
-        "latlon": "38.947753,-77.340179",
+        "latlon": "38.9478,-77.3402",
         "xy": "-155.9,38.3",
         "linecodes": [
             "SV"
-        ]
+        ],
+        "endofline": true,
+        "transfer": false
     }
 ]
