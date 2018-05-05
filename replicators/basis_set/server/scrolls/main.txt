@@ -1,0 +1,30 @@
+<p>
+<a href = "editor.php">editor.php</a>
+</p>
+<p>
+<a href = "scrolleditor.php">scrolleditor.php</a>
+</p>
+
+<h2>Self Web Page</h2>
+<p>
+First, make a empty new directory on your web server that has php installed.  In that empty directory make a file called replicator.php and copy the code into it from this link:
+</p>
+<p>
+<a href = "https://raw.githubusercontent.com/LafeLabs/watershed/master/replicators/htmlscroll/php/replicator.txt">https://raw.githubusercontent.com/LafeLabs/watershed/master/replicators/htmlscroll/php/replicator.txt</a>
+</p>
+<p>
+Save it.  Then either navigate your browser to [your domain]/[new directory you just made]/replicator.php or go to the command line, go into the new directory and type php replicator.php.  This will create several new directories and files automatically as it fetches the raw code from github.  
+</p>
+<p>Keeping this page open in one browser, open a second browser or tab and load [your domain]/[your new directory]/scrolleditor.php.
+Scrolleditor.php is the program used to create this document you are reading now, which is in a file called scrolls/main.txt.  This is a fragment of html which we call a "scroll" because it is intended to be viewed in a scrolling configuration in a website, the parameters of which are determined elsewhere in the code.  Try changing the code in the middle panel.  You should see the html rendering change in the left panel instantly.  After doing your change, hit the white link in the upper right panel marked "main2index.php".  This will run a php script that converts this scroll along with some other html and css code into a file called index.html, meaning that if someone random on the Web points a browser to [your domain]/[your new directory] with no further characters in the browser url field they will see this page! 
+</p>
+<p>
+This is world writeable.  So if this random Web user clicks on the scrolleditor.php link they'll be editing this as well! No passwords! No accounts!  Free form!  
+</p>
+<p>To further explore the system look at editor.php by clicking on one of the links to that.  Editor.php is self editing: it lets you edit all the various php files, which are copied into the directory "php" and renamed with a .txt extension so they can be rendered as raw text by browsers.   If you want to implement your changes you click the link to text2php.php, which runs a script that converts all the .txt files to .php files and points you to a link back to editor.php.  Thus you can use editor.php to edit editor.php! And all the other helper files!! This is all self contained, self replicating and self editing! </p>
+<p>
+    You should treat this like a dry erase board in a hallway: put nothing private on here.  Assume it will all be deleted at any time.  Do no financial transactions. But this is still useful!  Should the files ever get corrupted, which is very easy to have happen, just run replicator.php again after deleting everything and start over.  To back up scrolls you edit, you can make local copies or drop them to a pastebin.  Clone this whole thing to a directory you push to github to mutate it into your own replicator from scratch.  If you want to make this page convert to index.html click again on main2index.php to convert.  
+</p>
+<p>
+    This replicator is mostly just a demo.  There are other replicators that make other self editing self contained self replicating software that does much more complex things, like prepare full thesis length documents in latex while publishing all parts to the web in real time, various vector graphics factories, calculators, geometron instances, etc. We are the fungus.
+</p>

@@ -1,0 +1,24 @@
+<a href = "../">../</a>
+<p>
+<a href = "editor.php">editor.php</a>
+</p>
+<p>
+<a href = "scrolleditor.php">scrolleditor.php</a>
+</p>
+
+<h2>Watershed Network Terminal</h2>
+<p>
+    The Terminal is the physical manifestation of the Watershed Network used on the Street.  This consists of the skeletron 1 cubit octahedron, generally a pair of them, tools in artbox's, generally also two, one of which is a tip jar, a keyboard, and a screen of some kind, such as an Android phone or tablet, along with signs to interest passerby.  All this is the complete basis set that this scroll is a part of, but the part that is specifically the <em>terminal</em> is just the stand for the keyboard and screen, the keyboard, and the phone or tablet.  
+</p>
+<p>Keyboard can be a USB keyboard with a OTG connector or a bluetooth keyboard.  Replication is generally carried out by buying the parts from Amazon, getting them delivered to your home, then passing them on to the next person who will also do that for the next person and so on.</p>
+<p>
+    The screen/network device can be any phone or any tablet, including ones with no cell phone or data plan, running on wifi outside a Starbucks or similar.  Android and windows devices can use a USB keyboard with a OTG connector, and Apple tablets and phones will require a bluetooth keyboard.  
+</p>
+<p>
+    The stand is constructed by making a platform for the keyboard on the Skeletron octahedron with either cardboard, plastic, or wood, and another little stand on that for the screen.  
+</p>
+<p>
+    When in the field using this it is ideal to have two full terminals so that whoever you're helping to learn our System can be using one while you use the other one.
+</p>
+
+

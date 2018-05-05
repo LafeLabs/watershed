@@ -37,9 +37,11 @@
 "php/glypheditor.txt",
 "php/imageeditor.txt",
 "php/index.txt",
+"php/jsonprocessor.txt",
 "php/latlon.txt",
 "php/linkeditor.txt",
 "php/mapsaver.txt",
+"php/metrotopology.txt",
 "php/replicator.txt",
 "php/shapetableeditor.txt",
 "php/text2php.txt"

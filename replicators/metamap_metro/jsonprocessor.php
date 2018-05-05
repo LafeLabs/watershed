@@ -7,6 +7,9 @@ echo file_get_contents("json/stationjson.txt");
 <script>
 stationjson = JSON.parse(document.getElementById("datadiv").innerHTML);
 
+document.getElementById("textIO").value = JSON.stringify(stationjson,null,"    ");    
+
+/*    
 for(var index = 0;index < stationjson.length;index++){
    lat = parseFloat(stationjson[index].latlon.split(",")[0]);
    lon = parseFloat(stationjson[index].latlon.split(",")[1]);
@@ -14,11 +17,6 @@ for(var index = 0;index < stationjson.length;index++){
     lon = Math.round(lon*10000)/10000;
     stationjson[index].latlon = lat.toString() + "," + lon.toString();
 }
-document.getElementById("textIO").value = JSON.stringify(stationjson,null,"    ");    
-
-
-
-/*    
 
 for(var index = 0;index < stationjson.length;index++){
     stationjson[index].transfer = false;

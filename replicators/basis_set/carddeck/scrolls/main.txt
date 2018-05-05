@@ -1,0 +1,23 @@
+<a href = "../">../</a>
+<p>
+<a href = "editor.php">editor.php</a>
+</p>
+<p>
+<a href = "scrolleditor.php">scrolleditor.php</a>
+</p>
+<h2>/carddeck/</h2>
+
+<h2>Card Deck</h2>
+
+<p>
+    The Watershed Network Card Deck is a means of transmitting information based on a deck of cards you make yourself which are roughly similar to Tarot cards.  As a baseline they are 3.5 inches by 5.5 inches, made from cardstock.  Cards generally have a more graphics oriented side and a more text oriented side and are colored in with crayons, markers, colored pencils, or paint.  
+</p>
+<figure>
+<img src = "https://i.imgur.com/tTKuYhw.jpg"/><!--img-->
+<figcaption>Typical cards in a deck</figcaption>
+</figure>
+<figure>
+<img src = "https://i.imgur.com/duahSEJ.jpg"/><!--img-->
+<figcaption>Typical deck box from cardboard and duct tape.  Lid will be held on by a rubber band chain.</figcaption>
+</figure>
+

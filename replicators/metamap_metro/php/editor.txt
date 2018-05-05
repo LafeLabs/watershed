@@ -33,6 +33,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <a href = "glypheditor.php">glypheditor.php</a>
     <a href = "shapetableeditor.php">shapetableeditor.php</a>
     <a href = "latlon.php">latlon.php</a>
+    <a href = "metrotopology.php">metrotopology.php</a>
 
 </div>
 <div id = "namediv"></div>
@@ -74,7 +75,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/shapetableeditor.txt</div>
     <div class = "php file">php/latlon.txt</div>
     <div class = "php file">php/jsonprocessor.txt</div>
-
+    <div class = "php file">php/metrotopology.txt</div>
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/currentjson.txt</div>
     <div class = "json file">json/stationjson.txt</div>

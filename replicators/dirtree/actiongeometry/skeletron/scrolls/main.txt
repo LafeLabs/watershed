@@ -22,3 +22,14 @@
 <img src = "https://i.imgur.com/yKM2n6j.jpg"/><!--img-->
 <figcaption>Closeup of tensegrity joint</figcaption>
 </figure>
+<figure>
+<img src = "https://i.imgur.com/nYo7Pes.jpg"/><!--img-->
+<figcaption>One fully assembled unit, and one partially assembled, with tools.</figcaption>
+</figure>
+
+<figure>
+<img src = "https://i.imgur.com/XXVM5t5.jpg"/><!--img-->
+<figcaption>Two full units of different sizes with replication tool set: saw, drill, knife, pain pens. </figcaption>
+</figure>
+
+

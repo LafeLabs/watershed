@@ -1,0 +1,37 @@
+<a href = "../">../</a>
+<p>
+<a href = "editor.php">editor.php</a>
+</p>
+<p>
+<a href = "scrolleditor.php">scrolleditor.php</a>
+</p>
+
+<h2>ArtBox</h2>
+
+<h3>Feedstock:</h3>
+<ul>
+    <li>Double corrugated cardboard</li>
+    <li>Duct Tape</li>
+    <li>Packing tape</li>
+    <li>White paper</li>
+    <li>Pens</li>
+    <li>Crayons</li>
+    <li>Nylon parachute cord</li>
+</ul>
+<h3>Tools</h3>
+<ul>
+    <li>Box cutter</li>
+    <li>Scissors</li>
+    <li>Lighter</li>
+    <li>6 inch equilateral triangle pattern</li>
+</ul>
+
+<h3>Links:</h3>
+<ul>
+    <li>This replicator scroll</li>
+    <li>Email of constructor human</li>
+    <li>Replicator scroll of what is made with the tools kept inside</li>
+    <li>Calls to action to put money in the tip box or otherwise donate into it</li>
+    <li>Watershed branding</li>
+    <li>Project specific branding for a production set the artbox is used in</li>
+</ul>

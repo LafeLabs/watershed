@@ -9,6 +9,7 @@ document.getElementById("savesvg").onclick = function(){
         currentSVG = "<svg width=\"" + svgwidth.toString() + "\" height=\"" + svgheight.toString() + "\" viewbox = \"0 0 " + svgwidth.toString() + " " + svgheight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
         currentSVG += "\n<!--\n<json>\n" + JSON.stringify(currentJSON,null,"    ") + "\n</json>\n-->\n";
         drawGlyph(currentJSON.greenline);
+
 drawGlyph(currentJSON.blueline);
 drawGlyph(currentJSON.redline);
 drawGlyph(currentJSON.yellowline);

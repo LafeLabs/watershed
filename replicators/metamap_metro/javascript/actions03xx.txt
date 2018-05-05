@@ -365,7 +365,7 @@
     currentSVG += "\" fill = \"" + currentStroke + "\""; 
     currentSVG += " font-size = \"";
     currentSVG += side + "px\"";
-    currentSVG += " font-family = \"futura\"";
+    currentSVG += " font-family = \"arial\"";
     currentSVG += ">";
     if(currentWord == "&"){
         currentWord = "&amp;";
