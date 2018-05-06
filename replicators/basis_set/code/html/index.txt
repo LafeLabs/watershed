@@ -8,32 +8,7 @@
         <a id = "scrolleditorlink" href = "scrolleditor.php">scrolleditor.php</a>
         <div id = "readerscroll" class = "scroll">
 
-<p>
-<a href = "editor.php">editor.php</a>
-</p>
-<p>
-<a href = "scrolleditor.php">scrolleditor.php</a>
-</p>
-
-<h2>Basis Set: Minimum Replication Unit of Watershed Network</h2>
-
-<h3>Elements:</h3>
-
-<ul>
-    <li><a href = "skeletron/">skeletron/</a></li>
-    <li><a href = "artbox/">artbox/</a></li>
-    <li><a href = "carddeck/">carddeck/</a></li>
-    <li><a href = "terminal/">terminal/</a></li>
-    <li><a href = "server/">server/</a></li>
-    <li><a href = "cosmology/">cosmology/</a></li>
-    
-    <li><a href = "code/">code/</a></li>
-    <li><a href = "zinebook/">zinebook/</a></li>
-    <li><a href = "sign/">sign/</a></li>
-    <li><a href = "shapes/">shapes/</a></li>
-    <li><a href = "marker/">marker/</a></li>
-</ul>
-
+<!--main.txt-->
 
         </div>
 

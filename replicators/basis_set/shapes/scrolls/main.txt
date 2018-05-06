@@ -1,0 +1,15 @@
+<p>
+    <a href = "../">../</a>
+</p>
+
+<p>
+<a href = "editor.php">editor.php</a>
+</p>
+<p>
+<a href = "scrolleditor.php">scrolleditor.php</a>
+</p>
+
+<h2>Shapes</h2>
+
+<p>One of the core methods of the Watershed Network is Action Geometry, documented in full elsewhere.  The full path of learning this is great and you should do it, but it's not part of the Basis Set required for minimum replication of a set.  What we do need for that is just something with a equilateral triangle and something with a right angle.  There are many ways to make these, but since the Basis Set is generally copied from an existing one, the standard method is to simply trace whatever shapes you see in the set you're replicating onto the same medium used for those shapes and cut them out and paint them like what you see.</p>
+<p>Shapes are generally either paper colored with crayons and laminated with packing tape and cut to size or hard plastic shapes made from plastic panels of old broken electronics and cut out with razor blades or box cutters, then painted with paint pens.  </p>

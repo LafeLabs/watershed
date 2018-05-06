@@ -15,4 +15,11 @@
     <li><a href = "carddeck/">carddeck/</a></li>
     <li><a href = "terminal/">terminal/</a></li>
     <li><a href = "server/">server/</a></li>
+    <li><a href = "cosmology/">cosmology/</a></li>
+    
+    <li><a href = "code/">code/</a></li>
+    <li><a href = "zinebook/">zinebook/</a></li>
+    <li><a href = "sign/">sign/</a></li>
+    <li><a href = "shapes/">shapes/</a></li>
+    <li><a href = "marker/">marker/</a></li>
 </ul>

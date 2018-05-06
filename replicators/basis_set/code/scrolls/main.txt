@@ -1,0 +1,25 @@
+<p>
+    <a href = "../">../</a>
+</p>
+
+<p>
+<a href = "editor.php">editor.php</a>
+</p>
+<p>
+<a href = "scrolleditor.php">scrolleditor.php</a>
+</p>
+
+<h2>Code Structure</h2>
+
+<p>The Watershed Network is web based and assumes the minimum <em>possible</em> "server side" code at all times.  Thus we avoid "frameworks" and anything that runs on the native machine language of any machine be it phones, computers or anything else. </p>
+
+<h4>Elements</h4>
+<ul>
+    <li style = "color:blue;">Water:HTML</li>
+    <li  style = "color:red;">Fire: JavaScript</li>
+    <li style = "color:purple;">Aether: PHP</li>
+    <li style = "background-color:black;color:yellow;">Air: CSS</li>
+    <li style = "color:brown;">Earth: Geometron</li>
+</ul>
+
+<p>We organize all code by the five elements of Alchemy.  Learn code from the person who replicated the rest of Watershed to you and if not them they can point you to someone who does.  We will build a system of networked peer to peer code education, and this is critical to our whole System.  </p>

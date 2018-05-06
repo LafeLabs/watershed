@@ -1,0 +1,19 @@
+<p>
+    <a href = "../">../</a>
+</p>
+<p>
+<a href = "editor.php">editor.php</a>
+</p>
+<p>
+<a href = "scrolleditor.php">scrolleditor.php</a>
+</p>
+
+<h2>Zine Books</h2>
+<p>
+  The Zine Book is one of the main means of transmitting information in the Watershed Network along with the Deck and all the online systems.  
+</p>
+<p>
+    In its simplest form the Zine Book is just a handwritten "zine", i.e. a stack of 8 and a half by 11 inch white paper(4-12 sheets or so) folded in half and either stapled or sewn.  The level of sophistication and general beauty can be enhanced with nice stitching with good looking thread, and by putting several books together into a larger hard bound volume which has the size and shape of any other hard bound book, but with a more modular construction where any of the booklets can be replaced by another.  
+</p>
+<p>The structure of information in a Zine Book is typically a "Production Set", that is a collection of elements which all self replicate and which taken together represent a means of industrial production of some kind.  This production might be a physical thing, a software construct of some kind, graphics, stories, or anything which it is useful to have a continuous flow of value in.  Thus the booklet generally starts with a list of Elements, each of which is both a replicator of itself and a generator of something else. Roughly speaking the capitalist equivalent of a Zine Book is a "business", and of each element in it a "product".</p>
+

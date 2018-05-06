@@ -1,0 +1,30 @@
+<p>
+    <a href = "../">../</a>
+</p>
+<p>
+<a href = "editor.php">editor.php</a>
+</p>
+<p>
+<a href = "scrolleditor.php">scrolleditor.php</a>
+</p>
+
+<h2>Sign</h2>
+<p>One of the core actions that defines our way of life on the Watershed Network is communicating with new people, who have not heard of us yet.  This is done by sitting or standing at a Network Node and trying without harassing anyone to capture people's interest.  This is the equivalent of what would in a for profit corporation be called "marketing".</p>
+<p>A sign is a call to action, a statement of our "brand", and a indication of what might be in store for someone who stops to talk to us.  This can mean many things.  In this early stage of our Network, we want people to recognize our basic symbology and layout, connect us with each other, and to arouse curiosity.  In order to make this worth our while so that we can make money to survive before we can survive without money we need to have a call to action involving money.  This should be voluntary "pay what you can", and assumes that some people will just want to try stuff, then throw money in a tip jar, while others will want to pay more for a long detailed set of lessons, and that those without money can get all this for free, to spread the network, rather than charging them(if they really have no money).
+</P>
+<P> Words we'll use a lot include: free, diy(do it yourself), self-replicating, web, Watershed Network, freedom, street, art, trash, magic, flow, map, and trees.
+Some typical proposed signs follow:</p>
+
+<h3>Signs:</h3>
+<ul>
+    <li>FREE MAPS</li>
+    <LI>FREE DIY WEBSITES</LI>
+    <LI>WATERSHED NETWORK: FREE WEB</LI>
+    <LI>YOUR DATA, YOUR CODE: SELF REPLICATING FREE WEBSITES</LI>
+    <LI>TRASH MAGIC</LI>
+    <LI>BUILD YOUR OWN FREE MAP WEBSITE</LI>
+    <LI>FREE DIY CUSTOM TOURIST MAP OF DC</LI>
+    <LI>LOCATION-SPECIFIC SOCIAL NETWORKING</LI>
+    <LI>MODERN ALCHEMY</LI>
+    <LI>"The street finds its own uses for things"-William Gibson;BECOME THE STREET</LI>
+</ul>

@@ -1,0 +1,48 @@
+<a href = "../">../</a>
+
+<p>
+<a href = "editor.php">editor.php</a>
+</p>
+<p>
+<a href = "scrolleditor.php">scrolleditor.php</a>
+</p>
+
+<h2>Cosmology</h2>
+<p>
+    
+    <figure>
+
+    <img src = "https://i.imgur.com/7k7mZpU.jpg" style = "width:90%;transform:rotate(-90deg);display:block;margin:auto;margin-bottom:3em;margin-top:3em;">
+    </figure>
+
+The meaning of this figure is explained in it.  We live in a watershed.  Everyone does, every single living thing on the planet.  And we structure the world around us with simple geometry.  Then we metabolize the feed of flowing objects represented by existing industry into something useful that we can live good lives on.  
+</p>
+
+
+<p>For most of Human history we have tried to build a universal cosmology. This quest has involved religion, philosophy, physics, math, poetry, art, and numerous other types of activity.  And yet from 20th century math we know that a truly universal cosmology is impossible.  We labored for thousands of years under the now-provably-false idea that we could eventually build a universal system of Truth from which a right way of living could be derived.  
+</p>
+<p>Cosmology in our world view is thus not even remotely trying to build a Universal Truth.  Instead we construct a set of beliefs, actions, rituals and symbols which when used will lead to a <em>desired life.</em> This is probably not the best way to do this, but we assert that we must at least try.  Given the impossibility of a universal philosophy we have to back all the way up to desired ways of life and then go back to beliefs from there.  </p>
+<h4>The Nine Laws:</h4>
+<ul>
+    <li>EVERYTHING IS PHYSICAL</li>
+    <LI>EVERYTHING IS FRACTAL</LI>
+    <LI>EVERYTHING IS RECURSIVE</LI>
+    <LI>NO MONEY</LI>    
+    <LI>NO PROPERTY</LI>
+    <LI>NO MINING</LI>
+    <LI>LOOK TO THE INSECTS</LI>
+    <LI>LOOK TO THE FUNGI</LI>
+    <LI>LANGUAGE IS HOW THE MIND PARSES REALITY</LI>
+</ul>
+<h4>Trust Model</h4>
+<p>Consider a public space such as a restaurant.  It has glass windows which can be easily smashed by any passerby with a brick, and bricks are not hard to find.  We have as a society agreed that the cost of some broken windows is lower than the cost of replacing all glass windows with steel blast shields.</p>
+<p>And yet this is what the "cyber security" cartel would have us do!  To them, if your windows end up broken it's your fault for having glass windows and trusting that the commons can exist.</p>
+<p>
+    Therefore we propose a trust model in which on average we assume all people mean well and that the cost of trusting everyone is lower than the cost of building a paranoid and violent society online. We note that this trust only extends to those who do not benefit financially from online mayhem, i.e. the IT Cartel.  The "business model" of all programmers, IT people, cyber experts etc. is the same as has been used by organized crime of all kinds since pre-history: they break things, then demand payment to make them work.  Our trust model therefore assumes that all computer professionals of any kind are Evil(with a capital "E", as in a sort of prime source of the overall phenomenon of Evil).  Given the choice between writing bad code and avoiding a Tech Gangster and hiring one of them to write "better" code we'll always choose the former and assume that our home grown coders who are actually decent human beings will eventually have the technical skills to surpass what the Enemy can write anyway.
+</p>
+
+<p>Our cosmology on "computers" is that they are a good model for the machines that have emerged to change the world in the last 40 years.  Rather we view them as primarily two things: <em>art replicators</em> and switches. </p>
+<p>These are what we really care about: the ability to replicate art rapidly from one person to another, be it photos, numbers, words, graphics, or some combination of all those.  And also we need switching to control hardware, where we can program things like robots.   We put these basic operations as the fundamental actions a machine should do in Information Science, not "computation" in the sense of the Turing Machine, which we regard as religious balderdash.</p>
+
+
+
