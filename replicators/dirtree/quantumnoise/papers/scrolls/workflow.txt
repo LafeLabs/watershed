@@ -1,0 +1,17 @@
+<h2>Workflow</h2>
+
+<ol>
+    <li>Get a junction from NIST</li>
+    <li>Get sample holder, magnet, wire bond it up</li>
+    <li>Install in fridge</li>
+    <li>Room temperature tests</li>
+    <li>Test during cooldown</li>
+    <li>Real time data and testing cold, rought estimates of numbers</li>
+    <li>Taking the "real data"</li>
+    <li>Interpreting data, using it to improve your setup(which is presumably the goal)</li>
+    <li>Share your data with rest of quantum noise and measurement community</li>
+</ol>
+
+<p>This document will help you deal with these tasks in stages.  First you'll understand what goes into Joe's junction design and sample holders in mostly his words.  Then we present instructions on how to install it in the fridge, set up the measurement, do room temperature tests, test during cooldown process, then do fast checks cold, take publication quality data cold, share with community and use data to improve your experiment.</p>
+
+<p>The software included with this paper can be used to generate SVG files to describe layout of a low temp experiment and to plot noise curves.  </p>

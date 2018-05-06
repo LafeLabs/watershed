@@ -42,7 +42,5 @@ The meaning of this figure is explained in it.  We live in a watershed.  Everyon
 </p>
 
 <p>Our cosmology on "computers" is that they are a good model for the machines that have emerged to change the world in the last 40 years.  Rather we view them as primarily two things: <em>art replicators</em> and switches. </p>
-<p>These are what we really care about: the ability to replicate art rapidly from one person to another, be it photos, numbers, words, graphics, or some combination of all those.  And also we need switching to control hardware, where we can program things like robots.   We put these basic operations as the fundamental actions a machine should do in Information Science, not "computation" in the sense of the Turing Machine, which we regard as religious balderdash.</p>
-
-
+<p>These are what we really care about: the ability to replicate art rapidly from one person to another, be it photos, numbers, words, graphics, or some combination of all those.  And also we need switching to control hardware, where we can program things like robots.   We put these basic operations as the fundamental actions a machine should do in Information Science, not "computation" in the sense of the Turing Machine, which we regard as superstitious balderdash.</p>
 

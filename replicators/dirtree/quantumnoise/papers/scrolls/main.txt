@@ -6,6 +6,7 @@ Lafe Spietz
 Jose Aumentado
 
 <h2>Background and Goals</h2>
+<p>This document is intended as a manual for using noise from tunnel junctions for amplifier noise metrology.  To that end, it follows roughly the workflow of this experiment, from either fabricating junctions or more likely getting them from the Aumentado Group at NIST all the way through to publishing your results. </p>
 
 
 <h2>Fabrication of Devices</h2>

@@ -22,4 +22,5 @@
     <li><a href = "sign/">sign/</a></li>
     <li><a href = "shapes/">shapes/</a></li>
     <li><a href = "marker/">marker/</a></li>
+    <li><a href = "principles/">principles/</a></li>
 </ul>

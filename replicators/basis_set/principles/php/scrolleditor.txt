@@ -2,30 +2,35 @@
 <html>
 <head>
     <title>Watershed Latex Editor</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-   <script>
-	MathJax.Hub.Config({
-		tex2jax: {
-		inlineMath: [['$','$'], ['\\(','\\)']],
-		processEscapes: true,
-		processClass: "mathjax",
-        ignoreClass: "no-mathjax"
-		}
-	});//			MathJax.Hub.Typeset();//tell Mathjax to update the math
-</script>
-</head>
-<body class="no-mathjax">
     
-<div id = "scrolldisplay"  class = "mathjax"></div>    
+    <!-- 
+PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
+
+EVERYTHING IS PHYSICAL
+EVERYTHING IS FRACTAL
+EVERYTHING IS RECURSIVE
+NO MONEY
+NO PROPERTY
+NO MINING
+EGO DEATH:
+    LOOK TO THE INSECTS
+    LOOK TO THE FUNGI
+    LANGUAGE IS HOW THE MIND PARSES REALITY
+-->
+<!--Stop Google:-->
+<META NAME="robots" CONTENT="noindex,nofollow">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<div id = "scrolldisplay"></div>    
     
 <div id = "linkscroll">
     <a href = "index.html" id = "indexlink">index.html</a>
     <a href = "editor.php">editor.php</a>
     <a href = "main2index.php">main2index.php</a>    
     <div class = "button">FIGURE</div>
-    <div class = "button">HTML2TEX</div>
 </div>
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="true"></div>
@@ -33,13 +38,6 @@
     <div class = "scrolls file">scrolls/replicator.txt</div>
     <div class = "scrolls file">scrolls/main.txt</div>
     <div class = "scrolls file">scrolls/notes.txt</div>
-    <div class = "scrolls file">scrolls/quantumunits.txt</div>
-    <div class = "scrolls file">scrolls/metrologyguide.txt</div>
-    <div class = "scrolls file">scrolls/joeversion.txt</div>
-    <div class = "scrolls file">scrolls/roadmap.txt</div>
-    <div class = "scrolls file">scrolls/calculatorassocialmedia.txt</div>
-    <div class = "scrolls file">scrolls/workflow.txt</div>
-
 </div>
 <textarea id = "texbox"></textarea>
 <script>
@@ -51,11 +49,8 @@ httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         filedata = this.responseText;
         editor.setValue(filedata);
-        html2tex();
         document.getElementById("scrolldisplay").innerHTML = filedata;
-        MathJax.Hub.Typeset();//tell Mathjax to update the math
-        
-        
+
     }
 };
 httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
@@ -141,7 +136,6 @@ document.getElementById("maineditor").onkeyup = function(){
     var fileName = currentFile.split("/")[1];
     if(fileType == "scrolls"){
         document.getElementById("scrolldisplay").innerHTML = editor.getSession().getValue();
-        MathJax.Hub.Typeset();//tell Mathjax to update the math
     }
 }
 
@@ -153,37 +147,7 @@ buttons[0].onclick = function(){
         var cursorPosition = editor.getCursorPosition();
         editor.getSession().insert(cursorPosition,figtext);
 }
-buttons[1].onclick = function(){
-    html2tex();    
-    //save this file to latex subdirectory
-    
-    data = encodeURIComponent(document.getElementById("texbox").value);
-    var httpc = new XMLHttpRequest();
-    var url = "filesaver.php";        
-    httpc.open("POST", url, true);
-    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-    httpc.send("data="+data+"&filename="+"latex/" + fileBase + ".tex");//send text to filesaver.php
-    
-}
 
-function html2tex(){
-        var textin = editor.getSession().getValue();
-    textout = "\n\\documentclass[11pt]{article}\n\\usepackage{graphicx}\n\\begin{document}\n";
-    textout += textin;
-    textout = textout.replace(/<p>/g,"\n\n");
-    textout = textout.replace(/<\/p>/g,"");
-    textout = textout.replace(/<h2>/g,"\n\\section{\n");
-    textout = textout.replace(/<\/h2>/g,"}");
-    textout = textout.replace(/<figure>/g,"\n\\begin{figure}");
-    textout = textout.replace(/<\/figure>/g,"\\end{figure}\n");
-    textout = textout.replace(/<figcaption>/g,"\\caption{");
-    textout = textout.replace(/<\/figcaption>/g,"\}");
-    textout = textout.replace(/<img src = "/g,"\n\\includegraphics[width=\\linewidth]{../");
-    textout = textout.replace(/"\/><!--img-->/g,"\}\n");
-    
-    textout+= "\n\\end{document}\n";
-    document.getElementById("texbox").value = textout;
-}
 </script>
 <style>
 #namediv{
