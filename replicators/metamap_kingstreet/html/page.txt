@@ -1,0 +1,57 @@
+<a  id = "svglink" href = "svg/">SVG Feed</a>
+<a  id = "maplink" href = "maps/">map Feed</a>
+
+<a  id = "editorlink" href = "editor.php">editor.php</a>
+<canvas id="invisibleCanvas" style="display:none"></canvas>
+<canvas id="mainCanvas"></canvas>
+<textarea id="textIO"></textarea>
+<table id = "zoompan">
+    <tr>
+        <td class = "button">up</td>
+        <td class = "button">down</td>
+        <td class = "button">left</td>
+        <td class = "button">right</td>
+        <td class = "button">out</td>
+        <td class = "button">in</td>
+    </tr>
+</table>
+<table id = "controlTable">
+    <tr id = "addressline">
+        <td>ADDRESS:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>ACTION:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>PRINT:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>STACK:</td><td><input/></td>
+    </tr>
+</table>
+<table id = "imageTable">   
+    <tr>
+        <td>IMAGE URL:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE WIDTH:</td><td><input value = "2"/></td>
+    </tr>
+    <tr>
+        <td>IMAGE TOP:</td><td><input value  = "-1"/></td>
+    </tr>
+    <tr>
+        <td>IMAGE LEFT:</td><td><input value = "-1"/></td>
+    </tr>
+</table>
+<table id = "buttonTable">
+<tr><td class = "button" id = "savesvg">SAVE SVG</td></tr>
+<tr><td class = "button" id = "savemap">SAVE MAP</td></tr>
+<tr><td class = "button" id = "editmode">EDIT MODE</td></tr>
+<tr><td class = "button" id = "imageon">IMAGE MODE</td></tr>
+<tr><td class = "button" id = "importmap">IMPORT MAP</td></tr>
+<tr><td class = "button" id = "exportmap">EXPORT MAP</td></tr>
+<tr><td class = "button" id = "findme">FIND ME</td></tr>
+
+</table>
+
+<img id = "mainImage"/>
