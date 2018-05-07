@@ -14,4 +14,6 @@
 
 <p>This document will help you deal with these tasks in stages.  First you'll understand what goes into Joe's junction design and sample holders in mostly his words.  Then we present instructions on how to install it in the fridge, set up the measurement, do room temperature tests, test during cooldown process, then do fast checks cold, take publication quality data cold, share with community and use data to improve your experiment.</p>
 
-<p>The software included with this paper can be used to generate SVG files to describe layout of a low temp experiment and to plot noise curves.  </p>
+<p>The software included with this paper can be used to generate SVG files to describe layout of a low temp experiment and to plot noise curves.  This is the sense in which this is a "living document": as you work through the elements of this document you can create graphics and text which you can instantly share online with all other users of the document.  </p>
+
+

@@ -1,0 +1,8 @@
+<h2>Installation</h2>
+<p>
+    This section is not just about how to install the junction in your apparatus and use it, it's about observation: what exactly is your setup, down to the smallest detail you don't know matters?  The purpose of shot noise metrology is in many ways to make the invisible problems in your measurement chain visible. 
+</p>
+<p>
+    Ultimately when you use the shot noise junction to measure noise in your system you will probably get a higher noise than you expect.  If you had a perfect picture of each component in your measurement chain, including both loss and reflection, this would not happen, so the path to a accurate noise reading is also the path to an accurate accounting of what exactly is in your chain.
+    
+</p>
