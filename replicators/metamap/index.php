@@ -5,6 +5,8 @@
 <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 
+Trust model: Trust all non-coders implicitly, assume the worst from anyone who makes any money of computer industry in any way.
+
 EVERYTHING IS PHYSICAL
 EVERYTHING IS FRACTAL
 EVERYTHING IS RECURSIVE

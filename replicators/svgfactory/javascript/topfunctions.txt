@@ -1,35 +1,4 @@
 
-function latlon2xy(latlonin) {
-    
-    //input to this function is a string of the form "lattitude,longitude", where lat and lon are in decimal degrees
-    var lat0 = parseFloat(currentJSON.latlon0.split(",")[0]);   //lattitude to 10 meter precision
-    var coslat = Math.cos(lat0*Math.PI/180);//convert to radians, take cosine of lattitude
-    var lon0 =  parseFloat(currentJSON.latlon0.split(",")[1]);//longitude to 10 meter precision
-    var unitfeet = currentJSON.unitfeet;//unit length in feet
-
-    var digits = 1;//1;//0 digits = 555 feet, 1 is 55 feet, 2 is 5.5  feet
-    var precision = Math.pow(10,digits);
-
-    var lat1 = parseFloat(latlonin.split(",")[0]);
-    var lon1 = parseFloat(latlonin.split(",")[1]);
-    //from the original definition of the meter:
-    //90 degrees lattitude = 10,000,000 meters = 32808399 feet
-    //1 degree lattitude = 10,000,000 meters/90 = 111111.1 meters = 111 km
-    //0.1 degree = 11 km
-    //0.01 degree = 1.1 km
-    //0.001 degree = 110 m
-    //0.0001 degree = 11 m
-    //1 meter = 3.28084 feet
-    //1 degree lattitude = 111111.1(meters)*3.28084(feet/meter) = 364538 feet
-    //1 degree longitude = 1 degre lattitude X cos(lattitude) = 283699 feet at 38.8895 N
-    var deltaxfeet = Math.round((lon1 - lon0)*364538*coslat);//convert longitude difference to feet
-    var deltayfeet = Math.round((lat1 - lat0)*364538);//convert lattitude difference to feet
-    var deltax = Math.round(precision*deltaxfeet/unitfeet)/precision;//convert from feet to "units" based on unitfeet
-    var deltay = Math.round(precision*deltayfeet/unitfeet)/precision;//convert from feet to "units" based on unitfeet
-    return deltax.toString() + "," + deltay.toString();
-}
-
-
 
  function string2byteCode(localString){
     var localByteCode = "";

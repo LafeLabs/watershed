@@ -1,0 +1,12 @@
+<svg width="600" height="600" viewbox = "0 0 600 600"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<glyph>
+0337,0341,0333,0341,0336,0333,0341,0337,0341,0333,
+</glyph>
+-->
+    <circle cx="300" cy = "300" r = "200" stroke = "#000000" stroke-width = "2" fill = "none" />
+    <circle cx="500" cy = "300" r = "200" stroke = "#000000" stroke-width = "2" fill = "none" />
+    <circle cx="600" cy = "300" r = "100" stroke = "#000000" stroke-width = "2" fill = "none" />
+    <circle cx="600" cy = "300" r = "200" stroke = "#000000" stroke-width = "2" fill = "none" />
+</svg>

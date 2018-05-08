@@ -1,0 +1,41 @@
+<svg width="600" height="600" viewbox = "0 0 600 600"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<glyph>
+0340,0341,0333,0340,0341,
+</glyph>
+-->
+    <line x1="384" y1="49" x2="384" y2="-1" style="stroke:#000000;stroke-width:2" />
+    <line x1="384" y1="-1" x2="334" y2="-1" style="stroke:#000000;stroke-width:2" />
+    <line x1="334" y1="-1" x2="334" y2="49" style="stroke:#000000;stroke-width:2" />
+    <line x1="334" y1="49" x2="384" y2="49" style="stroke:#000000;stroke-width:2" />
+<circle cx="359" cy = "24" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+    <line x1="434" y1="49" x2="434" y2="-1" style="stroke:#000000;stroke-width:2" />
+    <line x1="434" y1="-1" x2="384" y2="-1" style="stroke:#000000;stroke-width:2" />
+    <line x1="384" y1="-1" x2="384" y2="49" style="stroke:#000000;stroke-width:2" />
+    <line x1="384" y1="49" x2="434" y2="49" style="stroke:#000000;stroke-width:2" />
+    <circle cx="409" cy = "24" r = "25" stroke = "#000000" stroke-width = "2" fill = "none" />
+<circle cx="409" cy = "24" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+    <line x1="484" y1="49" x2="484" y2="-1" style="stroke:#000000;stroke-width:2" />
+    <line x1="484" y1="-1" x2="434" y2="-1" style="stroke:#000000;stroke-width:2" />
+    <line x1="434" y1="-1" x2="434" y2="49" style="stroke:#000000;stroke-width:2" />
+    <line x1="434" y1="49" x2="484" y2="49" style="stroke:#000000;stroke-width:2" />
+    <line x1="446" y1="30" x2="459" y2="30" style="stroke:#000000;stroke-width:2" />
+    <line x1="446" y1="30" x2="446" y2="18" style="stroke:#000000;stroke-width:2" />
+    <line x1="446" y1="18" x2="459" y2="18" style="stroke:#000000;stroke-width:2" />
+    <line x1="459" y1="18" x2="459" y2="12" style="stroke:#000000;stroke-width:2" />
+    <line x1="459" y1="12" x2="471" y2="24" style="stroke:#000000;stroke-width:2" />
+    <line x1="471" y1="24" x2="459" y2="37" style="stroke:#000000;stroke-width:2" />
+    <line x1="459" y1="37" x2="459" y2="30" style="stroke:#000000;stroke-width:2" />
+    <line x1="534" y1="49" x2="534" y2="-1" style="stroke:#000000;stroke-width:2" />
+    <line x1="534" y1="-1" x2="484" y2="-1" style="stroke:#000000;stroke-width:2" />
+    <line x1="484" y1="-1" x2="484" y2="49" style="stroke:#000000;stroke-width:2" />
+    <line x1="484" y1="49" x2="534" y2="49" style="stroke:#000000;stroke-width:2" />
+<circle cx="509" cy = "24" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+    <line x1="584" y1="49" x2="584" y2="-1" style="stroke:#000000;stroke-width:2" />
+    <line x1="584" y1="-1" x2="534" y2="-1" style="stroke:#000000;stroke-width:2" />
+    <line x1="534" y1="-1" x2="534" y2="49" style="stroke:#000000;stroke-width:2" />
+    <line x1="534" y1="49" x2="584" y2="49" style="stroke:#000000;stroke-width:2" />
+    <circle cx="559" cy = "24" r = "25" stroke = "#000000" stroke-width = "2" fill = "none" />
+<circle cx="559" cy = "24" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+</svg>

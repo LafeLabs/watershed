@@ -1,0 +1,45 @@
+<svg width="600" height="600" viewbox = "0 0 600 600"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<glyph>
+01011,0341,0333,0341,0340,0340,0332,0340,0333,0333,0340,0332,0336,0340,0332,0337,0333,0336,0332,0334,0337,0306,0335,0201,0334,0334,0334,0201,0334,0201,0334,0201,0334,0201,0334,0201,0334,0201,0334,0335,0335,0201,0334,0335,0201,0335,0201,0335,0201,0335,0201,0335,0201,0335,0334,0201,0335,0201,0201,0201,0335,0201,0335,0201,0335,0201,0335,0201,0335,0201,0330,0305,0352,0350,0335,0305,0201,0334,0201,0334,0201,0334,0201,0334,0201,0334,0330,0334,0304,0334,0330,0330,0330,0336,0333,0331,0336,0330,0337,0337,0337,0333,0342,0334,0342,0335,0340,0332,0336,0330,0332,0332,0332,0336,0333,0333,0337,0322,0306,0362,0203,0335,0203,0335,0203,0335,0203,0335,0203,0335,0203,0335,0203,0363,0334,0326,0336,0362,0203,0335,0203,0335,0203,0335,0203,0335,0203,0335,0203,0335,0363,0334,0351,0324,0362,0203,0334,0203,0334,0203,0363,0335,0330,0330,0362,0203,0334,0203,0334,0203,0334,0203,0363,0330,0330,0330,0330,0330,0330,0337,0330,0332,0333,0333,0333,0327,0362,0203,0334,0203,0334,0203,0363,0330,0330,0335,0212,0212,
+</glyph>
+-->
+    <circle cx="300" cy = "300" r = "90.9090909090909" stroke = "#000000" stroke-width = "2" fill = "none" />
+    <circle cx="391" cy = "300" r = "90.9090909090909" stroke = "#000000" stroke-width = "2" fill = "none" />
+<circle cx="391" cy = "300" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+<circle cx="391" cy = "300" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+<circle cx="300" cy = "300" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+<circle cx="482" cy = "300" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+<circle cx="391" cy = "300" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+    <line x1="391" y1="300" x2="345" y2="221" style="stroke:#000000;stroke-width:2" />
+    <line x1="345" y1="221" x2="391" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="391" y1="300" x2="482" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="482" y1="300" x2="527" y2="221" style="stroke:#000000;stroke-width:2" />
+    <line x1="527" y1="221" x2="482" y2="143" style="stroke:#000000;stroke-width:2" />
+    <line x1="482" y1="143" x2="391" y2="143" style="stroke:#000000;stroke-width:2" />
+    <line x1="391" y1="143" x2="345" y2="221" style="stroke:#000000;stroke-width:2" />
+    <line x1="345" y1="221" x2="255" y2="221" style="stroke:#000000;stroke-width:2" />
+    <line x1="255" y1="221" x2="164" y2="221" style="stroke:#000000;stroke-width:2" />
+    <line x1="164" y1="221" x2="118" y2="143" style="stroke:#000000;stroke-width:2" />
+    <line x1="118" y1="143" x2="164" y2="64" style="stroke:#000000;stroke-width:2" />
+    <line x1="164" y1="64" x2="255" y2="64" style="stroke:#000000;stroke-width:2" />
+    <line x1="255" y1="64" x2="300" y2="143" style="stroke:#000000;stroke-width:2" />
+    <line x1="300" y1="143" x2="345" y2="221" style="stroke:#000000;stroke-width:2" />
+    <line x1="345" y1="221" x2="300" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="300" y1="300" x2="255" y2="379" style="stroke:#000000;stroke-width:2" />
+    <line x1="255" y1="379" x2="209" y2="457" style="stroke:#000000;stroke-width:2" />
+    <line x1="209" y1="457" x2="118" y2="457" style="stroke:#000000;stroke-width:2" />
+    <line x1="118" y1="457" x2="73" y2="379" style="stroke:#000000;stroke-width:2" />
+    <line x1="73" y1="379" x2="118" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="118" y1="300" x2="209" y2="300" style="stroke:#000000;stroke-width:2" />
+    <line x1="209" y1="300" x2="255" y2="379" style="stroke:#000000;stroke-width:2" />
+    <line x1="300" y1="457" x2="328" y2="544" style="stroke:#000000;stroke-width:2" />
+    <line x1="328" y1="544" x2="419" y2="544" style="stroke:#000000;stroke-width:2" />
+    <line x1="419" y1="544" x2="447" y2="457" style="stroke:#000000;stroke-width:2" />
+    <line x1="447" y1="457" x2="374" y2="404" style="stroke:#000000;stroke-width:2" />
+    <line x1="374" y1="404" x2="300" y2="457" style="stroke:#000000;stroke-width:2" />
+    <line x1="555" y1="294" x2="555" y2="112" style="stroke:#000000;stroke-width:2" />
+    <line x1="555" y1="294" x2="374" y2="294" style="stroke:#000000;stroke-width:2" />
+<circle cx="555" cy = "294" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+	<path d = "M192 203 L192 112 L270 67 L349 112 L349 203 L270 248 L192 203 L192 112 Z" stroke = "red" stroke-width = "2" fill = "red" />	<path d = "M192 112 L152 89 L152 44 L192 21 L231 44 L231 89 L192 112 Z" stroke = "blue" stroke-width = "2" fill = "blue" />	<path d = "M192 112 L152 135 L192 158 L192 112 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />	<path d = "M270 158 L310 180 L310 135 L270 158 L310 180 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />	<path d = "M389 408 L467 453 L467 362 L389 408 Z" stroke = "purple" stroke-width = "2" fill = "purple" /></svg>

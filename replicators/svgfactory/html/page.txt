@@ -33,5 +33,7 @@
 
 <table id = "buttonTable">
 <tr><td class = "button" id = "savesvg">SAVE SVG</td></tr>
+<tr><td class = "button" id = "savespelling">SAVE SPELLING</td></tr>
+
 </table>
 <input id = "glyphspellinput"/>

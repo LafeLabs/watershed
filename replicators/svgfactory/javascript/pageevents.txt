@@ -1,3 +1,4 @@
+
 document.getElementById("glyphspellinput").onchange = function(){
     cleanGlyph = this.value;
     currentGlyph = cleanGlyph + "0207,";
@@ -28,6 +29,49 @@ document.getElementById("savesvg").onclick = function(){
         redraw();
  }
  
+ document.getElementById("savespelling").onclick = function(){
+    svgwidth = 600;
+    svgheight = 600;
+
+    ctx = document.getElementById("mainCanvas").getContext("2d");
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    ctx.strokeRect(0.5*innerWidth - 300,0.5*innerHeight - 300,600,600);
+
+    currentSVG = "<svg width=\"" + svgwidth.toString() + "\" height=\"" + svgheight.toString() + "\" viewbox = \"0 0 " + svgwidth.toString() + " " + svgheight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
+    currentSVG += "\n<!--\n<glyph>\n" + cleanGlyph + "\n</glyph>\n-->\n";
+    doTheThing(0300);
+    side = 50;
+    x = 0.5*(innerWidth - svgwidth) - side;
+    y = 0.5*(innerHeight - svgheight) - side;
+    var tempArray = cleanGlyph.split(',');
+    for(var index = 0;index < tempArray.length;index++){
+        ctx.lineWidth = 2;
+        // ctx.strokeStyle="black";
+        if(x > 0.94*(0.5*(innerWidth + svgwidth) - side)){
+            y += 1.1*side;
+            x = 0.5*(innerWidth - svgwidth) - side;
+        }
+        doTheThing(parseInt(tempArray[index],8) + 01000);
+        if(parseInt(tempArray[index],8) > 01000){
+            doTheThing(01060);
+            doTheThing(01061);
+            var sixtyfours = (parseInt(tempArray[index],8) & 0700) >> 6;
+            var eights = (parseInt(tempArray[index],8) & 070) >> 3;
+            var ones = parseInt(tempArray[index],8) & 07;
+            doTheThing(01060 + sixtyfours);            
+            doTheThing(01060 + eights);            
+            doTheThing(01060 + ones);            
+        }
+    }
+        
+    currentSVG += "</svg>";
+    document.getElementById("textIO").value = currentSVG;
+    var httpc = new XMLHttpRequest();
+    var url = "feedsaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpc.send("data=" + encodeURIComponent(document.getElementById("textIO").value));//send text to feedsaver.php
+}
  
 controls[0].onchange = function(){
     currentAddress = parseInt(this.value,8);
@@ -49,18 +93,6 @@ controls[1].onkeydown = function(e) {
             doTheThing(021);
             redraw();
         }
-        if(charCode == 046){
-//        doTheThing(023);
-            currentAddress++;
-            currentGlyph = currentTable[currentAddress] + ",0207,";
-            redraw();
-        }
-        if(charCode == 050){
-//        doTheThing(022);
-            currentAddress--;
-            currentGlyph = currentTable[currentAddress] + ",0207,";
-            redraw();
-        }    
     }
     
     controls[2].onkeydown = function(e) {
@@ -97,7 +129,7 @@ controls[1].onkeydown = function(e) {
 controls[1].onkeypress = function(a){//action
     charCode = a.keyCode || a.which;
     console.log(a.which);
-    if(charCode != 010 && charCode != 045 && charCode != 047){
+    if(charCode != 010 && charCode != 045 && charCode != 047 && charCode != 046  && charCode != 050){
             
         if(parseInt(currentTable[charCode],8) >= 0200){
             var glyphSplit = currentGlyph.split(",");
@@ -129,7 +161,7 @@ controls[1].onkeypress = function(a){//action
     
 controls[2].onkeypress = function(a){//print
     charCode = a.keyCode || a.which;
-    if(charCode != 010 && charCode != 045 && charCode != 047){
+    if(charCode != 010 && charCode != 045 && charCode != 047 && charCode != 046  && charCode != 050){
         var glyphSplit = currentGlyph.split(",");
         currentGlyph = "";
         for(var index = 0;index < glyphSplit.length;index++){
@@ -154,7 +186,7 @@ controls[2].onkeypress = function(a){//print
     
 controls[3].onkeypress = function(a){//stack
     charCode = a.keyCode || a.which;    
-    if(charCode != 010 && charCode != 045 && charCode != 047){
+    if(charCode != 010 && charCode != 045 && charCode != 047 && charCode != 046  && charCode != 050){
         var glyphSplit = currentGlyph.split(",");
         currentGlyph = "";
         for(var index = 0;index < glyphSplit.length;index++){

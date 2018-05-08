@@ -1,0 +1,23 @@
+<svg width="600" height="600" viewbox = "0 0 600 600"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<glyph>
+0341,0333,0337,0341,0333,0337,0333,0341,0336,0332,0332,0332,0332,0336,0341,0333,0330,0330,0322,0341,0336,0341,0336,0341,0332,0332,0337,0337,0337,0336,0333,0332,0332,0332,0310,0201,0335,0201,0335,0350,0335,0337,0201,0335,0330,0304,0305,0311,0201,0335,0350,0335,0305,0337,0201,0335,0335,0201,0350,0335,0201,0335,0335,0335,0335,0201,
+</glyph>
+-->
+    <circle cx="300" cy = "300" r = "100" stroke = "#000000" stroke-width = "2" fill = "none" />
+    <circle cx="400" cy = "300" r = "200" stroke = "#000000" stroke-width = "2" fill = "none" />
+    <circle cx="1000" cy = "300" r = "400" stroke = "#000000" stroke-width = "2" fill = "none" />
+    <circle cx="200" cy = "300" r = "100" stroke = "#000000" stroke-width = "2" fill = "none" />
+    <circle cx="300" cy = "100" r = "100" stroke = "red" stroke-width = "2" fill = "none" />
+    <circle cx="300" cy = "100" r = "50" stroke = "red" stroke-width = "2" fill = "none" />
+    <circle cx="300" cy = "100" r = "25" stroke = "red" stroke-width = "2" fill = "none" />
+    <line x1="50" y1="100" x2="50" y2="0" style="stroke:red;stroke-width:2" />
+    <line x1="50" y1="0" x2="150" y2="0" style="stroke:red;stroke-width:2" />
+    <line x1="150" y1="0" x2="50" y2="100" style="stroke:red;stroke-width:2" />
+    <line x1="-91" y1="100" x2="-233" y2="100" style="stroke:red;stroke-width:2" />
+    <line x1="-233" y1="100" x2="-162" y2="-118" style="stroke:red;stroke-width:2" />
+    <line x1="-162" y1="-118" x2="-91" y2="100" style="stroke:red;stroke-width:2" />
+    <line x1="-91" y1="100" x2="-162" y2="318" style="stroke:red;stroke-width:2" />
+    <line x1="-162" y1="318" x2="-233" y2="100" style="stroke:red;stroke-width:2" />
+</svg>
