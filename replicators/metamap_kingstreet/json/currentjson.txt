@@ -21,6 +21,11 @@
             "latlon": " 38.807616, -77.056428 "
         },
         {
+            "url": "https://www.metamapdc.org/killeresp/",
+            "text": "killeresp",
+            "latlon": "38.805473, -77.050881"
+        },
+        {
             "url": "http://torpedofactory.org/",
             "text": "Torpedo Factory Art Center",
             "latlon": "38.804954, -77.039816"

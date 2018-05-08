@@ -1,0 +1,29 @@
+doTheThing(06);//import embedded hypercube in this .html doc
+doTheThing(07);//initialize Geometron global variables
+
+document.getElementById("mainCanvas").width = innerWidth;
+document.getElementById("mainCanvas").height = innerHeight;
+
+x0 = innerWidth/2;
+y0 = innerHeight/2;    
+
+controls = document.getElementById("controlTable").getElementsByTagName("input");   
+
+unit = 100;
+
+
+if(document.getElementById("extdatadiv").innerHTML.length > 10){
+    currentGlyph = (document.getElementById("extdatadiv").innerHTML);
+}
+
+unit = 100;
+
+cleanGlyph = "";
+currentGlyph = ",0207,";
+glyphEditMode = true;
+shapeTableEditMode = false;
+
+zoompanbuttons = document.getElementById("zoompan").getElementsByClassName("button");
+
+controls[1].select();
+
