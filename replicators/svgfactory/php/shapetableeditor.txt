@@ -285,9 +285,12 @@ controls[1].onkeydown = function(e) {
             redraw();
         }
     }
+    
 controls[1].onkeypress = function(a){//action
-        charCode = a.keyCode || a.which;
-        console.log(a.which);
+    charCode = a.keyCode || a.which;
+    console.log(a.which);
+    if(charCode != 010 && charCode != 045 && charCode != 047 && charCode != 046 && charCode != 050){
+            
         if(parseInt(currentTable[charCode],8) >= 0200){
             var glyphSplit = currentGlyph.split(",");
             currentGlyph = "";
@@ -314,9 +317,11 @@ controls[1].onkeypress = function(a){//action
         }
         this.value = "";
     }
+}
     
-    controls[2].onkeypress = function(a){//print
-        charCode = a.keyCode || a.which;
+controls[2].onkeypress = function(a){//print
+    charCode = a.keyCode || a.which;
+    if(charCode != 010 && charCode != 045 && charCode != 047 ){
         var glyphSplit = currentGlyph.split(",");
         currentGlyph = "";
         for(var index = 0;index < glyphSplit.length;index++){
@@ -335,12 +340,13 @@ controls[1].onkeypress = function(a){//action
             }
         }
         redraw();
-        
         this.value = "";
     }
+}
     
-     controls[3].onkeypress = function(a){//stack
-        charCode = a.keyCode || a.which;    
+controls[3].onkeypress = function(a){//stack
+    charCode = a.keyCode || a.which;    
+    if(charCode != 010 && charCode != 045 && charCode != 047){
         var glyphSplit = currentGlyph.split(",");
         currentGlyph = "";
         for(var index = 0;index < glyphSplit.length;index++){
@@ -361,6 +367,7 @@ controls[1].onkeypress = function(a){//action
         redraw();
         this.value = "";
     }
+}
 
 zoompanbuttons[0].onclick = function(){
     doTheThing(030);

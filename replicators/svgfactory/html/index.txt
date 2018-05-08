@@ -37,6 +37,9 @@ EGO DEATH:
 <p>   
 <a href = "svg/index.html">Graphics Feed</a>
 </p>
+<p>
+    <a href = "scrolls/tutorial/">tutorial</a>
+</p>
 
 <style>
 

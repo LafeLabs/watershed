@@ -1,6 +1,12 @@
+document.getElementById("glyphspellinput").onchange = function(){
+    cleanGlyph = this.value;
+    currentGlyph = cleanGlyph + "0207,";
+    redraw();
+}
+
 document.getElementById("savesvg").onclick = function(){
-        svgwidth = 800;
-        svgheight = 800;
+        svgwidth = 600;
+        svgheight = 600;
         tempx0 = x0;
         tempy0 = y0;
         x0 -= 0.5*(innerWidth - svgwidth);
@@ -89,8 +95,10 @@ controls[1].onkeydown = function(e) {
         }
     }
 controls[1].onkeypress = function(a){//action
-        charCode = a.keyCode || a.which;
-        console.log(a.which);
+    charCode = a.keyCode || a.which;
+    console.log(a.which);
+    if(charCode != 010 && charCode != 045 && charCode != 047){
+            
         if(parseInt(currentTable[charCode],8) >= 0200){
             var glyphSplit = currentGlyph.split(",");
             currentGlyph = "";
@@ -117,9 +125,11 @@ controls[1].onkeypress = function(a){//action
         }
         this.value = "";
     }
+}
     
-    controls[2].onkeypress = function(a){//print
-        charCode = a.keyCode || a.which;
+controls[2].onkeypress = function(a){//print
+    charCode = a.keyCode || a.which;
+    if(charCode != 010 && charCode != 045 && charCode != 047){
         var glyphSplit = currentGlyph.split(",");
         currentGlyph = "";
         for(var index = 0;index < glyphSplit.length;index++){
@@ -138,12 +148,13 @@ controls[1].onkeypress = function(a){//action
             }
         }
         redraw();
-        
         this.value = "";
     }
+}
     
-     controls[3].onkeypress = function(a){//stack
-        charCode = a.keyCode || a.which;    
+controls[3].onkeypress = function(a){//stack
+    charCode = a.keyCode || a.which;    
+    if(charCode != 010 && charCode != 045 && charCode != 047){
         var glyphSplit = currentGlyph.split(",");
         currentGlyph = "";
         for(var index = 0;index < glyphSplit.length;index++){
@@ -164,6 +175,7 @@ controls[1].onkeypress = function(a){//action
         redraw();
         this.value = "";
     }
+}
     
 
 

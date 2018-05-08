@@ -1,6 +1,9 @@
        
 ctx = document.getElementById("mainCanvas").getContext("2d");
 ctx.clearRect(0,0,innerWidth,innerHeight);
+
+ctx.strokeRect(0.5*innerWidth - 300,0.5*innerHeight - 300,600,600);
+
 doTheThing(0300);
 
 drawGlyph(currentGlyph);
@@ -18,3 +21,6 @@ spellGlyph(currentGlyph);
             cleanGlyph += glyphArray[index] + ",";
         }
     }
+
+
+document.getElementById("glyphspellinput").value = cleanGlyph;
