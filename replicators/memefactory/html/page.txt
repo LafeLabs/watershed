@@ -1,0 +1,31 @@
+<a id = "editorlink" href = "editor.php">editor.php</a>
+<table id = "controls">
+    <tr>
+        <td>url:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>left:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>top:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>width:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>fontFamily:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>color:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>fontSize:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>rotation:</td><td><input/></td>
+    </tr>
+</table>
+<div id = "memebox">
+    <img id = "mainimage"/>
+    <div id = "textbox">derp</div>
+</div>

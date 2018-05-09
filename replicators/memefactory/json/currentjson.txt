@@ -1,0 +1,10 @@
+{
+    "url": "https://i.imgur.com/czYBcsb.jpg",
+    "left": "25",
+    "top": "25",
+    "width": 25,
+    "fontFamily": "Arial",
+    "color": "yellow",
+    "fontSize": 25,
+    "rotation": "0"
+}

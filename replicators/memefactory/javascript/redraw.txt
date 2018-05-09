@@ -1,0 +1,18 @@
+
+
+document.getElementById("mainimage").src = currentJSON.url;
+document.getElementById("textbox").style.left = (0.01*0.5*innerWidth*currentJSON.left).toString() + "px";
+document.getElementById("textbox").style.top = (0.01*0.5*innerWidth*currentJSON.top).toString() + "px";
+document.getElementById("textbox").style.width = (0.01*0.5*innerWidth*currentJSON.width).toString() + "px";
+document.getElementById("textbox").style.fontFamily = currentJSON.fontFamily;
+document.getElementById("textbox").style.color = currentJSON.color;
+document.getElementById("textbox").style.fontSize = currentJSON.fontSize + "px";
+document.getElementById("textbox").style.transform = "rotate(" + currentJSON.rotation + "deg)";
+
+currentFile = "json/currentjson.txt";
+data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
+var httpc = new XMLHttpRequest();
+var url = "filesaver.php";        
+httpc.open("POST", url, true);
+httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php

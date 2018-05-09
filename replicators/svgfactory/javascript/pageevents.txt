@@ -35,21 +35,20 @@ document.getElementById("savesvg").onclick = function(){
 
     ctx = document.getElementById("mainCanvas").getContext("2d");
     ctx.clearRect(0,0,innerWidth,innerHeight);
-    ctx.strokeRect(0.5*innerWidth - 300,0.5*innerHeight - 300,600,600);
 
     currentSVG = "<svg width=\"" + svgwidth.toString() + "\" height=\"" + svgheight.toString() + "\" viewbox = \"0 0 " + svgwidth.toString() + " " + svgheight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
     currentSVG += "\n<!--\n<glyph>\n" + cleanGlyph + "\n</glyph>\n-->\n";
     doTheThing(0300);
     side = 50;
-    x = 0.5*(innerWidth - svgwidth) - side;
-    y = 0.5*(innerHeight - svgheight) - side;
+    x = side;
+    y = 2*side;
     var tempArray = cleanGlyph.split(',');
     for(var index = 0;index < tempArray.length;index++){
         ctx.lineWidth = 2;
         // ctx.strokeStyle="black";
-        if(x > 0.94*(0.5*(innerWidth + svgwidth) - side)){
+        if(x > svgwidth - side){
             y += 1.1*side;
-            x = 0.5*(innerWidth - svgwidth) - side;
+            x = side;
         }
         doTheThing(parseInt(tempArray[index],8) + 01000);
         if(parseInt(tempArray[index],8) > 01000){

@@ -1,0 +1,34 @@
+
+inputs[0].onchange = function(){
+    currentJSON.url = this.value;
+    redraw();
+}
+inputs[1].onchange = function(){
+    currentJSON.left = this.value;
+    redraw();
+
+}
+inputs[2].onchange = function(){
+    currentJSON.top = this.value;
+    redraw();
+}
+inputs[3].onchange = function(){
+    currentJSON.width = this.value;
+    redraw();
+}
+inputs[4].onchange = function(){
+    currentJSON.fontFamily = this.value;
+    redraw();
+}
+inputs[5].onchange = function(){
+    currentJSON.color = this.value;
+    redraw();
+}
+inputs[6].onchange = function(){
+    currentJSON.fontSize = this.value;
+    redraw();
+}
+inputs[7].onchange = function(){
+    currentJSON.rotation = this.value;
+    redraw();
+}

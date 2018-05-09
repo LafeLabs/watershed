@@ -1,0 +1,13 @@
+[
+"css/style.txt",
+"html/page.txt",
+"javascript/pageactions.txt",
+"json/dna.txt",
+"php/dnagenerator.txt",
+"php/editor.txt",
+"php/fileloader.txt",
+"php/filesaver.txt",
+"php/index.txt",
+"php/replicator.txt",
+"php/text2php.txt"
+]

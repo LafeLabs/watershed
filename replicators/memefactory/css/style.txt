@@ -1,0 +1,30 @@
+body{
+    overflow:hidden;
+}
+#editorlink{
+    position:absolute;
+    left:5px;
+    top:5px;
+}
+#controls{
+    position:absolute;
+    left:1em;
+    top:2em;
+}
+#memebox{
+    position:relative;
+    top:1%;
+    left:25%;
+    width:50%;
+}
+#mainimage{
+    position:absolute;
+    width:100%;
+    left:0px;
+    top:0px;
+    z-index:-1;
+}
+#textbox{
+    position:absolute;
+}
+
