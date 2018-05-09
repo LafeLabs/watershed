@@ -10,6 +10,7 @@ inputs[4].value = currentJSON.fontFamily;
 inputs[5].value = currentJSON.color;
 inputs[6].value = currentJSON.fontSize;
 inputs[7].value = currentJSON.rotation;
+inputs[8].value = currentJSON.text;
 
 
 document.getElementById("textbox").style.top = "100px";

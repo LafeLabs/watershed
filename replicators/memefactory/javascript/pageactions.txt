@@ -32,3 +32,7 @@ inputs[7].onchange = function(){
     currentJSON.rotation = this.value;
     redraw();
 }
+inputs[8].onchange = function(){
+    currentJSON.text = this.value;
+    redraw();
+}

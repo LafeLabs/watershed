@@ -24,6 +24,10 @@
     <tr>
         <td>rotation:</td><td><input/></td>
     </tr>
+    <tr>
+        <td>Text:</td><td><input/></td>
+    </tr>
+
 </table>
 <div id = "memebox">
     <img id = "mainimage"/>

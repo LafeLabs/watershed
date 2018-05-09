@@ -8,6 +8,7 @@ document.getElementById("textbox").style.fontFamily = currentJSON.fontFamily;
 document.getElementById("textbox").style.color = currentJSON.color;
 document.getElementById("textbox").style.fontSize = currentJSON.fontSize + "px";
 document.getElementById("textbox").style.transform = "rotate(" + currentJSON.rotation + "deg)";
+document.getElementById("textbox").innerHTML = currentJSON.text;
 
 currentFile = "json/currentjson.txt";
 data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
