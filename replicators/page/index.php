@@ -54,6 +54,7 @@ h1,h2,h3,h4,h5{
     top:5em;
     bottom:0px;
     padding:1em 1em 1em 1em;
+    font-size:24px;
 }
 #page img{
     width:80%;

@@ -202,7 +202,7 @@ body{
     border-width:3px;
     background-color:#101010;
     font-family:courier;
-    font-size:18px;
+    font-size:22px;
 }
 #linkscroll{
     position:absolute;
@@ -216,8 +216,7 @@ body{
     border-width:3px;
     background-color:#101010;
     font-family:courier;
-    font-size:18px;
-    
+    font-size:22px;
 }
 #maineditor{
     position:absolute;
@@ -225,6 +224,7 @@ body{
     top:5em;
     bottom:1em;
     right:30%;
+    font-size:22px;
 }
 
 
