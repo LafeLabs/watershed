@@ -64,11 +64,13 @@ h1,h2,h3,h4,h5{
     position:absolute;
     top:0.5em;
     left:2em;
+    font-size:24px;
 }
 #editorlink{
     position:absolute;
     top:0.5em;
     right:2em;
+    font-size:24px;
 }
 </style>
 </body>

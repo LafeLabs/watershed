@@ -70,6 +70,7 @@ body{
     bottom:50%;
     right:2em;
     left:2em;
+    font-size:22px;
 }
 #scroll{
     position:absolute;
@@ -95,17 +96,17 @@ body{
     position:absolute;
     right:1em;
     top:1em;
-        color:white;
+    color:white;
     display:block;
-
+    font-size:24px;
 }
 #pagelink{
     position:absolute;
     left:1em;
     top:1em;
-        color:white;
+    color:white;
     display:block;
-
+    font-size:24px;
 }
 
 </style>
