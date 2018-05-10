@@ -12,7 +12,7 @@
         <a id = "editorLink" href = "editor.php">editor.php</a>
         <table id = "mainTable">
             <tr>
-                <td class = "button">PREV</td><td class = "button">NEXT</td>
+                <td class = "button">PREV</td><td class = "button">NEXT</td><td  class = "button">NEW</td>
             </tr>
             <tr>
                 <td>url:</td><td><input/></td>
@@ -76,6 +76,19 @@
                 redraw();
             }
     
+            buttons[2].onclick  = function(){
+                var foo = JSON.stringify(currentJSON.links[0],null,"    ");
+                var zeep = JSON.parse(foo);
+                currentJSON.links.push(zeep);
+                document.getElementById("textIO").value = JSON.stringify(currentJSON.links,null,"    ");
+                data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
+                var httpc = new XMLHttpRequest();
+                var url = "filesaver.php";        
+                httpc.open("POST", url, true);
+                httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+                httpc.send("data="+data+"&filename=json/currentjson.txt");//send text to filesaver.php
+                redraw();
+            }
 
 document.getElementById("textIO").onkeyup = function(){
     currentJSON.links = JSON.parse(document.getElementById("textIO").value);
