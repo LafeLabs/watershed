@@ -1,0 +1,44 @@
+{
+    "url": "https://i.imgur.com/QJydc80.jpg",
+    "left": "20",
+    "top": "10",
+    "width": "42",
+    "fontFamily": "Arial",
+    "color": "black",
+    "fontSize": "60",
+    "rotation": "0",
+    "text": "THEEZE ARE MY STIXKZSS!!!"
+},
+{
+    "url": "https://i.imgur.com/QJydc80.jpg",
+    "left": "20",
+    "top": "10",
+    "width": "42",
+    "fontFamily": "Arial",
+    "color": "black",
+    "fontSize": "60",
+    "rotation": "0",
+    "text": "THEEZE ARE MY STIXKZSS!!!"
+},
+{
+    "url": "https://i.imgur.com/8nGddQU.jpg",
+    "left": "40",
+    "top": "56",
+    "width": "42",
+    "fontFamily": "Arial",
+    "color": "PINK",
+    "fontSize": "25",
+    "rotation": "20",
+    "text": "I IZ VULTURE"
+},
+{
+    "url": "https://i.imgur.com/8nGddQU.jpg",
+    "left": "40",
+    "top": "56",
+    "width": "42",
+    "fontFamily": "Arial",
+    "color": "PINK",
+    "fontSize": "25",
+    "rotation": "20",
+    "text": "I IZ VULTURE"
+}

@@ -27,4 +27,19 @@ body{
 #textbox{
     position:absolute;
 }
-
+#savememe{
+    right:1em;
+    top:1em;
+}
+.button{
+    position:absolute;
+    cursor:pointer;
+    font-family:courier;
+    padding:0.7em 0.7em 0.7em 0.7em;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}

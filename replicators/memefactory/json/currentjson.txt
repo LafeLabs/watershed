@@ -1,11 +1,11 @@
 {
-    "url": "https://i.imgur.com/czYBcsb.jpg",
-    "left": "55",
-    "top": "56",
+    "url": "https://i.imgur.com/QJydc80.jpg",
+    "left": "20",
+    "top": "10",
     "width": "42",
     "fontFamily": "Arial",
-    "color": "yellow",
-    "fontSize": "33",
-    "rotation": "20",
-    "text": "yellow knuckle"
+    "color": "black",
+    "fontSize": "60",
+    "rotation": "0",
+    "text": "THEEZE ARE MY STIXKZSS!!!"
 }

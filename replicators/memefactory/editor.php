@@ -8,6 +8,7 @@
 <div id = "linkscroll">
     <a href = "text2php.php">text2php.php</a>
     <a href = "index.php">index.php</a>
+    <a href = "feedreader.php" id = "dnalink">feedreader.php</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
 
 </div>
@@ -28,9 +29,12 @@
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/text2php.txt</div>
+    <div class = "php file">php/feedsaver.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
+    <div class = "php file">php/feedreader.txt</div>
 
     <div class = "json file">json/dna.txt</div>
+    <div class = "json file">json/memefeed.txt</div>
     <div class = "json file">json/currentjson.txt</div>
 
 </div>
