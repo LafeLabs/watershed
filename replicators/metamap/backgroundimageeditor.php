@@ -153,6 +153,10 @@ function doTheThing(localCommand){
         <td>MARKER1:</td><td><input value = "Lincoln memorial center"/></td>
     </tr>
     <tr>
+        <td>IMGANGLE:</td><td><input value = "0"/></td>
+    </tr>
+
+    <tr>
         <td class = "button">SAVE JSON</td>
     </tr>
     <tr>
@@ -225,6 +229,7 @@ imagedata[6].value = currentJSON.latlon0;
 imagedata[7].value = currentJSON.marker0;
 imagedata[8].value = currentJSON.latlon1;
 imagedata[9].value = currentJSON.marker1;
+imagedata[10].value = currentJSON.imgangle;
 
 </script>
 <script id = "redraw">
@@ -247,6 +252,7 @@ function redraw(){
     drawGlyph("0340,0341,0336,0336,0333,");
     drawGlyph(string2byteCode(currentJSON.marker0));
     drawGlyph("0365,");
+    document.getElementById("mainImage").style.transform = "rotate(" + currentJSON.imgangle.toString() +"deg)";
 
     document.getElementById("mainImage").style.width = (currentJSON.imgw*unit).toString()  + "px";
     document.getElementById("mainImage").style.left = (x0 + currentJSON.imgleft*unit).toString()  + "px";
@@ -450,6 +456,10 @@ imagedata[9].onchange = function(){
     redraw();
 }
 
+imagedata[10].onchange = function(){
+    currentJSON.imgangle = parseFloat(this.value);
+    redraw();
+}
 
 </script>
 <style>

@@ -24,3 +24,4 @@
     <li><a href = "marker/">marker/</a></li>
     <li><a href = "principles/">principles/</a></li>
 </ul>
+<img style  = "display:block;margin:auto;width:200px"src = "https://i.imgur.com/os77Lpb.png"/>

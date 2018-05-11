@@ -7,6 +7,9 @@
     Yim Hom $x^2$ zom haba damba zip zip zrab.
     
     $$E=mc^2$$
+
+$$\frac{-\hbar}{2m}\nabla^2$$
+N
 </p>
 
 <figure>

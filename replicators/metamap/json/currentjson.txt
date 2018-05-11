@@ -5,6 +5,7 @@
     "imgtop": -16.11797942276983,
     "unitpixels": 100,
     "unitfeet": 555,
+    "imgangle": 0,
     "latlon0": "38.889464, -77.035246",
     "marker0": "Washington Monument",
     "glyph0": "0341,0340,",

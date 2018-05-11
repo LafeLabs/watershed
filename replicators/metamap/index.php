@@ -176,6 +176,7 @@ function redraw(){
     document.getElementById("mainImage").style.width = (currentJSON.imgw*unit).toString()  + "px";
     document.getElementById("mainImage").style.left = (x0 + currentJSON.imgleft*unit).toString()  + "px";
     document.getElementById("mainImage").style.top = (y0 + currentJSON.imgtop*unit).toString()  + "px";
+    document.getElementById("mainImage").style.transform = "rotate(" + currentJSON.imgangle.toString() +"deg)";
     for(var index = 0;index < links.length;index++){
         var xy = latlon2xy(currentJSON.links[index].latlon);
         var xvar = parseFloat(xy.split(",")[0]);
