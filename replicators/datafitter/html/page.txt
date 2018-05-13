@@ -1,0 +1,25 @@
+<canvas id = "mainCanvas"/>
+<table id = "buttonTable">
+    <tr><td class = "button">UPDATE</td></tr>
+    <tr><td class = "button">SAVE</td></tr>
+</table>
+<textarea id = "dataInput"></textarea>
+<textarea id = "svgOutput"></textarea>
+
+<table id = "metadataTable">
+    <tr>
+        <td></td><td><input/></td>
+    </tr>    
+    <tr>
+        <td></td><td><input/></td>
+    </tr>    
+</table>
+
+<table id = "plotTable">
+    <tr>
+        <td></td><td><input/></td>
+    </tr>    
+    <tr>
+        <td></td><td><input/></td>
+    </tr>    
+</table>
