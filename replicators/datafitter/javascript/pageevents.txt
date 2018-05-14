@@ -1,0 +1,12 @@
+buttons[0].onclick = function(){
+    rawinputdata = document.getElementById("datainput").value;
+    arraystringdata = rawinputdata.split("\n");
+    arraydata = [];
+    for(var index = 0;index < arraystringdata.length;index++){
+        arraydata.push(parseFloat(arraystringdata[index]));
+    }
+    
+    for(var index = 0;index < arraydata.length;index++){
+        //plot scaled correctly, compare number of points to plot width for step size, check end points, plot with a marker of some kind in a function....
+    }
+}

@@ -1,6 +1,10 @@
 metadata = JSON.parse(document.getElementById("metadatadiv").innerHTML);
 plotparams = JSON.parse(document.getElementById("plotparamsdiv").innerHTML);
 
+buttons = document.getElementById("buttontable").getElementsByClassName("button");
+
+document.getElementById("datainput").value = document.getElementById("simdatadiv").innerHTML;
+
 for(dataelement in metadata){
     var newtr = document.createElement("TR");
     document.getElementById("metadatatable").appendChild(newtr);

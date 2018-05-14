@@ -1,6 +1,7 @@
 <a id = "editorlink" href = "editor.php">editor.php</a>
 <canvas id = "mainCanvas"></canvas>
 <table id = "buttontable">
+    <tr><td class = "button">PLOTDATA</td></tr>
     <tr><td class = "button">UPDATE</td></tr>
     <tr><td class = "button">SAVE</td></tr>
 </table>

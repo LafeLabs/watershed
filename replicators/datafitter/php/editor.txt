@@ -39,6 +39,7 @@ EGO DEATH:
     <div class = "javascript file">javascript/topfunctions.txt</div>
     <div class = "javascript file">javascript/init.txt</div>
     <div class = "javascript file">javascript/redraw.txt</div>
+    <div class = "javascript file">javascript/pageevents.txt</div>
 
     <div class = "html file">html/page.txt</div>
 
@@ -59,6 +60,7 @@ EGO DEATH:
     <div class = "json file">json/plotparams.txt</div>
 
     <div class = "python file">python/fitdata.txt</div>
+    <div class = "python file">python/simdata.txt</div>
 
 </div>
 

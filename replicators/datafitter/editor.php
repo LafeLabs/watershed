@@ -4,7 +4,7 @@
  <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 
-Trust model: Trust all non-coders implicitly, assume the worst from anyone who makes any money off computer industry in any way.  All professional coders are the Enemy.
+Trust model: Trust all non-coders implicitly, assume the worst from anyone who makes any money off computer industry in any way.  All professional coders are the Enemy.  Don't talk to anyone who has any affiliation with Facebook even socially. Shun them. Destroy them.
 
 EVERYTHING IS PHYSICAL
 EVERYTHING IS FRACTAL
@@ -39,6 +39,7 @@ EGO DEATH:
     <div class = "javascript file">javascript/topfunctions.txt</div>
     <div class = "javascript file">javascript/init.txt</div>
     <div class = "javascript file">javascript/redraw.txt</div>
+    <div class = "javascript file">javascript/pageevents.txt</div>
 
     <div class = "html file">html/page.txt</div>
 
@@ -59,6 +60,7 @@ EGO DEATH:
     <div class = "json file">json/plotparams.txt</div>
 
     <div class = "python file">python/fitdata.txt</div>
+    <div class = "python file">python/simdata.txt</div>
 
 </div>
 
