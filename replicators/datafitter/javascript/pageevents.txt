@@ -1,12 +1,32 @@
 buttons[0].onclick = function(){
+    ticsize = 5;
     rawinputdata = document.getElementById("datainput").value;
     arraystringdata = rawinputdata.split("\n");
     arraydata = [];
     for(var index = 0;index < arraystringdata.length;index++){
         arraydata.push(parseFloat(arraystringdata[index]));
     }
-    
+    deltax = plotparams.plotwidth/arraydata.length;
     for(var index = 0;index < arraydata.length;index++){
-        //plot scaled correctly, compare number of points to plot width for step size, check end points, plot with a marker of some kind in a function....
+        x = x0 - 0.5*plotparams.plotwidth + index*deltax;
+        y = y0 - plotparams.p2y*arraydata[index];
+        
+        ctx.beginPath(); 
+        ctx.moveTo(x  - ticsize,y);
+        ctx.lineTo(x + ticsize,y);
+        ctx.stroke();
+        ctx.beginPath(); 
+        ctx.moveTo(x,y - ticsize);
+        ctx.lineTo(x,y + ticsize);
+        ctx.stroke();
+
     }
 }
+
+
+
+
+
+    
+
+    

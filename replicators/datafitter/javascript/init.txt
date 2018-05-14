@@ -30,10 +30,19 @@ for(dataelement in plotparams){
     newtd2.appendChild(newinput);
     newtr.appendChild(newtd2);
     newinput.id = "input" + dataelement;
-    newinput.onchange = function(){
-        thisdata = this.id.substring(5);
-        plotparams[thisdata] = parseFloat(this.value);
-        redraw();
+    if(typeof plotparams[dataelement] === 'number'){
+        newinput.onchange = function(){
+            thisdata = this.id.substring(5);
+            plotparams[thisdata] = parseFloat(this.value);
+            redraw();
+        }
+    }
+    else{
+        newinput.onchange = function(){
+            thisdata = this.id.substring(5);
+            plotparams[thisdata] = this.value;
+            redraw();
+        }
     }
 }
 
@@ -44,3 +53,9 @@ y0 = innerHeight/2;
 x = x0;
 y = y0;
 
+rawinputdata = document.getElementById("datainput").value;
+arraystringdata = rawinputdata.split("\n");
+arraydata = [];
+for(var index = 0;index < arraystringdata.length;index++){
+    arraydata.push(parseFloat(arraystringdata[index]));
+}

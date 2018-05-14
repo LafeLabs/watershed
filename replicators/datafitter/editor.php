@@ -26,7 +26,6 @@ EGO DEATH:
 <div id = "linkscroll">
     <a href = "text2php.php">text2php.php</a>
     <a href = "text2python.php">text2python.php</a>
-    <a href = "pageeditor.php">pageeditor.php</a>
     <a href = "index.php">index.php</a>
     <a href = "replicator.php">replicator.php</a>
     <a href = "dnagenerator.php">dnagenerator.php</a>
@@ -46,7 +45,6 @@ EGO DEATH:
     <div class = "css file">css/style.txt</div>
     
     <div class = "php file">php/index.txt</div>
-    <div class = "php file">php/pageeditor.txt</div>
     <div class = "php file">php/editor.txt</div>
     <div class = "php file">php/replicator.txt</div>
     <div class = "php file">php/filesaver.txt</div>
@@ -54,6 +52,7 @@ EGO DEATH:
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/text2python.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
+    <div class = "php file">php/rundatafit.txt</div>
 
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/metadata.txt</div>

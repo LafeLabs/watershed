@@ -2,6 +2,8 @@ ctx = document.getElementById("mainCanvas").getContext("2d");
 ctx.clearRect(0,0,innerWidth,innerHeight);
 ctx.lineWidth = 2;
 ctx.strokeStyle= "black";
+
+ctx.strokeStyle= plotparams.color;
 ctx.fillStyle = "black";
 //ctx.strokeRect(x0-0.5*plotparams.plotwidth,y0 - plotparams.plotheight,plotparams.plotwidth,plotparams.plotheight);
 
@@ -29,8 +31,27 @@ for(x = x0-0.5*plotparams.plotwidth;x <= x0 + 0.5*plotparams.plotwidth;x += 1){
     currentSVG += "L" + x + " " + y + " ";
 }
 ctx.stroke();
-currentSVG += "\""+ " stroke = \"" + "black" + "\" stroke-width = \"2\" fill = \"" + "none" + "\" "+"/>";
+currentSVG += "\""+ " stroke = \"" + plotparams.color + "\" stroke-width = \"2\" fill = \"" + "none" + "\" "+"/>";
 currentSVG += "</svg>";
 
 document.getElementById("svgoutput").value = currentSVG;
+
+ctx.strokeStyle= "black";
+
+    ticsize = 5;
+    deltax = plotparams.plotwidth/arraydata.length;
+    for(var index = 0;index < arraydata.length;index++){
+        x = x0 - 0.5*plotparams.plotwidth + index*deltax;
+        y = y0 - plotparams.p2y*arraydata[index];
+        
+        ctx.beginPath(); 
+        ctx.moveTo(x  - ticsize,y);
+        ctx.lineTo(x + ticsize,y);
+        ctx.stroke();
+        ctx.beginPath(); 
+        ctx.moveTo(x,y - ticsize);
+        ctx.lineTo(x,y + ticsize);
+        ctx.stroke();
+
+    }
 
