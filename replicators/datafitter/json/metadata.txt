@@ -1,0 +1,8 @@
+{
+    "lab":"lafelabs",
+    "date":"today",
+    "url":"this.tld",
+    "location":"here",
+    "junction":"joe's junctions",
+    "temperature":"about 300k"
+}

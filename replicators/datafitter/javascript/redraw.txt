@@ -1,0 +1,36 @@
+ctx = document.getElementById("mainCanvas").getContext("2d");
+ctx.clearRect(0,0,innerWidth,innerHeight);
+ctx.lineWidth = 2;
+ctx.strokeStyle= "black";
+ctx.fillStyle = "black";
+//ctx.strokeRect(x0-0.5*plotparams.plotwidth,y0 - plotparams.plotheight,plotparams.plotwidth,plotparams.plotheight);
+
+ctx.strokeRect(x0-0.5*plotparams.plotwidth,0,plotparams.plotwidth,plotparams.plotheight);
+
+
+currentSVG = "<svg width=\"" + plotparams.plotwidth.toString() + "\" height=\"" + plotparams.plotheight.toString() + "\" viewbox = \"0 0 " + plotparams.plotwidth.toString() + " " + plotparams.plotheight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
+
+ctx.beginPath(); 
+
+x = x0 - 0.5*plotparams.plotwidth;
+y = y0 - plotfunc(x-x0,plotparams.tn,plotparams.t,plotparams.g,plotparams.f);
+
+ctx.moveTo(x,y);
+
+
+currentSVG += "	<path d = \"M";
+currentSVG += Math.round(x).toString() + " ";
+currentSVG += Math.round(y).toString() + " ";
+for(x = x0-0.5*plotparams.plotwidth;x <= x0 + 0.5*plotparams.plotwidth;x += 1){
+    
+    ctx.moveTo(x-1,y);
+    y = y0 - plotfunc(x - x0,plotparams.tn,plotparams.t,plotparams.g,plotparams.f);
+    ctx.lineTo(x,y);
+    currentSVG += "L" + x + " " + y + " ";
+}
+ctx.stroke();
+currentSVG += "\""+ " stroke = \"" + "black" + "\" stroke-width = \"2\" fill = \"" + "none" + "\" "+"/>";
+currentSVG += "</svg>";
+
+document.getElementById("svgoutput").value = currentSVG;
+

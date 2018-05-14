@@ -1,6 +1,10 @@
 [
+"css/style.txt",
 "html/page.txt",
+"javascript/init.txt",
 "json/dna.txt",
+"json/metadata.txt",
+"json/plotparams.txt",
 "php/dnagenerator.txt",
 "php/editor.txt",
 "php/fileloader.txt",
@@ -8,5 +12,6 @@
 "php/index.txt",
 "php/pageeditor.txt",
 "php/replicator.txt",
-"php/text2php.txt"
+"php/text2php.txt",
+"python/fitdata.txt"
 ]

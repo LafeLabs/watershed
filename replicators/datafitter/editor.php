@@ -4,6 +4,8 @@
  <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 
+Trust model: Trust all non-coders implicitly, assume the worst from anyone who makes any money off computer industry in any way.  All professional coders are the Enemy.
+
 EVERYTHING IS PHYSICAL
 EVERYTHING IS FRACTAL
 EVERYTHING IS RECURSIVE
@@ -23,6 +25,7 @@ EGO DEATH:
 <body>
 <div id = "linkscroll">
     <a href = "text2php.php">text2php.php</a>
+    <a href = "text2python.php">text2python.php</a>
     <a href = "pageeditor.php">pageeditor.php</a>
     <a href = "index.php">index.php</a>
     <a href = "replicator.php">replicator.php</a>
@@ -34,6 +37,8 @@ EGO DEATH:
 <div id = "filescroll">
 
     <div class = "javascript file">javascript/topfunctions.txt</div>
+    <div class = "javascript file">javascript/init.txt</div>
+    <div class = "javascript file">javascript/redraw.txt</div>
 
     <div class = "html file">html/page.txt</div>
 
@@ -46,11 +51,14 @@ EGO DEATH:
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/text2php.txt</div>
+    <div class = "php file">php/text2python.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
 
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/metadata.txt</div>
     <div class = "json file">json/plotparams.txt</div>
+
+    <div class = "python file">python/fitdata.txt</div>
 
 </div>
 
@@ -117,7 +125,11 @@ for(var index = 0;index < files.length;index++){
             document.getElementById("namediv").style.color = "orange";
             document.getElementById("namediv").style.borderColor = "orange";
         }
-
+        if(this.classList[0] == "python"){
+            editor.getSession().setMode("ace/mode/python");
+            document.getElementById("namediv").style.color = "#00ff00";
+            document.getElementById("namediv").style.borderColor = "#00ff00";
+        }
         document.getElementById("namediv").innerHTML = currentFile;
     }
 }
@@ -184,7 +196,9 @@ body{
 .scrolls{
     color:#87ceeb;
 }
-
+.python{
+    color:#00ff00;
+}
 .file{
     cursor:pointer;
     border-radius:0.25em;
