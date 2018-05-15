@@ -183,6 +183,8 @@ function redraw(){
         links[index].style.left = (x0 + unit*xvar).toString() + "px";
         var yvar = parseFloat(xy.split(",")[1]);
         links[index].style.top = (y0 - unit*yvar).toString() + "px";
+        links[index].style.fontSize = (currentJSON.links[index].fontfeet*unit/currentJSON.unitfeet).toString() + "px";
+        links[index].style.transform = "rotate(" + currentJSON.links[index].rotation + "deg)";
     }
 
     for(var index = 0;index < imgs.length;index++){

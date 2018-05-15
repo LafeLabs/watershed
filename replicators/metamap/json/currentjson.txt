@@ -18,17 +18,16 @@
         {
             "url": "https://www.nps.gov/thje/index.htm",
             "text": "Jefferson Memorial NPS site",
-            "latlon": "38.881389, -77.036944"
+            "fontfeet": 150,
+            "latlon": "38.881389, -77.036944",
+            "rotation": 0
         },
         {
             "url": "https://www.nps.gov/thje/index.htm",
             "text": "Jefferson Memorial NPS site",
-            "latlon": "38.881389, -77.036944"
-        },
-        {
-            "url": "https://www.nps.gov/thje/index.htm",
-            "text": "Jefferson Memorial NPS site",
-            "latlon": "38.881389, -77.036944"
+            "fontfeet": 50,
+            "latlon": "38.881389, -77.036944",
+            "rotation": 90
         }
     ],
     "images": [

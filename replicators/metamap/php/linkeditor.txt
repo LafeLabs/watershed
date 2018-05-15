@@ -23,6 +23,12 @@
             <tr>
                 <td>latlon:</td><td><input/></td>
             </tr>
+            <tr>
+                <td>fontfeet:</td><td><input/></td>
+            </tr>
+            <tr>
+                <td>rotation:</td><td><input/></td>
+            </tr>
         </table>
         <textarea id = "textIO"></textarea>        
         <script>
@@ -37,6 +43,8 @@
                 inputs[0].value = currentJSON.links[linkIndex].url;
                 inputs[1].value = currentJSON.links[linkIndex].text;
                 inputs[2].value = currentJSON.links[linkIndex].latlon;
+                inputs[3].value = currentJSON.links[linkIndex].fontfeet;
+                inputs[4].value = currentJSON.links[linkIndex].rotation;
             }
             function redraw2(){
                     document.getElementById("textIO").value = JSON.stringify(currentJSON.links,null,"    ");
@@ -60,6 +68,15 @@
                     currentJSON.links[linkIndex].latlon = this.value;
                     redraw2();
             }
+            inputs[3].onchange = function(){
+                    currentJSON.links[linkIndex].fontfeet = this.value;
+                    redraw2();
+            }
+            inputs[4].onchange = function(){
+                    currentJSON.links[linkIndex].rotation = this.value;
+                    redraw2();
+            }
+
             
             buttons[0].onclick  = function(){
                 linkIndex--;

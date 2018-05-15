@@ -2,8 +2,9 @@
 <canvas id = "mainCanvas"></canvas>
 <table id = "buttontable">
     <tr><td class = "button">PLOTDATA</td></tr>
-    <tr><td class = "button">UPDATE</td></tr>
-    <tr><td class = "button">SAVE</td></tr>
+    <tr><td class = "button">FIT</td></tr>
+    <tr><td class = "button">SIMULATE</td></tr>
+    
 </table>
 <textarea id = "datainput"></textarea>
 <textarea id = "svgoutput"></textarea>

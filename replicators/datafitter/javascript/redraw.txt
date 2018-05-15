@@ -1,3 +1,9 @@
+x0 = innerWidth/2;
+y0 = innerHeight/2;    
+x = x0;
+y = y0;
+
+
 ctx = document.getElementById("mainCanvas").getContext("2d");
 ctx.clearRect(0,0,innerWidth,innerHeight);
 ctx.lineWidth = 2;
@@ -19,39 +25,88 @@ y = y0 - plotfunc(x-x0,plotparams.tn,plotparams.t,plotparams.g,plotparams.f);
 
 ctx.moveTo(x,y);
 
-
-currentSVG += "	<path d = \"M";
-currentSVG += Math.round(x).toString() + " ";
-currentSVG += Math.round(y).toString() + " ";
 for(x = x0-0.5*plotparams.plotwidth;x <= x0 + 0.5*plotparams.plotwidth;x += 1){
     
     ctx.moveTo(x-1,y);
     y = y0 - plotfunc(x - x0,plotparams.tn,plotparams.t,plotparams.g,plotparams.f);
     ctx.lineTo(x,y);
-    currentSVG += "L" + x + " " + y + " ";
 }
 ctx.stroke();
+
+
+x0 = innerWidth/2;
+y0 = innerHeight/2;    
+x = x0;
+y = y0;
+ctx.strokeStyle= "black";
+ticsize = 5;
+deltax = plotparams.plotwidth/arraydata.length;
+for(var index = 0;index < arraydata.length;index++){
+    x = x0 - 0.5*plotparams.plotwidth + index*deltax;
+    y = y0 - plotparams.p2y*arraydata[index];
+        
+    ctx.beginPath(); 
+    ctx.moveTo(x  - ticsize,y);
+    ctx.lineTo(x + ticsize,y);
+    ctx.stroke();
+    ctx.beginPath(); 
+    ctx.moveTo(x,y - ticsize);
+    ctx.lineTo(x,y + ticsize);
+    ctx.stroke();
+}
+
+x0 = innerWidth/2;
+y0 = innerHeight/2 + 100;    
+x = x0;
+y = y0;
+ctx.strokeStyle= "black";
+ticsize = 5;
+deltax = plotparams.plotwidth/arraydata.length;
+for(var index = 0;index < arraydata.length;index++){
+    x = x0 - 0.5*plotparams.plotwidth + index*deltax;
+    y = y0 - (plotparams.p2y*arraydata[index] - plotfunc(x - x0,plotparams.tn,plotparams.t,plotparams.g,plotparams.f));
+        
+    ctx.beginPath(); 
+    ctx.moveTo(x  - ticsize,y);
+    ctx.lineTo(x + ticsize,y);
+    ctx.stroke();
+    ctx.beginPath(); 
+    ctx.moveTo(x,y - ticsize);
+    ctx.lineTo(x,y + ticsize);
+    ctx.stroke();
+}
+
+
+ctx.strokeStyle= "red";
+ctx.beginPath(); 
+ctx.moveTo(0.5*(innerWidth - plotparams.plotwidth), innerHeight/2 + 100);
+ctx.lineTo(0.5*(innerWidth + plotparams.plotwidth), innerHeight/2 + 100);
+ctx.stroke();
+
+x0 = 0.5*plotparams.plotwidth;
+y0 = plotparams.plotheight;
+x = x0 - 0.5*plotparams.plotwidth;
+y = y0 - plotfunc(x-x0,plotparams.tn,plotparams.t,plotparams.g,plotparams.f);
+
+currentSVG += "	<path d = \"M";
+currentSVG += Math.round(x).toString() + " ";
+currentSVG += Math.round(y).toString() + " ";
+for(x = x0 - 0.5*plotparams.plotwidth;x <= x0 + 0.5*plotparams.plotwidth;x += 1){
+
+     y = y0 - plotfunc(x - x0,plotparams.tn,plotparams.t,plotparams.g,plotparams.f);
+    currentSVG += "L" + x.toString() + " " + y.toString() + " ";
+}
+
 currentSVG += "\""+ " stroke = \"" + plotparams.color + "\" stroke-width = \"2\" fill = \"" + "none" + "\" "+"/>";
+
+for(var index = 0;index < arraydata.length;index++){
+    x = x0 - 0.5*plotparams.plotwidth + index*deltax;
+    y = y0 - plotparams.p2y*arraydata[index];
+        
+    currentSVG += "    <line x1=\""+(x - ticsize).toString()+"\" y1=\""+ y.toString() + "\" x2=\""+(x + ticsize).toString()+"\" y2=\""+y.toString()+"\" style=\"stroke:" + "black" + ";stroke-width:2\" />\n";
+    currentSVG += "    <line x1=\"" + x.toString()+"\" y1=\""+ (y - ticsize).toString() + "\" x2=\"" + x.toString()+"\" y2=\""+(y + ticsize).toString()+"\" style=\"stroke:" + "black" + ";stroke-width:2\" />\n"
+
+}
 currentSVG += "</svg>";
 
 document.getElementById("svgoutput").value = currentSVG;
-
-ctx.strokeStyle= "black";
-
-    ticsize = 5;
-    deltax = plotparams.plotwidth/arraydata.length;
-    for(var index = 0;index < arraydata.length;index++){
-        x = x0 - 0.5*plotparams.plotwidth + index*deltax;
-        y = y0 - plotparams.p2y*arraydata[index];
-        
-        ctx.beginPath(); 
-        ctx.moveTo(x  - ticsize,y);
-        ctx.lineTo(x + ticsize,y);
-        ctx.stroke();
-        ctx.beginPath(); 
-        ctx.moveTo(x,y - ticsize);
-        ctx.lineTo(x,y + ticsize);
-        ctx.stroke();
-
-    }
-

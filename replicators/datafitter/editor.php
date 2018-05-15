@@ -24,11 +24,14 @@ EGO DEATH:
 </head>
 <body>
 <div id = "linkscroll">
+
     <a href = "text2php.php">text2php.php</a>
     <a href = "text2python.php">text2python.php</a>
     <a href = "index.php">index.php</a>
     <a href = "replicator.php">replicator.php</a>
     <a href = "dnagenerator.php">dnagenerator.php</a>
+    <a href = "runsim.php?simparams=1 1 1 1">runsim.php</a>
+    <a href = "rundatafit.php">rundatafit.php</a>
 
 </div>
 <div id = "namediv"></div>
@@ -52,12 +55,14 @@ EGO DEATH:
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/text2python.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
+    <div class = "php file">php/runsim.txt</div>
     <div class = "php file">php/rundatafit.txt</div>
 
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/metadata.txt</div>
     <div class = "json file">json/plotparams.txt</div>
 
+    <div class = "python file">python/test.txt</div>
     <div class = "python file">python/fitdata.txt</div>
     <div class = "python file">python/simdata.txt</div>
 
