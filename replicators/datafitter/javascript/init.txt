@@ -1,6 +1,8 @@
 metadata = JSON.parse(document.getElementById("metadatadiv").innerHTML);
 plotparams = JSON.parse(document.getElementById("plotparamsdiv").innerHTML);
 
+localsimjson = JSON.parse(document.getElementById("simjsondatadiv").innerHTML);
+    
 buttons = document.getElementById("buttontable").getElementsByClassName("button");
 
 document.getElementById("datainput").value = document.getElementById("simdatadiv").innerHTML;

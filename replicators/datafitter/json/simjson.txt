@@ -1,0 +1,12 @@
+{
+    "Tn":10,
+    "T":0.02,
+    "fGHz":8.0,
+    "GdB":80,
+    "BMHz":10,
+    "vgain":1000,
+    "tau":0.01,
+    "vmaxout":0.1,
+    "sweepfreq":30,
+    "sweeptime":0.1
+}

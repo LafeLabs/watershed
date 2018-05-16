@@ -4,6 +4,7 @@
     <tr><td class = "button">PLOTDATA</td></tr>
     <tr><td class = "button">FIT</td></tr>
     <tr><td class = "button">SIMULATE</td></tr>
+    <tr><td class = "button">JSSIMULATE</td></tr>
     
 </table>
 <textarea id = "datainput"></textarea>

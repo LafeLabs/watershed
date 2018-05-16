@@ -27,6 +27,11 @@ echo file_get_contents("javascript/topfunctions.txt");
 </script>
 </head>
 <body>
+<div style = "display:none" id = "simjsondatadiv">
+<?php
+echo file_get_contents("json/simjson.txt");
+?>
+</div>
 <div style = "display:none" id = "simdatadiv">20.86253211125818
 20.42763779162519
 20.51414564163433

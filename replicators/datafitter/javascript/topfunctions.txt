@@ -3,3 +3,7 @@ function plotfunc(v,tn,t,g,f){
     vminus = (v + 0.0000000001 - f)/(2*t);
     return g*(tn + t*(vplus/Math.tanh(vplus)) + t*(vminus/Math.tanh(vminus)));
 }
+
+function simfunction(){
+    
+}

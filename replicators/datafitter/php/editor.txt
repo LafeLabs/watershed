@@ -61,6 +61,7 @@ EGO DEATH:
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/metadata.txt</div>
     <div class = "json file">json/plotparams.txt</div>
+    <div class = "json file">json/simjson.txt</div>
 
     <div class = "python file">python/test.txt</div>
     <div class = "python file">python/fitdata.txt</div>

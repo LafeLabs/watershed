@@ -2,9 +2,13 @@
 "css/style.txt",
 "html/page.txt",
 "javascript/init.txt",
+"javascript/pageevents.txt",
+"javascript/redraw.txt",
+"javascript/topfunctions.txt",
 "json/dna.txt",
 "json/metadata.txt",
 "json/plotparams.txt",
+"json/simjson.txt",
 "php/dnagenerator.txt",
 "php/editor.txt",
 "php/fileloader.txt",
@@ -12,6 +16,11 @@
 "php/index.txt",
 "php/pageeditor.txt",
 "php/replicator.txt",
+"php/rundatafit.txt",
+"php/runsim.txt",
 "php/text2php.txt",
-"python/fitdata.txt"
+"php/text2python.txt",
+"python/fitdata.txt",
+"python/simdata.txt",
+"python/test.txt"
 ]
