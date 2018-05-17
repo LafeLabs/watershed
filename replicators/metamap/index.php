@@ -284,9 +284,10 @@ zoompanbuttons[5].onclick = function(){
 }
 .links{
     position:absolute;
-    color:black;
+    color:blue;
     background-color:white;
     z-index:1;
+    font-family:"Arial Black", Gadget, sans-serif;
 }
 .imgs{
     position:absolute;
