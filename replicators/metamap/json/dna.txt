@@ -28,8 +28,10 @@
 "php/index.txt",
 "php/latlon.txt",
 "php/linkeditor.txt",
+"php/loadrecentmap.txt",
 "php/mapsaver.txt",
 "php/replicator.txt",
+"php/savemap.txt",
 "php/shapetableeditor.txt",
 "php/text2php.txt"
 ]

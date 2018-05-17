@@ -27,6 +27,8 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <a href = "index.php">index.php</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
     <a href = "replicator.php">replicator.php[!]</a>
+    <a href = "savemap.php">savemap.php</a>
+    <a href = "loadrecentmap.php">loadrecentmap.php</a>
     <a href = "linkeditor.php">linkeditor.php</a>
     <a href = "imageeditor.php">imageeditor.php</a>
     <a href = "backgroundimageeditor.php">backgroundimageeditor.php</a>
@@ -73,6 +75,8 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/glypheditor.txt</div>
     <div class = "php file">php/shapetableeditor.txt</div>
     <div class = "php file">php/latlon.txt</div>
+    <div class = "php file">php/savemap.txt</div>
+    <div class = "php file">php/loadrecentmap.txt</div>
 
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/currentjson.txt</div>
