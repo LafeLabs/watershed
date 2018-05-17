@@ -19,6 +19,17 @@ if(document.getElementById("extdatadiv").innerHTML.length > 10){
     currentJSON = JSON.parse(document.getElementById("extdatadiv").innerHTML);
 }
 
+
+    if(currentJSON.shapes.length > 0){
+        for(var index = 0;index < currentJSON.shapes.length;index++){
+            if(currentJSON.shapes[index].length > 1){
+                var localaddr = parseInt(currentJSON.shapes[index].split(":")[0],8);
+                var localglyph = currentJSON.shapes[index].split(":")[1];
+                currentTable[localaddr] = localglyph;
+            }
+        }  
+    }
+
 unit = currentJSON.unitpixels;
 
 document.getElementById("mainImage").src = currentJSON.imgurl;

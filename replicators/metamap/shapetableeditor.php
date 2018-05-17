@@ -46,6 +46,16 @@ function doTheThing(localCommand){
 </script>
 </head>
 <body>
+<div id = "datadiv" style = "display:none">
+<?php
+    echo file_get_contents("json/currentjson.txt");
+?>
+</div>    
+<div id = "extdatadiv" style = "display:none"><?php
+if(isset($_GET['url'])){
+    echo file_get_contents($_GET['url']);
+}?>
+</div>
 <div id = "page">
     <a  id = "editorlink" href = "editor.php">editor.php</a>
     <canvas id="invisibleCanvas" style="display:none"></canvas>
@@ -79,6 +89,7 @@ function doTheThing(localCommand){
         <tr><td class = "button" id = "actionsymbol">ACTION/SYMBOL</td></tr>
         <tr><td class = "button" id = "savetable">SAVE TABLE</td></tr>
         <tr><td class = "button" id = "savefont">SAVE FONT</td></tr>
+        <tr><td class = "button" id = "savejson">SAVE ALL TO JSON</td></tr>
         <tr><td class = "button" id = "importbytecode">IMPORT BYTECODE</td></tr>
         <tr><td class = "button" id = "exportshapes">EXPORT SHAPES</td></tr>
         <tr><td class = "button" id = "exportfont">EXPORT FONT</td></tr>
@@ -98,6 +109,22 @@ function init(){
     x0 = innerWidth/2;
     y0 = innerHeight/2;    
 
+
+    currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
+    if(document.getElementById("extdatadiv").innerHTML.length > 10){
+        currentJSON = JSON.parse(document.getElementById("extdatadiv").innerHTML);
+    }
+    
+    if(currentJSON.shapes.length > 0){
+        for(var index = 0;index < currentJSON.shapes.length;index++){
+            if(currentJSON.shapes[index].length > 1){
+                var localaddr = parseInt(currentJSON.shapes[index].split(":")[0],8);
+                var localglyph = currentJSON.shapes[index].split(":")[1];
+                currentTable[localaddr] = localglyph;
+            }
+        }  
+    }
+    
     controls = document.getElementById("controlTable").getElementsByTagName("input");   
     unit = 100;
     currentAddress = 0220;
@@ -161,6 +188,35 @@ document.getElementById("savetable").onclick = function(){
     }
 
     data = encodeURIComponent(bytecodedata);
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+}
+
+document.getElementById("savejson").onclick = function(){
+
+    
+    currentJSON.shapes = [];
+    for(var index = 0220;index < 0250;index++){
+        if(currentTableStart[index] != currentTable[index]){
+            currentJSON.shapes.push("0" + index.toString(8) + ":" + currentTable[index]);    
+        }
+    }
+    for(var index = 01220;index < 01250;index++){
+        if(currentTableStart[index] != currentTable[index]){
+            currentJSON.shapes.push("0" + index.toString(8) + ":" + currentTable[index]);    
+        }
+    }
+    for(var index = 01040;index < 01177;index++){
+        if(currentTableStart[index] != currentTable[index]){
+            currentJSON.shapes.push("0" + index.toString(8) + ":" + currentTable[index]);    
+        }
+    }
+    currentFile = "json/currentjson.txt";
+
+    data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
     var httpc = new XMLHttpRequest();
     var url = "filesaver.php";        
     httpc.open("POST", url, true);
