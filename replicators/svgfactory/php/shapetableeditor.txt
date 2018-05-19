@@ -85,6 +85,7 @@ function doTheThing(localCommand){
         <tr><td class = "button" id = "exportshapes">EXPORT SHAPES</td></tr>
         <tr><td class = "button" id = "exportfont">EXPORT FONT</td></tr>
     </table>
+    <input id = "glyphspellinput"/>
 </div>
 <script>
 </script>
@@ -132,9 +133,26 @@ function redraw(){
             currentTable[currentAddress] += glyphArray[index] + ",";
         }
     }
+    
+    var glyphArray = currentGlyph.split(",");
+    cleanGlyph = "";
+    for(var index = 0;index < glyphArray.length;index++){
+        if(glyphArray[index] != "0207" && glyphArray[index].length > 0){
+            cleanGlyph += glyphArray[index] + ",";
+        }
+    }
+
+
+document.getElementById("glyphspellinput").value = cleanGlyph;
 }
 </script>
 <script id = "pageevents">
+
+document.getElementById("glyphspellinput").onchange = function(){
+    cleanGlyph = this.value;
+    currentGlyph = cleanGlyph + "0207,";
+    redraw();
+}
 
 document.getElementById("actionsymbol").onclick = function(){
     if(currentAddress < 01000){
