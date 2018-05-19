@@ -4,6 +4,20 @@ doTheThing(07);//initialize Geometron global variables
 currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
 imagedata = document.getElementById("imageTable").getElementsByTagName("input");
 
+if(document.getElementById("extdatadiv").innerHTML.length > 10){
+    currentJSON = JSON.parse(document.getElementById("extdatadiv").innerHTML);
+}
+
+    unit = currentJSON.unit;
+    x0 =  0.5*innerWidth + currentJSON.x0rel;
+    y0 = 0.5*innerHeight + currentJSON.y0rel;
+    currentGlyph = currentJSON.glyph + "0207,";
+    
+    for(var index = 0;index < currentJSON.table.length;index++){
+        var localaddr = parseInt(currentJSON.table[index].split(":")[0]);    
+        currentTable[localaddr] = currentJSON.table[index].split(":")[1];
+    }
+
 imagedata[0].value = currentJSON.imgurl;
 imagedata[1].value = currentJSON.imgw;
 imagedata[2].value = currentJSON.imgtop;
@@ -15,21 +29,11 @@ document.getElementById("mainImage").src = currentJSON.imgurl;
 document.getElementById("mainCanvas").width = innerWidth;
 document.getElementById("mainCanvas").height = innerHeight;
 
-x0 = innerWidth/2;
-y0 = innerHeight/2;    
-
 controls = document.getElementById("controlTable").getElementsByTagName("input");   
 
-unit = 100;
-
-if(document.getElementById("extdatadiv").innerHTML.length > 10){
-    currentGlyph = (document.getElementById("extdatadiv").innerHTML);
-}
-
-unit = 100;
 
 cleanGlyph = "";
-currentGlyph = ",0207,";
+//currentGlyph = ",0207,";
 glyphEditMode = true;
 shapeTableEditMode = false;
 

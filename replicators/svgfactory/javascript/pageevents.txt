@@ -72,6 +72,33 @@ document.getElementById("savesvg").onclick = function(){
     httpc.send("data=" + encodeURIComponent(document.getElementById("textIO").value));//send text to feedsaver.php
 }
  
+document.getElementById("exportjson").onclick  = function(){
+    document.getElementById("textIO").value = JSON.stringify(currentJSON,null,"    ");
+} 
+
+document.getElementById("importjson").onclick  = function(){
+    currentJSON = JSON.parse(document.getElementById("textIO").value);
+    imagedata[0].value = currentJSON.imgurl;
+    imagedata[1].value = currentJSON.imgw;
+    imagedata[2].value = currentJSON.imgtop;
+    imagedata[3].value = currentJSON.imgleft;
+    imagedata[4].value = currentJSON.imgangle;
+    imagedata[5].value = currentJSON.svgwidth;
+    imagedata[6].value = currentJSON.svgheight;
+    document.getElementById("mainImage").src = currentJSON.imgurl;
+    unit = currentJSON.unit;
+    x0 =  0.5*innerWidth + currentJSON.x0rel;
+    y0 = 0.5*innerHeight + currentJSON.y0rel;
+    currentGlyph = currentJSON.glyph + "0207,";
+    
+    for(var index = 0;index < currentJSON.table.length;index++){
+        var localaddr = parseInt(currentJSON.table[index].split(":")[0]);    
+        currentTable[localaddr] = currentJSON.table[index].split(":")[1];
+    }
+
+    redraw();
+} 
+
 controls[0].onchange = function(){
     currentAddress = parseInt(this.value,8);
     currentGlyph = currentTable[currentAddress] + ",0207,";
