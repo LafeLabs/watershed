@@ -6,11 +6,11 @@ $latesttime = 0;
 
 foreach($files as $value){
     if($value != "." && $value != ".." && substr($value,0,4) == "page"){
-      //  echo $value."<br/>".substr(substr($value,3),0,-4)."<br/>";
-        $timestamp = substr(substr($value,3),0,-4);
-    //    echo gmdate("Y-m-d H:i:s", $timestamp)."<br/>";     
-  //      echo intval($timestamp) - 4287;
-//        echo "<br/>";
+     //   echo $value."<br/>".substr(substr($value,4),0,-4)."<br/>";
+        $timestamp = substr(substr($value,4),0,-4);
+     //   echo gmdate("Y-m-d H:i:s", $timestamp)."<br/>";     
+     //   echo intval($timestamp) - 4287;
+     //   echo "<br/>";
         if($timestamp > $latesttime){
             $latesttime = $timestamp;
         }
@@ -29,4 +29,4 @@ echo "<br/>";
 echo "<br/>";
 
 ?>
-<a href = "editor.php">editor.php</a>
+<a href = "index.php">index.php</a>
