@@ -61,8 +61,10 @@ body{
     top:15px;
 }
 #imageTable{
-    right:15px;
-    top:15px;
+    right:10px;
+    top:20%;
+    position:absolute;
+
 }
 #imageTable input{
     width:5em;
@@ -77,6 +79,7 @@ table{
     width:3em;
     font-family:courier;
 }
+
 .button{
     padding:0.5em 0.5em 0.5em 0.5em;
     font-family:courier;

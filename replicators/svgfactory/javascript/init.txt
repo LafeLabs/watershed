@@ -1,6 +1,19 @@
 doTheThing(06);//import embedded hypercube in this .html doc
 doTheThing(07);//initialize Geometron global variables
 
+currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
+imagedata = document.getElementById("imageTable").getElementsByTagName("input");
+
+imagedata[0].value = currentJSON.imgurl;
+imagedata[1].value = currentJSON.imgw;
+imagedata[2].value = currentJSON.imgtop;
+imagedata[3].value = currentJSON.imgleft;
+imagedata[4].value = currentJSON.imgangle;
+imagedata[5].value = currentJSON.svgwidth;
+imagedata[6].value = currentJSON.svgheight;
+document.getElementById("mainImage").src = currentJSON.imgurl;
+
+
 document.getElementById("mainCanvas").width = innerWidth;
 document.getElementById("mainCanvas").height = innerHeight;
 

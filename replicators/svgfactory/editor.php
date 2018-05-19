@@ -79,7 +79,9 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/srolls2html.txt</div>
     <div class = "php file">php/savetable.txt</div>
     <div class = "php file">php/loadtable.txt</div>
+
     <div class = "json file">json/dna.txt</div>
+    <div class = "json file">json/currentjson.txt</div>
 
 </div>
 

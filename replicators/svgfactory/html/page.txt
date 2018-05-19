@@ -30,6 +30,29 @@
         <td>STACK:</td><td><input/></td>
     </tr>
 </table>
+<table id = "imageTable">   
+    <tr>
+        <td>IMAGE URL:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE WIDTH:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE TOP:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE LEFT:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE ANGLE:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>SVG WIDTH:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>SVG HEIGHT:</td><td><input/></td>
+    </tr>
+</table>
 
 <table id = "buttonTable">
 <tr><td class = "button" id = "savesvg">SAVE SVG</td></tr>
@@ -37,3 +60,4 @@
 
 </table>
 <input id = "glyphspellinput"/>
+<img id = "mainImage"/>

@@ -1,0 +1,9 @@
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth":600,
+    "svgheight":600
+}

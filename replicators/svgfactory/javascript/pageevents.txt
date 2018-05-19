@@ -228,3 +228,31 @@ zoompanbuttons[4].onclick = function(){
 zoompanbuttons[5].onclick = function(){
     doTheThing(037);
 }
+imagedata[0].onchange = function(){
+    document.getElementById("mainImage").src = this.value;
+}
+    
+imagedata[1].onchange = function(){
+    currentJSON.imgw = parseFloat(this.value);
+    redraw();
+}
+imagedata[2].onchange = function(){
+    currentJSON.imgtop = parseFloat(this.value);
+    redraw();
+}
+imagedata[3].onchange = function(){
+    currentJSON.imgleft = parseFloat(this.value);
+    redraw();
+}
+imagedata[4].onchange = function(){
+    currentJSON.imgangle = parseFloat(this.value);
+    redraw();
+}
+imagedata[5].onchange = function(){
+    currentJSON.svgwidth = parseFloat(this.value);
+    redraw();
+}
+imagedata[6].onchange = function(){
+    currentJSON.svgheight = parseFloat(this.value);
+    redraw();
+}
