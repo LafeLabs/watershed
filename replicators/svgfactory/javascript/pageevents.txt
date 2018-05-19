@@ -14,7 +14,7 @@ document.getElementById("savesvg").onclick = function(){
         y0 -= 0.5*(innerHeight - svgheight);
         ctx = document.getElementById("invisibleCanvas").getContext("2d");
         currentSVG = "<svg width=\"" + svgwidth.toString() + "\" height=\"" + svgheight.toString() + "\" viewbox = \"0 0 " + svgwidth.toString() + " " + svgheight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
-        currentSVG += "\n<!--\n<glyph>\n" + cleanGlyph + "\n</glyph>\n-->\n";
+        currentSVG += "\n<!--\n<json>\n" + JSON.stringify(currentJSON,null,"    ") + "\n</json>\n-->\n";
         doTheThing(0300);
         drawGlyph(cleanGlyph);
         currentSVG += "</svg>";

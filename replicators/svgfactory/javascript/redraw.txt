@@ -32,3 +32,4 @@ document.getElementById("mainImage").style.top = (y0 + currentJSON.imgtop*unit).
 document.getElementById("mainImage").style.transform = "rotate(" + currentJSON.imgangle.toString() +"deg)";
 
 document.getElementById("glyphspellinput").value = cleanGlyph;
+currentJSON.glyph = cleanGlyph;
