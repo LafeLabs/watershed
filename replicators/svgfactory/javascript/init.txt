@@ -24,7 +24,6 @@ controls = document.getElementById("controlTable").getElementsByTagName("input")
 
 unit = 100;
 
-
 if(document.getElementById("extdatadiv").innerHTML.length > 10){
     currentGlyph = (document.getElementById("extdatadiv").innerHTML);
 }

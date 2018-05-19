@@ -5,5 +5,10 @@
     "imgtop": -1,
     "imgangle": 0,
     "svgwidth":600,
-    "svgheight":600
+    "svgheight":600,
+    "unit":100,
+    "x0":400,
+    "y0":400,
+    "glyph":"",
+    "table":[]
 }
