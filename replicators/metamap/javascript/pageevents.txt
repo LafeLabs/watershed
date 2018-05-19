@@ -218,15 +218,15 @@ imagedata[0].onchange = function(){
 }
     
 imagedata[1].onchange = function(){
-    currentJSON.imgw = this.value;
+    currentJSON.imgw = parseFloat(this.value);
     redraw();
 }
 imagedata[2].onchange = function(){
-    currentJSON.imgtop = this.value;
+    currentJSON.imgtop = parseFloat(this.value);
     redraw();
 }
 imagedata[3].onchange = function(){
-    currentJSON.imgleft = this.value;
+    currentJSON.imgleft = parseFloat(this.value);
     redraw();
 }
 

@@ -6,8 +6,8 @@ document.getElementById("glyphspellinput").onchange = function(){
 }
 
 document.getElementById("savesvg").onclick = function(){
-        svgwidth = 600;
-        svgheight = 600;
+        svgwidth = currentJSON.svgwidth;
+        svgheight = currentJSON.svgheight;
         tempx0 = x0;
         tempy0 = y0;
         x0 -= 0.5*(innerWidth - svgwidth);

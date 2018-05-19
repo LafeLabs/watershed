@@ -17,7 +17,7 @@
     </tr>
 </table>
 <table id = "controlTable">
-    <tr id = "addressline">
+    <tr id = "addressline" style = "display:none">
         <td>ADDRESS:</td><td><input/></td>
     </tr>
     <tr>

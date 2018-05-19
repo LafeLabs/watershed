@@ -2,7 +2,7 @@
 ctx = document.getElementById("mainCanvas").getContext("2d");
 ctx.clearRect(0,0,innerWidth,innerHeight);
 
-ctx.strokeRect(0.5*innerWidth - 300,0.5*innerHeight - 300,600,600);
+ctx.strokeRect(0.5*innerWidth - 0.5*currentJSON.svgwidth,0.5*innerHeight - 0.5*currentJSON.svgheight,currentJSON.svgwidth,currentJSON.svgheight);
 
 doTheThing(0300);
 
