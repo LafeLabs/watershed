@@ -24,6 +24,8 @@
             fclose($file);  //close file                
         }
     }
+    mkdir("pages");
+
 ?>
 
 

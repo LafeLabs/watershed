@@ -75,7 +75,7 @@ body{
 #scroll{
     position:absolute;
     bottom:1em;
-    top:50%;
+    top:52%;
     right:2em;
     left:2em;
     background-color:white;
