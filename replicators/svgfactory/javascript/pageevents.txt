@@ -230,6 +230,7 @@ zoompanbuttons[5].onclick = function(){
 }
 imagedata[0].onchange = function(){
     document.getElementById("mainImage").src = this.value;
+    currentJSON.imgurl = this.value;
 }
     
 imagedata[1].onchange = function(){

@@ -12,8 +12,6 @@ imagedata[4].value = currentJSON.imgangle;
 imagedata[5].value = currentJSON.svgwidth;
 imagedata[6].value = currentJSON.svgheight;
 document.getElementById("mainImage").src = currentJSON.imgurl;
-
-
 document.getElementById("mainCanvas").width = innerWidth;
 document.getElementById("mainCanvas").height = innerHeight;
 
@@ -39,3 +37,13 @@ zoompanbuttons = document.getElementById("zoompan").getElementsByClassName("butt
 
 controls[1].select();
 
+for(var index = 0220;index < 0250;index++){
+    if(currentTable[index].length > 3){
+        currentJSON.table.push("0" + index.toString(8) + ":" + currentTable[index]);
+    }
+}
+for(var index = 01220;index < 01250;index++){
+    if(currentTable[index].length > 3){
+        currentJSON.table.push("0" + index.toString(8) + ":" + currentTable[index]);
+    }
+}

@@ -25,14 +25,11 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
 <div id = "linkscroll">
 
     <a href = "text2php.php">text2php.php</a>
-    <a href = "index2html.php">index2html.php</a>
-    <a href = "srolls2html.php">srolls2html.php</a>
-    <a href = "index.html">index.html</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
     <a href = "replicator.php">replicator.php</a>
     <a href = "savetable.php">savetable.php</a>
     <a href = "loadtable.php">loadtable.php</a>
-    <a href = "factory.php">factory.php</a>
+    <a href = "index.php">index.php</a>
     <a href = "shapetableeditor.php">shapetableeditor.php</a>
 
 </div>
@@ -40,12 +37,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
 
 <div id = "filescroll">
-    <div class = "html file">html/index.txt</div>
     <div class = "html file">html/page.txt</div>
-    <div class = "html file">html/template.txt</div>
-
-    <div class = "scrolls file">scrolls/tutorial.txt</div>
-    <div class = "scrolls file">scrolls/replicator.txt</div>
 
     <div class = "css file">css/style.txt</div>
 
@@ -79,6 +71,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/srolls2html.txt</div>
     <div class = "php file">php/savetable.txt</div>
     <div class = "php file">php/loadtable.txt</div>
+    <div class = "php file">php/svg2json.txt</div>
 
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/currentjson.txt</div>

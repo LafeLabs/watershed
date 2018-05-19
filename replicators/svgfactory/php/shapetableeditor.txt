@@ -46,9 +46,14 @@ function doTheThing(localCommand){
 </script>
 </head>
 <body>
+<div id = "datadiv" style = "display:none">
+<?php
+    echo file_get_contents("json/currentjson.txt");
+?>
+</div>    
 <div id = "page">
     <a  id = "editorlink" href = "editor.php">editor.php</a>
-    <a  id = "factorylink" href = "factory.php">factory.php</a>
+    <a  id = "factorylink" href = "index.php">index.php</a>
 
     <canvas id="invisibleCanvas" style="display:none"></canvas>
     <canvas id="mainCanvas"></canvas>
@@ -77,6 +82,23 @@ function doTheThing(localCommand){
             <td>STACK:</td><td><input/></td>
         </tr>
     </table>
+    <table id = "imageTable">   
+    <tr>
+        <td>IMAGE URL:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE WIDTH:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE TOP:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE LEFT:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE ANGLE:</td><td><input/></td>
+    </tr>
+</table>
     <table id = "buttonTable">
         <tr><td class = "button" id = "actionsymbol">ACTION/SYMBOL</td></tr>
         <tr><td class = "button" id = "savetable">SAVE TABLE</td></tr>
@@ -86,6 +108,7 @@ function doTheThing(localCommand){
         <tr><td class = "button" id = "exportfont">EXPORT FONT</td></tr>
     </table>
     <input id = "glyphspellinput"/>
+    <img id = "mainImage"/>
 </div>
 <script>
 </script>
@@ -94,6 +117,15 @@ init();
 function init(){
     doTheThing(06);//import embedded hypercube in this .html doc
     doTheThing(07);//initialize Geometron global variables
+
+currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
+imagedata = document.getElementById("imageTable").getElementsByTagName("input");
+
+imagedata[0].value = currentJSON.imgurl;
+imagedata[1].value = currentJSON.imgw;
+imagedata[2].value = currentJSON.imgtop;
+imagedata[3].value = currentJSON.imgleft;
+imagedata[4].value = currentJSON.imgangle;
 
     document.getElementById("mainCanvas").width = innerWidth;
     document.getElementById("mainCanvas").height = innerHeight;
@@ -142,6 +174,10 @@ function redraw(){
         }
     }
 
+document.getElementById("mainImage").style.width = (currentJSON.imgw*unit).toString()  + "px";
+document.getElementById("mainImage").style.left = (x0 + currentJSON.imgleft*unit).toString()  + "px";
+document.getElementById("mainImage").style.top = (y0 + currentJSON.imgtop*unit).toString()  + "px";
+document.getElementById("mainImage").style.transform = "rotate(" + currentJSON.imgangle.toString() +"deg)";
 
 document.getElementById("glyphspellinput").value = cleanGlyph;
 }
@@ -408,6 +444,27 @@ zoompanbuttons[5].onclick = function(){
     doTheThing(037);
 }
 
+imagedata[0].onchange = function(){
+    document.getElementById("mainImage").src = this.value;
+    currentJSON.imgurl = this.value;
+}
+
+imagedata[1].onchange = function(){
+    currentJSON.imgw = parseFloat(this.value);
+    redraw();
+}
+imagedata[2].onchange = function(){
+    currentJSON.imgtop = parseFloat(this.value);
+    redraw();
+}
+imagedata[3].onchange = function(){
+    currentJSON.imgleft = parseFloat(this.value);
+    redraw();
+}
+imagedata[4].onchange = function(){
+    currentJSON.imgangle = parseFloat(this.value);
+    redraw();
+}
 </script>
 <?php
     echo "<style>\n";

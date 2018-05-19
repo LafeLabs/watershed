@@ -1,0 +1,31 @@
+<svg width="200" height="200" viewbox = "0 0 200 200"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "imgurl": "https://i.imgur.com/os77Lpb.png",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth": 200,
+    "svgheight": 200,
+    "unit": 100,
+    "x0": 684,
+    "y0": 399,
+    "glyph": "0336,0331,0221,",
+    "table": [
+        "0220:0201,0210,0210,0350,0350,0335,0304,",
+        "0221:0220,0220,0220,0220,0220,0220,0220,"
+    ]
+}
+</json>
+-->
+    <line x1="100" y1="150" x2="100" y2="100" style="stroke:#000000;stroke-width:2" />
+    <line x1="100" y1="100" x2="115" y2="65" style="stroke:#000000;stroke-width:2" />
+    <line x1="115" y1="65" x2="135" y2="44" style="stroke:#000000;stroke-width:2" />
+    <line x1="135" y1="44" x2="156" y2="36" style="stroke:#000000;stroke-width:2" />
+    <line x1="156" y1="36" x2="173" y2="36" style="stroke:#000000;stroke-width:2" />
+    <line x1="173" y1="36" x2="185" y2="41" style="stroke:#000000;stroke-width:2" />
+    <line x1="185" y1="41" x2="192" y2="48" style="stroke:#000000;stroke-width:2" />
+</svg>
