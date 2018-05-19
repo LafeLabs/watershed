@@ -53,7 +53,16 @@ function doTheThing(localCommand){
 </div>    
 <div id = "extdatadiv" style = "display:none"><?php
 if(isset($_GET['url'])){
-    echo file_get_contents($_GET['url']);
+    $urlfilename = $_GET['url'];
+    if(substr($urlfilename,-4) == ".svg"){
+        $svgcode = file_get_contents($_GET['url']);
+        $topcode = explode("</json>",$svgcode)[0];
+        $jsoncode = explode("<json>",$topcode)[1];
+        echo $jsoncode;
+    }
+    else{
+        echo file_get_contents($_GET['url']);
+    }
 }?>
 </div>
 <div id = "page">
