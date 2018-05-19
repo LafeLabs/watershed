@@ -30,6 +30,12 @@ body{
      top:10px;
      z-index:2;
  }
+ #factorylink{
+     position:absolute;
+     left:60%;
+     top:10px;
+     z-index:2;
+ }
  #shapetablelink{
      position:absolute;
      left:70%;

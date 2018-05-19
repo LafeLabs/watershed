@@ -29,6 +29,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <a href = "srolls2html.php">srolls2html.php</a>
     <a href = "index.html">index.html</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
+    <a href = "replicator.php">replicator.php</a>
     <a href = "factory.php">factory.php</a>
     <a href = "shapetableeditor.php">shapetableeditor.php</a>
 

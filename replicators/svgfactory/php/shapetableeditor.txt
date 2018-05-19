@@ -48,6 +48,8 @@ function doTheThing(localCommand){
 <body>
 <div id = "page">
     <a  id = "editorlink" href = "editor.php">editor.php</a>
+    <a  id = "factorylink" href = "factory.php">factory.php</a>
+
     <canvas id="invisibleCanvas" style="display:none"></canvas>
     <canvas id="mainCanvas"></canvas>
     <textarea id="textIO"></textarea>
