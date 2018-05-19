@@ -30,6 +30,8 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <a href = "index.html">index.html</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
     <a href = "replicator.php">replicator.php</a>
+    <a href = "savetable.php">savetable.php</a>
+    <a href = "loadtable.php">loadtable.php</a>
     <a href = "factory.php">factory.php</a>
     <a href = "shapetableeditor.php">shapetableeditor.php</a>
 
@@ -75,7 +77,8 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/shapetableeditor.txt</div>
     <div class = "php file">php/index2html.txt</div>
     <div class = "php file">php/srolls2html.txt</div>
-
+    <div class = "php file">php/savetable.txt</div>
+    <div class = "php file">php/loadtable.txt</div>
     <div class = "json file">json/dna.txt</div>
 
 </div>

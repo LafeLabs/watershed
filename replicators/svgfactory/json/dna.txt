@@ -8,6 +8,7 @@
 "css/style.txt",
 "html/index.txt",
 "html/page.txt",
+"html/template.txt",
 "javascript/actions03xx.txt",
 "javascript/actions0xx.txt",
 "javascript/init.txt",
@@ -25,7 +26,11 @@
 "php/filesaver.txt",
 "php/glypheditor.txt",
 "php/index2html.txt",
+"php/loadtable.txt",
 "php/replicator.txt",
+"php/savetable.txt",
 "php/shapetableeditor.txt",
-"php/text2php.txt"
+"php/srolls2html.txt",
+"php/text2php.txt",
+"scrolls/tutorial.txt"
 ]
