@@ -463,6 +463,15 @@ imagedata[10].onchange = function(){
 
 </script>
 <style>
+#page{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0px;
+    top:0px;
+    overflow:hidden;
+}
+
 #buttonTable{
     position:absolute;
     left:25%;

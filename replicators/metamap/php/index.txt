@@ -278,6 +278,14 @@ zoompanbuttons[5].onclick = function(){
 
 </script>
 <style>
+#page{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0px;
+    top:0px;
+    overflow:hidden;
+}
 #invisibleInput{
     position:absolute;
     left:5px;
