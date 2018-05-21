@@ -29,6 +29,7 @@
 "php/latlon.txt",
 "php/linkeditor.txt",
 "php/loadrecentmap.txt",
+"php/makenewpage.txt",
 "php/mapsaver.txt",
 "php/replicator.txt",
 "php/savemap.txt",
