@@ -41,6 +41,11 @@
     <div class = "scrolls file">scrolls/workflow.txt</div>
     <div class = "scrolls file">scrolls/installation.txt</div>
 
+
+    <div class = "scrolls file">scrolls/introduction.txt</div>
+    <div class = "scrolls file">scrolls/installation.txt</div>
+    <div class = "scrolls file">scrolls/social.txt</div>
+
 </div>
 <textarea id = "texbox"></textarea>
 <script>

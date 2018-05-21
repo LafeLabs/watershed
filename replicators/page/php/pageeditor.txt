@@ -23,6 +23,9 @@ EGO DEATH:
 <body>
 <a id = "pagelink" href = "index.php">Back to Page</a>
 <a id = "editorlink" href = "editor.php">Code Editor</a>
+<div id = "imgurllabel">Publish Image URL:</div>
+<input id = "imgurlinput"/>
+
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
 
 <div id = "scroll">
@@ -58,6 +61,13 @@ document.getElementById("maineditor").onkeyup = function(){
     httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
 }
 
+document.getElementById("imgurlinput").onchange = function(){
+    var imgtext = "\n<img src = \"" + this.value + "\"/>\n";
+    document.getElementById("scroll").innerHTML = imgtext  + document.getElementById("scroll").innerHTML;
+    
+    editor.setValue(document.getElementById("scroll").innerHTML);
+}
+
 </script>
 <style>
 body{
@@ -88,7 +98,7 @@ body{
     text-align:center;
 }
 #scroll img{
-    width:80%;
+    width:50%;
     display:block;
     margin:auto;
 }
@@ -99,6 +109,23 @@ body{
     color:white;
     display:block;
     font-size:24px;
+}
+#imgurllabel{
+    position:absolute;
+    left:30%;
+    font-size:20px;
+    font-family:courier;
+    top:0.2em;
+    color:white;
+}
+#imgurlinput{
+    position:absolute;
+    display:block;
+    left:30%;
+    width:40%;
+    font-size:20px;
+    font-family:courier;
+    top:1.5em;
 }
 #pagelink{
     position:absolute;

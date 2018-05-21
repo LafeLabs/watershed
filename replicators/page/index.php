@@ -57,7 +57,7 @@ h1,h2,h3,h4,h5{
     font-size:24px;
 }
 #page img{
-    width:80%;
+    width:50%;
     display:block;
     margin:auto;
 }
