@@ -1,3 +1,30 @@
+document.getElementById("editmodebutton").onclick = function(){
+    if(editMode){
+       document.getElementById("glyphspellinput").style.display = "none"; 
+       document.getElementById("buttonTable").style.display = "none"; 
+       document.getElementById("imageTable").style.display = "none"; 
+       document.getElementById("controlTable").style.display = "none"; 
+       document.getElementById("zoompan").style.display = "none"; 
+       document.getElementById("textIO").style.display = "none"; 
+       document.getElementById("editorlink").style.display = "none"; 
+       document.getElementById("shapetablelink").style.display = "none"; 
+       document.getElementById("svglink").style.display = "none"; 
+    }
+    else{
+       document.getElementById("glyphspellinput").style.display = "block"; 
+       document.getElementById("buttonTable").style.display = "block"; 
+       document.getElementById("imageTable").style.display = "block"; 
+       document.getElementById("controlTable").style.display = "block"; 
+       document.getElementById("zoompan").style.display = "block"; 
+       document.getElementById("textIO").style.display = "block"; 
+       document.getElementById("editorlink").style.display = "block"; 
+       document.getElementById("shapetablelink").style.display = "block"; 
+       document.getElementById("svglink").style.display = "block"; 
+    }
+
+    editMode = !editMode;
+    redraw();
+}
 
 document.getElementById("glyphspellinput").onchange = function(){
     cleanGlyph = this.value;

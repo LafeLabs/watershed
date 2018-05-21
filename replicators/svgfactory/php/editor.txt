@@ -64,11 +64,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/feedsaver.txt</div>
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
-    <div class = "php file">php/glypheditor.txt</div>
-    <div class = "php file">php/factory.txt</div>
     <div class = "php file">php/shapetableeditor.txt</div>
-    <div class = "php file">php/index2html.txt</div>
-    <div class = "php file">php/srolls2html.txt</div>
     <div class = "php file">php/savetable.txt</div>
     <div class = "php file">php/loadtable.txt</div>
 
