@@ -35,6 +35,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <a href = "glypheditor.php">glypheditor.php</a>
     <a href = "shapetableeditor.php">shapetableeditor.php</a>
     <a href = "makenewpage.php">makenewpage.php</a>
+    <a href = "makenewmap.php">makenewmap.php</a>
     <a href = "latlon.php">latlon.php</a>
 
 </div>
@@ -76,6 +77,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/glypheditor.txt</div>
     <div class = "php file">php/shapetableeditor.txt</div>
     <div class = "php file">php/makenewpage.txt</div>
+    <div class = "php file">php/makenewmap.txt</div>
     <div class = "php file">php/latlon.txt</div>
     <div class = "php file">php/savemap.txt</div>
     <div class = "php file">php/loadrecentmap.txt</div>
