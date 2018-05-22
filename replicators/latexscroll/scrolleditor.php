@@ -32,6 +32,7 @@ foreach($scrolls as $value){
 <div id = "linkscroll">
     <a href = "index.php" id = "indexlink">index.php</a>
     <a href = "editor.php">editor.php</a>
+    <a href = "replicator.php">replicator.php</a>
     <a href = "makenewscroll.php">makenewscroll.php</a>
     <div class = "button">FIGURE</div>
     <div class = "button">HTML2TEX</div>
