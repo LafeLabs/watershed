@@ -6,25 +6,22 @@ document.getElementById("backbutton").onclick = function(){
         }
         currentJSON = rawJSON[pageIndex];
     }
-    
     unit = currentJSON.unit;
     x0 =  0.5*innerWidth + currentJSON.x0rel;
     y0 = 0.5*innerHeight + currentJSON.y0rel;
-imagedata[0].value = currentJSON.imgurl;
-imagedata[1].value = currentJSON.imgw;
-imagedata[2].value = currentJSON.imgtop;
-imagedata[3].value = currentJSON.imgleft;
-imagedata[4].value = currentJSON.imgangle;
-imagedata[5].value = currentJSON.svgwidth;
-imagedata[6].value = currentJSON.svgheight;
-document.getElementById("mainImage").src = currentJSON.imgurl;
+    imagedata[0].value = currentJSON.imgurl;
+    imagedata[1].value = currentJSON.imgw;
+    imagedata[2].value = currentJSON.imgtop;
+    imagedata[3].value = currentJSON.imgleft;
+    imagedata[4].value = currentJSON.imgangle;
+    imagedata[5].value = currentJSON.svgwidth;
+    imagedata[6].value = currentJSON.svgheight;
+    document.getElementById("mainImage").src = currentJSON.imgurl;
     currentGlyph = currentJSON.glyph + "0207,";
-    
     for(var index = 0;index < currentJSON.table.length;index++){
         var localaddr = parseInt(currentJSON.table[index].split(":")[0]);    
         currentTable[localaddr] = currentJSON.table[index].split(":")[1];
     }
-
     redraw();
 }
 document.getElementById("fwdbutton").onclick = function(){
@@ -38,21 +35,19 @@ document.getElementById("fwdbutton").onclick = function(){
     unit = currentJSON.unit;
     x0 =  0.5*innerWidth + currentJSON.x0rel;
     y0 = 0.5*innerHeight + currentJSON.y0rel;
-imagedata[0].value = currentJSON.imgurl;
-imagedata[1].value = currentJSON.imgw;
-imagedata[2].value = currentJSON.imgtop;
-imagedata[3].value = currentJSON.imgleft;
-imagedata[4].value = currentJSON.imgangle;
-imagedata[5].value = currentJSON.svgwidth;
-imagedata[6].value = currentJSON.svgheight;
-document.getElementById("mainImage").src = currentJSON.imgurl;
+    imagedata[0].value = currentJSON.imgurl;
+    imagedata[1].value = currentJSON.imgw;
+    imagedata[2].value = currentJSON.imgtop;
+    imagedata[3].value = currentJSON.imgleft;
+    imagedata[4].value = currentJSON.imgangle;
+    imagedata[5].value = currentJSON.svgwidth;
+    imagedata[6].value = currentJSON.svgheight;
+    document.getElementById("mainImage").src = currentJSON.imgurl;
     currentGlyph = currentJSON.glyph + "0207,";
-    
     for(var index = 0;index < currentJSON.table.length;index++){
         var localaddr = parseInt(currentJSON.table[index].split(":")[0]);    
         currentTable[localaddr] = currentJSON.table[index].split(":")[1];
     }
-
     redraw();
 }
 
