@@ -15,37 +15,20 @@
 </script>
     </head>
     <body>
+        <div id = "pagesdiv" style = "display:none">
+            <?php
+            
+            
+            
+            ?>
+        </div>
+        
         <a id = "editorlink" href = "editor.php">editor.php</a>
         <a id = "scrolleditorlink" href = "scrolleditor.php">scrolleditor.php</a>
         <div id = "readerscroll" class = "scroll">
 
 
-<h2>First Section</h2>
-<p>
-    derp?
-    Foo bar bas baz bash bee bop zippa zippa seeem sarm saga darp derp.
-</p> 
-<p>
-    Yim Hom $x^2$ zom haba damba zip zip zrab.
-    
-    $$E=mc^2$$
-</p>
-
-<figure>
-    <img src = "figures/x7uOC3w.jpg"/><!--img-->
-    <figcaption>Figure 1. derpderp</figcaption>
-</figure>
-
-<figure>
-    <img src = "figures/UKPyX8c.jpg"/><!--img-->
-    <figcaption>Figure 2. Action Geometry shapes</figcaption>
-</figure>
-
-
-<p>some more text here</p>
-
-
-
+<!--main.txt-->
  
  
         </div>

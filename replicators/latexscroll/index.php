@@ -15,6 +15,14 @@
 </script>
     </head>
     <body>
+        <div id = "pagesdiv" style = "display:none">
+            <?php
+            
+            
+            
+            ?>
+        </div>
+        
         <a id = "editorlink" href = "editor.php">editor.php</a>
         <a id = "scrolleditorlink" href = "scrolleditor.php">scrolleditor.php</a>
         <div id = "readerscroll" class = "scroll">

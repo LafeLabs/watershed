@@ -31,6 +31,9 @@
             fclose($file);  //close file                
         }
     }
+    mkdir("pages");
+    mkdir("latex");
+    mkdir("figures");
 ?>
 
 
