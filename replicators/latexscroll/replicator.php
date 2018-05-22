@@ -23,13 +23,6 @@
             fwrite($file,$data); //write data to file
             fclose($file);  //close file                
         }
-        if($filetype == "html"){
-            $htmlfilename = explode(".",$filename)[0].".html";
-            $htmlfilename = explode("/",$htmlfilename)[1];
-            $file = fopen($htmlfilename,"w");// create new file with this name
-            fwrite($file,$data); //write data to file
-            fclose($file);  //close file                
-        }
     }
     mkdir("pages");
     mkdir("latex");
