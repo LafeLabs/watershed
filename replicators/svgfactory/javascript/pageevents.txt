@@ -1,3 +1,62 @@
+document.getElementById("backbutton").onclick = function(){
+    if(rawJSON.length > 0){
+        pageIndex--;
+        if(pageIndex < 0){
+            pageIndex = rawJSON.length - 1; 
+        }
+        currentJSON = rawJSON[pageIndex];
+    }
+    
+    unit = currentJSON.unit;
+    x0 =  0.5*innerWidth + currentJSON.x0rel;
+    y0 = 0.5*innerHeight + currentJSON.y0rel;
+imagedata[0].value = currentJSON.imgurl;
+imagedata[1].value = currentJSON.imgw;
+imagedata[2].value = currentJSON.imgtop;
+imagedata[3].value = currentJSON.imgleft;
+imagedata[4].value = currentJSON.imgangle;
+imagedata[5].value = currentJSON.svgwidth;
+imagedata[6].value = currentJSON.svgheight;
+document.getElementById("mainImage").src = currentJSON.imgurl;
+    currentGlyph = currentJSON.glyph + "0207,";
+    
+    for(var index = 0;index < currentJSON.table.length;index++){
+        var localaddr = parseInt(currentJSON.table[index].split(":")[0]);    
+        currentTable[localaddr] = currentJSON.table[index].split(":")[1];
+    }
+
+    redraw();
+}
+document.getElementById("fwdbutton").onclick = function(){
+    if(rawJSON.length > 0){
+        pageIndex++;
+        if(pageIndex > rawJSON.length - 1){
+            pageIndex = 0; 
+        }
+        currentJSON = rawJSON[pageIndex];
+    }
+    unit = currentJSON.unit;
+    x0 =  0.5*innerWidth + currentJSON.x0rel;
+    y0 = 0.5*innerHeight + currentJSON.y0rel;
+imagedata[0].value = currentJSON.imgurl;
+imagedata[1].value = currentJSON.imgw;
+imagedata[2].value = currentJSON.imgtop;
+imagedata[3].value = currentJSON.imgleft;
+imagedata[4].value = currentJSON.imgangle;
+imagedata[5].value = currentJSON.svgwidth;
+imagedata[6].value = currentJSON.svgheight;
+document.getElementById("mainImage").src = currentJSON.imgurl;
+    currentGlyph = currentJSON.glyph + "0207,";
+    
+    for(var index = 0;index < currentJSON.table.length;index++){
+        var localaddr = parseInt(currentJSON.table[index].split(":")[0]);    
+        currentTable[localaddr] = currentJSON.table[index].split(":")[1];
+    }
+
+    redraw();
+}
+
+
 document.getElementById("editmodebutton").onclick = function(){
     if(editMode){
        document.getElementById("glyphspellinput").style.display = "none"; 
@@ -8,7 +67,10 @@ document.getElementById("editmodebutton").onclick = function(){
        document.getElementById("textIO").style.display = "none"; 
        document.getElementById("editorlink").style.display = "none"; 
        document.getElementById("shapetablelink").style.display = "none"; 
-       document.getElementById("svglink").style.display = "none"; 
+       document.getElementById("svglink").style.display = "none";
+       document.getElementById("backbutton").style.display = "block";
+       document.getElementById("fwdbutton").style.display = "block";
+       
     }
     else{
        document.getElementById("glyphspellinput").style.display = "block"; 
@@ -20,6 +82,8 @@ document.getElementById("editmodebutton").onclick = function(){
        document.getElementById("editorlink").style.display = "block"; 
        document.getElementById("shapetablelink").style.display = "block"; 
        document.getElementById("svglink").style.display = "block"; 
+       document.getElementById("backbutton").style.display = "none";
+       document.getElementById("fwdbutton").style.display = "none";
     }
 
     editMode = !editMode;

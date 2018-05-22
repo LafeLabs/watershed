@@ -5,9 +5,18 @@ currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
 imagedata = document.getElementById("imageTable").getElementsByTagName("input");
 
 if(document.getElementById("extdatadiv").innerHTML.length > 10){
-    currentJSON = JSON.parse(document.getElementById("extdatadiv").innerHTML);
+    rawJSON = JSON.parse(document.getElementById("extdatadiv").innerHTML);
+    if(rawJSON.length > 0){
+        currentJSON = rawJSON[0];
+    }
+    else{
+        currentJSON = rawJSON;
+    }
 }
-
+else{
+    rawJSON = [];
+    rawJSON.push(currentJSON);
+}
     unit = currentJSON.unit;
     x0 =  0.5*innerWidth + currentJSON.x0rel;
     y0 = 0.5*innerHeight + currentJSON.y0rel;

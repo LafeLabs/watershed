@@ -65,6 +65,7 @@
     side = unit;
     keyMode = "none";
     editMode = true;
+    pageIndex = 0;
 
     //</page07>
     }

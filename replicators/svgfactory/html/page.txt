@@ -64,3 +64,6 @@
 </table>
 <input id = "glyphspellinput"/>
 <img id = "mainImage"/>
+
+<div id = "backbutton" class = "button">&#x2BC7</div>
+<div id = "fwdbutton" class = "button">&#x2BC8</div>
