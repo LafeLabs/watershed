@@ -15,24 +15,18 @@
 </script>
     </head>
     <body>
-        <div id = "pagesdiv" style = "display:none">
-            <?php
-            
-            
-            
-            ?>
-        </div>
-        
         <a id = "editorlink" href = "editor.php">editor.php</a>
         <a id = "scrolleditorlink" href = "scrolleditor.php">scrolleditor.php</a>
         <div id = "readerscroll" class = "scroll">
-
-
-<!--main.txt-->
- 
- 
+        <?php
+            if(isset($_GET['url'])){
+                echo file_get_contents($_GET['url']);
+            }
+            else{
+                echo file_get_contents("scrolls/main.txt");
+            }
+        ?>
         </div>
-
         <style>
             * {
             box-sizing: border-box;

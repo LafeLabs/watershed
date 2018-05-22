@@ -1,3 +1,5 @@
+<p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
 <h2>Replicator</h2>
 
 <p>

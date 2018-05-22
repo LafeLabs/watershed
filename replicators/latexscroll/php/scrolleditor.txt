@@ -17,25 +17,43 @@
 </script>
 </head>
 <body class="no-mathjax">
-    
+<div id = "scrolldirdiv" style = "display:none">
+<?php
+$scrolls = scandir(getcwd()."/scrolls");
+foreach($scrolls as $value){
+    if($value != "." && $value != ".."){
+        echo $value."\n";
+    }
+}
+?>
+</div>
 <div id = "scrolldisplay"  class = "mathjax"></div>    
     
 <div id = "linkscroll">
     <a href = "index.html" id = "indexlink">index.html</a>
     <a href = "editor.php">editor.php</a>
-    <a href = "main2index.php">main2index.php</a>    
     <div class = "button">FIGURE</div>
     <div class = "button">HTML2TEX</div>
 </div>
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="true"></div>
 <div id = "filescroll">
-    <div class = "scrolls file">scrolls/replicator.txt</div>
-    <div class = "scrolls file">scrolls/main.txt</div>
-    <div class = "scrolls file">scrolls/notes.txt</div>
 </div>
 <textarea id = "texbox"></textarea>
 <script>
+rawscrollnames = document.getElementById("scrolldirdiv").innerHTML;
+scrollnames = rawscrollnames.split("\n");
+
+var filescrolldata = document.getElementById("filescroll").innerHTML;
+for(var index = 0;index < scrollnames.length;index++){
+    if(scrollnames[index].length > 1){
+        filescrolldata += "\n<div class = \"scrolls file\">scrolls/" + scrollnames[index] + "</div>\n";
+    }
+}
+
+document.getElementById("filescroll").innerHTML = filescrolldata;
+
+
 currentFile = "scrolls/main.txt";
 fileBase = currentFile.split("/")[1].split(".")[0];
 

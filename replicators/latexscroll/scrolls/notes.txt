@@ -1,3 +1,5 @@
+<p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
 <h2>Notes, notes.txt</h2>
 <p>
     The notes are a free form html message board.  It is intended to be the most ephemeral of the main files: replicator,main and wall.  Wipe it out, fill it with nonsense, it doesn't matter.  This is volatile memory.  Change at will.

@@ -1,20 +1,14 @@
 <h2>First Section</h2>
 <p>
-    derp?
-    Foo bar bas baz bash bee bop zippa zippa seeem sarm saga darp derp.
+Paragraph one.
 </p> 
 <p>
-    Yim Hom $x^2$ zom haba damba zip zip zrab.
-    
-    $$E=mc^2$$
-
 $$\frac{-\hbar}{2m}\nabla^2$$
-N
 </p>
 
 <figure>
     <img src = "figures/x7uOC3w.jpg"/><!--img-->
-    <figcaption>Figure 1. derpderp</figcaption>
+    <figcaption>Figure 1. Electronics, cardboard and glue.</figcaption>
 </figure>
 
 <figure>
@@ -22,7 +16,8 @@ N
     <figcaption>Figure 2. Action Geometry shapes</figcaption>
 </figure>
 
-
 <p>some more text here</p>
 
+<p><a href = "index.php?url=scrolls/replicator.txt">link to replicator</a></p>
 
+<p><a href = "index.php?url=scrolls/notes.txt">link to notes page</a></p>
