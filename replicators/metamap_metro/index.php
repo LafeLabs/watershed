@@ -148,7 +148,18 @@ function init(){
     
     stationjson = JSON.parse(document.getElementById("stationjson").innerHTML);
  
-
+    stationlinks = [];
+    for(var index = 0;index < stationjson.length;index++){
+        var localjson = {};
+        localjson.url = "";
+        localjson.rotation = 0;
+        localjson.fontfeet = 350;
+        localjson.latlon = stationjson[index].latlon;
+        localjson.text = stationjson[index].name;
+        stationlinks.push(localjson);
+    }
+    document.getElementById("textIO").value = JSON.stringify(stationlinks,null,"    ");
+    
 }
 </script>
 <script id = "redraw">
