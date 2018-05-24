@@ -12,7 +12,7 @@
     fwrite($file,"<p><a href = \"../?url=pages/".$filename."\">direct link to page saved at".gmdate("Y-m-d H:i:s", $timestamp)."(GMT) </a>\n"."(<a href = \"".$filename."\">".$filename."</a>)</p>".$oldfeed); //write data to file
     fclose($file);  //close file
     
-    echo "<p><a href = \"../?url=pages/".$filename."\">direct link to page saved at".gmdate("Y-m-d H:i:s", $timestamp)."(GMT)</a></p>\n";
+    echo "<p><a href = \"index.php?url=pages/".$filename."\">direct link to page saved at".gmdate("Y-m-d H:i:s", $timestamp)."(GMT)</a></p>\n";
     
 ?>
 <p>
