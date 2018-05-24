@@ -1,2 +1,2 @@
-<h2>Heading</h2>
-<p>text</p>
+<h2>Header</h2>
+<p>Text.</p>

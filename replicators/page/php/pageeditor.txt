@@ -23,6 +23,8 @@ EGO DEATH:
 <body>
 <a id = "pagelink" href = "index.php">Back to Page</a>
 <a id = "editorlink" href = "editor.php">Code Editor</a>
+<a id = "savelink" href = "savepage.php">Publish Page</a>
+
 <div id = "imgurllabel">Publish Image URL:</div>
 <input id = "imgurlinput"/>
 
@@ -131,6 +133,14 @@ body{
     position:absolute;
     left:1em;
     top:1em;
+    color:white;
+    display:block;
+    font-size:24px;
+}
+#savelink{
+    position:absolute;
+    left:1em;
+    top:2em;
     color:white;
     display:block;
     font-size:24px;
