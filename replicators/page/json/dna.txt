@@ -7,6 +7,7 @@
 "php/filesaver.txt",
 "php/index.txt",
 "php/loadpage.txt",
+"php/makenewpage.txt",
 "php/pageeditor.txt",
 "php/replicator.txt",
 "php/savepage.txt",
