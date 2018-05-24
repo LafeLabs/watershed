@@ -1,2 +1,0 @@
-<h2>Here is another thing:</h2>
-<p>...something different. Seriously.</p>

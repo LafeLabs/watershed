@@ -1,2 +1,0 @@
-<h2>Alternate Heading</h2>
-<p>modified text</p>
