@@ -25,9 +25,5 @@
         }
     }
     mkdir("pages");
-
 ?>
-
-
-<a href = "editor.php">editor.php</a>
-
+<a href = "pageeditor.php" style = "font-size:5em;">pageeditor.php</a>

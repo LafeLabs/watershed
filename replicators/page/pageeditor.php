@@ -24,6 +24,8 @@ EGO DEATH:
 <a id = "pagelink" href = "index.php">Back to Page</a>
 <a id = "editorlink" href = "editor.php">Code Editor</a>
 <a id = "savelink" href = "savepage.php">Publish Page</a>
+<a id = "newpagelink" href = "makenewpage.php">Make New Sub-Page</a>
+
 
 <div id = "imgurllabel">Publish Image URL:</div>
 <input id = "imgurlinput"/>
@@ -75,7 +77,6 @@ document.getElementById("imgurlinput").onchange = function(){
 body{
     background-color:#404040;
 }
-
 #maineditor{
     position:absolute;
     top:5em;
@@ -103,14 +104,6 @@ body{
     width:50%;
     display:block;
     margin:auto;
-}
-#editorlink{
-    position:absolute;
-    right:1em;
-    top:1em;
-    color:white;
-    display:block;
-    font-size:24px;
 }
 #imgurllabel{
     position:absolute;
@@ -140,6 +133,22 @@ body{
 #savelink{
     position:absolute;
     left:1em;
+    top:2em;
+    color:white;
+    display:block;
+    font-size:24px;
+}
+#editorlink{
+    position:absolute;
+    right:1em;
+    top:1em;
+    color:white;
+    display:block;
+    font-size:24px;
+}
+#newpagelink{
+    position:absolute;
+    right:1em;
     top:2em;
     color:white;
     display:block;
