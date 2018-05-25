@@ -17,10 +17,26 @@ EGO DEATH:
 -->
 <!--Stop Google:-->
 <META NAME="robots" CONTENT="noindex,nofollow">
+<!-- links to MathJax JavaScript library, un-comment to use math-->
+<!--
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+	MathJax.Hub.Config({
+		tex2jax: {
+		inlineMath: [['$','$'], ['\\(','\\)']],
+		processEscapes: true,
+		processClass: "mathjax",
+        ignoreClass: "no-mathjax"
+		}
+	});//			MathJax.Hub.Typeset();//tell Mathjax to update the math
+</script>
+
+-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
 <title>Page Editor</title>
 </head>
-<body>
+<body  class="no-mathjax">
 <a id = "pagelink" href = "index.php">Back to Page</a>
 <a id = "editorlink" href = "editor.php">Code Editor</a>
 <a id = "savelink" href = "savepage.php">Publish Page</a>
@@ -32,7 +48,7 @@ EGO DEATH:
 
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
 
-<div id = "scroll">
+<div id = "scroll" class = "mathjax">
     
 </div>
 <script>
@@ -63,6 +79,9 @@ document.getElementById("maineditor").onkeyup = function(){
     httpc.open("POST", url, true);
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
     httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+
+    //un-comment this for math:
+    //MathJax.Hub.Typeset();//tell Mathjax to update the math
 }
 
 document.getElementById("imgurlinput").onchange = function(){
