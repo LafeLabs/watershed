@@ -1,0 +1,19 @@
+<a  id = "editorlink" href = "editor.php">editor.php</a>
+<a  id = "shapetablelink" href = "shapetableeditor.php">shapetableeditor.php</a>
+
+<canvas id="invisibleCanvas" style="display:none"></canvas>
+<canvas id="mainCanvas"></canvas>
+
+<table id = "controlTable">
+    <tr id = "addressline" style = "display:none">
+        <td>ADDRESS:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>ACTION:</td><td><input/></td>
+    </tr>
+</table>
+
+<input id = "glyphspellinput"/>
+<div id = "robotbox">
+    <canvas id = "robotCanvas"></canvas>
+</div>

@@ -1,0 +1,29 @@
+if(localCommand == 0700){
+    pulseTime = pulseUnit;
+    timeStepScale = 2;
+}
+if(localCommand == 0730){
+    //A   
+    ctx.fillRect(wallClock,0,pulseTime,0.25*document.getElementById("robotCanvas").height);
+    wallClock += pulseTime;
+}
+if(localCommand == 0731){
+    //B
+    ctx.fillRect(wallClock,0.25*document.getElementById("robotCanvas").height,pulseTime,0.25*document.getElementById("robotCanvas").height);
+    wallClock += pulseTime;
+}
+if(localCommand == 0732){
+    //C
+    ctx.fillRect(wallClock,0.5*document.getElementById("robotCanvas").height,pulseTime,0.25*document.getElementById("robotCanvas").height);    wallClock += pulseTime;
+}
+if(localCommand == 0733){
+    //D
+    ctx.fillRect(wallClock,0.75*document.getElementById("robotCanvas").height,pulseTime,0.25*document.getElementById("robotCanvas").height);    wallClock += pulseTime;
+}
+
+if(localCommand == 0736){
+    pulseTime /= timeStepScale;
+}
+if(localCommand == 0737){
+    pulseTime *= timeStepScale;
+}

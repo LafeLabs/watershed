@@ -1,0 +1,29 @@
+doTheThing(06);//import embedded hypercube in this .html doc
+doTheThing(07);//initialize Geometron global variables
+
+currentGlyph = "0207,";
+document.getElementById("mainCanvas").width = innerWidth;
+document.getElementById("mainCanvas").height = innerHeight;
+
+document.getElementById("robotCanvas").height = 0.5*innerHeight;
+
+x0 = innerWidth/2;
+y0 = innerHeight/2;
+controls = document.getElementById("controlTable").getElementsByTagName("input");   
+
+cleanGlyph = "";
+//currentGlyph = ",0207,";
+glyphEditMode = true;
+shapeTableEditMode = false;
+
+controls[1].select();
+canvasLive = false;
+
+wallClock = 0;
+
+pulseUnit = 100;
+pulseTime = pulseUnit;
+timeStepScale = 2;
+
+
+document.getElementById("robotCanvas").width = pulseUnit;
