@@ -5,20 +5,38 @@ if(localCommand == 0700){
 if(localCommand == 0730){
     //A   
     ctx.fillRect(wallClock,0,pulseTime,0.25*document.getElementById("robotCanvas").height);
+    currentSVG += "<rect x = \"" + wallClock.toString() + "\" y = \"0\"";
+    currentSVG += " width = \"" + pulseTime.toString() + "\" height = \"" + (0.25*document.getElementById("robotCanvas").height).toString() + "\"";
+    currentSVG += " style = \"fill:black;stroke:black;stroke-width:0;\" />\n";
     wallClock += pulseTime;
 }
 if(localCommand == 0731){
-    //B
+    //B S
     ctx.fillRect(wallClock,0.25*document.getElementById("robotCanvas").height,pulseTime,0.25*document.getElementById("robotCanvas").height);
+    currentSVG += "<rect x = \"" + wallClock.toString() + "\" y = \"" + (0.25*document.getElementById("robotCanvas").height).toString() +"\"";
+    currentSVG += " width = \"" + pulseTime.toString() + "\" height = \"" + (0.25*document.getElementById("robotCanvas").height).toString() + "\"";
+    currentSVG += " style = \"fill:black;stroke:black;stroke-width:0;\" />\n";
     wallClock += pulseTime;
 }
 if(localCommand == 0732){
-    //C
-    ctx.fillRect(wallClock,0.5*document.getElementById("robotCanvas").height,pulseTime,0.25*document.getElementById("robotCanvas").height);    wallClock += pulseTime;
+    //C D
+    ctx.fillRect(wallClock,0.5*document.getElementById("robotCanvas").height,pulseTime,0.25*document.getElementById("robotCanvas").height); 
+    currentSVG += "<rect x = \"" + wallClock.toString() + "\" y = \"" + (0.5*document.getElementById("robotCanvas").height).toString() +"\"";
+    currentSVG += " width = \"" + pulseTime.toString() + "\" height = \"" + (0.25*document.getElementById("robotCanvas").height).toString() + "\"";
+    currentSVG += " style = \"fill:black;stroke:black;stroke-width:0;\" />\n";
+    wallClock += pulseTime;
+
 }
 if(localCommand == 0733){
-    //D
-    ctx.fillRect(wallClock,0.75*document.getElementById("robotCanvas").height,pulseTime,0.25*document.getElementById("robotCanvas").height);    wallClock += pulseTime;
+    //D F
+    ctx.fillRect(wallClock,0.75*document.getElementById("robotCanvas").height,pulseTime,0.25*document.getElementById("robotCanvas").height);
+    
+    currentSVG += "<rect x = \"" + wallClock.toString() + "\" y = \"" + (0.75*document.getElementById("robotCanvas").height).toString() +"\"";
+    currentSVG += " width = \"" + pulseTime.toString() + "\" height = \"" + (0.25*document.getElementById("robotCanvas").height).toString() + "\"";
+    currentSVG += " style = \"fill:black;stroke:black;stroke-width:0;\" />\n";    
+    
+    wallClock += pulseTime;
+
 }
 
 if(localCommand == 0736){

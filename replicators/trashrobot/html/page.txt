@@ -1,5 +1,7 @@
+<textarea id = "textIO"></textarea>
 <a  id = "editorlink" href = "editor.php">editor.php</a>
 <a  id = "shapetablelink" href = "shapetableeditor.php">shapetableeditor.php</a>
+<a id = "svglink" href = "svg/">svg/</a>
 
 <canvas id="invisibleCanvas" style="display:none"></canvas>
 <canvas id="mainCanvas"></canvas>
@@ -12,7 +14,13 @@
         <td>ACTION:</td><td><input/></td>
     </tr>
 </table>
-
+<table id = "buttonTable">
+    <tr>
+        <td class = "button" id = "savesvg">
+            SAVE SVG
+        </td>
+    </tr>
+</table>
 <input id = "glyphspellinput"/>
 <div id = "robotbox">
     <canvas id = "robotCanvas"></canvas>

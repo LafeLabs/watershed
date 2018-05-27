@@ -4,8 +4,14 @@ doTheThing(07);//initialize Geometron global variables
 currentGlyph = "0207,";
 document.getElementById("mainCanvas").width = innerWidth;
 document.getElementById("mainCanvas").height = innerHeight;
-
 document.getElementById("robotCanvas").height = 0.5*innerHeight;
+
+currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
+if(document.getElementById("extdatadiv").innerHTML.length > 10){
+    currentJSON = JSON.parse(document.getElementById("extdatadiv").innerHTML);
+}
+
+currentGlyph = currentJSON.currentGlyph + ",0207,";
 
 x0 = innerWidth/2;
 y0 = innerHeight/2;
@@ -21,7 +27,7 @@ canvasLive = false;
 
 wallClock = 0;
 
-pulseUnit = 100;
+pulseUnit = currentJSON.pulseUnit;
 pulseTime = pulseUnit;
 timeStepScale = 2;
 

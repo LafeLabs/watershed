@@ -1,4 +1,24 @@
-
+document.getElementById("savesvg").onclick = function(){
+        
+        ctx = document.getElementById("invisibleCanvas").getContext("2d");
+        wallClock = 0;
+        doTheThing(0700);
+        drawGlyph(currentJSON.currentGlyph);
+        svgwidth = wallClock;
+        svgheight = 0.5*innerHeight;
+        wallClock = 0;
+        doTheThing(0700);
+        currentSVG = "<svg width=\"" + svgwidth.toString() + "\" height=\"" + svgheight.toString() + "\" viewbox = \"0 0 " + svgwidth.toString() + " " + svgheight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
+        currentSVG += "\n<!--\n<json>\n" + JSON.stringify(currentJSON,null,"    ") + "\n</json>\n-->\n";
+        drawGlyph(currentGlyph);
+        currentSVG += "</svg>";
+        document.getElementById("textIO").value = currentSVG;
+        var httpc = new XMLHttpRequest();
+        var url = "feedsaver.php";        
+        httpc.open("POST", url, true);
+        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        httpc.send("data=" + encodeURIComponent(document.getElementById("textIO").value));//send text to feedsaver.php
+}
 
 document.getElementById("glyphspellinput").onchange = function(){
     cleanGlyph = this.value;

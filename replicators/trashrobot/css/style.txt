@@ -62,6 +62,7 @@ body{
     right:0px;
     bottom:0px;
     border:solid;
+    z-index:2;
 }
 #mainCanvas{
     position:absolute;
@@ -72,16 +73,6 @@ body{
 #controlTable{
     left:15px;
     top:15px;
-}
-#imageTable{
-    right:10px;
-    top:20%;
-    position:absolute;
-
-}
-#imageTable input{
-    width:5em;
-    font-family:courier;
 }
 table{
     font-family:courier;
@@ -121,34 +112,6 @@ table{
 }
 #buttonTable{
     position:absolute;
-    left:15px;
-    top:40%;
-}
-img{
-    position:absolute;
-    z-index:-2;
-}
-#mainImage{
-    position:absolute;
-    z-index:-2;
-}
-#editmodebutton{
-    position:absolute;
-    right:0px;
-    top:0px;
-    z-index:2;
-}
-#backbutton{
-    position:absolute;
-    display:none;
-    bottom:0px;
-    left:0px;
-    z-index:2;
-}
-#fwdbutton{
-    position:absolute;
-    display:none;
-    bottom:0px;
-    right:0px;
-    z-index:2;
+    right:3em;
+    top:10px;
 }
