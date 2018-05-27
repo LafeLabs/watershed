@@ -31,6 +31,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <a href = "loadtable.php">loadtable.php</a>
     <a href = "index.php">index.php</a>
     <a href = "shapetableeditor.php">shapetableeditor.php</a>
+    <a href = "runrobot.php">runrobot.php</a>
 
 </div>
 <div id = "namediv"></div>
@@ -69,6 +70,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/shapetableeditor.txt</div>
     <div class = "php file">php/savetable.txt</div>
     <div class = "php file">php/loadtable.txt</div>
+    <div class = "php file">php/runrobot.txt</div>
 
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/currentjson.txt</div>

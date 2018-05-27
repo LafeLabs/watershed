@@ -28,6 +28,7 @@
 "php/index.txt",
 "php/loadtable.txt",
 "php/replicator.txt",
+"php/runrobot.txt",
 "php/savetable.txt",
 "php/shapetableeditor.txt",
 "php/text2php.txt"
