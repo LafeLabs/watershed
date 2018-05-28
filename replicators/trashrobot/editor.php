@@ -25,6 +25,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
 <div id = "linkscroll">
 
     <a href = "text2php.php">text2php.php</a>
+    <a href = "text2html.php">text2html.php</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
     <a href = "replicator.php">replicator.php</a>
     <a href = "savetable.php">savetable.php</a>
@@ -32,6 +33,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <a href = "index.php">index.php</a>
     <a href = "shapetableeditor.php">shapetableeditor.php</a>
     <a href = "runrobot.php">runrobot.php</a>
+    <a href = "build.html">build.html</a>
 
 </div>
 <div id = "namediv"></div>
@@ -39,6 +41,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
 
 <div id = "filescroll">
     <div class = "html file">html/page.txt</div>
+    <div class = "html file">html/build.txt</div>
 
     <div class = "css file">css/style.txt</div>
 
@@ -66,6 +69,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/feedsaver.txt</div>
     <div class = "php file">php/text2php.txt</div>
+    <div class = "php file">php/text2html.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
     <div class = "php file">php/shapetableeditor.txt</div>
     <div class = "php file">php/savetable.txt</div>
@@ -75,6 +79,8 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/currentjson.txt</div>
 
+    <div class = "arduino file">arduino/serial.txt</div>
+    <div class = "arduino file">arduino/main.txt</div>
 </div>
 
 <script>
@@ -140,7 +146,11 @@ for(var index = 0;index < files.length;index++){
             document.getElementById("namediv").style.color = "orange";
             document.getElementById("namediv").style.borderColor = "orange";
         }
-
+        if(this.classList[0] == "arduino"){
+            editor.getSession().setMode("ace/mode/java");
+            document.getElementById("namediv").style.color = "#5050ff";
+            document.getElementById("namediv").style.borderColor = "#5050ff";
+        }
         document.getElementById("namediv").innerHTML = currentFile;
     }
 }
@@ -207,7 +217,9 @@ body{
 .scrolls{
     color:#87ceeb;
 }
-
+.arduino{
+    color:#5050ff;
+}
 .file{
     cursor:pointer;
     border-radius:0.25em;

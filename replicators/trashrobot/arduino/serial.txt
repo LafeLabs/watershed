@@ -1,0 +1,24 @@
+const int analogInPin = A5;  // Analog input pin that the potentiometer is attached to
+const int digitalOutPin = 8; // Analog output pin that the LED is attached to
+
+int x = 0;        // value read
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+  pinMode(digitalOutPin,OUTPUT);
+
+}
+
+void loop() {
+    x = analogRead(analogInPin);
+    if(x > 800){
+        digitalWrite(digitalOutPin,LOW);
+    }
+    if(x < 200){
+       digitalWrite(digitalOutPin,HIGH);
+    }
+//    delay(1);
+    Serial.println(x);
+
+}

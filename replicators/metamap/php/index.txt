@@ -26,7 +26,7 @@ EGO DEATH:
 echo file_get_contents("bytecode/baseshapes.txt")."\n";
 echo file_get_contents("bytecode/shapetable.txt")."\n";
 echo file_get_contents("bytecode/font.txt")."\n";
-echo file_get_contents("bytecode/keyboard.txt")."\n";
+//echo file_get_contents("bytecode/keyboard.txt")."\n";
 echo file_get_contents("bytecode/symbols013xx.txt")."\n";
 echo file_get_contents("bytecode/symbols010xx.txt")."\n";
 ?>
@@ -72,10 +72,9 @@ if(isset($_GET['url'])){
 }?>
 </div>
 <div id = "page">
-
+<input id = "actionInput"/>
 <a  id = "editorlink" href = "editor.php">editor.php</a>
 <canvas id="invisibleCanvas" style="display:none"></canvas>
-<input id  = "invisibleInput"/>
 <canvas id="mainCanvas"></canvas>
 <textarea id="textIO"></textarea>
 <table id = "zoompan">
@@ -150,6 +149,9 @@ function init(){
     mainImageOn = true;
     avatarBool = false;
     zoompanbuttons = document.getElementById("zoompan").getElementsByClassName("button");
+    
+    document.getElementById("actionInput").select();
+
 }
 </script>
 <script id = "redraw">
@@ -214,13 +216,6 @@ function redraw(){
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
         var xy = latlon2xy(herelatlon);
-        document.getElementById("invisibleInput").value = "#" + currentJSON.hashtag +" @(" + xy + ")";
-        var copyText = document.getElementById("invisibleInput");
-        /* Select the text field */
-        copyText.select();
-        /* Copy the text inside the text field */
-        document.execCommand("Copy");
-
     } else {
             alert("Geolocation is not supported by this browser.");
     }
@@ -276,8 +271,42 @@ zoompanbuttons[5].onclick = function(){
     doTheThing(037);
 }
 
+
+
+document.getElementById("actionInput").onkeydown = function(e) {
+        charCode = e.keyCode || e.which;
+        if(charCode == 045){
+            doTheThing(032);
+        }
+        if(charCode == 047){
+            doTheThing(033);
+        }
+        if(charCode == 046){
+            doTheThing(030);
+        }
+        if(charCode == 050){
+            doTheThing(031);
+        }
+        if(charCode == 0255){
+            doTheThing(036);
+        }
+        if(charCode == 075){
+            doTheThing(037);
+        }
+
+        console.log(charCode);
+}
+
 </script>
 <style>
+#actionInput{
+    position:absolute;
+    font-size:20px;
+    left:0px;
+    top:0px;
+    width:1em;
+    z-index:4;
+}
 #page{
     width:100%;
     height:100%;
@@ -285,14 +314,6 @@ zoompanbuttons[5].onclick = function(){
     left:0px;
     top:0px;
     overflow:hidden;
-}
-#invisibleInput{
-    position:absolute;
-    left:5px;
-    top:5px;
-    font-family:courier;
-    width:14em;
-    z-index:2;
 }
 #zoompan{
     position:absolute;
