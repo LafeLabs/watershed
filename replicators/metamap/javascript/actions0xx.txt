@@ -65,7 +65,9 @@
     side = unit;
     keyMode = "none";
     editMode = true;
-
+    currentMap  = "world";
+  
+  
     //</page07>
     }
     //root magic here

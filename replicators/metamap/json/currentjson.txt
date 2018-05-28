@@ -14,8 +14,7 @@
     "glyph1": "0341,0340,",
     "hashtag": "metamapdc",
     "currentGlyph": "",
-    "shapes": [
-    ],
+    "shapes": [],
     "links": [
         {
             "url": "basis/",

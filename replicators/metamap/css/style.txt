@@ -39,9 +39,16 @@
  #editorlink{
      position:absolute;
      left:70%;
-     top:10px;
+     top:0.5em;
      z-index:2;
  }
+ #indexlink{
+     position:absolute;
+     left:70%;
+     top:2em;
+     z-index:2;
+ }
+
  #textIO{
     position:absolute;
     width:100px;

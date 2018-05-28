@@ -84,6 +84,12 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
 
     <div class = "json file">json/dna.txt</div>
     <div class = "json file">json/currentjson.txt</div>
+    <div class = "json file">json/world.txt</div>
+    <div class = "json file">json/city.txt</div>
+    <div class = "json file">json/street.txt</div>
+    <div class = "json file">json/place.txt</div>
+    <div class = "json file">json/metro.txt</div>
+    <div class = "json file">json/water.txt</div>
     
 </div>
 

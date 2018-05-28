@@ -58,6 +58,8 @@ if(isset($_GET['url'])){
 </div>
 <div id = "page">
     <a  id = "editorlink" href = "editor.php">editor.php</a>
+    <a  id = "indexlink" href = "index.php">index.php</a>
+
     <canvas id="invisibleCanvas" style="display:none"></canvas>
     <canvas id="mainCanvas"></canvas>
     <textarea id="textIO"></textarea>

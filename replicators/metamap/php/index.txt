@@ -73,10 +73,23 @@ if(isset($_GET['url'])){
 </div>
 <div id = "page">
 <input id = "actionInput"/>
-<a  id = "editorlink" href = "editor.php">editor.php</a>
 <canvas id="invisibleCanvas" style="display:none"></canvas>
 <canvas id="mainCanvas"></canvas>
 <textarea id="textIO"></textarea>
+<div id = "linkScroll">
+    <a href = "editor.php">editor.php</a>
+    <a href = "glypheditor.php">glypheditor.php</a>
+    <a href = "savemap.php">savemap.php</a>
+    <a href = "loadrecentmap.php">loadrecentmap.php</a>
+    <a href = "linkeditor.php">linkeditor.php</a>
+    <a href = "imageeditor.php">imageeditor.php</a>
+    <a href = "backgroundimageeditor.php">backgroundimageeditor.php</a>
+    <a href = "glypheditor.php">glypheditor.php</a>
+    <a href = "shapetableeditor.php">shapetableeditor.php</a>
+    <a href = "makenewpage.php">makenewpage.php</a>
+    <a href = "makenewmap.php">makenewmap.php</a>
+    <a href = "latlon.php">latlon.php</a>
+</div>
 <table id = "zoompan">
     <tr>
         <td class = "button">up</td>
@@ -178,10 +191,6 @@ function redraw(){
         var yvar = parseFloat(xy.split(",")[1]);
         y = y0 - unit*yvar;
         side = unit*currentJSON.avatar.unitfeet/currentJSON.unitfeet;
-        console.log(side);
-        console.log(",");
-        console.log(x);
-        console.log(y);
         drawGlyph(currentJSON.avatar.glyph);
     }
     
@@ -231,6 +240,23 @@ function redraw(){
 document.getElementById("importmap").onclick = function(){
     if(document.getElementById("textIO").value.length > 1){
         currentJSON = JSON.parse(document.getElementById("textIO").value);
+        document.getElementById("mainImage").src = currentJSON.imgurl;
+        unit = currentJSON.unitpixels;
+        document.getElementById("actionInput").select();
+    
+        for(var index = 0;index < links.length;index++){
+            document.getElementById("page").removeChild(links[index]);
+        }
+
+        links = [];
+        for(var index = 0;index < currentJSON.links.length;index++){
+            var newa = document.createElement("a");
+            newa.className = "links";
+            newa.innerHTML = currentJSON.links[index].text;
+            newa.href = currentJSON.links[index].url;
+            document.getElementById("page").appendChild(newa);
+            links.push(newa);
+        }
         redraw();
     }
 }
@@ -293,12 +319,31 @@ document.getElementById("actionInput").onkeydown = function(e) {
         if(charCode == 075){
             doTheThing(037);
         }
-
-        console.log(charCode);
+        this.value = "";
 }
 
 </script>
 <style>
+#linkScroll{
+    position:absolute;
+    right:0px;
+    top:0px;
+    width:10em;
+    overflow:scroll;
+    height:60%;
+    background-color:black;
+    z-index:3;
+    font-size:22px;
+    font-family:courier;
+}
+
+#linkScroll a{
+    display:block;
+    color:white;
+    margin-top:1em;
+    margin-left:1em;
+}
+
 #actionInput{
     position:absolute;
     font-size:20px;
@@ -317,8 +362,8 @@ document.getElementById("actionInput").onkeydown = function(e) {
 }
 #zoompan{
     position:absolute;
-    left:20%;
-    top:0.5em;
+    left:2em;
+    top:0.1em;
     font-size:18px;
 }
 .links{
@@ -334,12 +379,7 @@ document.getElementById("actionInput").onkeydown = function(e) {
 }
 
 
- #editorlink{
-     position:absolute;
-     left:70%;
-     top:10px;
-     z-index:2;
- }
+
  #textIO{
     position:absolute;
     width:100px;
@@ -392,4 +432,4 @@ img{
 
 </style>
 </body>
-</html>
+</html> 

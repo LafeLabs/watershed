@@ -59,8 +59,8 @@ currentGlyph = currentJSON.currentGlyph + ",0207,";
 herelatlon = currentJSON.latlon0;
 glyphEditMode = true;
 shapeTableEditMode = false;
-mainImageOn = false;
-document.getElementById("mainImage").style.display = "none";
+mainImageOn = true;
+//document.getElementById("mainImage").style.display = "none";
 avatarBool = false;
 
 zoompanbuttons = document.getElementById("zoompan").getElementsByClassName("button");

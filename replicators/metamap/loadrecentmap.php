@@ -29,4 +29,4 @@ echo "<br/>";
 echo "<br/>";
 
 ?>
-<a href = "editor.php">editor.php</a>
+<a href = "editor.php">index.php</a>

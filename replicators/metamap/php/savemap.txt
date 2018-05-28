@@ -12,4 +12,4 @@
     fclose($file);  //close file
 
 ?>
-<a href = "editor.php">editor.php</a>
+<a href = "editor.php">index.php</a>

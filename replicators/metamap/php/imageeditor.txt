@@ -10,6 +10,7 @@
             ?>
         </div>    
         <a id = "editorLink" href = "editor.php">editor.php</a>
+        <a id = "indexLink" href = "index.php">index.php</a>
         <table id = "mainTable">
             <tr>
                 <td class = "button">PREV</td><td class = "button">NEXT</td><td class = "button">NEW</td>

@@ -10,6 +10,8 @@
             ?>
         </div>    
         <a id = "editorLink" href = "editor.php">editor.php</a>
+        <a id = "indexLink" href = "index.php">index.php</a>
+
         <table id = "mainTable">
             <tr>
                 <td class = "button">PREV</td><td class = "button">NEXT</td><td  class = "button">NEW</td>
@@ -136,6 +138,12 @@ document.getElementById("textIO").onkeyup = function(){
                 right:0px;
                 width:50%;
                 height:80%;
+            }
+            #indexLink{
+                
+            }
+            #editorLink{
+                
             }
             .button{
                 cursor:pointer;
