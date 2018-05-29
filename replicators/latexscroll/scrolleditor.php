@@ -322,6 +322,7 @@ body{
     border-width:3px;
     border-radius:0.5em;
     padding:1.5em 1.5em 1.5em 1.5em;
+    font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
 }
 #scrolldisplay p,li,pre{
     width:80%;
@@ -329,6 +330,8 @@ body{
     margin:auto;
     text-align:justify;    
     margin-bottom:1em;
+    font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
+
 }
 #scrolldisplay h1,h2,h3{
     text-align:center;
