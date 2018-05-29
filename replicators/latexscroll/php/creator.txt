@@ -1,5 +1,5 @@
 <?php
-    $name = $_GET['name'];
+    $name = $_POST['name'];
     $type = $_POST["type"];  
     mkdir($name);
     $replicatorcode = file_get_contents("https://raw.githubusercontent.com/LafeLabs/watershed/master/replicators/".$type."/php/replicator.txt");
