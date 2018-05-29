@@ -1,6 +1,7 @@
 [
 "html/page.txt",
 "json/dna.txt",
+"php/creator.txt",
 "php/dnagenerator.txt",
 "php/editor.txt",
 "php/fileloader.txt",
@@ -10,6 +11,7 @@
 "php/makenewmap.txt",
 "php/makenewpage.txt",
 "php/makenewsvgfactory.txt",
+"php/metacreator.txt",
 "php/pageeditor.txt",
 "php/replicator.txt",
 "php/savepage.txt",

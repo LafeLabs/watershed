@@ -30,6 +30,7 @@ EGO DEATH:
     <a href = "dnagenerator.php">dnagenerator.php</a>
     <a href = "makenewpage.php">makenewpage.php</a>
     <a href = "makenewmap.php">makenewmap.php</a>
+    <a href = "metacreator.php">metacreator.php</a>
     <a href = "makenewsvgfactory.php">makenewsvgfactory.php</a>
     <a href = "loadpage.php">loadpage.php</a>
 
@@ -54,6 +55,8 @@ EGO DEATH:
     <div class = "php file">php/dnagenerator.txt</div>
     <div class = "php file">php/makenewpage.txt</div>
     <div class = "php file">php/makenewmap.txt</div>
+    <div class = "php file">php/creator.txt</div>
+    <div class = "php file">php/metacreator.txt</div>
     <div class = "php file">php/makenewsvgfactory.txt</div>
     <div class = "json file">json/dna.txt</div>
 </div>
