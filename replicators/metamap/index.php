@@ -88,6 +88,7 @@ if(isset($_GET['url'])){
     <a href = "shapetableeditor.php">shapetableeditor.php</a>
     <a href = "makenewpage.php">makenewpage.php</a>
     <a href = "makenewmap.php">makenewmap.php</a>
+    <a href = "metacreator.php">metacreator.php</a>
     <a href = "latlon.php">latlon.php</a>
 </div>
 <table id = "zoompan">
@@ -330,7 +331,7 @@ document.getElementById("actionInput").onkeydown = function(e) {
     top:0px;
     width:10em;
     overflow:scroll;
-    height:60%;
+    height:90%;
     background-color:black;
     z-index:3;
     font-size:22px;
