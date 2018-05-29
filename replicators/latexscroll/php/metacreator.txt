@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Meta Creator</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>name:</td>
+                <td><input/></td>
+            </tr>
+            <tr>
+                <td>type:</td>
+                <td><input/></td>
+            </tr>
+        </table>
+<h4>Types:</h4>
+        <ul>
+            <li>metamap</li>
+            <li>page</li>
+            <li></li>
+        </ul>
+        <style>
+            * {
+            box-sizing: border-box;
+            }
+        </style>
+    </body>
+</html>
