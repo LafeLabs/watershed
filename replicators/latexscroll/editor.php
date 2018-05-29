@@ -20,6 +20,7 @@ foreach($scrolls as $value){
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
     <a href = "replicator.php">replicator.php</a>
     <a href = "makenewscroll.php">makenewscroll.php</a>
+    <a href = "metacreator.php">metacreator.php</a>
     <a href = "texlist.php">texlist.php</a>
     <a href = "figurelist.php">figurelist.php</a>
     <a href = "scrolleditor.php">scrolleditor.php</a>
@@ -40,6 +41,8 @@ foreach($scrolls as $value){
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/makenewscroll.txt</div>
+    <div class = "php file">php/creator.txt</div>
+    <div class = "php file">php/metacreator.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
     <div class = "php file">php/texlist.txt</div>
     <div class = "php file">php/figurelist.txt</div>
