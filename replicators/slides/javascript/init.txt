@@ -1,0 +1,24 @@
+doTheThing(06);//import embedded hypercube in this .html doc
+doTheThing(07);//initialize Geometron global variables
+
+currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
+
+document.getElementById("mainCanvas").width = innerWidth;
+document.getElementById("mainCanvas").height = innerHeight;
+
+unit = 100;
+x0 =  0.5*innerWidth;
+y0 = 0.5*innerHeight;
+
+currentGlyph = "0207,";
+    
+controls = document.getElementById("controlTable").getElementsByTagName("input");   
+
+
+cleanGlyph = "";
+
+glyphEditMode = true;
+shapeTableEditMode = false;
+
+controls[1].select();
+

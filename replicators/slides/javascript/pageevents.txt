@@ -1,0 +1,81 @@
+document.getElementById("backbutton").onclick = function(){
+    redraw();
+}
+document.getElementById("fwdbutton").onclick = function(){
+    redraw();
+}
+
+
+document.getElementById("editmodebutton").onclick = function(){
+    if(editMode){
+       document.getElementById("glyphspellinput").style.display = "none"; 
+    }
+    else{
+       document.getElementById("glyphspellinput").style.display = "block"; 
+    }
+
+    editMode = !editMode;
+    redraw();
+}
+
+document.getElementById("glyphspellinput").onchange = function(){
+    cleanGlyph = this.value;
+    currentGlyph = cleanGlyph + "0207,";
+    redraw();
+}
+
+
+controls[1].onkeydown = function(e) {
+        charCode = e.keyCode || e.which;
+        if(charCode == 010){
+            doTheThing(010);
+            redraw();
+        }
+        if(charCode == 045){
+            doTheThing(020);
+            redraw();
+        }
+        if(charCode == 047){
+            doTheThing(021);
+            redraw();
+        }
+    }
+    
+
+controls[1].onkeypress = function(a){//action
+    charCode = a.keyCode || a.which;
+    console.log(a.which);
+    if(charCode != 010 && charCode != 045 && charCode != 047 && charCode != 046  && charCode != 050){
+            
+        if(parseInt(currentTable[charCode],8) >= 0200){
+            var glyphSplit = currentGlyph.split(",");
+            currentGlyph = "";
+            for(var index = 0;index < glyphSplit.length;index++){
+                if(glyphSplit[index].length > 0 && glyphSplit[index] != "0207"){
+                    currentGlyph += glyphSplit[index] + ",";
+                }
+                if(glyphSplit[index] == "0207"){
+                    currentGlyph += currentTable[charCode] + ",0207,";
+                }
+            }
+            var glyphSplit = currentGlyph.split(",");
+            currentGlyph = "";
+            for(var index = 0;index < glyphSplit.length;index++){
+                if(glyphSplit[index].length > 0  && parseInt(glyphSplit[index]) >= 040){
+                    currentGlyph += glyphSplit[index] + ",";
+                }
+            }
+            redraw();
+        } 
+        if(parseInt(currentTable[charCode],8) < 040){
+            doTheThing(parseInt(currentTable[charCode],8));
+            redraw();
+        }
+        this.value = "";
+    }
+}
+    
+    
+
+
+   

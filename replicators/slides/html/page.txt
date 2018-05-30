@@ -1,0 +1,20 @@
+<div id = "editmodebutton" class = "button">EDIT</div>
+
+<a  id = "editorlink" href = "editor.php">editor.php</a>
+<a  id = "shapetablelink" href = "shapetableeditor.php">shapetableeditor.php</a>
+
+<canvas id="invisibleCanvas" style="display:none"></canvas>
+<canvas id="mainCanvas"></canvas>
+<table id = "controlTable">
+    <tr id = "addressline" style = "display:none">
+        <td>ADDRESS:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>ACTION:</td><td><input/></td>
+    </tr>
+</table>
+
+<input id = "glyphspellinput"/>
+
+<div id = "backbutton" class = "button">&#x2BC7</div>
+<div id = "fwdbutton" class = "button">&#x2BC8</div>
