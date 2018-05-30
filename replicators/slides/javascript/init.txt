@@ -12,9 +12,9 @@ currentGlyph = "0207,";
     
 controls = document.getElementById("controlTable").getElementsByTagName("input");   
 
-
 cleanGlyph = "";
 
+editMode = true;
 glyphEditMode = true;
 shapeTableEditMode = false;
 
@@ -26,3 +26,7 @@ boxIndex = 0;
 
 boxes = pages[pageIndex].getElementsByClassName("box");
 document.getElementById("mainpage").appendChild(pages[pageIndex]);
+
+cleanGlyph = boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML;
+currentGlyph = cleanGlyph + "0207,";
+

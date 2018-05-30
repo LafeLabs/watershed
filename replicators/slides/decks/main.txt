@@ -1,5 +1,5 @@
 <div class = "page">
-    <div class = "box"><div class = "glyphdata">0330,0330,0336,</div>
+    <div class = "box"><div class = "glyphdata">0330,0330,0336,0350,0350,0335,</div>
     ONE    
     </div>
     <div class = "box"><div class = "glyphdata">0333,0333,0337,</div>

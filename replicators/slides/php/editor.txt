@@ -64,7 +64,6 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
 
     <div class = "json file">json/dna.txt</div>
     
-    <div class = "decks file">decks/test.txt</div>
     <div class = "decks file">decks/main.txt</div>
 
 </div>

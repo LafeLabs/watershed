@@ -1,36 +1,38 @@
+var glyphArray = currentGlyph.split(",");
+cleanGlyph = "";
+for(var index = 0;index < glyphArray.length;index++){
+    if(glyphArray[index] != "0207" && glyphArray[index].length > 0){
+        cleanGlyph += glyphArray[index] + ",";
+    }
+}
+document.getElementById("glyphspellinput").value = cleanGlyph;
+boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML = cleanGlyph;
+
+
 
 ctx = document.getElementById("mainCanvas").getContext("2d");
 ctx.clearRect(0,0,innerWidth,innerHeight);
 
 
 for(var index = 0;index < boxes.length;index++){
-
     doTheThing(0300);
-    drawGlyph(boxes[index].getElementsByClassName("glyphdata")[0].innerHTML);
+    if(index == boxIndex && editMode){
+        side = 25;
+        x = 150;
+        y = innerHeight - 100;
+        spellGlyph(currentGlyph);
+        doTheThing(0300);
+        drawGlyph(currentGlyph);
+    }
+    else{
+        drawGlyph(boxes[index].getElementsByClassName("glyphdata")[0].innerHTML);
+    }
     boxes[index].style.left = (x - 0.5*side).toString() + "px";
     boxes[index].style.top = (y - 0.5*side).toString() + "px";
     boxes[index].style.width = (side).toString() + "px";
     boxes[index].style.height = (side).toString() + "px";
-}
-
-drawGlyph(currentGlyph);
-
-if(editMode){
-    doTheThing(0300);
-    side = 25;
-    x = 150;
-    y = innerHeight - 100;
-    spellGlyph(currentGlyph);
+    boxes[index].style.transform = "rotate(" + ((theta - theta0)*180/Math.PI).toString() + "deg)";
 }
 
 
-    var glyphArray = currentGlyph.split(",");
-    cleanGlyph = "";
-    for(var index = 0;index < glyphArray.length;index++){
-        if(glyphArray[index] != "0207" && glyphArray[index].length > 0){
-            cleanGlyph += glyphArray[index] + ",";
-        }
-    }
-
-document.getElementById("glyphspellinput").value = cleanGlyph;
 
