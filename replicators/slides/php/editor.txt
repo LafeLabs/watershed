@@ -27,10 +27,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <a href = "text2php.php">text2php.php</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
     <a href = "replicator.php">replicator.php</a>
-    <a href = "savetable.php">savetable.php</a>
-    <a href = "loadtable.php">loadtable.php</a>
     <a href = "index.php">index.php</a>
-    <a href = "shapetableeditor.php">shapetableeditor.php</a>
 
 </div>
 <div id = "namediv"></div>
@@ -64,12 +61,11 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/feedsaver.txt</div>
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
-    <div class = "php file">php/shapetableeditor.txt</div>
-    <div class = "php file">php/savetable.txt</div>
-    <div class = "php file">php/loadtable.txt</div>
 
     <div class = "json file">json/dna.txt</div>
-    <div class = "json file">json/currentjson.txt</div>
+    
+    <div class = "decks file">decks/test.txt</div>
+    <div class = "decks file">decks/main.txt</div>
 
 </div>
 
@@ -136,6 +132,14 @@ for(var index = 0;index < files.length;index++){
             document.getElementById("namediv").style.color = "orange";
             document.getElementById("namediv").style.borderColor = "orange";
         }
+        
+        if(this.classList[0] == "decks"){
+            editor.getSession().setMode("ace/mode/html");
+            document.getElementById("namediv").style.color = "#f5f5dc";
+            document.getElementById("namediv").style.borderColor = "#f5f5dc";
+        }
+        
+         
 
         document.getElementById("namediv").innerHTML = currentFile;
     }
@@ -203,7 +207,9 @@ body{
 .scrolls{
     color:#87ceeb;
 }
-
+.decks{
+    color:#f5f5dc;
+}
 .file{
     cursor:pointer;
     border-radius:0.25em;

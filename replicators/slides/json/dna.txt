@@ -6,6 +6,8 @@
 "bytecode/symbols010xx.txt",
 "bytecode/symbols013xx.txt",
 "css/style.txt",
+"decks/main.txt",
+"decks/test.txt",
 "html/page.txt",
 "javascript/actions03xx.txt",
 "javascript/actions0xx.txt",

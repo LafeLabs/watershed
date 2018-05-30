@@ -65,7 +65,7 @@ if(isset($_GET['url'])){
     }
 }?>
 </div>
-<div id = "page">
+<div id = "mainpage">
 <?php
     echo file_get_contents("html/page.txt");
 ?>
