@@ -1,4 +1,5 @@
 <div id = "editmodebutton" class = "button">EDIT</div>
+<div id="maineditor" contenteditable="true" spellcheck="false" class = "no-mathjax"></div>
 
 <a  id = "editorlink" href = "editor.php">editor.php</a>
 

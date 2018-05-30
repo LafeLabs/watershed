@@ -1,12 +1,19 @@
 <div class = "page">
     <div class = "box"><div class = "glyphdata">0330,0330,0336,0350,0350,0335,</div>
-    ONE    
+        <div class = "content">
+            ONE    
+        </div>
     </div>
     <div class = "box"><div class = "glyphdata">0333,0333,0337,</div>
-    TWO
+        <div class = "content">
+            TWO
+        </div>
     </div>
     <div class = "box"><div class = "glyphdata">0337,</div>
-    THREE
+        <div class = "content">
+            THREE
+            $$E=mc^2$$
+        </div>
     </div>
 </div>
 
@@ -14,10 +21,17 @@
     <div class = "box">
         <div class = "glyphdata"></div>
     </div>
+    <div class = "content">
+            ONE    
+    </div>
 </div>
 
 <div class = "page">
     <div class = "box">
         <div class = "glyphdata"></div>
     </div>
+    <div class = "content">
+        ONE    
+    </div>
+
 </div>

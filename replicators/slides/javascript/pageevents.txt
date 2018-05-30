@@ -9,9 +9,18 @@ document.getElementById("fwdbutton").onclick = function(){
 document.getElementById("editmodebutton").onclick = function(){
     if(editMode){
        document.getElementById("glyphspellinput").style.display = "none"; 
+       document.getElementById("controlTable").style.display = "none"; 
+       document.getElementById("editorlink").style.display = "none"; 
+       document.getElementById("backbutton").style.display = "block"; 
+       document.getElementById("fwdbutton").style.display = "block"; 
     }
     else{
        document.getElementById("glyphspellinput").style.display = "block"; 
+       document.getElementById("controlTable").style.display = "block"; 
+       document.getElementById("editorlink").style.display = "block"; 
+       document.getElementById("backbutton").style.display = "none"; 
+       document.getElementById("fwdbutton").style.display = "none"; 
+
     }
 
     editMode = !editMode;
@@ -39,6 +48,33 @@ controls[1].onkeydown = function(e) {
             doTheThing(021);
             redraw();
         }
+
+
+        if(charCode == 046){
+            boxIndex--;
+            if(boxIndex < 0){
+                boxIndex = boxes.length-1;
+            }
+            cleanGlyph = boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML;
+            editor.setValue(boxes[boxIndex].getElementsByClassName("content")[0].innerHTML);
+
+            currentGlyph = cleanGlyph + "0207,";
+            redraw();
+        }
+        if(charCode == 050){
+            boxIndex++;
+            if(boxIndex > boxes.length-1){
+                boxIndex = 0;
+            }
+            editor.setValue(boxes[boxIndex].getElementsByClassName("content")[0].innerHTML);
+
+            cleanGlyph = boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML;
+            currentGlyph = cleanGlyph + "0207,";
+            redraw();
+        }
+        
+        
+        
     }
     
 
@@ -75,6 +111,12 @@ controls[1].onkeypress = function(a){//action
     }
 }
     
+    
+document.getElementById("maineditor").onkeyup = function(){
+    data = editor.getSession().getValue();
+    boxes[boxIndex].getElementsByClassName("content")[0].innerHTML = data;
+    redraw();
+}
     
 
 

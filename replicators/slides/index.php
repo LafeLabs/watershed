@@ -5,6 +5,23 @@
 <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+   <script>
+	MathJax.Hub.Config({
+		tex2jax: {
+		inlineMath: [['$','$'], ['\\(','\\)']],
+		processEscapes: true,
+		processClass: "mathjax",
+        ignoreClass: "no-mathjax"
+		}
+	});//			MathJax.Hub.Typeset();//tell Mathjax to update the math
+</script>
+<!--Stop Google:-->
+<META NAME="robots" CONTENT="noindex,nofollow">
+<!--ace editor::-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
+
 <script id = "bytecodeScript">
 /*
 <?php

@@ -34,5 +34,5 @@ for(var index = 0;index < boxes.length;index++){
     boxes[index].style.transform = "rotate(" + ((theta - theta0)*180/Math.PI).toString() + "deg)";
 }
 
-
+MathJax.Hub.Typeset();//tell Mathjax to update the math
 
