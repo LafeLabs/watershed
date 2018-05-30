@@ -2,7 +2,17 @@
 ctx = document.getElementById("mainCanvas").getContext("2d");
 ctx.clearRect(0,0,innerWidth,innerHeight);
 
-doTheThing(0300);
+
+for(var index = 0;index < boxes.length;index++){
+
+    doTheThing(0300);
+    drawGlyph(boxes[index].getElementsByClassName("glyphdata")[0].innerHTML);
+    boxes[index].style.left = (x - 0.5*side).toString() + "px";
+    boxes[index].style.top = (y - 0.5*side).toString() + "px";
+    boxes[index].style.width = (side).toString() + "px";
+    boxes[index].style.height = (side).toString() + "px";
+}
+
 drawGlyph(currentGlyph);
 
 if(editMode){
@@ -23,3 +33,4 @@ if(editMode){
     }
 
 document.getElementById("glyphspellinput").value = cleanGlyph;
+

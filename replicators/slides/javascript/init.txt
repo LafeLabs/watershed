@@ -1,8 +1,6 @@
 doTheThing(06);//import embedded hypercube in this .html doc
 doTheThing(07);//initialize Geometron global variables
 
-currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
-
 document.getElementById("mainCanvas").width = innerWidth;
 document.getElementById("mainCanvas").height = innerHeight;
 
@@ -22,3 +20,9 @@ shapeTableEditMode = false;
 
 controls[1].select();
 
+pages = document.getElementsByClassName("page");
+pageIndex = 0;
+boxIndex = 0;
+
+boxes = pages[pageIndex].getElementsByClassName("box");
+document.getElementById("mainpage").appendChild(pages[pageIndex]);

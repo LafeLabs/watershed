@@ -1,11 +1,11 @@
 <div class = "page">
-    <div class = "box"><div class = "glyphdata"></div>
+    <div class = "box"><div class = "glyphdata">0330,0330,0336,</div>
     ONE    
     </div>
-    <div class = "box"><div class = "glyphdata"></div>
+    <div class = "box"><div class = "glyphdata">0333,0333,0337,</div>
     TWO
     </div>
-    <div class = "box"><div class = "glyphdata"></div>
+    <div class = "box"><div class = "glyphdata">0337,</div>
     THREE
     </div>
 </div>
