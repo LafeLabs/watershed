@@ -18,3 +18,7 @@ function xcothx(inputFloat){
         return 1;
     }
 }
+
+function yofx(){
+    y = plotHeight - G*(TN + 0.5*T*xcothx( (qe*g*(x - x0) + h*f)/(2*k*T) ) + 0.5*T*xcothx( (qe*g*(x - x0) - h*f)/(2*k*T)));
+}

@@ -1,17 +1,30 @@
- 
- 
+
  inputs[0].onchange = function(){
     T = parseFloat(this.value);
     redraw();
  }
  inputs[1].onchange = function(){
+    TN = parseFloat(this.value);
+    redraw();
+ }
+ inputs[2].onchange = function(){
+    fGHz = parseFloat(this.value);
+    console.log(xrange);
+    redraw();     
+ }
+ inputs[3].onchange = function(){
+    xrange = parseFloat(this.value);
+    redraw();     
+ }
+ inputs[4].onchange = function(){
     G = parseFloat(this.value);
     redraw();     
  }
- inputs[2].onchange = function(){
-    range = parseFloat(this.value);
+ inputs[5].onchange = function(){
+    g = parseFloat(this.value);
     redraw();     
- }
+    console.log("foo");
+}
 
  
  document.getElementById("publish").onclick = function(){

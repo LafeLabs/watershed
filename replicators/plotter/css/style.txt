@@ -1,3 +1,18 @@
+#plotparamstable{
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+#editorlink{
+    position:absolute;
+    top:0.2em;
+    right:15em;
+}
+#uplink{
+    position:absolute;
+    top:1.2em;
+    right:15em;
+}
  #textIO{
     position:absolute;
     width:100px;
@@ -7,14 +22,20 @@
     border:solid;
 }
 #calcTable{
-    left:5%;
+    left:15%;
     top:5%;
 }
 #equation{
     position:absolute;
-    left:10%;
-    top:20%;
+    left:30%;
+    top:50%;
+    right:30%;
+    bottom:1em;
+    border:solid;
+    padding:1em 1em 1em 1em;
+    border-radius:1em;
     font-size:24px;
+    overflow:scroll;
 }
 #publish{
     position:absolute;

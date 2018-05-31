@@ -12,7 +12,7 @@
 
 </div>
 <div id = "namediv"></div>
-<div id="maineditor" contenteditable="true" spellcheck="true"></div>
+<div id="maineditor" contenteditable="true" spellcheck="false"></div>
 <div id = "filescroll">
 
     <div class = "html file">html/page.txt</div>

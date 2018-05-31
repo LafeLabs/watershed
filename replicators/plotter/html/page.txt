@@ -1,20 +1,61 @@
+<a id = "editorlink" href = "editor.php">editor.php</a>
+<a id  = "uplink" href = "../">../</a>
+
 <canvas id="mainCanvas"></canvas>
 
 <textarea id="textIO"></textarea> 
 <table id = "calcTable">
     <tr>
-        <td>T[pixels]:</td><td><input/></td>
+        <td>T[kelvin]:</td><td><input/></td>
     </tr>
     <tr>
-        <td>G[pixels/pixels]:</td><td><input/></td>
+        <td>TN[kelvin]:</td><td><input/></td>
     </tr>
     <tr>
-        <td>range[pixels]:</td><td><input/></td>
+        <td>f[GHz]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>xrange[pixels]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>G[pixels/kelvin]:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>g[volts/pixel]:</td><td><input/></td>
     </tr>
 </table>
-<div id = "equation">
-$$P = Gx\coth{\frac{x}{T}}$$
+<table id = "plotparamstable">
+</table>
+<table id = "funcparamstable">
+</table>
 
+
+<div id = "equation">
+$$
+y_0 = \frac{1}{2}\textrm{innerHeight} 
+$$
+$$
+x_0 = \frac{1}{2}\textrm{innerWidth} 
+$$
+ $$
+ y = y_0 - G\left\{T_N + \frac{1}{2}T\left[
+ 
+ \left(\frac{egx + hf}{2kT}\right)\coth{\left(\frac{egx + hf}{2kT}\right)}   +
+ \left(\frac{egx - hf}{2kT}\right)\coth{\left(\frac{egx - hf}{2kT}\right)}   
+ 
+ \right]\right\},
+ $$
+
+$$
+y = y0 - G\left[Y_0 + f(X_0 + g(x - x0))\right]
+$$
+$$Y_0 = 0$$
+$$
+Y = f(X)
+$$
+<p>
+    X and Y, and X0 and Y0 in physical units of the System. x and y and x0 and y0 in pixels.  G is in pixels per Y unit and g is in X units per pixel. 
+</p>
 </div>
 <div class = "button" id = "publish">PUBLISH</div>
 <div id = "scroll">

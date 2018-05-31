@@ -1,12 +1,58 @@
+constants = {};
 
+constants.e = 1.6e-19;
+constants.k = 1.38065e-23;
+constants.h = 6.63e-34;
+
+plotparams = {};
+plotparams.G = 1;
+plotparams.g = 1;
+plotparams.X0 = 0;
+plotparams.Y0 = 0;
+
+for(var param in plotparams){
+    var newtr = document.createElement("TR");
+    var newtd = document.createElement("TD");
+    newtd.innerHTML = param + ":";
+    var newtd2 = document.createElement("TD");
+    var newinput = document.createElement("INPUT");
+    newinput.value = plotparams[param];
+    newinput.id = "params_" + plotparams[param];
+    newinput.onchange = function(){
+        plotparams[this.id.substring(7)] = this.value;
+        redraw();
+    }
+    newtd2.appendChild(newinput);
+    newtr.appendChild(newtd);
+    newtr.appendChild(newtd2);
+    document.getElementById("plotparamstable").appendChild(newtr);
+}
+
+qe = 1.6e-19;
+k = 1.38065e-23;
+h = 6.63e-34;
+
+//300 kelvin = 300 pixels
 G = 1;
-T = 20;
-range = 200;
+//20 mV equals 200 px
+//0.02 V = 200 px
+//0.02/200 = 0.01/100= 1e-2/1e2 = 1e-4 V/px
+g = 1e-4; //V/px
+
+T = 77;
+TN = 30;
+fGHz = 6;
+f = 1e9*fGHz;
+xrange = 200;
 
 inputs = document.getElementById("calcTable").getElementsByTagName("input");
 inputs[0].value = T.toString();
-inputs[1].value = G.toString();
-inputs[2].value = range.toString();
+inputs[1].value = TN.toString();
+inputs[2].value = fGHz.toString();
+inputs[3].value = xrange.toString();
+inputs[4].value = G.toString();
+inputs[5].value = g.toString();
+
 
 feedplots = document.getElementById("datadiv").getElementsByTagName("img");
 for(var index = 0;index < feedplots.length;index++){
@@ -16,4 +62,3 @@ for(var index = 0;index < feedplots.length;index++){
     feedplots[index].src = newsrc;
 }
 document.getElementById("scroll").innerHTML = document.getElementById("datadiv").innerHTML;
-
