@@ -20,5 +20,6 @@ function xcothx(inputFloat){
 }
 
 function yofx(){
-    y = plotHeight - G*(TN + 0.5*T*xcothx( (qe*g*(x - x0) + h*f)/(2*k*T) ) + 0.5*T*xcothx( (qe*g*(x - x0) - h*f)/(2*k*T)));
+    
+    y = plotHeight - plotparams.G*(funcparams.TN + 0.5*funcparams.T*xcothx( (qe*plotparams.g*(x - x0) + h*funcparams.fGHz*1e9)/(2*k*funcparams.T) ) + 0.5*funcparams.T*xcothx( (qe*plotparams.g*(x - x0) - h*funcparams.fGHz*1e9)/(2*k*funcparams.T)));
 }

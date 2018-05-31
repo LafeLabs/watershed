@@ -6,9 +6,14 @@ constants.h = 6.63e-34;
 
 plotparams = {};
 plotparams.G = 1;
-plotparams.g = 1;
+plotparams.g = 1e-4;
 plotparams.X0 = 0;
 plotparams.Y0 = 0;
+plotparams.xwidth = 400;
+plotparams.yheight = 400;
+plotparams.x0 = 200;
+plotparams.y0 = 400;
+
 
 for(var param in plotparams){
     var newtr = document.createElement("TR");
@@ -17,9 +22,9 @@ for(var param in plotparams){
     var newtd2 = document.createElement("TD");
     var newinput = document.createElement("INPUT");
     newinput.value = plotparams[param];
-    newinput.id = "params_" + plotparams[param];
+    newinput.id = "params_" + param;
     newinput.onchange = function(){
-        plotparams[this.id.substring(7)] = this.value;
+        plotparams[this.id.substring(7)] = parseFloat(this.value);
         redraw();
     }
     newtd2.appendChild(newinput);
@@ -27,6 +32,30 @@ for(var param in plotparams){
     newtr.appendChild(newtd2);
     document.getElementById("plotparamstable").appendChild(newtr);
 }
+
+funcparams = {};
+funcparams.T = 77;
+funcparams.TN = 40;
+funcparams.fGHz = 6;
+
+for(var param in funcparams){
+    var newtr = document.createElement("TR");
+    var newtd = document.createElement("TD");
+    newtd.innerHTML = param + ":";
+    var newtd2 = document.createElement("TD");
+    var newinput = document.createElement("INPUT");
+    newinput.value = funcparams[param];
+    newinput.id = "funcparams_" + param;
+    newinput.onchange = function(){
+        funcparams[this.id.substring(11)] = parseFloat(this.value);
+        redraw();
+    }
+    newtd2.appendChild(newinput);
+    newtr.appendChild(newtd);
+    newtr.appendChild(newtd2);
+    document.getElementById("funcparamstable").appendChild(newtr);
+}
+
 
 qe = 1.6e-19;
 k = 1.38065e-23;
@@ -43,6 +72,7 @@ T = 77;
 TN = 30;
 fGHz = 6;
 f = 1e9*fGHz;
+
 xrange = 200;
 
 inputs = document.getElementById("calcTable").getElementsByTagName("input");

@@ -17,8 +17,7 @@ x0 = xrange;
 y0 = xrange*G;
 x = 0;
 
-y = plotHeight - G*(TN + 0.5*T*xcothx( (qe*g*(x - x0) + h*f)/(2*k*T)) + 0.5*T*xcothx( (qe*g*(x - x0) - h*f)/(2*k*T)));
-
+yofx();
 
 currentSVG += "	<path d = \"M";
 currentSVG += Math.round(x).toString() + " ";
@@ -28,9 +27,8 @@ currentSVG += Math.round(y).toString() + " ";
 for(x = 1;x < plotWidth;x++){
 
     ctx.moveTo(x-1,y);
-    
-    y = plotHeight - G*(TN + 0.5*T*xcothx( (qe*g*(x - x0) + h*f)/(2*k*T) ) + 0.5*T*xcothx( (qe*g*(x - x0) - h*f)/(2*k*T)));
-    
+    yofx();
+
     ctx.lineTo(x,y);
     currentSVG += "L" + x + " " + y + " ";
 }

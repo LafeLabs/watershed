@@ -32,10 +32,10 @@
 
 <div id = "equation">
 $$
-y_0 = \frac{1}{2}\textrm{innerHeight} 
+y_0 = \frac{1}{2}\textrm{plotHeight} 
 $$
 $$
-x_0 = \frac{1}{2}\textrm{innerWidth} 
+x_0 = \frac{1}{2}\textrm{plotWidth} 
 $$
  $$
  y = y_0 - G\left\{T_N + \frac{1}{2}T\left[
