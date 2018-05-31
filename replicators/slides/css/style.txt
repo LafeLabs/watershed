@@ -41,6 +41,7 @@
     font-family:Helvetica;
     text-align:center;
     font-size:20px;
+    z-index:2;
 }
 body{
     overflow:hidden;

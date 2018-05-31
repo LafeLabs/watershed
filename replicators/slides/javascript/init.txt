@@ -20,7 +20,11 @@ shapeTableEditMode = false;
 
 controls[1].select();
 
-//pages = document.getElementsByClassName("page");
+if(document.getElementById("extdatadiv").innerHTML.length > 10){
+    document.getElementById("datadiv").innerHTML = document.getElementById("extdatadiv").innerHTML;
+    document.getElementById("shadowdatadiv").innerHTML = document.getElementById("extdatadiv").innerHTML;
+}
+
 pages = document.getElementById("datadiv").getElementsByClassName("page");
 shadowpages = document.getElementById("shadowdatadiv").getElementsByClassName("page");
 
