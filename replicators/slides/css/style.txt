@@ -43,6 +43,9 @@
     font-size:20px;
     z-index:2;
 }
+.box img{
+    width:100%;
+}
 body{
     overflow:hidden;
 }

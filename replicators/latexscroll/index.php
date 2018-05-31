@@ -66,6 +66,16 @@
             .scroll h1,h2,h3,h4{
                 text-align:center;
             }
+            .scroll table{
+                text-align:center;
+                border-collapse:collapse;
+                margin:auto;
+                width:auto;
+
+            }
+            .scroll td{
+                border:solid;
+            }
             a{
                 	            font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
 	            font-size: 24px;

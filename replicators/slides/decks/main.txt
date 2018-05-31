@@ -31,20 +31,17 @@
     </div>
 </div>
 <div class="page">
-    <div class="box"><div class="glyphdata"></div>
-        <div class="content">box0
+    <div class="box"><div class="glyphdata">0330,0330,0333,0330,0333,0331,0330,0337,</div>
+        <div class="content">Noise Curve
         </div>
     </div>
-    <div class="box"><div class="glyphdata">0333,</div>
-        <div class="content">box1
-        </div>
+    <div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+        <div class="content"><img src="https://i.imgur.com/fAu4RVG.png"></div>
     </div>
-    <div class="box"><div class="glyphdata">0332,</div>
-        <div class="content">box2
-        </div>
+    <div class="box"><div class="glyphdata">0333,0331,0332,0330,0330,0337,</div>
+        <div class="content">$$P = 2eI\coth{\frac{eV}{2kT}}$$ </div>
     </div>
-    <div class="box"><div class="glyphdata">0330,</div>
-        <div class="content">box3
-        </div>
+    <div class="box"><div class="glyphdata">0330,0332,0332,0332,0332,0332,</div>
+        <div class="content"></div>
     </div>
 </div>

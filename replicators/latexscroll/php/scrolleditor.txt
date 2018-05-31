@@ -341,7 +341,14 @@ body{
     display:inline;
 
 }
-
+#scrolldisplay table{
+    border-collapse:collapse;
+    margin:auto;
+    width:auto;
+}
+#scrolldisplay td{
+    border:solid;
+}
 figure img{
     width:100%;
 }
