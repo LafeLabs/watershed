@@ -1,7 +1,10 @@
 #plotparamstable{
-    position:absolute;
     left:0px;
     top:0px;
+}
+#funcparamstable{
+    left:0px;
+    top:50%;
 }
 #editorlink{
     position:absolute;
@@ -21,10 +24,7 @@
     bottom:0px;
     border:solid;
 }
-#calcTable{
-    left:15%;
-    top:5%;
-}
+
 #equation{
     position:absolute;
     left:30%;

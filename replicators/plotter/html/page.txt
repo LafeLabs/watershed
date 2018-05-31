@@ -4,26 +4,6 @@
 <canvas id="mainCanvas"></canvas>
 
 <textarea id="textIO"></textarea> 
-<table id = "calcTable">
-    <tr>
-        <td>T[kelvin]:</td><td><input/></td>
-    </tr>
-    <tr>
-        <td>TN[kelvin]:</td><td><input/></td>
-    </tr>
-    <tr>
-        <td>f[GHz]:</td><td><input/></td>
-    </tr>
-    <tr>
-        <td>xrange[pixels]:</td><td><input/></td>
-    </tr>
-    <tr>
-        <td>G[pixels/kelvin]:</td><td><input/></td>
-    </tr>
-    <tr>
-        <td>g[volts/pixel]:</td><td><input/></td>
-    </tr>
-</table>
 <table id = "plotparamstable">
 </table>
 <table id = "funcparamstable">

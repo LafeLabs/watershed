@@ -1,20 +1,17 @@
-f = 1e9*fGHz;
 
-plotWidth = 2*xrange;
-plotHeight = xrange*G;
- 
-currentSVG = "<svg width=\"" + plotWidth.toString() + "\" height=\"" + plotHeight.toString() + "\" viewbox = \"0 0 " + plotWidth.toString() + " " + plotHeight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
+currentSVG = "<svg width=\"" + plotparams.plotwidth.toString() + "\" height=\"" + plotparams.plotheight.toString() + "\" viewbox = \"0 0 " + plotparams.plotwidth.toString() + " " + plotparams.plotheight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
 
-document.getElementById("mainCanvas").width = plotWidth;
-document.getElementById("mainCanvas").height = plotHeight;
+document.getElementById("mainCanvas").width = plotparams.plotwidth;
+document.getElementById("mainCanvas").height = plotparams.plotheight;
 ctx = document.getElementById("mainCanvas").getContext("2d");
-ctx.clearRect(0, 0, plotWidth,plotHeight);
+
+ctx.clearRect(0, 0, plotparams.plotwidth,plotparams.plotheight);
 ctx.lineWidth = 2;
 ctx.strokeStyle="black";
 ctx.beginPath();	
  
-x0 = xrange;
-y0 = xrange*G;
+x0 = plotparams.plotwidth/2;
+y0 = plotparams.plotheight;
 x = 0;
 
 yofx();
@@ -24,11 +21,9 @@ currentSVG += Math.round(x).toString() + " ";
 currentSVG += Math.round(y).toString() + " ";
 
 
-for(x = 1;x < plotWidth;x++){
-
+for(x = 1;x < plotparams.plotwidth;x++){
     ctx.moveTo(x-1,y);
     yofx();
-
     ctx.lineTo(x,y);
     currentSVG += "L" + x + " " + y + " ";
 }

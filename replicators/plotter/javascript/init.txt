@@ -9,10 +9,8 @@ plotparams.G = 1;
 plotparams.g = 1e-4;
 plotparams.X0 = 0;
 plotparams.Y0 = 0;
-plotparams.xwidth = 400;
-plotparams.yheight = 400;
-plotparams.x0 = 200;
-plotparams.y0 = 400;
+plotparams.plotwidth = 400;
+plotparams.plotheight = 400;
 
 
 for(var param in plotparams){
@@ -32,6 +30,13 @@ for(var param in plotparams){
     newtr.appendChild(newtd2);
     document.getElementById("plotparamstable").appendChild(newtr);
 }
+
+//300 kelvin = 300 pixels
+//G = 1;
+//20 mV equals 200 px
+//0.02 V = 200 px
+//0.02/200 = 0.01/100= 1e-2/1e2 = 1e-4 V/px
+//g = 1e-4; //V/px
 
 funcparams = {};
 funcparams.T = 77;
@@ -55,33 +60,6 @@ for(var param in funcparams){
     newtr.appendChild(newtd2);
     document.getElementById("funcparamstable").appendChild(newtr);
 }
-
-
-qe = 1.6e-19;
-k = 1.38065e-23;
-h = 6.63e-34;
-
-//300 kelvin = 300 pixels
-G = 1;
-//20 mV equals 200 px
-//0.02 V = 200 px
-//0.02/200 = 0.01/100= 1e-2/1e2 = 1e-4 V/px
-g = 1e-4; //V/px
-
-T = 77;
-TN = 30;
-fGHz = 6;
-f = 1e9*fGHz;
-
-xrange = 200;
-
-inputs = document.getElementById("calcTable").getElementsByTagName("input");
-inputs[0].value = T.toString();
-inputs[1].value = TN.toString();
-inputs[2].value = fGHz.toString();
-inputs[3].value = xrange.toString();
-inputs[4].value = G.toString();
-inputs[5].value = g.toString();
 
 
 feedplots = document.getElementById("datadiv").getElementsByTagName("img");
