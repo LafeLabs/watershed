@@ -5,7 +5,7 @@
 <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 -->
-
+<script src="https://hammerjs.github.io/dist/hammer.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
    <script>
 	MathJax.Hub.Config({

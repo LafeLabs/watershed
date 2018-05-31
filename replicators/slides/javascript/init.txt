@@ -54,3 +54,21 @@ editor.getSession().setMode("ace/mode/html");
 editor.getSession().setUseWrapMode(true);
 editor.$blockScrolling = Infinity;
 editor.setValue(boxes[boxIndex].getElementsByClassName("content")[0].innerHTML);
+
+
+var myElement = document.getElementById('mainpage');
+
+// create a simple instance
+// by default, it only adds horizontal recognizers
+var mc = new Hammer(myElement);
+
+// listen to events...
+mc.on("swiperight", function(ev) {
+    pagefwd();
+    redraw();
+});
+
+mc.on("swipeleft", function(ev) {
+    pageback();
+    redraw();
+});

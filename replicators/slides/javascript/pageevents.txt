@@ -1,4 +1,4 @@
-document.getElementById("backbutton").onclick = function(){
+function pageback(){
     pageIndex--;
     if(pageIndex < 0){
         pageIndex = pages.length - 1;
@@ -26,10 +26,9 @@ document.getElementById("backbutton").onclick = function(){
            boxes[index].style.border = "none";
        }
     }
-    redraw();
+    
 }
-
-document.getElementById("fwdbutton").onclick = function(){
+function pagefwd(){
     pageIndex++;
     if(pageIndex > pages.length - 1){
         pageIndex = 0;
@@ -57,6 +56,16 @@ document.getElementById("fwdbutton").onclick = function(){
            boxes[index].style.border = "none";
        }
     }
+        
+}
+
+document.getElementById("backbutton").onclick = function(){
+    pageback();
+    redraw();
+}
+
+document.getElementById("fwdbutton").onclick = function(){
+    pagefwd();
     redraw();
 }
 
@@ -130,6 +139,10 @@ controls[1].onkeydown = function(e) {
             redraw();
         }
         
+        if(charCode == 040){
+            pagefwd();
+            redraw();
+        }
         
         
     }
