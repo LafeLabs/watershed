@@ -11,6 +11,7 @@ document.getElementById("editmodebutton").onclick = function(){
        document.getElementById("glyphspellinput").style.display = "none"; 
        document.getElementById("controlTable").style.display = "none"; 
        document.getElementById("editorlink").style.display = "none"; 
+       document.getElementById("maineditor").style.display = "none"; 
        document.getElementById("backbutton").style.display = "block"; 
        document.getElementById("fwdbutton").style.display = "block"; 
     }
@@ -18,6 +19,7 @@ document.getElementById("editmodebutton").onclick = function(){
        document.getElementById("glyphspellinput").style.display = "block"; 
        document.getElementById("controlTable").style.display = "block"; 
        document.getElementById("editorlink").style.display = "block"; 
+       document.getElementById("maineditor").style.display = "block"; 
        document.getElementById("backbutton").style.display = "none"; 
        document.getElementById("fwdbutton").style.display = "none"; 
 
@@ -56,7 +58,7 @@ controls[1].onkeydown = function(e) {
                 boxIndex = boxes.length-1;
             }
             cleanGlyph = boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML;
-            editor.setValue(boxes[boxIndex].getElementsByClassName("content")[0].innerHTML);
+            editor.setValue(shadowboxes[boxIndex].getElementsByClassName("content")[0].innerHTML);
 
             currentGlyph = cleanGlyph + "0207,";
             redraw();
@@ -66,8 +68,7 @@ controls[1].onkeydown = function(e) {
             if(boxIndex > boxes.length-1){
                 boxIndex = 0;
             }
-            editor.setValue(boxes[boxIndex].getElementsByClassName("content")[0].innerHTML);
-
+            editor.setValue(shadowboxes[boxIndex].getElementsByClassName("content")[0].innerHTML);
             cleanGlyph = boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML;
             currentGlyph = cleanGlyph + "0207,";
             redraw();
@@ -114,6 +115,7 @@ controls[1].onkeypress = function(a){//action
     
 document.getElementById("maineditor").onkeyup = function(){
     data = editor.getSession().getValue();
+    shadowboxes[boxIndex].getElementsByClassName("content")[0].innerHTML = data;
     boxes[boxIndex].getElementsByClassName("content")[0].innerHTML = data;
     redraw();
 }

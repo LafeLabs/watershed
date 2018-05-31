@@ -2,7 +2,7 @@
     position:absolute;
     right:0px;
     top:5em;
-    width:10em;
+    width:16em;
     height:30em;
     z-index:2;
     font-size:16px;

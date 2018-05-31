@@ -68,6 +68,11 @@ function doTheThing(localCommand){
     echo file_get_contents("decks/main.txt");
 ?>
 </div>    
+<div id = "shadowdatadiv" style = "display:none" class = "no-mathjax">
+<?php
+    echo file_get_contents("decks/main.txt");
+?>
+</div>    
 <div id = "extdatadiv" style = "display:none"><?php
 if(isset($_GET['url'])){
     $urlfilename = $_GET['url'];

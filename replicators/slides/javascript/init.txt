@@ -20,11 +20,16 @@ shapeTableEditMode = false;
 
 controls[1].select();
 
-pages = document.getElementsByClassName("page");
+//pages = document.getElementsByClassName("page");
+pages = document.getElementById("datadiv").getElementsByClassName("page");
+shadowpages = document.getElementById("shadowdatadiv").getElementsByClassName("page");
+
 pageIndex = 0;
 boxIndex = 0;
 
 boxes = pages[pageIndex].getElementsByClassName("box");
+shadowboxes = shadowpages[pageIndex].getElementsByClassName("box");
+
 document.getElementById("mainpage").appendChild(pages[pageIndex]);
 
 cleanGlyph = boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML;
