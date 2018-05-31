@@ -30,7 +30,16 @@ boxIndex = 0;
 boxes = pages[pageIndex].getElementsByClassName("box");
 shadowboxes = shadowpages[pageIndex].getElementsByClassName("box");
 
-document.getElementById("mainpage").appendChild(pages[pageIndex]);
+for(var index = 0;index < pages.length;index++){
+    if(index != pageIndex){
+        pages[index].style.display = "none";
+    }
+    else{
+        pages[index].style.display = "block";
+    }
+}
+
+//document.getElementById("mainpage").appendChild(pages[pageIndex]);
 
 cleanGlyph = boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML;
 currentGlyph = cleanGlyph + "0207,";
@@ -41,5 +50,3 @@ editor.getSession().setMode("ace/mode/html");
 editor.getSession().setUseWrapMode(true);
 editor.$blockScrolling = Infinity;
 editor.setValue(boxes[boxIndex].getElementsByClassName("content")[0].innerHTML);
-
-

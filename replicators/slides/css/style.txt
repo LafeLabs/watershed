@@ -1,3 +1,17 @@
+#datadiv{
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+}
+#shadowdatadiv{
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+}
 #maineditor{
     position:absolute;
     right:0px;
@@ -7,7 +21,6 @@
     z-index:2;
     font-size:16px;
 }
-
 #mainpage{
     position:absolute;
     left:0px;
@@ -94,15 +107,13 @@ body{
 }
 #backbutton{
     position:absolute;
-    display:none;
-    bottom:0px;
+    bottom:10em;
     left:0px;
     z-index:2;
 }
 #fwdbutton{
     position:absolute;
-    display:none;
-    bottom:0px;
+    bottom:10em;
     right:0px;
     z-index:2;
 }

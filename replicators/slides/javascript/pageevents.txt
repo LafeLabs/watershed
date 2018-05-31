@@ -1,7 +1,62 @@
 document.getElementById("backbutton").onclick = function(){
+    pageIndex--;
+    if(pageIndex < 0){
+        pageIndex = pages.length - 1;
+    }
+    for(var index = 0;index < pages.length;index++){
+        if(index != pageIndex){
+            pages[index].style.display = "none";
+        }
+        else{
+            pages[index].style.display = "block";
+        }
+    }
+    boxes = pages[pageIndex].getElementsByClassName("box");
+    shadowboxes = shadowpages[pageIndex].getElementsByClassName("box");
+    cleanGlyph = boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML;
+    currentGlyph = cleanGlyph + "0207,";
+    editor.setValue(shadowboxes[boxIndex].getElementsByClassName("content")[0].innerHTML);
+    if(editMode){
+       for(var index = 0;index < boxes.length;index++){
+           boxes[index].style.border = "block";
+       }
+    }
+    else{
+       for(var index = 0;index < boxes.length;index++){
+           boxes[index].style.border = "none";
+       }
+    }
     redraw();
 }
+
 document.getElementById("fwdbutton").onclick = function(){
+    pageIndex++;
+    if(pageIndex > pages.length - 1){
+        pageIndex = 0;
+    }
+    for(var index = 0;index < pages.length;index++){
+        if(index != pageIndex){
+            pages[index].style.display = "none";
+        }
+        else{
+            pages[index].style.display = "block";
+        }
+    }
+    boxes = pages[pageIndex].getElementsByClassName("box");
+    shadowboxes = shadowpages[pageIndex].getElementsByClassName("box");
+    cleanGlyph = boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML;
+    currentGlyph = cleanGlyph + "0207,";
+    editor.setValue(shadowboxes[boxIndex].getElementsByClassName("content")[0].innerHTML);
+    if(editMode){
+       for(var index = 0;index < boxes.length;index++){
+           boxes[index].style.border = "block";
+       }
+    }
+    else{
+       for(var index = 0;index < boxes.length;index++){
+           boxes[index].style.border = "none";
+       }
+    }
     redraw();
 }
 
@@ -12,8 +67,6 @@ document.getElementById("editmodebutton").onclick = function(){
        document.getElementById("controlTable").style.display = "none"; 
        document.getElementById("editorlink").style.display = "none"; 
        document.getElementById("maineditor").style.display = "none"; 
-       document.getElementById("backbutton").style.display = "block"; 
-       document.getElementById("fwdbutton").style.display = "block"; 
        for(var index = 0;index < boxes.length;index++){
            boxes[index].style.border = "none";
        }
@@ -23,8 +76,6 @@ document.getElementById("editmodebutton").onclick = function(){
        document.getElementById("controlTable").style.display = "block"; 
        document.getElementById("editorlink").style.display = "block"; 
        document.getElementById("maineditor").style.display = "block"; 
-       document.getElementById("backbutton").style.display = "none"; 
-       document.getElementById("fwdbutton").style.display = "none"; 
        for(var index = 0;index < boxes.length;index++){
            boxes[index].style.border = "solid";
        }

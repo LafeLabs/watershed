@@ -1,44 +1,24 @@
-
-
-
-
-
-
 <div class="page">
-    <div class="box"><div class="glyphdata">0330,0330,0336,0350,0350,0335,0331,0331,0331,0332,0331,0332,0332,0331,0332,0331,0332,0331,0332,0331,0332,0331,0332,0331,0332,0331,0331,0331,0331,0331,0331,0331,</div>
-        <div class="content">
-            ONE    
-        derp</div>
+    <div class="box"><div class="glyphdata"></div>
+        <div class="content">zero</div>
     </div>
-    <div class="box"><div class="glyphdata">0333,0333,0337,</div>
+    <div class="box"><div class="glyphdata">0333,0330,0333,0331,0332,0330,0330,0332,0332,0332,0332,0332,</div>
         <div class="content">
-            TWO
+            one
         </div>
     </div>
-    <div class="box"><div class="glyphdata">0331,0331,0332,0331,0332,0337,0337,0337,</div>
+    <div class="box"><div class="glyphdata">0337,0332,0332,0330,0333,0337,0333,0331,0331,0330,0331,0330,0330,0336,0332,0331,0332,0332,0332,0330,0332,0333,0333,0333,0333,0332,0333,0333,0336,0333,0331,0332,0331,0333,0337,</div>
         <div class="content">
-            THREE
+            two
             $$E=mc^2$$
-        
-        $$E=\hbar\omega$$</div>
+        $$E = h\nu$$</div>
     </div>
+
 </div>
 
 <div class="page">
-    <div class="box">
-        <div class="glyphdata"></div>
+    <div class="box"><div class="glyphdata">0337,0333,</div>
+        <div class="content">box0
+        </div>
     </div>
-    <div class="content">
-            ONE    
-    </div>
-</div>
-
-<div class="page">
-    <div class="box">
-        <div class="glyphdata"></div>
-    </div>
-    <div class="content">
-        ONE    
-    </div>
-
 </div>
