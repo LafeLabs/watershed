@@ -1,46 +1,68 @@
  <!doctype html>
 <html>
 <head>
+ <!-- 
+PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
+
+EVERYTHING IS PHYSICAL
+EVERYTHING IS FRACTAL
+EVERYTHING IS RECURSIVE
+NO MONEY
+NO PROPERTY
+NO MINING
+EGO DEATH:
+    LOOK TO THE INSECTS
+    LOOK TO THE FUNGI
+    LANGUAGE IS HOW THE MIND PARSES REALITY
+-->
+<!--Stop Google:-->
+<META NAME="robots" CONTENT="noindex,nofollow">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
+<title>PHP Editor replicator</title>
 </head>
 <body>
-    
 <div id = "linkscroll">
     <a href = "text2php.php">text2php.php</a>
-    <a href = "main2index.php">main2index.php</a>
-    <a href = "index.html">index.html</a>
-    <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
-    <a href = "scrolleditor.php">scrolleditor.php</a>
-
-    <div class = "button" id = "imgbutton">&ltIMG src = " "/&gt</div>
-    <div class = "button" id = "pbutton">&ltP&gt  &lt/P&gt</div>
+    <a href = "pageeditor.php">pageeditor.php</a>
+    <a href = "index.php">index.php</a>
+    <a href = "replicator.php">replicator.php</a>
+    <a href = "savepage.php">savepage.php</a>
+    <a href = "dnagenerator.php">dnagenerator.php</a>
+    <a href = "makenewpage.php">makenewpage.php</a>
+    <a href = "makenewmap.php">makenewmap.php</a>
+    <a href = "metacreator.php">metacreator.php</a>
+    <a href = "makenewsvgfactory.php">makenewsvgfactory.php</a>
+    <a href = "loadpage.php">loadpage.php</a>
 
 </div>
 <div id = "namediv"></div>
-<div id="maineditor" contenteditable="true" spellcheck="true"></div>
+<div id="maineditor" contenteditable="true" spellcheck="false"></div>
 <div id = "filescroll">
 
-    <div class = "html file">html/index.txt</div>
-
-    <div class = "scrolls file">scrolls/main.txt</div>
-    <div class = "scrolls file">scrolls/replicator.txt</div>
-    <div class = "scrolls file">scrolls/notes.txt</div>
-
+    <div class = "html file">html/page.txt</div>
+    
+    <div class = "php file">php/index.txt</div>
+    <div class = "php file">php/pageeditor.txt</div>
     <div class = "php file">php/editor.txt</div>
-    <div class = "php file">php/scrolleditor.txt</div>
     <div class = "php file">php/replicator.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
+
+    <div class = "php file">php/savepage.txt</div>
+    <div class = "php file">php/loadpage.txt</div>
+
     <div class = "php file">php/text2php.txt</div>
-    <div class = "php file">php/main2index.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
-
+    <div class = "php file">php/makenewpage.txt</div>
+    <div class = "php file">php/makenewmap.txt</div>
+    <div class = "php file">php/creator.txt</div>
+    <div class = "php file">php/metacreator.txt</div>
+    <div class = "php file">php/makenewsvgfactory.txt</div>
     <div class = "json file">json/dna.txt</div>
-
 </div>
 
 <script>
-currentFile = "php/scrolleditor.txt";
+currentFile = "php/editor.txt";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -194,7 +216,7 @@ body{
     border-width:3px;
     background-color:#101010;
     font-family:courier;
-    font-size:18px;
+    font-size:22px;
 }
 #linkscroll{
     position:absolute;
@@ -208,8 +230,7 @@ body{
     border-width:3px;
     background-color:#101010;
     font-family:courier;
-    font-size:18px;
-    
+    font-size:22px;
 }
 #maineditor{
     position:absolute;
@@ -217,6 +238,7 @@ body{
     top:5em;
     bottom:1em;
     right:30%;
+    font-size:22px;
 }
 
 

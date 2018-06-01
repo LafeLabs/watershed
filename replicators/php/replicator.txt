@@ -1,6 +1,6 @@
 <?php
 
-    $url = "https://raw.githubusercontent.com/LafeLabs/watershed/master/replicators/htmlscroll/json/dna.txt";
+    $url = "https://raw.githubusercontent.com/LafeLabs/watershed/master/replicators/page/json/dna.txt";
     $dnaraw = file_get_contents($url);
     $dna =json_decode($dnaraw);
     $baseurl = explode("json",$url)[0];
@@ -23,16 +23,7 @@
             fwrite($file,$data); //write data to file
             fclose($file);  //close file                
         }
-        if($filetype == "html"){
-            $htmlfilename = explode(".",$filename)[0].".html";
-            $htmlfilename = explode("/",$htmlfilename)[1];
-            $file = fopen($htmlfilename,"w");// create new file with this name
-            fwrite($file,$data); //write data to file
-            fclose($file);  //close file                
-        }
     }
+    mkdir("pages");
 ?>
-
-
-<a href = "editor.php">editor.php</a>
-
+<a href = "pageeditor.php" style = "font-size:5em;">pageeditor.php</a>

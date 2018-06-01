@@ -1,3 +1,4 @@
+
 <h2>Code Replicators</h2>
 
 <p>
@@ -6,6 +7,11 @@
     <li><a href = "metamap/">metamap/</a></li>
     <li><a href = "latexscroll/">latexscroll/</a></li>
     <li><a href = "calculator/">calculator/</a></li>
+    <li><a href = "plotter/">plotter/</a></li>
+
+    <li><a href = "svgfactory/">svgfactory/</a></li>
+    <li><a href = "/">plotter/</a></li>
+    <li><a href = "plotter/">plotter/</a></li>
     <li><a href = "plotter/">plotter/</a></li>
     
 </ul>
