@@ -5,11 +5,11 @@
     <a href="../">../</a>
 </p></div>
     </div>
-    <div class="box"><div class="glyphdata">0333,0330,0333,0331,0332,0330,0330,0332,0332,0332,0332,0332,</div>
-        <div class="content">Derp
+    <div class="box"><div class="glyphdata">0336,0330,0337,0330,0337,0337,</div>
+        <div class="content"><h2>Title Box</h2>
         </div>
     </div>
-    <div class="box"><div class="glyphdata">0337,0332,0332,0330,0333,0337,0333,0331,0331,0330,0331,0330,0330,0336,0332,0331,0332,0332,0332,0330,0332,0333,0333,0333,0333,0332,0333,0333,0336,0333,0331,0332,0331,0333,0337,0337,0341,0336,</div>
+    <div class="box"><div class="glyphdata">0330,0333,0330,0333,</div>
         <div class="content">
           $$F=ma$$</div>
     </div>
@@ -17,21 +17,27 @@
 </div>
 
 <div class="page">
-    <div class="box"><div class="glyphdata"></div>
+    <div class="box"><div class="glyphdata">0336,0336,0330,0341,</div>
         <div class="content">$\alpha$</div>
     </div>
-    <div class="box"><div class="glyphdata">0333,0336,0330,0332,0336,0330,0330,0332,0306,0334,0304,0336,0337,0337,0337,0336,0336,0333,</div>
-        <div class="content"><span style="font-size:30px">$\rightarrow$</span></div>
+    <div class="box"><div class="glyphdata">0333,0336,0330,0332,0333,0336,0330,0330,0332,0331,0333,0330,0333,0306,0334,0304,0337,0337,0310,0337,0306,0335,0335,</div>
+        <div class="content"><img src="http://www.metamapdc.org/lafe/svgfactory/svg/svg1527824798.svg"></div>
     </div>
-    <div class="box"><div class="glyphdata">0332,0333,0333,0333,</div>
+    <div class="box"><div class="glyphdata">0332,0333,0333,0333,0336,0336,0330,0341,</div>
         <div class="content">$\gamma$       </div>
     </div>
-    <div class="box"><div class="glyphdata">0330,0336,0330,0333,0333,0337,</div>
+    <div class="box"><div class="glyphdata">0336,0336,0330,0333,0330,0333,0330,0333,0330,0333,0330,0333,0330,0330,0330,0332,0341,</div>
         <div class="content">$\beta$</div>
+    </div>
+        <div class="box"><div class="glyphdata">0333,0336,0330,0332,0336,0330,0330,0332,0331,0333,0330,0333,0306,0334,0304,0337,0337,0310,0337,</div>
+        <div class="content"><img src="http://www.metamapdc.org/lafe/svgfactory/svg/svg1527824798.svg"></div>
+    </div>
+    <div class="box"><div class="glyphdata">0333,0310,0337,0335,0335,0313,0336,0336,0331,0336,0331,0336,0336,0333,0337,0337,0337,0337,0337,</div>
+        <div class="content"><img src="http://www.metamapdc.org/lafe/svgfactory/svg/svg1527824798.svg"></div>
     </div>
 </div>
 <div class="page">
-    <div class="box"><div class="glyphdata">0330,0330,0333,0330,0333,0331,0330,0337,</div>
+    <div class="box"><div class="glyphdata">0330,0330,0333,0330,0333,0331,0330,0337,0336,0332,0332,0332,</div>
         <div class="content">Noise Curve
         </div>
     </div>

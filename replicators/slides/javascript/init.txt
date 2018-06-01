@@ -4,7 +4,7 @@ doTheThing(07);//initialize Geometron global variables
 document.getElementById("mainCanvas").width = innerWidth;
 document.getElementById("mainCanvas").height = innerHeight;
 
-unit = 100;
+unit = innerHeight/8;
 x0 =  0.5*innerWidth;
 y0 = 0.5*innerHeight;
 

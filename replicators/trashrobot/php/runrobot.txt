@@ -63,8 +63,8 @@ input{
 </style>
 <style id = "animationstyle"></style>
 <script>
-    duration = "1";
-    iterations = "1";
+    duration = "4";
+    iterations = "infinite";
     url = "svg/" + document.getElementById("datadiv").innerHTML;
     document.getElementById("program").src = url;
     document.getElementById("animationstyle").innerHTML = "#program{";
@@ -73,7 +73,7 @@ input{
     document.getElementById("animationstyle").innerHTML += "border:solid;";
     document.getElementById("animationstyle").innerHTML += "left:-90%;";
     document.getElementById("animationstyle").innerHTML += "}";
-
+    
 
     function redraw(){
         document.getElementById("animationstyle").innerHTML = "#program{";
@@ -104,6 +104,7 @@ input{
         url = this.value;
         redraw();
     }
+    redraw();
 </script>
 </body>
 </html>

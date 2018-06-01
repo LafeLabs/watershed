@@ -1,0 +1,45 @@
+<svg width="9950" height="399" viewbox = "0 0 9950 399"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "pulseUnit": 100,
+    "currentGlyph": "0730,0731,0732,0733,0736,0730,0731,0732,0733,0736,0730,0731,0737,0730,0733,0737,0730,0731,0732,0733,0737,0730,0731,0732,0733,0737,0730,0731,0732,0733,0737,0737,0730,0731,0732,0733,",
+    "table": []
+}
+</json>
+-->
+<rect x = "0" y = "0" width = "100" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "100" y = "99.75" width = "100" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "200" y = "199.5" width = "100" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "300" y = "299.25" width = "100" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "400" y = "0" width = "50" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "450" y = "99.75" width = "50" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "500" y = "199.5" width = "50" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "550" y = "299.25" width = "50" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "600" y = "0" width = "25" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "625" y = "99.75" width = "25" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "650" y = "0" width = "50" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "700" y = "299.25" width = "50" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "750" y = "0" width = "100" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "850" y = "99.75" width = "100" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "950" y = "199.5" width = "100" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "1050" y = "299.25" width = "100" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "1150" y = "0" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "1350" y = "99.75" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "1550" y = "199.5" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "1750" y = "299.25" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "1950" y = "0" width = "400" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "2350" y = "99.75" width = "400" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "2750" y = "199.5" width = "400" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "3150" y = "299.25" width = "400" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "3550" y = "0" width = "1600" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "5150" y = "99.75" width = "1600" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "6750" y = "199.5" width = "1600" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "8350" y = "299.25" width = "1600" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+    <line x1="1075" y1="698" x2="1075" y2="673" style="stroke:#000000;stroke-width:2" />
+    <line x1="1075" y1="698" x2="1050" y2="698" style="stroke:#000000;stroke-width:2" />
+    <line x1="1075" y1="698" x2="1100" y2="698" style="stroke:#000000;stroke-width:2" />
+<circle cx="1075" cy = "686" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+<circle cx="1075" cy = "648" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+</svg>
