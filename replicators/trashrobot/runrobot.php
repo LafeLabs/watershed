@@ -51,22 +51,23 @@ input{
 
 #robotbox{
   position:absolute;
-  left:0px;
   top:50px;
   bottom:0px;
   right:0px;
+  left:0px;
 }
 @keyframes runprogram {
-    from {left: -100%;}
+    from {left: -200%;}
     to {left: 100%;}
 }
 </style>
 <style id = "animationstyle"></style>
 <script>
-    duration = "4";
+    duration = "8";
     iterations = "infinite";
     url = "svg/" + document.getElementById("datadiv").innerHTML;
     document.getElementById("program").src = url;
+    document.getElementById("robotbox").width =  document.getElementById("program").width;
     document.getElementById("animationstyle").innerHTML = "#program{";
     document.getElementById("animationstyle").innerHTML += "position:absolute;";
     document.getElementById("animationstyle").innerHTML += "height:100%;";

@@ -38,6 +38,17 @@ if(localCommand == 0733){
     wallClock += pulseTime;
 
 }
+if(localCommand == 0734){
+    //D F
+    ctx.clearRect(wallClock,0.75*document.getElementById("robotCanvas").height,pulseTime,0.25*document.getElementById("robotCanvas").height);
+    
+    currentSVG += "<rect x = \"" + wallClock.toString() + "\" y = \"" + (0.75*document.getElementById("robotCanvas").height).toString() +"\"";
+    currentSVG += " width = \"" + pulseTime.toString() + "\" height = \"" + (0.25*document.getElementById("robotCanvas").height).toString() + "\"";
+    currentSVG += " style = \"fill:white;stroke:black;stroke-width:0;\" />\n";    
+    
+    wallClock += pulseTime;
+
+}
 
 if(localCommand == 0736){
     pulseTime /= timeStepScale;

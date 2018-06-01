@@ -1,0 +1,33 @@
+<svg width="3200" height="399" viewbox = "0 0 3200 399"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+    "pulseUnit": 100,
+    "currentGlyph": "0737,0730,0731,0732,0733,0730,0731,0732,0733,0730,0731,0732,0733,0730,0731,0732,0733,",
+    "table": []
+}
+</json>
+-->
+<rect x = "0" y = "0" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "200" y = "99.75" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "400" y = "199.5" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "600" y = "299.25" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "800" y = "0" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "1000" y = "99.75" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "1200" y = "199.5" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "1400" y = "299.25" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "1600" y = "0" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "1800" y = "99.75" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "2000" y = "199.5" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "2200" y = "299.25" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "2400" y = "0" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "2600" y = "99.75" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "2800" y = "199.5" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+<rect x = "3000" y = "299.25" width = "200" height = "99.75" style = "fill:black;stroke:black;stroke-width:0;" />
+    <line x1="600" y1="698" x2="600" y2="673" style="stroke:#000000;stroke-width:2" />
+    <line x1="600" y1="698" x2="575" y2="698" style="stroke:#000000;stroke-width:2" />
+    <line x1="600" y1="698" x2="625" y2="698" style="stroke:#000000;stroke-width:2" />
+<circle cx="600" cy = "686" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+<circle cx="600" cy = "648" r = "3" stroke = "#000000" stroke-width = "2" fill = "#000000" />
+</svg>
