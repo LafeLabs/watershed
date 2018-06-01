@@ -1,14 +1,3 @@
-function formatsci(inputFloat){
-    var instring = inputFloat.toExponential(2);
-    var outstring = "";
-    if(instring.split("e").length > 0){
-        outstring = "$" + instring.split("e")[0] + " \\times 10^{" + instring.split("e")[1] + "}$";
-    }
-    else{
-        outstring = instring;
-    }
-    return outstring;
-}
 
 function xcothx(inputFloat){
     if(inputFloat != 0){
@@ -31,20 +20,11 @@ constants = {
 }
 
 plotparams = {
-    "G":1,
-    "g":1e-4,
-    "x0":0,
-    "y0":0,
+    "G":1,//1 kelvin = 1 pixel
+    "g":1e-4,//20 mV equals 200 pixels
     "plotwidth":400,
     "plotheight":400
 }
-
-//300 kelvin = 300 pixels
-//G = 1;
-//20 mV equals 200 px
-//0.02 V = 200 px
-//0.02/200 = 0.01/100= 1e-2/1e2 = 1e-4 V/px
-//g = 1e-4; //V/px
 
 funcparams = {
     "T":77,
