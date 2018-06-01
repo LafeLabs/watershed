@@ -1,0 +1,75 @@
+
+/*
+ 
+PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS NO PROPERTY
+NO MONEY
+NO MINING
+NO PROPERY
+EVERYTHING IS RECURSIVE
+EVERYTHING IS FRACTAL
+EVERYTHING IS PHYSICAL
+    LOOK AT THE FUNGI
+    LOOK AT THE INSECTS
+    LANGUAGE IS HOW THE MIND PARSES REALITY
+
+TRASH ROBOT PROGRAM
+
+
+CONNECT PHOTODIODES TO ANALOG 0 THRU 3 AND CONNECT OUTPUTS 10,11,12,13 TO THE ROBOT CONTROL BOARD
+
+
+*/
+
+int x0 = 0;
+int x1 = 0;
+int x2 = 0;
+int x3 = 0;
+
+void setup() {
+    Serial.begin(9600);
+    pinMode(13, OUTPUT);
+    pinMode(12, OUTPUT);
+    pinMode(11, OUTPUT);
+    pinMode(10, OUTPUT);
+}
+
+void loop() {
+    x0 = analogRead(A0);
+    x1 = analogRead(A1);
+    x2 = analogRead(A2);
+    x3 = analogRead(A3);
+    if(x0 > 1005 && x1 < 1005 && x2 < 1005 && x3 < 1005){
+        Serial.println("0");   
+        digitalWrite(10, HIGH);
+        digitalWrite(11, LOW);
+        digitalWrite(12, LOW);
+        digitalWrite(13, LOW); 
+        delay(1);
+    }
+    if(x0 < 1005 && x1 > 1005 && x2 < 1005 && x3 < 1005){
+        Serial.println("1");   
+        digitalWrite(10, LOW);
+        digitalWrite(11, HIGH);
+        digitalWrite(12, LOW);
+        digitalWrite(13, LOW); 
+        delay(1);
+    }
+    if(x0 < 1005 && x1 < 1005 && x2 > 1005 && x3 < 1005){
+        digitalWrite(10, LOW);
+        digitalWrite(11, LOW);
+        digitalWrite(12, HIGH);
+        digitalWrite(13, LOW); 
+        delay(1);
+        Serial.println("2");   
+    }
+    if(x0 < 1005 && x1 < 1005 && x2 < 1005 && x3 > 1005){
+        digitalWrite(10, LOW);
+        digitalWrite(11, LOW);
+        digitalWrite(12, LOW);
+        digitalWrite(13, HIGH); 
+        delay(1);
+        Serial.println("3");   
+    }
+    
+    
+}
