@@ -28,6 +28,7 @@
             <tr><td class = "button">datafitter</td></tr>
             <tr><td class = "button">trashrobot</td></tr>
             <tr><td class = "button">calculator</td></tr>
+            <tr><td class = "button">slides</td></tr>
         </table>
         
 </div>
