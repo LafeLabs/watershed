@@ -22,3 +22,36 @@ function xcothx(inputFloat){
 function yofx(){
     y = plotparams.plotheight - plotparams.G*(funcparams.TN + 0.5*funcparams.T*xcothx( (constants.e*plotparams.g*(x - x0) + constants.h*funcparams.fGHz*1e9)/(2*constants.k*funcparams.T) ) + 0.5*funcparams.T*xcothx( (constants.e*plotparams.g*(x - x0) - constants.h*funcparams.fGHz*1e9)/(2*constants.k*funcparams.T)));
 }
+
+
+constants = {
+    "e":1.6e-19,   //Electron Charge in coulombs
+    "k":1.38065e-23,  //Boltzman constant in J/K
+    "h":6.63e-34 // Plank constant in J*s
+}
+
+plotparams = {
+    "G":1,
+    "g":1e-4,
+    "x0":0,
+    "y0":0,
+    "plotwidth":400,
+    "plotheight":400
+}
+
+//300 kelvin = 300 pixels
+//G = 1;
+//20 mV equals 200 px
+//0.02 V = 200 px
+//0.02/200 = 0.01/100= 1e-2/1e2 = 1e-4 V/px
+//g = 1e-4; //V/px
+
+funcparams = {
+    "T":77,
+    "TN":30,
+    "fGHz":6
+}
+
+
+
+

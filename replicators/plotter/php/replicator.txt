@@ -24,6 +24,7 @@
             fclose($file);  //close file                
         }
     }
+    mkdir("svg");
 ?>
 
 

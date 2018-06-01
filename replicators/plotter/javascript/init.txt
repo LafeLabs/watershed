@@ -1,16 +1,3 @@
-constants = {};
-
-constants.e = 1.6e-19;
-constants.k = 1.38065e-23;
-constants.h = 6.63e-34;
-
-plotparams = {};
-plotparams.G = 1;
-plotparams.g = 1e-4;
-plotparams.X0 = 0;
-plotparams.Y0 = 0;
-plotparams.plotwidth = 400;
-plotparams.plotheight = 400;
 
 
 for(var param in plotparams){
@@ -31,17 +18,6 @@ for(var param in plotparams){
     document.getElementById("plotparamstable").appendChild(newtr);
 }
 
-//300 kelvin = 300 pixels
-//G = 1;
-//20 mV equals 200 px
-//0.02 V = 200 px
-//0.02/200 = 0.01/100= 1e-2/1e2 = 1e-4 V/px
-//g = 1e-4; //V/px
-
-funcparams = {};
-funcparams.T = 77;
-funcparams.TN = 40;
-funcparams.fGHz = 6;
 
 for(var param in funcparams){
     var newtr = document.createElement("TR");
