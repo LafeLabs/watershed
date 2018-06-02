@@ -35,8 +35,6 @@
 "php/latlon.txt",
 "php/linkeditor.txt",
 "php/loadrecentmap.txt",
-"php/makenewmap.txt",
-"php/makenewpage.txt",
 "php/mapsaver.txt",
 "php/metacreator.txt",
 "php/replicator.txt",

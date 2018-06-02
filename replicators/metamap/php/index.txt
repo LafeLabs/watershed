@@ -86,8 +86,6 @@ if(isset($_GET['url'])){
     <a href = "backgroundimageeditor.php">backgroundimageeditor.php</a>
     <a href = "glypheditor.php">glypheditor.php</a>
     <a href = "shapetableeditor.php">shapetableeditor.php</a>
-    <a href = "makenewpage.php">makenewpage.php</a>
-    <a href = "makenewmap.php">makenewmap.php</a>
     <a href = "metacreator.php">metacreator.php</a>
     <a href = "latlon.php">latlon.php</a>
 </div>
