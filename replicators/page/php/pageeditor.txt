@@ -40,8 +40,7 @@ EGO DEATH:
 <a id = "pagelink" href = "index.php">Back to Page</a>
 <a id = "editorlink" href = "editor.php">Code Editor</a>
 <a id = "savelink" href = "savepage.php">Publish Page</a>
-<a id = "newpagelink" href = "makenewpage.php">Make New Sub-Page</a>
-
+<a id = "newpagelink" href = "metacreator.php">Create sub page</a>
 
 <div id = "imgurllabel">Publish Image URL:</div>
 <input id = "imgurlinput"/>
