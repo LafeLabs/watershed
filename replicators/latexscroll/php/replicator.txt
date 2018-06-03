@@ -24,7 +24,7 @@
             fclose($file);  //close file                
         }
     }
-    mkdir("pages");
+    mkdir("scrolls");
     mkdir("latex");
     mkdir("figures");
 ?>
