@@ -2,7 +2,7 @@
 currentSVG = "<svg width=\"" + plotparams.plotwidth.toString() + "\" height=\"" + plotparams.plotheight.toString() + "\" viewbox = \"0 0 " + plotparams.plotwidth.toString() + " " + plotparams.plotheight.toString() + "\"  xmlns=\"http://www.w3.org/2000/svg\">\n";
 
 
-currentSVG += "\n<!--\n<topfunctions>\n" + document.getElementById("topfunctions").innerText + "\n</topfunctions>\n-->\n";
+currentSVG += "\n<!--\n<topfunctions>\n" + document.getElementById("topfunctions").innerText + "\nconstants = " + JSON.stringify(constants,null,"    ") + "\nplotparams = " + JSON.stringify(plotparams,null,"    ") + "\nfuncparams = " + JSON.stringify(funcparams,null,"    ") + "\n</topfunctions>\n-->\n";
 
 
 document.getElementById("mainCanvas").width = plotparams.plotwidth;
