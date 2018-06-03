@@ -8,6 +8,8 @@
 <div id = "linkscroll">
     <a href = "text2php.php">text2php.php</a>
     <a href = "index.php">index.php</a>
+    <a href = "replicator.php" id = "dnalink">replicator.php</a>
+    <a href = "metacreator.php" id = "dnalink">metacreator.php</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
 
 </div>
@@ -30,6 +32,10 @@
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
     <div class = "php file">php/feedsaver.txt</div>
+
+    <div class = "php file">php/creator.txt</div>
+    <div class = "php file">php/metacreator.txt</div>
+
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
 

@@ -14,8 +14,8 @@ if(isset($_GET['url'])){
     if(substr($urlfilename,-4) == ".svg"){
         $svgcode = file_get_contents($_GET['url']);
         $topcode = explode("</topfunctions>",$svgcode)[0];
-        $jsoncode = explode("<topfunctions>",$topcode)[1];
-        echo $jsoncode;
+        $outcode = explode("<topfunctions>",$topcode)[1];
+        echo $outcode;
     }
     else{
         echo file_get_contents($_GET['url']);
