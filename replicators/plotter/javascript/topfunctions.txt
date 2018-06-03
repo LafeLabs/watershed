@@ -12,6 +12,9 @@ function yofx(){
     y = plotparams.plotheight - plotparams.G*(funcparams.TN + 0.5*funcparams.T*xcothx( (constants.e*plotparams.g*(x - x0) + constants.h*funcparams.fGHz*1e9)/(2*constants.k*funcparams.T) ) + 0.5*funcparams.T*xcothx( (constants.e*plotparams.g*(x - x0) - constants.h*funcparams.fGHz*1e9)/(2*constants.k*funcparams.T)));
 }
 
+function yofx2(){
+    y = plotparams.plotheight - plotparams.G*(funcparams.TN +  Math.abs((constants.e*plotparams.g*(x - x0))/(2*constants.k) ));
+}
 
 constants = {
     "e":1.6e-19,   //Electron Charge in coulombs

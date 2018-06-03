@@ -1,7 +1,6 @@
 
 
  document.getElementById("publish").onclick = function(){
-     
     data = encodeURIComponent(currentSVG);
     var httpc = new XMLHttpRequest();
     var url = "feedsaver.php";        

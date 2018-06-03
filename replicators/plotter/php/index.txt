@@ -8,8 +8,23 @@ PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 
 <script id = "topfunctions">
 <?php
+
+if(isset($_GET['url'])){
+    $urlfilename = $_GET['url'];
+    if(substr($urlfilename,-4) == ".svg"){
+        $svgcode = file_get_contents($_GET['url']);
+        $topcode = explode("</topfunctions>",$svgcode)[0];
+        $outcode = explode("<topfunctions>",$topcode)[1];
+        echo $outcode;
+    }
+    else{
+        echo file_get_contents($_GET['url']);
+    }
+}
+else{
     $data = file_get_contents("javascript/topfunctions.txt");
     echo $data;
+}
 ?>   
 </script>
 
