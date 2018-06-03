@@ -8,8 +8,6 @@
 </table>
 <table id = "funcparamstable">
 </table>
-
-
 <div id = "equation">
 $$
 y_0 = \frac{1}{2}\textrm{plotHeight} 

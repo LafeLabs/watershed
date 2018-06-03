@@ -112,12 +112,12 @@ for(var index = 0;index < files.length;index++){
     }
 }
 document.getElementById("namediv").innerHTML = currentFile;
-document.getElementById("namediv").style.color = "#0000ff";
-document.getElementById("namediv").style.borderColor = "#0000ff";
+document.getElementById("namediv").style.color = "#800080";
+document.getElementById("namediv").style.borderColor = "#800080";
 
 editor = ace.edit("maineditor");
 editor.setTheme("ace/theme/cobalt");
-editor.getSession().setMode("ace/mode/html");
+editor.getSession().setMode("ace/mode/php");
 editor.getSession().setUseWrapMode(true);
 editor.$blockScrolling = Infinity;
 
