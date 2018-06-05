@@ -52,6 +52,9 @@ body{
 .glyphdata{
     display:none;
 }
+.pagejson{
+    display:none;
+}
  #editorlink{
      position:absolute;
      left:70%;

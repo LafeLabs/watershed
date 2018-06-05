@@ -1,4 +1,9 @@
 <div class="page">
+    <div class="pagejson">{
+    "x0rel": -0.04248878394332848,
+    "y0rel": 0,
+    "unitrel": 0.6209213230591548
+}</div>
     <div class="box"><div class="glyphdata"></div>
         <div class="content">
 <p>
@@ -17,6 +22,12 @@
 </div>
 
 <div class="page">
+    <div class="pagejson">{
+    "x0rel": -1.0025062656641612,
+    "y0rel": 1.005504629023485,
+    "unitrel": 2.143588810000001
+}</div>
+
     <div class="box"><div class="glyphdata">0336,0336,0330,0341,</div>
         <div class="content">$\alpha$</div>
     </div>
@@ -37,6 +48,11 @@
     </div>
 </div>
 <div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 0.6209213230591548
+}</div>
     <div class="box"><div class="glyphdata">0330,0330,0333,0330,0333,0331,0330,0337,0336,0332,0332,0332,0314,0314,0314,</div>
         <div class="content">Noise Curve
         </div>
@@ -44,10 +60,10 @@
     <div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
         <div class="content"><img src="https://i.imgur.com/fAu4RVG.png"></div>
     </div>
-    <div class="box"><div class="glyphdata">0333,0331,0332,0330,0330,0337,</div>
+    <div class="box"><div class="glyphdata">0330,0332,0332,0330,0332,0330,0332,0333,0331,0332,0330,0330,0337,</div>
         <div class="content">$$P = 2eI\coth{\frac{eV}{2kT}}$$ </div>
     </div>
-    <div class="box"><div class="glyphdata">0330,0332,0332,0332,0332,0332,</div>
+    <div class="box"><div class="glyphdata">0337,0333,0333,0331,0335,0366,0335,0335,0333,0333,0331,0367,</div>
         <div class="content"></div>
     </div>
 </div>

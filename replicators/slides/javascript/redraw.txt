@@ -10,6 +10,13 @@ boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML = cleanGlyph;
 shadowboxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML = cleanGlyph;
 
 
+pagejson.unitrel = unit/(innerHeight/8);
+
+pagejson.x0rel = (x0 - 0.5*innerWidth)/unit;
+pagejson.y0rel = (y0 - 0.5*innerHeight)/unit;
+
+pages[pageIndex].getElementsByClassName("pagejson")[0].innerHTML = JSON.stringify(pagejson,null,"    ");
+shadowpages[pageIndex].getElementsByClassName("pagejson")[0].innerHTML = JSON.stringify(pagejson,null,"    ");
 
 ctx = document.getElementById("mainCanvas").getContext("2d");
 ctx.clearRect(0,0,innerWidth,innerHeight);

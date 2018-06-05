@@ -48,6 +48,12 @@ for(var index = 0;index < pages.length;index++){
 cleanGlyph = boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML;
 currentGlyph = cleanGlyph + "0207,";
 
+pagejson = JSON.parse(pages[pageIndex].getElementsByClassName("pagejson")[0].innerHTML);
+unit = pagejson.unitrel*innerHeight/8;
+x0 =  0.5*innerWidth + pagejson.x0rel*unit;
+y0 = 0.5*innerHeight + pagejson.y0rel*unit;
+
+
 editor = ace.edit("maineditor");
 editor.setTheme("ace/theme/cobalt");
 editor.getSession().setMode("ace/mode/html");
