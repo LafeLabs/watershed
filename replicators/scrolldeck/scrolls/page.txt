@@ -1,0 +1,10 @@
+<p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
+<h2>Create Page</h2>
+<p>
+    To create a new page in the Watershed Network, go to an existing page, click on the link for "editor", then very carefully click on the link for "metacreator.php".  Or point your browser to [address of current page, map, scroll etc]/metacreator.php.
+</p>
+<p>
+    
+    
+</p>

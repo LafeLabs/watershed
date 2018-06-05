@@ -37,10 +37,12 @@ EGO DEATH:
 <title>Page Editor</title>
 </head>
 <body  class="no-mathjax">
-<a id = "pagelink" href = "index.php">Back to Page</a>
-<a id = "editorlink" href = "editor.php">Code Editor</a>
-<a id = "savelink" href = "savepage.php">Publish Page</a>
-<a id = "newpagelink" href = "metacreator.php">Create sub page</a>
+<a id = "pagelink" href = "index.php">index.php</a>
+<a id = "editorlink" href = "editor.php">editor.php</a>
+<a id = "savelink" href = "savepage.php">savepage.php</a>
+<a id = "loadlink" href = "loadpage.php">loadpage.php</a>
+<a id = "newpagelink" href = "metacreator.php">metacreator.php</a>
+
 
 <div id = "imgurllabel">Publish Image URL:</div>
 <input id = "imgurlinput"/>
@@ -152,6 +154,14 @@ body{
     position:absolute;
     left:1em;
     top:2em;
+    color:white;
+    display:block;
+    font-size:24px;
+}
+#loadlink{
+    position:absolute;
+    left:9em;
+    top:1.5em;
     color:white;
     display:block;
     font-size:24px;

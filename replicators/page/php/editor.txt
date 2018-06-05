@@ -29,7 +29,6 @@ EGO DEATH:
     <a href = "savepage.php">savepage.php</a>
     <a href = "dnagenerator.php">dnagenerator.php</a>
     <a href = "metacreator.php">metacreator.php</a>
-    <a href = "makenewsvgfactory.php">makenewsvgfactory.php</a>
     <a href = "loadpage.php">loadpage.php</a>
 
 </div>
@@ -57,7 +56,7 @@ EGO DEATH:
 </div>
 
 <script>
-currentFile = "php/editor.txt";
+currentFile = "html/page.txt";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {

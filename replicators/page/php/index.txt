@@ -43,9 +43,8 @@ if(isset($_GET['url'])){
     echo file_get_contents($_GET['url']);
 }?>
 </div>
-
-    <a id = "editorlink" href = "editor.php">Code Editor</a>
-    <a id = "pageeditorlink" href = "pageeditor.php">Page Editor</a>
+    <a id = "creatorlink" href = "metacreator.php">metacreator.php</a>
+    <a id = "pageeditorlink" href = "pageeditor.php">pageeditor.php</a>
 <div id = "page">
 <?php
 echo file_get_contents("html/page.txt");
@@ -83,7 +82,7 @@ h1,h2,h3,h4,h5{
     left:2em;
     font-size:24px;
 }
-#editorlink{
+#creatorlink{
     position:absolute;
     top:0.5em;
     right:2em;
