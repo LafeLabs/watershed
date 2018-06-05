@@ -288,6 +288,11 @@ body{
 #scrolldisplay td{
     border:solid;
 }
+img{
+    width:80%;
+    display:block;
+    margin:auto;
+}
 figure img{
     width:100%;
 }

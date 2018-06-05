@@ -5,6 +5,33 @@
     To create a new page in the Watershed Network, go to an existing page, click on the link for "editor", then very carefully click on the link for "metacreator.php".  Or point your browser to [address of current page, map, scroll etc]/metacreator.php.
 </p>
 <p>
-    
-    
+    Go to an existing page in the Watershed network, and click on the link in the upper right hand corner, metacreator.php:
+    <img style = "border:solid;" src = "https://i.imgur.com/sUxcqch.png"/>    
+</p>
+<p>
+    Click on the "page" button to load the word "page" into the "type" input, or just type "page" there and hit "enter".  Then enter the name of your new page in the "name" input, and click on the "CREATE" button:
+    <img  style = "border:solid;"  src = "https://i.imgur.com/puYtpNm.png"/>    
+</p>
+<p>
+    This will create a new directory named whatever you chose(it should be all one word, no special characters).  What remains is a link to that directory, click on it:
+    <img  style = "border:solid;" src = "https://i.imgur.com/5i75kYQ.png"/>    
+  </p>
+<p>
+    Now you will see the contents of that directory which is just the file "replicator.php".  This is a program that gets all the various types of code needed for a new page and copies them into your new directory.  Click on that to run it: 
+    <img  style = "border:solid;" src = "https://i.imgur.com/nqMphPP.png"/>    
+</p>
+<p>
+After replicator runs, you'll be presented with a link to the page editor for your NEW page.  Note you are now one directory down in the file structure from where you started.  Click this link:
+    <img  style = "border:solid;" src = "https://i.imgur.com/ymcCmct.png"/>    
+</p>
+<p>
+And now you're back to the page editor.  Edit the new page, add a link back to the previous page with a link to "../".
+    <img  style = "border:solid;" src = "https://i.imgur.com/0ieBmVi.png"/>    
+</p>
+<p>
+    Add some random content to test that it works, and click "index.php" to see your new page:
+    <img  style = "border:solid;" src = "https://i.imgur.com/AGSzcQ8.png"/>
+</p>
+<p>
+    Now copy the global address in the address bar of your browser.  You can do this with the mouse or by using either control-L or command-L to highlight the address, then control-C or command-C to copy to the clipboard, then you can paste it into text messages, emails, and links to share with others.  Go back and edit the page how you want, then share the link!  Also share this methodology and how to edit and whoever you send the link to can also edit it.  No passwords, no accounts, no logins.  To save, click "savepage.php", which saves to "pages/page[unix timestamp].txt".  Also you can copy the html code and paste it to a private or public pastebin.com link to share it without having it on the server you are editing on.  
 </p>
