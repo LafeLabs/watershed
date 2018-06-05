@@ -1,0 +1,16 @@
+<p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
+<h2>Replicator</h2>
+
+<p>
+    This document tells you how to replicate the $\LaTeX$ scroll editor.  The scroll editor consist of a collection of php files and text files which are accessed using the php files.  Text files are divided up by type into json, html, php, and latex.
+</p>
+<p>
+    The way to actually do the replication is to find a server with php installed and move the file replicator.php into whatever directory on the server you want to run this.  Then you either run "php replicator.php" from the command line or point your web browser to "[yourdomain]/[directory]/replicator.php".  When you do this, replicator.php first fetches a file from a remote repository of code called dna.txt which lists all the other files.  Then using that information it fetches the rest of the files, and creates all the proper directories to put them in.  Any files that are php source code are saved twice, once as .txt in the php/ directory.  
+</p>
+<p>
+    Once replication is complete go to editor.php to see all the components of the code, or scrolleditor.php to edit the actual scrolls.  Editor.php lets you edit itself as well as scrolleditor.php, and then clicking on text2php.php will convert the edited files to php.  Be careful!  This system is designed to be totally self editing, which means you can do great havoc instantly.  
+</p>
+<p>
+    There are multiple options for a target for this replication.  One can get a free web hosting account at <a href = "https://www.000webhost.com/">https://www.000webhost.com/</a>, get the non free but very cheap hosting from them, use a php app to host this on an android phone, or use php from the command line to host this on localhost, which works(has been tested) on macos, windows, and linux.  Pretty much the only devices it won't work on are ios.  
+</p>

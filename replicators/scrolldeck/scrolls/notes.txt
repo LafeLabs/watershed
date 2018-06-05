@@ -1,0 +1,9 @@
+<p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
+<h2>Notes, notes.txt</h2>
+<p>
+    The notes are a free form html message board.  It is intended to be the most ephemeral of the main files: replicator,main and wall.  Wipe it out, fill it with nonsense, it doesn't matter.  This is volatile memory.  Change at will.
+</p>
+<p>
+    As with all other parts of the $\LaTeX$ scrolls, it uses mathjax to typeset live as you go so this is real time formatted mathematical social media.  Hopefully by the time facebook realizes they need to put mathjax support in, it will be too late for them to stop the tide of mathematical peer to peer microblogging.
+</p>  

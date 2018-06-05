@@ -1,3 +1,10 @@
+#editorlink{
+    position:absolute;
+    top:1px;
+    right:15%;
+    
+}
+
  #textIO{
     position:absolute;
     width:100px;

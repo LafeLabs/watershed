@@ -1,3 +1,4 @@
+<a id = "editorlink" href= "editor.php">editor.php</a>
 <textarea id="textIO"></textarea> 
 <table id = "calcTable">
     <tr>

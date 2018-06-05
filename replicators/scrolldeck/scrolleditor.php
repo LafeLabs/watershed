@@ -1,49 +1,70 @@
  <!doctype html>
 <html>
 <head>
+    <title>Watershed Action Deck Editor</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
-<title>PHP Editor replicator</title>
+
+<!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+   <script>
+	MathJax.Hub.Config({
+		tex2jax: {
+		inlineMath: [['$','$'], ['\\(','\\)']],
+		processEscapes: true,
+		processClass: "mathjax",
+        ignoreClass: "no-mathjax"
+		}
+	});//			MathJax.Hub.Typeset();//tell Mathjax to update the math
+</script>
+-->
 </head>
-<body>
+<body class="no-mathjax">
+<div id = "scrolldirdiv" style = "display:none">
+<?php
+$scrolls = scandir(getcwd()."/scrolls");
+foreach($scrolls as $value){
+    if($value != "." && $value != ".."){
+        echo $value."\n";
+    }
+}
+?>
+</div>
+<div id = "scrolldisplay"  class = "mathjax"></div>    
+    
 <div id = "linkscroll">
-    <a href = "text2php.php">text2php.php</a>
-    <a href = "index.php">index.php</a>
-    <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
+    <a href = "index.php" id = "indexlink">index.php</a>
+    <a href = "editor.php">editor.php</a>
+    <a href = "metacreator.php">metacreator.php</a>
+    <a href = "makenewscroll.php">makenewscroll.php</a>
 
 </div>
 <div id = "namediv"></div>
 <div id="maineditor" contenteditable="true" spellcheck="true"></div>
 <div id = "filescroll">
-
-    <div class = "html file">html/page.txt</div>
-    <div class = "css file">css/style.txt</div>
-
-    <div class = "javascript file">javascript/topfunctions.txt</div>
-    <div class = "javascript file">javascript/jslibrary.txt</div>
-    <div class = "javascript file">javascript/init.txt</div>
-    <div class = "javascript file">javascript/redraw.txt</div>
-    <div class = "javascript file">javascript/pageevents.txt</div>
-
-    <div class = "php file">php/index.txt</div>
-    <div class = "php file">php/editor.txt</div>
-    <div class = "php file">php/replicator.txt</div>
-    <div class = "php file">php/filesaver.txt</div>
-    <div class = "php file">php/fileloader.txt</div>
-    <div class = "php file">php/text2php.txt</div>
-    <div class = "php file">php/dnagenerator.txt</div>
-
-    <div class = "json file">json/dna.txt</div>
-    <div class = "json file">json/feed.txt</div>
-
 </div>
-
 <script>
-currentFile = "html/page.txt";
+rawscrollnames = document.getElementById("scrolldirdiv").innerHTML;
+scrollnames = rawscrollnames.split("\n");
+
+var filescrolldata = document.getElementById("filescroll").innerHTML;
+for(var index = 0;index < scrollnames.length;index++){
+    if(scrollnames[index].length > 1){
+        filescrolldata += "\n<div class = \"scrolls file\">scrolls/" + scrollnames[index] + "</div>\n";
+    }
+}
+
+document.getElementById("filescroll").innerHTML = filescrolldata;
+
+
+currentFile = "scrolls/main.txt";
+fileBase = currentFile.split("/")[1].split(".")[0];
+
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         filedata = this.responseText;
         editor.setValue(filedata);
+        document.getElementById("scrolldisplay").innerHTML = filedata;
     }
 };
 httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
@@ -52,6 +73,8 @@ files = document.getElementById("filescroll").getElementsByClassName("file");
 for(var index = 0;index < files.length;index++){
     files[index].onclick = function(){
         currentFile = this.innerHTML;
+        fileBase = currentFile.split("/")[1].split(".")[0];
+
         //use php script to load current file;
         var httpc = new XMLHttpRequest();
         httpc.onreadystatechange = function() {
@@ -60,7 +83,9 @@ for(var index = 0;index < files.length;index++){
                 editor.setValue(filedata);
                 var fileType = currentFile.split("/")[0]; 
                 var fileName = currentFile.split("/")[1];
-              
+                if(fileType == "scrolls"){
+                    document.getElementById("scrolldisplay").innerHTML = editor.getSession().getValue();
+                }
             }
         };
         httpc.open("GET", "fileloader.php?filename=" + currentFile, true);
@@ -123,7 +148,13 @@ document.getElementById("maineditor").onkeyup = function(){
     httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
     var fileType = currentFile.split("/")[0]; 
     var fileName = currentFile.split("/")[1];
+    if(fileType == "scrolls"){
+        document.getElementById("scrolldisplay").innerHTML = editor.getSession().getValue();
+        MathJax.Hub.Typeset();//tell Mathjax to update the math
+    }
 }
+
+
 
 </script>
 <style>
@@ -183,10 +214,10 @@ body{
 #filescroll{
     position:absolute;
     overflow:scroll;
-    top:60%;
+    top:35%;
     bottom:0%;
     right:0%;
-    left:75%;
+    left:77%;
     border:solid;
     border-radius:5px;
     border-width:3px;
@@ -197,10 +228,10 @@ body{
 #linkscroll{
     position:absolute;
     overflow:scroll;
-    top:5em;
-    bottom:50%;
-    right:0px;
-    left:75%;
+    top:1em;
+    bottom:75%;
+    right:0%;
+    left:77%;
     border:solid;
     border-radius:5px;
     border-width:3px;
@@ -209,14 +240,84 @@ body{
     font-size:18px;
     
 }
+
 #maineditor{
     position:absolute;
-    left:0%;
+    left:41%;
     top:5em;
-    bottom:1em;
-    right:30%;
+    bottom:10px;
+    right:25%;
 }
+#scrolldisplay{
+    position:absolute;
+    background-color:white;
+    overflow:scroll;
+    color:black;
+    left:10px;
+    bottom:10px;
+    right:60%;
+    top:5em;
+    border:solid;
+    border-width:3px;
+    border-radius:0.5em;
+    padding:1.5em 1.5em 1.5em 1.5em;
+    font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
+}
+#scrolldisplay p,li,pre{
+    width:80%;
+    display:block;
+    margin:auto;
+    text-align:justify;    
+    margin-bottom:1em;
+    font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
 
+}
+#scrolldisplay h1,h2,h3{
+    text-align:center;
+}
+#scrolldisplay a{
+    color:blue;
+    display:inline;
+
+}
+#scrolldisplay table{
+    border-collapse:collapse;
+    margin:auto;
+    width:auto;
+}
+#scrolldisplay td{
+    border:solid;
+}
+figure img{
+    width:100%;
+}
+figure{
+    width:80%;
+}
+figure figcaption{
+    width:100%;
+}
+.button{
+    color:yellow;
+    cursor:pointer;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    border:solid;
+    border-color:yellow;
+    border-radius:0.5em;
+    margin-bottom:1em;
+    margin-left:0.5em;
+    margin-top:1em;
+    display:block;
+    margin:auto;
+    text-align:center;
+    width:80%;
+}
+.button:hover{
+    background-color:#003000;
+}   
+.button:active{
+    background-color:#304000;
+}
 
 
 </style>

@@ -1,0 +1,10 @@
+<h2>Action Deck</h2>
+<p>
+Each element of the action deck has a physical card which lives in a physical deck as well as a scroll which lives here.
+</p> 
+<p>
+    <ul>
+        <li><a href = "index.php?url=scrolls/notes.txt">notes</a></li>
+        <li><a href = "index.php?url=scrolls/replicator.txt">replicator</a></li>
+    </ul>
+</p>
