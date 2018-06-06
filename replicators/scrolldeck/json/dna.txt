@@ -13,9 +13,11 @@
 "php/scrolleditor.txt",
 "php/text2php.txt",
 "scrolls/html.txt",
+"scrolls/linkmap.txt",
 "scrolls/main.txt",
 "scrolls/notes.txt",
 "scrolls/page.txt",
+"scrolls/photomap.txt",
 "scrolls/replicator.txt",
 "scrolls/svgfactory.txt"
 ]
