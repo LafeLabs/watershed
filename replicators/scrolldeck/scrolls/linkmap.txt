@@ -7,3 +7,26 @@
 <p>
     Each link has a "latlon" coordinate, a latitude and longitude in decimal degrees, with latitude first.
 </p>
+<table>
+    <tr>
+        <td>Degrees Latitude</td><td>meters</td>
+    </tr>
+    <tr>
+        <td>1</td><td>100,000</td>
+    </tr>
+    <tr>
+        <td>0.1</td><td>10,000</td>
+    </tr>
+    <tr>
+        <td>0.01</td><td>1,000</td>
+    </tr>
+    <tr>
+        <td>0.001</td><td>100</td>
+    </tr>
+    <tr>
+        <td>0.0001</td><td>10</td>
+    </tr>
+    <tr>
+        <td>0.00001</td><td>1</td>
+    </tr>
+</table>

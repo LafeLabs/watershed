@@ -1,0 +1,6 @@
+ <p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
+<h2>SVG Map</h2>
+<p>
+    Put map image into map. Make Geometron glyph.  Export SVG file. Print. Make notes, color in, decorate, photograph, then replace existing background photo, and the loop is closed. 
+</p>

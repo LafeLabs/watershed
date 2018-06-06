@@ -1,3 +1,15 @@
  <p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
 
 <h2>SVG Factory(Geometron)</h2>
+
+<ul>
+    <li>photo of keyboard</li>
+    <li>layout of keyboard</li>
+    <li>how to make a thing, publish it, share it</li>
+    <li>incorporate svg into pages, scrolls, maps</li>
+    <li>fonts and shape tables</li>
+    <li>link to full deck of Geometron</li>
+    <li>link to full deck of Action Geometry</li>
+</ul>
+
+

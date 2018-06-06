@@ -1,0 +1,36 @@
+  <p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
+<h2>Card Deck</h2>
+
+ <p>Cards are the physical media of information in the Watershed Network system. The cards represent both symbol and action.  One side is primarily symbolic of the action or thing the card represents, and the other contains the key information needed to carry out the action represented by the card. </p>
+<p>
+    A standard size for cards is 3 and a half inches by 5 and a half inches with corners drawn using traced dimes, all on stiff card stock for durability.  In order to avoid needing to put money into the system cards are ideally from upcycled or found materials.  In addition to cards, they can be paper drinking cups, paper plates, paper packaging, painted rocks or painted sticks or any type of physical found object on which media can be printed.
+</p>
+<p>
+    Cards transmit urls which point users to information which generates the or action the card represents.  As in the Laws of our system, EVERYTHING IS RECURSIVE, meaning everything references itself.  So one card has a url to this text which in turn has photographs of cards and describes how to make them.
+</p>
+
+
+<figure>
+    <img style = "display:block;margin:auto;width:200px" src = "https://i.imgur.com/UbeZWuM.jpg"/>
+<figcaption>
+    Closeup of case: duct tape and cardboard, with clothes line to form carrying strap.
+</figcaption>
+</figure>
+
+<figure>
+<img style = "display:block;margin:auto;width:200px" src = "https://i.imgur.com/GdU1EJd.jpg"/>
+<figcaption>
+    Typical card.  This shows a hexagon with Geometron code describing it and some annotations showing key information. 
+</figcaption>
+</figure>
+<figure>
+<img style = "display:block;margin:auto;width:200px" src = "https://i.imgur.com/tKYTf4T.jpg"/>
+<figcaption>
+    This shows how the card case hangs when carried.  These are intended to be stacked, so that many card cases can be carried or stored in one place conveniently.
+</figcaption>
+</figure>
+
+
+
+

@@ -4,13 +4,15 @@ Each element of the action deck has a physical card which lives in a physical de
 </p> 
 <p>
     <ul>
-        <li><a href = "index.php?url=scrolls/notes.txt">notes</a></li>
-        <li><a href = "index.php?url=scrolls/replicator.txt">replicator</a></li>
-        <li><a href = "index.php?url=scrolls/page.txt">page</a></li>
-        <li><a href = "index.php?url=scrolls/html.txt">html</a></li>
-        <li><a href = "index.php?url=scrolls/photomap.txt">photomap</a></li>        
-        <li><a href = "index.php?url=scrolls/svgfactory.txt">svgfactory</a></li>
-        
-        
+        <li><a href = "index.php?url=scrolls/page.txt">make a page</a></li>
+        <li><a href = "index.php?url=scrolls/html.txt">learn html</a></li>
+        <li><a href = "index.php?url=scrolls/photomap.txt">make a photomap</a></li>        
+        <li><a href = "index.php?url=scrolls/linkmap.txt">make a linkmap</a></li>
+        <li><a href = "index.php?url=scrolls/svgmap.txt">make a svgmap</a></li>
+        <li><a href = "index.php?url=scrolls/svgfactory.txt">use svgfactory</a></li>
+        <li><a href = "index.php?url=scrolls/freeserver.txt">make a freeserver</a></li>
+        <li><a href = "index.php?url=scrolls/raspberrypi.txt">raspberrypi</a></li>
+        <li><a href = "index.php?url=scrolls/artbox.txt">artbox</a></li>
+        <li><a href = "index.php?url=scrolls/carddeck.txt">carddeck</a></li>
     </ul>
 </p>

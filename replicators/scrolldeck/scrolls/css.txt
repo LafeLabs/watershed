@@ -1,0 +1,40 @@
+   <p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
+<h2>CSS</h2>
+<p>
+    CSS stands for "cascaded style sheets".  It is a language which tells web content how to <em>look</em>.  That is, it determines things like color, size of type, how things are positioned, fonts, and numerous other similar style and layout properties.  
+</p>
+<p>
+    In the Watershed Network cosmology, CSS is represented by the Air element, and artistically is associated with the color yellow, sun imagery, and curly brackets "{" and "}" as well as the colon ":".
+</p>
+
+
+<h3>Some useful properties[values]:</h3>
+    <ul>
+        <li>width[value px, value %, value em]</li>
+        <li>height[value px, value %, value em]</li>
+        <li>margin[value px, value %, value em]</li>
+        <li>padding[value px, value %, value em]</li>
+        <li>font-size[value px, value em]</li>
+        <li>font-family[courier, Futura, times]</li>
+        <li>color[red, blue, green, #ff00ff, ##a0a0a0]</li>
+        <li>background-color[red, blue, green, #ffff00]</li>
+        <li>left[value px, value %, value em]</li>
+        <li>overflow[scroll, hidden]</li>
+        <li>display[none, block]</li>
+        <li>position[absolute, relative]</li>
+        <li>cursor[pointer]</li>
+        <li>text-align[center, justify]</li>
+    </ul>
+</p>
+<p>
+    <h3>Some CSS Links</h3>
+    <ul>
+        <li><a href = "https://www.w3schools.com/css/">https://www.w3schools.com/css/</a></li>
+        <li><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS">https://developer.mozilla.org/en-US/docs/Web/CSS</a></li>
+        <li><a href = "http://www.mezzoblue.com/zengarden/resources/">http://www.mezzoblue.com/zengarden/resources/</a></li>
+        <li><a href = "http://www.csszengarden.com">http://www.csszengarden.com</a></li>
+        <li><a href = "https://codepen.io">https://codepen.io</a></li>
+        <li><a href = "https://en.wikipedia.org/wiki/Cascading_Style_Sheets">https://en.wikipedia.org/wiki/Cascading_Style_Sheets</a></li>        
+    </ul>
+</p>

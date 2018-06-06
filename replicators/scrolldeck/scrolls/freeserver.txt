@@ -1,0 +1,8 @@
+ <p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
+<h2>Free Web Server</h2>
+
+<p>
+    explicit instructions to use 000webhost to get a new free page, put a replicator on it, flush it clean as needed, keep track of it, spread it, back stuff up.
+    
+</p>
