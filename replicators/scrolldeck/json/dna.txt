@@ -9,9 +9,13 @@
 "php/makenewscroll.txt",
 "php/metacreator.txt",
 "php/replicator.txt",
+"php/scrollcreator.txt",
 "php/scrolleditor.txt",
 "php/text2php.txt",
+"scrolls/html.txt",
 "scrolls/main.txt",
 "scrolls/notes.txt",
-"scrolls/replicator.txt"
+"scrolls/page.txt",
+"scrolls/replicator.txt",
+"scrolls/svgfactory.txt"
 ]
