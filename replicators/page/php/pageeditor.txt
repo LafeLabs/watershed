@@ -43,6 +43,7 @@ EGO DEATH:
 <a id = "loadlink" href = "loadpage.php">loadpage.php</a>
 <a id = "newpagelink" href = "metacreator.php">metacreator.php</a>
 
+<a id = "unicodelink" href = "unicode.php">unicode.php</a>
 
 <div id = "imgurllabel">Publish Image URL:</div>
 <input id = "imgurlinput"/>
@@ -182,7 +183,15 @@ body{
     display:block;
     font-size:24px;
 }
+#unicodelink{
+    position:absolute;
+    right:10em;
+    top:2em;
+        color:white;
+    display:block;
+    font-size:24px;
 
+}
 </style>
 
 </body>
