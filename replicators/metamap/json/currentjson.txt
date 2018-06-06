@@ -17,8 +17,8 @@
     "shapes": [],
     "links": [
         {
-            "url": "basis/",
-            "text": "basis/",
+            "url": "../",
+            "text": "../",
             "fontfeet": "4000",
             "latlon": "38.94, -76.92",
             "rotation": "0"

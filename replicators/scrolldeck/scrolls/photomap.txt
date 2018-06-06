@@ -1,0 +1,15 @@
+ <p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
+<h2>Photo Map</h2>
+<p>
+    This process involves photographing a map, then incorporating it into the metamap software.  Photographs might be of a tourist map, a bus route map, a park map, a hand drawn cartoon map, an artistic map, or a metro station area map.  
+</p>
+<p>
+    First, photograph the map, upload it to the cloud somewhere you can get it, then copy the direct url for it.  
+</p>
+<p>
+    Once you have the url for the map, you need to get the latitude and longitude of two reference points.  The one called "latlon0" should be the primary reference point, the center if that is one of them. Find these either using a online map tool or going to the locations in real space and recording the GPS values from your phone.  We always use decimal degrees, with latitude first, so make sure you have that format as opposed to degrees minutes seconds.
+</p>
+<p>
+    If your map is going to be a submap of an existing map, go to the existing map. 
+</p>

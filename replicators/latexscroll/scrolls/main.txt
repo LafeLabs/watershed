@@ -7,13 +7,13 @@ $$\frac{-\hbar}{2m}\nabla^2$$
 </p>
 
 <figure>
-    <img src = "figures/x7uOC3w.jpg"/><!--img-->
-    <figcaption>Figure 1. Electronics, cardboard and glue.</figcaption>
+    <img src = "https://i.imgur.com/gh2kPmS.png"/><!--img-->
+    <figcaption>Figure 1. Graph of simulated shot noise.</figcaption>
 </figure>
 
 <figure>
-    <img src = "figures/UKPyX8c.jpg"/><!--img-->
-    <figcaption>Figure 2. Action Geometry shapes</figcaption>
+    <img src = "https://i.imgur.com/nxGVaXY.jpg"/><!--img-->
+    <figcaption>Figure 2. Card deck</figcaption>
 </figure>
 
 <p>some more text here</p>

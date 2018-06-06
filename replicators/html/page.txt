@@ -7,7 +7,7 @@
     <li><a href = "metamap/">metamap/</a></li>
     <li><a href = "scrolldeck/">scrolldeck/</a></li>
     <li><a href = "svgfactory/">svgfactory/</a></li>
-
+    <li>&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a</li>
     <li><a href = "calculator/">calculator/</a></li>
     <li><a href = "latexscroll/">latexscroll/</a></li>
     <li><a href = "plotter/">plotter/</a></li>

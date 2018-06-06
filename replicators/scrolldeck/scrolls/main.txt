@@ -8,6 +8,7 @@ Each element of the action deck has a physical card which lives in a physical de
         <li><a href = "index.php?url=scrolls/replicator.txt">replicator</a></li>
         <li><a href = "index.php?url=scrolls/page.txt">page</a></li>
         <li><a href = "index.php?url=scrolls/html.txt">html</a></li>
+        <li><a href = "index.php?url=scrolls/photomap.txt">photomap</a></li>        
         <li><a href = "index.php?url=scrolls/svgfactory.txt">svgfactory</a></li>
         
         

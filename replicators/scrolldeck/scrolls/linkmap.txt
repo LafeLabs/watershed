@@ -1,0 +1,9 @@
+ <p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
+<h2>Link Map</h2>
+<p>
+    This is how to make a map of links.  Links can be to sub-maps, pages, scroll decks, external web pages, or indeed <em>anything</em> you can point a browser at. 
+</p>
+<p>
+    Each link has a "latlon" coordinate, a latitude and longitude in decimal degrees, with latitude first.
+</p>
