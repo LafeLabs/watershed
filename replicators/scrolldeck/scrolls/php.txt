@@ -1,1 +1,37 @@
- 
+ <p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+<h2>PHP</h2>
+<p>
+    PHP originally stood for "Personal Home Page", then at some point was changed to "PHP Hypertext Processor", a recursive acronym because PHP is referenced in itself.  We use PHP to access the local system of files on a server.  PHP is dangerous!  Anyone familiar with "cybersecurity" will say we are doing very insecure things by having PHP everywhere which you can edit.  But this mentality is based on a scarcity of servers shared by many people, which store databases of private information.  
+</p>
+<p>
+    We associate PHP in the Watershed cosmology with the element Aether, and symbolize it with the color purple, any symbols of an otherworldly nature, and the "elePHPant" which is the mascot of PHP.  
+</p>
+<p>
+    The most basic way to use PHP in the Watershed network is to demonstrate its power to grab code from another website and display it on yours.  This unleashed the real power of decentralization that we bring to the Web with Watershed.  Make a new disposable "page", then put this code into index.php, run text2php.php, and reload, then go find the raw page code to another existing page in html/page.txt and point the broswser to this.  Now you can build a whole virtual network of cross linked text files with no fixed server home, demonstrating the principle of disposable servers.  When you're done you can get back to the original index.php by running replicator.php.
+</p>
+
+<pre style = "font-family:courier;border:text-align:justify;">
+&lt!doctype html&gt
+&lthtml&gt
+&ltbody&gt
+
+&lt?php    
+if(isset($_GET['url'])){
+      echo file_get_contents($_GET['url']);
+}?&gt    
+
+&ltp&gt
+point your browser to 
+"[the url this php program is on]?url=
+[url your html code is on]" and reload.
+&lt/p&gt
+&lt/body&gt
+&lt/html&gt
+</pre>
+
+<p>
+    <ul>
+        <li><a href = "http://php.net/">php.net/</a></li>
+        <li><a href = "https://www.w3schools.com/php/default.asp">w3schools PHP tutorial</a></li>
+    </ul>
+</p>

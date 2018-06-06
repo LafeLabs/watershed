@@ -1,3 +1,5 @@
+<a href = "../">../</a>
+
 <h2>Action Deck</h2>
 <p>
 Each element of the action deck has a physical card which lives in a physical deck as well as a scroll which lives here.
@@ -5,14 +7,17 @@ Each element of the action deck has a physical card which lives in a physical de
 <p>
     <ul>
         <li><a href = "index.php?url=scrolls/page.txt">make a page</a></li>
-        <li><a href = "index.php?url=scrolls/html.txt">learn html</a></li>
+        <li><a href = "index.php?url=scrolls/html.txt">use html</a></li>
         <li><a href = "index.php?url=scrolls/photomap.txt">make a photomap</a></li>        
         <li><a href = "index.php?url=scrolls/linkmap.txt">make a linkmap</a></li>
         <li><a href = "index.php?url=scrolls/svgmap.txt">make a svgmap</a></li>
         <li><a href = "index.php?url=scrolls/svgfactory.txt">use svgfactory</a></li>
-        <li><a href = "index.php?url=scrolls/freeserver.txt">make a freeserver</a></li>
-        <li><a href = "index.php?url=scrolls/raspberrypi.txt">raspberrypi</a></li>
+        <li><a href = "index.php?url=scrolls/freeserver.txt">make a free server</a></li>
+        <li><a href = "index.php?url=scrolls/raspberrypi.txt">build local raspberrypi server</a></li>
         <li><a href = "index.php?url=scrolls/artbox.txt">artbox</a></li>
-        <li><a href = "index.php?url=scrolls/carddeck.txt">carddeck</a></li>
+        <li><a href = "index.php?url=scrolls/carddeck.txt">make a carddeck</a></li>
+        <li><a href = "index.php?url=scrolls/css.txt">use css</a></li>
+        <li><a href = "index.php?url=scrolls/php.txt">use php</a></li>
+        <li><a href = "index.php?url=scrolls/php.txt">use javascript</a></li>
     </ul>
 </p>
