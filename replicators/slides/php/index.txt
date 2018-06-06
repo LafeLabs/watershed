@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>Metamap</title>
+<title>Slide Deck</title>
 <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 -->

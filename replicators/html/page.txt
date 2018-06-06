@@ -5,11 +5,11 @@
 <ul>
     <li><a href = "page/">page/</a></li>
     <li><a href = "metamap/">metamap/</a></li>
-    <li><a href = "latexscroll/">latexscroll/</a></li>
-    <li><a href = "scrolldeck/">scrolldeck</a></li>
+    <li><a href = "scrolldeck/">scrolldeck/</a></li>
     <li><a href = "svgfactory/">svgfactory/</a></li>
 
     <li><a href = "calculator/">calculator/</a></li>
+    <li><a href = "latexscroll/">latexscroll/</a></li>
     <li><a href = "plotter/">plotter/</a></li>
     <li><a href = "slides/">slides/</a></li>
     <li><a href = "trashrobot/">trashrobot/</a></li>

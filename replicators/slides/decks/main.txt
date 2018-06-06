@@ -51,19 +51,71 @@
     <div class="pagejson">{
     "x0rel": 0,
     "y0rel": 0,
-    "unitrel": 0.6209213230591548
+    "unitrel": 0.8264462809917352
 }</div>
-    <div class="box"><div class="glyphdata">0330,0330,0333,0330,0333,0331,0330,0337,0336,0332,0332,0332,0314,0314,0314,</div>
+    <div class="box"><div class="glyphdata">0330,0330,0333,0330,0333,0331,0330,0331,0332,0332,0332,0332,0332,0332,0332,0330,0333,0333,0333,0333,0333,0337,</div>
         <div class="content">Noise Curve
         </div>
     </div>
     <div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
         <div class="content"><img src="https://i.imgur.com/fAu4RVG.png"></div>
     </div>
-    <div class="box"><div class="glyphdata">0330,0332,0332,0330,0332,0330,0332,0333,0331,0332,0330,0330,0337,</div>
+    <div class="box"><div class="glyphdata">0330,0332,0332,0330,0332,0330,0332,0333,0331,0332,0330,0330,0337,0331,0332,0333,0333,0333,</div>
         <div class="content">$$P = 2eI\coth{\frac{eV}{2kT}}$$ </div>
     </div>
-    <div class="box"><div class="glyphdata">0337,0333,0333,0331,0335,0366,0335,0335,0333,0333,0331,0367,</div>
-        <div class="content"></div>
+    <div class="box"><div class="glyphdata">0331,0333,0333,0331,0336,0336,0330,0333,0337,0330,0337,</div>
+        <div class="content">Residuals</div>
+    </div>
+</div>
+
+
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box"><div class="glyphdata">0336,0331,0337,0337,0337,0337,</div>
+        <div class="content"><h1>Slide Title</h1></div>
+    </div>
+    <div class="box"><div class="glyphdata">0332,0332,0332,0332,0332,</div>
+        <div class="content">
+        </div>
+    </div>
+    <div class="box"><div class="glyphdata">0331,0337,0337,</div>
+        <div class="content"><ul style="text-align:left;font-size:2em">
+    <li>Bullet One</li>
+    <li>Bullet Two</li>
+    <li>Bullet Three</li>
+    <li>Bullet Four</li>
+</ul>
+        </div>
+    </div>
+    <div class="box"><div class="glyphdata">0330,0330,</div>
+        <div class="content"><h3>Subtitle</h3></div>
+    </div>
+</div>
+
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box"><div class="glyphdata"></div>
+        <div class="content">
+        </div>
+    </div>
+    <div class="box"><div class="glyphdata"></div>
+        <div class="content">
+        </div>
+    </div>
+    <div class="box"><div class="glyphdata"></div>
+        <div class="content">
+        </div>
+    </div>
+    <div class="box"><div class="glyphdata"></div>
+        <div class="content">
+        </div>
     </div>
 </div>

@@ -44,7 +44,9 @@
     z-index:2;
 }
 .box img{
-    width:100%;
+    width:95%;
+    display:block;
+    text-align:center;
 }
 body{
     overflow:hidden;

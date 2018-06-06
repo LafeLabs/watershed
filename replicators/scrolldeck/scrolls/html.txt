@@ -1,0 +1,28 @@
+<p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
+<h2>html</h2>
+<p>
+    HTML stands for "hypertext markup language".  It is the core language of the WHOLE web.  Many other programming languages are used to do things and format things, but the actual content is always html in the browser(the program you use to "browse" or "surf" on the Web).  Also note that the "Web", short for the "World Wide Web" is not the same as the Internet.  The Internet predates the Web, and the Web was initially not on the Internet.  The Internet is the physical network of all the global computers connected using a certain set of protocols.  This can be used to transmit many types of information including email, raw files, and web pages.  Web pages can exist as a local file read in a browser on your computer without the Internet.  This will in fact be a big part of how things are done in the Watershed Network: on local machines connected to the Internet, but not explicitly <em>on</em> the Internet.  
+</p>
+<p>
+In Watershed's cosmology we associate HTML with the element of traditional alchemy "water", since it is like the stuff of Life, which flows through <em>everything</em>.  We usually use blue to go with this water concept in art related to it.  Blue colors, angle brackets and wavy lines are the main artistic elements that make up the physical action card to learn the contents of this Scroll. 
+</p>
+<p>
+    HTML files are made up of raw text combined with some special characters and things called "tags" or "elements" which define objects in the browser like images and links.  There are numerous such things, but three are the most powerful and the only purpose of this Replicator Scroll is to learn those three.  They are the link ("a"), the paragraph("p"), and the image("img"). We begin with the paragraph. 
+    
+</p>
+&ltp&gt
+</p>
+<p>
+    Paragraphs are denoted by the "p" tag.  "Tags" are enclosed in "angle brackets", which are the same as less than and greater than signs, above the comma and period on most keyboards.  The tag with no "/" is the "opening" tag and that same tag is "closed" by the one with the "/".  Because the browser interprets these characters as "special" it has a system for encoding these so you can actually see them as follows:
+</p>
+</p>
+&lt/p&gt
+</p>
+
+<p>
+less than: "&amplt" &#x27a9 &lt
+</p>
+<p>
+greater than: "&ampgt" &#x27a9 &gt
+</p>
