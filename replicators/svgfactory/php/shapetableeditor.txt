@@ -174,12 +174,47 @@ function redraw(){
         }
     }
 
-document.getElementById("mainImage").style.width = (currentJSON.imgw*unit).toString()  + "px";
-document.getElementById("mainImage").style.left = (x0 + currentJSON.imgleft*unit).toString()  + "px";
-document.getElementById("mainImage").style.top = (y0 + currentJSON.imgtop*unit).toString()  + "px";
-document.getElementById("mainImage").style.transform = "rotate(" + currentJSON.imgangle.toString() +"deg)";
+    document.getElementById("mainImage").style.width = (currentJSON.imgw*unit).toString()  + "px";
+    document.getElementById("mainImage").style.left = (x0 + currentJSON.imgleft*unit).toString()  + "px";
+    document.getElementById("mainImage").style.top = (y0 + currentJSON.imgtop*unit).toString()  + "px";
+    document.getElementById("mainImage").style.transform = "rotate(" + currentJSON.imgangle.toString() +"deg)";
+    document.getElementById("glyphspellinput").value = cleanGlyph;
+    
+    currentFile = "bytecode/shapetable.txt";
+    data = "";
+    for(var index = 0220;index < 0250;index++){
+        if(currentTable[index].length > 2){
+            data += "0" + index.toString(8) + ":" + currentTable[index] + "\n";
+        }
+    }
+    for(var index = 01220;index < 01250;index++){
+        if(currentTable[index].length > 2){
+            data += "0" + index.toString(8) + ":" + currentTable[index] + "\n";
+        }
+    }
+    
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
 
-document.getElementById("glyphspellinput").value = cleanGlyph;
+
+    if(currentAddress >= 01040 && currentAddress < 01177){
+        data = "";
+        for(var index = 01040;index < 01177;index++){
+            if(currentTable[index].length > 2){
+                data += "0" + index.toString(8) + ":" + currentTable[index] + "\n";
+            }
+        }
+        currentFile = "bytecode/font.txt";
+        var httpc2 = new XMLHttpRequest();
+        var url = "filesaver.php";        
+        httpc2.open("POST", url, true);
+        httpc2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+        httpc2.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+    }
+
 }
 </script>
 <script id = "pageevents">
