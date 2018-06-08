@@ -13,14 +13,14 @@
     "marker1": "North Boundary Stone",
     "glyph1": "0341,0340,",
     "hashtag": "metamapdc",
-    "currentGlyph": "",
+    "currentGlyph": "0337,0337,0337,0337,0337,0337,0333,0322,0350,0334,0310,0337,0304,0200,0336,0350,0335,0304,0332,0313,",
     "shapes": [],
     "links": [
         {
             "url": "../",
             "text": "../",
             "fontfeet": 6000,
-            "latlon": "38.99000,-77.01000",
+            "latlon": "38.95000,-77.01000",
             "rotation": -5
         },
         {

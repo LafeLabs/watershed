@@ -363,7 +363,15 @@ document.getElementById("actionInput").onkeydown = function(e) {
     position:absolute;
     left:2em;
     top:0.1em;
-    font-size:18px;
+    width:70%;
+    font-size:2.2em;
+}
+#zoompan tr{
+    width:100%;
+}
+#zoompan td{
+    width:24%;
+    text-align:center;
 }
 .links{
     position:absolute;
