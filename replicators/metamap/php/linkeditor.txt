@@ -33,6 +33,16 @@
             </tr>
         </table>
         <textarea id = "textIO"></textarea>        
+        <img id = "mainImage"/>
+        
+        <table id = "buttontable">
+            <tr>
+                <td class = "button">100'</td>
+                <td class = "button">100'</td>
+                <td class = "button">100'</td>
+                <td class = "button">100'</td>
+            </tr>
+        </table>
         <script>
             currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
             document.getElementById("textIO").value = JSON.stringify(currentJSON.links,null,"    ");
@@ -134,16 +144,22 @@ document.getElementById("textIO").onkeyup = function(){
                 color:#00ff00;
                 background-color:black;
                 position:absolute;
-                left:50%;
+                left:80%;
                 right:0px;
                 width:50%;
                 height:80%;
             }
             #indexLink{
-                
+                position:absolute;
+                left:50%;
+                top:0em;
+                z-index:2;
             }
             #editorLink{
-                
+                position:absolute;
+                left:50%;
+                top:1em;
+                z-index:2;
             }
             .button{
                 cursor:pointer;
@@ -154,6 +170,11 @@ document.getElementById("textIO").onkeyup = function(){
             }
             .button:active{
                 background-color:yellow;
+            }
+            #buttontable{
+                position:absolute;
+                bottom:5px;
+                left:5px;
             }
         </style>
     </body>
