@@ -218,8 +218,26 @@ function latlon2xy(latlonin) {
                 httpc.send("data="+data+"&filename=json/currentjson.txt");//send text to filesaver.php
                 redraw();
             }
-            buttons[3].onclick = function(){
-                //delete current link    
+            buttons[3].onclick = function(){ //delete
+
+                var foo = JSON.stringify(currentJSON.links,null,"    ");
+                var zeep = JSON.parse(foo);
+                currentJSON.links = [];
+                for(var index = 0;index < zeep.length;index++){
+                    if(index != linkIndex){
+                        currentJSON.links.push(zeep[index]);
+                    }
+                }
+                
+                document.getElementById("textIO").value = JSON.stringify(currentJSON.links,null,"    ");
+                data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
+                var httpc = new XMLHttpRequest();
+                var url = "filesaver.php";        
+                httpc.open("POST", url, true);
+                httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+                httpc.send("data="+data+"&filename=json/currentjson.txt");//send text to filesaver.php
+                redraw();
+
             }
             buttons[4].onclick = function(){
                 y0 -= 50;

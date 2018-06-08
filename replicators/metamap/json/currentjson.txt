@@ -19,23 +19,23 @@
         {
             "url": "../",
             "text": "../",
-            "fontfeet": 4000,
-            "latlon": "38.98400,-77.01000",
-            "rotation": 0
+            "fontfeet": 6000,
+            "latlon": "38.99000,-77.01000",
+            "rotation": -5
         },
         {
             "url": "../",
             "text": "../",
             "fontfeet": 4000,
-            "latlon": "38.900000000000006,-76.91",
+            "latlon": "38.90000,-76.91000",
             "rotation": 25
         }
     ],
     "images": [
         {
-            "url": "https://i.imgur.com/8nGddQU.jpg",
-            "latlon": "28.609503, -81.197801",
-            "unitfeet": 500
+            "url": "https://i.imgur.com/DAdeSyk.jpg",
+            "latlon": "38.95050,-77.02000",
+            "unitfeet": 6666.666666666667
         }
     ],
     "avatar": {
