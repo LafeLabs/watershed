@@ -5,11 +5,14 @@
     This process involves photographing a map, then incorporating it into the metamap software.  Photographs might be of a tourist map, a bus route map, a park map, a hand drawn cartoon map, an artistic map, or a metro station area map.  
 </p>
 <p>
-    First, photograph the map, upload it to the cloud somewhere you can get it, then copy the direct url for it.  
+    First, photograph the map with your phone, upload it to the cloud somewhere you can get it, then copy the direct url for it.  This can be done at <a href = "https://imgur.com/">imgur.com</a>.  Get an account(it's free), and be sure to upload as NOT public, or imgur users will get agitated and downvote and harass you.  Private links can be shared as URLs, they are just not part of the message board system on there.  
 </p>
 <p>
     Once you have the url for the map, you need to get the latitude and longitude of two reference points.  The one called "latlon0" should be the primary reference point, the center if that is one of them. Find these either using a online map tool or going to the locations in real space and recording the GPS values from your phone.  We always use decimal degrees, with latitude first, so make sure you have that format as opposed to degrees minutes seconds.
 </p>
 <p>
-    If your map is going to be a submap of an existing map, go to the existing map. 
+    If your map is going to be a submap of an existing map, go to the existing map, click on metacreator, then click the metamap button, enter the name of your new map, and click "create".  Then click replicator.php as in the page creation process. When in your new map, click on "backgroundimageeditor.php"(NOT imageeditor, which is for putting photos in an existing map).  
+</p>
+<p>
+    
 </p>

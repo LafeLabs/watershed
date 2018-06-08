@@ -8,7 +8,7 @@
 In Watershed's cosmology we associate HTML with the element of traditional alchemy "water", since it is like the stuff of Life, which flows through <em>everything</em>.  We usually use blue to go with this water concept in art related to it.  Blue colors, angle brackets and wavy lines are the main artistic elements that make up the physical action card to learn the contents of this Scroll. 
 </p>
 <p>
-    HTML files are made up of raw text combined with some special characters and things called "tags" or "elements" which define objects in the browser like images and links.  There are numerous such things, but three are the most powerful and the only purpose of this Replicator Scroll is to learn those three.  They are the link ("a"), the paragraph("p"), and the image("img"). We begin with the paragraph. 
+    HTML files are made up of raw text combined with some special characters and things called "tags" or "elements" which define objects in the browser like images and links.  There are numerous such things, but four are the most powerful and the only purpose of this Replicator Scroll is to learn those four.  They are the link ("a"), the paragraph("p"), the heading ("h1,h2,h3...") and the image("img"). We begin with the paragraph. 
     
 </p>
 &ltp&gt
@@ -33,5 +33,29 @@ greater than: "&ampgt" &#x27a9 &gt
     &ltimg src = "[url of image somewhere on Web]"/&gt
 </p>
 <p>
-    Links are 
+    Links are made using the "anchor" tag, or "&lta&gt", the words to be displayed go between the tags and the link is in something called "href".  Thus, a link to Wikipedia would be written as follows:
 </p>
+<pre>
+    &lta href = "https://www.wikipedia.org/"&gtWikipedia&lt/a&gt
+</pre>
+<p>
+    Headings are made with the h1, h2, h3 etc. tags to denote different levels of heading, with the lower number being the most important(biggest). These look like this:
+</p>
+
+<h1>Header H1</h1>
+
+<h2>Header H2</h2>
+<h3>Header H3</h3>
+
+<p>What you see above here can be made with the following code:</p>
+<pre>
+    &lth1&gtHeader H1&lt/h1&gt
+    &lth2&gtHeader H2&lt/h2&gt
+    &lth3&gtHeader H3&lt/h3&gt
+</pre>
+
+
+
+
+
+

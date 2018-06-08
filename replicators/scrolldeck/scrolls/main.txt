@@ -6,10 +6,10 @@ Each element of the action deck has a physical card which lives in a physical de
 </p> 
 <p>
     <ul>
-        <li><a href = "index.php?url=scrolls/page.txt">make a page</a></li>
-        <li><a href = "index.php?url=scrolls/html.txt">use html</a></li>
-        <li><a href = "index.php?url=scrolls/photomap.txt">make a photomap</a></li>        
-        <li><a href = "index.php?url=scrolls/linkmap.txt">make a linkmap</a></li>
+        <li><a href = "index.php?url=scrolls/page.txt">Make a page</a></li>
+        <li><a href = "index.php?url=scrolls/html.txt">Use html</a></li>
+        <li><a href = "index.php?url=scrolls/photomap.txt">Photograph a map, put into Metamap</a></li>        
+        <li><a href = "index.php?url=scrolls/linkmap.txt">Create a Link on a Map</a></li>
         <li><a href = "index.php?url=scrolls/svgmap.txt">make a svgmap</a></li>
         <li><a href = "index.php?url=scrolls/svgfactory.txt">use svgfactory</a></li>
         <li><a href = "index.php?url=scrolls/freeserver.txt">make a free server</a></li>
@@ -18,7 +18,7 @@ Each element of the action deck has a physical card which lives in a physical de
         <li><a href = "index.php?url=scrolls/carddeck.txt">make a carddeck</a></li>
         <li><a href = "index.php?url=scrolls/css.txt">use css</a></li>
         <li><a href = "index.php?url=scrolls/php.txt">use php</a></li>
-        <li><a href = "index.php?url=scrolls/php.txt">use javascript</a></li>
+        <li><a href = "index.php?url=scrolls/javascript.txt">use javascript</a></li>
         <li><a href = "index.php?url=scrolls/picturemenu.txt">make a picturemenu</a></li>
     </ul>
 </p>

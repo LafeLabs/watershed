@@ -7,8 +7,40 @@
 <p>
     In the Watershed Network cosmology, CSS is represented by the Air element, and artistically is associated with the color yellow, sun imagery, and curly brackets "{" and "}" as well as the colon ":".
 </p>
+<p>
+    CSS code either exists in external files that end with ".css" or, as is almost always the case in our system, is in the main file inside a "&ltstyle&gt" tag.  CSS is a very broad and deep subject and people dedicate their lives to doing complex and beautiful things.  However, we will focus on some very simple actions that have enormous power by themselves.  These are controlling some basic properties of things based on the element type, the "id" or the "class" name.
+</p>
+<p>
+    This is best done by example.
+</p>
 
+<pre>
 
+&lt;p&gt;Text.
+&lt;span id = "bluespan"&gt;
+blu&lt;span class = "huge"&gt;e&lt;/span&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;style&gt;
+    p{
+        color:red;
+        font-size:40px;
+        font-family:Helvetica;
+    }
+    #bluespan{
+        color:blue;
+    }
+    .huge{
+        font-size:100px;
+    }
+&lt;/style&gt;
+  
+</pre>
+<style>
+    pre{
+        background-color:#d0d0d0;
+        overflow:scroll;
+    }
+</style>
 <h3>Some useful properties[values]:</h3>
     <ul>
         <li>width[value px, value %, value em]</li>

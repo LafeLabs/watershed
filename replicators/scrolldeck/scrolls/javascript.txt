@@ -1,1 +1,7 @@
- 
+  <p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
+<h2>JavaScript</h2>
+
+<p>
+    Action! JavaScript is the language of putting ACTION into the browser.  It can be used to design and build complex software from scratch, but it can also be a environment to play around have wield incredible power over your browser.  Using JavaScript harkens back to the days of old when users actually could control their own computers directly with code, not mediated by a professional team of coders who lock away control from the user.  
+</p>
