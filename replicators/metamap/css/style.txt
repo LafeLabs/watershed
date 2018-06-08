@@ -102,14 +102,16 @@ table{
     right:5%;
     bottom:5%;
 }
+
 #glyphspellinput{
     position:absolute;
-    bottom:20px;
-    left:150px;
-    right:50px;
+    bottom:5px;
+    right:10px;
+    width:90%;
     font-family:courier;
     font-size:16px;
 }
+
 #buttonTable{
     position:absolute;
     left:15px;

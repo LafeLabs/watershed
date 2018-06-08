@@ -47,15 +47,23 @@ function doTheThing(localCommand){
 </head>
 <body>
 <div id = "datadiv" style = "display:none">
-<?php
-    echo file_get_contents("json/currentjson.txt");
-?>
+{
+    "imgurl": "",
+    "imgw": 2,
+    "imgleft": -1,
+    "imgtop": -1,
+    "imgangle": 0,
+    "svgwidth":600,
+    "svgheight":600,
+    "unit":100,
+    "x0":400,
+    "y0":400,
+    "x0rel":0,
+    "y0rel":0,
+    "glyph":"",
+    "table":[]
+}
 </div>    
-<div id = "extdatadiv" style = "display:none"><?php
-if(isset($_GET['url'])){
-    echo file_get_contents($_GET['url']);
-}?>
-</div>
 <div id = "page">
     <a  id = "editorlink" href = "editor.php">editor.php</a>
     <a  id = "indexlink" href = "index.php">index.php</a>
@@ -87,15 +95,33 @@ if(isset($_GET['url'])){
             <td>STACK:</td><td><input/></td>
         </tr>
     </table>
+    <table id = "imageTable">   
+    <tr>
+        <td>IMAGE URL:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE WIDTH:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE TOP:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE LEFT:</td><td><input/></td>
+    </tr>
+    <tr>
+        <td>IMAGE ANGLE:</td><td><input/></td>
+    </tr>
+</table>
     <table id = "buttonTable">
         <tr><td class = "button" id = "actionsymbol">ACTION/SYMBOL</td></tr>
         <tr><td class = "button" id = "savetable">SAVE TABLE</td></tr>
         <tr><td class = "button" id = "savefont">SAVE FONT</td></tr>
-        <tr><td class = "button" id = "savejson">SAVE ALL TO JSON</td></tr>
         <tr><td class = "button" id = "importbytecode">IMPORT BYTECODE</td></tr>
         <tr><td class = "button" id = "exportshapes">EXPORT SHAPES</td></tr>
         <tr><td class = "button" id = "exportfont">EXPORT FONT</td></tr>
     </table>
+    <input id = "glyphspellinput"/>
+    <img id = "mainImage"/>
 </div>
 <script>
 </script>
@@ -105,28 +131,21 @@ function init(){
     doTheThing(06);//import embedded hypercube in this .html doc
     doTheThing(07);//initialize Geometron global variables
 
+currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
+imagedata = document.getElementById("imageTable").getElementsByTagName("input");
+
+imagedata[0].value = currentJSON.imgurl;
+imagedata[1].value = currentJSON.imgw;
+imagedata[2].value = currentJSON.imgtop;
+imagedata[3].value = currentJSON.imgleft;
+imagedata[4].value = currentJSON.imgangle;
+
     document.getElementById("mainCanvas").width = innerWidth;
     document.getElementById("mainCanvas").height = innerHeight;
 
     x0 = innerWidth/2;
     y0 = innerHeight/2;    
 
-
-    currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
-    if(document.getElementById("extdatadiv").innerHTML.length > 10){
-        currentJSON = JSON.parse(document.getElementById("extdatadiv").innerHTML);
-    }
-    
-    if(currentJSON.shapes.length > 0){
-        for(var index = 0;index < currentJSON.shapes.length;index++){
-            if(currentJSON.shapes[index].length > 1){
-                var localaddr = parseInt(currentJSON.shapes[index].split(":")[0],8);
-                var localglyph = currentJSON.shapes[index].split(":")[1];
-                currentTable[localaddr] = localglyph;
-            }
-        }  
-    }
-    
     controls = document.getElementById("controlTable").getElementsByTagName("input");   
     unit = 100;
     currentAddress = 0220;
@@ -159,9 +178,65 @@ function redraw(){
             currentTable[currentAddress] += glyphArray[index] + ",";
         }
     }
+    
+    var glyphArray = currentGlyph.split(",");
+    cleanGlyph = "";
+    for(var index = 0;index < glyphArray.length;index++){
+        if(glyphArray[index] != "0207" && glyphArray[index].length > 0){
+            cleanGlyph += glyphArray[index] + ",";
+        }
+    }
+
+    document.getElementById("mainImage").style.width = (currentJSON.imgw*unit).toString()  + "px";
+    document.getElementById("mainImage").style.left = (x0 + currentJSON.imgleft*unit).toString()  + "px";
+    document.getElementById("mainImage").style.top = (y0 + currentJSON.imgtop*unit).toString()  + "px";
+    document.getElementById("mainImage").style.transform = "rotate(" + currentJSON.imgangle.toString() +"deg)";
+    document.getElementById("glyphspellinput").value = cleanGlyph;
+    
+    currentFile = "bytecode/shapetable.txt";
+    data = "";
+    for(var index = 0220;index < 0250;index++){
+        if(currentTable[index].length > 2){
+            data += "0" + index.toString(8) + ":" + currentTable[index] + "\n";
+        }
+    }
+    for(var index = 01220;index < 01250;index++){
+        if(currentTable[index].length > 2){
+            data += "0" + index.toString(8) + ":" + currentTable[index] + "\n";
+        }
+    }
+    
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+
+
+    if(currentAddress >= 01040 && currentAddress < 01177){
+        data = "";
+        for(var index = 01040;index < 01177;index++){
+            if(currentTable[index].length > 2){
+                data += "0" + index.toString(8) + ":" + currentTable[index] + "\n";
+            }
+        }
+        currentFile = "bytecode/font.txt";
+        var httpc2 = new XMLHttpRequest();
+        var url = "filesaver.php";        
+        httpc2.open("POST", url, true);
+        httpc2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+        httpc2.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+    }
+
 }
 </script>
 <script id = "pageevents">
+
+document.getElementById("glyphspellinput").onchange = function(){
+    cleanGlyph = this.value;
+    currentGlyph = cleanGlyph + "0207,";
+    redraw();
+}
 
 document.getElementById("actionsymbol").onclick = function(){
     if(currentAddress < 01000){
@@ -190,35 +265,6 @@ document.getElementById("savetable").onclick = function(){
     }
 
     data = encodeURIComponent(bytecodedata);
-    var httpc = new XMLHttpRequest();
-    var url = "filesaver.php";        
-    httpc.open("POST", url, true);
-    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-    httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
-}
-
-document.getElementById("savejson").onclick = function(){
-
-    
-    currentJSON.shapes = [];
-    for(var index = 0220;index < 0250;index++){
-        if(currentTableStart[index] != currentTable[index]){
-            currentJSON.shapes.push("0" + index.toString(8) + ":" + currentTable[index]);    
-        }
-    }
-    for(var index = 01220;index < 01250;index++){
-        if(currentTableStart[index] != currentTable[index]){
-            currentJSON.shapes.push("0" + index.toString(8) + ":" + currentTable[index]);    
-        }
-    }
-    for(var index = 01040;index < 01177;index++){
-        if(currentTableStart[index] != currentTable[index]){
-            currentJSON.shapes.push("0" + index.toString(8) + ":" + currentTable[index]);    
-        }
-    }
-    currentFile = "json/currentjson.txt";
-
-    data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
     var httpc = new XMLHttpRequest();
     var url = "filesaver.php";        
     httpc.open("POST", url, true);
@@ -343,7 +389,7 @@ controls[1].onkeydown = function(e) {
             redraw();
         }
     }
-
+    
 controls[1].onkeypress = function(a){//action
     charCode = a.keyCode || a.which;
     console.log(a.which);
@@ -426,6 +472,7 @@ controls[3].onkeypress = function(a){//stack
         this.value = "";
     }
 }
+
 zoompanbuttons[0].onclick = function(){
     doTheThing(030);
 }
@@ -445,6 +492,27 @@ zoompanbuttons[5].onclick = function(){
     doTheThing(037);
 }
 
+imagedata[0].onchange = function(){
+    document.getElementById("mainImage").src = this.value;
+    currentJSON.imgurl = this.value;
+}
+
+imagedata[1].onchange = function(){
+    currentJSON.imgw = parseFloat(this.value);
+    redraw();
+}
+imagedata[2].onchange = function(){
+    currentJSON.imgtop = parseFloat(this.value);
+    redraw();
+}
+imagedata[3].onchange = function(){
+    currentJSON.imgleft = parseFloat(this.value);
+    redraw();
+}
+imagedata[4].onchange = function(){
+    currentJSON.imgangle = parseFloat(this.value);
+    redraw();
+}
 </script>
 <?php
     echo "<style>\n";
