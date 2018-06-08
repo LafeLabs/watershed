@@ -26,3 +26,12 @@ less than: "&amplt" &#x27a9 &lt
 <p>
 greater than: "&ampgt" &#x27a9 &gt
 </p>
+<p>
+    Images are made with the "img" tag.  These are case insensitive, meaning they can be "img" or "IMG". Img has no closing tag, so it has the slash inside the tag, and the location of the image is in the tag property called "src" for "source".  
+</p>
+<p>
+    &ltimg src = "[url of image somewhere on Web]"/&gt
+</p>
+<p>
+    Links are 
+</p>

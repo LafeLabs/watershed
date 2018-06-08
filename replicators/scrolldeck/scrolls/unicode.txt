@@ -1,0 +1,14 @@
+ <p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
+<h2>Unicode</h2>
+
+<p style = "font-size:50px;">
+    &#x2648 &#x2649 &#x264a &#x264b &#x264c &#x264d &#x264f
+    &#x2650 &#x2651 &#x2652 &#x2653 
+    
+    <br/>
+    
+    &#x2639 &#x2620
+    <br/>
+    &#x261c &#x261d &#x261f &#x2622
+</p>

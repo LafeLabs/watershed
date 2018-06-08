@@ -16,15 +16,11 @@
 &ltbody&gt
 
 &lt?php    
-if(isset($_GET['url'])){
-      echo file_get_contents($_GET['url']);
-}?&gt    
+      
+echo file_get_contents("http://www.lafelabs.org");
 
-&ltp&gt
-point your browser to 
-"[the url this php program is on]?url=
-[url your html code is on]" and reload.
-&lt/p&gt
+?&gt
+
 &lt/body&gt
 &lt/html&gt
 </pre>

@@ -3,6 +3,7 @@
 
 <a  id = "editorlink" href = "editor.php">editor.php</a>
 <a  id = "shapetablelink" href = "shapetableeditor.php">shapetableeditor.php</a>
+<a id = "uplink" href = "../">../</a>
 
 <canvas id="invisibleCanvas" style="display:none"></canvas>
 <canvas id="mainCanvas"></canvas>

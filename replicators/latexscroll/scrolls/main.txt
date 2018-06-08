@@ -3,9 +3,10 @@
 Paragraph one.
 </p> 
 <p>
-$$\frac{-\hbar}{2m}\nabla^2$$
+$$\frac{-\hbar}{2m}\nabla^2  + V\Psi= i\hbar\frac{\partial\Psi}{\partial t}$$
 </p>
 
+$$E = mc^2$$
 <figure>
     <img src = "https://i.imgur.com/gh2kPmS.png"/><!--img-->
     <figcaption>Figure 1. Graph of simulated shot noise.</figcaption>
