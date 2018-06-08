@@ -19,9 +19,16 @@
         {
             "url": "../",
             "text": "../",
-            "fontfeet": "4000",
-            "latlon": "38.94, -76.92",
-            "rotation": "0"
+            "fontfeet": 4000,
+            "latlon": "38.98400,-77.01000",
+            "rotation": 0
+        },
+        {
+            "url": "../",
+            "text": "../",
+            "fontfeet": 4000,
+            "latlon": "38.900000000000006,-76.91",
+            "rotation": 25
         }
     ],
     "images": [
