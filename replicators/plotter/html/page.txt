@@ -25,7 +25,7 @@ $$
  $$
 
 $$
-y = y0 - G\left[Y_0 + f(X_0 + g(x - x0))\right]
+y = y_0 - G\left[Y_0 + f(X_0 + g(x - x_0))\right]
 $$
 $$Y_0 = 0$$
 $$

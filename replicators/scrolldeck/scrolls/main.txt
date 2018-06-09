@@ -20,5 +20,6 @@ Each element of the action deck has a physical card which lives in a physical de
         <li><a href = "index.php?url=scrolls/php.txt">use php</a></li>
         <li><a href = "index.php?url=scrolls/javascript.txt">use javascript</a></li>
         <li><a href = "index.php?url=scrolls/picturemenu.txt">make a picturemenu</a></li>
+        <li><a href = "index.php?url=scrolls/watershed.txt">Understand Watershed Network(what, why, how, where, who)</a></li>
     </ul>
 </p>

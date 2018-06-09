@@ -114,13 +114,17 @@ body{
 }
 #backbutton{
     position:absolute;
-    bottom:1em;
+    bottom:10%;
     left:0px;
-    z-index:2;
+    z-index:3;
+    font-size:3em;
+    border-radius:1.5em;
 }
 #fwdbutton{
     position:absolute;
-    bottom:1em;
+    bottom:10%;
     right:0px;
-    z-index:2;
+    z-index:3;
+    font-size:3em;
+    border-radius:1.5em;
 }

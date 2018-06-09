@@ -8,12 +8,9 @@
     <li><a href = "scrolldeck/">scrolldeck/</a></li>
     <li><a href = "svgfactory/">svgfactory/</a></li>
     <li>&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a</li>
-    <li><a href = "calculator/">calculator/</a></li>
     <li><a href = "latexscroll/">latexscroll/</a></li>
     <li><a href = "plotter/">plotter/</a></li>
     <li><a href = "slides/">slides/</a></li>
-    <li><a href = "trashrobot/">trashrobot/</a></li>
-    <li><a href = "jupyter/">jupyter/</a></li>
-    
+
 </ul>
 </p>

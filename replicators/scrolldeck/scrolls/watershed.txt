@@ -1,0 +1,64 @@
+  <p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
+<h2>Watershed Network</h2>
+
+<p>
+    All life on Earth exists in a Watershed.  The cosmology of people in this Network is based on that as a grounding fact. Elements of the Network are self replicating information structures, which are always replicated deliberately by people in the Network.  
+</p>
+
+<h4>Watershed Principles</h4>
+<ol>
+    <li>No equity</li>
+    <li>No corporate structure</li>
+    <li>No debt</li>
+    <li>No investors</li>
+    <li>No sales</li>
+    <li>No employees</li>
+    <li>No contractors</li>
+    <li>No contracts</li>
+    <li>No inventory</li>
+    <li>No sales of goods</li>
+    <li>No copyrights</li>
+    <li>No patents</li>
+    <li>No real estate property</li>
+    <li>No trademarks</li>
+    <li>No logins</li>
+    <li>No passwords</li>
+    <li>No usernames</li>
+    <li>No "apps" specific to any one platform</li>
+    <li>No support of for-profit coding based on software as "intellectual property"</li>
+    <li>No advertising based media nor support for or work with those who engage in this activity</li>
+    <li>Never talk to the press, bloggers, reporters, or any mass media of any kind as an "interview".  If they want to participate, fine, they can write about that</li>
+    <li>Always promote those in your physical proximity: if we are in a coffee shop we seek to boost coffee sales, if we're in an office park we seek more business for the companies there, if we're in a library we want to help the library mission  etc.</li>
+    <li>Always leave things better than we found them: turn trash into data, build new infrastructure which adds and does not subtract</li>
+    <li>There are no "software engineers".  It is a founding principle of this Network that we seek to live in a society without such people.</li>
+</ol>
+
+<p>
+    Participants in the Watershed Network are not any one thing: we might be employees of a company, government agency, non profit, independent workers out on the streets, part of a small company, professors, students, or retired people.  We might be too old or too young to work, can be in any nation, of any creed, use any language(human language or computer language), etc.  We assume those who are not against us are with us, and seek to metabolize humanity to help as needed. 
+</p>
+<p>
+    The role of Watershed information structures in our lives is to enhance whatever we were already trying to do.  The exception to this is mass media and for profit property based software business, both of which we seek to totally and permanently destroy from existence on this Earth.  The Enemy's power is based on attracting attention of people.  The way to destroy that power is to make things that are free and local and in the open be more interesting than the global information brokers' products.  
+    </p>
+    <p>
+    This is easier than it sounds!  The overlords of "Big Data" reduce our communications to graphs and trends and algorithms and think that gives them power.  But it doesn't.  Their power really comes from making a system that is opaque, protected by the violence of the State, and hard to use, making the vast majority of people unable to create code.  The way to destroy this power is to make software that anyone can edit, fork, grow, change, or re-write.  Most importantly anyone must be able to both learn and teach this system rapidly without any reference to any centralized code base.  No network is truly decentralized if it has a single code base, regardless of who controls or claims to control that code base.   The power to teach another person to create usable new technology is the most powerful technology imaginable, and it still doesn't really exist in a mature state.
+</p>
+
+<h4>Components</h4>
+<ol>
+    <li>Tarot-like card deck and deck carrier</li>
+    <li>ArtBox for carrying art supplies and making phone or tablet based terminal</li>
+    <li>USB keyboard with OTG connector or bluetooth keyboard, some painted with Geometron glyphs some not, with drilled holes and nylon cord tied for easy carrying</li>
+    <li>Web servers on free web hosts like <a href = "https://www.000webhost.com/">000webhost.com</a></li>
+    <li>Local servers on WiFi networks using Raspberry Pi Zero W, Apache and PHP</li>
+    <li>Self replicating Raspberry Pi server, with card writer for making NOOBS, scripts for rapidly setting up the whole server system, buying all parts, propagating to next one, deploying server with screen, keyboard and mouse.</li>
+    <li>Page Replicator</li>
+    <li>Metamap Replicator</li>
+    <li>Scroll Deck Replicator</li>
+    <li>SVG Factory Replicator</li>
+    <li>Plotter Replicator</li>
+    <li>Slide Deck Replicator</li>
+    <li>LaTeX Scroll Replicator</li>
+</ol>
+
+
