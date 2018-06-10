@@ -18,6 +18,7 @@
     fclose($file);  //close file
     $oldfeed = file_get_contents("svg/index.html"); 
     $file = fopen("svg/index.html","w");// create new file with this name
+    
     fwrite($file,"<p><img src = \"".$filename."\"></p>\n".$oldfeed); //write data to file
     fclose($file);  //close file
 ?>

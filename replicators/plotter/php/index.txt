@@ -29,23 +29,30 @@ else{
 
 </head>
 <body>
-<div id = "datadiv" style = "display:none">
-<?php
-    $data = file_get_contents("svg/index.html");
-    echo $data;    
-?>
-</div>
 <div id = "page">
 <a id = "editorlink" href = "editor.php">editor.php</a>
 <a id  = "uplink" href = "../">../</a>
+<a id  = "svgindexlink" href = "svg/index.html">SVG Plots</a>
 
 <canvas id="mainCanvas"></canvas>
+<img id = "mainImage"/>
+
+<div id = "inputbox">Image URL:<input id = "imgurlinput"/></div>
 <textarea id = "eqtext"></textarea>
 <textarea id="textIO"></textarea> 
 <table id = "plotparamstable">
 </table>
 <table id = "funcparamstable">
 </table>
+<div id = "imgurldata" style = "display:none"><?php 
+if(isset($_GET['url'])){
+    $urlfilename = $_GET['url'];
+    $svgcode = file_get_contents($_GET['url']);
+    $topcode = explode("</imgurl>",$svgcode)[0];
+    $outcode = explode("<imgurl>",$topcode)[1];
+    echo $outcode;
+}
+?></div>
 <div id = "shadowequation" style = "display:none" class = "no-mathjax">
 <?php
 
@@ -81,6 +88,30 @@ else{
 </div>
     <div class = "button" id = "publish">PUBLISH</div>
     <div id = "scroll">
+    <?php
+$svgs = scandir(getcwd()."/svg");
+$svgs = array_reverse($svgs);
+foreach($svgs as $value){
+    if($value != "." && $value != ".." && substr($value,-4) == ".svg"){
+        echo "\n<p><a href = \"index.php?url=";
+        echo "svg/".$value;
+        echo "\"><img src = \"";
+
+        $svgcode = file_get_contents("svg/".$value);
+        $topcode = explode("</imgurl>",$svgcode)[0];
+        $outcode = explode("<imgurl>",$topcode)[1];
+        if(strlen($outcode) > 4){
+            $imgurl =  trim($outcode);
+        }
+        else{
+            $imgurl = "svg/".$value;
+        }
+        echo $imgurl;
+        echo "\"></a></p>\n";
+    }
+}
+?>
+
     </div>
 </div>
 <script>

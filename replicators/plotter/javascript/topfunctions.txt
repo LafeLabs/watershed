@@ -12,13 +12,13 @@ function xcothx(inputFloat){
 function YofX(){
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
     Y = funcparams.TN + 0.5*funcparams.T*xcothx( (constants.e*X + constants.h*funcparams.fGHz*1e9)/(2*constants.k*funcparams.T) ) + 0.5*funcparams.T*xcothx( (constants.e*X - constants.h*funcparams.fGHz*1e9)/(2*constants.k*funcparams.T));
-    y = plotparams.plotheight - plotparams.G*(Y - funcparams.Y0);
+    y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
 }
 
 function YofX2(){
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
     Y = funcparams.TN +  Math.abs((constants.e*X)/(2*constants.k));
-    y = plotparams.plotheight - plotparams.G*(Y - funcparams.Y0);
+    y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
 }
 
 
@@ -44,11 +44,6 @@ funcparams = {
     "X0":0,
     "Y0":0
 }
-
-funcparams.X0 = 0;
-funcparams.Y0 = 0;
-plotparams.x0 = plotparams.plotwidth/2;
-plotparams.y0 = plotparams.plotheight;
 
 function plotfunction(){
     /*plot one function:*/

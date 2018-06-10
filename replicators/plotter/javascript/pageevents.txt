@@ -25,3 +25,7 @@ document.getElementById("eqtext").onkeyup = function(){
     var fileType = currentFile.split("/")[0]; 
     var fileName = currentFile.split("/")[1];
 }
+
+document.getElementById("imgurlinput").onchange = function(){
+    document.getElementById("mainImage").src = this.value;
+}

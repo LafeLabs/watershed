@@ -4,11 +4,19 @@ currentSVG = "<svg width=\"" + plotparams.plotwidth.toString() + "\" height=\"" 
 
 currentSVG += "\n<!--\n<topfunctions>\n" + document.getElementById("topfunctions").innerText + "\nconstants = " + JSON.stringify(constants,null,"    ") + "\nplotparams = " + JSON.stringify(plotparams,null,"    ") + "\nfuncparams = " + JSON.stringify(funcparams,null,"    ") + "\n</topfunctions>\n-->\n";
 
+currentSVG += "\n<!--\n<imgurl>\n" + document.getElementById("imgurlinput").value + "\n</imgurl>\n-->\n";
+
+
 currentSVG += "\n<!--\n<equation>\n" + document.getElementById("eqtext").value + "\n</equation>\n-->\n";
 
 
 document.getElementById("mainCanvas").width = plotparams.plotwidth;
 document.getElementById("mainCanvas").height = plotparams.plotheight;
+document.getElementById("mainCanvas").style.left = (0.5*innerWidth - 0.5*plotparams.plotwidth).toString() + "px";
+
+document.getElementById("mainImage").style.width = plotparams.plotwidth.toString() + "px";
+document.getElementById("mainImage").style.left = (0.5*innerWidth - 0.5*plotparams.plotwidth).toString() + "px";
+
 ctx = document.getElementById("mainCanvas").getContext("2d");
 ctx.clearRect(0, 0, plotparams.plotwidth,plotparams.plotheight);
 ctx.lineWidth = 2;

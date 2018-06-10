@@ -1,6 +1,6 @@
 #plotparamstable{
     left:0px;
-    top:0px;
+    top:2em;
 }
 #funcparamstable{
     left:0px;
@@ -14,6 +14,11 @@
 #uplink{
     position:absolute;
     top:1.2em;
+    right:15em;
+}
+#svgindexlink{
+    position:absolute;
+    top:2.2em;
     right:15em;
 }
  #textIO{
@@ -98,8 +103,22 @@ table{
     width:100%;
 }
 #mainCanvas{
-    margin:auto;
     display:block;
     border:solid;
+    position:absolute;
+    top:1em;
+    z-index:0;
+}
+#mainImage{
+    display:block;
+    position:absolute;
+    top:1em;
+    z-index:-1;
 }
 
+#inputbox{
+    top:0px;
+    font-size:18px;
+    position:absolute;
+    left:5px;
+}

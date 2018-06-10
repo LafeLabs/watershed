@@ -38,12 +38,9 @@ for(var param in funcparams){
 }
 
 
-feedplots = document.getElementById("datadiv").getElementsByTagName("img");
-for(var index = 0;index < feedplots.length;index++){
-    var oldsrcarray = feedplots[index].src.split("/");
-    var oldsrc = oldsrcarray[oldsrcarray.length - 1];
-    var newsrc = "svg/" + oldsrc;
-    feedplots[index].src = newsrc;
-}
-document.getElementById("scroll").innerHTML = document.getElementById("datadiv").innerHTML;
 document.getElementById("eqtext").value = document.getElementById("shadowequation").innerHTML;
+
+if(document.getElementById("imgurldata").innerHTML.length > 4){
+    document.getElementById("imgurlinput").value = document.getElementById("imgurldata").innerHTML;
+    document.getElementById("mainImage").src = document.getElementById("imgurldata").innerHTML;
+}
