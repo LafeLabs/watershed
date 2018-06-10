@@ -79,11 +79,12 @@ mc.on("swipeleft", function(ev) {
     redraw();
 });
 
-        editMode = false;
-       document.getElementById("glyphspellinput").style.display = "none"; 
+    editMode = true;
+    /*   document.getElementById("glyphspellinput").style.display = "none"; 
        document.getElementById("controlTable").style.display = "none"; 
        document.getElementById("editorlink").style.display = "none"; 
        document.getElementById("maineditor").style.display = "none"; 
        for(var index = 0;index < boxes.length;index++){
            boxes[index].style.border = "none";
        }
+*/
