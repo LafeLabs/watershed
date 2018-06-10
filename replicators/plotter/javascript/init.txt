@@ -46,3 +46,4 @@ for(var index = 0;index < feedplots.length;index++){
     feedplots[index].src = newsrc;
 }
 document.getElementById("scroll").innerHTML = document.getElementById("datadiv").innerHTML;
+document.getElementById("eqtext").value = document.getElementById("shadowequation").innerHTML;

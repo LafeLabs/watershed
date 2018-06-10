@@ -1,6 +1,6 @@
 [
 "css/style.txt",
-"html/page.txt",
+"html/equation.txt",
 "javascript/init.txt",
 "javascript/jslibrary.txt",
 "javascript/pageactions.txt",
@@ -8,7 +8,6 @@
 "javascript/redraw.txt",
 "javascript/topfunctions.txt",
 "json/dna.txt",
-"json/feed.txt",
 "php/creator.txt",
 "php/dnagenerator.txt",
 "php/editor.txt",

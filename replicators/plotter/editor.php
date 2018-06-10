@@ -17,7 +17,7 @@
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
 <div id = "filescroll">
 
-    <div class = "html file">html/page.txt</div>
+    <div class = "html file">html/equation.txt</div>
     <div class = "css file">css/style.txt</div>
 
     <div class = "javascript file">javascript/topfunctions.txt</div>
@@ -40,7 +40,6 @@
     <div class = "php file">php/dnagenerator.txt</div>
 
     <div class = "json file">json/dna.txt</div>
-    <div class = "json file">json/feed.txt</div>
 
 </div>
 

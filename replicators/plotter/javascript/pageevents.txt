@@ -8,3 +8,20 @@
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
     httpc.send("data="+data);//send text to feedsaver.php
  }
+ 
+ 
+
+document.getElementById("eqtext").onkeyup = function(){
+    data = encodeURIComponent(document.getElementById("eqtext").value);
+    document.getElementById("equation").innerHTML = document.getElementById("eqtext").value;
+    document.getElementById("shadowequation").innerHTML = document.getElementById("eqtext").value;
+    MathJax.Hub.Typeset();
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    currentFile = "html/equation.txt";
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+    var fileType = currentFile.split("/")[0]; 
+    var fileName = currentFile.split("/")[1];
+}

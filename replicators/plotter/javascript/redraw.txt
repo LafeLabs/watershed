@@ -4,6 +4,8 @@ currentSVG = "<svg width=\"" + plotparams.plotwidth.toString() + "\" height=\"" 
 
 currentSVG += "\n<!--\n<topfunctions>\n" + document.getElementById("topfunctions").innerText + "\nconstants = " + JSON.stringify(constants,null,"    ") + "\nplotparams = " + JSON.stringify(plotparams,null,"    ") + "\nfuncparams = " + JSON.stringify(funcparams,null,"    ") + "\n</topfunctions>\n-->\n";
 
+currentSVG += "\n<!--\n<equation>\n" + document.getElementById("eqtext").value + "\n</equation>\n-->\n";
+
 
 document.getElementById("mainCanvas").width = plotparams.plotwidth;
 document.getElementById("mainCanvas").height = plotparams.plotheight;
@@ -11,47 +13,8 @@ ctx = document.getElementById("mainCanvas").getContext("2d");
 ctx.clearRect(0, 0, plotparams.plotwidth,plotparams.plotheight);
 ctx.lineWidth = 2;
 
-/*plot one function:*/
-currentStroke = "black";
-ctx.strokeStyle = currentStroke;
-ctx.beginPath();	
-x0 = plotparams.plotwidth/2;
-y0 = plotparams.plotheight;
-x = 0;
-yofx();
-currentSVG += "	<path d = \"M";
-currentSVG += Math.round(x).toString() + " ";
-currentSVG += Math.round(y).toString() + " ";
-for(x = 1;x < plotparams.plotwidth;x++){
-    ctx.moveTo(x-1,y);
-    yofx();
-    ctx.lineTo(x,y);
-    currentSVG += "L" + x + " " + y + " ";
-}
-ctx.stroke();
-currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"2\" fill = \"" + "none" + "\" "+"/>";
-/*finish plot one function*/
 
-currentStroke = "black";
-ctx.strokeStyle = currentStroke;
-ctx.beginPath();	
-x0 = plotparams.plotwidth/2;
-y0 = plotparams.plotheight;
-x = 0;
-yofx2();
-currentSVG += "	<path d = \"M";
-currentSVG += Math.round(x).toString() + " ";
-currentSVG += Math.round(y).toString() + " ";
-for(x = 1;x < plotparams.plotwidth;x++){
-    ctx.moveTo(x-1,y);
-    yofx2();
-    ctx.lineTo(x,y);
-    currentSVG += "L" + x + " " + y + " ";
-}
-ctx.stroke();
-currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"2\" fill = \"" + "none" + "\" "+"/>";
-
-
+plotfunction();
 
 currentSVG += "</svg>";
 document.getElementById("textIO").value = currentSVG;

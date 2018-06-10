@@ -8,18 +8,12 @@ PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 
 <script id = "topfunctions">
 <?php
-
 if(isset($_GET['url'])){
     $urlfilename = $_GET['url'];
-    if(substr($urlfilename,-4) == ".svg"){
-        $svgcode = file_get_contents($_GET['url']);
-        $topcode = explode("</topfunctions>",$svgcode)[0];
-        $outcode = explode("<topfunctions>",$topcode)[1];
-        echo $outcode;
-    }
-    else{
-        echo file_get_contents($_GET['url']);
-    }
+    $svgcode = file_get_contents($_GET['url']);
+    $topcode = explode("</topfunctions>",$svgcode)[0];
+    $outcode = explode("<topfunctions>",$topcode)[1];
+    echo $outcode;
 }
 else{
     $data = file_get_contents("javascript/topfunctions.txt");
@@ -42,10 +36,52 @@ else{
 ?>
 </div>
 <div id = "page">
+<a id = "editorlink" href = "editor.php">editor.php</a>
+<a id  = "uplink" href = "../">../</a>
+
+<canvas id="mainCanvas"></canvas>
+<textarea id = "eqtext"></textarea>
+<textarea id="textIO"></textarea> 
+<table id = "plotparamstable">
+</table>
+<table id = "funcparamstable">
+</table>
+<div id = "shadowequation" style = "display:none" class = "no-mathjax">
 <?php
-    $data = file_get_contents("html/page.txt");
-    echo $data;    
+
+if(isset($_GET['url'])){
+    $urlfilename = $_GET['url'];
+    $svgcode = file_get_contents($_GET['url']);
+    $topcode = explode("</equation>",$svgcode)[0];
+    $outcode = explode("<equation>",$topcode)[1];
+    echo $outcode;
+}
+else{
+    $data = file_get_contents("html/equation.txt");
+    echo $data;
+}
+
 ?>
+</div>
+<div id = "equation">
+<?php
+
+if(isset($_GET['url'])){
+    $urlfilename = $_GET['url'];
+    $svgcode = file_get_contents($_GET['url']);
+    $topcode = explode("</equation>",$svgcode)[0];
+    $outcode = explode("<equation>",$topcode)[1];
+    echo $outcode;
+}
+else{
+    $data = file_get_contents("html/equation.txt");
+    echo $data;
+}
+?>
+</div>
+    <div class = "button" id = "publish">PUBLISH</div>
+    <div id = "scroll">
+    </div>
 </div>
 <script>
 </script>
@@ -59,13 +95,13 @@ function init(){
 }
 </script>
 <script id = "redraw">
-redraw();
-function redraw(){
 <?php
-    $data = file_get_contents("javascript/redraw.txt");
-    echo $data;    
+        echo "\nredraw();\n";
+        echo "\nfunction redraw(){\n";
+        $data = file_get_contents("javascript/redraw.txt");
+        echo $data;
+        echo "\n}\n";
 ?>
-}
 </script>
 <script id = "pageevents">
 <?php
