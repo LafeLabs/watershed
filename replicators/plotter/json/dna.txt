@@ -7,6 +7,7 @@
 "javascript/pageevents.txt",
 "javascript/redraw.txt",
 "javascript/topfunctions.txt",
+"json/currentjson.txt",
 "json/dna.txt",
 "php/creator.txt",
 "php/dnagenerator.txt",

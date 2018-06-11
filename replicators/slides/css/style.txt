@@ -60,9 +60,16 @@ body{
  #editorlink{
      position:absolute;
      left:70%;
-     top:10px;
+     top:0px;
      z-index:2;
  }
+  #uplink{
+     position:absolute;
+     left:70%;
+     top:1em;
+     z-index:2;
+ }
+
 #mainCanvas{
     position:absolute;
     z-index:0;

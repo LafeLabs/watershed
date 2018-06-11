@@ -2,6 +2,7 @@
 <div id="maineditor" contenteditable="true" spellcheck="false" class = "no-mathjax"></div>
 
 <a  id = "editorlink" href = "editor.php">editor.php</a>
+<a  id = "uplink" href = "../">../</a>
 
 <canvas id="invisibleCanvas" style="display:none"></canvas>
 <canvas id="mainCanvas"></canvas>
