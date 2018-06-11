@@ -1,3 +1,7 @@
+currentjson = JSON.parse(document.getElementById("jsondatadiv").innerHTML);
+constants = currentjson.constants;
+plotparams = currentjson.plotparams;
+funcparams = currentjson.funcparams;
 
 
 for(var param in plotparams){
@@ -44,3 +48,41 @@ if(document.getElementById("imgurldata").innerHTML.length > 4){
     document.getElementById("imgurlinput").value = document.getElementById("imgurldata").innerHTML;
     document.getElementById("mainImage").src = document.getElementById("imgurldata").innerHTML;
 }
+
+document.getElementById("imgurlinput").value = currentjson.imgurl;
+document.getElementById("mainImage").src = currentjson.imgurl;
+
+
+funcinputs = document.getElementById("funcparamstable").getElementsByTagName("INPUT");
+plotinputs = document.getElementById("plotparamstable").getElementsByTagName("INPUT");
+paraminputs = [];
+
+for(var index = 0;index < plotinputs.length;index++){
+    paraminputs.push(plotinputs[index]);    
+}
+for(var index = 0;index < funcinputs.length;index++){
+    paraminputs.push(funcinputs[index]);    
+}
+
+paramIndex = 0;
+paramDigitIndex = 1;// 10x, 0.1x, 0.01x, 0.001x = red, orange, yellow, green = 0,1,2,3
+
+paraminputs[paramIndex].style.borderWidth = "4px";
+
+if(paramDigitIndex == 0){
+    paraminputs[paramIndex].style.borderColor = "red";
+}
+if(paramDigitIndex == 1){
+    paraminputs[paramIndex].style.borderColor = "green";
+}
+if(paramDigitIndex == 2){
+    paraminputs[paramIndex].style.borderColor = "blue";
+}
+if(paramDigitIndex == 3){
+    paraminputs[paramIndex].style.borderColor = "purple";
+}
+
+document.getElementById("actioninput").select();
+
+
+

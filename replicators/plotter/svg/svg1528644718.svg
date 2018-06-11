@@ -121,7 +121,31 @@ funcparams = {
 }
 </topfunctions>
 -->
-
+<!--<currentjson>
+{
+    "constants": {
+        "e": 1.6e-19,
+        "k": 1.38065e-23,
+        "h": 6.63e-34
+    },
+    "imgurl": "https://i.imgur.com/fAu4RVG.png",
+    "plotparams": {
+        "G": 1.85,
+        "g": 0.0001,
+        "plotwidth": 400,
+        "plotheight": 260,
+        "x0": 204,
+        "y0": 250
+    },
+    "funcparams": {
+    "T": 10,
+    "TN": 30,
+    "fGHz": 6,
+    "X0": 0,
+    "Y0": 0
+    }
+}
+</currentjson>-->
 <!--
 <imgurl>
 https://i.imgur.com/fAu4RVG.png

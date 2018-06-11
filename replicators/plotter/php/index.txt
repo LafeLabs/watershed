@@ -29,6 +29,21 @@ else{
 
 </head>
 <body>
+<div id = "jsondatadiv" style = "display:none;"><?php
+
+if(isset($_GET['url'])){
+    $urlfilename = $_GET['url'];
+    $svgcode = file_get_contents($_GET['url']);
+    $topcode = explode("</currentjson>",$svgcode)[0];
+    $outcode = explode("<currentjson>",$topcode)[1];
+    echo $outcode;
+}
+else{
+    echo file_get_contents("json/currentjson.txt");
+}
+
+?></div>
+
 <div id = "page">
 <a id = "editorlink" href = "editor.php">editor.php</a>
 <a id  = "uplink" href = "../">../</a>
@@ -37,6 +52,7 @@ else{
 <canvas id="mainCanvas"></canvas>
 <img id = "mainImage"/>
 
+<div id = "actionbox">Action:<input id = "actioninput"/></div>
 <div id = "inputbox">Image URL:<input id = "imgurlinput"/></div>
 <textarea id = "eqtext"></textarea>
 <textarea id="textIO"></textarea> 
@@ -53,8 +69,7 @@ if(isset($_GET['url'])){
     echo $outcode;
 }
 ?></div>
-<div id = "shadowequation" style = "display:none" class = "no-mathjax">
-<?php
+<div id = "shadowequation" style = "display:none" class = "no-mathjax"><?php
 
 if(isset($_GET['url'])){
     $urlfilename = $_GET['url'];
@@ -68,8 +83,7 @@ else{
     echo $data;
 }
 
-?>
-</div>
+?></div>
 <div id = "equation">
 <?php
 

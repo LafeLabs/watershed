@@ -6,6 +6,7 @@ currentSVG += "\n<!--\n<topfunctions>\n" + document.getElementById("topfunctions
 
 currentSVG += "\n<!--\n<imgurl>\n" + document.getElementById("imgurlinput").value + "\n</imgurl>\n-->\n";
 
+currentSVG += "\n<!--\n<currentjson>\n" + JSON.stringify(currentjson,null, "    ") + "\n</currentjson>\n-->\n";
 
 currentSVG += "\n<!--\n<equation>\n" + document.getElementById("eqtext").value + "\n</equation>\n-->\n";
 
@@ -26,3 +27,17 @@ plotfunction();
 
 currentSVG += "</svg>";
 document.getElementById("textIO").value = currentSVG;
+
+currentjson = {};
+currentjson.constants = constants;
+currentjson.imgurl = document.getElementById("imgurlinput").value;
+currentjson.plotparams = plotparams;
+currentjson.funcparams = funcparams;
+
+currentFile = "json/currentjson.txt"
+data = encodeURIComponent(JSON.stringify(currentjson,null, "    "));
+var httpc = new XMLHttpRequest();
+var url = "filesaver.php";        
+httpc.open("POST", url, true);
+httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php

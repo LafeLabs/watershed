@@ -1,10 +1,14 @@
 #plotparamstable{
     left:0px;
-    top:2em;
+    top:4em;
 }
 #funcparamstable{
     left:0px;
     top:50%;
+}
+table input{
+    border:solid;
+    border-width:1px;
 }
 #editorlink{
     position:absolute;
@@ -117,8 +121,17 @@ table{
 }
 
 #inputbox{
-    top:0px;
+    top:1.7em;
     font-size:18px;
     position:absolute;
     left:5px;
+}
+#actionbox{
+    top:0.1em;
+    font-size:18px;
+    position:absolute;
+    left:5px;
+}
+#actioninput{
+    width:1em;
 }
