@@ -3,6 +3,13 @@
 
 <a  id = "editorlink" href = "editor.php">editor.php</a>
 <a  id = "uplink" href = "../">../</a>
+<a  id = "deckslink" href = "decks/">decks/</a>
+
+<table id = "buttontable">
+    <tr>
+        <td class = "button">SAVE DECK</td>
+    </tr>    
+</table>
 
 <canvas id="invisibleCanvas" style="display:none"></canvas>
 <canvas id="mainCanvas"></canvas>

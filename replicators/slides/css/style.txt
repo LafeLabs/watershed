@@ -1,3 +1,9 @@
+#buttontable{
+    position:absolute;
+    left:10em;
+    top:0px;
+    z-index:2;
+}
 #datadiv{
     position:absolute;
     left:0px;
@@ -66,9 +72,15 @@ body{
   #uplink{
      position:absolute;
      left:70%;
-     top:1em;
+     top:2em;
      z-index:2;
  }
+#deckslink{
+     position:absolute;
+     left:70%;
+     top:1em;
+     z-index:2;
+}
 
 #mainCanvas{
     position:absolute;

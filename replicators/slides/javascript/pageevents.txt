@@ -1,3 +1,36 @@
+
+buttons[0].onclick = function(){
+        
+    var httpc = new XMLHttpRequest();
+    var url = "feedsaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpc.send("data=" + encodeURIComponent(document.getElementById("shadowdatadiv").innerHTML));//send text to saver.php
+    
+}
+
+
+function newbox(){
+
+    boxTemplate = "<div class=\"glyphdata\"></div>\n";
+    boxTemplate +=  "    <div class=\"content\">\n";
+    boxTemplate +=  "    </div>\n";
+    var newdiv = document.createElement("DIV");
+    newdiv.innerHTML = boxTemplate;
+    newdiv.className = "box";
+    pages[pageIndex].appendChild(newdiv);
+    boxes = pages[pageIndex].getElementsByClassName("box");
+
+    var newdiv2 = document.createElement("DIV");
+    newdiv2.innerHTML = boxTemplate;
+    newdiv2.className = "box";
+    shadowpages[pageIndex].appendChild(newdiv2);
+    shadowboxes = shadowpages[pageIndex].getElementsByClassName("box");
+
+}
+
+
+
 function pageback(){
     pageIndex--;
     if(pageIndex < 0){
@@ -162,7 +195,7 @@ controls[1].onkeypress = function(a){//action
     console.log(a.which);
     if(charCode != 010 && charCode != 045 && charCode != 047 && charCode != 046  && charCode != 050){
             
-        if(parseInt(currentTable[charCode],8) >= 0200){
+        if(parseInt(currentTable[charCode],8) >= 0200 && parseInt(currentTable[charCode],8) < 0600){
             var glyphSplit = currentGlyph.split(",");
             currentGlyph = "";
             for(var index = 0;index < glyphSplit.length;index++){

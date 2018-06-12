@@ -48,6 +48,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "javascript file">javascript/topfunctions.txt</div>
     <div class = "javascript file">javascript/actions0xx.txt</div>
     <div class = "javascript file">javascript/actions03xx.txt</div>
+    <div class = "javascript file">javascript/actions06xx.txt</div>
     <div class = "javascript file">javascript/jslibrary.txt</div>
     <div class = "javascript file">javascript/init.txt</div>
     <div class = "javascript file">javascript/redraw.txt</div>
