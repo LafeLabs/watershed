@@ -117,7 +117,10 @@ document.getElementById("editmodebutton").onclick = function(){
        document.getElementById("glyphspellinput").style.display = "none"; 
        document.getElementById("controlTable").style.display = "none"; 
        document.getElementById("editorlink").style.display = "none"; 
+       document.getElementById("uplink").style.display = "none"; 
+       document.getElementById("deckslink").style.display = "none"; 
        document.getElementById("maineditor").style.display = "none"; 
+       document.getElementById("buttontable").style.display = "none"; 
        for(var index = 0;index < boxes.length;index++){
            boxes[index].style.border = "none";
        }
@@ -126,7 +129,10 @@ document.getElementById("editmodebutton").onclick = function(){
        document.getElementById("glyphspellinput").style.display = "block"; 
        document.getElementById("controlTable").style.display = "block"; 
        document.getElementById("editorlink").style.display = "block"; 
+       document.getElementById("uplink").style.display = "block"; 
+       document.getElementById("deckslink").style.display = "block"; 
        document.getElementById("maineditor").style.display = "block"; 
+       document.getElementById("buttontable").style.display = "block"; 
        for(var index = 0;index < boxes.length;index++){
            boxes[index].style.border = "solid";
        }
