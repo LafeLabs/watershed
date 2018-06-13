@@ -131,7 +131,6 @@ controls[1].onkeydown = function(e) {
 
 controls[1].onkeypress = function(a){//action
     charCode = a.keyCode || a.which;
-    console.log(a.which);
     if(charCode != 010 && charCode != 045 && charCode != 047 && charCode != 046 && charCode != 050){
             
         if(parseInt(currentTable[charCode],8) >= 0200){

@@ -104,6 +104,7 @@ function latlon2xy(latlonin) {
                 <td class = "button">25' &#x2b62</td>
             </tr>
         </table>
+    <input id = "actioninput"/>
     </div>
         <script>
             init();
@@ -166,6 +167,11 @@ function latlon2xy(latlonin) {
                     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
                     httpc.send("data="+data+"&filename=json/currentjson.txt");//send text to filesaver.php
                     redraw();
+            }
+            
+            
+            document.getElementById("actioninput").onkeypress = function(){
+                    
             }
             
             inputs[0].onchange = function(){
@@ -408,6 +414,14 @@ document.getElementById("textIO").onkeyup = function(){
             body{
                 font-family:courier;
                 font-size:18px;
+            }
+            #actioninput{
+                position:absolute;
+                left:0px;
+                bottom:30%;
+                width:1em;
+                font-size:20px;
+                
             }
             #textIO{
                 font-family:courier;

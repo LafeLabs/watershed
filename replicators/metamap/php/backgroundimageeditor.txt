@@ -123,6 +123,7 @@ function doTheThing(localCommand){
 <canvas id="invisibleCanvas" style="display:none"></canvas>
 <canvas id="mainCanvas"></canvas>
 <textarea id="textIO"></textarea>
+<input id = "actioninput"/>
 <table id = "imageTable">   
     <tr>
         <td>IMAGE URL:</td><td><input/></td>
@@ -233,6 +234,7 @@ imagedata[8].value = currentJSON.latlon1;
 imagedata[9].value = currentJSON.marker1;
 imagedata[10].value = currentJSON.imgangle;
 
+document.getElementById("actioninput").select();
 </script>
 <script id = "redraw">
 redraw();
@@ -463,6 +465,53 @@ imagedata[10].onchange = function(){
     redraw();
 }
 
+
+imagebuttonindex = 0;
+highlightcolor = "green";
+imagebuttons[imagebuttonindex].style.backgroundColor = highlightcolor;
+
+document.getElementById("actioninput").onkeydown = function(a){
+    charCode = a.keyCode || a.which;
+    console.log(charCode);
+    if(a.key == " "){
+        imagebuttons[imagebuttonindex].click();
+    }
+    if(a.key == "f" || charCode == 047){
+        imagebuttons[imagebuttonindex].style.backgroundColor = "transparent";
+        imagebuttonindex++;
+        if(imagebuttonindex > imagebuttons.length - 1){
+            imagebuttonindex = 0;
+        }
+        imagebuttons[imagebuttonindex].style.backgroundColor = highlightcolor;
+    }
+    if(a.key == "d" || charCode == 045){
+        imagebuttons[imagebuttonindex].style.backgroundColor = "transparent";
+        imagebuttonindex--;
+        if(imagebuttonindex < 0){
+            imagebuttonindex = imagebuttons.length - 1;
+        }
+        imagebuttons[imagebuttonindex].style.backgroundColor = highlightcolor;
+    }
+    if(a.key == "s" || charCode == 050){
+        imagebuttons[imagebuttonindex].style.backgroundColor = "transparent";
+        imagebuttonindex += 6;
+        if(imagebuttonindex > imagebuttons.length - 1){
+            imagebuttonindex -= 18;
+        }
+        imagebuttons[imagebuttonindex].style.backgroundColor = highlightcolor;
+    }
+    if(a.key == "a" || charCode == 046){
+        imagebuttons[imagebuttonindex].style.backgroundColor = "transparent";
+        imagebuttonindex -= 6;
+        if(imagebuttonindex < 0){
+            imagebuttonindex += 18;
+        }
+        imagebuttons[imagebuttonindex].style.backgroundColor = highlightcolor;
+    }
+
+    document.getElementById("actioninput").value = "";
+}
+
 </script>
 <style>
 #page{
@@ -492,6 +541,13 @@ imagedata[10].onchange = function(){
      left:70%;
      top:2em;
      z-index:2;
+ }
+ #actioninput{
+     position:absolute;
+     left:0px;
+     bottom:30%;
+     width:1em;
+     font-size:20px;
  }
  #textIO{
     position:absolute;
