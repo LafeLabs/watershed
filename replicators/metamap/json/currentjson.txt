@@ -18,8 +18,8 @@
     "links": [
         {
             "url": "../",
-            "text": "../",
-            "fontfeet": 6000,
+            "text": "other link to ../",
+            "fontfeet": 2000,
             "latlon": "38.95000,-77.01000",
             "rotation": -5
         },

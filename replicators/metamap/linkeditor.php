@@ -170,10 +170,12 @@ function latlon2xy(latlonin) {
             
             inputs[0].onchange = function(){
                     currentJSON.links[linkIndex].url = this.value;
+                    links[linkIndex].href = this.value;
                     redraw2();
             }
             inputs[1].onchange = function(){
                     currentJSON.links[linkIndex].text = this.value;
+                    links[linkIndex].innerHTML = this.value;
                     redraw2();
             }
             inputs[2].onchange = function(){
