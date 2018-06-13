@@ -159,13 +159,13 @@ function doTheThing(localCommand){
         <td>IMGANGLE:</td><td><input value = "0"/></td>
     </tr>
 
-    <tr>
+    <tr style = "display:none">
         <td class = "button">SAVE JSON</td>
     </tr>
-    <tr>
+    <tr style = "display:none">
         <td class = "button">EXPORT JSON</td>
     </tr>
-    <tr>
+    <tr style = "display:none">
         <td class = "button">IMPORT JSON</td>
     </tr>
 
@@ -560,6 +560,7 @@ document.getElementById("actioninput").onkeydown = function(a){
      font-size:20px;
  }
  #textIO{
+    display:none;
     position:absolute;
     width:100px;
     height:100px;
