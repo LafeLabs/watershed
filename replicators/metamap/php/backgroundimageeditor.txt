@@ -261,6 +261,16 @@ function redraw(){
     document.getElementById("mainImage").style.width = (currentJSON.imgw*unit).toString()  + "px";
     document.getElementById("mainImage").style.left = (x0 + currentJSON.imgleft*unit).toString()  + "px";
     document.getElementById("mainImage").style.top = (y0 + currentJSON.imgtop*unit).toString()  + "px";
+    
+    
+    currentFile = "json/currentjson.txt";
+    data = encodeURIComponent(JSON.stringify(currentJSON,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+
 
 }
 

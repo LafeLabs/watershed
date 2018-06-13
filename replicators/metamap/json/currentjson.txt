@@ -1,8 +1,8 @@
 {
     "imgurl": "https://i.imgur.com/EXZmjo2.jpg",
     "imgw": 157.76233005464775,
-    "imgleft": -63.33792269799065,
-    "imgtop": -107.14453092961645,
+    "imgleft": -63.939322670498626,
+    "imgtop": -108.19433412582464,
     "unitpixels": 3,
     "unitfeet": 555,
     "imgangle": 0,
