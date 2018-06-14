@@ -27,12 +27,11 @@ foreach($scrolls as $value){
 }
 ?>
 </div>
-<div id = "scrolldisplay"  class = "mathjax"></div>    
-    
+<div id = "scrolldisplay"  class = "mathjax"></div>
+
 <div id = "linkscroll">
     <a href = "index.php" id = "indexlink">index.php</a>
     <a href = "editor.php">editor.php</a>
-    <a href = "replicator.php">replicator.php</a>
     <a href = "metacreator.php">metacreator.php</a>
     <a href = "makenewscroll.php">makenewscroll.php</a>
 

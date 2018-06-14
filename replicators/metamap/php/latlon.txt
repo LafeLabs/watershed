@@ -75,6 +75,12 @@ function latlon2xy(latlonin) {
 
 currentJSON = JSON.parse(document.getElementById("datadiv").innerHTML);
 
+document.getElementById("outputfield").onchange = function(){
+        lat = parseFloat(this.value.split(",")[0]);
+        lon = parseFloat(this.value.split(",")[1]);
+        markervalue = "@(" + latlon2xy(lat.toString()  + "," + lon.toString()) + ") #" + currentJSON.hashtag;
+        document.getElementById("markerinput").value = markervalue;
+}
 
 document.getElementById("gpsButton").onclick = function() {
     if (navigator.geolocation) {

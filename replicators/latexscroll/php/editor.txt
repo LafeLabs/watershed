@@ -24,7 +24,7 @@ foreach($scrolls as $value){
     <a href = "texlist.php">texlist.php</a>
     <a href = "figurelist.php">figurelist.php</a>
     <a href = "scrolleditor.php">scrolleditor.php</a>
-
+    <a href = "jupyter.php">jupyter.php</a>
     <div class = "button" id = "imgbutton">&ltIMG src = " "/&gt</div>
     <div class = "button" id = "pbutton">&ltP&gt  &lt/P&gt</div>
 
@@ -47,6 +47,8 @@ foreach($scrolls as $value){
     <div class = "php file">php/dnagenerator.txt</div>
     <div class = "php file">php/texlist.txt</div>
     <div class = "php file">php/figurelist.txt</div>
+
+    <div class = "php file">php/jupyter.txt</div>
 
     <div class = "json file">json/dna.txt</div>
 
