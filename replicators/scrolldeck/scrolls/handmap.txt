@@ -1,0 +1,6 @@
+  <p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
+<h2>Hand Map</h2>
+<p>
+Trace over an existing printout of SVG map, color and sketch your art onto it, photograph it, put the photo on the Cloud and use it to make a <a href = "index.php?url=scrolls/photomap.txt">photo map</a>.
+</p>

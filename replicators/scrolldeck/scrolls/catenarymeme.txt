@@ -1,0 +1,7 @@
+   <p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
+<h2>Catenary Meme</h2>
+
+<p>
+    Here we photograph a hanging rope or chain or cable in the form of a "catenary", upload it to the Cloud, and use the plotter element of Watershed to convert this to a mathematical meme of sorts using plots of the hyperbolic cosine.
+</p>

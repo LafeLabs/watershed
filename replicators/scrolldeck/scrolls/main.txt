@@ -9,8 +9,9 @@ Each element of the action deck has a physical card which lives in a physical de
         <li><a href = "index.php?url=scrolls/page.txt">Make a page</a></li>
         <li><a href = "index.php?url=scrolls/html.txt">Use html</a></li>
         <li><a href = "index.php?url=scrolls/photomap.txt">Photograph a map, put into Metamap</a></li>        
-        <li><a href = "index.php?url=scrolls/linkmap.txt">Create a Link on a Map</a></li>
-        <li><a href = "index.php?url=scrolls/svgmap.txt">make a svgmap</a></li>
+        <li><a href = "index.php?url=scrolls/linkmap.txt">Create a Link Map</a></li>
+        <li><a href = "index.php?url=scrolls/svgmap.txt">Make a svgmap</a></li>
+        <li><a href = "index.php?url=scrolls/handmap.txt">Make a hand drawn art map on computer</a></li>
         <li><a href = "index.php?url=scrolls/svgfactory.txt">use svgfactory</a></li>
         <li><a href = "index.php?url=scrolls/freeserver.txt">make a free server</a></li>
         <li><a href = "index.php?url=scrolls/raspberrypi.txt">build local raspberrypi server</a></li>
@@ -21,5 +22,6 @@ Each element of the action deck has a physical card which lives in a physical de
         <li><a href = "index.php?url=scrolls/javascript.txt">use javascript</a></li>
         <li><a href = "index.php?url=scrolls/picturemenu.txt">make a picturemenu</a></li>
         <li><a href = "index.php?url=scrolls/watershed.txt">Understand Watershed Network(what, why, how, where, who)</a></li>
+        <li><a href = "index.php?url=scrolls/catenarymeme.txt">Make a catenary meme</a></li>
     </ul>
 </p>
