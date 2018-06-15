@@ -20,9 +20,11 @@ shapeTableEditMode = false;
 
 controls[1].select();
 
+exturlset = false;
 if(document.getElementById("extdatadiv").innerHTML.length > 10){
     document.getElementById("datadiv").innerHTML = document.getElementById("extdatadiv").innerHTML;
     document.getElementById("shadowdatadiv").innerHTML = document.getElementById("extdatadiv").innerHTML;
+    exturlset = true;
 }
 
 pages = document.getElementById("datadiv").getElementsByClassName("page");
@@ -83,3 +85,17 @@ editMode = true;
 
 buttons = document.getElementById("buttontable").getElementsByTagName("TD");
 
+if(exturlset){
+    editMode = false;
+           document.getElementById("glyphspellinput").style.display = "none"; 
+       document.getElementById("controlTable").style.display = "none"; 
+       document.getElementById("editorlink").style.display = "none"; 
+       document.getElementById("uplink").style.display = "none"; 
+       document.getElementById("deckslink").style.display = "none"; 
+       document.getElementById("maineditor").style.display = "none"; 
+       document.getElementById("buttontable").style.display = "none"; 
+       for(var index = 0;index < boxes.length;index++){
+           boxes[index].style.border = "none";
+       }
+
+}
