@@ -1,27 +1,31 @@
 <a href = "../">../</a>
 
 <h2>Action Deck</h2>
+<img src = "http://quantumnoise.org/seven/sevenfold/svg/svg1529023495.svg"/>
 <p>
 Each element of the action deck has a physical card which lives in a physical deck as well as a scroll which lives here.
 </p> 
 <p>
     <ul>
-        <li><a href = "index.php?url=scrolls/page.txt">Make a page</a></li>
-        <li><a href = "index.php?url=scrolls/html.txt">Use html</a></li>
+        <li><a href = "index.php?url=scrolls/page.txt">Make a new web page in Watershed Network using metacreator</a></li>
+        <li><a href = "index.php?url=scrolls/html.txt">Use html to make a basic web page with p, h2, img, and a elements</a></li>
         <li><a href = "index.php?url=scrolls/photomap.txt">Photograph a map, put into Metamap</a></li>        
         <li><a href = "index.php?url=scrolls/linkmap.txt">Create a Link Map</a></li>
-        <li><a href = "index.php?url=scrolls/svgmap.txt">Make a svgmap</a></li>
-        <li><a href = "index.php?url=scrolls/handmap.txt">Make a hand drawn art map on computer</a></li>
-        <li><a href = "index.php?url=scrolls/svgfactory.txt">use svgfactory</a></li>
-        <li><a href = "index.php?url=scrolls/freeserver.txt">make a free server</a></li>
+        <li><a href = "index.php?url=scrolls/svgmap.txt">Make a vector graphics map traced over satellite photo</a></li>
+        <li><a href = "index.php?url=scrolls/handmap.txt">Make a hand-drawn art map, publish to Web</a></li>
+        <li><a href = "index.php?url=scrolls/svgfactory.txt">Use svgfactory to make and publish a graphic</a></li>
+        <li><a href = "index.php?url=scrolls/freeserver.txt">Make a free web server using 000webhost.com</a></li>
         <li><a href = "index.php?url=scrolls/raspberrypi.txt">build local raspberrypi server</a></li>
         <li><a href = "index.php?url=scrolls/artbox.txt">make an artbox</a></li>
         <li><a href = "index.php?url=scrolls/carddeck.txt">make a carddeck</a></li>
-        <li><a href = "index.php?url=scrolls/css.txt">use css</a></li>
-        <li><a href = "index.php?url=scrolls/php.txt">use php</a></li>
-        <li><a href = "index.php?url=scrolls/javascript.txt">use javascript</a></li>
+        <li><a href = "index.php?url=scrolls/unicode.txt">Make a Page based on "Unicode" symbols</a></li>
+        <li><a href = "index.php?url=scrolls/css.txt">use css to make a decorative web message</a></li>
+        <li><a href = "index.php?url=scrolls/php.txt">use php to make a joke website based on real website</a></li>
+        <li><a href = "index.php?url=scrolls/javascript.txt">use javascript to manipulate web pages from terminal, make a button</a></li>
         <li><a href = "index.php?url=scrolls/picturemenu.txt">make a picturemenu</a></li>
         <li><a href = "index.php?url=scrolls/watershed.txt">Understand Watershed Network(what, why, how, where, who)</a></li>
         <li><a href = "index.php?url=scrolls/catenarymeme.txt">Make a catenary meme</a></li>
+        <li><a href = "index.php?url=scrolls/mathpaper.txt">Write and publish a Math Paper</a></li>
+        <li><a href = "index.php?url=scrolls/memeslides.txt">Make a slideshow of image memes and publish</a></li>
     </ul>
 </p>

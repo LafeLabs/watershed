@@ -1,0 +1,7 @@
+   <p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+
+<h2>Meme Slides</h2>
+
+<p>
+    Make a new slide deck editor.  Delete all but the title slide and the meme slide.  Copy the meme slide a few times.  Go find or upload images on the internet.  Put urls in the code for the slides. Add text, modify color, font, size, style, move around, save, publish, share.  Take screen shots and publish those. 
+</p>

@@ -1,0 +1,5 @@
+  <p><a href = "index.php?url=scrolls/main.txt">back up to main</a></p>
+<h2>Write a Math Paper</h2>
+<p>
+    First go to an existing math paper scroll editor.  Make equations using latex format.  copy code to pastebin.  Make a url linking to your scroll. Publish. Share.
+</p>
