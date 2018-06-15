@@ -5,7 +5,7 @@ $files = scandir(getcwd());
 $outstring = "[\n";
 
 foreach($files as $value){
-    if($value != "." && $value != ".." && $value != "tables" && $value != "svg"){
+    if($value != "." && $value != ".." && $value != "tables" && $value != "svg" && $value != "decks"){
         if(is_dir($value)){
             $subfiles = scandir(getcwd()."/".$value);
             foreach($subfiles as $subvalue){
@@ -16,6 +16,9 @@ foreach($files as $value){
         }
     }
 }
+
+$outstring .= "\""."decks"."/"."main.txt"."\",\n";
+
 $outstring = substr($outstring,0,-2);
 $outstring .= "\n]";
 

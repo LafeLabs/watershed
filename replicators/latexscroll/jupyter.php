@@ -57,12 +57,12 @@ for(var index = 0;index < currentJSON.cells.length;index ++){
     }
     if(currentJSON.cells[index].cell_type == "code"){
         
-            var newpre = document.createElement("PRE");
-            newpre.innerHTML = "";
-            for(var codeindex = 0;codeindex < currentJSON.cells[index].source.length;codeindex++){
-                newpre.innerHTML += currentJSON.cells[index].source[codeindex];
-            }
-            newp.appendChild(newpre);
+        var newpre = document.createElement("PRE");
+        newpre.innerHTML = "";
+        for(var codeindex = 0;codeindex < currentJSON.cells[index].source.length;codeindex++){
+            newpre.innerHTML += currentJSON.cells[index].source[codeindex];
+        }
+        newp.appendChild(newpre);
 
         if(currentJSON.cells[index].outputs.length > 0){
             newp.innerHTML = index.toString() + ":" + currentJSON.cells[index].outputs.length.toString();

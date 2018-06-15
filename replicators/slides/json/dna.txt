@@ -6,10 +6,10 @@
 "bytecode/symbols010xx.txt",
 "bytecode/symbols013xx.txt",
 "css/style.txt",
-"decks/main.txt",
-"decks/test.txt",
+"html/main.txt",
 "html/page.txt",
 "javascript/actions03xx.txt",
+"javascript/actions06xx.txt",
 "javascript/actions0xx.txt",
 "javascript/init.txt",
 "javascript/jslibrary.txt",
@@ -19,6 +19,7 @@
 "javascript/topfunctions.txt",
 "json/currentjson.txt",
 "json/dna.txt",
+"php/creator.txt",
 "php/dnagenerator.txt",
 "php/editor.txt",
 "php/feedsaver.txt",
@@ -27,8 +28,10 @@
 "php/glypheditor.txt",
 "php/index.txt",
 "php/loadtable.txt",
+"php/metacreator.txt",
 "php/replicator.txt",
 "php/savetable.txt",
 "php/shapetableeditor.txt",
-"php/text2php.txt"
+"php/text2php.txt",
+"decks/main.txt"
 ]

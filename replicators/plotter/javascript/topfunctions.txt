@@ -20,6 +20,7 @@ function YofX2(){
     Y = funcparams.TN +  Math.abs((constants.e*X)/(2*constants.k));
     y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
 }
+/*add more of these functions to add more curves or plots*/
 
 
 constants = {

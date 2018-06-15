@@ -4,6 +4,7 @@
     $dnaraw = file_get_contents($url);
     $dna =json_decode($dnaraw);
     $baseurl = explode("json",$url)[0];
+    mkdir("decks");
 
     foreach ($dna as $value) {
         $filetype =  explode('/',$value)[0];
@@ -24,8 +25,6 @@
             fclose($file);  //close file                
         }
     }
-    mkdir("svg");
-    mkdir("tables");
 ?>
 
 

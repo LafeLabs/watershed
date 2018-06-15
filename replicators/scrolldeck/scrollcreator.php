@@ -5,5 +5,3 @@
     fwrite($file,$data); //write data to file
     fclose($file);  //close file
 ?>
-
-

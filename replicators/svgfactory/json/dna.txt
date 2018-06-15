@@ -17,6 +17,7 @@
 "javascript/topfunctions.txt",
 "json/currentjson.txt",
 "json/dna.txt",
+"php/creator.txt",
 "php/dnagenerator.txt",
 "php/editor.txt",
 "php/feedsaver.txt",
@@ -25,8 +26,10 @@
 "php/glypheditor.txt",
 "php/index.txt",
 "php/loadtable.txt",
+"php/metacreator.txt",
 "php/replicator.txt",
 "php/savetable.txt",
 "php/shapetableeditor.txt",
+"php/slideviewer.txt",
 "php/text2php.txt"
 ]

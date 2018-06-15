@@ -25,9 +25,8 @@
             <tr><td class = "button">latexscroll</td></tr>
             <tr><td class = "button">plotter</td></tr>
             <tr><td class = "button">svgfactory</td></tr>
-            <tr><td class = "button">datafitter</td></tr>
-            <tr><td class = "button">trashrobot</td></tr>
-            <tr><td class = "button">calculator</td></tr>
+            <tr><td class = "button">slides</td></tr>
+            <tr><td class = "button">scrolldeck</td></tr>
         </table>
         
 </div>

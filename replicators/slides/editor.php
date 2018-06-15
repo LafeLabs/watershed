@@ -27,6 +27,7 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <a href = "text2php.php">text2php.php</a>
     <a href = "dnagenerator.php" id = "dnalink">dnagenerator.php</a>
     <a href = "replicator.php">replicator.php</a>
+    <a href = "metacreator.php">metacreator.php</a>
     <a href = "index.php">index.php</a>
 
 </div>
@@ -62,6 +63,8 @@ ALL CODE IS PUBLIC DOMAIN NO PATENTS NO COPYRIGHTS
     <div class = "php file">php/feedsaver.txt</div>
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
+    <div class = "php file">php/creator.txt</div>
+    <div class = "php file">php/metacreator.txt</div>
 
     <div class = "json file">json/dna.txt</div>
     
