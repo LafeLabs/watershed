@@ -27,6 +27,7 @@
     mkdir("scrolls");
     mkdir("latex");
     mkdir("figures");
+    mkdir("jupyter");
 ?>
 
 

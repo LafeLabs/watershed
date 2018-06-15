@@ -39,6 +39,7 @@
     <div class = "php file">php/text2php.txt</div>
     <div class = "php file">php/dnagenerator.txt</div>
 
+    <div class = "json file">json/plotdata.txt</div>
     <div class = "json file">json/currentjson.txt</div>
     <div class = "json file">json/dna.txt</div>
 

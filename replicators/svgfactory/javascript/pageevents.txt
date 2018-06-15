@@ -63,8 +63,11 @@ document.getElementById("editmodebutton").onclick = function(){
        document.getElementById("editorlink").style.display = "none"; 
        document.getElementById("shapetablelink").style.display = "none"; 
        document.getElementById("svglink").style.display = "none";
-       document.getElementById("backbutton").style.display = "block";
-       document.getElementById("fwdbutton").style.display = "block";
+       document.getElementById("uplink").style.display = "none";
+       if(rawJSON.length > 1){
+           document.getElementById("backbutton").style.display = "block";
+           document.getElementById("fwdbutton").style.display = "block";
+       }
        
     }
     else{
@@ -77,6 +80,7 @@ document.getElementById("editmodebutton").onclick = function(){
        document.getElementById("editorlink").style.display = "block"; 
        document.getElementById("shapetablelink").style.display = "block"; 
        document.getElementById("svglink").style.display = "block"; 
+       document.getElementById("uplink").style.display = "block"; 
        document.getElementById("backbutton").style.display = "none";
        document.getElementById("fwdbutton").style.display = "none";
     }
@@ -369,4 +373,8 @@ imagedata[5].onchange = function(){
 imagedata[6].onchange = function(){
     currentJSON.svgheight = parseFloat(this.value);
     redraw();
+}
+
+if(exturl){
+    document.getElementById("editmodebutton").click();
 }
