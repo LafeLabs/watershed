@@ -6,7 +6,7 @@
     },
     "imgurl": "https://i.imgur.com/fAu4RVG.png",
     "plotparams": {
-        "G": 1.8499999999999996,
+        "G": 1.8518499999999993,
         "g": 0.0001,
         "plotwidth": 400,
         "plotheight": 260,

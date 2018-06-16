@@ -18,6 +18,9 @@ function drawmarker(){
      ctx.lineTo(x + markersize,y);
      ctx.stroke();
     
+    currentSVG += "    <line x1=\""+Math.round(x).toString()+"\" y1=\""+Math.round(y - markersize).toString()+"\" x2=\""+Math.round(x).toString()+"\" y2=\""+ Math.round(y + markersize).toString()+"\" style=\"stroke:" + currentStroke + ";stroke-width:2\" />\n"
+    
+    currentSVG += "    <line x1=\""+Math.round(x - markersize).toString()+"\" y1=\""+Math.round(y).toString()+"\" x2=\""+Math.round(x + markersize).toString()+"\" y2=\""+ Math.round(y).toString()+"\" style=\"stroke:" + currentStroke + ";stroke-width:2\" />\n"
 }
 
 function YofX(){
