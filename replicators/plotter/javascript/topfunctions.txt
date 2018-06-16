@@ -1,4 +1,6 @@
 
+
+
 function xcothx(inputFloat){
     if(inputFloat != 0){
         return inputFloat/Math.tanh(inputFloat);
@@ -127,3 +129,5 @@ function plotfunction(){
     
 }
 
+   
+   

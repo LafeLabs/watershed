@@ -46,6 +46,24 @@ for(var param in funcparams){
 
 document.getElementById("eqtext").value = document.getElementById("shadowequation").innerHTML;
 
+//save equation in html/equation.txt
+currentFile = "html/equation.txt"
+data = encodeURIComponent(document.getElementById("shadowequation").innerHTML);
+var httpc = new XMLHttpRequest();
+var url = "filesaver.php";        
+httpc.open("POST", url, true);
+httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+
+//save equation in javascript/topfunctions.txt
+currentFile = "javascript/topfunctions.txt"
+data = encodeURIComponent(document.getElementById("topfunctions").innerText);
+var httpc = new XMLHttpRequest();
+var url = "filesaver.php";        
+httpc.open("POST", url, true);
+httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+
 if(document.getElementById("imgurldata").innerHTML.length > 4){
     document.getElementById("imgurlinput").value = document.getElementById("imgurldata").innerHTML;
     document.getElementById("mainImage").src = document.getElementById("imgurldata").innerHTML;
