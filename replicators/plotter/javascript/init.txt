@@ -3,6 +3,7 @@ constants = currentjson.constants;
 plotparams = currentjson.plotparams;
 funcparams = currentjson.funcparams;
 
+plotdata  = JSON.parse(document.getElementById("plotdatadiv").innerHTML);
 
 for(var param in plotparams){
     var newtr = document.createElement("TR");

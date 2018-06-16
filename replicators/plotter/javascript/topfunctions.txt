@@ -8,6 +8,17 @@ function xcothx(inputFloat){
     }
 }
 
+function drawmarker(){
+     ctx.beginPath();
+     var markersize = 5;
+     ctx.moveTo(x,y - markersize);
+     ctx.lineTo(x,y + markersize);
+     ctx.stroke();
+     ctx.moveTo(x - markersize,y);
+     ctx.lineTo(x + markersize,y);
+     ctx.stroke();
+    
+}
 
 function YofX(){
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
@@ -70,7 +81,6 @@ function plotfunction(){
 
 
     /*plot second function:*/
-
     currentStroke = "black";
     ctx.strokeStyle = currentStroke;
     ctx.lineWidth = currentLineWidth;
@@ -89,7 +99,28 @@ function plotfunction(){
     }
     ctx.stroke();
     currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"" + currentLineWidth.toString() + "\" fill = \"" + "none" + "\" "+"/>";
-/*second function finished here*/    
-}
+    /*second function finished here*/    
 
+    /*plot the markers of the data*/    
+
+    plotdelta = plotparams.plotwidth/plotdata.length;    
+    
+    currentStroke = "black";
+    ctx.strokeStyle = currentStroke;
+    ctx.lineWidth = currentLineWidth;
+
+    for(var index = 0;index < plotdata.length;index++){
+        x = 0.5*plotdelta + index*plotdelta;
+        Y = plotdata[index];
+        y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
+        drawmarker();
+
+    }
+
+
+
+    /*end of plot the markers of the data*/    
+
+    
+}
 

@@ -29,6 +29,10 @@ else{
 
 </head>
 <body>
+<div id = "plotdatadiv" style = "display:none;"><?php
+    echo file_get_contents("json/plotdata.txt");
+?></div>
+    
 <div id = "jsondatadiv" style = "display:none;"><?php
 
 if(isset($_GET['url'])){
