@@ -9,6 +9,7 @@
 "javascript/topfunctions.txt",
 "json/currentjson.txt",
 "json/dna.txt",
+"json/plotdata.txt",
 "php/creator.txt",
 "php/dnagenerator.txt",
 "php/editor.txt",
