@@ -1,22 +1,16 @@
 {
-    "constants": {
-        "e": 1.6e-19,
-        "k": 1.38065e-23,
-        "h": 6.63e-34
-    },
-    "imgurl": "https://i.imgur.com/fAu4RVG.png",
+    "constants": {},
+    "imgurl": "http://res.cloudinary.com/geometron/image/upload/v1529154797/ARL2yf1_sgigkc.jpg",
     "plotparams": {
-        "G": 1.8518499999999993,
-        "g": 0.0001,
-        "plotwidth": 400,
-        "plotheight": 260,
-        "x0": 204,
-        "y0": 250
+        "G": 210,
+        "g": 0.0045,
+        "plotwidth": 600,
+        "plotheight": 400,
+        "x0": 304,
+        "y0": 439
     },
     "funcparams": {
-        "T": 10,
-        "TN": 30,
-        "fGHz": 6,
+        "A": 1,
         "X0": 0,
         "Y0": 0
     }

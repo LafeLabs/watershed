@@ -1,53 +1,24 @@
 
 
 
-function xcothx(inputFloat){
-    if(inputFloat != 0){
-        return inputFloat/Math.tanh(inputFloat);
-    }
-    else{
-        return 1;
-    }
-}
 
-function drawmarker(){
-     ctx.beginPath();
-     var markersize = 5;
-     ctx.moveTo(x,y - markersize);
-     ctx.lineTo(x,y + markersize);
-     ctx.stroke();
-     ctx.moveTo(x - markersize,y);
-     ctx.lineTo(x + markersize,y);
-     ctx.stroke();
-    
-    currentSVG += "    <line x1=\""+Math.round(x).toString()+"\" y1=\""+Math.round(y - markersize).toString()+"\" x2=\""+Math.round(x).toString()+"\" y2=\""+ Math.round(y + markersize).toString()+"\" style=\"stroke:" + currentStroke + ";stroke-width:2\" />\n"
-    
-    currentSVG += "    <line x1=\""+Math.round(x - markersize).toString()+"\" y1=\""+Math.round(y).toString()+"\" x2=\""+Math.round(x + markersize).toString()+"\" y2=\""+ Math.round(y).toString()+"\" style=\"stroke:" + currentStroke + ";stroke-width:2\" />\n"
-}
+
+
+
 
 function YofX(){
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
-    Y = funcparams.TN + 0.5*funcparams.T*xcothx( (constants.e*X + constants.h*funcparams.fGHz*1e9)/(2*constants.k*funcparams.T) ) + 0.5*funcparams.T*xcothx( (constants.e*X - constants.h*funcparams.fGHz*1e9)/(2*constants.k*funcparams.T));
+    Y = Math.cosh(X);
     y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
 }
-
-function YofX2(){
-    X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
-    Y = funcparams.TN +  Math.abs((constants.e*X)/(2*constants.k));
-    y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
-}
-/*add more of these functions to add more curves or plots*/
 
 
 constants = {
-    "e":1.6e-19,   //Electron Charge in coulombs
-    "k":1.38065e-23,  //Boltzman constant in J/K
-    "h":6.63e-34 // Plank constant in J*s
 }
 
 plotparams = {
-    "G":1,//1 kelvin = 1 pixel
-    "g":1e-4,//20 mV equals 200 pixels
+    "G":200,//1 unit = 10 pixel
+    "g":0.008,//1 unit equals 10 pixels
     "plotwidth":400,
     "plotheight":400,
     "x0":200,
@@ -55,17 +26,15 @@ plotparams = {
 }
 
 funcparams = {
-    "T":77,
-    "TN":30,
-    "fGHz":6,
+    "A":1,
     "X0":0,
     "Y0":0
 }
 
 function plotfunction(){
     /*plot one function:*/
-    currentStroke = "black";
-    currentLineWidth = 2;
+    currentStroke = "red";
+    currentLineWidth = 4;
     ctx.strokeStyle = currentStroke;
     ctx.lineWidth = currentLineWidth;
     ctx.beginPath();	
@@ -84,50 +53,76 @@ function plotfunction(){
     currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"" + currentLineWidth.toString() + "\" fill = \"" + "none" + "\" "+"/>";
     /*finish plot one function*/
 
-
-    /*plot second function:*/
-    currentStroke = "black";
-    ctx.strokeStyle = currentStroke;
-    ctx.lineWidth = currentLineWidth;
     
-    ctx.beginPath();	
-    x = 0;
-    YofX2();
-    currentSVG += "	<path d = \"M";
-    currentSVG += Math.round(x).toString() + " ";
-    currentSVG += Math.round(y).toString() + " ";
-    for(x = 1;x < plotparams.plotwidth;x++){
-        ctx.moveTo(x-1,y);
-        YofX2();
-        ctx.lineTo(x,y);
-        currentSVG += "L" + x + " " + y + " ";
-    }
-    ctx.stroke();
-    currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"" + currentLineWidth.toString() + "\" fill = \"" + "none" + "\" "+"/>";
-    /*second function finished here*/    
-
-    /*plot the markers of the data*/    
-
-    plotdelta = plotparams.plotwidth/plotdata.length;    
     
-    currentStroke = "black";
-    ctx.strokeStyle = currentStroke;
-    ctx.lineWidth = currentLineWidth;
-
-    for(var index = 0;index < plotdata.length;index++){
-        x = 0.5*plotdelta + index*plotdelta;
-        Y = plotdata[index];
-        y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
-        drawmarker();
-
-    }
-
-
-
-    /*end of plot the markers of the data*/    
-
     
 }
 
+
+   
+
+constants = {}
+plotparams = {
+    "G": 210,
+    "g": 0.008,
+    "plotwidth": 400,
+    "plotheight": 400,
+    "x0": 205,
+    "y0": 425
+}
+funcparams = {
+    "A": 1,
+    "X0": 0,
+    "Y0": 0
+}
+   
+
+constants = {}
+plotparams = {
+    "G": 210,
+    "g": 0.0045,
+    "plotwidth": 600,
+    "plotheight": 400,
+    "x0": 304,
+    "y0": 439
+}
+funcparams = {
+    "A": 1,
+    "X0": 0,
+    "Y0": 0
+}   
+
+constants = {}
+plotparams = {
+    "G": 210,
+    "g": 0.0045,
+    "plotwidth": 600,
+    "plotheight": 400,
+    "x0": 304,
+    "y0": 439
+}
+funcparams = {
+    "A": 1,
+    "X0": 0,
+    "Y0": 0
+}
+   
+   
+   
+
+constants = {}
+plotparams = {
+    "G": 210,
+    "g": 0.0045,
+    "plotwidth": 600,
+    "plotheight": 400,
+    "x0": 304,
+    "y0": 439
+}
+funcparams = {
+    "A": 1,
+    "X0": 0,
+    "Y0": 0
+}
    
    
