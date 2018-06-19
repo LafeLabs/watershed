@@ -1,8 +1,8 @@
 {
-    "imgurl": "https://i.imgur.com/EXZmjo2.jpg",
-    "imgw": 157.76233005464775,
-    "imgleft": -63.939322670498626,
-    "imgtop": -108.19433412582464,
+    "imgurl": "https://res.cloudinary.com/geometron/image/upload/v1529180935/dcmap_xdlpsy.jpg",
+    "imgw": 147.00069201988492,
+    "imgleft": -65.1462766863341,
+    "imgtop": -100.8139394468731,
     "unitpixels": 3,
     "unitfeet": 555,
     "imgangle": 0,
@@ -13,22 +13,15 @@
     "marker1": "North Boundary Stone",
     "glyph1": "0341,0340,",
     "hashtag": "metamapdc",
-    "currentGlyph": "0337,0337,0337,0337,0337,0337,0333,0322,0350,0334,0310,0337,0304,0200,0336,0350,0335,0304,0332,0313,",
+    "currentGlyph": "",
     "shapes": [],
     "links": [
         {
             "url": "../",
-            "text": "other link to ../",
+            "text": "link to ../",
             "fontfeet": 2000,
-            "latlon": "38.95000,-77.01000",
-            "rotation": -5
-        },
-        {
-            "url": "../",
-            "text": "../",
-            "fontfeet": 4000,
-            "latlon": "38.90000,-76.91000",
-            "rotation": 25
+            "latlon": "38.91000,-77.05400",
+            "rotation": 0
         }
     ],
     "images": [
