@@ -67,6 +67,7 @@ function doTheThing(localCommand){
 <div id = "page">
     <a  id = "editorlink" href = "editor.php">editor.php</a>
     <a  id = "indexlink" href = "index.php">index.php</a>
+    <a  id = "glyphlink" href = "glypheditor.php">glypheditor.php</a>
 
     <canvas id="invisibleCanvas" style="display:none"></canvas>
     <canvas id="mainCanvas"></canvas>
@@ -332,68 +333,82 @@ controls[0].onchange = function(){
 
 controls[1].onkeydown = function(e) {
         charCode = e.keyCode || e.which;
+        arrowkey = false;    
         if(charCode == 010){
             doTheThing(010);
             redraw();
+            arrowkey = true;
         }
         if(charCode == 045){
             doTheThing(020);
             redraw();
+            arrowkey = true;
         }
         if(charCode == 047){
             doTheThing(021);
             redraw();
+            arrowkey = true;
         }
         if(charCode == 046){
 //        doTheThing(023);
             currentAddress++;
             currentGlyph = currentTable[currentAddress] + ",0207,";
             redraw();
+            arrowkey = true;
         }
         if(charCode == 050){
 //        doTheThing(022);
             currentAddress--;
             currentGlyph = currentTable[currentAddress] + ",0207,";
             redraw();
+            arrowkey = true;
         }    
     }
     
     controls[2].onkeydown = function(e) {
         charCode = e.keyCode || e.which;
+        arrowkey = false;
         if(charCode == 010){
             doTheThing(010);
             redraw();
+            arrowkey = true;
         }
         if(charCode == 045){
             doTheThing(020);
             redraw();
+            arrowkey = true;
         }
         if(charCode == 047){
             doTheThing(021);
             redraw();
+            arrowkey = true;
         }
     }
     
     controls[3].onkeydown = function(e) {
         charCode = e.keyCode || e.which;
+        arrowkey = false;
         if(charCode == 010){
             doTheThing(010);
             redraw();
+            arrowkey = true;
         }
         if(charCode == 045){
             doTheThing(020);
             redraw();
+            arrowkey = true;
         }
         if(charCode == 047){
             doTheThing(021);
             redraw();
+            arrowkey = true;
         }
     }
     
 controls[1].onkeypress = function(a){//action
     charCode = a.keyCode || a.which;
     console.log(a.which);
-    if(charCode != 010 && charCode != 045 && charCode != 047 && charCode != 046 && charCode != 050){
+    if(charCode != 010 && charCode != 047 && charCode != 050 && !arrowkey){
             
         if(parseInt(currentTable[charCode],8) >= 0200){
             var glyphSplit = currentGlyph.split(",");
@@ -425,7 +440,7 @@ controls[1].onkeypress = function(a){//action
     
 controls[2].onkeypress = function(a){//print
     charCode = a.keyCode || a.which;
-    if(charCode != 010 && charCode != 045 && charCode != 047 ){
+    if(charCode != 010  && charCode != 047  && !arrowkey){
         var glyphSplit = currentGlyph.split(",");
         currentGlyph = "";
         for(var index = 0;index < glyphSplit.length;index++){
@@ -450,7 +465,7 @@ controls[2].onkeypress = function(a){//print
     
 controls[3].onkeypress = function(a){//stack
     charCode = a.keyCode || a.which;    
-    if(charCode != 010 && charCode != 045 && charCode != 047){
+    if(charCode != 010 && charCode != 047  && !arrowkey){
         var glyphSplit = currentGlyph.split(",");
         currentGlyph = "";
         for(var index = 0;index < glyphSplit.length;index++){

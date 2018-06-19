@@ -30,6 +30,13 @@
      top:10px;
      z-index:2;
  }
+ #glyphlink{
+     position:absolute;
+     left:70%;
+     top:3.5em;
+     z-index:2;
+     
+ }
  #maplink{
      position:absolute;
      left:50%;
