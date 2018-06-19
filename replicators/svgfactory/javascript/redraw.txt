@@ -40,3 +40,16 @@ document.getElementById("mainImage").style.transform = "rotate(" + currentJSON.i
 
 document.getElementById("glyphspellinput").value = cleanGlyph;
 currentJSON.glyph = cleanGlyph;
+
+//un-comment the code below to make social:
+/*
+
+currentFile = "json/currentjson.txt"
+data = encodeURIComponent(JSON.stringify(currentJSON,null, "    "));
+var httpc = new XMLHttpRequest();
+var url = "filesaver.php";        
+httpc.open("POST", url, true);
+httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
+
+*/
