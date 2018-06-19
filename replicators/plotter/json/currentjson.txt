@@ -1,16 +1,18 @@
 {
     "constants": {},
-    "imgurl": "http://res.cloudinary.com/geometron/image/upload/v1529154797/ARL2yf1_sgigkc.jpg",
+    "imgurl": "",
     "plotparams": {
-        "G": 210,
-        "g": 0.0045,
+        "G": 177.15610000000012,
+        "g": 0.017985878990921366,
+        "duration": 1883.0570260326017,
         "plotwidth": 600,
         "plotheight": 400,
-        "x0": 304,
-        "y0": 439
+        "x0": 483.1530000000002,
+        "y0": 200
     },
     "funcparams": {
-        "A": 1,
+        "tau": 7.814802722886543,
+        "T": 10,
         "X0": 0,
         "Y0": 0
     }

@@ -1,39 +1,52 @@
-
-
-
-
-
-
-
-
 function YofX(){
     X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
-    Y = Math.cosh(X);
+    Y = funcparams.a*X*X*X + funcparams.b*X*X + funcparams.c*X + funcparams.d;
     y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
 }
 
 
-constants = {
+function YofX2(){
+    X = plotparams.g*(x - plotparams.x0) - funcparams.X0;
+    Y = funcparams.b*X*X + funcparams.c*X + funcparams.d;
+    y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
 }
 
-plotparams = {
-    "G":200,//1 unit = 10 pixel
-    "g":0.008,//1 unit equals 10 pixels
-    "plotwidth":400,
-    "plotheight":400,
-    "x0":200,
-    "y0":400
+function XYofT(){
+    T = plotparams.g*t;
+    X = Math.exp(-T/funcparams.tau)*Math.cos(2*Math.PI*T/funcparams.T);
+    Y = Math.exp(-T/funcparams.tau)*Math.sin(2*Math.PI*T/funcparams.T);
+    y = plotparams.y0 - plotparams.G*(Y - funcparams.Y0);
+    x = plotparams.x0 - plotparams.G*(X - funcparams.X0);    
 }
 
-funcparams = {
-    "A":1,
-    "X0":0,
-    "Y0":0
-}
 
 function plotfunction(){
-    /*plot one function:*/
-    currentStroke = "red";
+
+
+    currentStroke = "blue";
+    currentLineWidth = 4;
+    ctx.strokeStyle = currentStroke;
+    ctx.lineWidth = currentLineWidth;
+    ctx.beginPath();	
+    x = 0;
+    y = 0;
+    t= 0;
+    XYofT();
+    currentSVG += "	<path d = \"M";
+    currentSVG += Math.round(x).toString() + " ";
+    currentSVG += Math.round(y).toString() + " ";
+    for(t = 1;t < plotparams.duration;t++){
+        ctx.moveTo(x,y);
+        XYofT();
+        ctx.lineTo(x,y);
+        currentSVG += "L" + x + " " + y + " ";
+    }
+    ctx.stroke();
+    currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"" + currentLineWidth.toString() + "\" fill = \"" + "none" + "\" "+"/>";
+
+
+    /*plot one function:
+    currentStroke = "blue";
     currentLineWidth = 4;
     ctx.strokeStyle = currentStroke;
     ctx.lineWidth = currentLineWidth;
@@ -52,77 +65,12 @@ function plotfunction(){
     ctx.stroke();
     currentSVG += "\""+ " stroke = \"" + currentStroke + "\" stroke-width = \"" + currentLineWidth.toString() + "\" fill = \"" + "none" + "\" "+"/>";
     /*finish plot one function*/
-
     
-    
-    
+
 }
 
 
    
-
-constants = {}
-plotparams = {
-    "G": 210,
-    "g": 0.008,
-    "plotwidth": 400,
-    "plotheight": 400,
-    "x0": 205,
-    "y0": 425
-}
-funcparams = {
-    "A": 1,
-    "X0": 0,
-    "Y0": 0
-}
    
-
-constants = {}
-plotparams = {
-    "G": 210,
-    "g": 0.0045,
-    "plotwidth": 600,
-    "plotheight": 400,
-    "x0": 304,
-    "y0": 439
-}
-funcparams = {
-    "A": 1,
-    "X0": 0,
-    "Y0": 0
-}   
-
-constants = {}
-plotparams = {
-    "G": 210,
-    "g": 0.0045,
-    "plotwidth": 600,
-    "plotheight": 400,
-    "x0": 304,
-    "y0": 439
-}
-funcparams = {
-    "A": 1,
-    "X0": 0,
-    "Y0": 0
-}
-   
-   
-   
-
-constants = {}
-plotparams = {
-    "G": 210,
-    "g": 0.0045,
-    "plotwidth": 600,
-    "plotheight": 400,
-    "x0": 304,
-    "y0": 439
-}
-funcparams = {
-    "A": 1,
-    "X0": 0,
-    "Y0": 0
-}
-   
+  
    

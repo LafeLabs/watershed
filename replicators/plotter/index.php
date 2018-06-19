@@ -4,10 +4,24 @@
 <title>Function Plotter</title>
 <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
+
+EVERYTHING IS PHYSICAL
+EVERYTHING IS FRACTAL
+EVERYTHING IS RECURSIVE
+NO MONEY
+NO PROPERTY
+NO MINING
+EGO DEATH:
+    LOOK TO THE INSECTS
+    LOOK TO THE FUNGI
+    LANGUAGE IS HOW THE MIND PARSES REALITY
+
 -->
 
-<script id = "topfunctions">
-<?php
+<!--Stop Google:-->
+<META NAME="robots" CONTENT="noindex,nofollow">
+
+<script id = "topfunctions"><?php
 if(isset($_GET['url'])){
     $urlfilename = $_GET['url'];
     $svgcode = file_get_contents($_GET['url']);
@@ -19,8 +33,7 @@ else{
     $data = file_get_contents("javascript/topfunctions.txt");
     echo $data;
 }
-?>   
-</script>
+?></script>
 
 <?php
     $data = file_get_contents("javascript/jslibrary.txt");
@@ -49,7 +62,7 @@ else{
 ?></div>
 
 <div id = "page">
-<a id = "editorlink" href = "editor.php">editor.php</a>
+<a id = "editorlink" href = "equationeditor.php">equationeditor.php</a>
 <a id  = "uplink" href = "../">../</a>
 <a id  = "svgindexlink" href = "svg/index.html">SVG Plots</a>
 
