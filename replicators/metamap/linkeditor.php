@@ -469,7 +469,6 @@ document.getElementById("actioninput").onkeydown = function(a){
                 bottom:30%;
                 width:1em;
                 font-size:20px;
-                
             }
             #textIO{
                 font-family:courier;
