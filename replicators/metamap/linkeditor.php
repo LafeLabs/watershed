@@ -33,7 +33,7 @@ function latlon2xy(latlonin) {
     return deltax.toString() + "," + deltay.toString();
 }
 </script>
-    </head>
+</head>
     <body>
         <div id = "datadiv" style = "display:none">
             <?php
@@ -129,6 +129,8 @@ function latlon2xy(latlonin) {
                     document.getElementById("page").appendChild(newa);
                 }
                 links = document.getElementsByClassName("links");
+                document.getElementById("actioninput").select();
+
                 
             }
             function redraw(){
@@ -408,6 +410,52 @@ document.getElementById("textIO").onkeyup = function(){
 }
 
 
+buttonindex = 0;
+highlightcolor = "green";
+buttons[buttonindex].style.backgroundColor = highlightcolor;
+
+
+document.getElementById("actioninput").onkeydown = function(a){
+    charCode = a.keyCode || a.which;
+    console.log(charCode);
+    if(a.key == " "){
+        buttons[buttonindex].click();
+    }
+    if(a.key == "f" || charCode == 047){
+        buttons[buttonindex].style.backgroundColor = "transparent";
+        buttonindex++;
+        if(buttonindex > buttons.length - 1){
+            buttonindex = 0;
+        }
+        buttons[buttonindex].style.backgroundColor = highlightcolor;
+    }
+    if(a.key == "d" || charCode == 045){
+        buttons[buttonindex].style.backgroundColor = "transparent";
+        buttonindex--;
+        if(buttonindex < 0){
+            buttonindex = buttons.length - 1;
+        }
+        buttons[buttonindex].style.backgroundColor = highlightcolor;
+    }
+    if(a.key == "s" || charCode == 050){
+        buttons[buttonindex].style.backgroundColor = "transparent";
+        buttonindex += 4;
+        if(buttonindex > buttons.length - 1){
+            buttonindex -= 24;
+        }
+        buttons[buttonindex].style.backgroundColor = highlightcolor;
+    }
+    if(a.key == "a" || charCode == 046){
+        buttons[buttonindex].style.backgroundColor = "transparent";
+        buttonindex -= 4;
+        if(buttonindex < 0){
+            buttonindex += 24;
+        }
+        buttons[buttonindex].style.backgroundColor = highlightcolor;
+    }
+
+    document.getElementById("actioninput").value = "";
+}
 
         </script>
         <style>

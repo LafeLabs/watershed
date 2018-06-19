@@ -20,15 +20,15 @@
             "url": "../",
             "text": "link to ../",
             "fontfeet": 2000,
-            "latlon": "38.91000,-77.05400",
+            "latlon": "38.91000,-77.04120",
             "rotation": 0
         }
     ],
     "images": [
         {
             "url": "https://i.imgur.com/DAdeSyk.jpg",
-            "latlon": "38.95050,-77.02000",
-            "unitfeet": 6666.666666666667
+            "latlon": "38.93650,-77.02000",
+            "unitfeet": 2962.962962962963
         }
     ],
     "avatar": {
