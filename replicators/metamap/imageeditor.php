@@ -55,6 +55,9 @@ function latlon2xy(latlonin) {
             <tr>
                 <td>latlon:</td><td><input/></td>
             </tr>
+            <tr>
+                <td>rotation:</td><td><input/></td>
+            </tr>
         </table>
         <textarea id = "textIO"></textarea>        
         <img id = "mainImage"/>
@@ -97,6 +100,14 @@ function latlon2xy(latlonin) {
                 <td class = "button">25' &#x2b60</td>
                 <td class = "button">25' &#x2b62</td>
             </tr>
+
+            <tr>
+                <td class = "button">&#x2b6f</td>
+                <td class = "button">&#x2b6e</td>
+                <td class = "button">0</td>
+                <td class = "button">0</td>
+            </tr>
+
         </table>
             <input id = "actioninput"/>
 
@@ -133,7 +144,9 @@ function latlon2xy(latlonin) {
                 inputs[0].value = currentJSON.images[imageIndex].url;
                 inputs[1].value = currentJSON.images[imageIndex].unitfeet;
                 inputs[2].value = currentJSON.images[imageIndex].latlon;
-                
+                if(currentJSON.images[imageIndex].rotation != undefined){
+                    inputs[3].value = currentJSON.images[imageIndex].rotation;
+                }    
 
                 document.getElementById("mainImage").style.width = (currentJSON.imgw*unit).toString()  + "px";
                 document.getElementById("mainImage").style.left = (x0 + currentJSON.imgleft*unit).toString()  + "px";
@@ -148,6 +161,10 @@ function latlon2xy(latlonin) {
                     imgs[index].style.top = (y0 - unit*yvar).toString() + "px";
                     imgs[index].style.width = (unit*currentJSON.images[index].unitfeet/currentJSON.unitfeet).toString() + "px";
                     imgs[index].style.border = "none";
+                    if(currentJSON.images[index].rotation != undefined){
+                        imgs[index].style.transform = "rotate(" + currentJSON.images[index].rotation.toString() + "deg)";
+                    }    
+                    
                 }
                 
                 imgs[imageIndex].style.border = "solid";
@@ -177,6 +194,10 @@ function latlon2xy(latlonin) {
             }
             inputs[2].onchange = function(){
                     currentJSON.images[imageIndex].latlon = this.value;
+                    redraw2();
+            }
+            inputs[3].onchange = function(){
+                    currentJSON.images[imageIndex].rotation = parseFloat(this.value);
                     redraw2();
             }
 
@@ -378,6 +399,15 @@ function latlon2xy(latlonin) {
                 redraw2();
             }
 
+            buttons[24].onclick = function(){
+                currentJSON.images[imageIndex].rotation -= 5;
+                redraw2();
+            }
+            buttons[25].onclick = function(){
+                currentJSON.images[imageIndex].rotation += 5;
+                redraw2();
+            }
+
             
 document.getElementById("textIO").onkeyup = function(){
     currentJSON.images = JSON.parse(document.getElementById("textIO").value);
@@ -423,7 +453,7 @@ document.getElementById("actioninput").onkeydown = function(a){
         buttons[buttonindex].style.backgroundColor = "transparent";
         buttonindex += 4;
         if(buttonindex > buttons.length - 1){
-            buttonindex -= 24;
+            buttonindex -= 28;
         }
         buttons[buttonindex].style.backgroundColor = highlightcolor;
     }
@@ -431,7 +461,7 @@ document.getElementById("actioninput").onkeydown = function(a){
         buttons[buttonindex].style.backgroundColor = "transparent";
         buttonindex -= 4;
         if(buttonindex < 0){
-            buttonindex += 24;
+            buttonindex += 28;
         }
         buttons[buttonindex].style.backgroundColor = highlightcolor;
     }
@@ -440,89 +470,84 @@ document.getElementById("actioninput").onkeydown = function(a){
 }
 
 
-
-        </script>
-        <style>
-            body{
-                font-family:courier;
-                font-size:18px;
-            }
-            #textIO{
-                font-family:courier;
-                font-size:18px;
-                color:#00ff00;
-                background-color:black;
-                position:absolute;
-                left:80%;
-                right:0px;
-                width:50%;
-                height:80%;
-            }
-            #indexLink{
-                position:absolute;
-                left:50%;
-                top:0em;
-                z-index:2;
-            }
-            #editorLink{
-                position:absolute;
-                left:50%;
-                top:1em;
-                z-index:2;
-            }
-            .button{
-                cursor:pointer;
-            }
-            .button:hover{
-                background-color:green;
-                
-            }
-            .button:active{
-                background-color:yellow;
-            }
-            #buttontable{
-                position:absolute;
-                bottom:5px;
-                left:5px;
-                border-collapse:collapse;
-            }
-            #buttontable td{
-                border:solid;
-                text-align:center;
-            }
-            #mainImage{
-                position:absolute;
-                z-index:-2;
-            }
-#page{
-    width:100%;
-    height:100%;
-    position:absolute;
-    left:0px;
-    top:0px;
-    overflow:hidden;
-}
-            #actioninput{
-                position:absolute;
-                left:0px;
-                bottom:30%;
-                width:1em;
-                font-size:20px;
-            }
-
-.links{
-    position:absolute;
-    color:blue;
-    background-color:white;
-    z-index:1;
-    font-family:"Arial Black", Gadget, sans-serif;
-
-}
-.imgs{
-    position:absolute;
-    z-index:-1;
-}
-
+</script>
+<style>
+    body{
+        font-family:courier;
+        font-size:18px;
+    }
+    #textIO{
+        font-family:courier;
+        font-size:18px;
+        color:#00ff00;
+        background-color:black;
+        position:absolute;
+        left:80%;
+        right:0px;
+        width:50%;
+        height:80%;
+    }
+    #indexLink{
+        position:absolute;
+        left:50%;
+        top:0em;
+        z-index:2;
+    }
+    #editorLink{
+        position:absolute;
+        left:50%;
+        top:1em;
+        z-index:2;
+    }
+    .button{
+        cursor:pointer;
+    }
+    .button:hover{
+        background-color:green;
+    }
+    .button:active{
+        background-color:yellow;
+    }
+    #buttontable{
+        position:absolute;
+        bottom:5px;
+        left:5px;
+        border-collapse:collapse;
+    }
+    #buttontable td{
+        border:solid;
+        text-align:center;
+    }
+    #mainImage{
+        position:absolute;
+        z-index:-2;
+    }
+    #page{
+        width:100%;
+        height:100%;
+        position:absolute;
+        left:0px;
+        top:0px;
+        overflow:hidden;
+    }
+    #actioninput{
+        position:absolute;
+        left:0px;
+        bottom:50%;
+        width:1em;
+        font-size:20px;
+    }
+    .links{
+        position:absolute;
+        color:blue;
+        background-color:white;
+        z-index:1;
+        font-family:"Arial Black", Gadget, sans-serif;
+    }
+    .imgs{
+        position:absolute;
+        z-index:-1;
+    }
 
         </style>
     </body>

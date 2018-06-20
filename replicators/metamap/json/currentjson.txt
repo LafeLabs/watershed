@@ -27,8 +27,15 @@
     "images": [
         {
             "url": "https://i.imgur.com/DAdeSyk.jpg",
-            "latlon": "38.91250,-76.96900",
-            "unitfeet": 6666.666666666666
+            "latlon": "38.93750,-77.02490",
+            "unitfeet": 2962.962962962963,
+            "rotation": 320
+        },
+        {
+            "url": "https://i.imgur.com/DAdeSyk.jpg",
+            "latlon": "38.91750,-76.99490",
+            "unitfeet": 4444.444444444444,
+            "rotation": 0
         }
     ],
     "avatar": {

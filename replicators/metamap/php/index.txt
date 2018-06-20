@@ -214,6 +214,9 @@ function redraw(){
         var yvar = parseFloat(xy.split(",")[1]);
         imgs[index].style.top = (y0 - unit*yvar).toString() + "px";
         imgs[index].style.width = (unit*currentJSON.images[index].unitfeet/currentJSON.unitfeet).toString() + "px";
+        if(currentJSON.images[index].rotation != undefined){
+            imgs[index].style.transform = "rotate(" + currentJSON.images[index].rotation.toString() + "deg)";
+        }    
     }
 }
 
