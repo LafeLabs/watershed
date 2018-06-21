@@ -13,6 +13,7 @@
 "php/creator.txt",
 "php/dnagenerator.txt",
 "php/editor.txt",
+"php/equationeditor.txt",
 "php/feedsaver.txt",
 "php/fileloader.txt",
 "php/filesaver.txt",
