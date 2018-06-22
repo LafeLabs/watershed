@@ -27,11 +27,18 @@ if(document.getElementById("extdatadiv").innerHTML.length > 10){
     exturlset = true;
 }
 
+
 pages = document.getElementById("datadiv").getElementsByClassName("page");
 shadowpages = document.getElementById("shadowdatadiv").getElementsByClassName("page");
 
 pageIndex = 0;
 boxIndex = 0;
+
+if(document.getElementById("pageNumberDiv").innerHTML.length > 0){
+   pageIndex = parseInt(document.getElementById("pageNumberDiv").innerHTML);
+   exturlset = true;
+}
+
 
 boxes = pages[pageIndex].getElementsByClassName("box");
 shadowboxes = shadowpages[pageIndex].getElementsByClassName("box");

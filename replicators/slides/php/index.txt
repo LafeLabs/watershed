@@ -74,6 +74,12 @@ if(isset($_GET['url'])){
     $urlfilename = $_GET['url'];
     echo file_get_contents($_GET['url']);
 }?></div>
+<div id = "pageNumberDiv" style = "display:none"><?php
+ if(isset($_GET['page'])){
+    $pagenumber = $_GET['page'];
+    echo $pagenumber;
+}   
+?></div>
 <div id = "mainpage">
 <?php
     echo file_get_contents("html/page.txt");

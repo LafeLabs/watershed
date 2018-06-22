@@ -1,19 +1,17 @@
-<!--<page>-->
-<!--*********************************Title Slide*****************-->
 <div class="page">
     <div class="pagejson">{
     "x0rel": -0.042488783943327744,
     "y0rel": 0,
     "unitrel": 0.5644739300537771
 }</div>
-<!--<box>-->
+
 <div class="box"><div class="glyphdata">0337,0337,0330,0332,0332,0336,0336,</div><div class="content">
+
 <p>
     <a href="../">../</a>
 </p>
 </div></div>
-<!--</box>-->
-<!--<box>-->
+<!--box break-->
 <div class="box"><div class="glyphdata">0330,0330,0336,0330,0337,0337,0337,0337,</div><div class="content">
     <h2 style="font-size:3em">Title Box</h2>
 </div></div>
@@ -28,66 +26,85 @@
 <p>
     Venue
 </p></div></div>
-<!--</box>-->
-<!--<box>-->
+<!--box break-->
 <div class="box"><div class="glyphdata">0337,0337,0330,0332,0336,0330,0332,0332,0332,</div>
         <div class="content"><h2 style="font-size:3em"><img src="https://i.imgur.com/jkOdWYl.jpg"></h2>
-</div></div>
-<!--</box>-->
-<!--<box>-->
+        </div>
+    </div>
+<!--box break-->
 <div class="box"><div class="glyphdata">0330,0330,0330,0333,0333,0333,0333,0330,0330,0333,0330,0330,0333,0330,0330,0332,0333,0332,0331,0333,0333,0337,0337,0337,0331,</div><div class="content">
             <img src="https://i.imgur.com/UAMobgk.jpg">
+        </div>
 </div></div>
-<!--</box>-->
-</div>
-<!--</page>-->
-
-<!--<page>-->
-<!--********************Meme Slide*************************-->
+<!--page break-->
 <div class="page">
     <div class="pagejson">{
-    "x0rel": 0,
-    "y0rel": 0,
-    "unitrel": 1
+    "x0rel": -1.0025062656641612,
+    "y0rel": 1.005504629023485,
+    "unitrel": 2.143588810000001
 }</div>
 
-<!--<box>-->
-<div class="box"><div class="glyphdata">0332,0337,0337,0334,0337,</div><div class="content">
-<img src="https://i.imgur.com/UAMobgk.jpg">
-</div></div>
-<!--</box>-->
-
-<!--<box>-->
-<div class="box"><div class="glyphdata">0330,0330,0337,0337,</div><div class="content">
-    <h2 style="color:red;font-size:3em">Meme Title</h2>
-</div></div>
-<!--</box>-->
-
-<!--<box>-->
-<div class="box"><div class="glyphdata">0337,0337,</div><div class="content"><p style="color:red;font-size:1.5em">Meme Text</p>
-</div></div>
-<!--</box>-->
-</div>
-<!--</page>-->
-
-
-<!--<page>-->
-<!--******************************Bullet Points Slide**************************-->
-<div class="page">
-    <div class="pagejson">{
-    "x0rel": 0,
-    "y0rel": 0,
-    "unitrel": 1
-}</div>
-    
-    <div class="box"><div class="glyphdata">0336,0331,0337,0337,0337,0337,</div>
-        <div class="content"><h1>Slide Title</h1>
+    <div class="box"><div class="glyphdata">0336,0336,0330,0341,</div>
+        <div class="content">$\alpha$</div>
+    </div>
+    <div class="box"><div class="glyphdata">0333,0336,0330,0332,0333,0336,0330,0330,0332,0331,0333,0330,0333,0306,0334,0304,0337,0337,0310,0337,0306,0335,0335,</div>
+        <div class="content"><img src="http://www.metamapdc.org/lafe/svgfactory/svg/svg1527824798.svg"></div>
+    </div>
+    <div class="box"><div class="glyphdata">0332,0333,0333,0333,0336,0336,0330,0341,</div>
+        <div class="content">$\gamma$       </div>
+    </div>
+    <div class="box"><div class="glyphdata">0336,0336,0330,0333,0330,0333,0330,0333,0330,0333,0330,0333,0330,0330,0330,0332,0341,</div>
+        <div class="content">$\beta$</div>
+    </div>
+        <div class="box"><div class="glyphdata">0333,0336,0330,0332,0336,0330,0330,0332,0331,0333,0330,0333,0306,0334,0304,0337,0337,0310,0337,</div>
+        <div class="content"><img src="http://www.metamapdc.org/lafe/svgfactory/svg/svg1527824798.svg"></div>
+    </div>
+    <div class="box"><div class="glyphdata">0333,0310,0337,0335,0335,0313,0336,0336,0331,0336,0331,0336,0336,0333,0337,0337,0337,0337,0337,</div>
+        <div class="content"><img src="http://www.metamapdc.org/lafe/svgfactory/svg/svg1527824798.svg">
     </div></div>
-    
+
+    <div class="box"><div class="glyphdata">0330,0333,0337,0337,</div><div class="content">
+    <h2 style="font-size:3em">Graph Theory Template</h2>
+    </div></div>
+
+
+
+</div>
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 0.8264462809917353
+}</div>
+    <div class="box"><div class="glyphdata">0330,0330,0333,0330,0333,0331,0330,0331,0332,0332,0332,0332,0332,0332,0332,0330,0333,0333,0333,0333,0333,0337,</div>
+        <div class="content">Noise Curve
+        </div>
+    </div>
+    <div class="box"><div class="glyphdata">0331,0337,0337,0337,</div>
+        <div class="content"><img src="https://i.imgur.com/fAu4RVG.png"></div>
+    </div>
+    <div class="box"><div class="glyphdata">0330,0332,0332,0330,0332,0330,0332,0333,0331,0332,0330,0330,0337,0331,0332,0333,0333,0333,</div>
+        <div class="content">$$P = 2eI\coth{\frac{eV}{2kT}}$$ </div>
+    </div>
+    <div class="box"><div class="glyphdata">0331,0333,0333,0331,0336,0336,0330,0333,0337,0330,0337,</div>
+        <div class="content">Residuals</div>
+    </div>
+</div>
+
+
+<div class="page">
+    <div class="pagejson">{
+    "x0rel": 0,
+    "y0rel": 0,
+    "unitrel": 1
+}</div>
+    <div class="box"><div class="glyphdata">0336,0331,0337,0337,0337,0337,</div>
+        <div class="content"><h1>Slide Title</h1></div>
+    </div>
     <div class="box"><div class="glyphdata">0332,0332,0332,0332,0332,</div>
         <div class="content">
-    </div></div>
-    
+        </div>
+    </div>
     <div class="box"><div class="glyphdata">0331,0337,0337,</div>
         <div class="content"><ul style="text-align:left;font-size:2em">
     <li>Bullet One</li>
@@ -95,17 +112,15 @@
     <li>Bullet Three</li>
     <li>Bullet Four</li>
 </ul>
-    </div></div>
-    
+        </div>
+    </div>
     <div class="box"><div class="glyphdata">0330,0330,</div>
-    <div class="content"><h3>Subtitle</h3></div></div>
-        
+        <div class="content"><h3>Subtitle</h3></div>
+    </div>
 </div>
-<!--</page>-->
+
 
 <!--<page>-->
-<!--********************Quad Chart Slide*************************-->
-
 <div class="page">
     <div class="pagejson">{
     "x0rel": 0,
@@ -156,171 +171,54 @@
 
 </div>
 <!--</page>-->
-<!--<page>-->
-<!--********************Graph Theory Slide*************************-->
-<div class="page">
-    <div class="pagejson">{
-    "x0rel": -0.6015037593984969,
-    "y0rel": 0.6616541353383459,
-    "unitrel": 0.9090909090909091
-}</div>
-
-<!--<box>-->
-<div class="box"><div class="glyphdata">0330,0337,0337,0337,</div><div class="content">
-    <h2 style="font-size:2.5em">Graph Theory Template</h2>
-</div></div>
-<!--</box>-->
-<!--<box>-->
-<div class="box"><div class="glyphdata">0331,0332,0336,0341,0337,0230,0333,0333,0333,0336,0341,0337,0335,0335,0230,0335,0335,0231,0334,0306,0335,0304,0334,0230,0333,0333,0333,0336,0341,0337,0335,0335,0230,</div><div class="content">
-
-</div></div>
-<!--</box>-->
-<!--<box>-->
-<div class="box"><div class="glyphdata">0336,0336,0336,0331,0331,0331,0332,0332,0331,0332,0331,0332,0332,0332,0332,0332,0331,0332,0330,0333,0337,0337,0337,</div><div class="content"><p style="font-size:2em">
-    $\alpha$
-</p>
-</div></div>
-<!--</box>-->
-<!--<box>-->
-<div class="box"><div class="glyphdata">0333,0333,0336,0331,0336,0336,0336,0331,0331,0332,0337,0337,0337,0337,</div><div class="content"><p style="font-size:2em;">
-$\beta$</p>
-</div></div>
-<!--</box>-->
-<!--<box>-->
-<div class="box"><div class="glyphdata">0330,0333,0330,0336,0336,0336,0332,0332,0332,0332,0332,0336,0333,0330,0337,0337,0337,0337,</div><div class="content">
-<p style="font-size:2em;">$\gamma$</p>
-</div></div>
-<!--</box>-->
-<!--<box>-->
-<div class="box"><div class="glyphdata">0333,0333,0333,0331,0336,0336,0336,0336,0330,0333,0333,0330,0333,0330,0333,0333,0330,0330,0330,0330,0333,0337,0337,0337,0337,</div><div class="content">
-<p style="font-size:2em">$\Delta$</p>
-</div></div>
-<!--</box>-->
-</div>
-<!--</page>-->
 
 <!--<page>-->
-<!--********************Process Flow Slide*************************-->
-<div class="page">
-    <div class="pagejson">{
-    "x0rel": 0,
-    "y0rel": 0.6015037593984961,
-    "unitrel": 1.1
-}</div>
-
-<!--<box>-->
-<div class="box"><div class="glyphdata">0337,0337,0337,</div><div class="content">
-    <h2 style="font-size:2.5em">Process Design Template</h2>
-</div></div>
-<!--</box>-->
-<!--<box>-->
-<div class="box"><div class="glyphdata">0332,0331,0313,0304,0223,0330,0332,0330,0332,0336,0336,0326,0350,0335,0330,0331,0333,0331,0304,0313,0224,</div><div class="content">
-
-</div></div>
-<!--</box>-->
-<!--<box>-->
-<div class="box"><div class="glyphdata">0336,0336,0336,0332,0332,0332,0331,0332,0332,0332,0331,0332,0332,0332,0332,0331,0332,0332,0332,0332,0331,0332,0330,0333,0330,0331,0332,0332,0331,0337,0337,0337,0341,</div><div class="content"><p style="font-size:1.5em">
-    Middle Node
-</p>
-</div></div>
-<!--</box>-->
-<!--<box>-->
-<div class="box"><div class="glyphdata">0333,0333,0336,0331,0336,0336,0336,0331,0331,0333,0333,0333,0330,0333,0333,0333,0333,0333,0333,0333,0333,0333,0333,0333,0333,0333,0333,0330,0333,0330,0330,0333,0337,0337,0337,0337,0241,0336,0336,0336,0336,0332,0337,0337,0337,0337,</div><div class="content"><p style="font-size:1.5em;">
-Output</p>
-</div></div>
-<!--</box>-->
-<!--<box>-->
-<div class="box"><div class="glyphdata">0330,0333,0330,0336,0336,0336,0332,0332,0332,0332,0332,0336,0333,0330,0337,0337,0337,0337,0331,0332,0332,0332,0330,0331,0200,0336,0330,0332,0337,</div><div class="content">
-<p style="font-size:1.5em;">Start</p>
-</div></div>
-<!--</box>-->
-<!--<box>-->
-<div class="box"><div class="glyphdata">0336,0336,0336,0331,0331,0331,0331,0331,0331,0331,0333,0331,0333,0337,0337,0337,0337,</div><div class="content">
-<p style="font-size:1.5em">Process B</p>
-</div></div>
-<!--</box>-->
-</div>
-<!--</page>-->
-
-<!--<page>-->
-<!--******************************Big Page of Math Slide**************************-->
 <div class="page">
     <div class="pagejson">{
     "x0rel": 0,
     "y0rel": 0,
     "unitrel": 1
 }</div>
-    
-    <div class="box"><div class="glyphdata">0336,0331,0337,0337,0337,0337,</div>
-        <div class="content"><h1>Math Slide</h1></div></div>
-    
-    <div class="box"><div class="glyphdata">0332,0332,0332,0332,0332,</div>
-        <div class="content">
-    </div></div>
-    
-    <div class="box"><div class="glyphdata">0331,0331,0337,0337,0337,</div>
-        <div class="content">$$
-E= mc^2
-$$
-$$
-\frac{-\hbar^2}{2m}\nabla^2
-\Psi + V\Psi = E\Psi
-$$
 
-$$
-x = \frac{-b\pm \sqrt{b^2-4ac}}{2a}
-$$
-<p style="font-family:schoolbook;">
-    Some discussion of the math. This is like a page from a math text, use sparingingly!
-</p>
-$$
-e^{\pi i} = -1
-$$</div></div>
-    
-    <div class="box"><div class="glyphdata">0330,0330,</div>
-    <div class="content"><h3>Subtitle</h3></div></div>
-        
+<!--<box>-->
+<div class="box"><div class="glyphdata">0330,0330,0337,0337,</div><div class="content">
+    <h2 style="font-size:3em">Title Box</h2>
+</div></div>
+<!--</box>-->
+<!--<box>-->
+<div class="box"><div class="glyphdata"></div><div class="content">
+
+</div></div>
+<!--</box>-->
+
 </div>
 <!--</page>-->
 
-
 <!--<page>-->
-<!--********************Graph Slide*************************-->
 <div class="page">
     <div class="pagejson">{
     "x0rel": 0,
     "y0rel": 0,
-    "unitrel": 0.9090909090909091
+    "unitrel": 1
 }</div>
 
 <!--<box>-->
-<div class="box"><div class="glyphdata">0337,0337,</div><div class="content">
-<img style="" src="http://www.quantumnoise.org/noisecurve/svg/svg1528719589.svg">
+<div class="box"><div class="glyphdata">0332,0337,0337,0334,0337,</div><div class="content">
+<img src="https://i.imgur.com/UAMobgk.jpg">
 </div></div>
 <!--</box>-->
 
 <!--<box>-->
-<div class="box"><div class="glyphdata">0337,0337,0337,</div><div class="content">
-    <h2 style="font-size:2.5em">Graph Slide</h2>
+<div class="box"><div class="glyphdata">0330,0330,0337,0337,</div><div class="content">
+    <h2 style="color:red;font-size:3em">Meme Title</h2>
 </div></div>
 <!--</box>-->
 
 <!--<box>-->
-<div class="box"><div class="glyphdata">0337,0337,0332,0336,0336,0336,0330,0332,0332,0332,0337,0330,0330,</div><div class="content"><p style="font-size:1.5em">
-    $$Y = G(X_0 + g(x + x_0))$$
-</p>
+<div class="box"><div class="glyphdata">0337,0337,</div><div class="content"><p style="color:red;font-size:1.5em">Meme Text</p>
 </div></div>
 <!--</box>-->
-<!--<box>-->
-<div class="box"><div class="glyphdata">0336,0336,0330,0337,0337,0331,0331,0331,0331,0337,0201,0201,0221,0331,0335,0333,0201,0221,0334,0330,0336,0336,0336,0336,0332,0332,0331,0332,0332,0332,0332,0332,0331,0331,0331,0331,0331,0332,0332,0331,0332,0332,0332,0331,0331,0331,0331,0332,0332,0331,0332,0332,0331,0331,0332,0331,0331,0333,0333,0333,0211,0337,0337,0337,0337,0337,0220,</div><div class="content">
 
-</div></div>
-<!--</box>-->
-<!--<box>-->
-<div class="box"><div class="glyphdata">0331,0333,0333,0331,0336,0336,0331,0331,0333,0333,0331,0331,0331,0332,0333,0337,0337,0337,0337,</div><div class="content">
-Noise Temperature
-</div></div>
-<!--</box>-->
 
 </div>
 <!--</page>-->
