@@ -9,13 +9,20 @@
     <tr>
         <td class = "button">SAVE DECK</td>
     </tr>    
+    <tr>
+        <td class = "button">NEW BOX</td>
+    </tr>
+    <tr>
+        <td class = "button">NEW SLIDE</td>
+    </tr>
+
 </table>
 
 <canvas id="invisibleCanvas" style="display:none"></canvas>
 <canvas id="mainCanvas"></canvas>
 <table id = "controlTable">
     <tr id = "addressline" style = "display:none">
-        <td>ADDRESS:</td><td><input/></td>
+        <td>INDEX:</td><td><input/></td>
     </tr>
     <tr>
         <td>ACTION:</td><td><input/></td>

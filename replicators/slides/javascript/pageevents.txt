@@ -9,6 +9,13 @@ buttons[0].onclick = function(){
     
 }
 
+buttons[1].onclick = function(){
+    newbox();
+    redraw();
+}
+buttons[2].onclick = function(){
+    
+}
 
 function newbox(){
 
