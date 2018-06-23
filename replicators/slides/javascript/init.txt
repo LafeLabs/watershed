@@ -73,11 +73,14 @@ editor.setValue(boxes[boxIndex].getElementsByClassName("content")[0].innerHTML);
 
 var myElement = document.getElementById('mainpage');
 
+
+//hammer code, commented out:
 // create a simple instance
 // by default, it only adds horizontal recognizers
-var mc = new Hammer(myElement);
+//var mc = new Hammer(myElement);
 
 // listen to events...
+/*
 mc.on("swiperight", function(ev) {
     pagefwd();
     redraw();
@@ -87,6 +90,7 @@ mc.on("swipeleft", function(ev) {
     pageback();
     redraw();
 });
+*/
 
 editMode = true;
 
