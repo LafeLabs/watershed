@@ -14,7 +14,56 @@ buttons[1].onclick = function(){
     redraw();
 }
 buttons[2].onclick = function(){
+    newpage();
+}
+
+function newpage(){
+
+    pageTemplate = "\n";
+    pageTemplate += "   <div class = \"pagejson\">{\n";
+    pageTemplate += "    \"x0rel\": 0,\n";
+    pageTemplate += "    \"y0rel\": 0,\n";
+    pageTemplate += "    \"unitrel\": 1\n";
+    pageTemplate += "}</div>";
+        
+    var newdiv  = document.createElement("DIV");
+    newdiv.innerHTML = pageTemplate;
+    newdiv.className = "page";
+    document.getElementById("datadiv").appendChild(newdiv);
+
+    var newdiv2  = document.createElement("DIV");
+    newdiv2.innerHTML = pageTemplate;
+    newdiv2.className = "page";
+    document.getElementById("shadowdatadiv").appendChild(newdiv2);
+    pages = document.getElementById("datadiv").getElementsByClassName("page");
+    shadowpages = document.getElementById("shadowdatadiv").getElementsByClassName("page");
+    boxIndex = 0;
+    pageIndex = pages.length - 1;
+
+    newbox();
+    boxes = pages[pageIndex].getElementsByClassName("box");
+    shadowboxes = shadowpages[pageIndex].getElementsByClassName("box");
+
+
+    cleanGlyph = boxes[boxIndex].getElementsByClassName("glyphdata")[0].innerHTML;
+    currentGlyph = cleanGlyph + "0207,";
+    editor.setValue(shadowboxes[boxIndex].getElementsByClassName("content")[0].innerHTML);
+
+    pagejson = JSON.parse(pages[pageIndex].getElementsByClassName("pagejson")[0].innerHTML);
+    unit = pagejson.unitrel*innerHeight/8;
+    x0 =  0.5*innerWidth + pagejson.x0rel*unit;
+    y0 = 0.5*innerHeight + pagejson.y0rel*unit;
     
+        for(var index = 0;index < pages.length;index++){
+        if(index != pageIndex){
+            pages[index].style.display = "none";
+        }
+        else{
+            pages[index].style.display = "block";
+        }
+    }
+
+    redraw();
 }
 
 function newbox(){

@@ -13,7 +13,7 @@
         <td class = "button">NEW BOX</td>
     </tr>
     <tr>
-        <td class = "button">NEW SLIDE</td>
+        <td class = "button">NEW PAGE</td>
     </tr>
 
 </table>
