@@ -34,6 +34,7 @@
 "php/index.txt",
 "php/latlon.txt",
 "php/linkeditor.txt",
+"php/list.txt",
 "php/loadrecentmap.txt",
 "php/mapsaver.txt",
 "php/metacreator.txt",
