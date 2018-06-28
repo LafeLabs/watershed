@@ -32,7 +32,8 @@ document.getElementById("imgurlinput").onchange = function(){
 
 
 document.getElementById("actioninput").onkeypress = function(a){
-    if(a.key == "a"){
+    console.log(a.key);
+    if(a.key == "a" || a.key == "ArrowUp"){
         paraminputs[paramIndex].style.borderWidth = "1px";
         paraminputs[paramIndex].style.borderColor = "black";
             
@@ -54,7 +55,7 @@ document.getElementById("actioninput").onkeypress = function(a){
             paraminputs[paramIndex].style.borderColor = "purple";
         }
     }
-    if(a.key == "s"){
+    if(a.key == "s" || a.key == "ArrowDown"){
         paraminputs[paramIndex].style.borderWidth = "1px";
         paraminputs[paramIndex].style.borderColor = "black";
             
@@ -76,7 +77,7 @@ document.getElementById("actioninput").onkeypress = function(a){
             paraminputs[paramIndex].style.borderColor = "purple";
         }
     }
-    if(a.key == "d"){
+    if(a.key == "d" || a.key == "ArrowLeft"){
         paramDigitIndex--;
         if(paramDigitIndex < 0){
             paramDigitIndex = 3;
@@ -95,7 +96,7 @@ document.getElementById("actioninput").onkeypress = function(a){
             paraminputs[paramIndex].style.borderColor = "purple";
         }
     }
-    if(a.key == "f"){
+    if(a.key == "f"  || a.key == "ArrowRight"){
         paramDigitIndex++;
         if(paramDigitIndex > 3){
             paramDigitIndex = 0;
@@ -115,7 +116,7 @@ document.getElementById("actioninput").onkeypress = function(a){
     }
 
 
-    if(a.key == "j"){
+    if(a.key == "j"  || a.key == "-"){
 
         if(paramIndex < plotinputs.length){
             if(paramDigitIndex == 0){
@@ -149,7 +150,7 @@ document.getElementById("actioninput").onkeypress = function(a){
         }
         redraw();
     }
-    if(a.key == "k"){
+    if(a.key == "k" || a.key == "="){
 
         if(paramIndex < plotinputs.length){
             if(paramDigitIndex == 0){
