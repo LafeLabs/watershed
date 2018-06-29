@@ -11,6 +11,8 @@
     <li><a href = "latexscroll/">latexscroll/</a></li>
     <li><a href = "plotter/">plotter/</a></li>
     <li><a href = "slides/">slides/</a></li>
+    <li>&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a</li>
+    <li><a href = "feed/">feed/</a></li>
 
 </ul>
 </p>

@@ -1,0 +1,14 @@
+#feedscroll{
+    position:absolute;
+    top:2em;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    overflow:scroll;
+    padding:1em 1em 1em 1em;
+}
+#postlink{
+    position:absolute;
+    top:0px;
+    left:1em;
+}

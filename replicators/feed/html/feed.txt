@@ -1,0 +1,12 @@
+
+<img src = ""/>
+
+<p>here is a text only post.</p>
+
+<img src = "http://www.quantumnoise.org/schematics/svg/svg1528392902.svg"/>
+
+<p>here is a schematic</p>
+<img src = "https://geometron.000webhostapp.com/graphicsfactory/seven/svg/svg1529584796.svg"/>
+<p>
+here is feed text.    old text to be deleted.
+</p>

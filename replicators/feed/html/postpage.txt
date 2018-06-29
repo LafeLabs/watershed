@@ -1,0 +1,10 @@
+<table id = "toptable">
+    <tr>
+        <td><a href = "index.php">index.php</a></td>
+        <td><a href = "editor.php">editor.php</a></td>
+        <td class = "button" id  = "publishbutton">PUBLISH</td>
+    </tr>
+</table>
+<input id = "urlinput"/>
+<img id = "mainimage"/>
+<textarea id = "textinput"></textarea>
