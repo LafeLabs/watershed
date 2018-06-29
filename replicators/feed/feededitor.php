@@ -18,7 +18,7 @@ EGO DEATH:
 <!--Stop Google:-->
 <META NAME="robots" CONTENT="noindex,nofollow">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
-<title>PHP Editor replicator</title>
+<title>Feed Editor</title>
 </head>
 <body>
 <table id = "linktable">
@@ -63,6 +63,36 @@ document.getElementById("maineditor").onkeyup = function(){
     httpc.send("data="+data+"&filename="+currentFile);//send text to filesaver.php
 }
 
+document.getElementById("savefeedbutton").onclick = function(){
+
+    httpc.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("maineditor").value = filedata;
+            }
+    };
+    
+    filedata = document.getElementById("maineditor").value;
+    httpc.open("POST", "savefeed.php", true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();
+
+}
+document.getElementById("loadfeedbutton").onclick = function(){
+
+    
+    httpc.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            filedata = this.responseText;
+            document.getElementById("maineditor").value = filedata;
+        }
+    };
+
+    httpc.open("GET", "loadfeed.php", true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send();
+
+}
+
 </script>
 <style>
 body{
@@ -82,6 +112,7 @@ textarea{
     cursor:pointer;
     border:solid;
     border-radius:0.25em;
+    text-align:center;
 }
 .button:hover{
     background-color:green;

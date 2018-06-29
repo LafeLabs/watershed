@@ -16,17 +16,12 @@ foreach($files as $value){
         }
     }
 }
-echo "<br/>Most recent save time: ".gmdate("Y-m-d H:i:s", $timestamp);
+
 $latestfilename = "feeds/feed".$latesttime.".txt";
 $outstring =  file_get_contents($latestfilename);
-
+echo $outstring;
 $file = fopen("html/feed.txt","w");// create new file with this name
 fwrite($file,$outstring); //write data to file
 fclose($file);  //close file
-echo "<br/>";
-
-
-echo "<br/>";
 
 ?>
-<a href = "index.php">index.php</a>

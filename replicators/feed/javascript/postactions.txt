@@ -8,8 +8,10 @@ document.getElementById("urlinput").onchange = function(){
 document.getElementById("publishbutton").onclick = function(){
     textvalue = document.getElementById("textinput").value;
     imagesrc = document.getElementById("urlinput").value;
-    
-    addedhtml = "\n<img src = \"" + imagesrc + "\"/>\n";
+    addedhtml = "\n";
+    if(imagesrc.length > 5){
+        addedhtml = "<img src = \"" + imagesrc + "\"/>\n";
+    }
     addedhtml += "\n<p>" + textvalue + "</p>\n";
 
 
