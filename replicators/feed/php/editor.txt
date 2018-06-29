@@ -32,7 +32,7 @@ EGO DEATH:
     <a href = "metacreator.php">metacreator.php</a>
     <a href = "unicode.php">unicode.php</a>
     <a href = "list.php">list.php</a>
-
+    <a href = "feededitor.php">feededitor.php</a>
 
 </div>
 <div id = "namediv"></div>
@@ -51,6 +51,7 @@ EGO DEATH:
     <div class = "php file">php/index.txt</div>
     <div class = "php file">php/post.txt</div>
     <div class = "php file">php/editor.txt</div>
+    <div class = "php file">php/feededitor.txt</div>
     <div class = "php file">php/replicator.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
