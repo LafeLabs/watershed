@@ -22,15 +22,17 @@ EGO DEATH:
 </head>
 <body>
 <div id = "linkscroll">
-    <a href = "text2php.php">text2php.php</a>
+    <a href = "post.php">post.php</a>
     <a href = "index.php">index.php</a>
-    <a href = "dnagenerator.php">dnagenerator.php</a>
-    <a href = "metacreator.php">metacreator.php</a>
-    <a href = "list.php">list.php</a>
+    <a href = "feeds/">feeds/</a>
     <a href = "savefeed.php">savefeed.php</a>
     <a href = "loadfeed.php">loadfeed.php</a>
+    <a href = "text2php.php">text2php.php</a>
+    <a href = "dnagenerator.php">dnagenerator.php</a>
+    <a href = "metacreator.php">metacreator.php</a>
+    <a href = "unicode.php">unicode.php</a>
+    <a href = "list.php">list.php</a>
 
-    <a href = "post.php">post.php</a>
 
 </div>
 <div id = "namediv"></div>
@@ -68,7 +70,7 @@ EGO DEATH:
 </div>
 
 <script>
-currentFile = "html/page.txt";
+currentFile = "html/feed.txt";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {

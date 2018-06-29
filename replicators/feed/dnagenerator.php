@@ -5,7 +5,7 @@ $files = scandir(getcwd());
 $outstring = "[\n";
 
 foreach($files as $value){
-    if($value != "." && $value != ".." && $value != "pages"){
+    if($value != "." && $value != ".." && $value != "feeds"){
         if(is_dir($value)){
             $subfiles = scandir(getcwd()."/".$value);
             foreach($subfiles as $subvalue){

@@ -1,5 +1,10 @@
 [
+"css/pagestyle.txt",
+"css/poststyle.txt",
+"html/feed.txt",
 "html/page.txt",
+"html/postpage.txt",
+"javascript/postactions.txt",
 "json/dna.txt",
 "php/creator.txt",
 "php/dnagenerator.txt",
@@ -8,11 +13,12 @@
 "php/filesaver.txt",
 "php/index.txt",
 "php/list.txt",
-"php/loadpage.txt",
+"php/loadfeed.txt",
 "php/metacreator.txt",
-"php/pageeditor.txt",
+"php/post.txt",
+"php/posttofeed.txt",
 "php/replicator.txt",
-"php/savepage.txt",
+"php/savefeed.txt",
 "php/text2php.txt",
 "php/unicode.txt"
 ]

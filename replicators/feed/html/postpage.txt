@@ -1,10 +1,10 @@
-<table id = "toptable">
-    <tr>
-        <td><a href = "index.php">index.php</a></td>
-        <td><a href = "editor.php">editor.php</a></td>
-        <td class = "button" id  = "publishbutton">PUBLISH</td>
-    </tr>
-</table>
-<input id = "urlinput"/>
-<img id = "mainimage"/>
-<textarea id = "textinput"></textarea>
+<div class = "button" id = "publishbutton">PUBLISH</div>
+<a id = "indexlink" href = "index.php">index.php</a>
+<a id = "editorlink" href = "editor.php">editor.php</a>
+<div id = "postscroll">
+    <h4>Input URL of image here:</h4>
+    <input id = "urlinput"/>
+    <img id = "mainimage"/>
+    <h4>Input text here:</h4>
+    <textarea id = "textinput"></textarea>
+</div>

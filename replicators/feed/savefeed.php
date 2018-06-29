@@ -9,7 +9,7 @@
 
     $oldfeed = file_get_contents("feeds/index.html"); 
     $file = fopen("feeds/index.html","w");// create new file with this name
-    fwrite($file,"<p>(<a href = \"".$filename."\">".$filename."</a>)</p>".$oldfeed); //write data to file
+    fwrite($file,"<p><a href = \"".$filename."\">".$filename."</a></p>".$oldfeed); //write data to file
     fclose($file);  //close file
     
 ?>
