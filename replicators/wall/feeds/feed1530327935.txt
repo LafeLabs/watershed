@@ -1,3 +1,0 @@
-<p>another post</p>
-<p>New new new text.</p>
-<p>Derp? foo   </p>
