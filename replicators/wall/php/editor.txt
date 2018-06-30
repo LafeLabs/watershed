@@ -24,15 +24,12 @@ EGO DEATH:
 <div id = "linkscroll">
     <a href = "post.php">post.php</a>
     <a href = "index.php">index.php</a>
-    <a href = "feeds/">feeds/</a>
-    <a href = "savefeed.php">savefeed.php</a>
-    <a href = "loadfeed.php">loadfeed.php</a>
+    <a href = "feed/">feed/</a>
     <a href = "text2php.php">text2php.php</a>
     <a href = "dnagenerator.php">dnagenerator.php</a>
     <a href = "metacreator.php">metacreator.php</a>
     <a href = "unicode.php">unicode.php</a>
     <a href = "list.php">list.php</a>
-    <a href = "feededitor.php">feededitor.php</a>
     <a href = "walleditor.php">walleditor.php</a>
     <a href = "wallhistory.php">wallhistory.php</a>
 </div>
@@ -40,7 +37,6 @@ EGO DEATH:
 <div id="maineditor" contenteditable="true" spellcheck="false"></div>
 <div id = "filescroll">
 
-    <div class = "html file">html/feed.txt</div>
     <div class = "html file">html/wall.txt</div>
     <div class = "html file">html/page.txt</div>
     <div class = "html file">html/postpage.txt</div>
@@ -53,19 +49,14 @@ EGO DEATH:
     <div class = "php file">php/index.txt</div>
     <div class = "php file">php/post.txt</div>
     <div class = "php file">php/editor.txt</div>
-    <div class = "php file">php/feededitor.txt</div>
     <div class = "php file">php/walleditor.txt</div>
-
     <div class = "php file">php/replicator.txt</div>
     <div class = "php file">php/filesaver.txt</div>
     <div class = "php file">php/fileloader.txt</div>
-
     <div class = "php file">php/savefeed.txt</div>
     <div class = "php file">php/loadfeed.txt</div>
     <div class = "php file">php/savewall.txt</div>
     <div class = "php file">php/loadwall.txt</div>
-
-    <div class = "php file">php/posttofeed.txt</div>
     <div class = "php file">php/posttowall.txt</div>
 
     <div class = "php file">php/text2php.txt</div>
@@ -78,7 +69,7 @@ EGO DEATH:
 </div>
 
 <script>
-currentFile = "html/feed.txt";
+currentFile = "html/wall.txt";
 var httpc = new XMLHttpRequest();
 httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {

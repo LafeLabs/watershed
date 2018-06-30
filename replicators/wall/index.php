@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<title>Feed</title>
+<title>Wall</title>
 <!-- 
 PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
 
@@ -36,7 +36,7 @@ if(isset($_GET['url'])){
     echo file_get_contents($_GET['url']);
 }
 else{
-    echo file_get_contents("html/feed.txt");
+    echo file_get_contents("html/wall.txt");
 }
 ?>
 </div>

@@ -17,8 +17,8 @@ document.getElementById("publishbutton").onclick = function(){
 
     data = encodeURIComponent(addedhtml);
     var httpc = new XMLHttpRequest();
-    var url = "posttofeed.php";        
+    var url = "posttowall.php";        
     httpc.open("POST", url, true);
     httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
-    httpc.send("data="+data);//send text to posttofeed.php
+    httpc.send("data="+data);//send text to posttowall.php
 }

@@ -29,7 +29,7 @@ EGO DEATH:
         POST TO WALL
     </a></tr></td>
     <tr><td><a id = "editorlink" href = "editor.php">
-        GENERAL CODE EDITOR
+        CODE EDITOR
     </a></tr></td>
     <tr><td><a id = "feedslink" href = "feeds/">
         RAW FEED DATA STREAM

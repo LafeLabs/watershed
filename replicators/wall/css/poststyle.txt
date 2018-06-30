@@ -54,13 +54,13 @@ textarea{
 }
 #postlink{
     position:absolute;
-    top:0px;
+    top:1em;
     left:1em;
 }
 #editorlink{
     position:absolute;
     right:1em;
-    top:0px;
+    top:1em;
 }
 a{
     z-index:2;

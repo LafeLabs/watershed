@@ -1,6 +1,6 @@
 <div class = "button" id = "publishbutton">PUBLISH</div>
-<a id = "indexlink" href = "index.php">BACK TO FEED VIEW</a>
-<a id = "editorlink" href = "feededitor.php">EDITOR</a>
+<a id = "indexlink" href = "index.php">BACK TO WALL</a>
+<a id = "editorlink" href = "walleditor.php">EDITOR</a>
 <div id = "postscroll">
     <h4>Input URL of image here:</h4>
     <input id = "urlinput"/>
