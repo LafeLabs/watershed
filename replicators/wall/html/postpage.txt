@@ -1,0 +1,10 @@
+<div class = "button" id = "publishbutton">PUBLISH</div>
+<a id = "indexlink" href = "index.php">BACK TO FEED VIEW</a>
+<a id = "editorlink" href = "feededitor.php">EDITOR</a>
+<div id = "postscroll">
+    <h4>Input URL of image here:</h4>
+    <input id = "urlinput"/>
+    <img id = "mainimage"/>
+    <h4>Input text here:</h4>
+    <textarea id = "textinput"></textarea>
+</div>

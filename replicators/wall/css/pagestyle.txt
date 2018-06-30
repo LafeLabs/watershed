@@ -1,0 +1,34 @@
+body{
+    font-size:1.5em;
+    font-family:helvetica;
+}
+#titleh{
+    position:absolute;
+    z-index:-1;
+    left:1em;
+    right:1em;
+    text-align:center;
+}
+#feedscroll{
+    position:absolute;
+    top:2em;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    overflow:scroll;
+    padding:1em 1em 1em 1em;
+}
+#feedscroll img{
+    display:block;
+    margin:auto;
+}
+#postlink{
+    position:absolute;
+    top:0px;
+    left:1em;
+}
+#editorlink{
+    position:absolute;
+    right:1em;
+    top:0px;
+}

@@ -1,0 +1,24 @@
+
+
+document.getElementById("urlinput").onchange = function(){
+    document.getElementById("mainimage").src = this.value;    
+}
+
+
+document.getElementById("publishbutton").onclick = function(){
+    textvalue = document.getElementById("textinput").value;
+    imagesrc = document.getElementById("urlinput").value;
+    addedhtml = "\n";
+    if(imagesrc.length > 5){
+        addedhtml = "<img src = \"" + imagesrc + "\"/>\n";
+    }
+    addedhtml += "\n<p>" + textvalue + "</p>\n";
+
+
+    data = encodeURIComponent(addedhtml);
+    var httpc = new XMLHttpRequest();
+    var url = "posttofeed.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+data);//send text to posttofeed.php
+}

@@ -1,0 +1,76 @@
+body{
+    font-family:helvetica;
+    font-size:1.5em;
+}
+input{
+    font-family:helvetica;
+    font-size:1.5em;
+}
+textarea{
+    font-family:helvetica;
+    font-size:1.5em;
+}
+.button{
+    padding:0.5em 0.5em 0.5em 0.5em;
+    cursor:pointer;
+    border:solid;
+    border-radius:0.25em;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+
+#urlinput{
+    width:80%;
+    display:block;
+    margin:auto;
+    margin-top:2em;
+}
+#publishbutton{
+    position:absolute;
+    top:0px;
+    left:40%;
+    width:20%;
+    text-align:center;
+    z-index:2;
+}
+#textinput{
+    width:80%;
+    border:solid;
+    display:block;
+    margin:auto;
+    margin-top:0.5em;
+    height:25em;
+}
+#mainimage{
+    width:80%;
+    display:block;
+    margin:auto;
+    border:solid;
+    margin-top:0.5em;
+}
+#postlink{
+    position:absolute;
+    top:0px;
+    left:1em;
+}
+#editorlink{
+    position:absolute;
+    right:1em;
+    top:0px;
+}
+a{
+    z-index:2;
+}
+#postscroll{
+    position:absolute;
+    top:3em;
+    left:1em;
+    right:1em;
+    bottom:1em;
+    overflow:scroll;
+    
+}
