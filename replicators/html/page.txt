@@ -1,19 +1,15 @@
 
 <h2>Code Replicators</h2>
-
 <p>
-<ul>
-    <li><a href = "page/">page/</a></li>
-    <li><a href = "metamap/">metamap/</a></li>
-    <li><a href = "scrolldeck/">scrolldeck/</a></li>
-    <li><a href = "svgfactory/">svgfactory/</a></li>
-    <li>&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a</li>
-    <li><a href = "latexscroll/">latexscroll/</a></li>
-    <li><a href = "plotter/">plotter/</a></li>
-    <li><a href = "slides/">slides/</a></li>
-    <li>&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a&#x268a</li>
-    <li><a href = "feed/">feed/</a></li>
-    <li><a href = "wall/">wall/</a></li>
-
-</ul>
+</p>
+<p>
+<ol>
+    <li><a href = "page/">page/</a>(page, marker)</li>
+    <li><a href = "wall/">wall/</a>(wall, cardboard sign)</li>
+    <li><a href = "slides/">slides/</a>(deck, tarot cards)</li>
+    <li><a href = "svgfactory/">svgfactory/</a>(actiongeometry,tool set)</li>
+    <li><a href = "latexscroll/">latexscroll/</a>(manuscript,bound notebook or book)</li>
+    <li><a href = "plotter/">plotter/</a>(plot,graph paper pad)</li>
+    <li><a href = "metamap/">metamap/</a>(map,laminated paper map)</li>
+</ol>
 </p>
